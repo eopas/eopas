@@ -24,5 +24,9 @@ gem "sqlite3-ruby", :require => "sqlite3"
 # end
 
 group :cucumber do
-  gem "cucumber-rails"
+  gem 'database_cleaner', '>=0.5.0'
+  gem 'capybara', '>=0.3.0'
+  gem 'rspec-rails', '>=2.0.0.beta.1'
+  gem 'spork', '>=0.7.5'
+  gem "cucumber-rails", '0.3.0'
 end
