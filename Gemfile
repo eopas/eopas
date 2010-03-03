@@ -22,3 +22,7 @@ gem "sqlite3-ruby", :require => "sqlite3"
 # group :test do
 #   gem "webrat"
 # end
+
+group :cucumber do
+  gem "cucumber-rails"
+end
