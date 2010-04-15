@@ -1,12 +1,21 @@
 !!! 5
-%html
-%head
-  %title Eopas
-  - stylesheet_link_tag :all
-  - javascript_include_tag :defaults
-  - csrf_meta_tag
 
-%body
+= render :partial => 'layouts/head'
 
-  = yield
+%body.bp.three-col
+
+  #container
+
+    = render :partial => 'layouts/header'
+
+    = render :partial => 'layouts/flash', :object => flash
+
+    = render :partial => 'layouts/sidebar'
+
+    #content
+      = yield
+
+    = render :partial => 'layouts/footer'
+
+  = render :partial => 'layouts/footerscripts'
 

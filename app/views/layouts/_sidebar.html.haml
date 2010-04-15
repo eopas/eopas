@@ -1,0 +1,15 @@
+#sidebar
+
+  %ul
+    %li= link_to 'Home', root_path
+
+:javascript
+
+  // We want the appropriate link to be highlighted
+  $('document').ready(function() {
+      var loc = window.location.toString().split("/")
+      loc = loc[loc.length - 1] + "/"
+      $("#sidebar li a[href=\""+loc+"\"]").parent().addClass("current");
+    } 
+  );
+
