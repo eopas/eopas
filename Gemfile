@@ -6,7 +6,7 @@ gem 'rails', '3.0.0.beta3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'haml'
-gem 'exception_notifier'
+#gem 'exception_notifier'
 
 group :cucumber do
     gem 'capybara', :git => "git://github.com/jnicklas/capybara.git"
