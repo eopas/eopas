@@ -1,32 +1,24 @@
 # Edit this Gemfile to bundle your application's dependencies.
 source 'http://gemcutter.org'
 
+gem 'rails', '3.0.0.beta3'
 
-gem "rails", "3.0.0.beta"
+gem 'sqlite3-ruby', :require => 'sqlite3'
 
-## Bundle edge rails:
-# gem "rails", :git => "git://github.com/rails/rails.git"
-
-# ActiveRecord requires a database adapter. By default,
-# Rails has selected sqlite3.
-gem "sqlite3-ruby", :require => "sqlite3"
-
-## Bundle the gems you use:
-# gem "bj"
-# gem "hpricot", "0.6"
-# gem "sqlite3-ruby", :require => "sqlite3"
-# gem "aws-s3", :require => "aws/s3"
-
-## Bundle gems used only in certain environments:
-# gem "rspec", :group => :test
-# group :test do
-#   gem "webrat"
-# end
+gem 'haml'
+gem 'exception_notifier'
 
 group :cucumber do
-  gem 'database_cleaner', '>=0.5.0'
-  gem 'capybara', '>=0.3.0'
-  gem 'rspec-rails', '>=2.0.0.beta.1'
-  gem 'spork', '>=0.7.5'
-  gem "cucumber-rails", '0.3.0'
+    gem 'capybara', :git => "git://github.com/jnicklas/capybara.git"
+    gem 'database_cleaner', :git => "git://github.com/bmabey/database_cleaner.git"
+    gem 'cucumber-rails', :git => "git://github.com/aslakhellesoy/cucumber-rails.git"
+
+    gem 'test-unit' # Bug in cucumber-rails at the moment which means we need to drag this in
+    gem 'rspec-rails', :git => "git://github.com/rspec/rspec-rails.git"
+
+    gem 'spork'
+    gem 'launchy'
+
+#    gem 'pickle'
+#    gem 'factory_girl'
 end

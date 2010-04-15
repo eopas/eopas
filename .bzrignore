@@ -1,2 +1,3 @@
 db/*.sqlite
 log/*.log
+rerun.txt
