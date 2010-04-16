@@ -1,0 +1,15 @@
+%h2 Forgotten Password Retrieval
+
+%p Fill out the form below and instructions to reset your password will be emailed to you:
+
+%br 
+
+= form_tag forgotten_passwords_path, :id => 'forgotten_password' do
+  %fieldset
+    = label_tag :email
+    %br
+    = text_field_tag :email, '', :class => 'text'
+    %br
+  = submit_tag 'Reset my password'
+
+

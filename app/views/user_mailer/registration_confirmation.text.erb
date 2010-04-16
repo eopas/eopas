@@ -1,0 +1,11 @@
+Dear <%= @user.first_name %>,
+
+Thank you for signing up for an EOPAS account.
+
+Please click on the link below to activate your account:
+
+  <%= confirm_user_url @user.perishable_token  %>
+
+You will then be able to annotate videos.
+
+<%= render :partial => 'layouts/signature' %>
