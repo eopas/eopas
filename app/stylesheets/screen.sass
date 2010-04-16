@@ -34,9 +34,10 @@ body.three-col
   #header, #footer
     +column(!blueprint_grid_columns)
   #sidebar
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    !sidebar_columns = floor(!blueprint_grid_columns / 3)
+    // 24 columns wide
+    !sidebar_columns = floor(!blueprint_grid_columns)
     +column(!sidebar_columns)
+    width: 100%
   #content
     // Two thirds of the grid columns, rounding up.
     // With 24 cols, this is 16.
@@ -65,6 +66,37 @@ body.three-col
     right: 15px
     color: darkblue
     z-index: 1000
+    padding: 10px
     li
       list-style-type: none
 
+#sidebar
+  background-color: darkred
+  margin-bottom:10px
+  padding: 2px
+  padding-left: 8px
+  margin-bottom: 10px
+  height: 20px
+  ul
+    display: block
+    li
+      list-style-type: none
+      float: left
+      position: relative
+      display: list-item
+      color: white
+      a
+        padding-right: 18px
+        padding-left: 18px
+      a.header:link, a.header:visited, a.header:active
+        color: white
+        text-decoration: none
+        text-weight: bold
+      a.header:hover
+        color: white
+        text-decoration: underline
+        text-weight: bold
+
+#footer
+  text-align: center
+  padding: 20px

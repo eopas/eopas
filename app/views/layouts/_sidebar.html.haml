@@ -1,7 +1,12 @@
 #sidebar
 
   %ul
-    %li= link_to 'Home', root_path
+    %li= link_to 'Home', root_path, :class => 'header'
+    %li link_to 'About EOPAS', about_path
+    %li= link_to 'Contact Us', 'https://sourceforge.net/projects/eopas/support', :class => 'header'
+    
+
+
 
 :javascript
 
