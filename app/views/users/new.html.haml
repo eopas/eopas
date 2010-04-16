@@ -1,0 +1,8 @@
+%h2 Register
+
+= form_for @user do |f|
+  = error_messages @user
+
+  = render :partial => 'form', :object => f
+
+  = f.submit "Register"
