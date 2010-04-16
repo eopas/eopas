@@ -6,6 +6,8 @@
 @import blueprint
 // Import the non-default scaffolding module.
 @import blueprint/modules/scaffolding.sass
+// Import blueprint liquid layout
+@import blueprint/modules/liquid.sass 
 
 // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
 // +blueprint
@@ -13,6 +15,7 @@
 //Recommended Blueprint configuration with scoping and semantic layout:
 +blueprint-typography("body.bp")
 +blueprint-scaffolding("body.bp")
++blueprint-liquid-grid
 body.bp
   +blueprint-utilities
   +blueprint-debug
@@ -22,10 +25,12 @@ body.bp
 form.bp
   +blueprint-form
 
+
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.three-col
   #container
     +container
+    width: 100%
   #header, #footer
     +column(!blueprint_grid_columns)
   #sidebar
@@ -38,3 +43,16 @@ body.three-col
     !content_columns = ceil(2 * !blueprint_grid_columns / 3)
     // true means it's the last column in the row
     +column(!content_columns, true)
+
+  
+#header
+  background-repeat: no-repeat
+  background-color: #d3d4d8
+  text-align: right
+  vertical-align: bottom
+  height: 65px
+  width: 100%
+  color: white
+
+  #logo
+    float: left

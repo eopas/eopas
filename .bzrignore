@@ -2,3 +2,4 @@ db/*.sqlite
 log/*.log
 rerun.txt
 tmp/*
+public/stylesheets/compiled
