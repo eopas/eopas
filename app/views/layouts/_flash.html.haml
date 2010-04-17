@@ -1,11 +1,11 @@
-
+#clear
 #flash
   - flash.each do |name, msg|
-    %div.notify{:id => "flash_#{name}"}
-      %div.notify_msg
-        %h3= msg
+    %div.notice{:id => "flash_#{name}"}
       %div.notify_close
         = image_tag 'closebox.png', :id => "closebox", :alt => "closebox"
+      %div.notify_msg
+        %h3= msg
 
 :javascript
   $(document).ready(function () {
