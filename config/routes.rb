@@ -1,6 +1,9 @@
 Eopas::Application.routes.draw do |map|
 
-  root :to => "static#home"
+  root  :to => "static#home"
+
+  # Static
+  map.about 'about', :controller => "static", :action => 'about'
 
   # Auth
   map.login  'login',  :controller => 'user_sessions', :action => 'new'
@@ -10,7 +13,5 @@ Eopas::Application.routes.draw do |map|
   # User
   map.resources :users, :member => {:confirm => :get}
   map.resources :forgotten_passwords
-
-
 
 end
