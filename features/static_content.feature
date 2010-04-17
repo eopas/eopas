@@ -18,5 +18,5 @@ Feature: Website needs static content
     When I go to the home page
     And  I follow "About"
     Then I should be on the about page
-    And  I should see "John Ferlito"
+    And  I should see "About Eopas"
 
