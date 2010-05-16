@@ -11,16 +11,15 @@ gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => '
 #gem 'exception_notifier'
 
 group :cucumber do
-    gem 'capybara', :git => "git://github.com/jnicklas/capybara.git"
-    gem 'database_cleaner', :git => "git://github.com/bmabey/database_cleaner.git"
-    gem 'cucumber-rails', :git => "git://github.com/aslakhellesoy/cucumber-rails.git"
+    gem 'capybara'              #,         :git => "git://github.com/jnicklas/capybara.git"
+    gem 'database_cleaner'      #, :git => "git://github.com/bmabey/database_cleaner.git"
+    gem 'cucumber-rails'        #,   :git => "git://github.com/aslakhellesoy/cucumber-rails.git"
 
-    gem 'test-unit' # Bug in cucumber-rails at the moment which means we need to drag this in
-    gem 'rspec-rails', :git => "git://github.com/rspec/rspec-rails.git"
+    gem 'rspec-rails', '2.0.0.beta.8' #, :git => "git://github.com/rspec/rspec-rails.git"
 
     gem 'spork'
     gem 'launchy'
 
     gem 'pickle'
-    gem 'factory_girl', :git => 'git://github.com/thoughtbot/factory_girl.git', :branch => 'rails3'
+    gem 'factory_girl', :git => 'git://github.com/thoughtbot/factory_girl.git', :branch => 'fixes_for_rails3'
 end
