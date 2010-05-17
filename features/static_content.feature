@@ -6,7 +6,6 @@ Feature: Website needs static content
 
   Scenario: Home Page exists
     When I go to the home page
-    And show me the page
     Then I should see "EOPAS"
 
   Scenario: Home Page link goes to homepage

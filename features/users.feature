@@ -100,20 +100,21 @@ Feature: Authentication and Authorisation
     And I press "Login"
     Then I should see "John"
 
-  #Scenario: Must be logged in to show a users page
-  #  Given a user exists with email: "johnf@inodes.org", first_name: "John"
-  #  When I go to that user's page
-  #  Then I should not see "John"
-  #  And I should see "You must be logged in to access that page"
+  Scenario: Must be logged in to show a users page
+    Given a user exists with email: "johnf@inodes.org", first_name: "John"
+    When I go to that user's page
+    Then I should not see "John"
+    And I should see "You must be logged in to access that page"
 
-  #@allow-rescue
-  #Scenario: A user can only see her own details
-  #  Given a user: "johnf" exists with email: "johnf@inodes.org", first_name: "John"
-  #  And a user: "silvia" exists with email: "silvia@gingertech.net", first_name: "Silvia"
-  #  And I am logged in as user "silvia"
-  #  When I go to the user "silvia"'s page
-  #  Then I should see "Silvia" within "#content"
-  #  When I go to the user "johnf"'s page
-  #  Then I should not see "John" within "#content"
-  #  And I should see "Sorry, the page you were looking for does not exist."
+# This works but allow-rescue is broken in cucumber-rails
+#  @allow-rescue
+#  Scenario: A user can only see her own details
+#    Given a user: "johnf" exists with email: "johnf@inodes.org", first_name: "John"
+#    And a user: "silvia" exists with email: "silvia@gingertech.net", first_name: "Silvia"
+#    And I am logged in as user "silvia"
+#    When I go to the user "silvia"'s page
+#    Then I should see "Silvia" within "#content"
+#    When I go to the user "johnf"'s page
+#    Then I should not see "John" within "#content"
+#    And I should see "Sorry, the page you were looking for does not exist."
 

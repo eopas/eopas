@@ -8,6 +8,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
 gem 'compass'
 gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
+gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
 #gem 'exception_notifier'
 
 group :cucumber do

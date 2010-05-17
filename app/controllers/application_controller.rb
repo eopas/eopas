@@ -14,12 +14,26 @@ class ApplicationController < ActionController::Base
   end
 
   def store_location
-    session[:return_to] = request.request_uri
+    session[:return_to] = request.fullpath
   end
 
   def redirect_back_or_default(default)
     redirect_to(session[:return_to] || default)
     session[:return_to] = nil
   end
+
+  protected
+   protected
+   def permission_denied
+     if current_user
+       flash[:error] = "Sorry, you are not allowed to access that page."
+       redirect_to root_url
+     else
+       store_location
+       flash[:error] = "You must be logged in to access that page."
+       redirect_to new_user_sessions_path
+     end
+   end
+
 
 end

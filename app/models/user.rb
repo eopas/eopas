@@ -19,17 +19,16 @@ class User < ActiveRecord::Base
     !(new_record? || confirmed_at.nil?)
   end
 
-#  # Manage roles, roles stored as strings
-#  def add_role(role)
-#    role = role.to_s
-#    (self.roles ||= []) << role
-#    roles.uniq!
-#  end
+  # Manage roles, roles stored as symbols
+  def add_role(role)
+    (self.roles ||= []) << role
+    roles.uniq!
+  end
 
-#  # Roles returns e.g. [:admin], for declarative_auth
-#  def role_symbols  
-#    @role_symbols ||= (roles || []).map {|r| r.to_sym}
-#  end
+  # Roles returns e.g. [:admin], for declarative_auth
+  def role_symbols
+    roles || []
+  end
 
 end
 

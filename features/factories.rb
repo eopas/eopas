@@ -5,7 +5,7 @@ Factory.define :user do |u|
   u.first_name 'John'
   u.last_name 'Ferlito'
   u.confirmed_at Time.now
-#  u.roles ['user']
+  u.roles [:user]
 end
 
 # Having unconfirmed be special means we can just use user in most places

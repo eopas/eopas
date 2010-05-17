@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   respond_to :html
 
-  #filter_access_to :show
+  filter_access_to :show
 
   def new
     @user = User.new
@@ -26,6 +26,7 @@ class UsersController < ApplicationController
     end
 
     @user.confirm!
+    @user.add_role(:user)
     if @user.save
       UserSession.create(@user)
       flash[:notice] = 'Your account has been activated and you have been logged in.'
