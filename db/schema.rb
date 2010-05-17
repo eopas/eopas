@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100416010909) do
+ActiveRecord::Schema.define(:version => 20100517093026) do
+
+  create_table "media_items", :force => true do |t|
+    t.string   "title",        :null => false
+    t.integer  "depositor_id", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                              :null => false

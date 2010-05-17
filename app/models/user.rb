@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
 
   serialize :roles, Array
 
+  has_many :media_items, :foreign_key => :depositor_id
+
   def full_name
     "#{first_name} #{last_name}"
   end

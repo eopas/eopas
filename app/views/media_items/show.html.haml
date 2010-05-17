@@ -1,0 +1,11 @@
+
+#media_item
+  %h2 Media Item Details:
+
+  %strong Title:
+  %p#title
+    = @media_item.title
+  %br
+  %strong Depositor:
+  %p#depositor
+    = @media_item.depositor.full_name

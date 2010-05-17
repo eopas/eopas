@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
      else
        store_location
        flash[:error] = "You must be logged in to access that page."
-       redirect_to new_user_sessions_path
+       redirect_to login_path
      end
    end
 

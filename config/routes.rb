@@ -14,4 +14,7 @@ Eopas::Application.routes.draw do |map|
   map.resources :users, :member => {:confirm => :get}
   map.resources :forgotten_passwords
 
+  # Media
+  map.resources :media_items
+
 end
