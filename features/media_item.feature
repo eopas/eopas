@@ -17,11 +17,12 @@ Feature: Media
     Then I should be on the login page
      And I should see "You must be logged in to access that page."
 
+  @wip
   Scenario: Create a new media item
     When I am on the new media item page
-    #And I attach the file "features/assets/big_buck_bunny_720p_surround.avi" to "Video"
+    And I attach the file "features/test_data/test.m4v" to "Media"
     And I fill in "Title" with "Test Video"
-    And  I press "Create"
+    And I press "Create"
     Then I should see "Media item was successfully created"
      And I should see "Test Video" within "#title"
      And I should see "John Ferlito" within "#depositor"

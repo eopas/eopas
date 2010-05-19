@@ -4,6 +4,11 @@ class MediaItem < ActiveRecord::Migration
       t.string     :title,     :null => false
       t.belongs_to :depositor, :null => false
 
+      t.string :original_file_name
+      t.string :original_content_type
+      t.string :original_file_size
+      t.string :original_updated_at
+
       t.timestamps
     end
 

@@ -1,4 +1,10 @@
 %fieldset
+
+  = form.label :original, 'Media'
+  %br
+  = form.file_field :original
+  %br
+
   = form.label :title
   %br
   = form.text_field :title, :class => 'text'

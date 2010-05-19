@@ -9,6 +9,7 @@ gem 'haml'
 gem 'compass'
 gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
 gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
+gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git', :branch => 'rails3'
 #gem 'exception_notifier'
 
 group :cucumber do

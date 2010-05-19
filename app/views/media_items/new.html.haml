@@ -1,6 +1,6 @@
 %h2 Create Media Item
 
-= form_for @media_item do |f|
+= form_for @media_item, :html => { :multipart => true } do |f|
   = error_messages @media_item
 
   = render :partial => 'form', :object => f

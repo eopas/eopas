@@ -12,8 +12,12 @@
 ActiveRecord::Schema.define(:version => 20100517093026) do
 
   create_table "media_items", :force => true do |t|
-    t.string   "title",        :null => false
-    t.integer  "depositor_id", :null => false
+    t.string   "title",                 :null => false
+    t.integer  "depositor_id",          :null => false
+    t.string   "original_file_name"
+    t.string   "original_content_type"
+    t.string   "original_file_size"
+    t.string   "original_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
