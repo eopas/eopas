@@ -5,6 +5,7 @@ Feature: Media
   Background:
     Given a user: "johnf" exists with email: "johnf@inodes.org", first_name: "John", last_name: "Ferlito"
       And I am logged in as the user "johnf"
+      And I mock paperclip for "ffmpeg -i /tmp/paperclip-reprocess,27297,0 -ar 22050 -ab 64k -async 2 -acodec libvorbis -b 512k -bt 512k -r 30 -threads 0 -vcodec libtheora -padtop 30 -padright 0 -padbottom 30 -padleft 0 -s 320x180 -f ogg -y /tmp/paperclip-reprocess,27297,0-encoded,27297,0"
 
   Scenario: Upload Page exists if logged in
     When I am on the home page
@@ -20,19 +21,20 @@ Feature: Media
   @wip
   Scenario: Create a new media item
     When I am on the new media item page
-    And I attach the file "features/test_data/test.m4v" to "Media"
-    And I fill in "Title" with "Test Video"
-    And I press "Create"
+     And I attach the file "features/test_data/test.m4v" to "Media"
+     And I fill in "Title" with "Test Video"
+     And I press "Create"
     Then I should see "Media item was successfully created"
+     And there should be 1 delayed job
      And I should see "Test Video" within "#title"
      And I should see "John Ferlito" within "#depositor"
+     And I should see "is being transcoded"
+    When I process the delayed jobs
+    Then there should be 0 delayed jobs
     When I go to the media items page
     Then I should see "Test Video"
-    #Then I should see "Video is being transcoded"
-    #When I process the delayed jobs
-    #And I go to the videos page
-    #And I follow "A test video"
-    #Then I should not see "Video is being transcoded"
+    When I follow "Test Video"
+    Then I should not see "Video is being transcoded"
 
 
 #    And   a user: "silvia" exists with email: "silvia@doe.com"

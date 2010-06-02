@@ -10,14 +10,17 @@ gem 'compass'
 gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
 gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git', :branch => 'rails3'
+gem 'delayed_paperclip'
+gem 'delayed_job', :git => 'git://github.com/collectiveidea/delayed_job.git'
+
 #gem 'exception_notifier'
 
 group :cucumber do
-    gem 'capybara'              #,         :git => "git://github.com/jnicklas/capybara.git"
-    gem 'database_cleaner'      #, :git => "git://github.com/bmabey/database_cleaner.git"
-    gem 'cucumber-rails'        #,   :git => "git://github.com/aslakhellesoy/cucumber-rails.git"
+    gem 'capybara'
+    gem 'database_cleaner'
+    gem 'cucumber-rails'
 
-    gem 'rspec-rails', '2.0.0.beta.8' #, :git => "git://github.com/rspec/rspec-rails.git"
+    gem 'rspec-rails', '2.0.0.beta.8'
 
     gem 'spork'
     gem 'launchy'

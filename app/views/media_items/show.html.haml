@@ -9,3 +9,6 @@
   %strong Depositor:
   %p#depositor
     = @media_item.depositor.full_name
+
+  - if @media_item.original_processing
+    %p Media item is being transcoded

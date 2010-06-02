@@ -1,0 +1,83 @@
+= Kickvideo
+
+Custom processors and support for building video uploads and transcoding on top of Paperclip.
+
+* Paperclip::KickvideoEncoder - processes through ffmpeg, with options for various audio or video profiles.
+* Paperclip::KickvideoThumbnail - extracts a video thumbnail through ffmpeg.
+
+A video-specific validation that don't depend on browser support:
+
+* validates_attached_video :file
+
+In the future I intend to support processing through Flix Cloud, HD Cloud, Encoding.com, etc. It's likely
+that Kickvideo will require some refactoring to support asynchronous transcoding. Currently I'm imagining a
+new +:#{name}_style_status+ field that will keep a hash of {:style => status} where status is one of
++%w(accepted queued encoded stored)+ or similar.
+
+== Example
+
+First, create a migration to add a `processed` boolean to your table.
+
+  def self.up
+    add_column :videos, :processed, :boolean, :null => false, :default => false
+  end
+
+Second, create a model with the storage and processers you ultimately want. This is where Kickvideo goes.
+
+  class Video < ActiveRecord::Base
+    has_attached_file :file, :storage => :s3,
+      :styles => {
+        :standard => {
+          :format => 'flv',
+          :geometry => '400x300',
+          :processors => [ :kickvideo_encoder ]
+        }
+      }
+    
+    named_scope :processed, :conditions => {:processed => true}
+    named_scope :unprocessed, :conditions => {:processed => false}
+  end
+
+Third, create a child model. This does _not_ use Single Table Inheritance. The only reason a child model is necessary is to allow a barebones Paperclip definition with no processing and simple storage. All of the processing and storage on the parent model, Video, will run in the background.
+
+  # from http://codewordstudios.com/posts/3-delayed-upload-delivery-to-s3-with-paperclip-delayed-job
+  class UnprocessedVideo < Video
+    has_attached_file :file, :storage => :filesystem
+    
+    validates_attached_video :file, :on => :create
+
+    before_create { |r| r.processed = false     }
+    after_create  { |r| r.send_later(:process!) }
+
+    def process!
+      f = File.new(self.file.path, 'rb')
+    
+      v = Video.find(self.id)
+      v.processed = true
+      v.file = self.file.to_file
+      v.save!
+      
+      f.close
+      File.delete(f.path)
+      
+      return v
+    end
+  end
+
+== Other Notes
+
+Try Apache with http://modporter.com/ as a frontend. You may also consider segmenting your video upload traffic to a subdomain.
+
+== Running Tests
+
+If you want to test the experimental Paperclip::Storage::DelayedS3 class, you will need to install the
+Paperclip fork here: http://github.com/kickstarter/paperclip. This is because the storage class requires
+a patch that has not been merged into master.
+
+Then, you will need to create a s3 bucket, and write a test/s3.yml like
+
+  access_key_id: MyAccessKey
+  secret_access_key: MySecretAccessKey
+  bucket: kickvideo-test
+
+Copyright (c) 2010 Kickstarter.com, released under the MIT license
