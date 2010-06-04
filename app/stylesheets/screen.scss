@@ -60,9 +60,16 @@ body.three-col {
 
 
 // Specific styling of elements
+// Color scheme: 
+// #ff542e red
+// #fff0ba yellow
+// #f2bc00 ocre
+// #cfd6de light grey
+// #adc1d6 light blue
+// #7297ba blue
 #header {
   background-repeat: no-repeat;
-  background-color: #d3d4d8;
+  background-color: #cfd6de;
   vertical-align: bottom;
   height: 65px;
   color: white;
@@ -74,7 +81,7 @@ body.three-col {
     vertical-align: bottom;
     top: 10px;
     right: 15px;
-    color: darkblue;
+    color: #7297ba;
     z-index: 1000;
     padding: 10px;
     li { list-style-type: none; }
@@ -82,7 +89,7 @@ body.three-col {
 }
 
 #flash_error {
-  background-color: #fc5051;
+  background-color: #ff542e;
   border-color: darkred;
 }
 
@@ -104,7 +111,7 @@ body.three-col {
 }
 
 #sidebar {
-  background-color: darkred;
+  background-color: #f2bc00;
   margin-bottom: 10px;
   padding: 2px;
   padding-left: 8px;
@@ -141,14 +148,28 @@ body.three-col {
 }
 
 #media_item {
+  #errorExplanation {
+    background-color: #ff542e;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: #ccc 10px 5px 5px;
+    -webkit-box-shadow: #ccc 10px 5px 5px;
+    -moz-box-shadow: #ccc 10px 5px 5px;
+    ul {
+      li {
+        display: list-item;
+        color: white;
+      }
+    }
+  }
   table#metadata {
-    td#name{
+    td#name {
       font-weight: bold;
       text-align: right;
       width: 150px;
     }
     td#content{
-    
     }
   }
 }
