@@ -7,56 +7,10 @@
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
 
-// Import the non-default scaffolding module.
-@import "blueprint/scaffolding";
-// Import blueprint liquid layout
-@import "blueprint/liquid";
-
-
-// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
-// +blueprint
-
-//Recommended Blueprint configuration with scoping and semantic layout:
-@include blueprint-scaffolding("body.bp");
-
-body.bp {
-  @include blueprint-typography(true);
-  @include blueprint-liquid-grid;
-  @include blueprint-utilities;
-  @include blueprint-debug;
-  @include blueprint-interaction;
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
-}
-
-form.bp {
-  @include blueprint-form;
-}
-
-
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.three-col {
-  #container {
-    @include container;
-    width: 100%;
-  }
-  #header, #footer {
-    @include column($blueprint-grid-columns);
-  }
-  #sidebar {
-    // // 24 columns wide
-    $sidebar-columns: $blueprint-grid-columns;
-    @include column($sidebar-columns);
-    width: 100%;
-  }
-  #content {
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    // true means it's the last column in the row
-    @include column($content-columns, true);
-  }
-}
+// Combine the partials into a single screen stylesheet.
+@import "partials/page";
+@import "partials/form";
+@import "partials/one_col";
 
 
 // Specific styling of elements

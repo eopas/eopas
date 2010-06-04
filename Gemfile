@@ -20,7 +20,7 @@ group :cucumber do
     gem 'database_cleaner'
     gem 'cucumber-rails'
 
-    gem 'rspec-rails', '2.0.0.beta.8'
+    gem 'rspec-rails', '2.0.0.beta.10'
 
     gem 'spork'
     gem 'launchy'

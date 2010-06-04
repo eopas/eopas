@@ -1,7 +1,7 @@
 # This configuration file works with both the Compass command line tool and within Rails.
 # Require any additional compass plugins here.
 project_type = :rails
-project_path = Rails.root if defined?(Rails.root)
+project_path = Compass::AppIntegration::Rails.root
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "public/stylesheets/compiled"
