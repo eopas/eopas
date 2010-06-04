@@ -1,8 +1,10 @@
-%h2 Create Media Item
 
-= form_for @media_item, :html => { :multipart => true } do |f|
-  = error_messages @media_item
+#media_item
+  %h2 Create Media Item
 
-  = render :partial => 'form', :object => f
+  = form_for @media_item, :html => { :multipart => true } do |f|
+    = error_messages @media_item
 
-  = f.submit "Create"
+    = render :partial => 'form', :object => f
+
+    = f.submit "Create"

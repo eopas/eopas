@@ -18,16 +18,27 @@ Feature: Media
     Then I should be on the login page
      And I should see "You must be logged in to access that page."
 
-  @wip
   Scenario: Create a new media item
     When I am on the new media item page
      And I attach the file "features/test_data/test.m4v" to "Media"
      And I fill in "Title" with "Test Video"
+     And I select "31 March 2010" as the "media_item_recorded_at" date
+     And I fill in "Name of Annotator" with "John Ferlito"
+     And I fill in "Name of Presenter" with "Random"
+     And I fill in "Copyright Holder" with "John Ferlito"
      And I press "Create"
     Then I should see "Media item was successfully created"
      And there should be 1 delayed job
-     And I should see "Test Video" within "#title"
-     And I should see "John Ferlito" within "#depositor"
+     And I should see "Test Video" within "tr#title"
+     And I should see "John Ferlito" within "tr#depositor"
+     And I should see "2010-03-31" within "tr#recorded_at"
+     And I should see "John Ferlito" within "tr#annotator_name"
+     And I should see "Random" within "tr#presenter_name"
+     And I should see "speaker" within "tr#presenter_role"
+     And I should see "en" within "tr#language_code"
+     And I should see "John Ferlito" within "tr#copyright"
+     And I should see "CC-AU-BY-SA" within "tr#license"
+     And I should see "false" within "tr#private"
      And I should see "is being transcoded"
     When I process the delayed jobs
     Then there should be 0 delayed jobs

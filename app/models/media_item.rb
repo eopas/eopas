@@ -27,11 +27,14 @@ class MediaItem < ActiveRecord::Base
 
   process_in_background :original
 
-  attr_accessible :title, :original
+  attr_accessible :title, :original, :recorded_at, :annotator_name, :presenter_name, :presenter_role, :language_code,
+                  :copyright, :license, :private
 
-  validates_presence_of :title, :depositor
+  validates_presence_of :title, :depositor, :recorded_at, :language_code, :license
   validates_associated :depositor
 
   validates_attachment_presence :original
   validates_attached_video :original
+
+  PRESENTER_ROLES = ['speaker', 'singer', 'signer']
 end

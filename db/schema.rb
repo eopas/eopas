@@ -27,12 +27,22 @@ ActiveRecord::Schema.define(:version => 20100602072853) do
   add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
   create_table "media_items", :force => true do |t|
-    t.string   "title",                 :null => false
-    t.integer  "depositor_id",          :null => false
+    t.string   "title",                                    :null => false
+    t.integer  "depositor_id",                             :null => false
     t.string   "original_file_name"
     t.string   "original_content_type"
     t.string   "original_file_size"
-    t.string   "original_updated_at"
+    t.datetime "original_updated_at"
+    t.string   "item_id"
+    t.datetime "recorded_at"
+    t.string   "annotator_name"
+    t.string   "annotator_role"
+    t.string   "presenter_name"
+    t.string   "presenter_role"
+    t.string   "language_code"
+    t.string   "copyright"
+    t.string   "license"
+    t.boolean  "private",               :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "original_processing"

@@ -1,8 +1,7 @@
 #login_info
   %ul
     - if current_user
-      %li= current_user.full_name
-      %li= link_to 'My Account', current_user
+      %li= link_to current_user.full_name, current_user
       %li.last= link_to 'Logout', logout_path
     - else
       %li= link_to 'Register', new_user_path

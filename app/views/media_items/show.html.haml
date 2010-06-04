@@ -1,14 +1,68 @@
 
 #media_item
-  %h2 Media Item Details:
-
-  %strong Title:
-  %p#title
-    = @media_item.title
-  %br
-  %strong Depositor:
-  %p#depositor
-    = @media_item.depositor.full_name
+  %h2 Media Item Details
 
   - if @media_item.original_processing
-    %p Media item is being transcoded
+    %p#notice Media item is being transcoded
+
+  %table#metadata
+    %tr#title
+      %td#name
+        Title
+      %td#value
+        = @media_item.title
+
+    %tr#depositor
+      %td#name
+        Depositor
+      %td#value
+        = @media_item.depositor.full_name
+  
+    %tr#recorded_at
+      %td#name
+        Recorded on
+      %td#value
+        = @media_item.recorded_at
+  
+    %tr#annotator_name
+      %td#name
+        Name of Annotator
+      %td#value
+        = @media_item.annotator_name
+  
+    %tr#presenter_name
+      %td#name
+        Name of Presenter
+      %td#value
+        = @media_item.presenter_name
+
+    %tr#presenter_role
+      %td#name
+        Role of Presenter
+      %td#value
+        = @media_item.presenter_role
+
+    %tr#language_code
+      %td#name
+        Language Code
+      %td#value
+        = @media_item.language_code
+
+    %tr#copyright
+      %td#name
+        Copyright
+      %td#value
+        = @media_item.copyright
+
+    %tr#license
+      %td#name
+        License
+      %td#value
+        = @media_item.license
+
+    %tr#private
+      %td#name
+        Private
+      %td#value
+        = @media_item.private
+
