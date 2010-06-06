@@ -1,36 +1,34 @@
 %fieldset
-  = form.label :first_name
-  %br
-  = form.text_field :first_name, :class => 'text'
-  %br
 
-  %br
+  %table#metadata
+    %tr
+      %td#name
+        = label_tag :first_name
+      %td#value
+        = form.text_field :first_name, :class => 'text'
 
-  = form.label :last_name
-  %br
-  = form.text_field :last_name, :class => 'text'
-  %br
+    %tr
+      %td#name
+        = label_tag :last_name
+      %td#value
+        = form.text_field :last_name, :class => 'text'
 
-  %br
+    %tr
+      %td#name
+        = label_tag :email
+      %td#value
+        = form.text_field :email, :class => 'text'
 
+    %tr
+      %td#name
+        = label_tag :password, form.object.new_record? ? nil : "Change password"
+      %td#value
+        = form.password_field :password
 
-  = form.label :email
-  %br
-  = form.text_field :email, :class => 'text'
-  %br
+    %tr
+      %td#name
+        = label_tag :password_confirmation
+      %td#value
+        = form.password_field :password_confirmation
 
-  %br
-
-  = form.label :password, form.object.new_record? ? nil : "Change password"
-  %br
-  = form.password_field :password
-  %br
-
-  %br
-
-  = form.label :password_confirmation
-  %br
-  = form.password_field :password_confirmation
-  %br
-  %br
 

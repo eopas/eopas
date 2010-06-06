@@ -4,21 +4,30 @@
   %fieldset
     = error_messages @user_session
 
-    = f.label :email
-    %br
-    = f.text_field :email, :class => 'text'
-    %br
-    %br
-    = f.label :password
-    %br
-    = f.password_field :password
-    %br
-    %br
-    = f.check_box :remember_me
-    = f.label :remember_me
-    %br
-  = f.submit "Login"
+    %table#metadata
+      %tr
+        %td#name
+          = f.label :email
+        %td#value
+          = f.text_field :email, :class => 'text'
 
-%br
+      %tr
+        %td#name
+          = f.label :password
+        %td#value
+          = f.password_field :password
+
+      %tr
+        %td#name
+        %td#value
+          = f.check_box :remember_me
+          = f.label :remember_me
+
+      %tr
+        %td#name
+        %td#value
+          = f.submit "Login"
+
+
 = link_to 'Forgot your password?', new_forgotten_password_path
 

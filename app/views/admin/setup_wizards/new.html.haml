@@ -4,17 +4,15 @@
 
 %p The first thing you need to do is create an administrative user
 
-
 = form_tag admin_setup_wizard_path, :method => :post do
   = error_messages @user
 
   // TODO - Workout a way to use the actual user form
+  //   = render :partial => 'users/form', :object => @user
   %fieldset
   = label_tag :first_name
   %br
   = text_field_tag :first_name, nil, :class => 'text'
-  %br
-
   %br
 
   = label_tag :last_name
@@ -32,12 +30,11 @@
   = password_field_tag :password
   %br
 
-  %br
-
   = label_tag :password_confirmation
   %br
   = password_field_tag :password_confirmation
   %br
   %br
+
 
   = submit_tag "Finish"

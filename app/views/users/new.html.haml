@@ -1,8 +1,10 @@
-%h2 Register
 
-= form_for @user do |f|
-  = error_messages @user
+#user_details
+  %h2 Register
 
-  = render :partial => 'form', :object => f
+  = form_for @user do |f|
+    = error_messages @user
 
-  = f.submit "Register"
+    = render :partial => 'form', :object => f
+
+    = f.submit "Register"
