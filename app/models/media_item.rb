@@ -23,7 +23,6 @@ class MediaItem < ActiveRecord::Base
         :processors => [ :kickvideo_thumbnailer ],
       }
     }
-    #:processors => [ :kickvideo_encoder, :kickvideo_thumbnailer ]
 
   process_in_background :original
 

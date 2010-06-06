@@ -1,4 +1,6 @@
 
 %ul
   - @media_items.each do |media_item|
-    %li= link_to media_item.title, media_item
+    %li
+      = image_tag media_item.original.url(:thumbnail)
+      = link_to media_item.title, media_item

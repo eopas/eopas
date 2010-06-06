@@ -10,7 +10,6 @@ module Kickvideo #:nodoc:
 
     def make
       return unless inspector.video?
-      return unless [:jpg, :png, :gif].include?(options[:format])
 
       returning Paperclip::Tempfile.new("#{@file.path}.#{options[:format]}") do |dst|
         dst.binmode

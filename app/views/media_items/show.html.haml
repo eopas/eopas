@@ -2,6 +2,8 @@
 #media_item
   %h2 Media Item Details
 
+  = media_item_video_tag @media_item
+
   - if @media_item.original_processing
     %p#notice Media item is being transcoded
 
