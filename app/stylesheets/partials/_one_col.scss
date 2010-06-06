@@ -14,6 +14,8 @@
 //    +------------------------+
 //    |        #header         |
 //    +------------------------+
+//    |        #flash          |
+//    +------------------------+
 //    |        #menu           |
 //    +------------------------+
 //    |                        |
@@ -26,9 +28,9 @@
 body.one-col {
   #container {
     @include container;
-    //width: 100% // Is this needed? Might also be needed just for menu below FIXME
+    width: 100%;
   }
-  #header, #menu, #content, #footer {
+  #header, #flash, #menu, #content, #footer {
     @include column($blueprint-grid-columns);
   }
 }

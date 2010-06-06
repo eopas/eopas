@@ -2,7 +2,7 @@
 
 = render :partial => 'layouts/head'
 
-%body.bp.three-col
+%body.bp.one-col
 
   #container
 
@@ -10,7 +10,7 @@
 
     = render :partial => 'layouts/flash', :object => flash
 
-    = render :partial => 'layouts/sidebar'
+    = render :partial => 'layouts/menu'
 
     #content
       = yield
