@@ -3,7 +3,8 @@ Feature: Media
   As a user
   I want to upload audio and video files
   Background:
-    Given a user: "johnf" exists with email: "johnf@inodes.org", first_name: "John", last_name: "Ferlito"
+    Given the application is set up
+      And a user: "johnf" exists with email: "johnf@inodes.org", first_name: "John", last_name: "Ferlito"
       And I am logged in as the user "johnf"
       And I mock paperclip for "ffmpeg -i /tmp/paperclip-reprocess,27297,0 -ar 22050 -ab 64k -async 2 -acodec libvorbis -b 512k -bt 512k -r 30 -threads 0 -vcodec libtheora -padtop 30 -padright 0 -padbottom 30 -padleft 0 -s 320x180 -f ogg -y /tmp/paperclip-reprocess,27297,0-encoded,27297,0"
 

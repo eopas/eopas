@@ -3,6 +3,9 @@ Feature: Authentication and Authorisation
   As a user
   I want to be able to login
 
+  Background:
+    Given the application is set up
+
   Scenario: A Register link should exist
     When I go to the homepage
     Then I should see "Register"

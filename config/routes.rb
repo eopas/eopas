@@ -2,6 +2,10 @@ Eopas::Application.routes.draw do |map|
 
   root  :to => "static#home"
 
+  namespace :admin do
+    resource :setup_wizard
+  end
+
   # Static
   map.about 'about', :controller => "static", :action => 'about'
 

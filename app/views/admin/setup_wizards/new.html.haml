@@ -1,0 +1,43 @@
+%h1 Eopas Application Setup
+
+%p Hi, Welcome to the setup page for the Eopas application.
+
+%p The first thing you need to do is create an administrative user
+
+
+= form_tag admin_setup_wizard_path, :method => :post do
+  = error_messages @user
+
+  // TODO - Workout a way to use the actual user form
+  %fieldset
+  = label_tag :first_name
+  %br
+  = text_field_tag :first_name, nil, :class => 'text'
+  %br
+
+  %br
+
+  = label_tag :last_name
+  %br
+  = text_field_tag :last_name, nil, :class => 'text'
+  %br
+
+  = label_tag :email
+  %br
+  = text_field_tag :email, nil, :class => 'text'
+  %br
+
+  = label_tag :password
+  %br
+  = password_field_tag :password
+  %br
+
+  %br
+
+  = label_tag :password_confirmation
+  %br
+  = password_field_tag :password_confirmation
+  %br
+  %br
+
+  = submit_tag "Finish"
