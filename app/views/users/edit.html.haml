@@ -1,0 +1,12 @@
+
+#user_details
+  %h2 Edit User Details
+
+  = form_for @user, :method => :put do |f|
+    = error_messages @user
+    
+    = render :partial => 'form', :object => f
+
+    = f.submit "Update"
+
+

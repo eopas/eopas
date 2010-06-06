@@ -39,6 +39,8 @@ Feature: Authentication and Authorisation
     And I follow "Register"
     Then I should see "Email"
     When I fill in "Email" with "john@inodes.org"
+    And I fill in "First name" with "John"
+    And I fill in "Last name" with "Ferlito"
     And I fill in "Password" with "moocow"
     And I fill in "Password confirmation" with "moocow"
     And I press "Register"
@@ -108,6 +110,28 @@ Feature: Authentication and Authorisation
     When I go to that user's page
     Then I should not see "John"
     And I should see "You must be logged in to access that page"
+
+  Scenario: Edit user details
+    Given a user exists with email: "john@inodes.org", password: "moocow"
+    When I go to the homepage
+    And I follow "Login"
+    And I fill in "Email" with "john@inodes.org"
+    And I fill in "Password" with "moocow"
+    And I press "Login"
+    Then I should be on that user's page
+    And I follow "Edit Details"
+    Then I should be on that user's edit page
+    And I fill in "First name" with "fred"
+    And I fill in "Last name" with "freddo"
+    And I fill in "Email" with "fred@freddo.org"
+    And I fill in "Change password" with "fredfred"
+    And I fill in "Password confirmation" with "fredfred"
+    And I press "Update"
+    Then I should be on that user's page
+    And I should see "fred freddo" within "#login_info"
+    And I should see "fred@freddo.org" within "#user_details"
+    And I should see "Your account details have been updated, including password."
+
 
 # This works but allow-rescue is broken in cucumber-rails
 #  @allow-rescue

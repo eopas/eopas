@@ -1,10 +1,24 @@
+
 #user_details
-  %h2 User Details:
+  %h2 User Details
 
-  %h6 Name:
-  %p
-    = @user.full_name
+  %table#metadata
+    %tr#name
+      %td#name
+        Name
+      %td#value
+        = @user.full_name
 
-  %h6 Email:
-  %p
-    = @user.email
+    %tr#email
+      %td#name
+        Email
+      %td#value
+        = @user.email
+
+    %tr#roles
+      %td#name
+        Roles
+      %td#value
+        = @user.roles.join ","
+
+  = link_to 'Edit Details', edit_user_path

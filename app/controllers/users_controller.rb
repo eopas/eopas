@@ -44,6 +44,52 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
+  def edit
+    if current_user.id != params[:id].to_i
+      raise ActiveRecord::RecordNotFound
+    end
+    @user = current_user
+  end
+
+  def update
+    if current_user.id != params[:id].to_i
+      raise ActiveRecord::RecordNotFound
+    end
+    user = params[:user]
+    @user = current_user
+    details_changed = false
+    password_changed = false
+    if (@user.first_name != user[:first_name] ||
+        @user.last_name  != user[:last_name]  ||
+        @user.email      != user[:email])
+      @user.first_name = user[:first_name]
+      @user.last_name  = user[:last_name]
+      @user.email      = user[:email]
+      details_changed  = true
+    end
+    if (user[:password] = user[:password_confirmation])
+      @user.password              = user[:password]
+      @user.password_confirmation = user[:password_confirmation]
+      password_changed = true
+    end
+    if (details_changed || password_changed)
+      if @user.save
+        if (password_changed)
+          flash[:notice] = 'Your account details have been updated, including password.'
+        else
+          flash[:notice] = 'Your account details have been updated.'
+        end
+        redirect_to @user
+      else
+        flash[:error] = 'Error updating account.'
+        @user = current_user
+        render :action => :edit
+      end
+    else
+      flash[:notice] = 'Your account details have not changed.'
+      render :action => :edit
+    end
+  end
 
 end
 

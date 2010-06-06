@@ -5,7 +5,7 @@ gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
-gem 'haml', :git => 'http://github.com/DohMoose/haml.git' # Use untill the following issue is resolved http://github.com/nex3/haml/issues/issue/190
+gem 'haml', :git => 'http://github.com/DohMoose/haml.git' # Use until the following issue is resolved http://github.com/nex3/haml/issues/issue/190
 gem 'compass'
 gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
 gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
