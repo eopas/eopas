@@ -3,6 +3,8 @@ Feature: Website needs static content
   As an admin
   I want to be able to add static pages
 
+  Background:
+    Given the application is set up
 
   Scenario: Home Page exists
     When I go to the home page

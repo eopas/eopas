@@ -2,6 +2,7 @@ Feature: Media
   In order to utilise transcripts
   As a user
   I want to upload audio and video files
+
   Background:
     Given the application is set up
       And a user: "johnf" exists with email: "johnf@inodes.org", first_name: "John", last_name: "Ferlito"
