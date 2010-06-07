@@ -1,6 +1,7 @@
 require 'paperclip_bug_fixes'
 class MediaItem < ActiveRecord::Base
   belongs_to :depositor, :class_name => 'User'
+  before_save :create_item_id
 
   include Paperclip
   has_attached_file :original,
@@ -36,4 +37,18 @@ class MediaItem < ActiveRecord::Base
   validates_attached_video :original
 
   PRESENTER_ROLES = ['speaker', 'singer', 'signer']
+
+  protected
+  def create_item_id
+    prefix = AppConfig.item_prefix || ""
+    basename = original_file_name[/^([^.]+)\./, 1]
+    id=0
+    itemId = prefix+basename+"_"+String(id)
+    while MediaItem.find_by_item_id(itemId)
+      id+=1
+      itemId = prefix+basename+"_"+String(id)
+    end
+    self.item_id = itemId
+  end
+
 end

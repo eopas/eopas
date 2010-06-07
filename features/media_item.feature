@@ -31,6 +31,7 @@ Feature: Media
      And I press "Create"
     Then I should see "Media item was successfully created"
      And there should be 1 delayed job
+     And I should see "eopas_test_0" within "tr#item_id"
      And I should see "Test Video" within "tr#title"
      And I should see "John Ferlito" within "tr#depositor"
      And I should see "2010-03-31" within "tr#recorded_at"

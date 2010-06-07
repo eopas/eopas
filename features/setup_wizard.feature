@@ -14,6 +14,7 @@ Feature: Initial Application Setup
     When I fill in "Email" with "johnf@inodes.org"
      And I fill in "Password" with "moocow"
      And I fill in "Password confirmation" with "moocow"
+     And I fill in "Item prefix" with "eopas_"
      And I press "Finish"
     Then I should be on the homepage
      And I should see "The site has been set up and the admin user created - please log in."

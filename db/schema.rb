@@ -57,6 +57,8 @@ ActiveRecord::Schema.define(:version => 20100606070341) do
     t.boolean  "original_processing"
   end
 
+  add_index "media_items", ["item_id"], :name => "index_media_items_on_item_id", :unique => true
+
   create_table "users", :force => true do |t|
     t.string   "email",                              :null => false
     t.string   "crypted_password",                   :null => false

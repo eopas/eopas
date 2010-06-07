@@ -27,6 +27,7 @@ class MediaItem < ActiveRecord::Migration
       # creation and update timestamps
       t.timestamps
     end
+    add_index :media_items, :item_id, :unique => true
 
   end
 
