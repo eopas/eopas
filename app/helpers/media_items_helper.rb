@@ -9,7 +9,7 @@ module MediaItemsHelper
     options[:src] = media_item.original.url(:standard)
     options[:poster] = media_item.original.url(:poster)
 
-    if block_given? 
+    if block_given?
       content_tag :video, yield, options
     else
       content_tag 'video', nil, options

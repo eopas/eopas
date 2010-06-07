@@ -9,7 +9,7 @@ class MediaItem < ActiveRecord::Base
       :standard => {
         :format     => :ogg,
         :geometry   => '320x240',
-        :processors => [:kickvideo_encoder],
+        :processors => [ :kickvideo_encoder ],
       },
       :poster => {
         :format     => :png,
@@ -20,7 +20,7 @@ class MediaItem < ActiveRecord::Base
       :thumbnail => {
         :format     => :png,
         :position   => 5,
-        :geometry   => '150x100',
+        :geometry   => '160x120',
         :processors => [ :kickvideo_thumbnailer ],
       }
     }
