@@ -7,13 +7,13 @@ class Admin::SetupWizardsController < ApplicationController
   end
 
   def create
-    @user = User.new(params)
+    AppConfig.item_prefix = params[:item_prefix]
 
+    @user = User.new(params)
     @user.add_role(:admin)
     @user.confirm!
-
     if @user.save
-      flash[:notice] = "Log in as the admin user"
+      flash[:notice] = "The site has been set up and the admin user created - please log in."
     end
 
     AppConfig.setup_completed = true

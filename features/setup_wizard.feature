@@ -16,7 +16,7 @@ Feature: Initial Application Setup
      And I fill in "Password confirmation" with "moocow"
      And I press "Finish"
     Then I should be on the homepage
-     And I should see "Log in as the admin user"
+     And I should see "The site has been set up and the admin user created - please log in."
     When I follow "Login"
     When I fill in "Email" with "johnf@inodes.org"
      And I fill in "Password" with "moocow"

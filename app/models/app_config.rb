@@ -1,7 +1,7 @@
 class AppConfig < ActiveRecord::Base
 
   validates_presence_of :name, :value
-  validates_inclusion_of :name, :in => ['setup_completed']
+  validates_inclusion_of :name, :in => ['setup_completed','item_prefix']
 
   serialize :value, Hash
 

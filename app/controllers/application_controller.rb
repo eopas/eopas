@@ -23,17 +23,16 @@ class ApplicationController < ActionController::Base
   end
 
   protected
-   protected
-   def permission_denied
-     if current_user
-       flash[:error] = "Sorry, you are not allowed to access that page."
-       redirect_to root_url
-     else
-       store_location
-       flash[:error] = "You must be logged in to access that page."
-       redirect_to login_path
-     end
-   end
+  def permission_denied
+    if current_user
+      flash[:error] = "Sorry, you are not allowed to access that page."
+      redirect_to root_url
+    else
+      store_location
+      flash[:error] = "You must be logged in to access that page."
+      redirect_to login_path
+    end
+  end
 
 
 end

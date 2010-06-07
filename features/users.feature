@@ -14,7 +14,7 @@ Feature: Authentication and Authorisation
     When I go to the homepage
     And I follow "Register"
     Then I should see "Email"
-    When I fill in "Email" with "johnf@inodes.org"
+    When I fill in "Email" with "johnf@inodes.org" within "#email"
     And I fill in "First name" with "John"
     And I fill in "Last name" with "Ferlito"
     And I fill in "Password" with "moocow"

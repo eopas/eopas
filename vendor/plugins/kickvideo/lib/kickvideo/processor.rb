@@ -11,7 +11,7 @@ module Kickvideo
           #Kickvideo::Notifier.deliver_processing_error(@attachment.instance, @attachment, cmd, output)
           raise Kickvideo::ProcessingError, "Error while running #{cmd} - #{output}"
         end
-        
+
         output
       end
 

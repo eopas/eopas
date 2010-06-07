@@ -1,33 +1,33 @@
 %fieldset
 
   %table#metadata
-    %tr
+    %tr#firstname
       %td#name
-        = label_tag :first_name
+        = form.label :first_name
       %td#value
         = form.text_field :first_name, :class => 'text'
 
-    %tr
+    %tr#lastname
       %td#name
-        = label_tag :last_name
+        = form.label :last_name
       %td#value
         = form.text_field :last_name, :class => 'text'
 
-    %tr
+    %tr#email
       %td#name
-        = label_tag :email
+        = form.label :email
       %td#value
         = form.text_field :email, :class => 'text'
 
-    %tr
+    %tr#password
       %td#name
-        = label_tag :password, form.object.new_record? ? nil : "Change password"
+        = form.label :password, form.object.new_record? ? nil : "Change password"
       %td#value
         = form.password_field :password
 
-    %tr
+    %tr#passwordconfirmation
       %td#name
-        = label_tag :password_confirmation
+        = form.label :password_confirmation
       %td#value
         = form.password_field :password_confirmation
 
