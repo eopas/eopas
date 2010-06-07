@@ -127,6 +127,30 @@ table#metadata {
   td#content{
   }
 }
+table.small {
+  td {
+    padding: 0px 4px;
+    font-family: Arial;
+    font-size: 12px;
+  }
+}
+
+#media_item {
+  #media_display {
+    position: absolute;
+    display: block;
+  }
+  #metadata_display {
+    display: block;
+    margin-left: 370px;
+    table#metadata {
+      width: 400px;
+      border-style: groove;
+      border-width: 2px;
+      border-radius: 5px;
+    }
+  }
+}
 
 #footer {
   text-align: center;

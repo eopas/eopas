@@ -32,7 +32,7 @@ Feature: Media
     Then I should see "Media item was successfully created"
      And there should be 1 delayed job
      And I should see "eopas_test_0" within "tr#item_id"
-     And I should see "Test Video" within "tr#title"
+     And I should see "Test Video" within "h3"
      And I should see "John Ferlito" within "tr#depositor"
      And I should see "2010-03-31" within "tr#recorded_at"
      And I should see "John Ferlito" within "tr#annotator_name"
@@ -42,7 +42,7 @@ Feature: Media
      And I should see "John Ferlito" within "tr#copyright"
      And I should see "CC-AU-BY-SA" within "tr#license"
      And I should see "false" within "tr#private"
-     And I should see "is being transcoded"
+     And I should see the image "missing.png" within "#media_display"
     When I process the delayed jobs
     Then there should be 0 delayed jobs
     When I go to the media items page
