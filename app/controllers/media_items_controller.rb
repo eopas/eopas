@@ -27,7 +27,12 @@ class MediaItemsController < ApplicationController
   end
 
   def show
-    @media_item = current_user.media_items.find params[:id]
+    @media_item = MediaItem.find(params[:id])
+    # TODO: JF add a named scope
+    if (@media_item.private == true && current_user != @media_item.depositor)
+      flash[:notice] = 'You are not allowed to access this content.'
+      redirect_back_or_default root_url
+    end
   end
 
 end

@@ -5,7 +5,7 @@ Feature: Media
 
   Background:
     Given the application is set up
-      And a user: "johnf" exists with email: "johnf@inodes.org", first_name: "John", last_name: "Ferlito"
+      And a user: "johnf" exists
       And I am logged in as the user "johnf"
       And I mock paperclip for "ffmpeg -i /tmp/paperclip-reprocess,27297,0 -ar 22050 -ab 64k -async 2 -acodec libvorbis -b 512k -bt 512k -r 30 -threads 0 -vcodec libtheora -padtop 30 -padright 0 -padbottom 30 -padleft 0 -s 320x180 -f ogg -y /tmp/paperclip-reprocess,27297,0-encoded,27297,0"
 
@@ -49,6 +49,15 @@ Feature: Media
     Then I should see "Test Video"
     When I follow "Test Video"
     Then I should not see "Video is being transcoded"
+
+
+  Scenario: Private video cannot be accessed by another user
+   Given a user: "silvia" exists with email: "silvia@doe.com"
+     And a media item exists with depositor: user "silvia"
+    When I am on that media item's page
+    Then I should see "You are not allowed to access this content."
+     And I should not see "test video"
+
 
 
 #    And   a user: "silvia" exists with email: "silvia@doe.com"

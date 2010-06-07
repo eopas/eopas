@@ -1,3 +1,17 @@
+
+# Paperclip attachments in factories, made easy based on technicalpickles
+# TODO: JF clean up
+Factory.class_eval do
+  def attach(name, path, content_type = nil)
+    if content_type
+      add_attribute name, Rack::Test::UploadedFile.new("#{RAILS_ROOT}/#{path}", content_type)
+    else
+      add_attribute name, Rack::Test::UploadedFile.new("#{RAILS_ROOT}/#{path}")
+    end
+  end
+end
+
+
 Factory.define :user do |u|
   u.email 'johnf@inodes.org'
   u.password 'really_secret'
@@ -13,3 +27,11 @@ Factory.define :unconfirmed_user, :parent => :user do |u|
   u.confirmed_at nil
 end
 
+Factory.define :media_item do |m|
+  m.title 'test video'
+  m.private true
+  m.recorded_at Time.now
+  m.language_code 'en'
+  m.license 'PD'
+  m.attach( "original", "features/test_data/test.m4v", "video/mp4" )
+end
