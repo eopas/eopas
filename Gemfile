@@ -7,7 +7,7 @@ gem 'mysql'
 
 gem 'haml', :git => 'http://github.com/DohMoose/haml.git' # Use until the following issue is resolved http://github.com/nex3/haml/issues/issue/190
 gem 'compass'
-gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
+gem 'authlogic'
 gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'delayed_paperclip'
