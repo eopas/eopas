@@ -3,7 +3,7 @@ source 'http://gemcutter.org'
 
 gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'mysql'
 
 gem 'haml', :git => 'http://github.com/DohMoose/haml.git' # Use until the following issue is resolved http://github.com/nex3/haml/issues/issue/190
 gem 'compass'
@@ -16,6 +16,7 @@ gem 'delayed_job', :git => 'git://github.com/collectiveidea/delayed_job.git'
 #gem 'exception_notifier'
 
 group :cucumber do
+    gem 'sqlite3-ruby', '!= 1.3.0', :require => 'sqlite3'
     gem 'capybara'
     gem 'database_cleaner'
     gem 'cucumber-rails'
