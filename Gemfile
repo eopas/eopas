@@ -9,7 +9,7 @@ gem 'haml', :git => 'http://github.com/DohMoose/haml.git' # Use until the follow
 gem 'compass'
 gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
 gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
-gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git', :branch => 'rails3'
+gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'delayed_paperclip'
 gem 'delayed_job', :git => 'git://github.com/collectiveidea/delayed_job.git'
 
@@ -20,7 +20,7 @@ group :cucumber do
     gem 'database_cleaner'
     gem 'cucumber-rails'
 
-    gem 'rspec-rails', '2.0.0.beta.10'
+    gem 'rspec-rails', '2.0.0.beta.14.2'
 
     gem 'spork'
     gem 'launchy'
