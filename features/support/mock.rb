@@ -1,7 +1,7 @@
 require "rspec/mocks"
 
 Before do
-  $rspec_mocks ||= Rspec::Mocks::Space.new
+  $rspec_mocks ||= RSpec::Mocks::Space.new
 end
 
 After do

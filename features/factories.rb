@@ -4,9 +4,9 @@
 Factory.class_eval do
   def attach(name, path, content_type = nil)
     if content_type
-      add_attribute name, Rack::Test::UploadedFile.new("#{RAILS_ROOT}/#{path}", content_type)
+      add_attribute name, Rack::Test::UploadedFile.new("#{Rails.root}/#{path}", content_type)
     else
-      add_attribute name, Rack::Test::UploadedFile.new("#{RAILS_ROOT}/#{path}")
+      add_attribute name, Rack::Test::UploadedFile.new("#{Rails.root}/#{path}")
     end
   end
 end
