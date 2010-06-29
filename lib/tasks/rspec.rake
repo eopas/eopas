@@ -1,8 +1,8 @@
 begin
   require 'rspec/core'
   require 'rspec/core/rake_task'
-rescue MissingSourceFile 
-  module Rspec
+rescue MissingSourceFile
+  module RSpec
     module Core
       class RakeTask
         def initialize(name)
@@ -28,7 +28,7 @@ end
 
 Rake.application.instance_variable_get('@tasks').delete('default')
 
-spec_prereq = File.exist?(File.join(Rails.root, 'config', 'database.yml')) ? "db:test:prepare" : :noop
+spec_prereq = Rails.root.join('config', 'database.yml').exist? ? "db:test:prepare" : :noop
 task :noop do
 end
 
@@ -36,12 +36,12 @@ task :default => :spec
 task :stats => "spec:statsetup"
 
 desc "Run all specs in spec directory (excluding plugin specs)"
-Rspec::Core::RakeTask.new(:spec => spec_prereq)
+RSpec::Core::RakeTask.new(:spec => spec_prereq)
 
 namespace :spec do
-  [:requests, :models, :controllers, :views, :helpers, :mailers, :lib].each do |sub|
+  [:requests, :models, :controllers, :views, :helpers, :mailers, :lib, :routing].each do |sub|
     desc "Run the code examples in spec/#{sub}"
-    Rspec::Core::RakeTask.new(sub => spec_prereq) do |t|
+    RSpec::Core::RakeTask.new(sub => spec_prereq) do |t|
       t.pattern = "./spec/#{sub}/**/*_spec.rb"
     end
   end

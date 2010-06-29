@@ -3,4 +3,4 @@ Eopas::Application.configure do
     g.integration_tool :rspec
     g.test_framework   :rspec
   end
-end
+end if defined? Eopas::Application
