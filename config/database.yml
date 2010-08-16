@@ -1,27 +1,23 @@
-# SQLite version 3.x
-#   gem install sqlite3-ruby (not necessary on OS X Leopard)
-development:
-  adapter: mysql
-  database: eopas_prod
-  user: root
-  password: eopas2010
-  pool: 5
-  timeout: 5000
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test: &TEST
-  adapter: sqlite3
-  database: db/test.sqlite
+
+# Common settings for all DBs
+common: &COMMON
+  encoding: utf8
   pool: 5
   timeout: 5000
+  adapter: sqlite3
 
 production:
-  adapter: sqlite3
+  <<: *COMMON
   database: db/production.sqlite
-  pool: 5
-  timeout: 5000
+
+development:
+  <<: *COMMON
+  database: db/development.sqlite
+
+test: &TEST
+  <<: *COMMON
+  database: db/test.sqlite
 
 cucumber:
   <<: *TEST
