@@ -38,7 +38,7 @@ module Kickvideo #:nodoc:
     def make
       return unless inspector.video?
 
-      returning Paperclip::Tempfile.new(@file.path + '-encoded') do |dst|
+      Paperclip::Tempfile.new(@file.path + '-encoded').tap do |dst|
         dst.binmode
         run ffmpeg_command(dst.path)
         run qt_faststart(dst.path) if needs_qt_faststart?

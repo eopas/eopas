@@ -11,7 +11,7 @@ module Kickvideo #:nodoc:
     def make
       return unless inspector.video?
 
-      returning Paperclip::Tempfile.new("#{@file.path}.#{options[:format]}") do |dst|
+      Paperclip::Tempfile.new("#{@file.path}.#{options[:format]}").tap do |dst|
         dst.binmode
         run ffmpeg_command(dst.path)
       end

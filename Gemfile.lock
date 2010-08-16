@@ -10,6 +10,13 @@ GIT
       term-ansicolor (~> 1.0.5)
 
 GIT
+  remote: git://github.com/johnf/rack-test.git
+  revision: 0490800
+  specs:
+    rack-test (0.5.4)
+      rack (>= 1.0)
+
+GIT
   remote: git://github.com/rails/rails.git
   revision: aaec007
   specs:
@@ -122,8 +129,6 @@ GEM
     rack (1.2.1)
     rack-mount (0.6.9)
       rack (>= 1.0.0)
-    rack-test (0.5.4)
-      rack (>= 1.0)
     rake (0.8.7)
     rspec (2.0.0.beta.19)
       rspec-core (= 2.0.0.beta.19)
@@ -174,6 +179,7 @@ DEPENDENCIES
   mysql
   paperclip
   pickle
+  rack-test!
   rails!
   rspec-rails (= 2.0.0.beta.19)
   spork

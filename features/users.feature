@@ -27,6 +27,7 @@ Feature: Authentication and Authorisation
     Then I should see "Your account has been activated"
     And I should see "John Ferlito"
     And I should see "Logout"
+    And show me the page
     When I follow "Logout"
     And I follow "Login"
     And I fill in "Email" with "johnf@inodes.org"
