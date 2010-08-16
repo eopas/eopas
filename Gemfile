@@ -7,7 +7,7 @@ gem 'mysql'
 
 gem 'haml'
 gem 'compass'
-gem 'authlogic'
+gem 'authlogic', :git => 'http://github.com/odorcicd/authlogic.git', :branch => 'rails3'
 gem 'declarative_authorization'
 gem 'paperclip'
 gem 'delayed_paperclip'
@@ -19,6 +19,7 @@ group :cucumber do
     gem 'sqlite3-ruby'
     gem 'capybara'
     gem 'database_cleaner'
+    gem 'cucumber', :git => 'git://github.com/aslakhellesoy/cucumber.git' # waiting on bugfix for http://github.com/aslakhellesoy/cucumber-rails/issues/issue/52
     gem 'cucumber-rails'
 
     gem 'rspec-rails', '2.0.0.beta.19'

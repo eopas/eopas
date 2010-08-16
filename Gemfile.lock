@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/aslakhellesoy/cucumber.git
+  revision: 06aa77f
+  specs:
+    cucumber (0.9.0)
+      builder (~> 2.1.2)
+      diff-lcs (~> 1.1.2)
+      gherkin (~> 2.2.0)
+      json_pure (~> 1.4.3)
+      term-ansicolor (~> 1.0.5)
+
+GIT
   remote: git://github.com/rails/rails.git
   revision: aaec007
   specs:
@@ -42,14 +53,20 @@ GIT
       rake (>= 0.8.3)
       thor (~> 0.14.0)
 
+GIT
+  remote: http://github.com/odorcicd/authlogic.git
+  revision: a087ad0
+  branch: rails3
+  specs:
+    authlogic (2.1.3)
+      activesupport
+
 GEM
   remote: http://gemcutter.org/
   specs:
     abstract (1.0.0)
     arel (0.4.0)
       activesupport (>= 3.0.0.beta)
-    authlogic (2.1.6)
-      activesupport
     builder (2.1.2)
     capybara (0.3.9)
       culerity (>= 0.2.4)
@@ -61,12 +78,6 @@ GEM
     compass (0.10.4)
       haml (>= 3.0.4)
     configuration (1.1.0)
-    cucumber (0.8.5)
-      builder (~> 2.1.2)
-      diff-lcs (~> 1.1.2)
-      gherkin (~> 2.1.4)
-      json_pure (~> 1.4.3)
-      term-ansicolor (~> 1.0.4)
     cucumber-rails (0.3.2)
       cucumber (>= 0.8.0)
     culerity (0.2.10)
@@ -84,7 +95,7 @@ GEM
     factory_girl (1.3.2)
     ffi (0.6.3)
       rake (>= 0.8.7)
-    gherkin (2.1.5)
+    gherkin (2.2.0)
       trollop (~> 1.16.2)
     haml (3.0.17)
     i18n (0.4.1)
@@ -148,9 +159,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  authlogic
+  authlogic!
   capybara
   compass
+  cucumber!
   cucumber-rails
   database_cleaner
   declarative_authorization
