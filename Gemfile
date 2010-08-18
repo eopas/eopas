@@ -7,7 +7,7 @@ gem 'mysql'
 
 gem 'haml'
 gem 'compass'
-gem 'authlogic', :git => 'http://github.com/odorcicd/authlogic.git', :branch => 'rails3'
+gem 'authlogic', :git => 'http://github.com/rballast/authlogic.git', :branch => 'rails3'
 gem 'declarative_authorization'
 gem 'paperclip'
 gem 'delayed_paperclip'

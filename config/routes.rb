@@ -12,7 +12,7 @@ Eopas::Application.routes.draw do |map|
   # Auth
   map.login  'login',  :controller => 'user_sessions', :action => 'new'
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
-  map.resource :user_sessions
+  map.resource :user_session
 
   # User
   map.resources :users, :member => {:confirm => :get}
