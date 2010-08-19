@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp1 (http://www.altova.com) by Ronald S (UQ ITEE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://wiki.arts.unimelb.edu.au/ethnoer/toolbox/1.0/" targetNamespace="http://wiki.arts.unimelb.edu.au/ethnoer/toolbox/1.0/" elementFormDefault="qualified">
+  <xs:element name="database">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="itmGroup" minOccurs="0"/>
+        <xs:element ref="itmgroup" minOccurs="0"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="itmGroup">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="itm" minOccurs="0"/>
+        <xs:element ref="nt" minOccurs="0"/>
+        <xs:element ref="aud" minOccurs="0"/>
+        <xs:element ref="idGroup" maxOccurs="unbounded"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="itmgroup">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="itm" minOccurs="0"/>
+        <xs:element ref="nt" minOccurs="0"/>
+        <xs:element ref="aud" minOccurs="0"/>
+        <xs:element ref="idgroup" maxOccurs="unbounded"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="itm"/>
+  <xs:element name="nt"/>
+  <xs:element name="aud"/>
+  <xs:element name="idGroup">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="id"/>
+        <xs:element ref="txGroup" maxOccurs="unbounded"/>
+        <xs:element ref="fg"/>
+        <xs:element ref="aud"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="idgroup">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="id"/>
+        <xs:element ref="txgroup" maxOccurs="unbounded"/>
+        <xs:element ref="fg"/>
+        <xs:element ref="aud"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id"/>
+  <xs:element name="txGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tx"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:sequence>
+            <xs:element ref="mr"/>
+            <xs:element ref="mg"/>
+          </xs:sequence>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="txgroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tx"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:sequence>
+            <xs:element ref="mr"/>
+            <xs:element ref="mg"/>
+          </xs:sequence>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tx"/>
+  <xs:element name="mr"/>
+  <xs:element name="mg"/>
+  <xs:element name="fg"/>
+</xs:schema>

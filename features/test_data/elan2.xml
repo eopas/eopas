@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DATE="2006-10-16T11:59:34+10:00" AUTHOR="" VERSION="2.3" FORMAT="2.3">
+  <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+    <MEDIA_DESCRIPTOR MEDIA_URL="file:///Volumes/Temporary Holding Space/Tom (EthnoER tape)/GKC_NAME_trimmed.dv" MIME_TYPE="unknown"/>
+  </HEADER>
+  <TIME_ORDER>
+    <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="0"/>
+    <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="74995"/>
+    <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="74995"/>
+    <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="139006"/>
+    <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="139006"/>
+    <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="202006"/>
+    <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="202028"/>
+    <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="305008"/>
+    <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="305026"/>
+    <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="369006"/>
+    <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="369011"/>
+    <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="423001"/>
+    <TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="423006"/>
+    <TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="488002"/>
+    <TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="488002"/>
+    <TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="537002"/>
+    <TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="537010"/>
+    <TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="584000"/>
+    <TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="584016"/>
+    <TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="650006"/>
+    <TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="650019"/>
+    <TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="718008"/>
+    <TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="718008"/>
+    <TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="769008"/>
+    <TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="769013"/>
+    <TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="857003"/>
+    <TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="857015"/>
+    <TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="936001"/>
+    <TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="936001"/>
+    <TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="991001"/>
+    <TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="991019"/>
+    <TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="1069001"/>
+  </TIME_ORDER>
+  <TIER TIER_ID="NeparrŋaGumbula" PARTICIPANT="Neparrŋa Gumbula" LINGUISTIC_TYPE_REF="utterance" DEFAULT_LOCALE="en">
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+        <ANNOTATION_VALUE>Names … My name is Joe Neparrŋa Gumbula and I’m to open up the set up of the Knowledge Centre—how we’re going to store a Yolŋu nurrku (intelligence) and wayawu (pathway) and that’s a Knowledge Centre; how the philosophy of Yolŋu knowledge can go forward through this technology—and to clarify and understand this module—the role of the responsibility of Yolŋu creative things—that wasn’t stated in the history of the Yolŋu world, Dhuwa and Yirritja.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+        <ANNOTATION_VALUE>From my perspective, I’m just talking about the gurrutu (kinship) system, name system—how we finalise the names of people; how they were doing it for 40,000 years or more than that—and this is the structure that actually named the name of a person, particular names, and our structure, the lining up a giving a name, it was not adopted names. The names were given to the land and the places and the reŋgitj (nations) of Dhuwa and Yirritja moiety through the creation of the land. I just want to put this clearly, now I’m going to the Gupapuyŋu stage.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+        <ANNOTATION_VALUE>[Translation from Yolŋu-Matha] Good, I am now going to clarify some types of name to be identified in accordance with our naming system. We are now doing something that our elders before us did not have included in English texts. Our elders only spoke about things like the marks on a letter stick or on skin. This is what we are doing now because we still know all about the pattern work applied to letter sticks. Their leftover scrapings represent our authority to take on this knowledge and share it with others. Whether it be public, sheltered or restricted or whether pertain to someone who has passed away, they had that authority. From the beginning, their authority was in the pattern work of those letter sticks and other peoples immediately recognised their patterns.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+        <ANNOTATION_VALUE>[Translation from Yolŋu-Matha] Good, the work of this Knowledge Centre is to explore these empty spaces not addressed before. We are now going to mend holes in the written record of our knowledge. None stopped to understand properly our world view. Elders of each group at Galiwin’ku and Miliŋinbi were in village councils and were greatly preoccupied with local governance under the Commonwealth but, from the perspective of our own law, we should now be recognised by all institutions and libraries because what we propose is good for all. The hereditary owners of our law, paintings, language and dances already held in collections internationally play only small roles in their use.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+        <ANNOTATION_VALUE>[Translation from Yolŋu-Matha] From my own Gupapuyŋu perspective, from my nephews’ and nieces’, and for you other leaders, we are the contemporary experts in this law and we are now in the twenty-first century. We need to bring our materials from the last century into our own archives. We know how to archive this goal within our own legal framework. We are going to work towards this achievement for all to see, and everyone should know how our materials are to be managed in accordance with Yolŋu law under our authority. Using names as an example, this how we want to rectify the record of our knowledge.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+        <ANNOTATION_VALUE>[Translation from Yolŋu-Matha] I am a son of Djäwa and this is what I have learnt from my elders from the beginning. I am following their authority to explain how our names are structured. I am leaving this record for the next generation. Our laws still exist for both Dhuwa and Yirritja. This is where I am going to begin. I will explain these concepts in my adopted tongue, English, as well. I am now speaking in my mother’s tongue, Djambarrpuyŋu but, later, I will speak in my own tongue, Gupapuyŋu.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+        <ANNOTATION_VALUE>Manymak (Good), names … Okay then, I just want to clarify some of this model here. This is towards the individual’s name. Manymak (Good), (1) the Given Name is a foreign word. (2) Name, Number Two Name, is within the group. That clarifies within the group. (3) Surname is clarified within the group. (4) Dhumurruŋu Name is clarified within the group. (5) Subject Name is clarified in a group. A group’s meaning is a clan of people, the clan group, the mala (patrifilial group), the bäpurru (patrifilial group) … mala and bäpurru is the same group.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+        <ANNOTATION_VALUE>Yo (Yes), so I am writing here ‘it’s a Gupapuyŋu group’: the Gupapuyŋu group, Daygurrgurr. Again, Gupapuyŋu is a people: a group of people there. Daygurrgurr represents a catfish: a tribe within the catfish. We’ll come to this later on through Gupapuyŋu totems.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a9" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts18">
+        <ANNOTATION_VALUE>(1) Number One is the Given Name. The Given Name is a … because of this nature we’re talking about, during the establishment of the mission’s centralising idea came in. You’ve got to turn in the hospital. Get a birth certificate or whatever. Yo (Yes), those kinds of thing. Now, because of that and I’m in this area now: this generation. 40 years ago I wasn’t going to do this or, you know, 50 years ago because I sort of recognised myself to the public to the other constitution. The other law that is Balanda (Anglo-Australian) law: the European, the Western world.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a10" TIME_SLOT_REF1="ts19" TIME_SLOT_REF2="ts20">
+        <ANNOTATION_VALUE>Okay then, so I was in a hospital. I got to register my name and that register is the same like for people coming as a migrant in the 1950s. They came over to Australia and we said, ‘you have to be registering yourself’, and start registering people and start registering what speaking language you are. You will have your culture but your speaking language will be common language for most Australians which means that was English. Same goes. Then my given name was ‘Joe’. So my parents gave me a name, Djäwa and Eva Maraŋiny, my mother—I’m Gupapuyŋu and my mother is Djambarrpuyŋu—they gave me a name, ‘Joe’: Balanda (Anglo) Name, Given Name. It’s a foreign name. This is not my name.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts22">
+        <ANNOTATION_VALUE>(2) Then they, secondly, gave me a Yolŋu Name. My Yolŋu Name was ‘Neparrŋa’. ‘Neparrŋa’ means in Yolŋu philosophy, the Yolŋu academic system, Yirritja and Dhuwa … Our names are given as very unique names which represent something: a nature. They represent the land. They represent the species. Accordingly, those are my whole family too. They represent us. We represent them. This is, for instance, they gave me the name ‘Neparrŋa’. It’s a Hammerhead Shark. Everybody knows that Hammerhead Shark. ‘Garraŋunuŋ’ is the other word. ‘Garraŋunuŋ’ is another one. Its name’s ‘Neparrŋa’. ‘Neparrŋa’ is his name, ‘Garraŋunuŋ’.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a12" TIME_SLOT_REF1="ts23" TIME_SLOT_REF2="ts24">
+        <ANNOTATION_VALUE>(3) The Surname … Later in the 1970s they created, ‘We will have a Surname’ like John Douglas Amos so on. You have these long names but where do the surnames fit in? That is a bit of a … I think surnames will go later on. I’ll show you surnames later on. Anyway, the surnames which I collected, whether it’s ‘Gumbula’ or ‘Gaykamaŋu’, they’re still on one line lining up. This is still the bush ‘Honey’. This is still the bush ‘Honey’ and my surname represents the ‘Honey’ which is ‘Gumbula’.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+        <ANNOTATION_VALUE>(4) Next, the Elders of the clan … The father actually asks the Elders of the clan, ‘What will be his other name?’ The other name is compared to the landlords or the land owner who holds the whole of the land—a big block of acres of land which the Gupapuyŋu have and those land have—and those lands have Bundurr Names and that represents, when someone’s passed away, you are already automatically fitted into that category. Someone has it because you’re a Bundurr, you’re a ‘Gaykamaŋu’, you’re a ‘Gumbula’ but the land holds another Bundurr which they will give me under the land’s surname. It’s all held by the Gupapuyŋu people but we are also separate sorts of people whose landlords are named after the Dhumurruŋu Name.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+        <ANNOTATION_VALUE>This is the bigger name, higher on the rank, which calls us like the landlords through which I will call myself ‘Guduwulumirri’ and the ‘Guduwulumirri’ surname is where the Lake Evella township is. It’s a lake and my surname as a landlord is not Djiliwirri because all of our people are from Djiliwirri, all of us, and some of the few people’s, my father’s, land is Lake Evella where the lake is, Gapuwiyak So his Dhumurruŋu Name is ‘Dhäwirrŋu’ and could be mine could be the same Dhumurruŋu Name instead of ‘Dhäwirrŋu’ but I have to go and pick another word for that. There are hundreds of meanings in the name of that lake itself so I’ll call myself, my Dhumurruŋu Surname is, ‘Guduwulumirri’.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a15" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+        <ANNOTATION_VALUE>(5) Yo (Yes), my Subject Name is, because my father is Gutjuk—this is the Skin Name now or a Subject Name—and as a son for Gutjuk—my mother is Wamuttjan and my father is Gutjuk so, from that nature, a son or a daughter would be a Ŋarritj or a Ŋarritjan—so my Subject Name is Ŋarritj Mälk (Skin). Yo (Yes) and, the relationships of that, that’s all I’ve discovered.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts32">
+        <ANNOTATION_VALUE>Now these are the things that the Knowledge Centre will have now. Some are still walking around with their culture already evacuated in some areas that some were affected with the customary law and that’s not been well followed these guidelines. So this is the Knowledge Centre’s footstep and vision, and time structure of this kind that we’ll do in this time now and this hasn’t been written. You could see or hear, or get any sort of documentation that people have been getting hasn’t gone through this structure—a birth certificate for Yolŋu, yo (yes)—and, you know, you go down … I can go and get myself a passport with all of this written and this means the government will see and this means the agency will see. This means any other organisation in Australia will see. They will see this. This will happen to any particular Yolŋu people here now and this is what the Knowledge Centre’s doing now.</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+  <LINGUISTIC_TYPE LINGUISTIC_TYPE_ID="utterance" TIME_ALIGNABLE="true" GRAPHIC_REFERENCES="false"/>
+  <LOCALE LANGUAGE_CODE="en" COUNTRY_CODE="US"/>
+  <CONSTRAINT STEREOTYPE="Time_Subdivision" DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval"/>
+  <CONSTRAINT STEREOTYPE="Symbolic_Subdivision" DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered"/>
+  <CONSTRAINT STEREOTYPE="Symbolic_Association" DESCRIPTION="1-1 association with a parent annotation"/>
+  <CONSTRAINT STEREOTYPE="Included_In" DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed"/>
+</ANNOTATION_DOCUMENT>

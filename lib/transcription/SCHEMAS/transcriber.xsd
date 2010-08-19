@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:element name="Trans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="Speakers"/>
+          <xs:element ref="Topics"/>
+        </xs:choice>
+        <xs:element ref="Episode"/>
+      </xs:sequence>
+      <xs:attribute name="audio_filename" type="xs:anySimpleType"/>
+      <xs:attribute name="scribe" type="xs:anySimpleType"/>
+      <xs:attribute ref="xml:lang"/>
+      <xs:attribute name="version" type="xs:NMTOKEN"/>
+      <xs:attribute name="version_date" type="xs:anySimpleType"/>
+      <xs:attribute name="elapsed_time" type="xs:anySimpleType" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Episode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Section" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="program" type="xs:anySimpleType"/>
+      <xs:attribute name="air_date" type="xs:anySimpleType"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Section">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Turn" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="nontrans"/>
+            <xs:enumeration value="filler"/>
+            <xs:enumeration value="report"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="topic" type="xs:IDREF"/>
+      <xs:attribute name="startTime" type="xs:anySimpleType" use="required"/>
+      <xs:attribute name="endTime" type="xs:anySimpleType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Turn">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Sync"/>
+        <xs:element ref="Background"/>
+        <xs:element ref="Comment"/>
+        <xs:element ref="Who"/>
+        <xs:element ref="Vocal"/>
+        <xs:element ref="Event"/>
+      </xs:choice>
+      <xs:attribute name="speaker" type="xs:IDREFS"/>
+      <xs:attribute name="startTime" type="xs:anySimpleType" use="required"/>
+      <xs:attribute name="endTime" type="xs:anySimpleType" use="required"/>
+      <xs:attribute name="mode">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="planned"/>
+            <xs:enumeration value="spontaneous"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="fidelity">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="low"/>
+            <xs:enumeration value="high"/>
+            <xs:enumeration value="medium"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="channel">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="telephone"/>
+            <xs:enumeration value="studio"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Sync">
+    <xs:complexType>
+      <xs:attribute name="time" type="xs:anySimpleType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Background">
+    <xs:complexType>
+      <xs:attribute name="time" type="xs:anySimpleType" use="required"/>
+      <xs:attribute name="type" type="xs:NMTOKENS" use="required"/>
+      <xs:attribute name="level" type="xs:NMTOKENS"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Who">
+    <xs:complexType>
+      <xs:attribute name="nb" type="xs:NMTOKEN" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vocal">
+    <xs:complexType>
+      <xs:attribute name="desc" type="xs:anySimpleType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Event">
+    <xs:complexType>
+      <xs:attribute name="type" default="noise">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="noise"/>
+            <xs:enumeration value="language"/>
+            <xs:enumeration value="entities"/>
+            <xs:enumeration value="lexical"/>
+            <xs:enumeration value="pronounce"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="extent" default="instantaneous">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="instantaneous"/>
+            <xs:enumeration value="next"/>
+            <xs:enumeration value="end"/>
+            <xs:enumeration value="previous"/>
+            <xs:enumeration value="begin"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="desc" type="xs:anySimpleType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Comment">
+    <xs:complexType>
+      <xs:attribute name="desc" type="xs:anySimpleType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Speaker" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Speaker">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="name" type="xs:anySimpleType" use="required"/>
+      <xs:attribute name="check">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="female"/>
+            <xs:enumeration value="unknown"/>
+            <xs:enumeration value="male"/>
+            <xs:enumeration value="child"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="dialect">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="nonnative"/>
+            <xs:enumeration value="native"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="accent" type="xs:anySimpleType"/>
+      <xs:attribute name="scope">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="global"/>
+            <xs:enumeration value="local"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Topics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Topic" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Topic">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="desc" type="xs:anySimpleType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
