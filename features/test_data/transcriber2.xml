@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Trans scribe="pdsc" audio_filename="98015a" version="15" version_date="041019"><Speakers><Speaker id="spk1" name="Endis Kalsarap" check="no" type="female" dialect="native" accent="South Efate" scope="global"/></Speakers><Episode><Section type="report" startTime="0" endTime="2819.599"><Turn startTime="0" endTime="2819.599" speaker="spk1" fidelity="high" mode="planned"><Sync time="0"/>
+<Trans scribe="pdsc" audio_filename="98015a" version="15" version_date="041019">
+  <Speakers>
+    <Speaker id="spk1" name="Endis Kalsarap" check="no" type="female" dialect="native" accent="South Efate" scope="global"/>
+  </Speakers>
+  <Episode>
+    <Section type="report" startTime="0" endTime="2819.599">
+      <Turn startTime="0" endTime="2819.599" speaker="spk1" fidelity="high" mode="planned">
+<Sync time="0"/>
 [lead in silence]
 <Sync time="5.868"/>
 id 31 October, Endis reading words
