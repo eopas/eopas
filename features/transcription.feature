@@ -33,6 +33,10 @@ Feature: Import and export transcription files
     When I validate the transcription "eopas1.xml" as an "eopas" format
     Then the transcription should be valid
 
+  Scenario:
+      When I validate the transcription "eopas1.xml" as an "elan" format
+      Then the transcription should not be valid
+
 # TRANSCODING
 #
   Scenario:
@@ -41,7 +45,6 @@ Feature: Import and export transcription files
 
 # IMPORTING
 #
-  @wip
   Scenario:
     Given a user: "johnf1" exists
     And I am logged in as the user "johnf1"
