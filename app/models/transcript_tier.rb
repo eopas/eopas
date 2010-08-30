@@ -1,0 +1,17 @@
+class TranscriptTier < ActiveRecord::Base
+  belongs_to :transcript
+
+  has_many :transcript_phrases
+
+  def to_s
+    "\ntranscript_tier {\n"+
+    "   id:              "+self.id.to_s+"\n"+
+    "   transcript:      "+self.transcript.to_s+"\n"+
+    "   parent_id:       "+self.parent_id.to_s+"\n"+
+    "   tier_id:         "+self.tier_id.to_s+"\n"+
+    "   participant:     "+self.participant.to_s+"\n"+
+    "   language:        "+self.language_code.to_s+"\n"+
+    "   linguistic_type: "+self.linguistic_type.to_s+"\n"+
+    "}\n"
+  end
+end

@@ -38,6 +38,19 @@ class MediaItem < ActiveRecord::Base
 
   PRESENTER_ROLES = ['speaker', 'singer', 'signer']
 
+  def to_s
+    "\nmedia_item {\n"+
+    "   id:         "+self.id.to_s+"\n"+
+    "   item_id:   "+self.item_id.to_s+"\n"+
+    "   title:     "+self.title.to_s+"\n"+
+    "   depositor: "+self.depositor.to_s+"\n"+
+    "   original:  "+self.original_file_name.to_s+"\n"+
+    "   annotator: "+self.annotator_name.to_s+"\n"+
+    "   language:  "+self.language_code.to_s+"\n"+
+    "   created:   "+self.created_at.to_s+"\n"+
+    "}\n"
+  end
+
   protected
   def create_item_id
     prefix = AppConfig.item_prefix || ""
