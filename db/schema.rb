@@ -72,9 +72,8 @@ ActiveRecord::Schema.define(:version => 20100821113544) do
   create_table "transcript_tiers", :force => true do |t|
     t.integer "transcript_id",   :null => false
     t.integer "parent_id"
-    t.integer "tier_id"
+    t.string  "tier_id"
     t.string  "participant"
-    t.string  "annotator"
     t.string  "language_code"
     t.string  "linguistic_type"
   end

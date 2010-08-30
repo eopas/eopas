@@ -29,11 +29,10 @@ class TranscriptItem < ActiveRecord::Migration
       t.belongs_to :parent, :null => true
 
       # can belong to multiple text tracks for the same input file
-      t.integer :tier_id
-      t.string  :participant
-      t.string  :annotator
-      t.string  :language_code
-      t.string  :linguistic_type
+      t.string :tier_id
+      t.string :participant
+      t.string :language_code
+      t.string :linguistic_type
     end
     add_index :transcript_tiers, [:transcript_id, :tier_id], :unique => true
 
@@ -54,7 +53,7 @@ class TranscriptItem < ActiveRecord::Migration
 
   def self.down
     drop_table :transcript_phrases
-    drop_table :transcript_tracks
+    drop_table :transcript_tiers
     drop_table :transcripts
   end
 end
