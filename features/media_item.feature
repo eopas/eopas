@@ -5,8 +5,8 @@ Feature: Media
 
   Background:
     Given the application is set up
-      And a user: "johnf" exists
-      And I am logged in as the user "johnf"
+      And a user: "johnf1" exists
+      And I am logged in as the user "johnf1"
       And I mock paperclip for "ffmpeg -i /tmp/paperclip-reprocess,27297,0 -ar 22050 -ab 64k -async 2 -acodec libvorbis -b 512k -bt 512k -r 30 -threads 0 -vcodec libtheora -padtop 30 -padright 0 -padbottom 30 -padleft 0 -s 320x180 -f ogg -y /tmp/paperclip-reprocess,27297,0-encoded,27297,0"
 
   Scenario: Upload Page exists if logged in

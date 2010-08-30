@@ -14,7 +14,7 @@ Feature: Authentication and Authorisation
     When I go to the homepage
     And I follow "Register"
     Then I should see "Email"
-    When I fill in "Email" with "johnf@inodes.org" within "#email"
+    When I fill in "Email" with "johnf1@inodes.org" within "#email"
     And I fill in "First name" with "John"
     And I fill in "Last name" with "Ferlito"
     And I fill in "Password" with "moocow"
@@ -27,10 +27,10 @@ Feature: Authentication and Authorisation
     Then I should see "Your account has been activated"
     And I should see "John Ferlito"
     And I should see "Logout"
-    And show me the page
     When I follow "Logout"
+    And show me the page
     And I follow "Login"
-    And I fill in "Email" with "johnf@inodes.org"
+    And I fill in "Email" with "johnf1@inodes.org"
     And I fill in "Password" with "moocow"
     And I press "Login"
     Then I should see "John Ferlito" within "#login_info"
@@ -72,6 +72,7 @@ Feature: Authentication and Authorisation
     Given a user exists
     And I am logged in as that user
     When I go to the homepage
+    And show me the page
     Then I should see "Logout"
     And I follow "Logout"
     Then I should see "Logout successful!"
@@ -82,11 +83,11 @@ Feature: Authentication and Authorisation
     Then I should see "You are already logged out"
 
   Scenario: Reset password
-    Given a user exists with email: "johnf@inodes.org", password: "moocow"
+    Given a user exists with email: "johnf1@inodes.org", password: "moocow"
     When I go to the homepage
     And I follow "Login"
     And I follow "Forgot your password?"
-    And I fill in "Email" with "johnf@inodes.org"
+    And I fill in "Email" with "johnf1@inodes.org"
     And I press "Reset my password"
     Then I should be on the homepage
     And I should see "Please check your email"
@@ -101,13 +102,13 @@ Feature: Authentication and Authorisation
     And I should see "John"
     When I follow "Logout"
     And I follow "Login"
-    And I fill in "Email" with "johnf@inodes.org"
+    And I fill in "Email" with "johnf1@inodes.org"
     And I fill in "Password" with "foobar"
     And I press "Login"
     Then I should see "John"
 
   Scenario: Must be logged in to show a users page
-    Given a user exists with email: "johnf@inodes.org", first_name: "John"
+    Given a user exists with email: "johnf1@inodes.org", first_name: "John"
     When I go to that user's page
     Then I should not see "John"
     And I should see "You must be logged in to access that page"
@@ -137,12 +138,12 @@ Feature: Authentication and Authorisation
 # This works but allow-rescue is broken in cucumber-rails
 #  @allow-rescue
 #  Scenario: A user can only see her own details
-#    Given a user: "johnf" exists with email: "johnf@inodes.org", first_name: "John"
+#    Given a user: "johnf1" exists with email: "johnf1@inodes.org", first_name: "John"
 #    And a user: "silvia" exists with email: "silvia@gingertech.net", first_name: "Silvia"
 #    And I am logged in as user "silvia"
 #    When I go to the user "silvia"'s page
 #    Then I should see "Silvia" within "#content"
-#    When I go to the user "johnf"'s page
+#    When I go to the user "johnf1"'s page
 #    Then I should not see "John" within "#content"
 #    And I should see "Sorry, the page you were looking for does not exist."
 

@@ -13,7 +13,7 @@ end
 
 
 Factory.define :user do |u|
-  u.email 'johnf@inodes.org'
+  u.sequence(:email) {|n| "johnf#{n}@inodes.org"}
   u.password 'really_secret'
   u.password_confirmation { |a| a.password }
   u.first_name 'John'
@@ -34,4 +34,6 @@ Factory.define :media_item do |m|
   m.language_code 'en'
   m.license 'PD'
   m.attach( "original", "features/test_data/test.m4v", "video/mp4" )
+  m.association :depositor, :factory => :user
 end
+
