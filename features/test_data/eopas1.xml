@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <eopas xmlns:dc="http://purl.org/dc/elements/1.1/">
   <header>
     <meta name="dc:type" value="text/xml"/>
@@ -233,21 +233,21 @@
       <phrase ref="a119" startTime="35.73" endTime="36.18" id="a216">n</phrase>
     </tier>
     <tier id="W-IPA" parent="W-Spch" lang="en" participant="" linguistic_type="phonetic_transcription">
-      <phrase ref="a8" startTime="0.78" endTime="4.09" id="a217">s&#x259;&#x28B;  ju&#x2D0; &#x261;&#x254; aut &#x259;f &#xF0;&#x259; &#x26A;nst&#x26A;tju&#x2D0;t t&#x28A; z&#x259; sant ana stra&#x2D0;t</phrase>
-      <phrase ref="a9" startTime="4.6" endTime="10.07" id="a218">&#x259;nd &#xF0;en ju&#x2D0; &#x261;&#x259;&#x28A; &#xF0;&#x26A; &#x254;&#x3B8;&#x25B; sant ana stra&#x2D0;t t&#x28A; &#xF0;&#x26A;s to &#xF0;&#x259; s&#x25B;nt&#x259; &#x259;f &#xF0;&#x259; taun tu &#xF0;&#x26A;s b&#x26A;&#x261; r&#x254;tund&#x259;</phrase>
-      <phrase ref="a10" startTime="11.15" endTime="13.24" id="a219">&#xE6;nd ju&#x2D0; f&#x254;l&#x259;&#x28A; &#xF0;&#x259;n &#xF0;&#x259; sa&#x26A;n kle&#x2D0;f</phrase>
-      <phrase ref="a11" startTime="13.31" endTime="14.54" id="a220">&#xF0;&#xE6;ts &#xF0;&#x259; &#x254;ranj&#x259; s&#x26A;&#x14B;l</phrase>
-      <phrase ref="a12" startTime="15.33" endTime="17.19" id="a221">&#xF0;en ju&#x2D0; f&#x254;l&#x259;&#x28A; &#xF0;&#x259; sa&#x26A;n kle&#x2D0;f</phrase>
-      <phrase ref="a13" startTime="17.57" endTime="18.75" id="a222">ju&#x2D0; k&#x28C;m da&#x28A;n</phrase>
-      <phrase ref="a14" startTime="18.99" endTime="21.81" id="a223">ju&#x2D0; n&#x254;&#x2D0; &#x259; aft&#x259; &#xF0;&#x26A;s trajanus ple&#x2D0;&#x26A;n</phrase>
-      <phrase ref="a15" startTime="21.86" endTime="22.93" id="a224">ju&#x2D0; k&#x28C;m da&#x28A;n t&#x28A; &#xF0;&#x259;</phrase>
-      <phrase ref="a16" startTime="23.47" endTime="25.05" id="a225">ra&#x26A;n &#x259; v&#xE6;l&#x26A;</phrase>
-      <phrase ref="a17" startTime="25.08" endTime="27.01" id="a226">j&#x25B;&#x2D0; &#xF0;&#xE6;ts &#x259;na&#xF0;&#x259; &#x259;</phrase>
-      <phrase ref="a18" startTime="28.16" endTime="29.11" id="a227">ka&#x26A;nd &#x259;v rot&#x28A;nd&#x259;</phrase>
-      <phrase ref="a19" startTime="29.37" endTime="31.23" id="a228">&#x259;nd &#xF0;en ju&#x2D0; f&#x254;l&#x259;&#x28A; &#xF0;&#x259; sa&#x26A;ns kle&#x2D0;f</phrase>
-      <phrase ref="a20" startTime="31.32" endTime="31.999" id="a229">j&#x259; &#x261;&#x254; da&#x28A;n</phrase>
-      <phrase ref="a21" startTime="32.379" endTime="34.29" id="a230">&#x259;nd &#xF0;en ju&#x2D0; &#x261;&#x254; &#xF0;&#x259; &#xF0;&#x26A;s we&#x26A;</phrase>
-      <phrase ref="a22" startTime="34.38" endTime="36.18" id="a231">&#x259; ja&#x2D0; t&#x28A; kle&#x2D0;f</phrase>
+      <phrase ref="a8" startTime="0.78" endTime="4.09" id="a217">səʋ  juː ɡɔ aut əf ðə ɪnstɪtjuːt tʊ zə sant ana straːt</phrase>
+      <phrase ref="a9" startTime="4.6" endTime="10.07" id="a218">ənd ðen juː ɡəʊ ðɪ ɔθɛ sant ana straːt tʊ ðɪs to ðə sɛntə əf ðə taun tu ðɪs bɪɡ rɔtundə</phrase>
+      <phrase ref="a10" startTime="11.15" endTime="13.24" id="a219">ænd juː fɔləʊ ðən ðə saɪn kleːf</phrase>
+      <phrase ref="a11" startTime="13.31" endTime="14.54" id="a220">ðæts ðə ɔranjə sɪŋl</phrase>
+      <phrase ref="a12" startTime="15.33" endTime="17.19" id="a221">ðen juː fɔləʊ ðə saɪn kleːf</phrase>
+      <phrase ref="a13" startTime="17.57" endTime="18.75" id="a222">juː kʌm daʊn</phrase>
+      <phrase ref="a14" startTime="18.99" endTime="21.81" id="a223">juː nɔː ə aftə ðɪs trajanus pleːɪn</phrase>
+      <phrase ref="a15" startTime="21.86" endTime="22.93" id="a224">juː kʌm daʊn tʊ ðə</phrase>
+      <phrase ref="a16" startTime="23.47" endTime="25.05" id="a225">raɪn ə vælɪ</phrase>
+      <phrase ref="a17" startTime="25.08" endTime="27.01" id="a226">jɛː ðæts ənaðə ə</phrase>
+      <phrase ref="a18" startTime="28.16" endTime="29.11" id="a227">kaɪnd əv rotʊndə</phrase>
+      <phrase ref="a19" startTime="29.37" endTime="31.23" id="a228">ənd ðen juː fɔləʊ ðə saɪns kleːf</phrase>
+      <phrase ref="a20" startTime="31.32" endTime="31.999" id="a229">jə ɡɔ daʊn</phrase>
+      <phrase ref="a21" startTime="32.379" endTime="34.29" id="a230">ənd ðen juː ɡɔ ðə ðɪs weɪ</phrase>
+      <phrase ref="a22" startTime="34.38" endTime="36.18" id="a231">ə jaː tʊ kleːf</phrase>
     </tier>
     <tier id="W-RGU" parent="" lang="en" participant="" linguistic_type="gestures">
       <phrase startTime="0" endTime="33.84" id="a232">R Gesture Unit 1</phrase>
