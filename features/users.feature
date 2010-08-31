@@ -28,7 +28,6 @@ Feature: Authentication and Authorisation
     And I should see "John Ferlito"
     And I should see "Logout"
     When I follow "Logout"
-    And show me the page
     And I follow "Login"
     And I fill in "Email" with "johnf1@inodes.org"
     And I fill in "Password" with "moocow"
@@ -72,7 +71,6 @@ Feature: Authentication and Authorisation
     Given a user exists
     And I am logged in as that user
     When I go to the homepage
-    And show me the page
     Then I should see "Logout"
     And I follow "Logout"
     Then I should see "Logout successful!"

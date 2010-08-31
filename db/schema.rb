@@ -58,8 +58,6 @@ ActiveRecord::Schema.define(:version => 20100821113544) do
     t.boolean  "original_processing"
   end
 
-  add_index "media_items", ["item_id"], :name => "index_media_items_on_item_id", :unique => true
-
   create_table "transcript_phrases", :force => true do |t|
     t.integer "transcript_tier_id", :null => false
     t.string  "phrase_id"
