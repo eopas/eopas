@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eopas xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <header>
+    <meta name="dc:type" value="text/xml"/>
+  </header>
+  <interlinear-text>
+    <tier id="fg_074" linguistic_type="translation">
+      <phrase startTime="22.9401" endTime="28.6401" id="fg_001">I'll tell you about this woman</phrase>
+      <phrase startTime="29.1599" endTime="37.8199" id="fg_002">I'll tell you about this woman and this man. But they had no children.</phrase>
+      <phrase startTime="37.9600" endTime="47.0600" id="fg_003">But a child appeared (from? in) a rock in the sea.</phrase>
+      <phrase startTime="47.7399" endTime="56.6601" id="fg_004">This child appeared in the stone, then these two went to the sea and found the child there.</phrase>
+      <phrase startTime="58.3600" endTime="63.9000" id="fg_005">And they asked him, "Where are your father and mother?"</phrase>
+      <phrase startTime="63.9" endTime="70.7" id="fg_006">The boy said to them, "I came from the rock."</phrase>
+      <phrase startTime="70.7" endTime="79.167" id="fg_007">And they said, "We haven't got any children, can you come with us?" And the boy said, "I can come with you."</phrase>
+      <phrase startTime="83.593" endTime="87.82" id="fg_008">And they took him and went, they made him their son.</phrase>
+      <phrase startTime="87.8200" endTime="91.6801" id="fg_009">They looked after him until he became a big boy.</phrase>
+      <phrase startTime="93.2601" endTime="100.7000" id="fg_010">They made him into a good boy, they loved him. One time the father whipped him.</phrase>
+      <phrase startTime="101.9800" endTime="110.6601" id="fg_011">He got some wood and he whipped him. The child wanted to cry, and he thought back to the place where he came from.</phrase>
+      <phrase startTime="111.8800" endTime="118.5401" id="fg_012">He wanted to be there, and he began to walk to the sea, and his father called out.</phrase>
+      <phrase startTime="118.9000" endTime="122.7001" id="fg_013">The name of this child, Koaisen.</phrase>
+      <phrase startTime="126.0401" endTime="130.7000" id="fg_014">He walked to the sea, he was thinking about the place where he was born.</phrase>
+      <phrase startTime="131.1799" endTime="139.2799" id="fg_015">And the father saw and recognised him. He walked to the sea and he called out, "Koaisen, come back."</phrase>
+      <phrase startTime="140.8200" endTime="145.6201" id="fg_016">Koaisen walked. And he called again, "Koaisen, come back."</phrase>
+      <phrase startTime="146.1599" endTime="149.8801" id="fg_017">Koaisen walked until he came to the water.</phrase>
+      <phrase startTime="150.7401" endTime="159.6800" id="fg_018">He came to the saltwater and his father called again, "Koaisen, come back." He went to the sea and he sang, he sang this song:</phrase>
+      <phrase startTime="160.1600" endTime="178.3799" id="fg_019"/>
+      <phrase startTime="178.8800" endTime="185.6400" id="fg_020">Koaisen come back. Koaisen went into the water, and the water covered his knees.</phrase>
+      <phrase startTime="186.7599" endTime="193.3000" id="fg_021">His father called again, "Koaisen, come back." And he went into the sea, the water covered up to here.</phrase>
+      <phrase startTime="206.8200" endTime="214.6800" id="fg_022">His father had loved him greatly. His father loved him too much, he called out, "Koaisen come back." Koaisen moved away, and water came up to here.</phrase>
+      <phrase startTime="206.8200" endTime="214.6800" id="fg_023">But he saw that, his father loved him a lot, and he tricked his father.</phrase>
+      <phrase startTime="216.6800" endTime="226.3801" id="fg_024">He told his father, "Hey, our house is burning." Then his father turned himself around, he looked to shore.</phrase>
+      <phrase startTime="226.8600" endTime="232.7000" id="fg_025">And Koaisen dived into the water and disappeared.</phrase>
+      <phrase startTime="233.1400" endTime="241.4600" id="fg_026">And the father sang:</phrase>
+      <phrase startTime="241.6000" endTime="252.0200" id="fg_027"/>
+      <phrase startTime="252.4800" endTime="266.0400" id="fg_028">&lt;Bislama&gt;This song, it is like he is crying, he cries, he is sorry for his son, he saying this to him.&lt;/Bislama&gt;</phrase>
+      <phrase startTime="266.1400" endTime="268.5800" id="fg_029">This story finishes here.</phrase>
+    </tier>
+    <tier id="o_074" linguistic_type="orthographic">
+      <phrase startTime="22.9401" endTime="28.6401" id="o_001">A, ka gag traus nmatu iskei, </phrase>
+      <phrase startTime="29.1599" endTime="37.8199" id="o_002">go nanwei iskei, rato. Me ratik ki tesa. </phrase>
+      <phrase startTime="37.9600" endTime="47.0600" id="o_003">Me ipiatlak tesa iskei ipakor fat elau. </phrase>
+      <phrase startTime="47.7399" endTime="56.6601" id="o_004">Tesa nen ipakor fat, mal nen gar rapak elau pa, rapamor tesa nen itu. </phrase>
+      <phrase startTime="58.3600" endTime="63.9000" id="o_005">Go rapaus kin ki, "Gag tmam go raitom wa?" </phrase>
+      <phrase startTime="63.9" endTime="70.7" id="o_006">Tesa nanwei inrikir ki na, "Kineu apakor fat". </phrase>
+      <phrase startTime="70.7" endTime="79.167" id="o_007">Go ratli na, "Komam ratik ki tesa, me ag kutae skot komam?" Go tesa nanwei ina, "Kineu atae skot akam". </phrase>
+      <phrase startTime="83.593" endTime="87.82" id="o_008">Go rapo plake pa, rapregi ipi tesa gar. </phrase>
+      <phrase startTime="87.8200" endTime="91.6801" id="o_009">Rapo lekor wes pan go ipi tesa p̃ur. </phrase>
+      <phrase startTime="93.2601" endTime="100.7000" id="o_010">Rapregi ipi tesa wi gar, ranromi. Me nrakeskei go papa ga ifsei. </phrase>
+      <phrase startTime="101.9800" endTime="110.6601" id="o_011">Ipuet nkas me ifsei. Tesa ina ikai go kiler mro pak esan ga itkos mai. </phrase>
+      <phrase startTime="111.8800" endTime="118.5401" id="o_012">Ina ito, kai stat siwer raki elau, go tmen ipios. </phrase>
+      <phrase startTime="118.9000" endTime="122.7001" id="o_013">Nagi tesa ne, Koaisen. </phrase>
+      <phrase startTime="126.0401" endTime="130.7000" id="o_014">Isiwer raki elau, ga imro ki esan ga ipakor wes. </phrase>
+      <phrase startTime="131.1799" endTime="139.2799" id="o_015">Go tmen ileka go imro tae. Isiwer raki elau go kipios, "Koaisen p̃aler". </phrase>
+      <phrase startTime="140.8200" endTime="145.6201" id="o_016">Koaisen isiwer. Go imer pios, "Koaisen p̃aler." </phrase>
+      <phrase startTime="146.1599" endTime="149.8801" id="o_017">Koaisen, isiwer pan pan go kikam ntas. </phrase>
+      <phrase startTime="150.7401" endTime="159.6800" id="o_018">Ikam ntas go tmen imer pios, "Koaisen p̃aler". Ipan kam ntas go ipo lag ipreg nalag: </phrase>
+      <phrase startTime="160.1600" endTime="178.3799" id="o_019">"Koaiseno koaiseno seno, nato wawa nato wawa meremo, koaiseno seno. </phrase>
+      <phrase startTime="178.8800" endTime="185.6400" id="o_020">"Koaisen p̃aler." Koaisen ipan ikam ntas, go ntas ipamau nap̃utwen. </phrase>
+      <phrase startTime="186.7599" endTime="193.3000" id="o_021">Tmen imer pios, "Koaisen p̃aler mai. Go inrus pak elau, ntas ipamau esa. </phrase>
+      <phrase startTime="206.8200" endTime="214.6800" id="o_022">Tmen ipe nromi itop. &lt;edited&gt; Tmen inromi itop imer soso, "Koaisen p̃aler mai". Koaisen inrus pa, go ntas ipamau esa.&lt;/edited&gt; </phrase>
+      <phrase startTime="206.8200" endTime="214.6800" id="o_023">Me ileka na, tmen inromi itop go isursur tmen. </phrase>
+      <phrase startTime="216.6800" endTime="226.3801" id="o_024">Inrik tmen kin, "E nasum̃ gakit isor." Malen tmen itmen nrea, ile pak eut. </phrase>
+      <phrase startTime="226.8600" endTime="232.7000" id="o_025">Go Koaisen itut pak ntas, go kipuel. </phrase>
+      <phrase startTime="233.1400" endTime="241.4600" id="o_026">Go tmen ipo lag: Koaiseno Koaiseno seno, </phrase>
+      <phrase startTime="241.6000" endTime="252.0200" id="o_027">nato wawa, nato wawa, meremo, Koaiseno seno. </phrase>
+      <phrase startTime="252.4800" endTime="266.0400" id="o_028">Olsem singsing ia, hemi olsem hemi krae, hemi krae, hemi sori long hem hemi krae, hemi tok tok log hem olsem </phrase>
+      <phrase startTime="266.1400" endTime="268.5800" id="o_029">Nafusrekwen ne inom esa. </phrase>
+    </tier>
+  </interlinear-text>
+</eopas>

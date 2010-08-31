@@ -10,16 +10,7 @@
         <tb:tx>A,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>A,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ka</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ka</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>gag</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>gag</tb:tx>
@@ -28,16 +19,7 @@
         <tb:tx>traus</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>traus</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nmatu</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nmatu</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>iskei,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>iskei,</tb:tx>
@@ -51,16 +33,7 @@
         <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nanwei</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nanwei</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>iskei,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>iskei,</tb:tx>
@@ -69,28 +42,13 @@
         <tb:tx>rato.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>rato.</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Me</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>Me</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ratik</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ratik</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ki</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ki</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tesa.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tesa.</tb:tx>
@@ -104,16 +62,7 @@
         <tb:tx>Me</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Me</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ipiatlak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipiatlak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tesa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tesa</tb:tx>
@@ -122,22 +71,10 @@
         <tb:tx>iskei</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>iskei</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipakor</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ipakor</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>fat</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>fat</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>elau.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>elau.</tb:tx>
@@ -151,16 +88,7 @@
         <tb:tx>Tesa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipakor</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ipakor</tb:tx>
@@ -169,16 +97,7 @@
         <tb:tx>fat,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>fat,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>mal</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>mal</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>nen</tb:tx>
@@ -187,16 +106,7 @@
         <tb:tx>gar</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>gar</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>rapak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>rapak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>elau</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>elau</tb:tx>
@@ -205,28 +115,13 @@
         <tb:tx>pa,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>pa,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>rapamor</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>rapamor</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tesa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>itu.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>itu.</tb:tx>
@@ -240,16 +135,7 @@
         <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>rapaus</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>rapaus</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>kin</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>kin</tb:tx>
@@ -258,16 +144,7 @@
         <tb:tx>ki,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ki,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>"Gag</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>"Gag</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tmam</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tmam</tb:tx>
@@ -276,16 +153,7 @@
         <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>raitom</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>raitom</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>wa?"</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>wa?"</tb:tx>
@@ -299,16 +167,7 @@
         <tb:tx>Tesa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nanwei</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nanwei</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>inrikir</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>inrikir</tb:tx>
@@ -317,28 +176,13 @@
         <tb:tx>ki</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ki</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>na,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>na,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>"Kineu</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>"Kineu</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>apakor</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>apakor</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>fat".</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>fat".</tb:tx>
@@ -352,16 +196,7 @@
         <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ratli</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ratli</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>na,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>na,</tb:tx>
@@ -370,16 +205,7 @@
         <tb:tx>"Komam</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>"Komam</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ratik</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ratik</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ki</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ki</tb:tx>
@@ -388,16 +214,7 @@
         <tb:tx>tesa,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>tesa,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>me</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>me</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ag</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ag</tb:tx>
@@ -406,16 +223,7 @@
         <tb:tx>kutae</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>kutae</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>skot</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>skot</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>komam?"</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>komam?"</tb:tx>
@@ -424,16 +232,7 @@
         <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nanwei</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>nanwei</tb:tx>
@@ -442,28 +241,13 @@
         <tb:tx>ina,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ina,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>"Kineu</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>"Kineu</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>atae</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>atae</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>skot</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>skot</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>akam".</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>akam".</tb:tx>
@@ -477,16 +261,7 @@
         <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>rapo</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>rapo</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>plake</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>plake</tb:tx>
@@ -495,28 +270,13 @@
         <tb:tx>pa,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>pa,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>rapregi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>rapregi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ipi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ipi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>gar.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>gar.</tb:tx>
@@ -530,16 +290,7 @@
         <tb:tx>Rapo</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Rapo</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>lekor</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>lekor</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>wes</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>wes</tb:tx>
@@ -548,28 +299,13 @@
         <tb:tx>pan</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>pan</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ipi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ipi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>p̃ur.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>p̃ur.</tb:tx>
@@ -583,16 +319,7 @@
         <tb:tx>Rapregi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Rapregi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ipi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tesa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tesa</tb:tx>
@@ -601,16 +328,7 @@
         <tb:tx>wi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>wi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>gar,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>gar,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ranromi.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ranromi.</tb:tx>
@@ -619,16 +337,7 @@
         <tb:tx>Me</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Me</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nrakeskei</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nrakeskei</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>go</tb:tx>
@@ -637,16 +346,7 @@
         <tb:tx>papa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>papa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ga</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ga</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ifsei.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ifsei.</tb:tx>
@@ -660,16 +360,7 @@
         <tb:tx>Ipuet</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Ipuet</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nkas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nkas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>me</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>me</tb:tx>
@@ -678,16 +369,7 @@
         <tb:tx>ifsei.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ifsei.</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>Tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ina</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ina</tb:tx>
@@ -696,16 +378,7 @@
         <tb:tx>ikai</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ikai</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>kiler</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>kiler</tb:tx>
@@ -714,16 +387,7 @@
         <tb:tx>mro</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>mro</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>pak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>pak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>esan</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>esan</tb:tx>
@@ -732,16 +396,7 @@
         <tb:tx>ga</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ga</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>itkos</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>itkos</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>mai.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>mai.</tb:tx>
@@ -755,16 +410,7 @@
         <tb:tx>Ina</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Ina</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ito,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ito,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>kai</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>kai</tb:tx>
@@ -773,16 +419,7 @@
         <tb:tx>stat</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>stat</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>siwer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>siwer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>raki</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>raki</tb:tx>
@@ -791,22 +428,10 @@
         <tb:tx>elau,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>elau,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipios.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ipios.</tb:tx>
@@ -820,22 +445,10 @@
         <tb:tx>Nagi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Nagi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tesa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>tesa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ne,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ne,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Koaisen.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>Koaisen.</tb:tx>
@@ -849,22 +462,10 @@
         <tb:tx>Isiwer</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Isiwer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>raki</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>raki</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>elau,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>elau,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ga</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ga</tb:tx>
@@ -873,16 +474,7 @@
         <tb:tx>imro</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>imro</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ki</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ki</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>esan</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>esan</tb:tx>
@@ -891,16 +483,7 @@
         <tb:tx>ga</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ga</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ipakor</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipakor</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>wes.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>wes.</tb:tx>
@@ -914,22 +497,10 @@
         <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>tmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ileka</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ileka</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>go</tb:tx>
@@ -938,16 +509,7 @@
         <tb:tx>imro</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>imro</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>tae.</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tae.</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Isiwer</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>Isiwer</tb:tx>
@@ -956,16 +518,7 @@
         <tb:tx>raki</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>raki</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>elau</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>elau</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>go</tb:tx>
@@ -974,16 +527,7 @@
         <tb:tx>kipios,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>kipios,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>p̃aler".</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>p̃aler".</tb:tx>
@@ -997,16 +541,7 @@
         <tb:tx>Koaisen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>isiwer.</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>isiwer.</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>Go</tb:tx>
@@ -1015,22 +550,10 @@
         <tb:tx>imer</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>imer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>pios,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>pios,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>p̃aler."</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>p̃aler."</tb:tx>
@@ -1044,19 +567,7 @@
         <tb:tx>Koaisen,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Koaisen,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>isiwer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>isiwer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>pan</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>pan</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>pan</tb:tx>
@@ -1068,16 +579,7 @@
         <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>kikam</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>kikam</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ntas.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ntas.</tb:tx>
@@ -1091,16 +593,7 @@
         <tb:tx>Ikam</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Ikam</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ntas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ntas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>go</tb:tx>
@@ -1109,16 +602,7 @@
         <tb:tx>tmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>imer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>imer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>pios,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>pios,</tb:tx>
@@ -1127,16 +611,7 @@
         <tb:tx>"Koaisen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>p̃aler".</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>p̃aler".</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Ipan</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>Ipan</tb:tx>
@@ -1145,16 +620,7 @@
         <tb:tx>kam</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>kam</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ntas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ntas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>go</tb:tx>
@@ -1163,22 +629,10 @@
         <tb:tx>ipo</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ipo</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>lag</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>lag</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ipreg</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipreg</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nalag:</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>nalag:</tb:tx>
@@ -1192,40 +646,19 @@
         <tb:tx>"Koaiseno</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>"Koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>koaiseno</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>seno,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>seno,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nato</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nato</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>wawa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>wawa</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nato</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nato</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>wawa</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>wawa</tb:tx>
@@ -1234,16 +667,7 @@
         <tb:tx>meremo,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>meremo,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>seno.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>seno.</tb:tx>
@@ -1256,16 +680,7 @@
         <tb:tx>"Koaisen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>p̃aler."</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>p̃aler."</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Koaisen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>Koaisen</tb:tx>
@@ -1274,16 +689,7 @@
         <tb:tx>ipan</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ipan</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ikam</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ikam</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ntas,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ntas,</tb:tx>
@@ -1292,22 +698,10 @@
         <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ntas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ntas</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ipamau</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipamau</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nap̃utwen.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>nap̃utwen.</tb:tx>
@@ -1321,16 +715,7 @@
         <tb:tx>Tmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>imer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>imer</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>pios,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>pios,</tb:tx>
@@ -1339,16 +724,7 @@
         <tb:tx>"Koaisen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>p̃aler</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>p̃aler</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>mai.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>mai.</tb:tx>
@@ -1357,16 +733,7 @@
         <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>inrus</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>inrus</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>pak</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>pak</tb:tx>
@@ -1375,22 +742,10 @@
         <tb:tx>elau,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>elau,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ntas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ntas</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ipamau</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipamau</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>esa.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>esa.</tb:tx>
@@ -1404,16 +759,7 @@
         <tb:tx>Tmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ipe</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipe</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nromi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>nromi</tb:tx>
@@ -1422,16 +768,7 @@
         <tb:tx>itop.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>itop.</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>&lt;edited&gt;</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>&lt;edited&gt;</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Tmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>Tmen</tb:tx>
@@ -1440,16 +777,7 @@
         <tb:tx>inromi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>inromi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>itop</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>itop</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>imer</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>imer</tb:tx>
@@ -1458,16 +786,7 @@
         <tb:tx>soso,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>soso,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>"Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>p̃aler</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>p̃aler</tb:tx>
@@ -1476,16 +795,7 @@
         <tb:tx>mai".</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>mai".</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>inrus</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>inrus</tb:tx>
@@ -1494,28 +804,13 @@
         <tb:tx>pa,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>pa,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ntas</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ntas</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ipamau</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipamau</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>esa.&lt;/edited&gt;</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>esa.&lt;/edited&gt;</tb:tx>
@@ -1529,16 +824,7 @@
         <tb:tx>Me</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Me</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ileka</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ileka</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>na,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>na,</tb:tx>
@@ -1547,16 +833,7 @@
         <tb:tx>tmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>inromi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>inromi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>itop</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>itop</tb:tx>
@@ -1565,16 +842,7 @@
         <tb:tx>go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>isursur</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>isursur</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tmen.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tmen.</tb:tx>
@@ -1588,16 +856,7 @@
         <tb:tx>Inrik</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Inrik</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>kin,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>kin,</tb:tx>
@@ -1606,16 +865,7 @@
         <tb:tx>"E</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>"E</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nasum̃</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nasum̃</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>gakit</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>gakit</tb:tx>
@@ -1624,16 +874,7 @@
         <tb:tx>isor."</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>isor."</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>Malen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Malen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tmen</tb:tx>
@@ -1642,28 +883,13 @@
         <tb:tx>itmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>itmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nrea,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>nrea,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ile</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>ile</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>pak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>pak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>eut.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>eut.</tb:tx>
@@ -1677,16 +903,7 @@
         <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Koaisen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>itut</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>itut</tb:tx>
@@ -1695,22 +912,10 @@
         <tb:tx>pak</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>pak</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ntas,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ntas,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>kipuel.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>kipuel.</tb:tx>
@@ -1724,22 +929,10 @@
         <tb:tx>Go</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Go</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tmen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>tmen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ipo</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ipo</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>lag:</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>lag:</tb:tx>
@@ -1749,15 +942,6 @@
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>Koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>seno,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>seno,</tb:tx>
@@ -1771,22 +955,10 @@
         <tb:tx>nato</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>nato</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>wawa,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>wawa,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>nato</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>nato</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>wawa,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>wawa,</tb:tx>
@@ -1795,16 +967,7 @@
         <tb:tx>meremo,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>meremo,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>Koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>Koaiseno</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>seno.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>seno.</tb:tx>
@@ -1817,22 +980,10 @@
         <tb:tx>Olsem</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Olsem</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>singsing</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>singsing</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>ia,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ia,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>hemi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>hemi</tb:tx>
@@ -1841,34 +992,16 @@
         <tb:tx>olsem</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>olsem</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>hemi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>hemi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>krae,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>krae,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>hemi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>hemi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>krae,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>krae,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>hemi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>hemi</tb:tx>
@@ -1877,22 +1010,10 @@
         <tb:tx>sori</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>sori</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>long</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>long</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>hem</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>hem</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>hemi</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>hemi</tb:tx>
@@ -1901,19 +1022,7 @@
         <tb:tx>krae,</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>krae,</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>hemi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>hemi</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tok</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>tok</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>tok</tb:tx>
@@ -1925,16 +1034,7 @@
         <tb:tx>log</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>log</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>hem</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>hem</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>olsem</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>olsem</tb:tx>
@@ -1948,22 +1048,10 @@
         <tb:tx>Nafusrekwen</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
-        <tb:tx>Nafusrekwen</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>ne</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
         <tb:tx>ne</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>inom</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>inom</tb:tx>
-      </tb:txgroup>
-      <tb:txgroup>
-        <tb:tx>esa.</tb:tx>
       </tb:txgroup>
       <tb:txgroup>
         <tb:tx>esa.</tb:tx>
