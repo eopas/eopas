@@ -14,7 +14,7 @@
 # - transcriber
 
 require 'nokogiri'
-require 'FileUtils'
+require 'fileutils'
 
 class Transcription
 
