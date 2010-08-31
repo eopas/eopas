@@ -1,24 +1,29 @@
-Eopas::Application.routes.draw do |map|
+Eopas::Application.routes.draw do
 
-  root  :to => "static#home"
+  root :to => "static#home"
 
   namespace :admin do
     resource :setup_wizard
   end
 
   # Static
-  map.about 'about', :controller => "static", :action => 'about'
+  get 'about', :to => 'static#about', :as => 'about'
 
   # Auth
-  map.login  'login',  :controller => 'user_sessions', :action => 'new'
-  map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
-  map.resource :user_session
+  get 'login',  :to => 'user_sessions#new',     :as => 'login'
+  get 'logout', :to => 'user_sessions#destroy', :as => 'logout'
+
+  resource :user_session
 
   # User
-  map.resources :users, :member => {:confirm => :get}
-  map.resources :forgotten_passwords
+  resources :users do
+    member do
+      get :confirm
+    end
+  end
+  resources :forgotten_passwords
 
   # Media
-  map.resources :media_items
+  resources :media_items
 
 end
