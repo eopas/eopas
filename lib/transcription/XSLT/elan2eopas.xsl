@@ -62,9 +62,6 @@ version="1.0">
             <xsl:attribute name="lang">
               <xsl:value-of select="$CUR_TIER/@DEFAULT_LOCALE"/>
             </xsl:attribute>
-            <xsl:attribute name="participant">
-              <xsl:value-of select="$CUR_TIER/@DPARTICIPANT"/>
-            </xsl:attribute>
             <xsl:attribute name="linguistic_type">
               <xsl:value-of select="$CUR_TIER/@LINGUISTIC_TYPE_REF"/>
             </xsl:attribute>
@@ -90,6 +87,11 @@ version="1.0">
                   <xsl:attribute name="id">
                     <xsl:value-of select="@ANNOTATION_ID"/>
                   </xsl:attribute>
+                  <xsl:if test="normalize-space($CUR_TIER/@DPARTICIPANT) != ''">
+                    <xsl:attribute name="participant">
+                      <xsl:value-of select="$CUR_TIER/@DPARTICIPANT"/>
+                    </xsl:attribute>
+                  </xsl:if>
                   <xsl:value-of select="ANNOTATION_VALUE"/>
                 </phrase>
               </xsl:for-each>

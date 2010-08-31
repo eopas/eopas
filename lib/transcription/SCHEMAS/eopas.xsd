@@ -79,7 +79,6 @@
     <xsd:attribute name="id" type="xsd:ID" />
     <xsd:attribute name="parent" type="xsd:string" />
     <xsd:attribute name="lang" type="xsd:string" />
-    <xsd:attribute name="participant" type="xsd:string" />
     <xsd:attribute name="linguistic_type" type="xsd:string" />
   </xsd:complexType>
 
@@ -91,6 +90,7 @@
         <xsd:attribute name="endTime" type="xsd:string" use="required"/>
         <xsd:attribute name="id" type="xsd:ID" use="required"/>
         <xsd:attribute name="ref" type="xsd:string"/>
+        <xsd:attribute name="participant" type="xsd:string" />
       </xsd:extension>
     </xsd:simpleContent>
   </xsd:complexType>

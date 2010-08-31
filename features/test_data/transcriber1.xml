@@ -40,40 +40,62 @@
         <Sync time="8.533"/>
         <Event desc="recorded guitar" type="lexical" extent="previous"/>
       </Turn>
-      <Turn speaker="spk17" startTime="605.255" endTime="608.797"><Sync time="605.255"/>
+      <Turn speaker="spk17" startTime="605.255" endTime="608.797">
+<Sync time="605.255"/>
 ... start the komedya
-</Turn>
-      <Turn startTime="608.797" endTime="625.348"><Sync time="608.797"/>
+      </Turn>
+      <Turn startTime="608.797" endTime="625.348">
+<Sync time="608.797"/>
 pause
-</Turn>
-      <Turn speaker="spk5" startTime="625.348" endTime="657.482"><Sync time="625.348"/>
-parade music (Floramante entrance) 
-<Event desc="LB1-Floramante.mus.jpg" type="entities" extent="begin"/></Turn>
-      <Turn startTime="657.482" endTime="684.888"><Sync time="657.482"/><Event desc="LB1-Floramante.mus.jpg" type="entities" extent="end"/>
+      </Turn>
+      <Turn speaker="spk5" startTime="625.348" endTime="657.482">
+<Sync time="625.348"/>
+parade music (Floramante entrance)
+        <Event desc="LB1-Floramante.mus.jpg" type="entities" extent="begin"/>
+      </Turn>
+      <Turn startTime="657.482" endTime="684.888">
+        <Sync time="657.482"/>
+        <Event desc="LB1-Floramante.mus.jpg" type="entities" extent="end"/>
 pause crowd noise
-</Turn>
+      </Turn>
     </Section>
     <Section type="report" topic="to1" startTime="684.888" endTime="802.371">
-      <Turn speaker="spk17" startTime="684.888" endTime="696.798"><Sync time="684.888"/>
+      <Turn speaker="spk17" startTime="684.888" endTime="696.798">
+        <Sync time="684.888"/>
 announcement
-</Turn>
-      <Turn speaker="spk5" startTime="696.798" endTime="775.021"><Sync time="696.798"/>
-entrance music Floramante 
-<Event desc="LB1-Floramante.mus.jpg" type="entities" extent="begin"/><Sync time="769.121"/><Event desc="LB1-Floramante.mus.jpg" type="entities" extent="end"/>
+      </Turn>
+      <Turn speaker="spk5" startTime="696.798" endTime="775.021">
+        <Sync time="696.798"/>
+entrance music Floramante
+        <Event desc="LB1-Floramante.mus.jpg" type="entities" extent="begin"/>
+        <Sync time="769.121"/><Event desc="LB1-Floramante.mus.jpg" type="entities" extent="end"/>
  pause
-</Turn>
-      <Turn speaker="spk1" startTime="775.021" endTime="802.371"><Sync time="775.021"/>
+      </Turn>
+      <Turn speaker="spk1" startTime="775.021" endTime="802.371">
+        <Sync time="775.021"/>
 Floramante...
-<Sync time="780.256"/><Comment desc="cont - not in script"/><Sync time="785.669"/><Comment desc="cont - not in script"/><Sync time="789.742"/><Comment desc="cont - not in script"/><Sync time="798.433"/><Comment desc="cont - not in script"/></Turn>
+        <Sync time="780.256"/>
+        <Comment desc="cont - not in script"/>
+        <Sync time="785.669"/>
+        <Comment desc="cont - not in script"/>
+        <Sync time="789.742"/>
+        <Comment desc="cont - not in script"/>
+        <Sync time="798.433"/>
+        <Comment desc="cont - not in script"/>
+      </Turn>
     </Section>
     <Section type="report" topic="to10" startTime="802.371" endTime="1064.861">
-      <Turn startTime="802.371" endTime="816.257"><Sync time="802.371"/>
-pause 
-<Event desc="LB1-KOMEDYA-101.jpg" type="entities" extent="begin"/></Turn>
-      <Turn speaker="spk18" startTime="816.257" endTime="821.028"><Sync time="816.257"/>
+      <Turn startTime="802.371" endTime="816.257">
+        <Sync time="802.371"/>
+pause
+        <Event desc="LB1-KOMEDYA-101.jpg" type="entities" extent="begin"/>
+      </Turn>
+      <Turn speaker="spk18" startTime="816.257" endTime="821.028">
+        <Sync time="816.257"/>
 oh puzoc a nagdus suuran ni gazat a capaitan
-</Turn>
-      <Turn speaker="spk2" startTime="821.028" endTime="986.089"><Sync time="821.028"/>
+      </Turn>
+      <Turn speaker="spk2" startTime="821.028" endTime="986.089">
+<Sync time="821.028"/>
 1.1 oh puzoc a nagdus suuran
 <Sync time="824.528"/>
 1.2 ni gasat na capaitan
@@ -96,11 +118,11 @@ oh puzoc a nagdus suuran ni gazat a capaitan
 <Sync time="862.438"/>
 (prompt)
 <Sync time="873.491"/>
-3.1? yantangay... 
+3.1? yantangay...
 <Comment desc="diverges from written text"/><Sync time="876.483"/>
-4.2 agsa saibbec ... 
+4.2 agsa saibbec ...
 <Sync time="883.435"/>
-[prompt] 
+[prompt]
 <Sync time="889.956"/>
 5.1 oh apuc a virgen santa maria
 <Sync time="893.305"/>
@@ -133,16 +155,25 @@ oh puzoc a nagdus suuran ni gazat a capaitan
 8.4 oh dios co ipal-ti-ingmo
 <Sync time="977.478"/>
 7.4? no sadino acantaragac di princesa adsato
-<Sync time="982.77"/><Event desc="LB1-KOMEDYA-101.jpg" type="entities" extent="end"/></Turn>
-      <Turn speaker="spk5" startTime="986.089" endTime="1064.861"><Sync time="986.089"/>
-music (Floramante exit) 
-<Event desc="LB1-Floramante.mus.jpg" type="entities" extent="begin"/><Sync time="1057.48"/><Event desc="LB1-Floramante.mus.jpg" type="entities" extent="end"/></Turn>
+<Sync time="982.77"/>
+        <Event desc="LB1-KOMEDYA-101.jpg" type="entities" extent="end"/>
+      </Turn>
+      <Turn speaker="spk5" startTime="986.089" endTime="1064.861">
+        <Sync time="986.089"/>
+music (Floramante exit)
+        <Event desc="LB1-Floramante.mus.jpg" type="entities" extent="begin"/>
+        <Sync time="1057.48"/><Event desc="LB1-Floramante.mus.jpg" type="entities" extent="end"/>
+      </Turn>
     </Section>
     <Section type="report" topic="to3" startTime="1064.861" endTime="1213.09">
-      <Turn speaker="spk5" startTime="1064.861" endTime="1114.641"><Sync time="1064.861"/><Event desc="LB1-KOMEDYA-102.jpg" type="entities" extent="begin"/>
+      <Turn speaker="spk5" startTime="1064.861" endTime="1114.641">
+        <Sync time="1064.861"/>
+        <Event desc="LB1-KOMEDYA-102.jpg" type="entities" extent="begin"/>
  music (Finarosa entrance)
-<Sync time="1107.625"/></Turn>
-      <Turn speaker="spk3" startTime="1114.641" endTime="1213.09"><Sync time="1114.641"/>
+        <Sync time="1107.625"/>
+      </Turn>
+      <Turn speaker="spk3" startTime="1114.641" endTime="1213.09">
+        <Sync time="1114.641"/>
 9.1 Nagdaoatac ti palubosna 9.2 ti sr. Ari a nangina
 <Sync time="1119.357"/><Sync time="1124.906"/>
 9.3 ta innac agpalpalio 9.4 ti nalaoa a tanap toy Pagarian
@@ -150,13 +181,17 @@ music (Floramante exit)
 10.3 Bareng...
 <Sync time="1150.946"/><Sync time="1171.060"/>
 12.2 ket toy siroc toy cayo
-<Sync time="1173.262"/></Turn>
+<Sync time="1173.262"/>
+      </Turn>
     </Section>
     <Section type="report" topic="to4" startTime="1213.09" endTime="1697.904">
-      <Turn speaker="spk5" startTime="1213.09" endTime="1273.861"><Sync time="1213.09"/>
+      <Turn speaker="spk5" startTime="1213.09" endTime="1273.861">
+<Sync time="1213.09"/>
 music (Diamantina entrance)
-<Sync time="1259.365"/></Turn>
-      <Turn speaker="spk4" startTime="1273.861" endTime="1406.111"><Sync time="1273.861"/>
+<Sync time="1259.365"/>
+      </Turn>
+      <Turn speaker="spk4" startTime="1273.861" endTime="1406.111">
+<Sync time="1273.861"/>
 13.1 Gapu ti cadanag ni Ama
 <Sync time="1276.369"/>
 13.2 ti ca-aoan di cabsatco a napan nagpalpalioa
@@ -169,15 +204,17 @@ music (Diamantina entrance)
 <Sync time="1302.356"/>
 14.2 buat ti Ejercito
 <Sync time="1304.795"/><Sync time="1310.933"/>
-14.3 a mapan ti aragonia a reyno 
-<Event desc="LB1-KOMEDYATRANS-001.jpg" type="entities" extent="end"/><Event desc="LB1-KOMEDYATRANS-002.jpg" type="entities" extent="begin"/><Sync time="1313.661"/>
-14.4 ngem aoan metten di principe a cabasatco 
+14.3 a mapan ti aragonia a reyno
+<Event desc="LB1-KOMEDYATRANS-001.jpg" type="entities" extent="end"/>
+<Event desc="LB1-KOMEDYATRANS-002.jpg" type="entities" extent="begin"/>
+<Sync time="1313.661"/>
+14.4 ngem aoan metten di principe a cabasatco
 <Sync time="1317.248"/><Sync time="1324.098"/>
 15.1 Magna-ac ngarud a di agtantan
 <Sync time="1326.953"/>
 15.2 itoy nalaoa (unay) a cabakiran
 <Sync time="1330.223"/><Sync time="1337.883"/>
-15.3 Ngem tao ti innac nasaracan 
+15.3 Ngem tao ti innac nasaracan
 <Sync time="1340.775"/>
 15.4 seguro aguinina [ni tao ti bayugan]
 <Sync time="1344.306"/>
@@ -193,11 +230,13 @@ laughter
 <Sync time="1373.365"/><Sync time="1380.226"/>
 17.1 nay tao a naioaoa
 <Sync time="1382.334"/>
-17.2 ditoy tay-ac a nalaoa 
+17.2 ditoy tay-ac a nalaoa
 <Sync time="1384.982"/><Sync time="1389.26"/>
 17.3 ngapay ita gaba ditoy nabgaymaysa
-<Sync time="1393.021"/></Turn>
-      <Turn speaker="spk3" startTime="1406.111" endTime="1429.072"><Sync time="1406.111"/>
+<Sync time="1393.021"/>
+      </Turn>
+      <Turn speaker="spk3" startTime="1406.111" endTime="1429.072">
+<Sync time="1406.111"/>
 18.1 Diac ti princesa a daydayaoenda
 <Sync time="1409.477"/>
 18.2 ti reyno nga Aragonia
@@ -205,8 +244,10 @@ laughter
 18.3 No ania ti masapulmo inca ibaga
 <Sync time="1420.875"/>
 18.4 ta dinac singaen nga aguininana
-<Sync time="1423.141"/></Turn>
-      <Turn speaker="spk4" startTime="1429.072" endTime="1460.338"><Sync time="1429.072"/>
+<Sync time="1423.141"/>
+      </Turn>
+      <Turn speaker="spk4" startTime="1429.072" endTime="1460.338">
+<Sync time="1429.072"/>
 19.1 Ay sica gayam aya
 <Sync time="1431.061"/>
 19.2 daytay tao (?nga agbirbiroc patayna)
@@ -214,23 +255,31 @@ laughter
 19.3 ket masaracmo ngad ita
 <Sync time="1442.42"/>
 19.4 ta adtoyac amangiyaoat kenca
-<Sync time="1445.161"/></Turn>
-      <Turn speaker="spk3" startTime="1460.338" endTime="1474.737"><Sync time="1460.338"/>
+<Sync time="1445.161"/>
+      </Turn>
+      <Turn speaker="spk3" startTime="1460.338" endTime="1474.737">
+<Sync time="1460.338"/>
 20.1 Pengdam ti lao-it dayta dila
 <Sync time="1462.485"/>
 20.2-3 ta uray no Moraca dica cona a cabutengca
-<Sync time="1466.102"/></Turn>
-      <Turn speaker="spk4" startTime="1474.737" endTime="1479.449"><Sync time="1474.737"/>
+<Sync time="1466.102"/>
+      </Turn>
+      <Turn speaker="spk4" startTime="1474.737" endTime="1479.449">
+<Sync time="1474.737"/>
 21.1 Isaganam ngad dayta pica
 <Sync time="1477.151"/>
 21.2 ta matay ti aoan gasatna
-</Turn>
-      <Turn speaker="spk5" startTime="1479.449" endTime="1557.493"><Sync time="1479.449"/>
-fighting music 
-<Event desc="LB1-KOMEDYA-102.jpg" type="entities" extent="end"/><Sync time="1553.008"/>
-(prompt) 
-</Turn>
-      <Turn speaker="spk4" startTime="1557.493" endTime="1584.095"><Sync time="1557.493"/><Event desc="LB1-KOMEDYA-103.jpg" type="entities" extent="begin"/>
+      </Turn>
+      <Turn speaker="spk5" startTime="1479.449" endTime="1557.493">
+<Sync time="1479.449"/>
+fighting music
+<Event desc="LB1-KOMEDYA-102.jpg" type="entities" extent="end"/>
+<Sync time="1553.008"/>
+(prompt)
+      </Turn>
+      <Turn speaker="spk4" startTime="1557.493" endTime="1584.095">
+<Sync time="1557.493"/>
+<Event desc="LB1-KOMEDYA-103.jpg" type="entities" extent="begin"/>
 22.1 Maricnac unay ti capuymo
 <Sync time="1560.205"/>
 22.2 (ca) ti nasaya-at agpacumbabaca nga umamumo
@@ -238,8 +287,10 @@ fighting music
 22.3 Ta yaoidca sadi Turguia
 <Sync time="1572.642"/>
 22.4 ta ti imperador a saoaenna canto
-<Sync time="1575.993"/></Turn>
-      <Turn speaker="spk3" startTime="1584.095" endTime="1611.598"><Sync time="1584.095"/>
+<Sync time="1575.993"/>
+      </Turn>
+      <Turn speaker="spk3" startTime="1584.095" endTime="1611.598">
+<Sync time="1584.095"/>
 23.1 Dinac ruruden cadaguita balicas
 <Sync time="1586.715"/>
 23.2 asutem ta espadam ta [?isut inta pagarmas]
@@ -247,23 +298,31 @@ fighting music
 23.3 [?ta dica magaoayan] toy pigsac
 <Sync time="1605.764"/>
 23.4 [?ket asica pay a maicalang]
-<Sync time="1607.669"/></Turn>
-      <Turn speaker="spk4" startTime="1611.598" endTime="1615.195"><Sync time="1611.598"/>
+<Sync time="1607.669"/>
+      </Turn>
+      <Turn speaker="spk4" startTime="1611.598" endTime="1615.195">
+<Sync time="1611.598"/>
 24.1 No espada ti cayatmo
 <Sync time="1613.469"/>
 24.2 umay ngaruden toy pataymo
-</Turn>
-      <Turn speaker="spk5" startTime="1615.195" endTime="1697.904"><Sync time="1615.195"/>
-fighting music (different tune) - 
+      </Turn>
+      <Turn speaker="spk5" startTime="1615.195" endTime="1697.904">
+<Sync time="1615.195"/>
+fighting music (different tune) -
 <Sync time="1685.359"/>
-pause 
-<Event desc="LB1-KOMEDYA-103.jpg" type="entities" extent="end"/><Event desc="LB1-KOMEDYA-104.jpg" type="entities" extent="begin"/></Turn>
+pause
+<Event desc="LB1-KOMEDYA-103.jpg" type="entities" extent="end"/>
+<Event desc="LB1-KOMEDYA-104.jpg" type="entities" extent="begin"/>
+      </Turn>
     </Section>
     <Section type="report" topic="to5" startTime="1697.904" endTime="2106.276">
-      <Turn speaker="spk5" startTime="1697.904" endTime="1861.462"><Sync time="1697.904"/>
+      <Turn speaker="spk5" startTime="1697.904" endTime="1861.462">
+<Sync time="1697.904"/>
 slow march music - entrance Christian king and army
-<Sync time="1836.207"/></Turn>
-      <Turn speaker="spk6" startTime="1861.462" endTime="1915.76"><Sync time="1861.462"/>
+<Sync time="1836.207"/>
+      </Turn>
+      <Turn speaker="spk6" startTime="1861.462" endTime="1915.76">
+<Sync time="1861.462"/>
 25.1 Ditoy cabakiran a nalaoa
 <Sync time="1865.062"/>
 25.2 Nga sacup toy Pagarian nga Aragonia
@@ -279,23 +338,33 @@ slow march music - entrance Christian king and army
 26.3 Ken maysa di agcapin ano
 <Sync time="1902.285"/>
 26.4 daguiti animales anamco ket tagui namayo
-<Sync time="1906.943"/></Turn>
-      <Turn speaker="spk12" startTime="1915.76" endTime="1927.325"><Sync time="1915.76"/>
+<Sync time="1906.943"/>
+      </Turn>
+      <Turn speaker="spk12" startTime="1915.76" endTime="1927.325">
+<Sync time="1915.76"/>
 27.1 Naimbag unanyay [?ket namatnaypumo] [not written text]
 <Sync time="1918.901"/>
 27.2 [i naran na nangato]
-<Sync time="1921.164"/></Turn>
-      <Turn speaker="spk8" startTime="1927.325" endTime="1938.702"><Sync time="1927.325"/>
-28.1 Maragsacan met toy numoc 
+<Sync time="1921.164"/>
+      </Turn>
+      <Turn speaker="spk8" startTime="1927.325" endTime="1938.702">
+<Sync time="1927.325"/>
+28.1 Maragsacan met toy numoc
 <Sync time="1930.268"/>
 28.2 ti inca napanunut
-<Sync time="1932.461"/><Event desc="LB1-KOMEDYATRANS-002.jpg" type="entities" extent="end"/><Event desc="LB1-KOMEDYATRANS-003.jpg" type="entities" extent="begin"/></Turn>
-      <Turn speaker="spk9" startTime="1938.702" endTime="1950.317"><Sync time="1938.702"/>
+<Sync time="1932.461"/>
+<Event desc="LB1-KOMEDYATRANS-002.jpg" type="entities" extent="end"/>
+<Event desc="LB1-KOMEDYATRANS-003.jpg" type="entities" extent="begin"/>
+      </Turn>
+      <Turn speaker="spk9" startTime="1938.702" endTime="1950.317">
+<Sync time="1938.702"/>
 29.1 nina itapay laeng sinyor a nadanco
 <Sync time="1941.843"/>
 29.2 ti layadcoy a namaradco [not in written text]
-<Sync time="1944.561"/></Turn>
-      <Turn speaker="spk6" startTime="1950.317" endTime="1971.117"><Sync time="1950.317"/>
+<Sync time="1944.561"/>
+      </Turn>
+      <Turn speaker="spk6" startTime="1950.317" endTime="1971.117">
+<Sync time="1950.317"/>
 30.1 Ala ngarud ituloy tayo
 <Sync time="1952.779"/>
 30.2 a sursuren satayto agrancho
@@ -303,23 +372,29 @@ slow march music - entrance Christian king and army
 30.3 a barbaren mara masuruban tayo [not in written text]
 <Sync time="1966.157"/>
 30.4 itay adayo a disso [not in written text]
-<Sync time="1968.835"/></Turn>
-      <Turn speaker="spk10" startTime="1971.117" endTime="1977.421"><Sync time="1971.117"/>
+<Sync time="1968.835"/>
+      </Turn>
+      <Turn speaker="spk10" startTime="1971.117" endTime="1977.421">
+<Sync time="1971.117"/>
 31.1 intay ngaruden ditay agtactac
-<Sync time="1974.329"/></Turn>
-      <Turn speaker="spk5" startTime="1977.421" endTime="2106.276"><Sync time="1977.421"/>
-slow march music - exit Christian king and army 
-</Turn>
+<Sync time="1974.329"/>
+      </Turn>
+      <Turn speaker="spk5" startTime="1977.421" endTime="2106.276">
+<Sync time="1977.421"/>
+slow march music - exit Christian king and army
+      </Turn>
     </Section>
     <Section type="report" topic="to6" startTime="2106.276" endTime="2304.8">
-      <Turn speaker="spk5" startTime="2106.276" endTime="2201.969"><Sync time="2106.276"/>
+      <Turn speaker="spk5" startTime="2106.276" endTime="2201.969">
+<Sync time="2106.276"/>
 whistle
 <Sync time="2111.897"/>
 fast march music - entrance Muslim emperor and army
 <Sync time="2182.19"/><Sync time="2193.071"/>
 prompt
-</Turn>
-      <Turn speaker="spk11" startTime="2201.969" endTime="2275.603"><Sync time="2201.969"/>
+      </Turn>
+      <Turn speaker="spk11" startTime="2201.969" endTime="2275.603">
+<Sync time="2201.969"/>
 32.1 Aoan laeng a masarac tayo
 <Sync time="2204.811"/>
 32.2 di prinsipe nga anacco
@@ -343,15 +418,20 @@ prompt
 34.3 liyadin Brillante a binonga
 <Sync time="2261.713"/><Sync time="2265.268"/>
 34.4 ket no dares ti isungbat da dagus guerra deran
-<Sync time="2270.085"/></Turn>
-      <Turn speaker="spk7" startTime="2275.603" endTime="2304.8"><Sync time="2275.603"/>
+<Sync time="2270.085"/>
+      </Turn>
+      <Turn speaker="spk7" startTime="2275.603" endTime="2304.8">
+<Sync time="2275.603"/>
 35.1 Aguray ket agsardengcayo
 <Sync time="2278.023"/>
 35.2 senyor emperador a nangato
-<Sync time="2280.578"/><Event desc="LB1-KOMEDYA-104.jpg" type="entities" extent="end"/><Event desc="LB1-KOMEDYA-105.jpg" type="entities" extent="begin"/></Turn>
+<Sync time="2280.578"/><Event desc="LB1-KOMEDYA-104.jpg" type="entities" extent="end"/>
+<Event desc="LB1-KOMEDYA-105.jpg" type="entities" extent="begin"/>
+      </Turn>
     </Section>
     <Section type="report" topic="to7" startTime="2304.8" endTime="2416.856">
-      <Turn speaker="spk12" startTime="2304.8" endTime="2324.991"><Sync time="2304.8"/>
+      <Turn speaker="spk12" startTime="2304.8" endTime="2324.991">
+<Sync time="2304.8"/>
 37.1 Moro na nadangco agsarbengca
 <Sync time="2307.542"/>
 37.2 ta salaoasamo a naidmay cuma
@@ -359,8 +439,10 @@ prompt
 37.3 Tano sa-an trangrang cayenca
 <Sync time="2315.657"/>
 37.4 itoy natadem nga espada
-<Sync time="2317.673"/></Turn>
-      <Turn speaker="spk7" startTime="2324.991" endTime="2359.793"><Sync time="2324.991"/>
+<Sync time="2317.673"/>
+      </Turn>
+      <Turn speaker="spk7" startTime="2324.991" endTime="2359.793">
+<Sync time="2324.991"/>
 38.1-2 a casta man aya / ti isungbatmo salioaoa
 <Sync time="2328.062"/>
 38.4? a milyera guili cristiano [not in text]
@@ -368,8 +450,10 @@ prompt
 39.1-2 senyor emperador [nanggamac] / ti sabrac ti inda [boratsasao]
 <Sync time="2345.036"/><Sync time="2348.901"/>
 39.3-4 ti ti conac agtingtay tayo / torakitanto ti supapac dagta casatco
-<Sync time="2354.236"/></Turn>
-      <Turn speaker="spk11" startTime="2359.793" endTime="2416.856"><Sync time="2359.793"/>
+<Sync time="2354.236"/>
+      </Turn>
+      <Turn speaker="spk11" startTime="2359.793" endTime="2416.856">
+<Sync time="2359.793"/>
 40.1 Agunay cay a buyotmo /
 <Sync time="2362.59"/>
 40.2 [a perad barangimay] a cristiano
@@ -383,15 +467,18 @@ drumming
 [inaudible - declamation?]
 <Sync time="2414.685"/>
 whistle
-</Turn>
+      </Turn>
     </Section>
     <Section type="report" topic="to8" startTime="2416.856" endTime="2670.103">
-      <Turn speaker="spk5" startTime="2416.856" endTime="2537.688"><Sync time="2416.856"/>
-fighting music 
+      <Turn speaker="spk5" startTime="2416.856" endTime="2537.688">
+<Sync time="2416.856"/>
+fighting music
 <Event desc="LB1-KOMEDYATRANS-003.jpg" type="entities" extent="end"/><Sync time="2526.073"/>
 (prompt)
-<Event desc="LB1-KOMEDYATRANS-004.jpg" type="entities" extent="begin"/></Turn>
-      <Turn speaker="spk15" startTime="2537.688" endTime="2571.365"><Sync time="2537.688"/>
+<Event desc="LB1-KOMEDYATRANS-004.jpg" type="entities" extent="begin"/>
+      </Turn>
+      <Turn speaker="spk15" startTime="2537.688" endTime="2571.365">
+<Sync time="2537.688"/>
 42.1 Nay caballeros aniat aramidyo
 <Sync time="2540.746"/>
 42.2 ta agcacabil cay man ditoy a sacupco
@@ -403,44 +490,58 @@ fighting music
 43.1 Iti casta nga aramidyo
 <Sync time="2561.522"/>
 43.2 Dusa ti maurayyo
-<Sync time="2563.169"/></Turn>
-      <Turn speaker="spk11" startTime="2571.365" endTime="2587.053"><Sync time="2571.365"/>
+<Sync time="2563.169"/>
+      </Turn>
+      <Turn speaker="spk11" startTime="2571.365" endTime="2587.053">
+<Sync time="2571.365"/>
 43.3 Ania daytoy a napasamac
 <Sync time="2574.064"/>
 43.4 ta butengco toy diac malibac
-<Sync time="2576.962"/></Turn>
-      <Turn speaker="spk13" startTime="2587.053" endTime="2604.806"><Sync time="2587.053"/>
+<Sync time="2576.962"/>
+      </Turn>
+      <Turn speaker="spk13" startTime="2587.053" endTime="2604.806">
+<Sync time="2587.053"/>
 44.1 santo ala arayatenna cami
 <Sync time="2590.711"/>
-44.2 
-<Comment desc="not in script, inaudible"/><Sync time="2594.162"/></Turn>
-      <Turn speaker="spk14" startTime="2604.806" endTime="2618.819"><Sync time="2604.806"/>
+44.2
+<Comment desc="not in script, inaudible"/><Sync time="2594.162"/>
+      </Turn>
+      <Turn speaker="spk14" startTime="2604.806" endTime="2618.819">
+<Sync time="2604.806"/>
 44.3 = 44.2 in script Jesucristo ispalen na cami
 <Sync time="2608.576"/>
-44.4 
+44.4
 <Comment desc="not in script"/>
  ------ a reyno
-<Sync time="2612.681"/></Turn>
+<Sync time="2612.681"/>
+      </Turn>
       <Turn speaker="spk15" startTime="2618.819" endTime="2646.729"><Sync time="2618.819"/>
-45.1 Gapu ti adu nga asugyo 
+45.1 Gapu ti adu nga asugyo
 <Sync time="2621.227"/>
 45.2 [magutu toy siadic seda]cayo
 <Sync time="2623.98"/><Sync time="2634.975"/>
-45.3 Iti ti conac cadacayo pumana cayat ti 
+45.3 Iti ti conac cadacayo pumana cayat ti
 <Sync time="2638.715"/>
 45.4 toy namayo cayat ti agbalin na buto
 <Sync time="2641.728"/></Turn>
       <Turn speaker="spk10" startTime="2646.729" endTime="2670.103"><Sync time="2646.729"/>
 46.1-2 Caycayatmi ti pumanao / ngem iti dusa nga inca ipa-ay
 <Sync time="2652.35"/><Sync time="2657.145"/>
-drumming 
-<Event desc="LB1-KOMEDYA-105.jpg" type="entities" extent="end"/></Turn>
+drumming
+<Event desc="LB1-KOMEDYA-105.jpg" type="entities" extent="end"/>
+      </Turn>
     </Section>
     <Section type="report" topic="to9" startTime="2670.103" endTime="2821.068">
-      <Turn speaker="spk5" startTime="2670.103" endTime="2744.455"><Sync time="2670.103"/>
- music Floramante entrance 
-<Event desc="LB1-Floramante.mus.jpg" type="entities" extent="begin"/><Sync time="2738.239"/><Event desc="LB1-Floramante.mus.jpg" type="entities" extent="end"/><Event desc="LB1-KOMEDYA-106.jpg" type="entities" extent="begin"/></Turn>
-      <Turn speaker="spk2" startTime="2744.455" endTime="2821.068"><Sync time="2744.455"/>
+      <Turn speaker="spk5" startTime="2670.103" endTime="2744.455">
+<Sync time="2670.103"/>
+ music Floramante entrance
+<Event desc="LB1-Floramante.mus.jpg" type="entities" extent="begin"/>
+<Sync time="2738.239"/>
+<Event desc="LB1-Floramante.mus.jpg" type="entities" extent="end"/>
+<Event desc="LB1-KOMEDYA-106.jpg" type="entities" extent="begin"/>
+      </Turn>
+      <Turn speaker="spk2" startTime="2744.455" endTime="2821.068">
+<Sync time="2744.455"/>
 47.1 Nabayagan `nga agpaspasiarac
 <Sync time="2748.212"/>
 47.2 cadaguiti bacbakir ken taytay-ac
@@ -451,7 +552,7 @@ drumming
 <Sync time="2763.885"/><Sync time="2769.566"/>
 48.1 Ngem ania daytoy makitac
 <Sync time="2772.963"/>
-48.2 nga raniag matingked pubacsac 
+48.2 nga raniag matingked pubacsac
 <Comment desc="different from script"/><Sync time="2776.763"/><Sync time="2783.04"/>
 48.3 a gas abannyac tibidpuy ngu agtinnag
 <Sync time="2786.971"/>
@@ -464,7 +565,9 @@ drumming
 49.3 Ngem oh langit amaman a day cuma
 <Sync time="2813.188"/>
 49.4 Ta maysan sanged/
-<Sync time="2815.569"/><Comment desc="énd tape LB1-AT9302-A"/></Turn>
+<Sync time="2815.569"/>
+<Comment desc="énd tape LB1-AT9302-A"/>
+      </Turn>
     </Section>
   </Episode>
 </Trans>

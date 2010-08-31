@@ -9,7 +9,6 @@ class TranscriptTier < ActiveRecord::Base
     "   transcript:      "+self.transcript.to_s+"\n"+
     "   parent_id:       "+self.parent_id.to_s+"\n"+
     "   tier_id:         "+self.tier_id.to_s+"\n"+
-    "   participant:     "+self.participant.to_s+"\n"+
     "   language:        "+self.language_code.to_s+"\n"+
     "   linguistic_type: "+self.linguistic_type.to_s+"\n"+
     "}\n"

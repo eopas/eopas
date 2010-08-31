@@ -9,6 +9,7 @@ class TranscriptPhrase < ActiveRecord::Base
     "   start_time:      "+self.start_time.to_s+"\n"+
     "   end_time:        "+self.end_time.to_s+"\n"+
     "   text:            "+self.text.to_s+"\n"+
+    "   participant:     "+self.participant.to_s+"\n"+
     "   ref_phrase:      "+self.ref_phrase.to_s+"\n"+
     "}\n"
   end

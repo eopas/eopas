@@ -105,9 +105,8 @@ class Transcription
         )
         @tier.tier_id         = attrs['id'] if attrs['id']
         @tier.language_code   = attrs['lang'] if attrs['lang']
-        @tier.participant     = attrs['participant'] if attrs['participant']
         @tier.linguistic_type = attrs['linguistic_type'] if attrs['linguistic_type']
-        if !attrs['parent'].empty?
+        if attrs['parent'] && !attrs['parent'].empty?
           parent = TranscriptTier.find(:first, :conditions => {:tier_id => attrs['parent'], :transcript_id => @transcript.id})
           @tier.parent_id = parent.id if parent
         end
@@ -119,10 +118,11 @@ class Transcription
         @phrase = TranscriptPhrase.new(
           :transcript_tier => @tier
         )
-        @phrase.phrase_id          = attrs['id'] if attrs['id']
-        @phrase.start_time         = attrs['startTime'].to_f if attrs['startTime']
-        @phrase.end_time           = attrs['endTime'].to_f if attrs['endTime']
-        @phrase.ref_phrase         = attrs['ref'] if attrs['ref']
+        @phrase.phrase_id       = attrs['id'] if attrs['id']
+        @phrase.start_time      = attrs['startTime'].to_f if attrs['startTime']
+        @phrase.end_time        = attrs['endTime'].to_f if attrs['endTime']
+        @phrase.ref_phrase      = attrs['ref'] if attrs['ref']
+        @phrase.participant     = attrs['participant'] if attrs['participant']
         @phrase.text = ""
       end
     end

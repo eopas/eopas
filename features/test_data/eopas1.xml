@@ -3,12 +3,12 @@
   <header>
     <meta name="dc:type" value="text/xml"/>
     <meta name="dc:source" value="file:///D:/Data/elan/elan-example1.mpg"/>
-    <meta name="dc:creator" value=""/>
+    <meta name="dc:creator" value="?xml"/>
     <meta name="dc:language" value="en-US"/>
     <meta name="dc:date" value="2006-06-13T15:09:43+01:00"/>
   </header>
   <interlinear-text>
-    <tier id="K-Spch" parent="" lang="en" participant="" linguistic_type="utterance">
+    <tier id="K-Spch" parent="" lang="en" linguistic_type="utterance">
       <phrase startTime="0.28" endTime="1.25" id="a1">so from here.</phrase>
       <phrase startTime="4.04" endTime="4.4" id="a2">yeah</phrase>
       <phrase startTime="10.06" endTime="10.46" id="a3">ja</phrase>
@@ -17,7 +17,7 @@
       <phrase startTime="27.03" endTime="27.99" id="a6">rotunda</phrase>
       <phrase startTime="29.01" endTime="29.48" id="a7">ja</phrase>
     </tier>
-    <tier id="W-Spch" parent="" lang="en" participant="" linguistic_type="utterance">
+    <tier id="W-Spch" parent="" lang="en" linguistic_type="utterance">
       <phrase startTime="0.78" endTime="4.09" id="a8">so you go out of the Institute to the Saint Anna Straat.</phrase>
       <phrase startTime="4.6" endTime="10.07" id="a9">and then you go the other, Saint Anna Straat to this to the center of the town, to this big rotunde.</phrase>
       <phrase startTime="11.15" endTime="13.24" id="a10">and you follow then the sign Kleef</phrase>
@@ -34,7 +34,7 @@
       <phrase startTime="32.379" endTime="34.29" id="a21">and then you go the this way</phrase>
       <phrase startTime="34.38" endTime="36.18" id="a22">eh ja to kleef</phrase>
     </tier>
-    <tier id="W-Words" parent="W-Spch" lang="en" participant="" linguistic_type="words">
+    <tier id="W-Words" parent="W-Spch" lang="en" linguistic_type="words">
       <phrase startTime="0.78" endTime="1.34" id="a23">so</phrase>
       <phrase startTime="1.34" endTime="1.57" id="a24">you</phrase>
       <phrase startTime="1.57" endTime="1.81" id="a25">go</phrase>
@@ -133,7 +133,7 @@
       <phrase startTime="35.45" endTime="35.73" id="a118">to</phrase>
       <phrase startTime="35.73" endTime="36.18" id="a119">Kleef</phrase>
     </tier>
-    <tier id="W-POS" parent="W-Words" lang="en" participant="" linguistic_type="part of speech">
+    <tier id="W-POS" parent="W-Words" lang="en" linguistic_type="part of speech">
       <phrase ref="a23" startTime="0.78" endTime="1.34" id="a120"/>
       <phrase ref="a24" startTime="1.34" endTime="1.57" id="a121">pro</phrase>
       <phrase ref="a25" startTime="1.57" endTime="1.81" id="a122">v</phrase>
@@ -232,7 +232,7 @@
       <phrase ref="a118" startTime="35.45" endTime="35.73" id="a215">prep</phrase>
       <phrase ref="a119" startTime="35.73" endTime="36.18" id="a216">n</phrase>
     </tier>
-    <tier id="W-IPA" parent="W-Spch" lang="en" participant="" linguistic_type="phonetic_transcription">
+    <tier id="W-IPA" parent="W-Spch" lang="en" linguistic_type="phonetic_transcription">
       <phrase ref="a8" startTime="0.78" endTime="4.09" id="a217">səʋ  juː ɡɔ aut əf ðə ɪnstɪtjuːt tʊ zə sant ana straːt</phrase>
       <phrase ref="a9" startTime="4.6" endTime="10.07" id="a218">ənd ðen juː ɡəʊ ðɪ ɔθɛ sant ana straːt tʊ ðɪs to ðə sɛntə əf ðə taun tu ðɪs bɪɡ rɔtundə</phrase>
       <phrase ref="a10" startTime="11.15" endTime="13.24" id="a219">ænd juː fɔləʊ ðən ðə saɪn kleːf</phrase>
@@ -249,10 +249,10 @@
       <phrase ref="a21" startTime="32.379" endTime="34.29" id="a230">ənd ðen juː ɡɔ ðə ðɪs weɪ</phrase>
       <phrase ref="a22" startTime="34.38" endTime="36.18" id="a231">ə jaː tʊ kleːf</phrase>
     </tier>
-    <tier id="W-RGU" parent="" lang="en" participant="" linguistic_type="gestures">
+    <tier id="W-RGU" parent="" lang="en" linguistic_type="gestures">
       <phrase startTime="0" endTime="33.84" id="a232">R Gesture Unit 1</phrase>
     </tier>
-    <tier id="W-RGph" parent="W-RGU" lang="en" participant="" linguistic_type="gesture_phases">
+    <tier id="W-RGph" parent="W-RGU" lang="en" linguistic_type="gesture_phases">
       <phrase startTime="0" endTime="0.44" id="a233">preparation</phrase>
       <phrase startTime="0.44" endTime="1.6" id="a234">preparation</phrase>
       <phrase startTime="1.6" endTime="2.24" id="a235">stroke</phrase>
@@ -313,7 +313,7 @@
       <phrase startTime="32.92" endTime="33.36" id="a290">stroke</phrase>
       <phrase startTime="33.36" endTime="33.84" id="a291">retraction</phrase>
     </tier>
-    <tier id="W-RGMe" parent="W-RGph" lang="en" participant="" linguistic_type="gesture_meaning">
+    <tier id="W-RGMe" parent="W-RGph" lang="en" linguistic_type="gesture_meaning">
       <phrase ref="a235" startTime="1.6" endTime="2.24" id="a292">Going out of the Insitute</phrase>
       <phrase ref="a238" startTime="3.32" endTime="3.84" id="a293">Going out of MPI to Saint Anna Street</phrase>
       <phrase ref="a241" startTime="5.72" endTime="6.36" id="a294">Going along St. Anna Street</phrase>
@@ -334,15 +334,15 @@
       <phrase ref="a288" startTime="31.52" endTime="31.96" id="a309">Going down</phrase>
       <phrase ref="a290" startTime="32.92" endTime="33.36" id="a310">Going to Kleve</phrase>
     </tier>
-    <tier id="K-RGU" parent="" lang="en" participant="" linguistic_type="gestures">
+    <tier id="K-RGU" parent="" lang="en" linguistic_type="gestures">
       <phrase startTime="23.12" endTime="24.04" id="a311">R Gesture Unit 1</phrase>
     </tier>
-    <tier id="K-RGph" parent="K-RGU" lang="en" participant="" linguistic_type="gesture_phases">
+    <tier id="K-RGph" parent="K-RGU" lang="en" linguistic_type="gesture_phases">
       <phrase startTime="23.12" endTime="23.52" id="a312">preparation</phrase>
       <phrase startTime="23.52" endTime="23.8" id="a313">stroke</phrase>
       <phrase startTime="23.8" endTime="24.04" id="a314">retraction</phrase>
     </tier>
-    <tier id="K-RGMe" parent="K-RGph" lang="en" participant="" linguistic_type="gesture_meaning">
+    <tier id="K-RGMe" parent="K-RGph" lang="en" linguistic_type="gesture_meaning">
       <phrase ref="a313" startTime="23.52" endTime="23.8" id="a315">a roundabout</phrase>
     </tier>
   </interlinear-text>

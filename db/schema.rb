@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(:version => 20100821113544) do
     t.float   "start_time",         :null => false
     t.float   "end_time",           :null => false
     t.string  "text"
+    t.string  "participant"
     t.string  "ref_phrase"
   end
 
@@ -73,7 +74,6 @@ ActiveRecord::Schema.define(:version => 20100821113544) do
     t.integer "transcript_id",   :null => false
     t.integer "parent_id"
     t.string  "tier_id"
-    t.string  "participant"
     t.string  "language_code"
     t.string  "linguistic_type"
   end

@@ -30,7 +30,6 @@ class TranscriptItem < ActiveRecord::Migration
 
       # can belong to multiple text tracks for the same input file
       t.string :tier_id
-      t.string :participant
       t.string :language_code
       t.string :linguistic_type
     end
@@ -45,6 +44,7 @@ class TranscriptItem < ActiveRecord::Migration
       t.float  :start_time, :null => false
       t.float  :end_time, :null => false
       t.string :text
+      t.string :participant
 
       # hierarchical tier: related phrase
       t.string :ref_phrase
