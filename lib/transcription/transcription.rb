@@ -14,6 +14,7 @@
 # - transcriber
 
 require 'nokogiri'
+require 'FileUtils'
 
 class Transcription
 
@@ -51,7 +52,18 @@ class Transcription
 
     # transcode XML file
     @e_doc = @xslt.transform(@doc)
-    File.open(@outfile, 'w') {|f| f.write(@e_doc) }
+
+    # transcoding failed and just produced:
+    # <?xml version="1.0" encoding="UTF-8"?>
+    if ("#@e_doc".length == 39)
+      # remove file if it exists
+      FileUtils.rm(@outfile, :force => true)
+      return false
+    else
+      # create file
+      File.open(@outfile, 'w') {|f| f.write(@e_doc) }
+      return true
+    end
   end
 
   # parser class for Eopas 2.0 XML Documents

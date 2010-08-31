@@ -3,7 +3,6 @@ require 'transcription/transcription'
 When /^I validate the transcription "([^"]*)" as an "([^"]*)" format$/ do |file, format|
   tran = File.read("features/test_data/#{file}")
   @transcription = Transcription.new(:data => tran, :format => format.to_sym)
-
   @transcription.validate
 end
 
@@ -24,12 +23,15 @@ end
 When /^I transcode the transcription "([^"]*)" as an "([^"]*)" format in directory "([^"]*)"$/ do |file, format, directory|
   tran = File.read("#{directory}#{file}")
   @transcription = Transcription.new(:data => tran, :format => format.to_sym)
-
   @transcription.transcode_to(:file => "#{directory}e_#{file}")
 end
 
 Then /^a transcription "([^"]*)" should exist in directory "([^"]*)"$/ do |filename, directory|
   File.exists?(directory+filename).should be_true
+end
+
+Then /^a transcription "([^"]*)" should not exist in directory "([^"]*)"$/ do |filename, directory|
+  File.exists?(directory+filename).should be_false
 end
 
 

@@ -4,12 +4,19 @@
 xmlns:dc="http://purl.org/dc/elements/1.1/" 
 version="1.0">
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+  <xsl:strip-space elements="*"/>
   <xsl:param name="mediafile" select="/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR/@EXTRACTED_FROM"/>
   <xsl:param name="creator" select="/ANNOTATION_DOCUMENT/@AUTHOR"/>
   <xsl:param name="language_code" select="/ANNOTATION_DOCUMENT/LOCALE/@LANGUAGE_CODE"/>
   <xsl:param name="country_code" select="/ANNOTATION_DOCUMENT/LOCALE/@COUNTRY_CODE"/>
   <xsl:param name="lang_code" select="concat($language_code, '-', $country_code)"/>
   <xsl:param name="date" select="/ANNOTATION_DOCUMENT/@DATE"/>
+  <xsl:template match="/">
+    <xsl:if test="not(/ANNOTATION_DOCUMENT)">
+        <xsl:message terminate="yes">ERROR: Not an ELAN document</xsl:message>
+    </xsl:if>
+    <xsl:apply-templates/>
+  </xsl:template>
   <xsl:template match="/ANNOTATION_DOCUMENT">
     <eopas>
       <header>

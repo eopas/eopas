@@ -7,6 +7,12 @@ version="1.0">
   <xsl:strip-space elements="*"/>
   <xsl:param name="mediafile" select="/Trans/@audio_filename"/>
   <xsl:param name="creator" select="/Trans/@scribe"/>
+  <xsl:template match="/">
+    <xsl:if test="not(/Trans)">
+        <xsl:message terminate="yes">ERROR: Not a Transcriber document</xsl:message>
+    </xsl:if>
+    <xsl:apply-templates/>
+  </xsl:template>
   <xsl:template match="/Trans/Episode">
     <eopas>
       <header>

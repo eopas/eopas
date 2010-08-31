@@ -88,7 +88,7 @@
       <xsd:extension base="xsd:string">
         <xsd:attribute name="startTime" type="xsd:string" use="required"/>
         <xsd:attribute name="endTime" type="xsd:string" use="required"/>
-        <xsd:attribute name="id" type="xsd:ID" use="required"/>
+        <xsd:attribute name="id" type="xsd:ID"/>
         <xsd:attribute name="ref" type="xsd:string"/>
         <xsd:attribute name="participant" type="xsd:string" />
       </xsd:extension>
