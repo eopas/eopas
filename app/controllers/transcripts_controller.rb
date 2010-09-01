@@ -13,6 +13,9 @@ class TranscriptsController < ApplicationController
     # todo don't just render the first one
     @transcript = Transcript.find(:first)
 
+    # todo write the file somewhere for further export transcoding
+    #xml = render_to_string :content_type => 'text/xml', :layout => false
+    #File.open("features/test_data/export_eopas.xml", 'w') {|f| f.write(xml) }
     render :content_type => 'text/xml', :layout => false
   end
 end
