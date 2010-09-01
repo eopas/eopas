@@ -26,4 +26,7 @@ Eopas::Application.routes.draw do
   # Media
   resources :media_items
 
+  # Transcript
+  get 'eopas_format', :to => 'transcripts#eopas_format', :format => :xml, :as => 'eopas_format'
+
 end

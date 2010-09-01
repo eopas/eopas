@@ -1,0 +1,16 @@
+!!! XML
+%eopas{'xmlns:dc' => "http://purl.org/dc/elements/1.1/"}
+  %header
+    %meta{:name => "dc:type", :value => "text/xml"}
+    %meta{:name => "dc:source",   :value => @transcript.original_file_name}
+    %meta{:name => "dc:creator",  :value => @transcript.creator}
+    %meta{:name => "dc:language", :value => @transcript.language_code}
+    %meta{:name => "dc:date",     :value => @transcript.date}
+    
+  %interlinear-text
+    - @transcript.transcript_tiers.each do |tier|
+      %tier{:id => tier.tier_id, :parent => tier.parent_id, :lang => tier.language_code, :linguistic_type => tier.linguistic_type}
+        - tier.transcript_phrases.each do |phrase|
+          %phrase{:id => phrase.phrase_id, :startTime => phrase.start_time, :endTime => phrase.end_time, :participant => phrase.participant, :ref_phrase => phrase.ref_phrase}<
+            =phrase.text
+

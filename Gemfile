@@ -20,7 +20,7 @@ group :development, :test, :cucumber do
     gem 'capybara'
     gem 'rack-test', :git => 'git://github.com/johnf/rack-test.git' # Remove this line when http://github.com/brynary/rack-test/issues#issue/14
     gem 'database_cleaner'
-    gem 'cucumber', :git => 'git://github.com/aslakhellesoy/cucumber.git' # waiting on bugfix for http://github.com/aslakhellesoy/cucumber-rails/issues/issue/52
+    gem 'cucumber', :git => 'git://github.com/aslakhellesoy/cucumber.git', :ref => '713ff3a87cab08a10fff'  # waiting on bugfix for http://github.com/aslakhellesoy/cucumber-rails/issues/issue/52
     gem 'cucumber-rails'
 
     gem 'rspec-rails', '>= 2.0.0.beta.20'
