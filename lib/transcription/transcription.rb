@@ -155,6 +155,7 @@ class Transcription
     def characters(text)
       if @in_phrase
         @phrase.text += " "+text
+        @phrase.text = @phrase.text.strip
       end
     end
 
