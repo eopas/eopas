@@ -7,7 +7,6 @@ class TranscriptItem < ActiveRecord::Migration
 
       # dublin core meta data, see http://dublincore.org/documents/2006/12/18/dcmi-terms/
       t.string :creator
-      t.string :title
       t.string :language_code
       t.string :date
 

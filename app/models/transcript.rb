@@ -11,7 +11,6 @@ class Transcript < ActiveRecord::Base
     "   media_item: "+self.media_item.to_s+"\n"+
     "   depositor:  "+self.depositor.to_s+"\n"+
     "   creator:    "+self.creator.to_s+"\n"+
-    "   title:      "+self.title.to_s+"\n"+
     "   language:   "+self.language_code.to_s+"\n"+
     "   date:       "+self.date.to_s+"\n"+
     "   original:   "+self.original_file_name.to_s+"\n"+

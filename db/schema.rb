@@ -84,7 +84,6 @@ ActiveRecord::Schema.define(:version => 20100821113544) do
     t.integer  "media_item_id",         :null => false
     t.integer  "depositor_id",          :null => false
     t.string   "creator"
-    t.string   "title"
     t.string   "language_code"
     t.string   "date"
     t.string   "original_file_name"

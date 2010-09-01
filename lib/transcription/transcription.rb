@@ -77,12 +77,7 @@ class Transcription
       )
       @in_phrase = false
     end
-      #transcript - missing
-#      t.string   "title"
-#      t.string   "original_file_name"
-#      t.string   "original_content_type"
-#      t.string   "original_file_size"
-#      t.datetime "original_updated_at"
+
     def start_element(name, attrs = [])
       @tag = name
       attrs = Hash[*attrs]
