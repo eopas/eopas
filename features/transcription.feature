@@ -75,6 +75,11 @@ Feature: Import and export transcription files
     When I transcode the transcription "toolbox1.xml" as an "toolbox" format in directory "features/test_data/"
     Then a transcription "e_toolbox1.xml" should exist in directory "features/test_data/"
 
+  @wip
+  Scenario:
+    When I transcode the transcription "eopas1.xml" as an "eopas" format in directory "features/test_data/"
+    Then a transcription "e_eopas1.xml" should exist in directory "features/test_data/"
+
 # IMPORT TESTS
 #
   Scenario:
@@ -100,3 +105,6 @@ Feature: Import and export transcription files
     When I import the transcription "eopas3.xml" in directory "features/test_data/" for that media item
     Then a transcript should exist with depositor: user "johnf1" for that media item
     And this transcript has at least 1 transcript tier with at least 1 transcript phrase
+
+# EXPORT TESTS
+#

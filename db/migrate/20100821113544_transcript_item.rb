@@ -45,7 +45,7 @@ class TranscriptItem < ActiveRecord::Migration
       t.string :text
       t.string :participant
 
-      # hierarchical tier: related phrase
+      # hierarchical phrase: related phrase
       t.string :ref_phrase
     end
   end
