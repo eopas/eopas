@@ -44,7 +44,6 @@ class Transcription
   end
 
   def to_eopas
-
     # load correct XSLT
     xsltname = "#{Rails.root}/public/XSLT/#{@format}2eopas.xsl"
     @xslt  = Nokogiri::XSLT(File.open(xsltname))
@@ -59,26 +58,24 @@ class Transcription
     @e_doc.to_s
   end
 
+  def import(transcript)
+    eopas_xml = to_eopas
+    eopas_doc = EopasDoc.new(transcript)
+    parser = Nokogiri::XML::SAX::Parser.new(eopas_doc)
+    parser.parse(eopas_xml)
+  end
+ 
   # parser class for Eopas 2.0 XML Documents
   class EopasDoc < Nokogiri::XML::SAX::Document
-    def initialize(media_item, depositor)
-      @media_item = media_item
-      @depositor = depositor
-      @transcript = Transcript.new(
-        :media_item => media_item,
-        :depositor  => depositor,
-      )
+    def initialize(transcript)
+      @transcript = transcript
+
       @in_phrase = false
     end
 
     def start_element(name, attrs = [])
       @tag = name
       attrs = Hash[*attrs]
-
-      if @transcript.nil?
-        puts "error: @transcript does not exist"
-        return
-      end
 
       case @tag
       when "eopas", "header", "interlinear-text"
@@ -87,8 +84,6 @@ class Transcription
       when "meta"
         # the <meta> fields in the header
         case attrs['name']
-        when "dc:type"
-          @transcript.transcript_format = attrs['value']
         when "dc:creator"
           @transcript.creator = attrs['value']
         when "dc:language"
@@ -110,7 +105,6 @@ class Transcription
           parent = TranscriptTier.find(:first, :conditions => {:tier_id => attrs['parent'], :transcript_id => @transcript.id})
           @tier.parent_id = parent.id if parent
         end
-        @tier.save
 
       when "phrase"
         @in_phrase = true
@@ -135,7 +129,6 @@ class Transcription
         return
 
       when "phrase"
-        @phrase.save
         @in_phrase = false
       end
     end
@@ -148,25 +141,8 @@ class Transcription
     end
 
     def end_document
-      if @transcript.nil?
-        puts "error: no transcription imported"
-      else
-        @transcript.save
-      end
+        # Do nothing
     end
-  end
-
-  def save_eopas(options = {})
-    media_item = options[:media_item]
-    depositor  = options[:depositor]
-    eopas_file = options[:file]
-    eopas_fd = File.open(eopas_file, 'rb')
-
-    # set up SAX parser for EopasDoc
-    parser = Nokogiri::XML::SAX::Parser.new(EopasDoc.new(media_item,depositor))
-
-    # Send some XML to the parser
-    parser.parse(eopas_fd.read)
   end
 
 end

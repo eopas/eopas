@@ -27,18 +27,13 @@ class Transcript < ActiveRecord::Base
   validates :original,          :presence => true, :proper_schema => true
   validates :transcript_format, :presence => true, :inclusion => { :in => FORMATS }
   validates :depositor,         :presence => true
-  validates :creator,           :presence => true
   validates :language_code,     :presence => true
   validates :date,              :presence => true
 
   validates_associated :depositor
   validates_attachment_presence :original
 
-  def before_create
-    transcription = Transcription.new(:data => File.read(original.queued_for_write[:original]), :format => transcript_format)
-    eopas = transcription.transcode
-
-  end
+  before_validation :parse_transcript
 
 
   def to_s
@@ -53,6 +48,13 @@ class Transcript < ActiveRecord::Base
     "   created:    "+self.created_at.to_s+"\n"+
     "}\n"
   end
+
+  protected
+  def parse_transcript
+    transcription = Transcription.new(:data => File.read(original.queued_for_write[:original]), :format => transcript_format)
+    transcription.import(self)
+  end
+
 end
 
 

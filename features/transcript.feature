@@ -26,6 +26,7 @@ Feature: Media Items can have transcriptions
      And I attach the file "features/test_data/elan1.xml" to "Transcript"
      And I select "ELAN" from "Format"
      And I press "Add"
+     And show me the page
     Then I should see "Transcript was successfully added"
      And I should be on that media item's page
      And I should see "so from here"
