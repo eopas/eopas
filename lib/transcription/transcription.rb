@@ -95,9 +95,7 @@ class Transcription
 
       when "tier"
         # create new tier
-        @tier = TranscriptTier.new(
-          :transcript => @transcript
-        )
+        @tier = @transcript.transcript_tiers.build
         @tier.tier_id         = attrs['id'] if attrs['id']
         @tier.language_code   = attrs['lang'] if attrs['lang']
         @tier.linguistic_type = attrs['linguistic_type'] if attrs['linguistic_type']
@@ -109,9 +107,7 @@ class Transcription
       when "phrase"
         @in_phrase = true
         # create new phrase
-        @phrase = TranscriptPhrase.new(
-          :transcript_tier => @tier
-        )
+        @phrase = @tier.transcript_phrases.build
         @phrase.phrase_id       = attrs['id'] if attrs['id']
         @phrase.start_time      = attrs['startTime'].to_f if attrs['startTime']
         @phrase.end_time        = attrs['endTime'].to_f if attrs['endTime']
