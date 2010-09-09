@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/aslakhellesoy/cucumber.git
-  revision: d79ecee1fb68e664da26480ddfbe6dad65fec31e
+  revision: d9e5285a0c39fec093951d11961b42dd89ea847f
   specs:
     cucumber (0.9.0)
       builder (~> 2.1.2)
@@ -10,19 +10,18 @@ GIT
       term-ansicolor (~> 1.0.5)
 
 GIT
+  remote: git://github.com/johnf/authlogic.git
+  revision: 3a6a28cf29577ecaabc4494ac3f372b792c34716
+  specs:
+    authlogic (2.1.6)
+      activesupport
+
+GIT
   remote: git://github.com/johnf/rack-test.git
-  revision: 0490800
+  revision: 0490800e9753a24612960d7cc02c8ed1aef1beaf
   specs:
     rack-test (0.5.4)
       rack (>= 1.0)
-
-GIT
-  remote: git://github.com/odorcicd/authlogic.git
-  revision: a087ad0
-  branch: rails3
-  specs:
-    authlogic (2.1.3)
-      activesupport
 
 GEM
   remote: http://gemcutter.org/
@@ -109,7 +108,7 @@ GEM
       yard
     polyglot (0.3.1)
     rack (1.2.1)
-    rack-mount (0.6.12)
+    rack-mount (0.6.13)
       rack (>= 1.0.0)
     rails (3.0.0)
       actionmailer (= 3.0.0)
@@ -148,7 +147,7 @@ GEM
       polyglot (>= 0.3.1)
     trollop (1.16.2)
     tzinfo (0.3.23)
-    yard (0.6.0)
+    yard (0.6.1)
 
 PLATFORMS
   ruby
