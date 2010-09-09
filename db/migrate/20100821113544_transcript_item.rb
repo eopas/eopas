@@ -15,7 +15,7 @@ class TranscriptItem < ActiveRecord::Migration
       t.string   :original_content_type
       t.string   :original_file_size
       t.datetime :original_updated_at
-      t.string   :transcription_format
+      t.string   :transcript_format
 
       # creation and update timestamps
       t.timestamps

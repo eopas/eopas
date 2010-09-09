@@ -1,8 +1,44 @@
+class ProperSchemaValidator < ActiveModel::EachValidator
+  def validate_each(record, attribute, value)
+    transcription = Transcription.new(:data => File.read(value.queued_for_write[:original]), :format => record.transcript_format)
+    errors = transcription.validate
+    unless errors.empty?
+      record.errors[attribute] << "Transcript did not validate against the schema"
+      errors.each do |error|
+        record.errors[attribute] << error.message
+      end
+    end
+  end
+end
+
 class Transcript < ActiveRecord::Base
   belongs_to :depositor, :class_name => 'User'
   belongs_to :media_item
 
   has_many :transcript_tiers
+
+  include Paperclip
+  has_attached_file :original
+
+  attr_accessible :original, :transcript_format
+
+  FORMATS = ['ELAN', 'Toolbox', 'Transcriber', 'EOPAS']
+
+  validates :original,          :presence => true, :proper_schema => true
+  validates :transcript_format, :presence => true, :inclusion => { :in => FORMATS }
+  validates :depositor,         :presence => true
+  validates :creator,           :presence => true
+  validates :language_code,     :presence => true
+  validates :date,              :presence => true
+
+  validates_associated :depositor
+  validates_attachment_presence :original
+
+  def before_create
+    transcription = Transcription.new(:data => File.read(original.queued_for_write[:original]), :format => transcript_format)
+    eopas = transcription.transcode
+
+  end
 
 
   def to_s
@@ -18,3 +54,5 @@ class Transcript < ActiveRecord::Base
     "}\n"
   end
 end
+
+

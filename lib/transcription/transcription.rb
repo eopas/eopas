@@ -20,7 +20,7 @@ class Transcription
 
   def initialize(options = {})
     @data = options[:data]
-    @format = options[:format]
+    @format = options[:format].downcase
 
     # parse XML file
     @doc = Nokogiri::XML(@data)
@@ -28,7 +28,7 @@ class Transcription
 
   def validate
     # load Schema file
-    xsdname = "lib/transcription/SCHEMAS/#@format.xsd"
+    xsdname = "#{Rails.root}/public/SCHEMAS/#@format.xsd"
     @xsd = Nokogiri::XML::Schema(File.open(xsdname))
 
     # validate doc and print errors
@@ -43,11 +43,10 @@ class Transcription
     @xsd.valid?(@doc)
   end
 
-  def transcode_to(options = {})
-    @outfile = options[:file]
+  def to_eopas
 
     # load correct XSLT
-    xsltname = "lib/transcription/XSLT/#{@format}2eopas.xsl"
+    xsltname = "#{Rails.root}/public/XSLT/#{@format}2eopas.xsl"
     @xslt  = Nokogiri::XSLT(File.open(xsltname))
 
     # transcode XML file
@@ -55,15 +54,9 @@ class Transcription
 
     # transcoding failed and just produced:
     # <?xml version="1.0" encoding="UTF-8"?>
-    if ("#@e_doc".length == 39)
-      # remove file if it exists
-      FileUtils.rm(@outfile, :force => true)
-      return false
-    else
-      # create file
-      File.open(@outfile, 'w') {|f| f.write(@e_doc) }
-      return true
-    end
+    return if @e_doc == '<?xml version="1.0" encoding="UTF-8"?>'
+
+    @e_doc.to_s
   end
 
   # parser class for Eopas 2.0 XML Documents
@@ -95,7 +88,7 @@ class Transcription
         # the <meta> fields in the header
         case attrs['name']
         when "dc:type"
-          @transcript.transcription_format = attrs['value']
+          @transcript.transcript_format = attrs['value']
         when "dc:creator"
           @transcript.creator = attrs['value']
         when "dc:language"

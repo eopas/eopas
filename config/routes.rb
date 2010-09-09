@@ -24,7 +24,9 @@ Eopas::Application.routes.draw do
   resources :forgotten_passwords
 
   # Media
-  resources :media_items
+  resources :media_items do
+    resources :transcripts, :shallow => true
+  end
 
   # Transcript
   get 'eopas_format', :to => 'transcripts#eopas_format', :format => :xml, :as => 'eopas_format'

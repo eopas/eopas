@@ -90,7 +90,7 @@ ActiveRecord::Schema.define(:version => 20100821113544) do
     t.string   "original_content_type"
     t.string   "original_file_size"
     t.datetime "original_updated_at"
-    t.string   "transcription_format"
+    t.string   "transcript_format"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

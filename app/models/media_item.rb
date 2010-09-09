@@ -1,6 +1,8 @@
 require 'paperclip_bug_fixes'
 class MediaItem < ActiveRecord::Base
   belongs_to :depositor, :class_name => 'User'
+  has_many :transcripts
+
   before_save :create_item_id
 
   include Paperclip

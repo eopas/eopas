@@ -1,0 +1,24 @@
+
+#transcript
+  %h2 Add Transcript
+
+  = form_for [@media_item, @transcript], :html => { :multipart => true } do |f|
+    = error_messages @transcript
+
+    %fieldset
+
+    %table#metadata
+      %tr
+        %td#name
+          = f.label :original, 'Transcript'
+        %td#value
+          = f.file_field :original
+
+      %tr
+        %td#name
+          = f.label :transcript_format, 'Format'
+        %td#value
+          = f.select :transcript_format, options_for_select(Transcript::FORMATS, @transcript.transcript_format)
+
+
+    = f.submit "Add"

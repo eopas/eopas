@@ -24,19 +24,19 @@
           Depositor
         %td#value
           = @media_item.depositor.full_name
-  
+
       %tr#recorded_at
         %td#name
           Recorded on
         %td#value
           = @media_item.recorded_at
-  
+
       %tr#annotator_name
         %td#name
           Name of Annotator
         %td#value
           = @media_item.annotator_name
-  
+
       %tr#presenter_name
         %td#name
           Name of Presenter
@@ -80,3 +80,8 @@
           %td#value
             = link_to @media_item.original.url(:standard), @media_item.original.url(:standard)
 
+
+  #transcripts
+
+  #add-transcript
+    = link_to 'Add transcript', new_media_item_transcript_path(@media_item)
