@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/aslakhellesoy/cucumber.git
-  revision: d9e5285a0c39fec093951d11961b42dd89ea847f
+  revision: d9e5285
   specs:
     cucumber (0.9.0)
       builder (~> 2.1.2)
@@ -11,14 +11,14 @@ GIT
 
 GIT
   remote: git://github.com/johnf/authlogic.git
-  revision: 3a6a28cf29577ecaabc4494ac3f372b792c34716
+  revision: 3a6a28c
   specs:
     authlogic (2.1.6)
       activesupport
 
 GIT
   remote: git://github.com/johnf/rack-test.git
-  revision: 0490800e9753a24612960d7cc02c8ed1aef1beaf
+  revision: 0490800
   specs:
     rack-test (0.5.4)
       rack (>= 1.0)
