@@ -23,7 +23,7 @@ end
 When /^I transcode the transcription "([^"]*)" as an "([^"]*)" format in directory "([^"]*)"$/ do |file, format, directory|
   tran = File.read("#{directory}#{file}")
   @transcription = Transcription.new(:data => tran, :format => format.to_sym)
-  @transcription.transcode_to(:file => "#{directory}e_#{file}")
+  @transcription.transcode_to(:file => "#{directory}e_#{file}", :format => :eopas)
 end
 
 Then /^a transcription "([^"]*)" should exist in directory "([^"]*)"$/ do |filename, directory|
@@ -53,4 +53,11 @@ end
 Then /^this transcript has at least (\d+) transcript tier with at least (\d+) transcript phrase$/ do |num_tiers, num_phrases|
   @transcript[0].transcript_tiers.size.should >= num_tiers.to_i
   @transcript[0].transcript_tiers[0].transcript_phrases.size.should >= num_phrases.to_i
+end
+
+
+When /^I export the transcription "([^"]*)" in directory "([^"]*)" to format "([^"]*)"$/ do |file, directory, format|
+  tran = File.read("#{directory}#{file}")
+  @transcription = Transcription.new(:data => tran, :format => :eopas)
+  @transcription.transcode_to(:file => "#{directory}#{format}_#{file}", :format => format.to_sym)
 end

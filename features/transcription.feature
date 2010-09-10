@@ -107,3 +107,7 @@ Feature: Import and export transcription files
 
 # EXPORT TESTS
 #
+  @ignore
+  Scenario:
+    When I export the transcription "eopas1.xml" in directory "features/test_data/" to format "elan"
+    Then a transcription "elan_eopas1.xml" should exist in directory "features/test_data/"
