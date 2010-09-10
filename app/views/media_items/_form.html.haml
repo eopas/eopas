@@ -2,62 +2,62 @@
 
 %table#metadata
   %tr
-    %td#name
+    %td.name
       = form.label :original, 'Media File'
-    %td#value
+    %td.value
       = form.file_field :original
 
   %tr
-    %td#name
+    %td.name
       = form.label :title, 'Title'
-    %td#value
+    %td.value
       = form.text_field :title, :class => 'text'
 
   %tr
-    %td#name
+    %td.name
       = form.label :recorded_at, 'Recorded on'
-    %td#value
+    %td.value
       = form.date_select :recorded_at, :order => [:day, :month, :year]
 
   %tr
-    %td#name
+    %td.name
       = form.label :annotator_name, 'Name of Annotator'
-    %td#value
+    %td.value
       = form.text_field :annotator_name, :class => 'text'
 
   %tr
-    %td#name
+    %td.name
       = form.label :presenter_name, 'Name of Presenter'
-    %td#value
+    %td.value
       = form.text_field :presenter_name, :class => 'text'
 
   %tr
-    %td#name
+    %td.name
       = form.label :presenter_role, 'Role of Presenter'
-    %td#value
+    %td.value
       = form.select :presenter_role, options_for_select(MediaItem::PRESENTER_ROLES, @media_item.presenter_role)
 
   %tr
-    %td#name
+    %td.name
       = form.label :language_code, 'Language Code'
-    %td#value
+    %td.value
       = form.select :language_code, options_from_collection_for_select(LanguageCode.all, :code, :name, @media_item.language_code)
 
   %tr
-    %td#name
+    %td.name
       = form.label :copyright, 'Copyright Holder'
-    %td#value
+    %td.value
       = form.text_field :copyright, :class => 'text'
 
   %tr
-    %td#name
+    %td.name
       = form.label :license, 'License'
-    %td#value
+    %td.value
       = form.select :license, options_from_collection_for_select(License.all, :code, :name, @media_item.license)
 
   %tr
-    %td#name
+    %td.name
       = form.label :private, 'Make item private?'
-    %td#value
+    %td.value
       = form.check_box :private
 

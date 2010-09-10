@@ -1,85 +1,30 @@
 
-#media_item
-  #media_display
-    - if @media_item.original_processing
-      %p
+#left_column
+  %h3
+    = @media_item.title
+
+  #media_display.collapse_box
+    .collapse_title
+      = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
+      Media Player
+    .collapse_content
+      - if @media_item.original_processing
         = image_tag '/originals/poster/missing.png'
-    -else
-      %p
+      -else
         = media_item_video_tag @media_item
 
-  #metadata_display
-    %h3
-      = @media_item.title
+  #add-transcript
+    = link_to 'Add transcript', new_media_item_transcript_path(@media_item)
 
-    %table#metadata.small
-      %tr#item_id
-        %td#name
-          Item ID
-        %td#value
-          = @media_item.item_id
+  #metadata_display.collapse_box
+    .collapse_title
+      = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
+      == #{@media_item.depositor.full_name} , #{@media_item.recorded_at}
 
-      %tr#depositor
-        %td#name
-          Depositor
-        %td#value
-          = @media_item.depositor.full_name
+    .collapse_content
+      = render :partial => 'details'
 
-      %tr#recorded_at
-        %td#name
-          Recorded on
-        %td#value
-          = @media_item.recorded_at
-
-      %tr#annotator_name
-        %td#name
-          Name of Annotator
-        %td#value
-          = @media_item.annotator_name
-
-      %tr#presenter_name
-        %td#name
-          Name of Presenter
-        %td#value
-          = @media_item.presenter_name
-
-      %tr#presenter_role
-        %td#name
-          Role of Presenter
-        %td#value
-          = @media_item.presenter_role
-
-      %tr#language_code
-        %td#name
-          Language Code
-        %td#value
-          = @media_item.language_code
-
-      %tr#copyright
-        %td#name
-          Copyright
-        %td#value
-          = @media_item.copyright
-
-      %tr#license
-        %td#name
-          License
-        %td#value
-          = @media_item.license
-
-      %tr#private
-        %td#name
-          Private
-        %td#value
-          = @media_item.private
-
-      - if (@media_item.depositor.id == current_user.id)
-        %tr#download
-          %td#name
-            Download
-          %td#value
-            = link_to @media_item.original.url(:standard), @media_item.original.url(:standard)
-
+#transcripts_display
   - if @media_item.transcripts
     #transcripts
       - @media_item.transcripts.each do |transcript|
@@ -109,5 +54,3 @@
                     == Text: #{transcript_phrase.text}
 
 
-  #add-transcript
-    = link_to 'Add transcript', new_media_item_transcript_path(@media_item)

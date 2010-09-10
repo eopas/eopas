@@ -12,18 +12,19 @@
 @import "partials/form";
 @import "partials/one_col";
 
+// Color scheme:
+$red :      #ff542e;
+$yellow:    #fff0ba;
+$ocre:      #f2bc00;
+$grey:      #cfd6de;
+$lightgrey: #e4e9f5;
+$lightblue: #adc1d6;
+$blue:      #7297ba;
 
 // Specific styling of elements
-// Color scheme: 
-// #ff542e red
-// #fff0ba yellow
-// #f2bc00 ocre
-// #cfd6de light grey
-// #adc1d6 light blue
-// #7297ba blue
 #header {
   background-repeat: no-repeat;
-  background-color: #cfd6de;
+  background-color: $grey;
   vertical-align: bottom;
   height: 65px;
   color: white;
@@ -35,7 +36,7 @@
     vertical-align: bottom;
     top: 10px;
     right: 15px;
-    color: #7297ba;
+    color: $blue;
     z-index: 1000;
     padding: 10px;
     li { list-style-type: none; }
@@ -43,7 +44,7 @@
 }
 
 #flash_error {
-  background-color: #ff542e;
+  background-color: $red;
   border-color: darkred;
 }
 
@@ -65,7 +66,7 @@
 }
 
 #menu {
-  background-color: #f2bc00;
+  background-color: $ocre;
   margin-bottom: 10px;
   padding: 2px;
   padding-left: 8px;
@@ -103,7 +104,7 @@
 
 #media_item {
   #errorExplanation {
-    background-color: #ff542e;
+    background-color: $red;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -118,11 +119,14 @@
     }
   }
 }
+
 table#metadata {
+  padding: 10px;
+  margin: 0;
   td#name {
     font-weight: bold;
     text-align: right;
-    width: 150px;
+    width: 100px;
   }
   td#content{
   }
@@ -135,22 +139,42 @@ table.small {
   }
 }
 
-#media_item {
+.collapse_box {
+  border: 2px solid black;
+  padding: 0;
+  margin: 10px 0;
+  width: 330px;  
+  .collapse_title {
+    background-color: $lightblue;
+    font-weight:    bold;
+    height:         17px;
+    padding-left:   5px;
+    padding-bottom: 2px;
+  }
+  .collapse_content {
+    background-color: $lightgrey;
+    padding: 7px 5px 3px 5px;
+    margin: 0;
+  }
+}
+
+#left_column {
+  display: static;
+  float: left;
   #media_display {
-    position: absolute;
     display: block;
   }
   #metadata_display {
     display: block;
-    margin-left: 370px;
-    table#metadata {
-      width: 400px;
-      border-style: groove;
-      border-width: 2px;
-      border-radius: 5px;
-    }
   }
 }
+#transcripts_display {
+  margin: 0 20px 10px 350px;
+  padding: 2px;
+  border: 2px solid $grey;
+  overflow: auto;
+}
+
 
 #footer {
   text-align: center;

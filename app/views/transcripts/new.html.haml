@@ -9,15 +9,15 @@
 
     %table#metadata
       %tr
-        %td#name
+        %td.name
           = f.label :original, 'Transcript'
-        %td#value
+        %td.value
           = f.file_field :original
 
       %tr
-        %td#name
+        %td.name
           = f.label :transcript_format, 'Format'
-        %td#value
+        %td.value
           = f.select :transcript_format, options_for_select(Transcript::FORMATS, @transcript.transcript_format)
 
 
