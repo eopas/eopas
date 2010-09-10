@@ -1,5 +1,4 @@
 module ApplicationHelper
-  require 'transcription/transcription'
   def error_messages(object)
     moo = ''
     if object.errors.any?

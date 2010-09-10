@@ -1,7 +1,8 @@
+require 'transcription'
+
 class ProperSchemaValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
-    transcription = Transcription.new(:data => File.read(value.queued_for_write[:original]), :format => record.transcript_format)
-    errors = transcription.validate
+    errors = record.instance_variable_get(:@transcription).validate
     unless errors.empty?
       record.errors[attribute] << "Transcript did not validate against the schema"
       errors.each do |error|
@@ -27,13 +28,12 @@ class Transcript < ActiveRecord::Base
   validates :original,          :presence => true, :proper_schema => true
   validates :transcript_format, :presence => true, :inclusion => { :in => FORMATS }
   validates :depositor,         :presence => true
-  validates :language_code,     :presence => true
-  validates :date,              :presence => true
 
   validates_associated :depositor
   validates_attachment_presence :original
 
-  before_validation :parse_transcript
+  before_validation :create_transcription
+  before_save :import_transcription
 
 
   def to_s
@@ -50,9 +50,14 @@ class Transcript < ActiveRecord::Base
   end
 
   protected
-  def parse_transcript
-    transcription = Transcription.new(:data => File.read(original.queued_for_write[:original]), :format => transcript_format)
-    transcription.import(self)
+  def create_transcription
+    # WTF: For some reason if this isn't an instance variable
+    @file_jf = original.queued_for_write[:original]
+    @transcription = Transcription.new(:data => File.read(@file_jf.path), :format => transcript_format)
+  end
+
+  def import_transcription
+    @transcription.import(self)
   end
 
 end
