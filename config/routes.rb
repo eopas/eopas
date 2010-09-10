@@ -25,10 +25,9 @@ Eopas::Application.routes.draw do
 
   # Media
   resources :media_items do
-    resources :transcripts, :shallow => true
+    resources :transcripts, :shallow => true do
+      get 'eopas', :on => :member, :action => :show, :format => :xml
+    end
   end
-
-  # Transcript
-  get 'eopas_format', :to => 'transcripts#eopas_format', :format => :xml, :as => 'eopas_format'
 
 end

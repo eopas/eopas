@@ -23,8 +23,8 @@
     .collapse_content
       = render :partial => 'details'
 
-- if @transcript
-  #transcript_display
+#transcript_display
+  - if @transcript
     .metadata
       .title
         %strong Creator
@@ -48,6 +48,6 @@
               == Start Time: #{transcript_phrase.start_time}
               == End Time: #{transcript_phrase.end_time}
               == Text: #{transcript_phrase.text}
-- else
-  #add-transcript
-    = link_to 'Add transcript', new_media_item_transcript_path(@media_item)
+  - else
+    #add-transcript
+      = link_to 'Add transcript', new_media_item_transcript_path(@media_item)

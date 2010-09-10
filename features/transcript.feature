@@ -33,16 +33,23 @@ Feature: Media Items can have transcriptions
     Then I should see "Transcript was successfully added"
      And I should be on that media item's page
      And I should see "<text>"
+    When I follow "EOPAS" within "#metadata_display"
+    Then I should see "" within "interlinear-text"
+     And I should see "<text>"
+    When I go to that media item's page
+     And I follow "Original"
+    Then I should see "<text>"
+     And I should see "" within "<format-identifier>"
 
     Examples:
-      | file             | format      | text           |
-      | elan1.xml        | ELAN        | so from here   |
-      | elan2.xml        | ELAN        | My name is Joe |
-      | eopas1.xml       | EOPAS       | so from here   |
-      | eopas2.xml       | EOPAS       | cristiana ica  |
-      | eopas3.xml       | EOPAS       | his father     |
-      | toolbox1.xml     | Toolbox     | about this wo  |
-      | toolbox2.xml     | Toolbox     | about the rat  |
-      | transcriber1.xml | Transcriber | pause crowd    |
-      | transcriber2.xml | Transcriber | puet soksoki   |
+      | file             | format      | text           | format-identifier   |
+      | elan1.xml        | ELAN        | so from here   | annotation_document |
+      | elan2.xml        | ELAN        | My name is Joe | annotation_document |
+      | eopas1.xml       | EOPAS       | so from here   | eopas               |
+      | eopas2.xml       | EOPAS       | cristiana ica  | eopas               |
+      | eopas3.xml       | EOPAS       | his father     | eopas               |
+      | toolbox1.xml     | Toolbox     | about this wo  | database            |
+      | toolbox2.xml     | Toolbox     | about the rat  | database            |
+      | transcriber1.xml | Transcriber | pause crowd    | trans               |
+      | transcriber2.xml | Transcriber | puet soksoki   | trans               |
 

@@ -61,22 +61,16 @@
       = @media_item.private
 
   - if (@media_item.depositor.id == current_user.id)
-    %tr#download_media
+    %tr
       %td.name
         Download
       %td.value
         = link_to @media_item.original.url(:standard), @media_item.original.url(:standard)
 
-      %tr#download_eopas
-        %td.name
-          Transcript
-        %td.value
-          FIXME: missing link to transcript
-          = link_to @media_item.original.url(:standard), @media_item.original.url(:standard)
-
-      %tr#download_transcript
-        %td.name
-          Original
-        %td.value
-          FIXME: missing link to original transcript
-          = link_to @media_item.original.url(:standard), @media_item.original.url(:standard)
+  - if @transcript
+    %tr
+      %td.name
+        Transcript
+      %td.value
+        = link_to "EOPAS", eopas_transcript_path(@transcript)
+        = link_to "Original (#{@transcript.transcript_format})", @transcript.original.url
