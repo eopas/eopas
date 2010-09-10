@@ -3,12 +3,12 @@ class TranscriptsController < ApplicationController
 
   def new
     @media_item = current_user.media_items.find(params[:media_item_id])
-    @transcript = @media_item.transcripts.build
+    @transcript = @media_item.build_transcript
   end
 
   def create
     @media_item = current_user.media_items.find(params[:media_item_id])
-    @transcript = @media_item.transcripts.build params[:transcript]
+    @transcript = @media_item.build_transcript params[:transcript]
 
     @transcript.depositor = current_user
 

@@ -7,14 +7,13 @@
     .collapse_title
       = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
       Media Player
+
     .collapse_content
       - if @media_item.original_processing
         = image_tag '/originals/poster/missing.png'
       -else
         = media_item_video_tag @media_item
 
-  #add-transcript
-    = link_to 'Add transcript', new_media_item_transcript_path(@media_item)
 
   #metadata_display.collapse_box
     .collapse_title
@@ -24,33 +23,31 @@
     .collapse_content
       = render :partial => 'details'
 
-#transcripts_display
-  - if @media_item.transcripts
-    #transcripts
-      - @media_item.transcripts.each do |transcript|
-        .transcript
-          .metadata
-            .title
-              %strong Creator
-              = transcript.creator
-            .language_code
-              %strong Language Code
-              = transcript.language_code
-            .date
-              %strong Date
-              = transcript.date
-            .depositor
-              %strong Depositor
-              = transcript.depositor.full_name
-          .transcript_tiers
-            - transcript.transcript_tiers.each do |transcript_tier|
-              .transcript_tier
-                == Language Code #{transcript_tier.language_code}
-                == Language Type #{transcript_tier.linguistic_type}
-                - transcript_tier.transcript_phrases.each do |transcript_phrase|
-                  .transcript_phrase
-                    == Start Time: #{transcript_phrase.start_time}
-                    == End Time: #{transcript_phrase.end_time}
-                    == Text: #{transcript_phrase.text}
-
-
+- if @transcript
+  #transcript_display
+    .metadata
+      .title
+        %strong Creator
+        = @transcript.creator
+      .language_code
+        %strong Language Code
+        = @transcript.language_code
+      .date
+        %strong Date
+        = @transcript.date
+      .depositor
+        %strong Depositor
+        = @transcript.depositor.full_name
+    .transcript_tiers
+      - @transcript.transcript_tiers.each do |transcript_tier|
+        .transcript_tier
+          == Language Code #{transcript_tier.language_code}
+          == Language Type #{transcript_tier.linguistic_type}
+          - transcript_tier.transcript_phrases.each do |transcript_phrase|
+            .transcript_phrase
+              == Start Time: #{transcript_phrase.start_time}
+              == End Time: #{transcript_phrase.end_time}
+              == Text: #{transcript_phrase.text}
+- else
+  #add-transcript
+    = link_to 'Add transcript', new_media_item_transcript_path(@media_item)

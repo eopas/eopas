@@ -64,7 +64,7 @@ class Transcription
     parser = Nokogiri::XML::SAX::Parser.new(eopas_doc)
     parser.parse(eopas_xml)
   end
- 
+
   # parser class for Eopas 2.0 XML Documents
   class EopasDoc < Nokogiri::XML::SAX::Document
     def initialize(transcript)

@@ -28,6 +28,8 @@ class MediaItemsController < ApplicationController
 
   def show
     @media_item = MediaItem.find(params[:id])
+    @transcript = @media_item.transcript
+
     # TODO: JF add a named scope
     if (@media_item.private == true && current_user != @media_item.depositor)
       flash[:notice] = 'You are not allowed to access this content.'
