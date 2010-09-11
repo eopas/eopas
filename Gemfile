@@ -13,7 +13,7 @@ gem 'authlogic', :git => 'git://github.com/johnf/authlogic.git'
 gem 'declarative_authorization'
 gem 'paperclip'
 gem 'delayed_paperclip'
-gem 'delayed_job'
+gem 'delayed_job', '2.1.0.pre2'
 
 #gem 'exception_notifier'
 

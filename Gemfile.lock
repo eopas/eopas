@@ -73,7 +73,8 @@ GEM
     database_cleaner (0.5.2)
     declarative_authorization (0.5)
       rails (>= 2.1.0)
-    delayed_job (2.0.3)
+    delayed_job (2.1.0.pre2)
+      activesupport (~> 3.0)
       daemons
     delayed_paperclip (0.6.5)
       paperclip (>= 2.3.0)
@@ -160,7 +161,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   declarative_authorization
-  delayed_job
+  delayed_job (= 2.1.0.pre2)
   delayed_paperclip
   factory_girl
   haml
