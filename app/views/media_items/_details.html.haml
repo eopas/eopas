@@ -74,3 +74,28 @@
       %td.value
         = link_to "EOPAS", eopas_transcript_path(@transcript)
         = link_to "Original (#{@transcript.transcript_format})", @transcript.original.url
+
+    %tr
+      %td.name
+        Transcript Creator
+      %td.value
+        = @transcript.creator
+
+    %tr
+      %td.name
+        Transcript Language
+      %td.value
+        = @transcript.language_code
+
+    %tr
+      %td.name
+        Transcript Date
+      %td.value
+        = @transcript.date
+
+    %tr
+      %td.name
+        Transcript Depositor
+      %td.value
+        = @transcript.depositor.full_name
+        

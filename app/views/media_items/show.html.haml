@@ -25,29 +25,15 @@
 
 #transcript_display
   - if @transcript
-    .metadata
-      .title
-        %strong Creator
-        = @transcript.creator
-      .language_code
-        %strong Language Code
-        = @transcript.language_code
-      .date
-        %strong Date
-        = @transcript.date
-      .depositor
-        %strong Depositor
-        = @transcript.depositor.full_name
-    .transcript_tiers
-      - @transcript.transcript_tiers.each do |transcript_tier|
-        .transcript_tier
-          == Language Code #{transcript_tier.language_code}
-          == Language Type #{transcript_tier.linguistic_type}
-          - transcript_tier.transcript_phrases.each do |transcript_phrase|
-            .transcript_phrase
-              == Start Time: #{transcript_phrase.start_time}
-              == End Time: #{transcript_phrase.end_time}
-              == Text: #{transcript_phrase.text}
+    - @transcript.transcript_tiers.each do |transcript_tier|
+      .transcript_tier
+        == Language Code #{transcript_tier.language_code}
+        == Language Type #{transcript_tier.linguistic_type}
+        - transcript_tier.transcript_phrases.each do |transcript_phrase|
+          .transcript_phrase
+            == Start Time: #{transcript_phrase.start_time}
+            == End Time: #{transcript_phrase.end_time}
+            == Text: #{transcript_phrase.text}
   - else
     #add-transcript
       = link_to 'Add transcript', new_media_item_transcript_path(@media_item)
