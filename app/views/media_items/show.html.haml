@@ -30,16 +30,40 @@
 
 #transcript_display
   - if @transcript
-    - @transcript.transcript_tiers.each do |transcript_tier|
-      .transcript_tier
-        == Language Code #{transcript_tier.language_code}
-        == Language Type #{transcript_tier.linguistic_type}
-        - transcript_tier.transcript_phrases.each do |transcript_phrase|
-          .transcript_phrase
-            == Start Time: #{transcript_phrase.start_time}
-            == End Time: #{transcript_phrase.end_time}
-            == Text: #{transcript_phrase.text}
-            == Words: #{transcript_phrase.words.inspect}
+    - tiers = @transcript.tiers
+    #tiers_info
+      - tiers.each do |tier|
+        .tier_info
+          == Language Code #{tier.language_code}
+          == Language Type #{tier.linguistic_type}
+    #tiers
+      - if tiers.map {|tier| tier.phrases.size}.uniq.size != 1
+        Error: Can't deal with transcripts that have different number of phrases in ach tier
+      - else
+        - tier_phrases = tiers.first.phrases.zip(*tiers[1..-1].map {|t| t.phrases})
+        - num_phrases = tiers.first.phrases.size
+        - 0.upto(num_phrases - 1) do |i|
+          .line
+            - tier_phrases[i].each do |phrase|
+              - if phrase.text
+                .translation= phrase.text.force_encoding('UTF-8')
+              .words
+                - phrase.words.each do |word|
+                  - unless word[:morphemes].empty?
+                    %span
+                      %table
+                        %tr
+                          %td{:colspan => word[:morphemes].first.size}
+                            = word[:text].force_encoding('UTF-8')
+
+                        - word[:morphemes].each do |kind, morphemes|
+                          %tr
+                            - morphemes.each do |s|
+                              %td{:class => kind}
+                                = s.force_encoding('UTF-8')
+
+
+
 
   - else
     #add-transcript

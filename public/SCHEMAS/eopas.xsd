@@ -86,7 +86,7 @@
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="text"  type="xsd:string"  minOccurs="0" maxOccurs="1"/>
-      <xsd:element name="words" type="wordsType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="wordlist" type="wordsType" minOccurs="0" maxOccurs="1"/>
     </xsd:sequence>
     <xsd:attribute name="startTime" type="xsd:string" use="required"/>
     <xsd:attribute name="endTime" type="xsd:string" use="required"/>
@@ -112,14 +112,14 @@
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="text"      type="xsd:string" minOccurs="0" maxOccurs="1"/>
-      <xsd:element name="morphemes" type="morphemesType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="morphemelist" type="morphemesType" minOccurs="0" maxOccurs="1"/>
     </xsd:sequence>
   </xsd:complexType>
 
   <!-- ********************** MORPHEMES LEVEL ********************** -->
   <xsd:complexType name="morphemesType">
     <xsd:annotation>
-      <xsd:documentation>Wrapper element for morphemes</xsd:documentation>
+      <xsd:documentation>Wrapper element for morphemeslist</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="morpheme" type="morphemeType" minOccurs="0" maxOccurs="unbounded"/>

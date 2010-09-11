@@ -16,7 +16,7 @@ class Transcript < ActiveRecord::Base
   belongs_to :depositor, :class_name => 'User'
   belongs_to :media_item
 
-  has_many :transcript_tiers, :dependent => :destroy
+  has_many :tiers, :class_name => 'TranscriptTier', :dependent => :destroy
 
   include Paperclip
   has_attached_file :original
@@ -53,7 +53,8 @@ class Transcript < ActiveRecord::Base
   def create_transcription
     # WTF: For some reason if this isn't an instance variable
     @file_jf = original.queued_for_write[:original]
-    @transcription = Transcription.new(:data => File.read(@file_jf.path), :format => transcript_format)
+    # TODO Can we just force the encoding here or should we try and detect it?
+    @transcription = Transcription.new(:data => File.read(@file_jf.path).force_encoding('UTF-8'), :format => transcript_format)
   end
 
   def import_transcription

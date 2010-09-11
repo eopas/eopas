@@ -107,7 +107,7 @@ version="1.0">
                 </text>
 
                 <!-- add words decomposition -->
-                <words>
+                <wordlist>
                   <xsl:for-each select="*[tb:tx]">
                     <word>
                       <xsl:for-each select="tb:tx">
@@ -116,7 +116,7 @@ version="1.0">
                         </text>
                       </xsl:for-each>
                       <xsl:if test="tb:mr">
-                        <morphemes>
+                        <morphemelist>
                           <xsl:for-each select="tb:mr">
                             <xsl:variable name="pos" select="position()"></xsl:variable>
                             <morpheme>
@@ -128,11 +128,11 @@ version="1.0">
                               </text>
                             </morpheme>
                           </xsl:for-each>
-                        </morphemes>
+                        </morphemelist>
                       </xsl:if>
                     </word>
                   </xsl:for-each>
-                </words>
+                </wordlist>
               </phrase>
             </xsl:for-each>
           </tier>

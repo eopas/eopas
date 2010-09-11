@@ -1,0 +1,5 @@
+vqdata-production: dir-or-file-in-srv srv*
+vqdata-production: package-contains-empty-directory srv/vqdata/production/log/
+vqdata-production: package-contains-empty-directory srv/vqdata/production/docroot/public/images/
+vqdata-production: package-contains-empty-directory srv/vqdata/production/docroot/public/stylesheets/
+vqdata-production: package-contains-empty-directory srv/vqdata/production/docroot/vendor/plugins/

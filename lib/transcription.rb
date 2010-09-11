@@ -81,7 +81,7 @@ class Transcription
     tiers = [tiers] unless tiers.is_a? Array
     tiers.each do |tier|
       # create new tier
-      t = transcript.transcript_tiers.build
+      t = transcript.tiers.build
       begin
         t.tier_id         = tier.id
       rescue NameError
@@ -99,47 +99,54 @@ class Transcription
       rescue NameError
       end
 
-      phrases = tier.phrase
+      phrases = tier.phrases
       phrases = [phrases] unless phrases.is_a? Array
       phrases.each do |phrase|
         # create new phrase
-        p = t.transcript_phrases.build
+        ph = t.phrases.build
         begin
-          p.phrase_id       = phrase.id
+          ph.phrase_id       = phrase.id
         rescue NameError
         end
-        p.start_time      = phrase.startTime.to_f
-        p.end_time        = phrase.endTime.to_f
+        ph.start_time      = phrase.startTime.to_f
+        ph.end_time        = phrase.endTime.to_f
         begin
-          p.ref_phrase      = phrase.ref
-        rescue NameError
-        end
-        begin
-          p.participant     = phrase.participant
+          ph.ref_phrase      = phrase.ref
         rescue NameError
         end
         begin
-          p.text            = phrase.text
+          ph.participant     = phrase.participant
         rescue NameError
         end
-        p.words           = []
+        begin
+          ph.text            = phrase.text
+        rescue NameError
+        end
+        ph.words           = []
 
         begin
-          words = phrase.words.word
-          words = [words] unless words.is_a? Array
-          words.each do |word|
-            new_word = {:text => word.text}
-            morphemes = word.morphemes.morpheme
-            new_word[:morphemes] = {}
-            morphemes.each do |morpheme|
-              texts = morpheme.text
-              texts.each do |text|
-                (new_word[:morphemes][text.kind] ||= []) << text
-              end
-            end
-            p.words << new_word
+          words = phrase.wordlist.words
+        rescue NameError => e
+          words = []
+        end
+
+        words.each do |word|
+          new_word = {:text => word.text + "", :morphemes => {} }
+
+          begin
+            morphemes = word.morphemelist.morphemes
+          rescue NameError
+            morphemes = []
           end
-        rescue NameError
+
+          morphemes.each do |morpheme|
+            texts = morpheme.text
+            texts.each do |text|
+              new_word[:morphemes][text.kind + ""] ||= []
+              new_word[:morphemes][text.kind + ""] << (text + "")
+            end
+          end
+          ph.words << new_word
         end
       end
     end
