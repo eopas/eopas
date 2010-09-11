@@ -37,3 +37,13 @@ Factory.define :media_item do |m|
   m.association :depositor, :factory => :user
 end
 
+
+Factory.define :transcript do |t|
+end
+
+Factory.define :transcript_tier do |t|
+end
+
+Factory.define :transcript_phrase do |t|
+end
+

@@ -29,4 +29,16 @@ class TranscriptsController < ApplicationController
     headers["Content-Disposition"] = "attachment; filename=\"eopas.xml\""
     respond_with @transcript
   end
+
+  def destroy
+    @transcript = Transcript.find params[:id]
+    media_item = @transcript.media_item
+
+    # FIXME only destroy users transcripts SECURITY HOLE
+    @model_class_name = Transcript.find params[:id]
+    @model_class_name.destroy
+    flash[:notice] = 'Transcript deleted!'
+
+    redirect_to media_item
+  end
 end

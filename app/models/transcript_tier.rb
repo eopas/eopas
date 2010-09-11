@@ -1,7 +1,7 @@
 class TranscriptTier < ActiveRecord::Base
   belongs_to :transcript
 
-  has_many :transcript_phrases
+  has_many :transcript_phrases, :dependent => :destroy
 
   def to_s
     "\ntranscript_tier {\n"+

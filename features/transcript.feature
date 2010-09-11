@@ -53,3 +53,24 @@ Feature: Media Items can have transcriptions
       | transcriber1.xml | Transcriber | pause crowd    | trans               |
       | transcriber2.xml | Transcriber | puet soksoki   | trans               |
 
+  Scenario: Delete a transcript
+    Then 0 transcripts should exist
+     And 0 transcript tiers should exist
+     And 0 transcript phrases should exist
+    When I attach the file "features/test_data/eopas1.xml" to "Transcript"
+     And I select "EOPAS" from "Format"
+     And I press "Add"
+    Then I should see "Transcript was successfully added"
+     And I should see "so from here"
+     And 1 transcripts should exist
+     And 11 transcript tiers should exist
+     And 315 transcript phrases should exist
+    When I follow "Delete transcript"
+    Then I should see "Transcript deleted"
+     And I should see "Add transcript"
+     And I should not see "so from here"
+     And 0 transcripts should exist
+     And 0 transcript tiers should exist
+     And 0 transcript phrases should exist
+
+

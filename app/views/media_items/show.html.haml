@@ -25,6 +25,9 @@
 
 #transcript_display
   - if @transcript
+    #remove-transcript
+      = link_to 'Delete transcript', @transcript, :confirm => "Are you sure?", :method => :delete
+
     - @transcript.transcript_tiers.each do |transcript_tier|
       .transcript_tier
         == Language Code #{transcript_tier.language_code}
@@ -34,6 +37,7 @@
             == Start Time: #{transcript_phrase.start_time}
             == End Time: #{transcript_phrase.end_time}
             == Text: #{transcript_phrase.text}
+
   - else
     #add-transcript
       = link_to 'Add transcript', new_media_item_transcript_path(@media_item)

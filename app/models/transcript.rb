@@ -16,7 +16,7 @@ class Transcript < ActiveRecord::Base
   belongs_to :depositor, :class_name => 'User'
   belongs_to :media_item
 
-  has_many :transcript_tiers
+  has_many :transcript_tiers, :dependent => :destroy
 
   include Paperclip
   has_attached_file :original
