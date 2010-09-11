@@ -130,8 +130,8 @@ class Transcription
           words.each do |word|
             new_word = {:text => word.text}
             morphemes = word.morphemes.morpheme
+            new_word[:morphemes] = {}
             morphemes.each do |morpheme|
-              new_word[:morphemes] = {}
               texts = morpheme.text
               texts.each do |text|
                 (new_word[:morphemes][text.kind] ||= []) << text
