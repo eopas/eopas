@@ -208,7 +208,39 @@ table.small {
   padding: 2px;
   border: 2px solid $grey;
   overflow: auto;
+  .line {
+    background-color: $lightgrey;
+    padding: 0;
+    margin: 2px 2px 4px 2px;
+    text-align: left;
+    .words {
+      span {
+        display: inline-block;      
+        font-size: 12px;
+        table {
+          padding: 1px;
+          margin: 0;
+          tr {
+            td {
+              white-space: nowrap;
+              font-family: Arial;
+              padding: 1px;
+              margin: 1px;
+            }
+            td.morpheme, td.gloss {
+              background-color: $grey;
+            }
+          }
+        }
+      }
+    }
+    .translation {
+      font-size: 12px;
+      color: green;
+      margin-left: 5px;
+      font-style: italic;
+    }
+  }
 }
-
 
 
