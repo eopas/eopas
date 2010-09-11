@@ -20,6 +20,7 @@ Feature: Media
     Then I should be on the login page
      And I should see "You must be logged in to access that page."
 
+  @javascript
   Scenario: Create a new media item
     When I am on the new media item page
      And I attach the file "features/test_data/test.m4v" to "Media"
@@ -28,6 +29,8 @@ Feature: Media
      And I fill in "Name of Annotator" with "John Ferlito"
      And I fill in "Name of Participant" with "Random"
      And I fill in "Copyright Holder" with "John Ferlito"
+     And I select "Germany" from "Country Code"
+     And I select "Korean (kor)" from "Language Code"
      And I press "Create"
     Then I should see "Media item was successfully created"
      And there should be 1 delayed job
@@ -38,7 +41,7 @@ Feature: Media
      And I should see "John Ferlito" within "tr#annotator_name"
      And I should see "Random" within "tr#participant_name"
      And I should see "speaker" within "tr#participant_role"
-     And I should see "en" within "tr#language_code"
+     And I should see "kor" within "tr#language_code"
      And I should see "John Ferlito" within "tr#copyright"
      And I should see "CC-AU-BY-SA" within "tr#license"
      And I should see "false" within "tr#private"

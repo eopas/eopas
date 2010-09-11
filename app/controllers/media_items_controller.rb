@@ -11,7 +11,8 @@ class MediaItemsController < ApplicationController
     @media_item = MediaItem.new(
       :participant_role => "speaker",
       :license          => "CC-AU-BY-SA",
-      :language_code    => "en",
+      :country_code     => "AU",
+      :language_code    => "eng",
       :private          => false,
     )
   end

@@ -1,3 +1,6 @@
+:javascript
+  var country_languages = #{CountryLanguage.country_languages.to_json}
+
 %fieldset
 
 %table#metadata
@@ -39,9 +42,16 @@
 
   %tr
     %td.name
+      = form.label :country_code, 'Country Code'
+    %td.value
+      = form.select :country_code, options_from_collection_for_select(Country.all.sort_by(&:name), :code, :name, @media_item.country_code), {}, :class => 'country-select', 'data-select-child' => 'media_item_language_code'
+
+
+  %tr
+    %td.name
       = form.label :language_code, 'Language Code'
     %td.value
-      = form.select :language_code, options_from_collection_for_select(LanguageCode.all, :code, :name, @media_item.language_code)
+      = form.select :language_code, options_for_select([], @media_item.language_code), {}, 'data-option-selected' => @media_item.language_code
 
   %tr
     %td.name

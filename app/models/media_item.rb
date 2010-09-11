@@ -37,7 +37,8 @@ class MediaItem < ActiveRecord::Base
   process_in_background :original
 
   attr_accessible :title, :original, :recorded_at, :annotator_name, :participant_name, :participant_role, :language_code,
-                  :copyright, :license, :private
+                  :copyright, :license, :private, :country_code
+  attr_accessor :country_code # So on validation errror it is still filled in
 
   validates :title,         :presence => true
   validates :depositor,     :presence => true, :associated => true
