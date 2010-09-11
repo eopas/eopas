@@ -37,7 +37,7 @@ version="1.0">
         </meta>
       </header>
 
-      <interlinear-text>
+      <interlinear>
         <!-- section tier -->
         <tier>
           <!-- Metadata for section tier -->
@@ -47,24 +47,24 @@ version="1.0">
           </xsl:attribute>
 
           <!-- Phrases of section tier -->
-          <phrases>
-            <xsl:for-each select="Section">
-              <phrase>
-                <xsl:variable name="topicId" select="@topic"/>
-                <xsl:variable name="description" select="/Trans/Topics/Topic[@id=$topicId]/@desc"/>
-                <xsl:attribute name="startTime">
-                  <xsl:value-of select="@startTime"/>
-                </xsl:attribute>
-                <xsl:attribute name="endTime">
-                  <xsl:value-of select="@endTime"/>
-                </xsl:attribute>
-                <xsl:attribute name="id">
-                  <xsl:value-of select="@topic"/>
-                </xsl:attribute>
+          <xsl:for-each select="Section">
+            <phrase>
+              <xsl:variable name="topicId" select="@topic"/>
+              <xsl:variable name="description" select="/Trans/Topics/Topic[@id=$topicId]/@desc"/>
+              <xsl:attribute name="startTime">
+                <xsl:value-of select="@startTime"/>
+              </xsl:attribute>
+              <xsl:attribute name="endTime">
+                <xsl:value-of select="@endTime"/>
+              </xsl:attribute>
+              <xsl:attribute name="id">
+                <xsl:value-of select="@topic"/>
+              </xsl:attribute>
+              <text>
                 <xsl:value-of select="$description"/>
-              </phrase>
-            </xsl:for-each>
-          </phrases>
+              </text>
+            </phrase>
+          </xsl:for-each>
         </tier>
 
         <!-- turn tier -->
@@ -75,29 +75,29 @@ version="1.0">
           <xsl:attribute name="linguistic_type">speaker turn</xsl:attribute>
 
           <!-- Phrases of turn tier -->
-          <phrases>
-            <xsl:for-each select="Section/Turn">
-              <phrase>
-                <xsl:attribute name="startTime">
-                  <xsl:value-of select="@startTime"/>
+          <xsl:for-each select="Section/Turn">
+            <phrase>
+              <xsl:attribute name="startTime">
+                <xsl:value-of select="@startTime"/>
+              </xsl:attribute>
+              <xsl:attribute name="endTime">
+                <xsl:value-of select="@endTime"/>
+              </xsl:attribute>
+              <xsl:if test="@speaker">
+                <xsl:variable name="speakerId" select="@speaker"/>
+                <xsl:variable name="speaker" select="/Trans/Speakers/Speaker[@id=$speakerId]/@name"/>
+                <xsl:variable name="dialect" select="/Trans/Speakers/Speaker[@id=$speakerId]/@dialect"/>
+                <xsl:variable name="type" select="/Trans/Speakers/Speaker[@id=$speakerId]/@type"/>
+                <xsl:variable name="accent" select="/Trans/Speakers/Speaker[@id=$speakerId]/@accent"/>
+                <xsl:attribute name="participant">
+                  <xsl:value-of select="$speaker"/>
                 </xsl:attribute>
-                <xsl:attribute name="endTime">
-                  <xsl:value-of select="@endTime"/>
-                </xsl:attribute>
-                <xsl:if test="@speaker">
-                  <xsl:variable name="speakerId" select="@speaker"/>
-                  <xsl:variable name="speaker" select="/Trans/Speakers/Speaker[@id=$speakerId]/@name"/>
-                  <xsl:variable name="dialect" select="/Trans/Speakers/Speaker[@id=$speakerId]/@dialect"/>
-                  <xsl:variable name="type" select="/Trans/Speakers/Speaker[@id=$speakerId]/@type"/>
-                  <xsl:variable name="accent" select="/Trans/Speakers/Speaker[@id=$speakerId]/@accent"/>
-                  <xsl:attribute name="participant">
-                    <xsl:value-of select="$speaker"/>
-                  </xsl:attribute>
+                <text>
                   <xsl:value-of select="normalize-space(concat($dialect,' ',$type,' ',$accent))"/>
-                </xsl:if>
-              </phrase>
-            </xsl:for-each>
-          </phrases>
+                </text>
+              </xsl:if>
+            </phrase>
+          </xsl:for-each>
         </tier>
 
         <!-- Sync tier -->
@@ -108,34 +108,34 @@ version="1.0">
           <xsl:attribute name="linguistic_type">orthographic</xsl:attribute>
 
           <!-- Phrases of sync tier -->
-          <phrases>
-            <xsl:for-each select="Section/Turn/text()">
-              <xsl:if test="not(local-name(.)='Sync')">
-                <phrase>
-                  <xsl:variable name="speakerId" select="@speaker"/>
-                  <xsl:variable name="speaker" select="/Trans/Speakers/Speaker[@id=$speakerId]/@name"/>
-                  <xsl:attribute name="id">s<xsl:value-of select="position()"/></xsl:attribute>
-                  <xsl:attribute name="startTime">
-                    <xsl:value-of select="(preceding-sibling::Sync)[last()]/@time"/>
-                  </xsl:attribute>
-                  <xsl:attribute name="endTime">
-                    <xsl:choose>
-                      <xsl:when test="(following-sibling::Sync)[1]/@time">
-                        <xsl:value-of select="(following-sibling::Sync)[1]/@time"/>
-                      </xsl:when>
-                      <xsl:otherwise>
-                        <xsl:value-of select="../@endTime"/>
-                      </xsl:otherwise>
-                    </xsl:choose>
-                  </xsl:attribute>
+          <xsl:for-each select="Section/Turn/text()">
+            <xsl:if test="not(local-name(.)='Sync')">
+              <phrase>
+                <xsl:variable name="speakerId" select="@speaker"/>
+                <xsl:variable name="speaker" select="/Trans/Speakers/Speaker[@id=$speakerId]/@name"/>
+                <xsl:attribute name="id">s<xsl:value-of select="position()"/></xsl:attribute>
+                <xsl:attribute name="startTime">
+                  <xsl:value-of select="(preceding-sibling::Sync)[last()]/@time"/>
+                </xsl:attribute>
+                <xsl:attribute name="endTime">
+                  <xsl:choose>
+                    <xsl:when test="(following-sibling::Sync)[1]/@time">
+                      <xsl:value-of select="(following-sibling::Sync)[1]/@time"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:value-of select="../@endTime"/>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:attribute>
+                <text>
                   <xsl:value-of select="normalize-space(.)"/>
-                </phrase>
-              </xsl:if>
-            </xsl:for-each>
-          </phrases>
+                </text>
+              </phrase>
+            </xsl:if>
+          </xsl:for-each>
         </tier>
 
-      </interlinear-text>
+      </interlinear>
 
     </eopas>
   </xsl:template>

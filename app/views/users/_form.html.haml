@@ -2,33 +2,33 @@
 
   %table#metadata
     %tr#firstname
-      %td#name
+      %td.name
         = form.label :first_name
-      %td#value
+      %td.value
         = form.text_field :first_name, :class => 'text'
 
     %tr#lastname
-      %td#name
+      %td.name
         = form.label :last_name
-      %td#value
+      %td.value
         = form.text_field :last_name, :class => 'text'
 
     %tr#email
-      %td#name
+      %td.name
         = form.label :email
-      %td#value
+      %td.value
         = form.text_field :email, :class => 'text'
 
     %tr#password
-      %td#name
+      %td.name
         = form.label :password, form.object.new_record? ? nil : "Change password"
-      %td#value
+      %td.value
         = form.password_field :password
 
     %tr#passwordconfirmation
-      %td#name
+      %td.name
         = form.label :password_confirmation
-      %td#value
+      %td.value
         = form.password_field :password_confirmation
 
 

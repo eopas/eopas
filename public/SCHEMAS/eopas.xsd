@@ -18,7 +18,7 @@
     <xsd:complexType>
       <xsd:sequence>
         <xsd:element name="header" type="headType"/>
-        <xsd:element name="interlinear-text" type="interlinearTextType"/>
+        <xsd:element name="interlinear" type="interlinearTextType"/>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
@@ -60,9 +60,6 @@
 
   <!-- ********************** Interlinear TEXT LEVEL ********************** -->
   <xsd:complexType name="interlinearTextType">
-    <xsd:annotation>
-      <xsd:documentation>Wrapper element for the entire interlinear transcript</xsd:documentation>
-    </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="tier" type="tierType" maxOccurs="unbounded"/>
     </xsd:sequence>
@@ -84,13 +81,69 @@
 
   <!-- ********************** Phrase LEVEL ********************** -->
   <xsd:complexType name="phraseType">
+    <xsd:annotation>
+      <xsd:documentation>Wrapper element for phrases</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="text"  type="xsd:string"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="words" type="wordsType" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+    <xsd:attribute name="startTime" type="xsd:string" use="required"/>
+    <xsd:attribute name="endTime" type="xsd:string" use="required"/>
+    <xsd:attribute name="id" type="xsd:ID"/>
+    <xsd:attribute name="ref" type="xsd:string"/>
+    <xsd:attribute name="participant" type="xsd:string" />
+  </xsd:complexType>
+
+  <!-- ********************** WORDS LEVEL ********************** -->
+  <xsd:complexType name="wordsType">
+    <xsd:annotation>
+      <xsd:documentation>Wrapper element for structured phrases</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="word" type="wordType" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ********************** WORD LEVEL ********************** -->
+  <xsd:complexType name="wordType">
+    <xsd:annotation>
+      <xsd:documentation>Wrapper element for structured words</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="text"      type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="morphemes" type="morphemesType" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ********************** MORPHEMES LEVEL ********************** -->
+  <xsd:complexType name="morphemesType">
+    <xsd:annotation>
+      <xsd:documentation>Wrapper element for morphemes</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="morpheme" type="morphemeType" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ********************** MORPHEME LEVEL ********************** -->
+  <xsd:complexType name="morphemeType">
+    <xsd:annotation>
+      <xsd:documentation>Wrapper element for morpheme structure</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="text" type="morphemeTextType" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ********************** MORPHEME TEXT LEVEL ********************** -->
+  <xsd:complexType name="morphemeTextType">
+    <xsd:annotation>
+      <xsd:documentation>Wrapper element for morpheme text</xsd:documentation>
+    </xsd:annotation>
     <xsd:simpleContent>
       <xsd:extension base="xsd:string">
-        <xsd:attribute name="startTime" type="xsd:string" use="required"/>
-        <xsd:attribute name="endTime" type="xsd:string" use="required"/>
-        <xsd:attribute name="id" type="xsd:ID"/>
-        <xsd:attribute name="ref" type="xsd:string"/>
-        <xsd:attribute name="participant" type="xsd:string" />
+        <xsd:attribute name="kind" use="optional"/>
       </xsd:extension>
     </xsd:simpleContent>
   </xsd:complexType>

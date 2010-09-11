@@ -9,7 +9,7 @@ version="1.0">
   <xsl:strip-space elements="*"/>
   <xsl:template match="/">
     <xsl:if test="not(/tb:database)">
-        <xsl:message terminate="yes">ERROR: Not an ELAN document</xsl:message>
+        <xsl:message terminate="yes">ERROR: Not a Toolbox document</xsl:message>
     </xsl:if>
     <xsl:apply-templates/>
   </xsl:template>
@@ -28,9 +28,10 @@ version="1.0">
         </meta>
       </header>
 
-      <interlinear-text>
+      <interlinear>
         <!-- for each "tb:itmGroup" and "tb:itmgroup" -->
         <xsl:for-each select="tb:itmgroup">
+
           <!-- create translation (free gloss) tier -->
           <tier>
             <!-- Metadata per tier -->
@@ -60,7 +61,9 @@ version="1.0">
                     <xsl:value-of select="$narrator"/>
                   </xsl:attribute>
                 </xsl:if>
-                <xsl:value-of select="tb:fg/text()"/>
+                <text>
+                  <xsl:value-of select="tb:fg/text()"/>
+                </text>
               </phrase>
             </xsl:for-each>
           </tier>
@@ -97,14 +100,44 @@ version="1.0">
 
                 <!-- compose text together -->
                 <!-- for each "txGroup" and "txgroup" -->
-                <xsl:for-each select="tb:txgroup/tb:tx">
-                  <xsl:value-of select="concat(., ' ')"></xsl:value-of>
-                </xsl:for-each>
+                <text>
+                  <xsl:for-each select="tb:txgroup/tb:tx">
+                    <xsl:value-of select="concat(., ' ')"></xsl:value-of>
+                  </xsl:for-each>
+                </text>
+
+                <!-- add words decomposition -->
+                <words>
+                  <xsl:for-each select="*[tb:tx]">
+                    <word>
+                      <xsl:for-each select="tb:tx">
+                        <text>
+                          <xsl:value-of select="."/>
+                        </text>
+                      </xsl:for-each>
+                      <xsl:if test="tb:mr">
+                        <morphemes>
+                          <xsl:for-each select="tb:mr">
+                            <xsl:variable name="pos" select="position()"></xsl:variable>
+                            <morpheme>
+                              <text kind="morpheme">
+                                <xsl:value-of select="."/>
+                              </text>
+                              <text kind="gloss">
+                                <xsl:value-of select="../tb:mg[$pos]"/>
+                              </text>
+                            </morpheme>
+                          </xsl:for-each>
+                        </morphemes>
+                      </xsl:if>
+                    </word>
+                  </xsl:for-each>
+                </words>
               </phrase>
             </xsl:for-each>
           </tier>
         </xsl:for-each>
-      </interlinear-text>
+      </interlinear>
 
     </eopas>
   </xsl:template>

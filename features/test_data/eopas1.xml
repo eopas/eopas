@@ -7,343 +7,973 @@
     <meta name="dc:language" value="en-US"/>
     <meta name="dc:date" value="2006-06-13T15:09:43+01:00"/>
   </header>
-  <interlinear-text>
+  <interlinear>
     <tier id="K-Spch" parent="" lang="en" linguistic_type="utterance">
-      <phrase startTime="0.28" endTime="1.25" id="a1">so from here.</phrase>
-      <phrase startTime="4.04" endTime="4.4" id="a2">yeah</phrase>
-      <phrase startTime="10.06" endTime="10.46" id="a3">ja</phrase>
-      <phrase startTime="14.62" endTime="14.99" id="a4">ja</phrase>
-      <phrase startTime="22.83" endTime="23.87" id="a5">there is another plein</phrase>
-      <phrase startTime="27.03" endTime="27.99" id="a6">rotunda</phrase>
-      <phrase startTime="29.01" endTime="29.48" id="a7">ja</phrase>
+      <phrase startTime="0.28" endTime="1.25" id="a1">
+        <text>so from here.</text>
+      </phrase>
+      <phrase startTime="4.04" endTime="4.4" id="a2">
+        <text>yeah</text>
+      </phrase>
+      <phrase startTime="10.06" endTime="10.46" id="a3">
+        <text>ja</text>
+      </phrase>
+      <phrase startTime="14.62" endTime="14.99" id="a4">
+        <text>ja</text>
+      </phrase>
+      <phrase startTime="22.83" endTime="23.87" id="a5">
+        <text>there is another plein</text>
+      </phrase>
+      <phrase startTime="27.03" endTime="27.99" id="a6">
+        <text>rotunda</text>
+      </phrase>
+      <phrase startTime="29.01" endTime="29.48" id="a7">
+        <text>ja</text>
+      </phrase>
     </tier>
     <tier id="W-Spch" parent="" lang="en" linguistic_type="utterance">
-      <phrase startTime="0.78" endTime="4.09" id="a8">so you go out of the Institute to the Saint Anna Straat.</phrase>
-      <phrase startTime="4.6" endTime="10.07" id="a9">and then you go the other, Saint Anna Straat to this to the center of the town, to this big rotunde.</phrase>
-      <phrase startTime="11.15" endTime="13.24" id="a10">and you follow then the sign Kleef</phrase>
-      <phrase startTime="13.31" endTime="14.54" id="a11">that's the oranje single</phrase>
-      <phrase startTime="15.33" endTime="17.19" id="a12">then you follow the sign kleef</phrase>
-      <phrase startTime="17.57" endTime="18.75" id="a13">you come down</phrase>
-      <phrase startTime="18.99" endTime="21.81" id="a14">you know eh after this trajanus plein</phrase>
-      <phrase startTime="21.86" endTime="22.93" id="a15">you come down to the</phrase>
-      <phrase startTime="23.47" endTime="25.05" id="a16">rhine eh valley</phrase>
-      <phrase startTime="25.08" endTime="27.01" id="a17">yeah that's another eh</phrase>
-      <phrase startTime="28.16" endTime="29.11" id="a18">kind of rotunde</phrase>
-      <phrase startTime="29.37" endTime="31.23" id="a19">and then you follow the signs kleef</phrase>
-      <phrase startTime="31.32" endTime="31.999" id="a20">go down</phrase>
-      <phrase startTime="32.379" endTime="34.29" id="a21">and then you go the this way</phrase>
-      <phrase startTime="34.38" endTime="36.18" id="a22">eh ja to kleef</phrase>
+      <phrase startTime="0.78" endTime="4.09" id="a8">
+        <text>so you go out of the Institute to the Saint Anna Straat.</text>
+      </phrase>
+      <phrase startTime="4.6" endTime="10.07" id="a9">
+        <text>and then you go the other, Saint Anna Straat to this to the center of the town, to this big rotunde.</text>
+      </phrase>
+      <phrase startTime="11.15" endTime="13.24" id="a10">
+        <text>and you follow then the sign Kleef</text>
+      </phrase>
+      <phrase startTime="13.31" endTime="14.54" id="a11">
+        <text>that's the oranje single</text>
+      </phrase>
+      <phrase startTime="15.33" endTime="17.19" id="a12">
+        <text>then you follow the sign kleef</text>
+      </phrase>
+      <phrase startTime="17.57" endTime="18.75" id="a13">
+        <text>you come down</text>
+      </phrase>
+      <phrase startTime="18.99" endTime="21.81" id="a14">
+        <text>you know eh after this trajanus plein</text>
+      </phrase>
+      <phrase startTime="21.86" endTime="22.93" id="a15">
+        <text>you come down to the</text>
+      </phrase>
+      <phrase startTime="23.47" endTime="25.05" id="a16">
+        <text>rhine eh valley</text>
+      </phrase>
+      <phrase startTime="25.08" endTime="27.01" id="a17">
+        <text>yeah that's another eh</text>
+      </phrase>
+      <phrase startTime="28.16" endTime="29.11" id="a18">
+        <text>kind of rotunde</text>
+      </phrase>
+      <phrase startTime="29.37" endTime="31.23" id="a19">
+        <text>and then you follow the signs kleef</text>
+      </phrase>
+      <phrase startTime="31.32" endTime="31.999" id="a20">
+        <text>go down</text>
+      </phrase>
+      <phrase startTime="32.379" endTime="34.29" id="a21">
+        <text>and then you go the this way</text>
+      </phrase>
+      <phrase startTime="34.38" endTime="36.18" id="a22">
+        <text>eh ja to kleef</text>
+      </phrase>
     </tier>
     <tier id="W-Words" parent="W-Spch" lang="en" linguistic_type="words">
-      <phrase startTime="0.78" endTime="1.34" id="a23">so</phrase>
-      <phrase startTime="1.34" endTime="1.57" id="a24">you</phrase>
-      <phrase startTime="1.57" endTime="1.81" id="a25">go</phrase>
-      <phrase startTime="1.81" endTime="2" id="a26">out</phrase>
-      <phrase startTime="2" endTime="2.19" id="a27">of</phrase>
-      <phrase startTime="2.19" endTime="2.57" id="a28">the</phrase>
-      <phrase startTime="2.57" endTime="3.06" id="a29">Institute</phrase>
-      <phrase startTime="3.06" endTime="3.2" id="a30">to</phrase>
-      <phrase startTime="3.2" endTime="3.34" id="a31">the</phrase>
-      <phrase startTime="3.34" endTime="3.48" id="a32">Saint</phrase>
-      <phrase startTime="3.48" endTime="3.74" id="a33">Anna</phrase>
-      <phrase startTime="3.74" endTime="4.09" id="a34">Straat</phrase>
-      <phrase startTime="4.6" endTime="4.82" id="a35">and</phrase>
-      <phrase startTime="4.82" endTime="5.02" id="a36">then</phrase>
-      <phrase startTime="5.02" endTime="5.37" id="a37">you</phrase>
-      <phrase startTime="5.37" endTime="5.5" id="a38">go</phrase>
-      <phrase startTime="5.5" endTime="5.7" id="a39">the</phrase>
-      <phrase startTime="5.7" endTime="5.9" id="a40">other</phrase>
-      <phrase startTime="5.9" endTime="6.119" id="a41">Saint</phrase>
-      <phrase startTime="6.119" endTime="6.29" id="a42">Anna</phrase>
-      <phrase startTime="6.29" endTime="6.591" id="a43">Straat</phrase>
-      <phrase startTime="6.591" endTime="6.802" id="a44">to</phrase>
-      <phrase startTime="6.802" endTime="7.15" id="a45">this</phrase>
-      <phrase startTime="7.15" endTime="7.51" id="a46">to</phrase>
-      <phrase startTime="7.51" endTime="7.69" id="a47">the</phrase>
-      <phrase startTime="7.69" endTime="8.02" id="a48">center</phrase>
-      <phrase startTime="8.02" endTime="8.130000000000001" id="a49">of</phrase>
-      <phrase startTime="8.130000000000001" endTime="8.26" id="a50">the</phrase>
-      <phrase startTime="8.26" endTime="8.606" id="a51">town</phrase>
-      <phrase startTime="8.606" endTime="8.715" id="a52">to</phrase>
-      <phrase startTime="8.715" endTime="8.847" id="a53">this</phrase>
-      <phrase startTime="8.847" endTime="9.265000000000001" id="a54">big</phrase>
-      <phrase startTime="9.265000000000001" endTime="10.07" id="a55">rotunde</phrase>
-      <phrase startTime="11.15" endTime="11.47" id="a56">and</phrase>
-      <phrase startTime="11.47" endTime="NaN" id="a57">you</phrase>
-      <phrase startTime="NaN" endTime="11.94" id="a58">follow</phrase>
-      <phrase startTime="11.94" endTime="12.2" id="a59">then</phrase>
-      <phrase startTime="12.2" endTime="12.34" id="a60">the</phrase>
-      <phrase startTime="12.34" endTime="12.68" id="a61">sign</phrase>
-      <phrase startTime="12.68" endTime="13.24" id="a62">Kleef</phrase>
-      <phrase startTime="13.31" endTime="13.502" id="a63">that</phrase>
-      <phrase startTime="13.502" endTime="13.694" id="a64">'s</phrase>
-      <phrase startTime="13.694" endTime="13.836" id="a65">the</phrase>
-      <phrase startTime="13.836" endTime="14.08" id="a66">Oranje</phrase>
-      <phrase startTime="14.08" endTime="14.54" id="a67">Single</phrase>
-      <phrase startTime="15.33" endTime="15.621" id="a68">then</phrase>
-      <phrase startTime="15.621" endTime="15.992" id="a69">you</phrase>
-      <phrase startTime="15.992" endTime="16.263" id="a70">follow</phrase>
-      <phrase startTime="16.263" endTime="16.404" id="a71">the</phrase>
-      <phrase startTime="16.404" endTime="16.725" id="a72">sign</phrase>
-      <phrase startTime="16.725" endTime="17.19" id="a73">Kleef</phrase>
-      <phrase startTime="17.57" endTime="17.805" id="a74">you</phrase>
-      <phrase startTime="17.805" endTime="18.035" id="a75">come</phrase>
-      <phrase startTime="18.035" endTime="18.75" id="a76">down</phrase>
-      <phrase startTime="18.99" endTime="19.228" id="a77">you</phrase>
-      <phrase startTime="19.228" endTime="19.632" id="a78">know</phrase>
-      <phrase startTime="19.632" endTime="20.031" id="a79">eh</phrase>
-      <phrase startTime="20.031" endTime="20.394" id="a80">after</phrase>
-      <phrase startTime="20.394" endTime="20.97" id="a81">this</phrase>
-      <phrase startTime="20.97" endTime="21.5" id="a82">Trajanus</phrase>
-      <phrase startTime="21.5" endTime="21.81" id="a83">Plein</phrase>
-      <phrase startTime="21.86" endTime="22.043" id="a84">you</phrase>
-      <phrase startTime="22.043" endTime="22.216" id="a85">come</phrase>
-      <phrase startTime="22.216" endTime="22.5" id="a86">down</phrase>
-      <phrase startTime="22.5" endTime="22.635" id="a87">to</phrase>
-      <phrase startTime="22.635" endTime="22.93" id="a88">the</phrase>
-      <phrase startTime="23.47" endTime="24.28" id="a89">Rhine</phrase>
-      <phrase startTime="24.28" endTime="24.5" id="a90">eh</phrase>
-      <phrase startTime="24.5" endTime="25.05" id="a91">valley</phrase>
-      <phrase startTime="25.08" endTime="25.42" id="a92">yeah</phrase>
-      <phrase startTime="25.42" endTime="25.62" id="a93">that</phrase>
-      <phrase startTime="25.62" endTime="25.69" id="a94">'s</phrase>
-      <phrase startTime="25.69" endTime="26.402" id="a95">another</phrase>
-      <phrase startTime="26.402" endTime="27.01" id="a96">eh</phrase>
-      <phrase startTime="28.16" endTime="28.425" id="a97">kind</phrase>
-      <phrase startTime="28.425" endTime="28.54" id="a98">of</phrase>
-      <phrase startTime="28.54" endTime="29.11" id="a99">rotunde</phrase>
-      <phrase startTime="29.37" endTime="29.582" id="a100">and</phrase>
-      <phrase startTime="29.582" endTime="29.795" id="a101">then</phrase>
-      <phrase startTime="29.795" endTime="30.065" id="a102">you</phrase>
-      <phrase startTime="30.065" endTime="30.305" id="a103">follow</phrase>
-      <phrase startTime="30.305" endTime="30.465" id="a104">the</phrase>
-      <phrase startTime="30.465" endTime="30.844" id="a105">signs</phrase>
-      <phrase startTime="30.844" endTime="31.23" id="a106">kleef</phrase>
-      <phrase startTime="31.32" endTime="31.57" id="a107">go</phrase>
-      <phrase startTime="31.57" endTime="31.999" id="a108">down</phrase>
-      <phrase startTime="32.379" endTime="32.56" id="a109">and</phrase>
-      <phrase startTime="32.56" endTime="32.76" id="a110">then</phrase>
-      <phrase startTime="32.76" endTime="32.92" id="a111">you</phrase>
-      <phrase startTime="32.92" endTime="33.22" id="a112">go</phrase>
-      <phrase startTime="33.22" endTime="33.62" id="a113">the</phrase>
-      <phrase startTime="33.62" endTime="33.86" id="a114">this</phrase>
-      <phrase startTime="33.86" endTime="34.29" id="a115">way</phrase>
-      <phrase startTime="34.38" endTime="34.83" id="a116">eh</phrase>
-      <phrase startTime="34.83" endTime="35.45" id="a117">ja</phrase>
-      <phrase startTime="35.45" endTime="35.73" id="a118">to</phrase>
-      <phrase startTime="35.73" endTime="36.18" id="a119">Kleef</phrase>
+      <phrase startTime="0.78" endTime="1.34" id="a23">
+        <text>so</text>
+      </phrase>
+      <phrase startTime="1.34" endTime="1.57" id="a24">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="1.57" endTime="1.81" id="a25">
+        <text>go</text>
+      </phrase>
+      <phrase startTime="1.81" endTime="2" id="a26">
+        <text>out</text>
+      </phrase>
+      <phrase startTime="2" endTime="2.19" id="a27">
+        <text>of</text>
+      </phrase>
+      <phrase startTime="2.19" endTime="2.57" id="a28">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="2.57" endTime="3.06" id="a29">
+        <text>Institute</text>
+      </phrase>
+      <phrase startTime="3.06" endTime="3.2" id="a30">
+        <text>to</text>
+      </phrase>
+      <phrase startTime="3.2" endTime="3.34" id="a31">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="3.34" endTime="3.48" id="a32">
+        <text>Saint</text>
+      </phrase>
+      <phrase startTime="3.48" endTime="3.74" id="a33">
+        <text>Anna</text>
+      </phrase>
+      <phrase startTime="3.74" endTime="4.09" id="a34">
+        <text>Straat</text>
+      </phrase>
+      <phrase startTime="4.6" endTime="4.82" id="a35">
+        <text>and</text>
+      </phrase>
+      <phrase startTime="4.82" endTime="5.02" id="a36">
+        <text>then</text>
+      </phrase>
+      <phrase startTime="5.02" endTime="5.37" id="a37">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="5.37" endTime="5.5" id="a38">
+        <text>go</text>
+      </phrase>
+      <phrase startTime="5.5" endTime="5.7" id="a39">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="5.7" endTime="5.9" id="a40">
+        <text>other</text>
+      </phrase>
+      <phrase startTime="5.9" endTime="6.119" id="a41">
+        <text>Saint</text>
+      </phrase>
+      <phrase startTime="6.119" endTime="6.29" id="a42">
+        <text>Anna</text>
+      </phrase>
+      <phrase startTime="6.29" endTime="6.591" id="a43">
+        <text>Straat</text>
+      </phrase>
+      <phrase startTime="6.591" endTime="6.802" id="a44">
+        <text>to</text>
+      </phrase>
+      <phrase startTime="6.802" endTime="7.15" id="a45">
+        <text>this</text>
+      </phrase>
+      <phrase startTime="7.15" endTime="7.51" id="a46">
+        <text>to</text>
+      </phrase>
+      <phrase startTime="7.51" endTime="7.69" id="a47">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="7.69" endTime="8.02" id="a48">
+        <text>center</text>
+      </phrase>
+      <phrase startTime="8.02" endTime="8.130000000000001" id="a49">
+        <text>of</text>
+      </phrase>
+      <phrase startTime="8.130000000000001" endTime="8.26" id="a50">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="8.26" endTime="8.606" id="a51">
+        <text>town</text>
+      </phrase>
+      <phrase startTime="8.606" endTime="8.715" id="a52">
+        <text>to</text>
+      </phrase>
+      <phrase startTime="8.715" endTime="8.847" id="a53">
+        <text>this</text>
+      </phrase>
+      <phrase startTime="8.847" endTime="9.265000000000001" id="a54">
+        <text>big</text>
+      </phrase>
+      <phrase startTime="9.265000000000001" endTime="10.07" id="a55">
+        <text>rotunde</text>
+      </phrase>
+      <phrase startTime="11.15" endTime="11.47" id="a56">
+        <text>and</text>
+      </phrase>
+      <phrase startTime="11.47" endTime="NaN" id="a57">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="NaN" endTime="11.94" id="a58">
+        <text>follow</text>
+      </phrase>
+      <phrase startTime="11.94" endTime="12.2" id="a59">
+        <text>then</text>
+      </phrase>
+      <phrase startTime="12.2" endTime="12.34" id="a60">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="12.34" endTime="12.68" id="a61">
+        <text>sign</text>
+      </phrase>
+      <phrase startTime="12.68" endTime="13.24" id="a62">
+        <text>Kleef</text>
+      </phrase>
+      <phrase startTime="13.31" endTime="13.502" id="a63">
+        <text>that</text>
+      </phrase>
+      <phrase startTime="13.502" endTime="13.694" id="a64">
+        <text>'s</text>
+      </phrase>
+      <phrase startTime="13.694" endTime="13.836" id="a65">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="13.836" endTime="14.08" id="a66">
+        <text>Oranje</text>
+      </phrase>
+      <phrase startTime="14.08" endTime="14.54" id="a67">
+        <text>Single</text>
+      </phrase>
+      <phrase startTime="15.33" endTime="15.621" id="a68">
+        <text>then</text>
+      </phrase>
+      <phrase startTime="15.621" endTime="15.992" id="a69">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="15.992" endTime="16.263" id="a70">
+        <text>follow</text>
+      </phrase>
+      <phrase startTime="16.263" endTime="16.404" id="a71">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="16.404" endTime="16.725" id="a72">
+        <text>sign</text>
+      </phrase>
+      <phrase startTime="16.725" endTime="17.19" id="a73">
+        <text>Kleef</text>
+      </phrase>
+      <phrase startTime="17.57" endTime="17.805" id="a74">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="17.805" endTime="18.035" id="a75">
+        <text>come</text>
+      </phrase>
+      <phrase startTime="18.035" endTime="18.75" id="a76">
+        <text>down</text>
+      </phrase>
+      <phrase startTime="18.99" endTime="19.228" id="a77">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="19.228" endTime="19.632" id="a78">
+        <text>know</text>
+      </phrase>
+      <phrase startTime="19.632" endTime="20.031" id="a79">
+        <text>eh</text>
+      </phrase>
+      <phrase startTime="20.031" endTime="20.394" id="a80">
+        <text>after</text>
+      </phrase>
+      <phrase startTime="20.394" endTime="20.97" id="a81">
+        <text>this</text>
+      </phrase>
+      <phrase startTime="20.97" endTime="21.5" id="a82">
+        <text>Trajanus</text>
+      </phrase>
+      <phrase startTime="21.5" endTime="21.81" id="a83">
+        <text>Plein</text>
+      </phrase>
+      <phrase startTime="21.86" endTime="22.043" id="a84">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="22.043" endTime="22.216" id="a85">
+        <text>come</text>
+      </phrase>
+      <phrase startTime="22.216" endTime="22.5" id="a86">
+        <text>down</text>
+      </phrase>
+      <phrase startTime="22.5" endTime="22.635" id="a87">
+        <text>to</text>
+      </phrase>
+      <phrase startTime="22.635" endTime="22.93" id="a88">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="23.47" endTime="24.28" id="a89">
+        <text>Rhine</text>
+      </phrase>
+      <phrase startTime="24.28" endTime="24.5" id="a90">
+        <text>eh</text>
+      </phrase>
+      <phrase startTime="24.5" endTime="25.05" id="a91">
+        <text>valley</text>
+      </phrase>
+      <phrase startTime="25.08" endTime="25.42" id="a92">
+        <text>yeah</text>
+      </phrase>
+      <phrase startTime="25.42" endTime="25.62" id="a93">
+        <text>that</text>
+      </phrase>
+      <phrase startTime="25.62" endTime="25.69" id="a94">
+        <text>'s</text>
+      </phrase>
+      <phrase startTime="25.69" endTime="26.402" id="a95">
+        <text>another</text>
+      </phrase>
+      <phrase startTime="26.402" endTime="27.01" id="a96">
+        <text>eh</text>
+      </phrase>
+      <phrase startTime="28.16" endTime="28.425" id="a97">
+        <text>kind</text>
+      </phrase>
+      <phrase startTime="28.425" endTime="28.54" id="a98">
+        <text>of</text>
+      </phrase>
+      <phrase startTime="28.54" endTime="29.11" id="a99">
+        <text>rotunde</text>
+      </phrase>
+      <phrase startTime="29.37" endTime="29.582" id="a100">
+        <text>and</text>
+      </phrase>
+      <phrase startTime="29.582" endTime="29.795" id="a101">
+        <text>then</text>
+      </phrase>
+      <phrase startTime="29.795" endTime="30.065" id="a102">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="30.065" endTime="30.305" id="a103">
+        <text>follow</text>
+      </phrase>
+      <phrase startTime="30.305" endTime="30.465" id="a104">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="30.465" endTime="30.844" id="a105">
+        <text>signs</text>
+      </phrase>
+      <phrase startTime="30.844" endTime="31.23" id="a106">
+        <text>kleef</text>
+      </phrase>
+      <phrase startTime="31.32" endTime="31.57" id="a107">
+        <text>go</text>
+      </phrase>
+      <phrase startTime="31.57" endTime="31.999" id="a108">
+        <text>down</text>
+      </phrase>
+      <phrase startTime="32.379" endTime="32.56" id="a109">
+        <text>and</text>
+      </phrase>
+      <phrase startTime="32.56" endTime="32.76" id="a110">
+        <text>then</text>
+      </phrase>
+      <phrase startTime="32.76" endTime="32.92" id="a111">
+        <text>you</text>
+      </phrase>
+      <phrase startTime="32.92" endTime="33.22" id="a112">
+        <text>go</text>
+      </phrase>
+      <phrase startTime="33.22" endTime="33.62" id="a113">
+        <text>the</text>
+      </phrase>
+      <phrase startTime="33.62" endTime="33.86" id="a114">
+        <text>this</text>
+      </phrase>
+      <phrase startTime="33.86" endTime="34.29" id="a115">
+        <text>way</text>
+      </phrase>
+      <phrase startTime="34.38" endTime="34.83" id="a116">
+        <text>eh</text>
+      </phrase>
+      <phrase startTime="34.83" endTime="35.45" id="a117">
+        <text>ja</text>
+      </phrase>
+      <phrase startTime="35.45" endTime="35.73" id="a118">
+        <text>to</text>
+      </phrase>
+      <phrase startTime="35.73" endTime="36.18" id="a119">
+        <text>Kleef</text>
+      </phrase>
     </tier>
     <tier id="W-POS" parent="W-Words" lang="en" linguistic_type="part of speech">
-      <phrase ref="a23" startTime="0.78" endTime="1.34" id="a120"/>
-      <phrase ref="a24" startTime="1.34" endTime="1.57" id="a121">pro</phrase>
-      <phrase ref="a25" startTime="1.57" endTime="1.81" id="a122">v</phrase>
-      <phrase ref="a26" startTime="1.81" endTime="2" id="a123">adv</phrase>
-      <phrase ref="a27" startTime="2" endTime="2.19" id="a124">prep</phrase>
-      <phrase ref="a28" startTime="2.19" endTime="2.57" id="a125">art</phrase>
-      <phrase ref="a29" startTime="2.57" endTime="3.06" id="a126">n</phrase>
-      <phrase ref="a30" startTime="3.06" endTime="3.2" id="a127">prep</phrase>
-      <phrase ref="a31" startTime="3.2" endTime="3.34" id="a128">art</phrase>
-      <phrase ref="a32" startTime="3.34" endTime="3.48" id="a129">n</phrase>
-      <phrase ref="a33" startTime="3.48" endTime="3.74" id="a130">n</phrase>
-      <phrase ref="a34" startTime="3.74" endTime="4.09" id="a131">n</phrase>
-      <phrase ref="a35" startTime="4.6" endTime="4.82" id="a132">con</phrase>
-      <phrase ref="a36" startTime="4.82" endTime="5.02" id="a133">adv</phrase>
-      <phrase ref="a37" startTime="5.02" endTime="5.37" id="a134">pro</phrase>
-      <phrase ref="a38" startTime="5.37" endTime="5.5" id="a135">v</phrase>
-      <phrase ref="a39" startTime="5.5" endTime="5.7" id="a136">art</phrase>
-      <phrase ref="a40" startTime="5.7" endTime="5.9" id="a137">adj</phrase>
-      <phrase ref="a41" startTime="5.9" endTime="6.119" id="a138">n</phrase>
-      <phrase ref="a42" startTime="6.119" endTime="6.29" id="a139">n</phrase>
-      <phrase ref="a43" startTime="6.29" endTime="6.591" id="a140">n</phrase>
-      <phrase ref="a44" startTime="6.591" endTime="6.802" id="a141">prep</phrase>
-      <phrase ref="a45" startTime="6.802" endTime="7.15" id="a142">dem</phrase>
-      <phrase ref="a46" startTime="7.15" endTime="7.51" id="a143">prep</phrase>
-      <phrase ref="a47" startTime="7.51" endTime="7.69" id="a144">art</phrase>
-      <phrase ref="a48" startTime="7.69" endTime="8.02" id="a145">n</phrase>
-      <phrase ref="a49" startTime="8.02" endTime="8.130000000000001" id="a146">prep</phrase>
-      <phrase ref="a50" startTime="8.130000000000001" endTime="8.26" id="a147">art</phrase>
-      <phrase ref="a51" startTime="8.26" endTime="8.606" id="a148">n</phrase>
-      <phrase ref="a52" startTime="8.606" endTime="8.715" id="a149">prep</phrase>
-      <phrase ref="a53" startTime="8.715" endTime="8.847" id="a150">dem</phrase>
-      <phrase ref="a54" startTime="8.847" endTime="9.265000000000001" id="a151">adj</phrase>
-      <phrase ref="a55" startTime="9.265000000000001" endTime="10.07" id="a152">n</phrase>
-      <phrase ref="a56" startTime="11.15" endTime="11.47" id="a153">con</phrase>
-      <phrase ref="a57" startTime="11.47" endTime="NaN" id="a154">pro</phrase>
-      <phrase ref="a58" startTime="NaN" endTime="11.94" id="a155">v</phrase>
-      <phrase ref="a59" startTime="11.94" endTime="12.2" id="a156">adv</phrase>
-      <phrase ref="a60" startTime="12.2" endTime="12.34" id="a157">art</phrase>
-      <phrase ref="a61" startTime="12.34" endTime="12.68" id="a158">n</phrase>
-      <phrase ref="a62" startTime="12.68" endTime="13.24" id="a159">n</phrase>
-      <phrase ref="a63" startTime="13.31" endTime="13.502" id="a160">dem</phrase>
-      <phrase ref="a64" startTime="13.502" endTime="13.694" id="a161">v</phrase>
-      <phrase ref="a65" startTime="13.694" endTime="13.836" id="a162">art</phrase>
-      <phrase ref="a66" startTime="13.836" endTime="14.08" id="a163">n</phrase>
-      <phrase ref="a67" startTime="14.08" endTime="14.54" id="a164">n</phrase>
-      <phrase ref="a68" startTime="15.33" endTime="15.621" id="a165">adv</phrase>
-      <phrase ref="a69" startTime="15.621" endTime="15.992" id="a166">pro</phrase>
-      <phrase ref="a70" startTime="15.992" endTime="16.263" id="a167">v</phrase>
-      <phrase ref="a71" startTime="16.263" endTime="16.404" id="a168">art</phrase>
-      <phrase ref="a72" startTime="16.404" endTime="16.725" id="a169">n</phrase>
-      <phrase ref="a73" startTime="16.725" endTime="17.19" id="a170">n</phrase>
-      <phrase ref="a74" startTime="17.57" endTime="17.805" id="a171">pro</phrase>
-      <phrase ref="a75" startTime="17.805" endTime="18.035" id="a172">v</phrase>
-      <phrase ref="a76" startTime="18.035" endTime="18.75" id="a173">adv</phrase>
-      <phrase ref="a77" startTime="18.99" endTime="19.228" id="a174">pro</phrase>
-      <phrase ref="a78" startTime="19.228" endTime="19.632" id="a175">v</phrase>
-      <phrase ref="a79" startTime="19.632" endTime="20.031" id="a176">post</phrase>
-      <phrase ref="a80" startTime="20.031" endTime="20.394" id="a177">prep</phrase>
-      <phrase ref="a81" startTime="20.394" endTime="20.97" id="a178">dem</phrase>
-      <phrase ref="a82" startTime="20.97" endTime="21.5" id="a179">n</phrase>
-      <phrase ref="a83" startTime="21.5" endTime="21.81" id="a180">n</phrase>
-      <phrase ref="a84" startTime="21.86" endTime="22.043" id="a181">pro</phrase>
-      <phrase ref="a85" startTime="22.043" endTime="22.216" id="a182">v</phrase>
-      <phrase ref="a86" startTime="22.216" endTime="22.5" id="a183">adv</phrase>
-      <phrase ref="a87" startTime="22.5" endTime="22.635" id="a184">prep</phrase>
-      <phrase ref="a88" startTime="22.635" endTime="22.93" id="a185">art</phrase>
-      <phrase ref="a89" startTime="23.47" endTime="24.28" id="a186">n</phrase>
-      <phrase ref="a90" startTime="24.28" endTime="24.5" id="a187">post</phrase>
-      <phrase ref="a91" startTime="24.5" endTime="25.05" id="a188">n</phrase>
-      <phrase ref="a92" startTime="25.08" endTime="25.42" id="a189">int</phrase>
-      <phrase ref="a93" startTime="25.42" endTime="25.62" id="a190">dem</phrase>
-      <phrase ref="a94" startTime="25.62" endTime="25.69" id="a191">v</phrase>
-      <phrase ref="a95" startTime="25.69" endTime="26.402" id="a192">adj</phrase>
-      <phrase ref="a96" startTime="26.402" endTime="27.01" id="a193">part</phrase>
-      <phrase ref="a97" startTime="28.16" endTime="28.425" id="a194">n</phrase>
-      <phrase ref="a98" startTime="28.425" endTime="28.54" id="a195">prep</phrase>
-      <phrase ref="a99" startTime="28.54" endTime="29.11" id="a196">n</phrase>
-      <phrase ref="a100" startTime="29.37" endTime="29.582" id="a197">con</phrase>
-      <phrase ref="a101" startTime="29.582" endTime="29.795" id="a198">adv</phrase>
-      <phrase ref="a102" startTime="29.795" endTime="30.065" id="a199">pro</phrase>
-      <phrase ref="a103" startTime="30.065" endTime="30.305" id="a200">v</phrase>
-      <phrase ref="a104" startTime="30.305" endTime="30.465" id="a201">art</phrase>
-      <phrase ref="a105" startTime="30.465" endTime="30.844" id="a202">n</phrase>
-      <phrase ref="a106" startTime="30.844" endTime="31.23" id="a203">n</phrase>
-      <phrase ref="a107" startTime="31.32" endTime="31.57" id="a204">v</phrase>
-      <phrase ref="a108" startTime="31.57" endTime="31.999" id="a205">adv</phrase>
-      <phrase ref="a109" startTime="32.379" endTime="32.56" id="a206">con</phrase>
-      <phrase ref="a110" startTime="32.56" endTime="32.76" id="a207">adv</phrase>
-      <phrase ref="a111" startTime="32.76" endTime="32.92" id="a208">pro</phrase>
-      <phrase ref="a112" startTime="32.92" endTime="33.22" id="a209">v</phrase>
-      <phrase ref="a113" startTime="33.22" endTime="33.62" id="a210">art</phrase>
-      <phrase ref="a114" startTime="33.62" endTime="33.86" id="a211">dem</phrase>
-      <phrase ref="a115" startTime="33.86" endTime="34.29" id="a212">n</phrase>
-      <phrase ref="a116" startTime="34.38" endTime="34.83" id="a213">part</phrase>
-      <phrase ref="a117" startTime="34.83" endTime="35.45" id="a214">int</phrase>
-      <phrase ref="a118" startTime="35.45" endTime="35.73" id="a215">prep</phrase>
-      <phrase ref="a119" startTime="35.73" endTime="36.18" id="a216">n</phrase>
+      <phrase ref="a23" startTime="0.78" endTime="1.34" id="a120">
+        <text/>
+      </phrase>
+      <phrase ref="a24" startTime="1.34" endTime="1.57" id="a121">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a25" startTime="1.57" endTime="1.81" id="a122">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a26" startTime="1.81" endTime="2" id="a123">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a27" startTime="2" endTime="2.19" id="a124">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a28" startTime="2.19" endTime="2.57" id="a125">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a29" startTime="2.57" endTime="3.06" id="a126">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a30" startTime="3.06" endTime="3.2" id="a127">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a31" startTime="3.2" endTime="3.34" id="a128">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a32" startTime="3.34" endTime="3.48" id="a129">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a33" startTime="3.48" endTime="3.74" id="a130">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a34" startTime="3.74" endTime="4.09" id="a131">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a35" startTime="4.6" endTime="4.82" id="a132">
+        <text>con</text>
+      </phrase>
+      <phrase ref="a36" startTime="4.82" endTime="5.02" id="a133">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a37" startTime="5.02" endTime="5.37" id="a134">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a38" startTime="5.37" endTime="5.5" id="a135">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a39" startTime="5.5" endTime="5.7" id="a136">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a40" startTime="5.7" endTime="5.9" id="a137">
+        <text>adj</text>
+      </phrase>
+      <phrase ref="a41" startTime="5.9" endTime="6.119" id="a138">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a42" startTime="6.119" endTime="6.29" id="a139">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a43" startTime="6.29" endTime="6.591" id="a140">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a44" startTime="6.591" endTime="6.802" id="a141">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a45" startTime="6.802" endTime="7.15" id="a142">
+        <text>dem</text>
+      </phrase>
+      <phrase ref="a46" startTime="7.15" endTime="7.51" id="a143">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a47" startTime="7.51" endTime="7.69" id="a144">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a48" startTime="7.69" endTime="8.02" id="a145">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a49" startTime="8.02" endTime="8.130000000000001" id="a146">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a50" startTime="8.130000000000001" endTime="8.26" id="a147">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a51" startTime="8.26" endTime="8.606" id="a148">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a52" startTime="8.606" endTime="8.715" id="a149">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a53" startTime="8.715" endTime="8.847" id="a150">
+        <text>dem</text>
+      </phrase>
+      <phrase ref="a54" startTime="8.847" endTime="9.265000000000001" id="a151">
+        <text>adj</text>
+      </phrase>
+      <phrase ref="a55" startTime="9.265000000000001" endTime="10.07" id="a152">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a56" startTime="11.15" endTime="11.47" id="a153">
+        <text>con</text>
+      </phrase>
+      <phrase ref="a57" startTime="11.47" endTime="NaN" id="a154">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a58" startTime="NaN" endTime="11.94" id="a155">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a59" startTime="11.94" endTime="12.2" id="a156">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a60" startTime="12.2" endTime="12.34" id="a157">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a61" startTime="12.34" endTime="12.68" id="a158">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a62" startTime="12.68" endTime="13.24" id="a159">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a63" startTime="13.31" endTime="13.502" id="a160">
+        <text>dem</text>
+      </phrase>
+      <phrase ref="a64" startTime="13.502" endTime="13.694" id="a161">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a65" startTime="13.694" endTime="13.836" id="a162">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a66" startTime="13.836" endTime="14.08" id="a163">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a67" startTime="14.08" endTime="14.54" id="a164">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a68" startTime="15.33" endTime="15.621" id="a165">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a69" startTime="15.621" endTime="15.992" id="a166">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a70" startTime="15.992" endTime="16.263" id="a167">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a71" startTime="16.263" endTime="16.404" id="a168">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a72" startTime="16.404" endTime="16.725" id="a169">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a73" startTime="16.725" endTime="17.19" id="a170">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a74" startTime="17.57" endTime="17.805" id="a171">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a75" startTime="17.805" endTime="18.035" id="a172">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a76" startTime="18.035" endTime="18.75" id="a173">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a77" startTime="18.99" endTime="19.228" id="a174">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a78" startTime="19.228" endTime="19.632" id="a175">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a79" startTime="19.632" endTime="20.031" id="a176">
+        <text>post</text>
+      </phrase>
+      <phrase ref="a80" startTime="20.031" endTime="20.394" id="a177">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a81" startTime="20.394" endTime="20.97" id="a178">
+        <text>dem</text>
+      </phrase>
+      <phrase ref="a82" startTime="20.97" endTime="21.5" id="a179">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a83" startTime="21.5" endTime="21.81" id="a180">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a84" startTime="21.86" endTime="22.043" id="a181">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a85" startTime="22.043" endTime="22.216" id="a182">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a86" startTime="22.216" endTime="22.5" id="a183">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a87" startTime="22.5" endTime="22.635" id="a184">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a88" startTime="22.635" endTime="22.93" id="a185">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a89" startTime="23.47" endTime="24.28" id="a186">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a90" startTime="24.28" endTime="24.5" id="a187">
+        <text>post</text>
+      </phrase>
+      <phrase ref="a91" startTime="24.5" endTime="25.05" id="a188">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a92" startTime="25.08" endTime="25.42" id="a189">
+        <text>int</text>
+      </phrase>
+      <phrase ref="a93" startTime="25.42" endTime="25.62" id="a190">
+        <text>dem</text>
+      </phrase>
+      <phrase ref="a94" startTime="25.62" endTime="25.69" id="a191">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a95" startTime="25.69" endTime="26.402" id="a192">
+        <text>adj</text>
+      </phrase>
+      <phrase ref="a96" startTime="26.402" endTime="27.01" id="a193">
+        <text>part</text>
+      </phrase>
+      <phrase ref="a97" startTime="28.16" endTime="28.425" id="a194">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a98" startTime="28.425" endTime="28.54" id="a195">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a99" startTime="28.54" endTime="29.11" id="a196">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a100" startTime="29.37" endTime="29.582" id="a197">
+        <text>con</text>
+      </phrase>
+      <phrase ref="a101" startTime="29.582" endTime="29.795" id="a198">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a102" startTime="29.795" endTime="30.065" id="a199">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a103" startTime="30.065" endTime="30.305" id="a200">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a104" startTime="30.305" endTime="30.465" id="a201">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a105" startTime="30.465" endTime="30.844" id="a202">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a106" startTime="30.844" endTime="31.23" id="a203">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a107" startTime="31.32" endTime="31.57" id="a204">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a108" startTime="31.57" endTime="31.999" id="a205">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a109" startTime="32.379" endTime="32.56" id="a206">
+        <text>con</text>
+      </phrase>
+      <phrase ref="a110" startTime="32.56" endTime="32.76" id="a207">
+        <text>adv</text>
+      </phrase>
+      <phrase ref="a111" startTime="32.76" endTime="32.92" id="a208">
+        <text>pro</text>
+      </phrase>
+      <phrase ref="a112" startTime="32.92" endTime="33.22" id="a209">
+        <text>v</text>
+      </phrase>
+      <phrase ref="a113" startTime="33.22" endTime="33.62" id="a210">
+        <text>art</text>
+      </phrase>
+      <phrase ref="a114" startTime="33.62" endTime="33.86" id="a211">
+        <text>dem</text>
+      </phrase>
+      <phrase ref="a115" startTime="33.86" endTime="34.29" id="a212">
+        <text>n</text>
+      </phrase>
+      <phrase ref="a116" startTime="34.38" endTime="34.83" id="a213">
+        <text>part</text>
+      </phrase>
+      <phrase ref="a117" startTime="34.83" endTime="35.45" id="a214">
+        <text>int</text>
+      </phrase>
+      <phrase ref="a118" startTime="35.45" endTime="35.73" id="a215">
+        <text>prep</text>
+      </phrase>
+      <phrase ref="a119" startTime="35.73" endTime="36.18" id="a216">
+        <text>n</text>
+      </phrase>
     </tier>
     <tier id="W-IPA" parent="W-Spch" lang="en" linguistic_type="phonetic_transcription">
-      <phrase ref="a8" startTime="0.78" endTime="4.09" id="a217">səʋ  juː ɡɔ aut əf ðə ɪnstɪtjuːt tʊ zə sant ana straːt</phrase>
-      <phrase ref="a9" startTime="4.6" endTime="10.07" id="a218">ənd ðen juː ɡəʊ ðɪ ɔθɛ sant ana straːt tʊ ðɪs to ðə sɛntə əf ðə taun tu ðɪs bɪɡ rɔtundə</phrase>
-      <phrase ref="a10" startTime="11.15" endTime="13.24" id="a219">ænd juː fɔləʊ ðən ðə saɪn kleːf</phrase>
-      <phrase ref="a11" startTime="13.31" endTime="14.54" id="a220">ðæts ðə ɔranjə sɪŋl</phrase>
-      <phrase ref="a12" startTime="15.33" endTime="17.19" id="a221">ðen juː fɔləʊ ðə saɪn kleːf</phrase>
-      <phrase ref="a13" startTime="17.57" endTime="18.75" id="a222">juː kʌm daʊn</phrase>
-      <phrase ref="a14" startTime="18.99" endTime="21.81" id="a223">juː nɔː ə aftə ðɪs trajanus pleːɪn</phrase>
-      <phrase ref="a15" startTime="21.86" endTime="22.93" id="a224">juː kʌm daʊn tʊ ðə</phrase>
-      <phrase ref="a16" startTime="23.47" endTime="25.05" id="a225">raɪn ə vælɪ</phrase>
-      <phrase ref="a17" startTime="25.08" endTime="27.01" id="a226">jɛː ðæts ənaðə ə</phrase>
-      <phrase ref="a18" startTime="28.16" endTime="29.11" id="a227">kaɪnd əv rotʊndə</phrase>
-      <phrase ref="a19" startTime="29.37" endTime="31.23" id="a228">ənd ðen juː fɔləʊ ðə saɪns kleːf</phrase>
-      <phrase ref="a20" startTime="31.32" endTime="31.999" id="a229">jə ɡɔ daʊn</phrase>
-      <phrase ref="a21" startTime="32.379" endTime="34.29" id="a230">ənd ðen juː ɡɔ ðə ðɪs weɪ</phrase>
-      <phrase ref="a22" startTime="34.38" endTime="36.18" id="a231">ə jaː tʊ kleːf</phrase>
+      <phrase ref="a8" startTime="0.78" endTime="4.09" id="a217">
+        <text>səʋ  juː ɡɔ aut əf ðə ɪnstɪtjuːt tʊ zə sant ana straːt</text>
+      </phrase>
+      <phrase ref="a9" startTime="4.6" endTime="10.07" id="a218">
+        <text>ənd ðen juː ɡəʊ ðɪ ɔθɛ sant ana straːt tʊ ðɪs to ðə sɛntə əf ðə taun tu ðɪs bɪɡ rɔtundə</text>
+      </phrase>
+      <phrase ref="a10" startTime="11.15" endTime="13.24" id="a219">
+        <text>ænd juː fɔləʊ ðən ðə saɪn kleːf</text>
+      </phrase>
+      <phrase ref="a11" startTime="13.31" endTime="14.54" id="a220">
+        <text>ðæts ðə ɔranjə sɪŋl</text>
+      </phrase>
+      <phrase ref="a12" startTime="15.33" endTime="17.19" id="a221">
+        <text>ðen juː fɔləʊ ðə saɪn kleːf</text>
+      </phrase>
+      <phrase ref="a13" startTime="17.57" endTime="18.75" id="a222">
+        <text>juː kʌm daʊn</text>
+      </phrase>
+      <phrase ref="a14" startTime="18.99" endTime="21.81" id="a223">
+        <text>juː nɔː ə aftə ðɪs trajanus pleːɪn</text>
+      </phrase>
+      <phrase ref="a15" startTime="21.86" endTime="22.93" id="a224">
+        <text>juː kʌm daʊn tʊ ðə</text>
+      </phrase>
+      <phrase ref="a16" startTime="23.47" endTime="25.05" id="a225">
+        <text>raɪn ə vælɪ</text>
+      </phrase>
+      <phrase ref="a17" startTime="25.08" endTime="27.01" id="a226">
+        <text>jɛː ðæts ənaðə ə</text>
+      </phrase>
+      <phrase ref="a18" startTime="28.16" endTime="29.11" id="a227">
+        <text>kaɪnd əv rotʊndə</text>
+      </phrase>
+      <phrase ref="a19" startTime="29.37" endTime="31.23" id="a228">
+        <text>ənd ðen juː fɔləʊ ðə saɪns kleːf</text>
+      </phrase>
+      <phrase ref="a20" startTime="31.32" endTime="31.999" id="a229">
+        <text>jə ɡɔ daʊn</text>
+      </phrase>
+      <phrase ref="a21" startTime="32.379" endTime="34.29" id="a230">
+        <text>ənd ðen juː ɡɔ ðə ðɪs weɪ</text>
+      </phrase>
+      <phrase ref="a22" startTime="34.38" endTime="36.18" id="a231">
+        <text>ə jaː tʊ kleːf</text>
+      </phrase>
     </tier>
     <tier id="W-RGU" parent="" lang="en" linguistic_type="gestures">
-      <phrase startTime="0" endTime="33.84" id="a232">R Gesture Unit 1</phrase>
+      <phrase startTime="0" endTime="33.84" id="a232">
+        <text>R Gesture Unit 1</text>
+      </phrase>
     </tier>
     <tier id="W-RGph" parent="W-RGU" lang="en" linguistic_type="gesture_phases">
-      <phrase startTime="0" endTime="0.44" id="a233">preparation</phrase>
-      <phrase startTime="0.44" endTime="1.6" id="a234">preparation</phrase>
-      <phrase startTime="1.6" endTime="2.24" id="a235">stroke</phrase>
-      <phrase startTime="2.24" endTime="2.76" id="a236">hold</phrase>
-      <phrase startTime="2.76" endTime="3.32" id="a237">preparation</phrase>
-      <phrase startTime="3.32" endTime="3.84" id="a238">stroke</phrase>
-      <phrase startTime="3.84" endTime="4.6" id="a239">hold</phrase>
-      <phrase startTime="4.6" endTime="5.72" id="a240">preparation</phrase>
-      <phrase startTime="5.72" endTime="6.36" id="a241">stroke</phrase>
-      <phrase startTime="6.36" endTime="6.72" id="a242">hold</phrase>
-      <phrase startTime="6.72" endTime="7.4" id="a243">part.retraction</phrase>
-      <phrase startTime="7.4" endTime="7.52" id="a244">hold</phrase>
-      <phrase startTime="7.52" endTime="7.8" id="a245">preparation</phrase>
-      <phrase startTime="7.8" endTime="8.08" id="a246">stroke</phrase>
-      <phrase startTime="8.08" endTime="8.720000000000001" id="a247">preparation</phrase>
-      <phrase startTime="8.720000000000001" endTime="10.2" id="a248">stroke</phrase>
-      <phrase startTime="10.2" endTime="10.88" id="a249">hold</phrase>
-      <phrase startTime="10.88" endTime="11.84" id="a250">preparation</phrase>
-      <phrase startTime="11.84" endTime="12.12" id="a251">hold</phrase>
-      <phrase startTime="12.12" endTime="12.68" id="a252">stroke</phrase>
-      <phrase startTime="12.68" endTime="13.24" id="a253">hold</phrase>
-      <phrase startTime="13.24" endTime="13.92" id="a254">preparation</phrase>
-      <phrase startTime="13.92" endTime="14.56" id="a255">stroke</phrase>
-      <phrase startTime="14.56" endTime="15.12" id="a256">hold</phrase>
-      <phrase startTime="15.12" endTime="15.84" id="a257">preparation</phrase>
-      <phrase startTime="15.84" endTime="17" id="a258">hold</phrase>
-      <phrase startTime="17" endTime="17.2" id="a259">stroke</phrase>
-      <phrase startTime="17.2" endTime="17.68" id="a260">hold</phrase>
-      <phrase startTime="17.68" endTime="18.24" id="a261">preparation</phrase>
-      <phrase startTime="18.24" endTime="18.64" id="a262">stroke</phrase>
-      <phrase startTime="18.64" endTime="19.24" id="a263">hold</phrase>
-      <phrase startTime="19.24" endTime="20.16" id="a264">preparation</phrase>
-      <phrase startTime="20.16" endTime="20.84" id="a265">stroke</phrase>
-      <phrase startTime="20.84" endTime="21.32" id="a266">hold</phrase>
-      <phrase startTime="21.32" endTime="21.72" id="a267">stroke</phrase>
-      <phrase startTime="21.72" endTime="22.28" id="a268">preparation</phrase>
-      <phrase startTime="22.28" endTime="22.84" id="a269">stroke</phrase>
-      <phrase startTime="22.84" endTime="23.72" id="a270">hold</phrase>
-      <phrase startTime="23.72" endTime="24.04" id="a271">hold</phrase>
-      <phrase startTime="24.04" endTime="24.52" id="a272">preparation</phrase>
-      <phrase startTime="24.52" endTime="24.96" id="a273">stroke</phrase>
-      <phrase startTime="24.96" endTime="25.52" id="a274">preparation</phrase>
-      <phrase startTime="25.52" endTime="25.64" id="a275">preparation</phrase>
-      <phrase startTime="25.64" endTime="26.2" id="a276">stroke</phrase>
-      <phrase startTime="26.2" endTime="27.08" id="a277">hold</phrase>
-      <phrase startTime="27.08" endTime="27.36" id="a278">preparation</phrase>
-      <phrase startTime="27.36" endTime="28" id="a279">stroke</phrase>
-      <phrase startTime="28" endTime="28.12" id="a280">preparation</phrase>
-      <phrase startTime="28.12" endTime="28.92" id="a281">stroke</phrase>
-      <phrase startTime="28.92" endTime="29.12" id="a282">hold</phrase>
-      <phrase startTime="29.12" endTime="29.88" id="a283">preparation</phrase>
-      <phrase startTime="29.88" endTime="30" id="a284">hold</phrase>
-      <phrase startTime="30" endTime="30.72" id="a285">stroke</phrase>
-      <phrase startTime="30.72" endTime="31.16" id="a286">hold</phrase>
-      <phrase startTime="31.16" endTime="31.52" id="a287">preparation</phrase>
-      <phrase startTime="31.52" endTime="31.96" id="a288">stroke</phrase>
-      <phrase startTime="31.96" endTime="32.92" id="a289">preparation</phrase>
-      <phrase startTime="32.92" endTime="33.36" id="a290">stroke</phrase>
-      <phrase startTime="33.36" endTime="33.84" id="a291">retraction</phrase>
+      <phrase startTime="0" endTime="0.44" id="a233">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="0.44" endTime="1.6" id="a234">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="1.6" endTime="2.24" id="a235">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="2.24" endTime="2.76" id="a236">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="2.76" endTime="3.32" id="a237">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="3.32" endTime="3.84" id="a238">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="3.84" endTime="4.6" id="a239">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="4.6" endTime="5.72" id="a240">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="5.72" endTime="6.36" id="a241">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="6.36" endTime="6.72" id="a242">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="6.72" endTime="7.4" id="a243">
+        <text>part.retraction</text>
+      </phrase>
+      <phrase startTime="7.4" endTime="7.52" id="a244">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="7.52" endTime="7.8" id="a245">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="7.8" endTime="8.08" id="a246">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="8.08" endTime="8.720000000000001" id="a247">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="8.720000000000001" endTime="10.2" id="a248">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="10.2" endTime="10.88" id="a249">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="10.88" endTime="11.84" id="a250">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="11.84" endTime="12.12" id="a251">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="12.12" endTime="12.68" id="a252">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="12.68" endTime="13.24" id="a253">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="13.24" endTime="13.92" id="a254">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="13.92" endTime="14.56" id="a255">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="14.56" endTime="15.12" id="a256">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="15.12" endTime="15.84" id="a257">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="15.84" endTime="17" id="a258">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="17" endTime="17.2" id="a259">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="17.2" endTime="17.68" id="a260">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="17.68" endTime="18.24" id="a261">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="18.24" endTime="18.64" id="a262">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="18.64" endTime="19.24" id="a263">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="19.24" endTime="20.16" id="a264">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="20.16" endTime="20.84" id="a265">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="20.84" endTime="21.32" id="a266">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="21.32" endTime="21.72" id="a267">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="21.72" endTime="22.28" id="a268">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="22.28" endTime="22.84" id="a269">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="22.84" endTime="23.72" id="a270">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="23.72" endTime="24.04" id="a271">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="24.04" endTime="24.52" id="a272">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="24.52" endTime="24.96" id="a273">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="24.96" endTime="25.52" id="a274">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="25.52" endTime="25.64" id="a275">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="25.64" endTime="26.2" id="a276">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="26.2" endTime="27.08" id="a277">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="27.08" endTime="27.36" id="a278">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="27.36" endTime="28" id="a279">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="28" endTime="28.12" id="a280">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="28.12" endTime="28.92" id="a281">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="28.92" endTime="29.12" id="a282">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="29.12" endTime="29.88" id="a283">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="29.88" endTime="30" id="a284">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="30" endTime="30.72" id="a285">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="30.72" endTime="31.16" id="a286">
+        <text>hold</text>
+      </phrase>
+      <phrase startTime="31.16" endTime="31.52" id="a287">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="31.52" endTime="31.96" id="a288">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="31.96" endTime="32.92" id="a289">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="32.92" endTime="33.36" id="a290">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="33.36" endTime="33.84" id="a291">
+        <text>retraction</text>
+      </phrase>
     </tier>
     <tier id="W-RGMe" parent="W-RGph" lang="en" linguistic_type="gesture_meaning">
-      <phrase ref="a235" startTime="1.6" endTime="2.24" id="a292">Going out of the Insitute</phrase>
-      <phrase ref="a238" startTime="3.32" endTime="3.84" id="a293">Going out of MPI to Saint Anna Street</phrase>
-      <phrase ref="a241" startTime="5.72" endTime="6.36" id="a294">Going along St. Anna Street</phrase>
-      <phrase ref="a246" startTime="7.8" endTime="8.08" id="a295">Going along St. Anna Street</phrase>
-      <phrase ref="a248" startTime="8.720000000000001" endTime="10.2" id="a296">A roundabout</phrase>
-      <phrase ref="a252" startTime="12.12" endTime="12.68" id="a297">Going to the direction of Kleve</phrase>
-      <phrase ref="a255" startTime="13.92" endTime="14.56" id="a298">Going along Oranje Singel (Street)</phrase>
-      <phrase ref="a259" startTime="17" endTime="17.2" id="a299">Going to the direction of Kleve</phrase>
-      <phrase ref="a262" startTime="18.24" endTime="18.64" id="a300">Going down</phrase>
-      <phrase ref="a265" startTime="20.16" endTime="20.84" id="a301">a roundabout</phrase>
-      <phrase ref="a267" startTime="21.32" endTime="21.72" id="a302">a roundabout</phrase>
-      <phrase ref="a269" startTime="22.28" endTime="22.84" id="a303">Going down</phrase>
-      <phrase ref="a273" startTime="24.52" endTime="24.96" id="a304">Going down</phrase>
-      <phrase ref="a276" startTime="25.64" endTime="26.2" id="a305">a roundabout</phrase>
-      <phrase ref="a279" startTime="27.36" endTime="28" id="a306">a roundabout</phrase>
-      <phrase ref="a281" startTime="28.12" endTime="28.92" id="a307">a roundabout</phrase>
-      <phrase ref="a285" startTime="30" endTime="30.72" id="a308">Going down</phrase>
-      <phrase ref="a288" startTime="31.52" endTime="31.96" id="a309">Going down</phrase>
-      <phrase ref="a290" startTime="32.92" endTime="33.36" id="a310">Going to Kleve</phrase>
+      <phrase ref="a235" startTime="1.6" endTime="2.24" id="a292">
+        <text>Going out of the Insitute</text>
+      </phrase>
+      <phrase ref="a238" startTime="3.32" endTime="3.84" id="a293">
+        <text>Going out of MPI to Saint Anna Street</text>
+      </phrase>
+      <phrase ref="a241" startTime="5.72" endTime="6.36" id="a294">
+        <text>Going along St. Anna Street</text>
+      </phrase>
+      <phrase ref="a246" startTime="7.8" endTime="8.08" id="a295">
+        <text>Going along St. Anna Street</text>
+      </phrase>
+      <phrase ref="a248" startTime="8.720000000000001" endTime="10.2" id="a296">
+        <text>A roundabout</text>
+      </phrase>
+      <phrase ref="a252" startTime="12.12" endTime="12.68" id="a297">
+        <text>Going to the direction of Kleve</text>
+      </phrase>
+      <phrase ref="a255" startTime="13.92" endTime="14.56" id="a298">
+        <text>Going along Oranje Singel (Street)</text>
+      </phrase>
+      <phrase ref="a259" startTime="17" endTime="17.2" id="a299">
+        <text>Going to the direction of Kleve</text>
+      </phrase>
+      <phrase ref="a262" startTime="18.24" endTime="18.64" id="a300">
+        <text>Going down</text>
+      </phrase>
+      <phrase ref="a265" startTime="20.16" endTime="20.84" id="a301">
+        <text>a roundabout</text>
+      </phrase>
+      <phrase ref="a267" startTime="21.32" endTime="21.72" id="a302">
+        <text>a roundabout</text>
+      </phrase>
+      <phrase ref="a269" startTime="22.28" endTime="22.84" id="a303">
+        <text>Going down</text>
+      </phrase>
+      <phrase ref="a273" startTime="24.52" endTime="24.96" id="a304">
+        <text>Going down</text>
+      </phrase>
+      <phrase ref="a276" startTime="25.64" endTime="26.2" id="a305">
+        <text>a roundabout</text>
+      </phrase>
+      <phrase ref="a279" startTime="27.36" endTime="28" id="a306">
+        <text>a roundabout</text>
+      </phrase>
+      <phrase ref="a281" startTime="28.12" endTime="28.92" id="a307">
+        <text>a roundabout</text>
+      </phrase>
+      <phrase ref="a285" startTime="30" endTime="30.72" id="a308">
+        <text>Going down</text>
+      </phrase>
+      <phrase ref="a288" startTime="31.52" endTime="31.96" id="a309">
+        <text>Going down</text>
+      </phrase>
+      <phrase ref="a290" startTime="32.92" endTime="33.36" id="a310">
+        <text>Going to Kleve</text>
+      </phrase>
     </tier>
     <tier id="K-RGU" parent="" lang="en" linguistic_type="gestures">
-      <phrase startTime="23.12" endTime="24.04" id="a311">R Gesture Unit 1</phrase>
+      <phrase startTime="23.12" endTime="24.04" id="a311">
+        <text>R Gesture Unit 1</text>
+      </phrase>
     </tier>
     <tier id="K-RGph" parent="K-RGU" lang="en" linguistic_type="gesture_phases">
-      <phrase startTime="23.12" endTime="23.52" id="a312">preparation</phrase>
-      <phrase startTime="23.52" endTime="23.8" id="a313">stroke</phrase>
-      <phrase startTime="23.8" endTime="24.04" id="a314">retraction</phrase>
+      <phrase startTime="23.12" endTime="23.52" id="a312">
+        <text>preparation</text>
+      </phrase>
+      <phrase startTime="23.52" endTime="23.8" id="a313">
+        <text>stroke</text>
+      </phrase>
+      <phrase startTime="23.8" endTime="24.04" id="a314">
+        <text>retraction</text>
+      </phrase>
     </tier>
     <tier id="K-RGMe" parent="K-RGph" lang="en" linguistic_type="gesture_meaning">
-      <phrase ref="a313" startTime="23.52" endTime="23.8" id="a315">a roundabout</phrase>
+      <phrase ref="a313" startTime="23.52" endTime="23.8" id="a315">
+        <text>a roundabout</text>
+      </phrase>
     </tier>
-  </interlinear-text>
+  </interlinear>
 </eopas>

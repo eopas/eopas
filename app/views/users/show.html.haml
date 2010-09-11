@@ -4,21 +4,21 @@
 
   %table#metadata
     %tr#name
-      %td#name
+      %td.name
         Name
-      %td#value
+      %td.value
         = @user.full_name
 
     %tr#email
-      %td#name
+      %td.name
         Email
-      %td#value
+      %td.value
         = @user.email
 
     %tr#roles
-      %td#name
+      %td.name
         Roles
-      %td#value
+      %td.value
         = @user.roles.join ","
 
   = link_to 'Edit Details', edit_user_path

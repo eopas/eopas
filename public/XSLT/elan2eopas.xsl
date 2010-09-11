@@ -56,7 +56,7 @@ version="1.0">
         </meta>
       </header>
 
-      <interlinear-text>
+      <interlinear>
         <xsl:for-each select="TIER">
           <xsl:variable name="CUR_TIER" select="."/>
           <tier>
@@ -100,7 +100,9 @@ version="1.0">
                       <xsl:value-of select="$CUR_TIER/@DPARTICIPANT"/>
                     </xsl:attribute>
                   </xsl:if>
-                  <xsl:value-of select="ANNOTATION_VALUE"/>
+                  <text>
+                    <xsl:value-of select="ANNOTATION_VALUE"/>
+                  </text>
                 </phrase>
               </xsl:for-each>
             </xsl:for-each>
@@ -131,14 +133,16 @@ version="1.0">
                   <xsl:attribute name="id">
                     <xsl:value-of select="@ANNOTATION_ID"/>
                   </xsl:attribute>
-                  <xsl:value-of select="ANNOTATION_VALUE"/>
+                  <text>
+                    <xsl:value-of select="ANNOTATION_VALUE"/>
+                  </text>
                 </phrase>
               </xsl:for-each>
             </xsl:for-each>
 
           </tier>
         </xsl:for-each>
-      </interlinear-text>
+      </interlinear>
 
     </eopas>
   </xsl:template>

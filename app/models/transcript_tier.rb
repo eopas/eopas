@@ -1,6 +1,7 @@
 class TranscriptTier < ActiveRecord::Base
   belongs_to :transcript
 
+  has_one  :parent, :class_name => :transcript_tier
   has_many :transcript_phrases, :dependent => :destroy
 
   def to_s

@@ -34,7 +34,7 @@ Feature: Media Items can have transcriptions
      And I should be on that media item's page
      And I should see "<text>"
     When I follow "EOPAS" within "#metadata_display"
-    Then I should see "" within "interlinear-text"
+    Then I should see "" within "interlinear"
      And I should see "<text>"
     When I go to that media item's page
      And I follow "Original"
@@ -47,7 +47,7 @@ Feature: Media Items can have transcriptions
       | elan2.xml        | ELAN        | My name is Joe | annotation_document |
       | eopas1.xml       | EOPAS       | so from here   | eopas               |
       | eopas2.xml       | EOPAS       | cristiana ica  | eopas               |
-      | eopas3.xml       | EOPAS       | his father     | eopas               |
+      | eopas3.xml       | EOPAS       | rat, this rat  | eopas               |
       | toolbox1.xml     | Toolbox     | about this wo  | database            |
       | toolbox2.xml     | Toolbox     | about the rat  | database            |
       | transcriber1.xml | Transcriber | pause crowd    | trans               |

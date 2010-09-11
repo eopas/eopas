@@ -15,6 +15,8 @@
 
 require 'nokogiri'
 require 'fileutils'
+require 'xml-object'
+require 'xml-object/adapters/libxml'
 
 class Transcription
 
@@ -60,85 +62,86 @@ class Transcription
 
   def import(transcript)
     eopas_xml = to_eopas
-    eopas_doc = EopasDoc.new(transcript)
-    parser = Nokogiri::XML::SAX::Parser.new(eopas_doc)
-    parser.parse(eopas_xml)
-  end
+    eopas = XMLObject.new(eopas_xml)
 
-  # parser class for Eopas 2.0 XML Documents
-  class EopasDoc < Nokogiri::XML::SAX::Document
-    def initialize(transcript)
-      @transcript = transcript
-
-      @in_phrase = false
+    metas = eopas.header.meta
+    metas = [metas] unless metas.is_a? Array
+    metas.each do |meta|
+      case meta.name
+      when "dc:creator"
+        transcript.creator = meta.value
+      when "dc:language"
+        transcript.language_code = meta.value
+      when "dc:date"
+        transcript.date = meta.value
+      end
     end
 
-    def start_element(name, attrs = [])
-      @tag = name
-      attrs = Hash[*attrs]
+    tiers = eopas.interlinear.tier
+    tiers = [tiers] unless tiers.is_a? Array
+    tiers.each do |tier|
+      # create new tier
+      t = transcript.transcript_tiers.build
+      begin
+        t.tier_id         = tier.id
+      rescue NameError
+      end
+      begin
+        t.language_code   = tier.lang
+      rescue NameError
+      end
+      begin
+        t.linguistic_type = tier.linguistic_type
+      rescue NameError
+      end
+      begin
+        t.parent = transcript.tiers.select{|tt| tt.tier_id == tier.parent}.first
+      rescue NameError
+      end
 
-      case @tag
-      when "eopas", "header", "interlinear-text"
-        return
-
-      when "meta"
-        # the <meta> fields in the header
-        case attrs['name']
-        when "dc:creator"
-          @transcript.creator = attrs['value']
-        when "dc:language"
-          @transcript.language_code = attrs['value']
-        when "dc:date"
-          @transcript.date = attrs['value']
-        end
-        return
-
-      when "tier"
-        # create new tier
-        @tier = @transcript.transcript_tiers.build
-        @tier.tier_id         = attrs['id'] if attrs['id']
-        @tier.language_code   = attrs['lang'] if attrs['lang']
-        @tier.linguistic_type = attrs['linguistic_type'] if attrs['linguistic_type']
-        if attrs['parent'] && !attrs['parent'].empty?
-          parent = TranscriptTier.find(:first, :conditions => {:tier_id => attrs['parent'], :transcript_id => @transcript.id})
-          @tier.parent_id = parent.id if parent
-        end
-
-      when "phrase"
-        @in_phrase = true
+      phrases = tier.phrase
+      phrases = [phrases] unless phrases.is_a? Array
+      phrases.each do |phrase|
         # create new phrase
-        @phrase = @tier.transcript_phrases.build
-        @phrase.phrase_id       = attrs['id'] if attrs['id']
-        @phrase.start_time      = attrs['startTime'].to_f if attrs['startTime']
-        @phrase.end_time        = attrs['endTime'].to_f if attrs['endTime']
-        @phrase.ref_phrase      = attrs['ref'] if attrs['ref']
-        @phrase.participant     = attrs['participant'] if attrs['participant']
-        @phrase.text = ""
+        p = t.transcript_phrases.build
+        begin
+          p.phrase_id       = phrase.id
+        rescue NameError
+        end
+        p.start_time      = phrase.startTime.to_f
+        p.end_time        = phrase.endTime.to_f
+        begin
+          p.ref_phrase      = phrase.ref
+        rescue NameError
+        end
+        begin
+          p.participant     = phrase.participant
+        rescue NameError
+        end
+        begin
+          p.text            = phrase.text
+        rescue NameError
+        end
+        p.words           = []
+
+        begin
+          words = phrase.words.word
+          words = [words] unless words.is_a? Array
+          words.each do |word|
+            new_word = {:text => word.text}
+            morphemes = word.morphemes.morpheme
+            morphemes.each do |morpheme|
+              new_word[:morphemes] = {}
+              texts = morpheme.text
+              texts.each do |text|
+                (new_word[:morphemes][text.kind] ||= []) << text
+              end
+            end
+            p.words << new_word
+          end
+        rescue NameError
+        end
       end
-    end
-
-    def end_element(name)
-      @tag = name
-      case @tag
-
-      when "eopas", "header", "interlinear-text", "tier"
-        return
-
-      when "phrase"
-        @in_phrase = false
-      end
-    end
-
-    def characters(text)
-      if @in_phrase
-        @phrase.text += " "+text
-        @phrase.text = @phrase.text.strip
-      end
-    end
-
-    def end_document
-        # Do nothing
     end
   end
-
 end

@@ -6,26 +6,26 @@
 
     %table#metadata
       %tr
-        %td#name
+        %td.name
           = f.label :email
-        %td#value
+        %td.value
           = f.text_field :email, :class => 'text'
 
       %tr
-        %td#name
+        %td.name
           = f.label :password
-        %td#value
+        %td.value
           = f.password_field :password
 
       %tr
-        %td#name
-        %td#value
+        %td.name
+        %td.value
           = f.check_box :remember_me
           = f.label :remember_me
 
       %tr
-        %td#name
-        %td#value
+        %td.name
+        %td.value
           = f.submit "Login"
 
 

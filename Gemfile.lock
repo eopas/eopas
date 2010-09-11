@@ -92,6 +92,7 @@ GEM
     launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
+    libxml-ruby (1.1.4)
     mail (2.2.5)
       activesupport (>= 2.3.6)
       mime-types
@@ -148,6 +149,7 @@ GEM
       polyglot (>= 0.3.1)
     trollop (1.16.2)
     tzinfo (0.3.23)
+    xml-object (0.9.93)
     yard (0.6.1)
 
 PLATFORMS
@@ -166,7 +168,9 @@ DEPENDENCIES
   factory_girl
   haml
   launchy
+  libxml-ruby
   mysql
+  nokogiri
   paperclip
   pickle
   rack-test!
@@ -174,3 +178,4 @@ DEPENDENCIES
   rspec-rails (>= 2.0.0.beta.20)
   spork
   sqlite3-ruby
+  xml-object

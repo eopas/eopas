@@ -7,7 +7,7 @@
     %meta{:name => "dc:language", :value => @transcript.language_code}
     %meta{:name => "dc:date",     :value => @transcript.date}
 
-  %interlinear-text
+  %interlinear
     - @transcript.transcript_tiers.each do |tier|
       %tier{:id => tier.tier_id, :parent => tier.parent_id, :lang => tier.language_code, :linguistic_type => tier.linguistic_type}
         - tier.transcript_phrases.each do |phrase|

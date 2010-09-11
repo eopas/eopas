@@ -14,6 +14,9 @@ gem 'declarative_authorization'
 gem 'paperclip'
 gem 'delayed_paperclip'
 gem 'delayed_job', '2.1.0.pre2'
+gem 'nokogiri'
+gem 'xml-object'
+gem 'libxml-ruby'
 
 #gem 'exception_notifier'
 

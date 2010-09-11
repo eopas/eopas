@@ -1,6 +1,9 @@
 class TranscriptPhrase < ActiveRecord::Base
   belongs_to :transcript_tier
 
+  serialize :words, Array
+
+
   def to_s
     "\ntranscript_phrase {\n"+
     "   id:              "+self.id.to_s+"\n"+
