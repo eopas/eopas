@@ -22,6 +22,8 @@ $lightblue: #adc1d6;
 $blue:      #7297ba;
 
 // Specific styling of elements
+
+// General page layout
 #header {
   background-repeat: no-repeat;
   background-color: $grey;
@@ -41,6 +43,11 @@ $blue:      #7297ba;
     padding: 10px;
     li { list-style-type: none; }
   }
+}
+
+#footer {
+  text-align: center;
+  padding: 20px;
 }
 
 #flash_error {
@@ -102,6 +109,34 @@ $blue:      #7297ba;
   margin-left: 15px;
 }
 
+// media_item index page
+ul.media_items {
+  display: block;
+  li {
+    list-style-type: none;
+    float: left;
+    .item {
+      border: 2px solid grey;
+      margin: 5px;
+      padding: 2px;
+      text-align: center;
+      width: 170px;
+      img {
+        width: 160px;
+        height: 120px;
+      }
+      p {
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+// media_item show page
 #media_item {
   #errorExplanation {
     background-color: $red;
@@ -176,8 +211,4 @@ table.small {
 }
 
 
-#footer {
-  text-align: center;
-  padding: 20px;
-}
 
