@@ -27,15 +27,15 @@
 
   %tr
     %td.name
-      = form.label :presenter_name, 'Name of Presenter'
+      = form.label :participant_name, 'Name of Participant'
     %td.value
-      = form.text_field :presenter_name, :class => 'text'
+      = form.text_field :participant_name, :class => 'text'
 
   %tr
     %td.name
-      = form.label :presenter_role, 'Role of Presenter'
+      = form.label :participant_role, 'Role of Participant'
     %td.value
-      = form.select :presenter_role, options_for_select(MediaItem::PRESENTER_ROLES, @media_item.presenter_role)
+      = form.select :participant_role, options_for_select(MediaItem::PARTICIPANT_ROLES, @media_item.participant_role)
 
   %tr
     %td.name

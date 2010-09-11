@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100821113544) do
+ActiveRecord::Schema.define(:version => 20100911011246) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "name"
@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(:version => 20100821113544) do
     t.datetime "recorded_at"
     t.string   "annotator_name"
     t.string   "annotator_role"
-    t.string   "presenter_name"
-    t.string   "presenter_role"
+    t.string   "participant_name"
+    t.string   "participant_role"
     t.string   "language_code"
     t.string   "copyright"
     t.string   "license"

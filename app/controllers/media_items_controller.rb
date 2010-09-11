@@ -9,10 +9,10 @@ class MediaItemsController < ApplicationController
 
   def new
     @media_item = MediaItem.new(
-      :presenter_role => "speaker",
-      :license        => "CC-AU-BY-SA",
-      :language_code  => "en",
-      :private        => false,
+      :participant_role => "speaker",
+      :license          => "CC-AU-BY-SA",
+      :language_code    => "en",
+      :private          => false,
     )
   end
 
