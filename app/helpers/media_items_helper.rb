@@ -1,8 +1,8 @@
 module MediaItemsHelper
-  def media_item_video_tag(media_item, &block)
+  def media_item_video_tag(media_item, options = {}, &block)
     options = {
       :controls => ''
-    }
+    }.merge(options)
 
     options[:width] = 320
     options[:height] = 240
