@@ -1,5 +1,5 @@
 class TranscriptPhrase < ActiveRecord::Base
-  belongs_to :transcript_tier
+  belongs_to :tier, :class_name => 'TranscriptTier', :foreign_key => :transcript_tier_id
 
   serialize :words, Array
 

@@ -33,7 +33,7 @@
     - tiers = @transcript.tiers
     #tiers_info
       - tiers.each do |tier|
-        .tier_info
+        .tier_info.div-hider{'data-hide-selector' => ".#{tier.tier_id}"}
           == Language Code #{tier.language_code}
           == Language Type #{tier.linguistic_type}
     #transcript_display
@@ -45,7 +45,7 @@
         - 0.upto(num_phrases - 1) do |i|
           .line
             - tier_phrases[i].each do |phrase|
-              .tier{:class => phrase.transcript_tier.tier_id}
+              .tier{:class => phrase.tier.tier_id}
                 .words
                   - phrase.words.each do |word|
                     - colspan = 1
@@ -62,7 +62,7 @@
                               %td{:class => kind}
                                 = s.force_encoding('UTF-8')
                 - if phrase.text
-                  .phrase{:class => phrase.transcript_tier.linguistic_type}
+                  .phrase{:class => phrase.tier.linguistic_type}
                     = phrase.text.force_encoding('UTF-8')
 
   - else

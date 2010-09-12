@@ -70,10 +70,22 @@ function setup_country_code() {
 
 }
 
+function setup_div_hider() {
+
+  $('.div-hider').click(function() {
+      var hide_id = $(this).attr('data-hide-selector');
+      if (hide_id) {
+        $(hide_id).slideToggle();
+      }
+  });
+
+}
+
 $(document).ready(function() {
 
   // Collapsing dovs
   setup_div_toggle();
+  setup_div_hider();
 
   // Country Code Selector
   setup_country_code();
