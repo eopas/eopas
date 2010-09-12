@@ -235,41 +235,52 @@ table.small {
   overflow: auto;
   clear: right;
   .line {
-    background-color: $lightgrey;
-    padding: 0;
-    margin: 2px 2px 4px 2px;
-    text-align: left;
-    .words {
-      span {
-        display: inline-block;      
-        font-size: 12px;
-        border-spacing: 5px;
-        vertical-align: top;
-        table {
-          padding: 1px;
-          margin: 0;
-          border-spacing: 2px;
-          tr {
-            td {
-              white-space: nowrap;
-              font-family: Arial;
-              padding: 1px;
-              margin: 1px;
-            }
-            td.morpheme, td.gloss {
-              background-color: $grey;
+    margin: 0;
+    border-spacing: 2px;
+    .controls {
+      margin: 2px 0px 1px 2px;
+      padding: 2px;
+      width: 25px;
+      text-align: center;
+      background-color: $grey;
+    }
+    .tracks {
+      background-color: $lightgrey;
+      padding: 0;
+      margin: 1px 2px 2px 2px;
+      text-align: left;
+      .words {
+        span {
+          display: inline-block;      
+          font-size: 12px;
+          border-spacing: 5px;
+          vertical-align: top;
+          table {
+            padding: 1px;
+            margin: 0;
+            border-spacing: 2px;
+            tr {
+              td {
+                white-space: nowrap;
+                font-family: Arial;
+                padding: 1px;
+                margin: 1px;
+              }
+              td.morpheme, td.gloss {
+                background-color: $grey;
+              }
             }
           }
         }
       }
-    }
-    .phrase {
-      font-size: 12px;
-      margin-left: 5px;
-    }
-    .translation {
-      color: green;
-      font-style: italic;
+      .phrase {
+        font-size: 12px;
+        margin-left: 5px;
+      }
+      .translation {
+        color: green;
+        font-style: italic;
+      }
     }
   }
 }

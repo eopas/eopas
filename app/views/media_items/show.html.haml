@@ -12,7 +12,7 @@
       - if @media_item.original_processing
         = image_tag '/originals/poster/missing.png'
       -else
-        = media_item_video_tag @media_item
+        = media_item_video_tag @media_item, {:preload => 'auto'}
 
 
   #metadata_display.collapse_box
@@ -47,27 +47,33 @@
         - tier_phrases = tiers.first.phrases.zip(*tiers[1..-1].map {|t| t.phrases})
         - num_phrases = tiers.first.phrases.size
         - 0.upto(num_phrases - 1) do |i|
-          .line
-            - tier_phrases[i].each do |phrase|
-              .tier{:class => phrase.tier.tier_id}
-                .words
-                  - phrase.words.each do |word|
-                    - colspan = 1
-                    - colspan = word[:morphemes].first.size unless word[:morphemes].empty?
-                    %span
-                      %table
-                        %tr
-                          %td{:colspan => colspan}
-                            = word[:text].force_encoding('UTF-8')
+          %table.line
+            %tr
+              %td.controls
+                = "s#{i+1}"
+                %br
+                = image_tag '/images/play.png', :class => 'play_button', 'data-start' => "#{tier_phrases[i][0].start_time}", 'data-end' => "#{tier_phrases[i][0].end_time}"
+              %td.tracks
+                - tier_phrases[i].each do |phrase|
+                  .tier{:class => phrase.tier.tier_id}
+                    .words
+                      - phrase.words.each do |word|
+                        - colspan = 1
+                        - colspan = word[:morphemes].first.size unless word[:morphemes].empty?
+                        %span
+                          %table
+                            %tr
+                              %td{:colspan => colspan}
+                                = word[:text].force_encoding('UTF-8')
 
-                        - word[:morphemes].each do |kind, morphemes|
-                          %tr
-                            - morphemes.each do |s|
-                              %td{:class => kind}
-                                = s.force_encoding('UTF-8')
-                - if phrase.text
-                  .phrase{:class => phrase.tier.linguistic_type}
-                    = phrase.text.force_encoding('UTF-8')
+                            - word[:morphemes].each do |kind, morphemes|
+                              %tr
+                                - morphemes.each do |s|
+                                  %td{:class => kind}
+                                    = s.force_encoding('UTF-8')
+                    - if phrase.text
+                      .phrase{:class => phrase.tier.linguistic_type}
+                        = phrase.text.force_encoding('UTF-8')
 
   - else
     #add-transcript

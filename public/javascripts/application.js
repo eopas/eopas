@@ -14,12 +14,42 @@ function setup_div_toggle() {
 }
 
 function setup_hider() {
-
   $('.hider').click(function() {
-      var hide_id = $(this).attr('data-hide-selector');
-      if (hide_id) {
-        $(hide_id).slideToggle();
+    var hide_id = $(this).attr('data-hide-selector');
+    if (hide_id) {
+      $(hide_id).slideToggle();
+    }
+  });
+}
+
+function setup_playback(media) {
+  media.bind('timeupdate', function() {
+    if (media.attr('paused') || media.attr('ended')) {
+      return;
+    }
+    // Pause the video if we played a segment
+    var pause_time = parseFloat(media.attr('data-pause'))+0.1;
+    if (pause_time) {
+      if (Math.abs(pause_time - media.attr('currentTime')) < 0.1) {
+        media.trigger('pause');
+        media.attr('data-pause', '');
       }
+      // Something weird happend and we missed the pause
+      // maybe user skipped ahead
+      if (media.attr('currentTime') > pause_time) {
+        media.attr('data-pause', '');
+      }
+    }
+  });
+
+  $('.play_button').click(function() {
+    var start = $(this).attr('data-start');
+    var end   = $(this).attr('data-end');
+    if (media) {
+      media.attr('currentTime', start);
+      media.attr('data-pause', end);
+      media.trigger('play');
+    }
   });
 
 }
@@ -49,7 +79,6 @@ function setup_country_code() {
       var parent = $(this);
       var child_id = parent.attr('data-select-child');
       var child = $('#' + child_id);
-
 
       var selected_code = child.attr('data-option-selected');
       var country_code = parent.attr('value');
@@ -83,9 +112,18 @@ function setup_country_code() {
 
 $(document).ready(function() {
 
+  // Get media element
+  var media;
+  if ($('video')) {
+    media = $('video').first();
+  } else if ($('audio')) {
+    media = $('audio').first();
+  }
+
   // Collapsing elements
   setup_div_toggle();
   setup_hider();
+  setup_playback(media);
 
   // Country Code Selector
   setup_country_code();
