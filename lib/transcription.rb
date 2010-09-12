@@ -99,7 +99,7 @@ class Transcription
       rescue NameError
       end
 
-      phrases = tier.phrases
+      phrases = tier.phrase
       phrases = [phrases] unless phrases.is_a? Array
       phrases.each do |phrase|
         # create new phrase
@@ -125,19 +125,22 @@ class Transcription
         ph.words           = []
 
         begin
-          words = phrase.wordlist.words
+          words = phrase.wordlist.word
         rescue NameError => e
           words = []
         end
+        words = [words] unless words.is_a? Array
 
         words.each do |word|
           new_word = {:text => word.text + "", :morphemes => {} }
+          puts word.text
 
           begin
-            morphemes = word.morphemelist.morphemes
-          rescue NameError
+            morphemes = word.morphemelist.morpheme
+          rescue NameError => e
             morphemes = []
           end
+          morphemes = [morphemes] unless morphemes.is_a? Array
 
           morphemes.each do |morpheme|
             texts = morpheme.text

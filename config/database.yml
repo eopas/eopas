@@ -20,5 +20,4 @@ test: &TEST
   database: db/test.sqlite
 
 cucumber:
-  encoding: utf8
   <<: *TEST
