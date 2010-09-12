@@ -8,9 +8,9 @@
     %meta{:name => "dc:date",     :value => @transcript.date}
 
   %interlinear
-    - @transcript.transcript_tiers.each do |tier|
+    - @transcript.tiers.each do |tier|
       %tier{:id => tier.tier_id, :parent => tier.parent_id, :lang => tier.language_code, :linguistic_type => tier.linguistic_type}
-        - tier.transcript_phrases.each do |phrase|
+        - tier.phrases.each do |phrase|
           %phrase{:id => phrase.phrase_id, :startTime => phrase.start_time, :endTime => phrase.end_time, :participant => phrase.participant, :ref_phrase => phrase.ref_phrase}<
             =phrase.text
 

@@ -181,10 +181,10 @@
       <phrase startTime="11.15" endTime="11.47" id="a56">
         <text>and</text>
       </phrase>
-      <phrase startTime="11.47" endTime="NaN" id="a57">
+      <phrase startTime="11.47" endTime="11.5" id="a57">
         <text>you</text>
       </phrase>
-      <phrase startTime="NaN" endTime="11.94" id="a58">
+      <phrase startTime="11.5" endTime="11.94" id="a58">
         <text>follow</text>
       </phrase>
       <phrase startTime="11.94" endTime="12.2" id="a59">
@@ -474,10 +474,10 @@
       <phrase ref="a56" startTime="11.15" endTime="11.47" id="a153">
         <text>con</text>
       </phrase>
-      <phrase ref="a57" startTime="11.47" endTime="NaN" id="a154">
+      <phrase ref="a57" startTime="11.47" endTime="11.5" id="a154">
         <text>pro</text>
       </phrase>
-      <phrase ref="a58" startTime="NaN" endTime="11.94" id="a155">
+      <phrase ref="a58" startTime="11.5" endTime="11.94" id="a155">
         <text>v</text>
       </phrase>
       <phrase ref="a59" startTime="11.94" endTime="12.2" id="a156">

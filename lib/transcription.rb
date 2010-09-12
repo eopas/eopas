@@ -133,7 +133,6 @@ class Transcription
 
         words.each do |word|
           new_word = {:text => word.text + "", :morphemes => {} }
-          puts word.text
 
           begin
             morphemes = word.morphemelist.morpheme

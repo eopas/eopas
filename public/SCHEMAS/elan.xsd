@@ -159,7 +159,7 @@
       <xsd:element name="TIME_SLOT" minOccurs="0" maxOccurs="unbounded">
         <xsd:complexType>
           <xsd:attribute name="TIME_SLOT_ID" type="xsd:ID" use="required"/>
-          <xsd:attribute name="TIME_VALUE" type="xsd:unsignedInt" use="optional"/>
+          <xsd:attribute name="TIME_VALUE" type="xsd:unsignedInt" use="required"/>
         </xsd:complexType>
       </xsd:element>
     </xsd:sequence>
