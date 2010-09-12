@@ -2,14 +2,14 @@ Source: eopas
 Section: web
 Priority: extra
 Maintainer: John Francesco Ferlito <johnf@inodes.org>
-Build-Depends: debhelper (>= 7)
+Build-Depends: debhelper (>= 7.0.50~)
 #ruby1.9.1-dev (>= 1.9.2~), libxml2-dev, libxslt1-dev, libsqlite3-dev, libmysqlclient-dev
-Standards-Version: 3.8.4
+Standards-Version: 3.9.1
 
 Package: eopas
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
-#Depends: ${shlibs:Depends}, ${misc:Depends}, build-essential, ruby1.9.1 (>= 1.9.2~), rake, libopenssl-ruby1.9.1, git-core, ruby1.9.1-dev (>= 1.9.2~), libxml2-dev, libxslt1-dev, libsqlite3-dev, libmysqlclient-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby1.9.1 (>= 1.9.2~)
+#Depends: ${shlibs:Depends}, ${misc:Depends}, build-essential, rake, libopenssl-ruby1.9.1, git-core, ruby1.9.1-dev (>= 1.9.2~), libxml2-dev, libxslt1-dev, libsqlite3-dev, libmysqlclient-dev
 Description: ETHNOER Online Presentation and Annotation System
  A system to take outputs of normal linguistic analytical processes of audio
  and video files and present them online as interlinear text. It provides an

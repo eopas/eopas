@@ -1,0 +1,9 @@
+
+
+
+
+You need to backup
+
+  * /etc/eopas
+  * The database
+  * /var/lib/eopas

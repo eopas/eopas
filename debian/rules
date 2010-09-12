@@ -1,4 +1,31 @@
 #!/usr/bin/make -f
 
+PACKAGE = $(shell dh_listpackages)
+TMP = $(CURDIR)/debian/$(PACKAGE)
+
 %:
 	dh $@
+
+override_dh_auto_install:
+	# Make some directories
+	mkdir -p $(TMP)/etc/eopas
+	mkdir -p $(TMP)/usr/share/eopas
+	mkdir -p $(TMP)/var/log/eopas
+	mkdir -p $(TMP)/var/lib/eopas
+
+	# Copy all the files across
+	cp -a app autotest bin config config.ru data db features Gemfile Gemfile.lock lib public Rakefile script spec TODO vendor $(TMP)/usr/share/eopas
+
+	# Move some files around
+	mv $(TMP)/usr/share/eopas/config/database.yml $(TMP)/etc/eopas
+	ln -s /etc/eopas/database.yml $(TMP)/usr/share/eopas/config/database.yml
+
+	# Remove some files
+	rm $(TMP)/usr/share/eopas/vendor/plugins/kickvideo/MIT-LICENSE
+
+	# Create some links
+	ln -s /var/log/eopas $(TMP)/usr/share/eopas/log
+	ln -s /var/lib/eopas/system $(TMP)/usr/share/eopas/public/system
+	ln -s /var/lib/eopas/stylesheets $(TMP)/usr/share/eopas/public/stylesheets/compiled
+	ln -s /usr/share/doc/eopas $(TMP)/usr/share/eopas/doc
+	#ln -s /var/run/eopas $(TMP)/usr/share/eopas/tmp
