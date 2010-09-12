@@ -65,10 +65,10 @@ function do_onResize() {
     //elem.style.height = '700px';
   } else if ($.browser.opera) {
     // Opera is special: it doesn't like changing width
-    elem.height(window.innerHeight - 110);
+    elem.height(window.innerHeight - 140);
   } else {
     elem.width(window.innerWidth - 395);
-    elem.height(window.innerHeight - 110);
+    elem.height(window.innerHeight - 140);
   }
 }
 

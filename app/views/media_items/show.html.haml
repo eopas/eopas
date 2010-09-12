@@ -49,7 +49,7 @@
         - 0.upto(num_phrases - 1) do |i|
           %table.line
             %tr
-              %td.controls
+              %td.controls{:title => "#{tier_phrases[i][0].start_time} #{tier_phrases[i][0].end_time}"}
                 = "s#{i+1}"
                 %br
                 = image_tag '/images/play.png', :class => 'play_button', 'data-start' => "#{tier_phrases[i][0].start_time}", 'data-end' => "#{tier_phrases[i][0].end_time}"
