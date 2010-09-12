@@ -13,6 +13,17 @@ function setup_div_toggle() {
   });
 }
 
+function setup_hider() {
+
+  $('.hider').click(function() {
+      var hide_id = $(this).attr('data-hide-selector');
+      if (hide_id) {
+        $(hide_id).slideToggle();
+      }
+  });
+
+}
+
 // resizing the transcript_display div with the remaining screen-size
 function do_onResize() {
   elem = $('#transcript_display');
@@ -70,22 +81,11 @@ function setup_country_code() {
 
 }
 
-function setup_div_hider() {
-
-  $('.div-hider').click(function() {
-      var hide_id = $(this).attr('data-hide-selector');
-      if (hide_id) {
-        $(hide_id).slideToggle();
-      }
-  });
-
-}
-
 $(document).ready(function() {
 
-  // Collapsing dovs
+  // Collapsing elements
   setup_div_toggle();
-  setup_div_hider();
+  setup_hider();
 
   // Country Code Selector
   setup_country_code();

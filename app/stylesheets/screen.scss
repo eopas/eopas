@@ -203,11 +203,37 @@ table.small {
     display: block;
   }
 }
-#transcript_display {
+#right_column {
   margin: 0 20px 10px 350px;
+}
+
+#tiers_info {
+  display: inline;
+  float: left;
+  margin-bottom: 1em;
+  #tier_title {
+    background-color: $lightgrey;
+    cursor: pointer;
+    padding: 0 5px 0 5px;
+  }
+  form {
+    position: absolute;
+    float: left;
+    display: none;
+    padding: 7px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: #ccc 10px 5px 5px;
+    -webkit-box-shadow: #ccc 10px 5px 5px;
+    -moz-box-shadow: #ccc 10px 5px 5px;
+  }
+}
+
+#transcript_display {
   padding: 2px;
   border: 2px solid $grey;
   overflow: auto;
+  clear: right;
   .line {
     background-color: $lightgrey;
     padding: 0;

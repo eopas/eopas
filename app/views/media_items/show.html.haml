@@ -32,10 +32,14 @@
   - if @transcript
     - tiers = @transcript.tiers
     #tiers_info
-      - tiers.each do |tier|
-        .tier_info.div-hider{'data-hide-selector' => ".#{tier.tier_id}"}
-          == Language Code #{tier.language_code}
-          == Language Type #{tier.linguistic_type}
+      %button#tier_title.hider{'data-hide-selector' => "#tier_list"}
+        == Set Displayed Tracks
+      %form#tier_list
+        - tiers.each do |tier|
+          %input.tier_info.hider{'data-hide-selector' => ".#{tier.tier_id}", :type => 'checkbox', :checked => 'checked'}
+            == Show #{tier.linguistic_type} 
+            = "[#{tier.language_code}]" if tier.language_code
+            %br
     #transcript_display
       - if tiers.map {|tier| tier.phrases.size}.uniq.size != 1
         Error: Can't deal with transcripts that have different number of phrases in each tier
