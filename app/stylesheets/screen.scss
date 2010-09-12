@@ -217,9 +217,12 @@ table.small {
       span {
         display: inline-block;      
         font-size: 12px;
+        border-spacing: 5px;
+        vertical-align: top;
         table {
           padding: 1px;
           margin: 0;
+          border-spacing: 2px;
           tr {
             td {
               white-space: nowrap;
@@ -234,10 +237,12 @@ table.small {
         }
       }
     }
-    .translation {
+    .phrase {
       font-size: 12px;
-      color: green;
       margin-left: 5px;
+    }
+    .translation {
+      color: green;
       font-style: italic;
     }
   }
