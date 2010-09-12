@@ -44,7 +44,17 @@ version="1.0">
                 <!-- get start and end time -->
                 <xsl:variable name="s" select="tb:aud"/>
                 <xsl:variable name="delimiter" select="' '"/>
-                <xsl:variable name="timeOnly" select="substring-after($s, $delimiter)"/>
+                <xsl:variable name="partOnly" select="substring-after($s, $delimiter)"/>
+                <xsl:variable name="timeOnly">
+                  <xsl:choose>
+                    <xsl:when test="contains(substring-after($partOnly, $delimiter), $delimiter)">
+                      <xsl:value-of select="substring-after($partOnly, $delimiter)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:value-of select="$partOnly"/>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:variable>
                 <xsl:attribute name="startTime">
                   <xsl:variable name="startTime" select="substring-before($timeOnly, $delimiter)"/>
                   <xsl:value-of select="$startTime"/>
@@ -80,14 +90,25 @@ version="1.0">
                 <!-- get start and end time -->
                 <xsl:variable name="s" select="tb:aud"/>
                 <xsl:variable name="delimiter" select="' '"/>
-                <xsl:variable name="timeOnly" select="substring-after($s, $delimiter)"/>
-                <xsl:attribute name="startTime">
-                  <xsl:variable name="startTime" select="substring-before($timeOnly, $delimiter)"/>
-                  <xsl:value-of select="$startTime"/>
-                </xsl:attribute>
+                <xsl:variable name="partOnly" select="substring-after($s, $delimiter)"/>
+                <xsl:variable name="timeOnly">
+                  <xsl:choose>
+                    <xsl:when test="contains(substring-after($partOnly, $delimiter), $delimiter)">
+                      <xsl:value-of select="substring-after($partOnly, $delimiter)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:value-of select="$partOnly"/>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:variable>
                 <xsl:attribute name="endTime">
                   <xsl:variable name="endTime" select="substring-after($timeOnly, $delimiter)"/>
                   <xsl:value-of select="$endTime"/>
+                </xsl:attribute>
+
+                <xsl:attribute name="startTime">
+                  <xsl:variable name="startTime" select="substring-before($timeOnly, $delimiter)"/>
+                  <xsl:value-of select="$startTime"/>
                 </xsl:attribute>
 
                 <xsl:attribute name="id">o_<xsl:value-of select="tb:id"/></xsl:attribute>
