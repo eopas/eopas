@@ -35,11 +35,19 @@
       %button#tier_title.hider{'data-hide-selector' => "#tier_list"}
         == Set Displayed Tracks
       %form#tier_list
-        - tiers.each do |tier|
-          %input.tier_info.hider{'data-hide-selector' => ".#{tier.tier_id}", :type => 'checkbox', :checked => 'checked'}
-            == Show #{tier.linguistic_type} 
-            = "[#{tier.language_code}]" if tier.language_code
-            %br
+        - if tiers.map {|tier| tier.phrases.size}.uniq.size != 1
+          Error: Can't deal with transcripts that have different number of phrases in each tier
+        - else
+          - tiers.each do |tier|
+            %input.tier_info.hider{'data-hide-selector' => ".#{tier.tier_id}", :type => 'checkbox', :checked => 'checked'}
+              == Show #{tier.linguistic_type} 
+              = "[#{tier.language_code}]" if tier.language_code
+              %br
+              - if tier.phrases.map {|phrase| phrase.words.size}.uniq.max > 0
+                %input.words_info.hider{'data-hide-selector' => ".#{tier.tier_id}_w", :type => 'checkbox', :checked => 'checked'}
+                  == Show words
+                  %br
+              
     #transcript_display
       - if tiers.map {|tier| tier.phrases.size}.uniq.size != 1
         Error: Can't deal with transcripts that have different number of phrases in each tier
@@ -55,8 +63,9 @@
                 = image_tag '/images/play.png', :class => 'play_button', 'data-start' => "#{tier_phrases[i][0].start_time}", 'data-end' => "#{tier_phrases[i][0].end_time}"
               %td.tracks
                 - tier_phrases[i].each do |phrase|
-                  .tier{:class => phrase.tier.tier_id}
-                    .words
+                  - if !phrase.words.empty?
+                    - tier_id = "#{phrase.tier.tier_id}_w"
+                    .tier{:class => [tier_id, phrase.tier.linguistic_type]}
                       - phrase.words.each do |word|
                         - colspan = 1
                         - colspan = word[:morphemes].first.size unless word[:morphemes].empty?
@@ -71,9 +80,9 @@
                                 - morphemes.each do |s|
                                   %td{:class => kind}
                                     = s.force_encoding('UTF-8')
-                    - if phrase.text
-                      .phrase{:class => phrase.tier.linguistic_type}
-                        = phrase.text.force_encoding('UTF-8')
+                  - if phrase.text
+                    .tier{:class => [phrase.tier.tier_id, phrase.tier.linguistic_type]}
+                      = phrase.text.force_encoding('UTF-8')
 
   - else
     #add-transcript
