@@ -20,19 +20,19 @@
 
   %tr#annotator_name
     %td.name
-      Name of Annotator
+      Annotator
     %td.value
       = @media_item.annotator_name
 
   %tr#participant_name
     %td.name
-      Name of Participant
+      Participant
     %td.value
       = @media_item.participant_name
 
   %tr#participant_role
     %td.name
-      Role of Participant
+      Participant Role
     %td.value
       = @media_item.participant_role
 
@@ -65,37 +65,43 @@
       %td.name
         Download
       %td.value
-        = link_to @media_item.original.url(:standard), @media_item.original.url(:standard)
+        = link_to @media_item.original_file_name, @media_item.original.url(:standard)
 
   - if @transcript
     %tr
-      %td.name
-        Transcript
-      %td.value
-        = link_to "EOPAS", eopas_transcript_path(@transcript)
-        = link_to "Original (#{@transcript.transcript_format})", @transcript.original.url
-
+      %td{:colspan => 2}
+        %hr
+        %span
+          Transcript
     %tr
       %td.name
-        Transcript Creator
+        Creator
       %td.value
         = @transcript.creator
 
     %tr
       %td.name
-        Transcript Language
+        Language
       %td.value
         = @transcript.language_code
 
     %tr
       %td.name
-        Transcript Date
+        Date
       %td.value
         = @transcript.date
 
     %tr
       %td.name
-        Transcript Depositor
+        Depositor
       %td.value
         = @transcript.depositor.full_name
+
+    %tr
+      %td.name
+        Download
+      %td.value
+        = link_to "EOPAS", eopas_transcript_path(@transcript)
+        = link_to "Original (#{@transcript.transcript_format})", @transcript.original.url
+
         

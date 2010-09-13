@@ -107,7 +107,13 @@ $blue:      #7297ba;
 
 #content {
   margin-left: 15px;
+  hr {
+    height: 1px;
+    background-color: black;
+    margin: 5px;
+  }
 }
+
 
 // media_item index page
 ul.media_items {
@@ -158,12 +164,12 @@ ul.media_items {
 table#metadata {
   padding: 10px;
   margin: 0;
-  td#name {
+  td.name {
     font-weight: bold;
     text-align: right;
     width: 100px;
   }
-  td#content{
+  td.content{
   }
 }
 table.small {
