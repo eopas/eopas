@@ -1,107 +1,111 @@
+.collapse_title
+  = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
+  == #{@media_item.depositor.full_name} , #{@media_item.recorded_at}
 
-%table#metadata.small
-  %tr#item_id
-    %td.name
-      Item ID
-    %td.value
-      = @media_item.item_id
-
-  %tr#depositor
-    %td.name
-      Depositor
-    %td.value
-      = @media_item.depositor.full_name
-
-  %tr#recorded_at
-    %td.name
-      Recorded on
-    %td.value
-      = @media_item.recorded_at
-
-  %tr#annotator_name
-    %td.name
-      Annotator
-    %td.value
-      = @media_item.annotator_name
-
-  %tr#participant_name
-    %td.name
-      Participant
-    %td.value
-      = @media_item.participant_name
-
-  %tr#participant_role
-    %td.name
-      Participant Role
-    %td.value
-      = @media_item.participant_role
-
-  %tr#language_code
-    %td.name
-      Language Code
-    %td.value
-      = @media_item.language_code
-
-  %tr#copyright
-    %td.name
-      Copyright
-    %td.value
-      = @media_item.copyright
-
-  %tr#license
-    %td.name
-      License
-    %td.value
-      = @media_item.license
-
-  %tr#private
-    %td.name
-      Private
-    %td.value
-      = @media_item.private
-
-  - if (@media_item.depositor.id == current_user.id)
-    %tr
+.collapse_content
+  %table#metadata.small
+    %tr#item_id
       %td.name
-        Download
+        Item ID
       %td.value
-        = link_to @media_item.original_file_name, @media_item.original.url(:standard)
+        = @media_item.item_id
 
-  - if @transcript
-    %tr
-      %td{:colspan => 2}
-        %hr
-        %span
-          Transcript
-    %tr
-      %td.name
-        Creator
-      %td.value
-        = @transcript.creator
-
-    %tr
-      %td.name
-        Language
-      %td.value
-        = @transcript.language_code
-
-    %tr
-      %td.name
-        Date
-      %td.value
-        = @transcript.date
-
-    %tr
+    %tr#depositor
       %td.name
         Depositor
       %td.value
-        = @transcript.depositor.full_name
+        = @media_item.depositor.full_name
 
-    %tr
+    %tr#recorded_at
       %td.name
-        Download
+        Recorded on
       %td.value
-        = link_to "EOPAS", eopas_transcript_path(@transcript)
-        = link_to "Original (#{@transcript.transcript_format})", @transcript.original.url
+        = @media_item.recorded_at
+
+    %tr#annotator_name
+      %td.name
+        Annotator
+      %td.value
+        = @media_item.annotator_name
+
+    %tr#participant_name
+      %td.name
+        Participant
+      %td.value
+        = @media_item.participant_name
+
+    %tr#participant_role
+      %td.name
+        Participant Role
+      %td.value
+        = @media_item.participant_role
+
+    %tr#language_code
+      %td.name
+        Language Code
+      %td.value
+        = @media_item.language_code
+
+    %tr#copyright
+      %td.name
+        Copyright
+      %td.value
+        = @media_item.copyright
+
+    %tr#license
+      %td.name
+        License
+      %td.value
+        = @media_item.license
+
+    %tr#private
+      %td.name
+        Private
+      %td.value
+        = @media_item.private
+
+    - if (@media_item.depositor.id == current_user.id)
+      %tr
+        %td.name
+          Download
+        %td.value
+          = link_to @media_item.original_file_name, @media_item.original.url(:standard)
+
+    - if @transcript
+      %tr
+        %td{:colspan => 2}
+          %hr
+          %span
+            Transcript
+      %tr
+        %td.name
+          Creator
+        %td.value
+          = @transcript.creator
+
+      %tr
+        %td.name
+          Language
+        %td.value
+          = @transcript.language_code
+
+      %tr
+        %td.name
+          Date
+        %td.value
+          = @transcript.date
+
+      %tr
+        %td.name
+          Depositor
+        %td.value
+          = @transcript.depositor.full_name
+
+      %tr
+        %td.name
+          Download
+        %td.value
+          = link_to "EOPAS", eopas_transcript_path(@transcript)
+          = link_to "Original (#{@transcript.transcript_format})", @transcript.original.url
 
         

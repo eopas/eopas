@@ -1,0 +1,9 @@
+.collapse_title
+  = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
+  Media Player
+
+.collapse_content
+  - if @media_item.original_processing
+    = image_tag '/originals/poster/missing.png'
+  -else
+    = media_item_video_tag @media_item, {:preload => 'auto'}
