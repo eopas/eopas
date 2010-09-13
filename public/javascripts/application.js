@@ -27,10 +27,22 @@ function setup_playback(media) {
     if (media.attr('paused') || media.attr('ended')) {
       return;
     }
-    // Pause the video if we played a segment
+    // scroll to currently playing time offset
+    var cur_time = parseFloat(media.attr('currentTime'));
+    $('.play_button').each(function(index) {
+      if (cur_time >= parseFloat($(this).attr('data-start')) &&
+          cur_time < parseFloat($(this).attr('data-end'))) {
+        $(this).closest('.line').find('.tracks').addClass('hilight');
+      } else {
+        $(this).closest('.line').find('.tracks').removeClass('hilight');
+      }
+    });
+    
+
+    // Pause the video if we played a segment and it's finished
     var pause_time = parseFloat(media.attr('data-pause'))+0.1;
     if (pause_time) {
-      if (Math.abs(pause_time - media.attr('currentTime')) < 0.1) {
+      if (Math.abs(pause_time - cur_time) < 0.1) {
         media.trigger('pause');
         media.attr('data-pause', '');
       }
