@@ -45,7 +45,7 @@ class MediaItem < ActiveRecord::Base
   validates :recorded_at,   :presence => true
   validates :language_code, :presence => true
   validates :license,       :presence => true
-  validates :participant_role, :inclusion => { :in => PARTICIPANT_ROLES << nil}
+  validates :participant_role, :inclusion => { :in => PARTICIPANT_ROLES + [nil]}
 
   validates_attachment_presence :original
   validates_attached_video :original

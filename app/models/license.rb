@@ -1,4 +1,4 @@
-class License < Struct.new(:code, :name)
+class License < Struct.new(:code, :name, :url)
   LICENSES = {
     "PD"             => ["Public Domain", "http://creativecommons.org/publicdomain/"],
     "CC-AU-BY"       => ["CC Attribution", "http://creativecommons.org/licenses/by/3.0/au/"],
@@ -10,13 +10,13 @@ class License < Struct.new(:code, :name)
   }
 
     def self.find(code)
-        new(code, "#{code}  #{LICENSES[code][1]}")
+        new(code, "#{code}  #{LICENSES[code][0]}", LICENSES[code][1])
     end
 
     def self.all
         results = []
         LICENSES.each do |code, name|
-          results << new(code, "#{code}  #{name[1]}")
+          results << new(code, "#{code}  #{name[0]}", name[1])
         end
         results
     end

@@ -11,6 +11,7 @@
 @import "partials/page";
 @import "partials/form";
 @import "partials/one_col";
+@import "partials/border";
 
 // Color scheme:
 $red :      #ff542e;
@@ -56,12 +57,8 @@ $blue:      #7297ba;
 }
 
 #flash .notice {
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  box-shadow: #ccc 10px 5px 5px;
-  -webkit-box-shadow: #ccc 10px 5px 5px;
-  -moz-box-shadow: #ccc 10px 5px 5px;
+  @include border-radius(5px);
+  @include box-shadow(#ccc, 10px, 5px, 5px);
   margin: 10px;
   padding: 10px;
   float: left;
@@ -144,20 +141,29 @@ ul.media_items {
 
 // media_item show page
 #media_item {
+  float: left;
   #errorExplanation {
     background-color: $red;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    box-shadow: #ccc 10px 5px 5px;
-    -webkit-box-shadow: #ccc 10px 5px 5px;
-    -moz-box-shadow: #ccc 10px 5px 5px;
+    @include border-radius(5px);
+    @include box-shadow(#ccc, 10px, 5px, 5px);
     ul {
       li {
         display: list-item;
         color: white;
       }
     }
+  }
+}
+div.info {
+  border: 1px dashed;
+  margin-top: 70px;
+  padding: 15px;
+  float: left;
+  @include border-radius(5px);
+  @include box-shadow(#ccc, 10px, 5px, 5px);
+s  
+  ul {
+    margin: 0;
   }
 }
 
@@ -235,9 +241,7 @@ table.small {
     padding: 7px;
     background-color: white;
     border: 1px solid black;
-    box-shadow: #ccc 10px 5px 5px;
-    -webkit-box-shadow: #ccc 10px 5px 5px;
-    -moz-box-shadow: #ccc 10px 5px 5px;
+    @include box-shadow(#ccc, 10px, 5px, 5px);
   }
 }
 

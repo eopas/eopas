@@ -8,3 +8,15 @@
     = render :partial => 'form', :object => f
 
     = f.submit "Create"
+
+.info
+  %h3
+    Please enter information about your media resource.
+  %p
+    You can find out more about the Licenses at:
+  %ul
+    - License.all.each do |l|
+      %li
+        #{l.code} :
+        %a{:href => l.url}
+          = l.name
