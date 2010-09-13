@@ -24,15 +24,28 @@ function setup_hider() {
 
 function setup_playback(media) {
   media.bind('timeupdate', function() {
+    var cur_time = parseFloat(media.attr('currentTime'));
     if (media.attr('paused') || media.attr('ended')) {
       return;
     }
-    // scroll to currently playing time offset
-    var cur_time = parseFloat(media.attr('currentTime'));
+
+    // highlight and scroll to currently playing time offset
     $('.play_button').each(function(index) {
-      if (cur_time >= parseFloat($(this).attr('data-start')) &&
+      if (cur_time >= (parseFloat($(this).attr('data-start'))) &&
           cur_time < parseFloat($(this).attr('data-end'))) {
-        $(this).closest('.line').find('.tracks').addClass('hilight');
+        line = $(this).closest('.line');
+        if (!line.find('.tracks').hasClass('highlight')) {
+          // check if we have to scroll
+          scroller = $('#transcript_display');
+          bottom_s = scroller.offset().top+scroller.height();
+          bottom_l = line.offset().top+line.height();
+          if ((bottom_l > (bottom_s-20)) ||
+              (line.offset().top < scroller.offset().top)) {
+            scroller.scrollTo(line, 500, {offset: -20, easing: 'linear'});
+          }
+          // highlight currently playing track
+          line.find('.tracks').addClass('hilight');
+        }
       } else {
         $(this).closest('.line').find('.tracks').removeClass('hilight');
       }

@@ -57,18 +57,18 @@ Feature: Media Items can have transcriptions
     Then 0 transcripts should exist
      And 0 transcript tiers should exist
      And 0 transcript phrases should exist
-    When I attach the file "features/test_data/eopas1.xml" to "Transcript"
+    When I attach the file "features/test_data/eopas3.xml" to "Transcript"
      And I select "EOPAS" from "Format"
      And I press "Add"
     Then I should see "Transcript was successfully added"
-     And I should see "so from here"
+     And I should see "rat, this rat"
      And 1 transcripts should exist
-     And 11 transcript tiers should exist
-     And 315 transcript phrases should exist
+     And 2 transcript tiers should exist
+     And 154 transcript phrases should exist
     When I follow "Delete transcript"
     Then I should see "Transcript deleted"
      And I should see "Add transcript"
-     And I should not see "so from here"
+     And I should not see "rat, this rat"
      And 0 transcripts should exist
      And 0 transcript tiers should exist
      And 0 transcript phrases should exist
