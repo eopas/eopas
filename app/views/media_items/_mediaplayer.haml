@@ -7,3 +7,8 @@
     = image_tag '/originals/poster/missing.png'
   -else
     = media_item_video_tag @media_item, {:preload => 'auto'}
+
+    Embed code:
+    %br
+    %textarea#embed_code
+      = html_escape(media_item_embed_tag @media_item)

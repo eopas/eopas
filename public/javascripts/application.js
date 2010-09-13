@@ -22,6 +22,13 @@ function setup_hider() {
   });
 }
 
+function setup_embedding() {
+  $('#embed_code').click(function() {
+    $(this).focus();
+    $(this).select();
+  });
+}
+
 function setup_playback(media) {
   media.bind('timeupdate', function() {
     var cur_time = parseFloat(media.attr('currentTime'));
@@ -149,6 +156,7 @@ $(document).ready(function() {
   setup_div_toggle();
   setup_hider();
   setup_playback(media);
+  setup_embedding();
 
   // Country Code Selector
   setup_country_code();
