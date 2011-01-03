@@ -21,10 +21,11 @@ gem 'libxml-ruby'
 group :development, :test, :cucumber do
     gem 'sqlite3-ruby'
 
+    #gem 'cucumber-rails', :git => 'https://github.com/aslakhellesoy/cucumber-rails.git' # https://github.com/aslakhellesoy/cucumber-rails/issues/issue/77
+    gem 'cucumber-rails', :git => 'git://github.com/johnf/cucumber-rails.git' # FIx capybara date steps plus issue 77 above
+
     gem 'capybara'
     gem 'database_cleaner'
-    gem 'cucumber'
-    gem 'cucumber-rails', :git => 'https://github.com/aslakhellesoy/cucumber-rails.git' # https://github.com/aslakhellesoy/cucumber-rails/issues/issue/77
 
     gem 'rspec-rails'
 

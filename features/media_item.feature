@@ -33,7 +33,6 @@ Feature: Media
      And I select "Korean (kor)" from "Language Code"
      And I press "Create"
     Then I should see "Media item was successfully created"
-    And show me the page
      And there should be 1 delayed job
      And I should see "eopas_test_0" within "tr#item_id"
      And I should see "Test Video"
