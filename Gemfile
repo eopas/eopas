@@ -34,4 +34,7 @@ group :development, :test, :cucumber do
 
     gem 'pickle'
     gem 'factory_girl'
+
+#    gem 'zombie', :git => 'git://github.com/assaf/zombie.git'
+#    gem 'capybara-zombie', :git => 'git://github.com/plataformatec/capybara-zombie.git'
 end
