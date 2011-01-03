@@ -23,7 +23,7 @@ Feature: Media
   @javascript
   Scenario: Create a new media item
     When I am on the new media item page
-     And I attach the file "features/test_data/test.m4v" to "Media"
+     And I attach the file "features/test_data/test.m4v" with full path to "Media"
      And I fill in "Title" with "Test Video"
      And I select "31 March 2010" as the "media_item_recorded_at" date
      And I fill in "Name of Annotator" with "John Ferlito"
@@ -33,9 +33,10 @@ Feature: Media
      And I select "Korean (kor)" from "Language Code"
      And I press "Create"
     Then I should see "Media item was successfully created"
+    And show me the page
      And there should be 1 delayed job
      And I should see "eopas_test_0" within "tr#item_id"
-     And I should see "Test Video" within "h3"
+     And I should see "Test Video"
      And I should see "John Ferlito" within "tr#depositor"
      And I should see "2010-03-31" within "tr#recorded_at"
      And I should see "John Ferlito" within "tr#annotator_name"

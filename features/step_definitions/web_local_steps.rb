@@ -16,3 +16,9 @@ Then /^(?:|I )should see the image "([^\"]*)"(?: within "([^\"]*)")?$/ do |text,
     end
   end
 end
+
+When /^(?:|I )attach the file "([^"]*)" with full path to "([^"]*)"(?: within "([^"]*)")?$/ do |path, field, selector|
+  with_scope(selector) do
+    attach_file(field, File.join(Rails.root, path))
+  end
+end

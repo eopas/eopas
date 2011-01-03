@@ -1,15 +1,13 @@
 # Edit this Gemfile to bundle your application's dependencies.
 source 'http://gemcutter.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.3'
 
 gem 'mysql'
 
 gem 'haml'
 gem 'compass'
-#gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3' 
-#gem 'authlogic', :git => 'git://github.com/yalab/authlogic.git'
-gem 'authlogic', :git => 'git://github.com/johnf/authlogic.git'
+gem 'authlogic', :git => 'git://github.com/johnf/authlogic.git' # Removes deprecations
 gem 'declarative_authorization'
 gem 'paperclip'
 gem 'delayed_paperclip'
@@ -22,13 +20,13 @@ gem 'libxml-ruby'
 
 group :development, :test, :cucumber do
     gem 'sqlite3-ruby'
-    gem 'capybara'
-    gem 'rack-test', :git => 'git://github.com/johnf/rack-test.git' # Remove this line when http://github.com/brynary/rack-test/issues#issue/14
-    gem 'database_cleaner'
-    gem 'cucumber', :git => 'git://github.com/aslakhellesoy/cucumber.git'  # waiting on bugfix for http://github.com/aslakhellesoy/cucumber-rails/issues/issue/52
-    gem 'cucumber-rails'
 
-    gem 'rspec-rails', '>= 2.0.0.beta.20'
+    gem 'capybara'
+    gem 'database_cleaner'
+    gem 'cucumber'
+    gem 'cucumber-rails', :git => 'https://github.com/aslakhellesoy/cucumber-rails.git' # https://github.com/aslakhellesoy/cucumber-rails/issues/issue/77
+
+    gem 'rspec-rails'
 
     gem 'spork'
     gem 'launchy'

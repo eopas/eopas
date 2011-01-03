@@ -20,7 +20,7 @@ module Kickvideo #:nodoc:
     protected
 
       def ffmpeg_command(out)
-        "ffmpeg -i #{@file.path} -ss #{options[:position]} -vframes 1 #{out}"
+        "ffmpeg -i #{@file.path} -ss #{options[:position]} -vframes 1 -f image2 -vcodec png #{out}"
       end
   end
 end

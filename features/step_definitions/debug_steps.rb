@@ -10,3 +10,7 @@ end
 When /^I wait a bit$/ do
   sleep 5
 end
+
+When /^debug_code "([^"]+)"$/ do |code|
+  eval code
+end
