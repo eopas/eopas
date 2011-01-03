@@ -10,15 +10,15 @@ Feature: Media
       And I mock paperclip for "ffmpeg -i /tmp/paperclip-reprocess,27297,0 -ar 22050 -ab 64k -async 2 -acodec libvorbis -b 512k -bt 512k -r 30 -threads 0 -vcodec libtheora -padtop 30 -padright 0 -padbottom 30 -padleft 0 -s 320x180 -f ogg -y /tmp/paperclip-reprocess,27297,0-encoded,27297,0"
 
   Scenario: Upload Page exists if logged in
-    When I am on the home page
-    And  I follow "Upload"
-    Then I should be on the new media item page
+    Given I am on the home page
+     When  I follow "Upload Media"
+     Then I should be on the new media item page
 
   Scenario: Can't upload media if not logged in
     Given I am logged out
-    When I am on the new media item page
-    Then I should be on the login page
-     And I should see "You must be logged in to access that page."
+     When I am on the new media item page
+     Then I should be on the login page
+      And I should see "You must be logged in to access that page."
 
   @javascript
   Scenario: Create a new media item
@@ -48,18 +48,20 @@ Feature: Media
      And I should see the image "missing.png" within "#media_display"
     When I process the delayed jobs
     Then there should be 0 delayed jobs
-    When I go to the media items page
+    When I go to the home page
+     And I follow "Browse Media"
     Then I should see "Test Video"
     When I follow "Test Video"
     Then I should not see "Video is being transcoded"
 
 
+  @allow-rescue
   Scenario: Private video cannot be accessed by another user
    Given a user: "silvia" exists with email: "silvia@doe.com"
      And a media item exists with depositor: user "silvia"
     When I am on that media item's page
-    Then I should see "You are not allowed to access this content."
-     And I should not see "test video"
+    # TODO Add a proper 404 page
+    Then I should see "ActiveRecord::RecordNotFound"
 
 
 

@@ -1,0 +1,33 @@
+
+#left_column
+  - if @media_item
+    %h3
+      = @media_item.title
+
+    #media_display.collapse_box
+      = render :partial => 'media_items/mediaplayer'
+
+    #metadata_display.collapse_box
+      = render :partial => 'media_items/details'
+  - else
+    No media item attached
+
+  #metadata_display.collapse_box
+    = render :partial => 'details'
+
+  #remove-transcript
+    = link_to 'Delete transcript', @transcript, :confirm => "Are you sure?", :method => :delete
+
+
+#right_column
+  - if @transcript
+    - tiers = @transcript.tiers
+    #tiers_info
+      = render :partial => 'tierinfo', :locals => {:tiers => tiers}
+
+    #transcript_display
+      = render :partial => 'tiers', :locals => {:tiers => tiers}
+
+  - else
+    #add-transcript
+      = link_to 'Add transcript', new_media_item_transcript_path(@media_item)

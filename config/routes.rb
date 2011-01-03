@@ -24,10 +24,10 @@ Eopas::Application.routes.draw do
   resources :forgotten_passwords
 
   # Media
-  resources :media_items do
-    resources :transcripts, :shallow => true do
-      get 'eopas', :on => :member, :action => :show, :format => :xml
-    end
-  end
+  resources :media_items
 
+  # Transcripts
+  resources :transcripts do
+    get 'eopas', :on => :member, :action => :show, :format => :xml
+  end
 end

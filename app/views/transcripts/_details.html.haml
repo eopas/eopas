@@ -1,0 +1,48 @@
+.collapse_title
+  = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
+  == #{@transcript.title} , #{@transcript.date}
+
+.collapse_content
+  %table#metadata.small
+    %tr
+      %td{:colspan => 2}
+        %hr
+        %span
+          Transcript
+    %tr
+      %td.name
+        Creator
+      %td.value
+        = @transcript.creator
+
+    %tr
+      %td.name
+        Language
+      %td.value
+        = @transcript.language_code
+
+    %tr
+      %td.name
+        Date
+      %td.value
+        = @transcript.date
+
+    %tr
+      %td.name
+        Depositor
+      %td.value
+        = @transcript.depositor.full_name
+
+    %tr
+      %td.name
+        Original Format
+      %td.value
+        = @transcript.transcript_format
+
+    %tr
+      %td.name
+        Download
+      %td.value
+        = link_to "EOPAS", eopas_transcript_path(@transcript)
+        = link_to "Original (#{@transcript.transcript_format})", @transcript.original.url
+

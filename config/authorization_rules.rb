@@ -4,6 +4,7 @@ authorization do
   role :user do
     has_permission_on :users, :to => :read
     has_permission_on :media_items, :to => :manage
+    has_permission_on :transcripts, :to => :manage
   end
 
   role :admin do

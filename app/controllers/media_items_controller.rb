@@ -4,7 +4,8 @@ class MediaItemsController < ApplicationController
   filter_access_to :all
 
   def index
-    @media_items = MediaItem.all
+    @media_items = MediaItem.public_items + current_user.media_items
+    @media_items.uniq
   end
 
   def new
@@ -28,14 +29,13 @@ class MediaItemsController < ApplicationController
   end
 
   def show
-    @media_item = MediaItem.find(params[:id])
-    @transcript = @media_item.transcript
-
-    # TODO: JF add a named scope
-    if (@media_item.private == true && current_user != @media_item.depositor)
-      flash[:notice] = 'You are not allowed to access this content.'
-      redirect_back_or_default root_url
+    begin
+      @media_item = current_user.media_items.find params[:id]
+    rescue ActiveRecord::RecordNotFound
+      @media_item = MediaItem.public_items.find params[:id]
     end
+
+    @transcripts = @media_item.transcripts
   end
 
 end

@@ -39,6 +39,10 @@ end
 
 
 Factory.define :transcript do |t|
+  t.sequence(:title) {|n| "Title#{n}"}
+  t.attach "original", "features/test_data/elan1.xml", "text/xml"
+  t.transcript_format 'ELAN'
+  t.association :depositor, :factory => :user
 end
 
 Factory.define :transcript_tier do |t|

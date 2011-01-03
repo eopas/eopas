@@ -10,3 +10,7 @@ end
 When /^(?:|I )attach the file "([^"]*)" with full path to "([^"]*)"$/ do |path, field|
   attach_file(field, File.join(Rails.root, path))
 end
+
+When /^I go back$/ do
+  visit page.driver.last_request.env['HTTP_REFERER']
+end

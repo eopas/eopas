@@ -1,0 +1,17 @@
+
+%table.transcripts
+  %tr
+    %th Date
+    %th Creator
+    %th Title
+    %th Language
+    %th Country
+    %th Media
+  - @transcripts.each do |transcript|
+    %tr
+      %td=  transcript.date
+      %td=  transcript.creator
+      %td=  transcript.title
+      %td=  transcript.language_code
+      %td==  transcript.country
+      %td=  transcript.media_item ? transcript.media_item.title : ""

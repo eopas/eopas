@@ -2,12 +2,18 @@
 #transcript
   %h2 Add Transcript
 
-  = form_for [@media_item, @transcript], :html => { :multipart => true } do |f|
+  = form_for @transcript, :html => { :multipart => true } do |f|
     = error_messages @transcript
 
     %fieldset
 
     %table#metadata
+      %tr
+        %td.name
+          = f.label :title
+        %td.value
+          = f.text_field :title
+
       %tr
         %td.name
           = f.label :original, 'Transcript'

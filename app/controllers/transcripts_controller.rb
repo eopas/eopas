@@ -1,44 +1,40 @@
 class TranscriptsController < ApplicationController
   respond_to :xml, :html
 
+  filter_access_to :all
+
+  def index
+    @transcripts = current_user.transcripts
+  end
+
   def new
-    @media_item = current_user.media_items.find(params[:media_item_id])
-    @transcript = @media_item.build_transcript
+    @transcript = Transcript.new
   end
 
   def create
-    @media_item = current_user.media_items.find(params[:media_item_id])
-    @transcript = @media_item.build_transcript params[:transcript]
+    @transcript = current_user.transcripts.build params[:transcript]
 
-    @transcript.depositor = current_user
+    flash[:notice] = 'Transcript was successfully added' if @transcript.save
 
-    if @transcript.save
-      flash[:notice] = 'Transcript was successfully added'
-      respond_with @media_item
-    else
-      respond_with @transcript
-    end
-
+    respond_with @transcript
   end
 
   def show
-    # FIXME only show users transcripts SECURITY HOLE
-    @transcript = Transcript.find params[:id]
+    @transcript = current_user.transcripts.find params[:id]
 
-    # TODO Use something from the object to generate the filename
+    # TODO we should probably only do this for xml
+    # TODO Pick some better filename dynamically
     headers["Content-Disposition"] = "attachment; filename=\"eopas.xml\""
+
     respond_with @transcript
   end
 
   def destroy
-    @transcript = Transcript.find params[:id]
-    media_item = @transcript.media_item
+    @transcript = current_user.transcripts.find params[:id]
 
-    # FIXME only destroy users transcripts SECURITY HOLE
-    @model_class_name = Transcript.find params[:id]
-    @model_class_name.destroy
+    @transcript.destroy
     flash[:notice] = 'Transcript deleted!'
 
-    redirect_to media_item
+    redirect_to transcripts_path
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100911095637) do
+ActiveRecord::Schema.define(:version => 20110103210303) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "name"
@@ -82,8 +82,8 @@ ActiveRecord::Schema.define(:version => 20100911095637) do
   add_index "transcript_tiers", ["transcript_id", "tier_id"], :name => "index_transcript_tiers_on_transcript_id_and_tier_id", :unique => true
 
   create_table "transcripts", :force => true do |t|
-    t.integer  "media_item_id",         :null => false
-    t.integer  "depositor_id",          :null => false
+    t.integer  "media_item_id"
+    t.integer  "depositor_id",                                 :null => false
     t.string   "creator"
     t.string   "language_code"
     t.string   "date"
@@ -94,6 +94,8 @@ ActiveRecord::Schema.define(:version => 20100911095637) do
     t.string   "transcript_format"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "string",                :default => "Unknown", :null => false
+    t.string   "title"
   end
 
   create_table "users", :force => true do |t|

@@ -15,14 +15,6 @@
 
 
 #right_column
-  - if @transcript
-    - tiers = @transcript.tiers
-    #tiers_info
-      = render :partial => 'tierinfo', :locals => {:tiers => tiers}
-
-    #transcript_display
-      = render :partial => 'transcripts', :locals => {:tiers => tiers}
-
-  - else
-    #add-transcript
-      = link_to 'Add transcript', new_media_item_transcript_path(@media_item)
+  %ul
+    - @transcripts.each do |transcript|
+      %li= link_to transcript.title, transcript
