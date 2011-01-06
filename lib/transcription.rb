@@ -26,6 +26,13 @@ class Transcription
 
     # parse XML file
     @doc = Nokogiri::XML(@data)
+
+    # fix different types of toolbox files before trying transcode
+    if @format == "toolbox"
+      xsltname = "#{Rails.root}/public/XSLT/fixToolbox.xsl"
+      @xslt  = Nokogiri::XSLT(File.open(xsltname))
+      @doc = @xslt.transform(@doc)
+    end
   end
 
   def validate

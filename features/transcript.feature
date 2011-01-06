@@ -72,10 +72,11 @@ Feature: Media Items can have transcriptions
       | elan1.xml        | ELAN        | so from here   | annotation_document | ELAN 1        |
       | elan2.xml        | ELAN        | My name is Joe | annotation_document | ELAN 1        |
       | eopas1.xml       | EOPAS       | so from here   | eopas               | EOPAS 1       |
-      | eopas2.xml       | EOPAS       | cristiana ica  | eopas               | EOPAS 1       |
+      | eopas2.xml       | EOPAS       | Endis reading  | eopas               | EOPAS 1       |
       | eopas3.xml       | EOPAS       | rat, this rat  | eopas               | EOPAS 1       |
       | toolbox1.xml     | Toolbox     | about this wo  | database            | TOOLBOX 1     |
       | toolbox2.xml     | Toolbox     | about the rat  | database            | TOOLBOX 1     |
+      | toolbox3.xml     | Toolbox     | Litrapong      | database            | TOOLBOX 1     |
       | transcriber1.xml | Transcriber | pause crowd    | trans               | TRANSCRIBER 1 |
       | transcriber2.xml | Transcriber | puet soksoki   | trans               | TRANSCRIBER 1 |
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2006 rel. 3 sp1 (http://www.altova.com) by Ronald S (UQ ITEE) -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://wiki.arts.unimelb.edu.au/ethnoer/toolbox/1.0/" targetNamespace="http://wiki.arts.unimelb.edu.au/ethnoer/toolbox/1.0/">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
   <xs:element name="database">
     <xs:complexType>
       <xs:choice>

@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- working with EOPAS 2.0 Schema -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-xmlns:dc="http://purl.org/dc/elements/1.1/" 
+xmlns:dc="http://purl.org/dc/elements/1.1/"
 xmlns:tb="http://wiki.arts.unimelb.edu.au/ethnoer/toolbox/1.0/"
 exclude-result-prefixes="tb"
 version="1.0">
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
+
   <xsl:template match="/">
-    <xsl:if test="not(/tb:database)">
+    <xsl:if test="not(/database)">
         <xsl:message terminate="yes">ERROR: Not a Toolbox document</xsl:message>
     </xsl:if>
     <xsl:apply-templates/>
   </xsl:template>
+
   <xsl:variable name="narrator"/>
-  <xsl:template match="/tb:database">
-    <xsl:if test="/tb:database/tb:itmgroup/tb:nt">
-      <xsl:variable name="narrator" select="/tb:database/tb:itmgroup/tb:nt/text()"/>
+  <xsl:template match="/database">
+    <xsl:if test="/database/itmgroup/nt">
+      <xsl:variable name="narrator" select="/database/itmgroup/nt/text()"/>
     </xsl:if>
 
     <eopas>
@@ -29,21 +31,21 @@ version="1.0">
       </header>
 
       <interlinear>
-        <!-- for each "tb:itmGroup" and "tb:itmgroup" -->
+        <!-- for each "itmGroup" and "itmgroup" -->
         <!-- normally there is only one such element in the file -->
-        <xsl:for-each select="tb:itmgroup">
+        <xsl:for-each select="itmgroup">
 
           <!-- create transcription (orthographic) tier -->
           <tier>
             <!-- Metadata per tier -->
-            <xsl:attribute name="id">o_<xsl:value-of select="./tb:itm/text()"/></xsl:attribute>
+            <xsl:attribute name="id">o_<xsl:value-of select="./itm/text()"/></xsl:attribute>
             <xsl:attribute name="linguistic_type">transcription</xsl:attribute>
 
             <!-- individual phrases -->
-            <xsl:for-each select="tb:idgroup">
+            <xsl:for-each select="idgroup">
               <phrase>
                 <!-- get start and end time -->
-                <xsl:variable name="s" select="tb:aud"/>
+                <xsl:variable name="s" select="aud"/>
                 <xsl:variable name="delimiter" select="' '"/>
                 <xsl:variable name="partOnly" select="substring-after($s, $delimiter)"/>
                 <xsl:variable name="timeOnly">
@@ -66,7 +68,7 @@ version="1.0">
                   <xsl:value-of select="$startTime"/>
                 </xsl:attribute>
 
-                <xsl:attribute name="id">o_<xsl:value-of select="tb:id"/></xsl:attribute>
+                <xsl:attribute name="id">o_<xsl:value-of select="id"/></xsl:attribute>
 
                 <xsl:if test="$narrator != ''">
                   <xsl:attribute name="participant">
@@ -77,30 +79,30 @@ version="1.0">
                 <!-- compose text together -->
                 <!-- for each "txGroup" and "txgroup" -->
                 <text>
-                  <xsl:for-each select="tb:txgroup/tb:tx">
+                  <xsl:for-each select="txgroup/tx">
                     <xsl:value-of select="concat(., ' ')"></xsl:value-of>
                   </xsl:for-each>
                 </text>
 
                 <!-- add words decomposition -->
                 <wordlist>
-                  <xsl:for-each select="*[tb:tx]">
+                  <xsl:for-each select="*[tx]">
                     <word>
-                      <xsl:for-each select="tb:tx">
+                      <xsl:for-each select="tx">
                         <text>
                           <xsl:value-of select="."/>
                         </text>
                       </xsl:for-each>
-                      <xsl:if test="tb:mr">
+                      <xsl:if test="mr">
                         <morphemelist>
-                          <xsl:for-each select="tb:mr">
+                          <xsl:for-each select="mr">
                             <xsl:variable name="pos" select="position()"></xsl:variable>
                             <morpheme>
                               <text kind="morpheme">
                                 <xsl:value-of select="."/>
                               </text>
                               <text kind="gloss">
-                                <xsl:value-of select="../tb:mg[$pos]"/>
+                                <xsl:value-of select="../mg[$pos]"/>
                               </text>
                             </morpheme>
                           </xsl:for-each>
@@ -116,14 +118,14 @@ version="1.0">
           <!-- create translation (free gloss) tier -->
           <tier>
             <!-- Metadata per tier -->
-            <xsl:attribute name="id">fg_<xsl:value-of select="./tb:itm/text()"/></xsl:attribute>
+            <xsl:attribute name="id">fg_<xsl:value-of select="./itm/text()"/></xsl:attribute>
             <xsl:attribute name="linguistic_type">translation</xsl:attribute>
 
             <!-- individual phrases -->
-            <xsl:for-each select="tb:idgroup">
+            <xsl:for-each select="idgroup">
               <phrase>
                 <!-- get start and end time -->
-                <xsl:variable name="s" select="tb:aud"/>
+                <xsl:variable name="s" select="aud"/>
                 <xsl:variable name="delimiter" select="' '"/>
                 <xsl:variable name="partOnly" select="substring-after($s, $delimiter)"/>
                 <xsl:variable name="timeOnly">
@@ -145,7 +147,7 @@ version="1.0">
                   <xsl:value-of select="$endTime"/>
                 </xsl:attribute>
 
-                <xsl:attribute name="id">fg_<xsl:value-of select="tb:id"/></xsl:attribute>
+                <xsl:attribute name="id">fg_<xsl:value-of select="id"/></xsl:attribute>
 
                 <xsl:if test="$narrator != ''">
                   <xsl:attribute name="participant">
@@ -153,7 +155,7 @@ version="1.0">
                   </xsl:attribute>
                 </xsl:if>
                 <text>
-                  <xsl:value-of select="tb:fg/text()"/>
+                  <xsl:value-of select="fg/text()"/>
                 </text>
               </phrase>
             </xsl:for-each>
