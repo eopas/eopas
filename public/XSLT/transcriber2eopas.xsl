@@ -38,67 +38,7 @@ version="1.0">
       </header>
 
       <interlinear>
-        <!-- section tier -->
-        <tier>
-          <!-- Metadata for section tier -->
-          <xsl:attribute name="id">Sections</xsl:attribute>
-          <xsl:attribute name="linguistic_type">
-            <xsl:value-of select="Section/@type"/> <!-- seems they are always the same -->
-          </xsl:attribute>
-
-          <!-- Phrases of section tier -->
-          <xsl:for-each select="Section">
-            <phrase>
-              <xsl:variable name="topicId" select="@topic"/>
-              <xsl:variable name="description" select="/Trans/Topics/Topic[@id=$topicId]/@desc"/>
-              <xsl:attribute name="startTime">
-                <xsl:value-of select="@startTime"/>
-              </xsl:attribute>
-              <xsl:attribute name="endTime">
-                <xsl:value-of select="@endTime"/>
-              </xsl:attribute>
-              <xsl:attribute name="id">
-                <xsl:value-of select="@topic"/>
-              </xsl:attribute>
-              <text>
-                <xsl:value-of select="$description"/>
-              </text>
-            </phrase>
-          </xsl:for-each>
-        </tier>
-
-        <!-- turn tier -->
-        <tier>
-          <!-- Metadata for turn tier -->
-          <xsl:attribute name="id">Turns</xsl:attribute>
-          <xsl:attribute name="parent">Sections</xsl:attribute>
-          <xsl:attribute name="linguistic_type">speaker turn</xsl:attribute>
-
-          <!-- Phrases of turn tier -->
-          <xsl:for-each select="Section/Turn">
-            <phrase>
-              <xsl:attribute name="startTime">
-                <xsl:value-of select="@startTime"/>
-              </xsl:attribute>
-              <xsl:attribute name="endTime">
-                <xsl:value-of select="@endTime"/>
-              </xsl:attribute>
-              <xsl:if test="@speaker">
-                <xsl:variable name="speakerId" select="@speaker"/>
-                <xsl:variable name="speaker" select="/Trans/Speakers/Speaker[@id=$speakerId]/@name"/>
-                <xsl:variable name="dialect" select="/Trans/Speakers/Speaker[@id=$speakerId]/@dialect"/>
-                <xsl:variable name="type" select="/Trans/Speakers/Speaker[@id=$speakerId]/@type"/>
-                <xsl:variable name="accent" select="/Trans/Speakers/Speaker[@id=$speakerId]/@accent"/>
-                <xsl:attribute name="participant">
-                  <xsl:value-of select="$speaker"/>
-                </xsl:attribute>
-                <text>
-                  <xsl:value-of select="normalize-space(concat($dialect,' ',$type,' ',$accent))"/>
-                </text>
-              </xsl:if>
-            </phrase>
-          </xsl:for-each>
-        </tier>
+<!-- REMOVED OTHER TIERS TO HAVE THIS WORK WITH SYSTEM -->
 
         <!-- Sync tier -->
         <tier>
