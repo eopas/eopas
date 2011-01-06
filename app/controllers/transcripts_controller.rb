@@ -1,5 +1,5 @@
 class TranscriptsController < ApplicationController
-  respond_to :xml, :html
+  respond_to :html, :xml
 
   filter_access_to :all
 
@@ -22,11 +22,14 @@ class TranscriptsController < ApplicationController
   def show
     @transcript = current_user.transcripts.find params[:id]
 
-    # TODO we should probably only do this for xml
     # TODO Pick some better filename dynamically
-    headers["Content-Disposition"] = "attachment; filename=\"eopas.xml\""
-
-    respond_with @transcript
+    respond_with @transcript do |format|
+      format.html { @transcript }
+      format.xml do
+        headers["Content-Disposition"] = "attachment; filename=\"eopas.xml\""
+        @transcript
+      end
+    end
   end
 
   def destroy
