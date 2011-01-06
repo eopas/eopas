@@ -19,5 +19,6 @@ test: &TEST
   <<: *COMMON
   database: db/test.sqlite
 
-cucumber:
-  <<: *TEST
+test_in_memory: &TEST
+  <<: *COMMON
+  database: ":memory:"

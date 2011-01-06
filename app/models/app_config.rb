@@ -10,6 +10,11 @@ class AppConfig < ActiveRecord::Base
     begin
       super
     rescue
+      # We use find_by_name so if it didn't get found above we nbeed to raise
+      if method_id == :find_by_name
+        raise
+      end
+
       if method_id =~ /=$/
         name = method_id.to_s.gsub(/=$/, '')
         app_config = new(:name => name, :value => {:value => args.first})
