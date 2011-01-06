@@ -1,4 +1,5 @@
 def in_memory_database?
+  return false if ENV['NO_MEM']
   ENV["RAILS_ENV"] == "test" and
   ActiveRecord::Base.configurations['test_in_memory']
 end

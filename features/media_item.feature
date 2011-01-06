@@ -54,7 +54,6 @@ Feature: Media
     When I follow "Test Video"
     Then I should not see "Video is being transcoded"
 
-
   @allow-rescue
   Scenario: Private video cannot be accessed by another user
    Given a user: "silvia" exists with email: "silvia@doe.com"
@@ -63,6 +62,35 @@ Feature: Media
     # TODO Add a proper 404 page
     Then I should see "ActiveRecord::RecordNotFound"
 
+  @allow-rescue
+  Scenario: I can't delete another users media_items
+    Given a user: "silvia" exists with email: "silvia@doe.com"
+    And a media item exists with title: "Moo", depositor: user "silvia", private: false
+    When I go to that media item's page
+    Then I should see "Moo"
+     And I should not see "Delete"
+
+    When I make a DELETE request to that media item's page
+    Then I should see "ActiveRecord::RecordNotFound"
+
+  @allow-rescue
+  Scenario: Need to confirm deletion of my video if media_items are attached to it
+    Given a media item "moo" exists with title: "Moo", depositor: user "johnf1"
+      And a transcript exists with media_item: media_item "moo", depositor: user "johnf1"
+    When I go to that transcript's page
+    Then I should see "Media Player"
+
+    When I go to that media item's page
+    Then I should see "Moo"
+
+    When I follow "Delete"
+    Then I should see "linked to"
+
+    When I follow "Force Delete"
+    Then I should see "Media Item and transcript links deleted"
+
+    When I go to that transcript's page
+    Then I should see "No media item attached"
 
 
 #    And   a user: "silvia" exists with email: "silvia@doe.com"

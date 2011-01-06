@@ -19,6 +19,20 @@ Feature: Media Items can have transcriptions
      Then I should be on the login page
       And I should see "You must be logged in to access that page."
 
+  @allow-rescue
+  Scenario: Private transcript cannot be accessed by another user
+   Given a user: "silvia" exists
+   And a transcript exists with depositor: user "silvia", private: true
+    When I am on that transcript's page
+    # TODO Add a proper 404 page
+    Then I should see "ActiveRecord::RecordNotFound"
+
+  Scenario: Public transcript can be accessed by another user
+   Given a user: "silvia" exists
+     And a transcript exists with depositor: user "silvia", private: false
+    When I am on that transcript's page
+    Then I should see "Link"
+
   Scenario Outline: Bad transcript doesn't vaidate
     Given I am on the new transcript page
      When I attach the file "features/test_data/<file>" to "Transcript"
@@ -65,6 +79,19 @@ Feature: Media Items can have transcriptions
       | transcriber1.xml | Transcriber | pause crowd    | trans               | TRANSCRIBER 1 |
       | transcriber2.xml | Transcriber | puet soksoki   | trans               | TRANSCRIBER 1 |
 
+  @javascript
+  Scenario: Attach a media item to a transcript
+    Given a transcript exists with title: "Moo", depositor: user "johnf1"
+    And a media item exists with original_file_name: "features/test_data/eopas3.xml", depositor: user "johnf1", title: "Cow"
+
+     When I go to that transcript's page
+     Then I should see "Link to Media Item"
+
+     When I follow "Link to Media Item"
+      And I follow "Attach"
+     Then I should be on that transcript's page
+     And I should see "Cow"
+
   Scenario: List of transcripts
     Given a transcript exists with title: "Moo", depositor: user "johnf1"
       And a transcript exists with title: "Cow", depositor: user "johnf1"
@@ -97,16 +124,16 @@ Feature: Media Items can have transcriptions
       And 0 transcript tiers should exist
       And 0 transcript phrases should exist
 
-  @javascript
-  Scenario: Attach a media item to a transcript
-    Given a transcript exists with title: "Moo", depositor: user "johnf1"
-    And a media item exists with original_file_name: "features/test_data/eopas3.xml", depositor: user "johnf1", title: "Cow"
+  @allow-rescue
+  Scenario: I can't delete another users transcript
+   Given a user: "silvia" exists
+   And a transcript exists with title: "Moo", depositor: user "silvia", private: false
+    When I go to that transcript's page
+    Then I should see "Moo"
+     And I should not see "Delete"
 
-     When I go to that transcript's page
-     Then I should see "Link to Media Item"
+    When I make a DELETE request to that transcript's page
+    Then I should see "ActiveRecord::RecordNotFound"
 
-     When I follow "Link to Media Item"
-      And I follow "Attach"
-     Then I should be on that transcript's page
-     And I should see "Cow"
+
 

@@ -4,8 +4,7 @@ class MediaItemsController < ApplicationController
   filter_access_to :all
 
   def index
-    @media_items = MediaItem.public_items + current_user.media_items
-    @media_items.uniq
+    @media_items = (MediaItem.are_public + current_user.media_items).uniq
   end
 
   def new
@@ -32,10 +31,35 @@ class MediaItemsController < ApplicationController
     begin
       @media_item = current_user.media_items.find params[:id]
     rescue ActiveRecord::RecordNotFound
-      @media_item = MediaItem.public_items.find params[:id]
+      @media_item = MediaItem.are_public.find params[:id]
     end
 
     @transcripts = @media_item.transcripts
   end
+
+  def destroy
+    @media_item = current_user.media_items.find params[:id]
+
+    if params[:force] == 'true'
+      @media_item.destroy
+      flash[:notice] = 'Media Item and transcript links deleted'
+
+      redirect_to media_items_path
+    elsif @media_item.transcripts.empty?
+      p Transcript.first
+      @media_item.destroy
+      p Transcript.all.first
+      flash[:notice] = 'Media Item deleted!'
+
+      redirect_to media_items_path
+    else
+      flash[:error] = "The Media Item is currently linked to by transcript, possibly also by other users, click on 'Force Delete' to really delete it."
+      @force_delete = true
+      @transcripts = @media_item.transcripts
+      render '/media_items/show'
+    end
+  end
+
+
 
 end

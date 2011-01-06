@@ -1,13 +1,12 @@
 require 'paperclip_bug_fixes'
 class MediaItem < ActiveRecord::Base
   belongs_to :depositor, :class_name => 'User'
-  has_many :transcripts
+  has_many :transcripts, :dependent => :nullify
 
   before_save :create_item_id
 
-  scope :private_items, where(:private => true)
-  scope :public_items, where(:private => false)
-  scope :user_items, lambda {|user| where(:depositor_id => user.id) }
+  scope :are_private, where(:private => true)
+  scope :are_public, where(:private => false)
 
   PARTICIPANT_ROLES = %w(
     annotator artist author compiler consultant data_inputter depositor

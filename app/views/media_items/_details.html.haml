@@ -1,6 +1,6 @@
 .collapse_title
   = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
-  == #{@media_item.depositor.full_name} , #{@media_item.recorded_at}
+  == #{@media_item.title} , #{@media_item.recorded_at}
 
 .collapse_content
   %table#metadata.small

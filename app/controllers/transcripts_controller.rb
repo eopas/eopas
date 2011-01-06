@@ -4,7 +4,7 @@ class TranscriptsController < ApplicationController
   filter_access_to :all
 
   def index
-    @transcripts = current_user.transcripts
+    @transcripts = (Transcript.are_public + current_user.transcripts).uniq
   end
 
   def new
@@ -20,7 +20,12 @@ class TranscriptsController < ApplicationController
   end
 
   def show
-    @transcript = current_user.transcripts.find params[:id]
+    begin
+      @transcript = current_user.transcripts.find params[:id]
+    rescue ActiveRecord::RecordNotFound
+      @transcript = Transcript.are_public.find params[:id]
+    end
+
     @media_item = @transcript.media_item
 
     # TODO Pick some better filename dynamically
@@ -45,7 +50,7 @@ class TranscriptsController < ApplicationController
   filter_access_to :new_attach_media_item, :require => :new
   def new_attach_media_item
     @transcript = current_user.transcripts.find params[:id]
-    @media_items = (MediaItem.public_items + current_user.media_items).uniq
+    @media_items = (MediaItem.are_public + current_user.media_items).uniq
   end
 
   filter_access_to :create_attach_media_item, :require => :create
@@ -54,7 +59,7 @@ class TranscriptsController < ApplicationController
     begin
       @media_item = current_user.media_items.find params[:media_item_id]
     rescue ActiveRecord::RecordNotFound
-      @media_item = MediaItem.public_items.find params[:media_item_id]
+      @media_item = MediaItem.are_public.find params[:media_item_id]
     end
 
     @transcript.media_item = @media_item

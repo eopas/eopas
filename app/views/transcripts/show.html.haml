@@ -16,8 +16,9 @@
   #metadata_display.collapse_box
     = render :partial => 'details'
 
-  #remove-transcript
-    = link_to 'Delete transcript', @transcript, :confirm => "Are you sure?", :method => :delete
+  - if @transcript.depositor == current_user
+    #remove-transcript
+      = link_to 'Delete transcript', @transcript, :confirm => "Are you sure?", :method => :delete
 
 
 #right_column

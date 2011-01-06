@@ -26,6 +26,9 @@ class Transcript < ActiveRecord::Base
 
   has_many :tiers, :class_name => 'TranscriptTier', :dependent => :destroy
 
+  scope :are_private, where(:private => true)
+  scope :are_public, where(:private => false)
+
   include Paperclip
   has_attached_file :original
 
@@ -71,7 +74,9 @@ class Transcript < ActiveRecord::Base
   end
 
   def import_transcription
-    @transcription.import self
+    if @transcription
+      @transcription.import self
+    end
   end
 
 end

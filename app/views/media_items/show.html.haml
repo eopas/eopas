@@ -9,9 +9,13 @@
   #metadata_display.collapse_box
     = render :partial => 'details'
 
-  - if @transcript
-    #remove-transcript
-      = link_to 'Delete transcript', @transcript, :confirm => "Are you sure?", :method => :delete
+  - if @media_item.depositor == current_user
+    - if @force_delete
+      #remove-media-item
+        = link_to 'Force Delete', media_item_path(@media_item, :force => true), :confirm => "Really force deletion?", :method => :delete
+    - else
+      #remove-media-item
+        = link_to 'Delete', media_item_path(@media_item), :confirm => "Are you sure?", :method => :delete
 
 
 #right_column
