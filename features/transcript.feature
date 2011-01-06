@@ -1,5 +1,5 @@
 Feature: Media Items can have transcriptions
-  In order to annot a media item
+  In order to annotate a media item
   As a user
   I want to be able to add transcriptions
 

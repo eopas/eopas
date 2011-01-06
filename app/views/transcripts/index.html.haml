@@ -11,7 +11,8 @@
     %tr
       %td=  transcript.date
       %td=  transcript.creator
-      %td=  transcript.title
+      %td=  link_to transcript.title, transcript
       %td=  transcript.language_code
       %td==  transcript.country
       %td=  transcript.media_item ? transcript.media_item.title : ""
+

@@ -11,5 +11,5 @@
         %br
         - if tier.phrases.map {|phrase| phrase.words.size}.uniq.max > 0
           %input.words_info.hider{'data-hide-selector' => ".#{tier.tier_id}_w", :type => 'checkbox', :checked => 'checked'}
-            == Show words
+            == Show morphemes
             %br
