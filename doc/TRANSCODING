@@ -1,0 +1,10 @@
+Transcoding and Validating Transcriptions by hand
+=================================================
+
+If you need to deal with just the the xsl transcriptions, you can use the following two command-line programs:
+
+ rails runner bin/validate.rb features/test_data/toolbox2.xml Toolbox
+ 
+ rails runner bin/transcode.rb features/test_data/toolbox2.xml Toolbox
+
+The first one validates, the second one transcodes.

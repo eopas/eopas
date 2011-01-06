@@ -1,0 +1,18 @@
+updating to new rails version:
+* rvm update
+* rvm reload
+* rvm install 1.9.2
+
+updating the app:
+* bundle install
+* gem update
+
+running a server/console:
+* bundle exec rails s
+* ./script/rails c
+
+running the tests:
+* RAILS_ENV=test rake db:schema:load
+* rake cucumber:wip
+* bundle exec cucumber -f pretty -p wip features/transcription.feature:24 -b
+
