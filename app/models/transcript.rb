@@ -2,6 +2,9 @@ require 'transcription'
 
 class ProperSchemaValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
+    unless record.tiers.empty?
+      return
+    end
     transcription = record.instance_variable_get(:@transcription)
     if transcription.nil?
       record.errors[attribute] = 'Missing transcription'
@@ -38,8 +41,8 @@ class Transcript < ActiveRecord::Base
   validates_associated :depositor
   validates_attachment_presence :original
 
-  before_validation :create_transcription
-  before_save :import_transcription
+  before_validation :create_transcription, :on => :create
+  before_save :import_transcription, :on => :create
 
 
   def to_s

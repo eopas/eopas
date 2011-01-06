@@ -43,9 +43,11 @@ Feature: Media Items can have transcriptions
       And I press "Add"
      Then I should see "Transcript was successfully added"
       And I should see "<text>"
+
      When I follow "EOPAS" within "#metadata_display"
      Then I should see "" within "interlinear"
       And I should see "<text>"
+
     Given I go back
      When I follow "Original"
      Then I should see "<text>"
@@ -76,6 +78,7 @@ Feature: Media Items can have transcriptions
      Then 0 transcripts should exist
       And 0 transcript tiers should exist
       And 0 transcript phrases should exist
+
      When I attach the file "features/test_data/eopas3.xml" to "Transcript"
       And I select "EOPAS" from "Format"
       And I fill in "Title" with "EOPAS 3"
@@ -86,6 +89,7 @@ Feature: Media Items can have transcriptions
       And 1 transcripts should exist
       And 2 transcript tiers should exist
       And 154 transcript phrases should exist
+
      When I follow "Delete transcript"
      Then I should see "Transcript deleted"
       And I should not see "EOPAS 3"
@@ -93,4 +97,16 @@ Feature: Media Items can have transcriptions
       And 0 transcript tiers should exist
       And 0 transcript phrases should exist
 
+  @javascript
+  Scenario: Attach a media item to a transcript
+    Given a transcript exists with title: "Moo", depositor: user "johnf1"
+    And a media item exists with original_file_name: "features/test_data/eopas3.xml", depositor: user "johnf1", title: "Cow"
+
+     When I go to that transcript's page
+     Then I should see "Link to Media Item"
+
+     When I follow "Link to Media Item"
+      And I follow "Attach"
+     Then I should be on that transcript's page
+     And I should see "Cow"
 

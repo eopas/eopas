@@ -21,6 +21,7 @@ class TranscriptsController < ApplicationController
 
   def show
     @transcript = current_user.transcripts.find params[:id]
+    @media_item = @transcript.media_item
 
     # TODO Pick some better filename dynamically
     respond_with @transcript do |format|
@@ -40,4 +41,27 @@ class TranscriptsController < ApplicationController
 
     redirect_to transcripts_path
   end
+
+  filter_access_to :new_attach_media_item, :require => :new
+  def new_attach_media_item
+    @transcript = current_user.transcripts.find params[:id]
+    @media_items = (MediaItem.public_items + current_user.media_items).uniq
+  end
+
+  filter_access_to :create_attach_media_item, :require => :create
+  def create_attach_media_item
+    @transcript = current_user.transcripts.find params[:transcript_id]
+    begin
+      @media_item = current_user.media_items.find params[:media_item_id]
+    rescue ActiveRecord::RecordNotFound
+      @media_item = MediaItem.public_items.find params[:media_item_id]
+    end
+
+    @transcript.media_item = @media_item
+
+    flash[:notice] = 'Media Item was added to transcript' if @transcript.save
+
+    respond_with @transcript
+  end
+
 end

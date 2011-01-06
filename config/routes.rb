@@ -29,5 +29,7 @@ Eopas::Application.routes.draw do
   # Transcripts
   resources :transcripts do
     get 'eopas', :on => :member, :action => :show, :format => :xml
+    get 'new_media_item', :on => :member, :action => :new_attach_media_item
+    post 'create_media_item', :on => :member, :action => :create_attach_media_item
   end
 end

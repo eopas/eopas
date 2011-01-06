@@ -11,6 +11,7 @@
       = render :partial => 'media_items/details'
   - else
     No media item attached
+    = link_to 'Link to Media Item', new_media_item_transcript_path(@transcript)
 
   #metadata_display.collapse_box
     = render :partial => 'details'
@@ -20,14 +21,10 @@
 
 
 #right_column
-  - if @transcript
-    - tiers = @transcript.tiers
-    #tiers_info
-      = render :partial => 'tierinfo', :locals => {:tiers => tiers}
+  - tiers = @transcript.tiers
+  #tiers_info
+    = render :partial => 'tierinfo', :locals => {:tiers => tiers}
 
-    #transcript_display
-      = render :partial => 'tiers', :locals => {:tiers => tiers}
+  #transcript_display
+    = render :partial => 'tiers', :locals => {:tiers => tiers}
 
-  - else
-    #add-transcript
-      = link_to 'Add transcript', new_media_item_transcript_path(@media_item)

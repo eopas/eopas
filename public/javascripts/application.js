@@ -1,3 +1,5 @@
+"use strict";
+
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
@@ -40,12 +42,12 @@ function setup_playback(media) {
     $('.play_button').each(function(index) {
       if (cur_time >= (parseFloat($(this).attr('data-start'))) &&
           cur_time < parseFloat($(this).attr('data-end'))) {
-        line = $(this).closest('.line');
+        var line = $(this).closest('.line');
         if (!line.find('.tracks').hasClass('highlight')) {
           // check if we have to scroll
-          scroller = $('#transcript_display');
-          bottom_s = scroller.offset().top+scroller.height();
-          bottom_l = line.offset().top+line.height();
+          var scroller = $('#transcript_display');
+          var bottom_s = scroller.offset().top+scroller.height();
+          var bottom_l = line.offset().top+line.height();
           if ((bottom_l > (bottom_s-20)) ||
               (line.offset().top < scroller.offset().top)) {
             scroller.scrollTo(line, 500, {offset: -20, easing: 'linear'});
@@ -57,7 +59,6 @@ function setup_playback(media) {
         $(this).closest('.line').find('.tracks').removeClass('hilight');
       }
     });
-    
 
     // Pause the video if we played a segment and it's finished
     var pause_time = parseFloat(media.attr('data-pause'))+0.1;
@@ -88,11 +89,13 @@ function setup_playback(media) {
 
 // resizing the transcript_display div with the remaining screen-size
 function do_onResize() {
-  elem = $('#transcript_display');
-  if (!elem) return;
+  var elem = $('#transcript_display');
+  if (!elem) {
+    return;
+  }
   if ($.browser.msie) {
     //y = document.body.clientHeight - 95;
-    x = $('body').offsetWidth - 380;
+    var x = $('body').offsetWidth - 380;
     elem.width(x);
     //elem.style.height = '700px';
   } else if ($.browser.opera) {
@@ -121,7 +124,7 @@ function setup_country_code() {
         child.append("<option selected='selected'> -- Select -- </option>");
       }
 
-      sorted_keys = new Array();
+      var sorted_keys = new Array();
       for (code in country_languages[country_code]) {
         sorted_keys.push(code);
       }
@@ -139,6 +142,19 @@ function setup_country_code() {
         child.append('<option value="' + code+ '"' + selected +'>' + country_languages[country_code][code] + ' (' +  code + ')' + '</option>');
       }
   }).change();
+
+}
+
+function setup_transcript_media_item() {
+
+  // bind "click" event for links with title="submit" 
+  $("a[data-add-media-item]").click( function() {
+    var form = $(this).parents("form");
+    var media_item_id = $(this).attr('data-media-item-id');
+    var media_item = form.find('input[name=media_item_id]');
+    media_item.val(media_item_id);
+    form.submit();
+  });
 
 }
 
@@ -165,6 +181,8 @@ $(document).ready(function() {
   do_onResize();
   $(window).resize(do_onResize);
 
+  // Form bits
+  setup_transcript_media_item();
 });
 
 
