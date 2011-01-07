@@ -7,6 +7,12 @@ updating the app:
 * bundle install
 * gem update
 
+updating code:
+* bzr update
+
+migrating db:
+* rake db:migrate
+
 running a server/console:
 * bundle exec rails s
 * ./script/rails c
