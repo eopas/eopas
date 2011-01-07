@@ -37,7 +37,7 @@ Feature: Media Items can have transcriptions
     Given I am on the new transcript page
      When I attach the file "features/test_data/<file>" to "Transcript"
       And I select "<format>" from "Format"
-      And I press "Add"
+      And I press "Validate"
      Then I should see "Transcript did not validate against the schema"
       And I should see "<error>"
 
@@ -53,10 +53,14 @@ Feature: Media Items can have transcriptions
     Given I am on the new transcript page
      When I attach the file "features/test_data/<file>" to "Transcript"
       And I select "<format>" from "Format"
-      And I fill in "Title" with "<title>"
-      And I press "Add"
-     Then I should see "Transcript was successfully added"
+      And I press "Validate"
+     Then I should see "Transcript was successfully validated and added"
+
+     When I fill in "Title" with "<title>"
+      And I press "Update"
+     Then I should see "Transcript was successfully updated"
       And I should see "<text>"
+      And I should see "<title>"
 
      When I follow "EOPAS" within "#metadata_display"
      Then I should see "" within "interlinear"
@@ -109,9 +113,10 @@ Feature: Media Items can have transcriptions
 
      When I attach the file "features/test_data/eopas3.xml" to "Transcript"
       And I select "EOPAS" from "Format"
+      And I press "Validate"
       And I fill in "Title" with "EOPAS 3"
-      And I press "Add"
-     Then I should see "Transcript was successfully added"
+      And I press "Update"
+     Then I should see "Transcript was successfully updated"
       And I should see "EOPAS 3"
       And I should see "rat, this rat"
       And 1 transcripts should exist

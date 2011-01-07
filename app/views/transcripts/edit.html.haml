@@ -1,0 +1,73 @@
+
+#transcript_details
+  %h2 Edit Transcript Details
+
+  = form_for @transcript, :method => :put do |form|
+    = error_messages @transcript
+
+    %table#metadata
+      %tr
+        %td.name
+          = form.label :title, 'Title'
+        %td.value
+          = form.text_field :title, :class => 'text'
+
+      %tr
+        %td.name
+          = form.label :country_code, 'Country Code'
+        %td.value
+          = form.select :country_code, options_from_collection_for_select(Country.all.sort_by(&:name), :code, :name, @transcript.country_code), {}, :class => 'country-select', 'data-select-child' => 'transcript_language_code'
+
+      %tr
+        %td.name
+          = form.label :language_code, 'Language Code'
+        %td.value
+          = form.select :language_code, options_for_select([], @transcript.language_code), {}, 'data-option-selected' => @transcript.language_code
+
+      %tr
+        %td.name
+          = form.label :private, 'Make item private?'
+        %td.value
+          = form.check_box :private
+
+
+    = form.submit "Update"
+    -#
+      %tr
+        %td.name
+          = form.label :recorded_at, 'Recorded on'
+        %td.value
+          = form.date_select :recorded_at, :order => [:day, :month, :year], :start_year => 1950
+
+      %tr
+        %td.name
+          = form.label :annotator_name, 'Name of Annotator'
+        %td.value
+          = form.text_field :annotator_name, :class => 'text'
+
+      %tr
+        %td.name
+          = form.label :participant_name, 'Name of Participant'
+        %td.value
+          = form.text_field :participant_name, :class => 'text'
+
+      %tr
+        %td.name
+          = form.label :participant_role, 'Role of Participant'
+        %td.value
+          = form.select :participant_role, options_for_select(MediaItem::PARTICIPANT_ROLES, @transcript.participant_role)
+
+
+      #
+      %tr
+        %td.name
+          = form.label :copyright, 'Copyright Holder'
+        %td.value
+          = form.text_field :copyright, :class => 'text'
+
+      %tr
+        %td.name
+          = form.label :license, 'License'
+        %td.value
+          = form.select :license, options_from_collection_for_select(License.all, :code, :name, @transcript.license)
+

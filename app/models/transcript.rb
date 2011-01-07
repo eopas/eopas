@@ -34,12 +34,16 @@ class Transcript < ActiveRecord::Base
 
   attr_accessible :original, :transcript_format, :title
 
+  attr_accessor :country_code # So on validation errror it is still filled in
+
   FORMATS = ['ELAN', 'Toolbox', 'Transcriber', 'EOPAS']
 
-  validates :title,             :presence => true
   validates :original,          :presence => true, :proper_schema => true
   validates :transcript_format, :presence => true, :inclusion => { :in => FORMATS }
   validates :depositor,         :presence => true
+
+  # Validated on second step
+  validates :title,             :presence => true, :unless => lambda { new_record? }
 
   validates_associated :depositor
   validates_attachment_presence :original

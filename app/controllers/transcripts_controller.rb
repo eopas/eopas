@@ -7,18 +7,6 @@ class TranscriptsController < ApplicationController
     @transcripts = (Transcript.are_public + current_user.transcripts).uniq
   end
 
-  def new
-    @transcript = Transcript.new
-  end
-
-  def create
-    @transcript = current_user.transcripts.build params[:transcript]
-
-    flash[:notice] = 'Transcript was successfully added' if @transcript.save
-
-    respond_with @transcript
-  end
-
   def show
     begin
       @transcript = current_user.transcripts.find params[:id]
@@ -38,6 +26,36 @@ class TranscriptsController < ApplicationController
     end
   end
 
+  def new
+    @transcript = Transcript.new
+  end
+
+  def create
+    @transcript = current_user.transcripts.build params[:transcript]
+
+    options = Hash.new
+    if @transcript.save
+      flash[:notice] = 'Transcript was successfully validated and added, please edit automatically discovered values' 
+      options[:location] = edit_transcript_path(@transcript)
+    end
+
+    respond_with @transcript, options
+  end
+
+  def edit
+    @transcript = Transcript.find params[:id]
+  end
+
+  def update
+    @transcript = Transcript.find params[:id]
+
+    if @transcript.update_attributes(params[:transcript])
+      flash[:notice] = 'Transcript was successfully updated.'
+    end
+
+    respond_with @transcript
+  end
+
   def destroy
     @transcript = current_user.transcripts.find params[:id]
 
@@ -46,6 +64,7 @@ class TranscriptsController < ApplicationController
 
     redirect_to transcripts_path
   end
+
 
   filter_access_to :new_attach_media_item, :require => :new
   def new_attach_media_item

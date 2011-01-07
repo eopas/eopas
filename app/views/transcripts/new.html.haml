@@ -10,12 +10,6 @@
     %table#metadata
       %tr
         %td.name
-          = f.label :title
-        %td.value
-          = f.text_field :title
-
-      %tr
-        %td.name
           = f.label :original, 'Transcript'
         %td.value
           = f.file_field :original
@@ -27,4 +21,4 @@
           = f.select :transcript_format, options_for_select(Transcript::FORMATS, @transcript.transcript_format)
 
 
-    = f.submit "Add"
+    = f.submit "Validate"
