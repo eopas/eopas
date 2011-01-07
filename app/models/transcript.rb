@@ -30,7 +30,7 @@ class Transcript < ActiveRecord::Base
   scope :are_public, where(:private => false)
 
   include Paperclip
-  has_attached_file :original
+  has_attached_file :original, :url => "/system/transcript/:attachment/:id/:style/:filename",
 
   attr_accessible :original, :transcript_format, :title
 

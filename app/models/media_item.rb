@@ -17,6 +17,7 @@ class MediaItem < ActiveRecord::Base
 
   include Paperclip
   has_attached_file :original,
+    :url => "/system/media_item/:attachment/:id/:style/:filename",
     :styles => {
       :standard => {
         :format     => :ogg,
