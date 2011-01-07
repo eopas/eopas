@@ -1,15 +1,15 @@
 
-%table.transcripts
+%table#transcripts
   %tr
-    %th Date
-    %th Creator
-    %th Title
-    %th Language
-    %th Country
-    %th Media
+    %th.name Date
+    %th.name Creator
+    %th.name Title
+    %th.name Language
+    %th.name Country
+    %th.name Media
   - @transcripts.each do |transcript|
     %tr
-      %td=  transcript.date
+      %td=  transcript.date ? transcript.date.to_date : ""
       %td=  transcript.creator
       %td=  link_to transcript.title, transcript
       %td=  transcript.language_code

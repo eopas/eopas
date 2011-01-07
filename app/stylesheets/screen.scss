@@ -112,6 +112,24 @@ $blue:      #7297ba;
 }
 
 
+// transcript index page
+table#transcripts {
+  width: 700px;
+  margin: auto;
+  padding: 10px;
+  border-spacing: 2px 2px;
+  border: 1px;
+  th {
+    background-color: $blue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  td {
+  background-color: $lightblue;
+  }
+}
+
 // media_item index page
 ul.media_items {
   display: block;
