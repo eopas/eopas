@@ -1,8 +1,10 @@
+#transcript
+  %h2 Browse Media Items
 
-%ul.media_items
-  - @media_items.each do |media_item|
-    %li
-      .item
-        = link_to image_tag(media_item.original.url(:thumbnail)), media_item
-        %p
-          = link_to media_item.title, media_item
+  %ul.media_items
+    - @media_items.each do |media_item|
+      %li
+        .item
+          = link_to image_tag(media_item.original.url(:thumbnail)), media_item
+          %p
+            = link_to media_item.title, media_item

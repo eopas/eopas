@@ -15,6 +15,7 @@ gem 'delayed_job', '2.1.0.pre2'
 gem 'nokogiri'
 gem 'xml-object'
 gem 'libxml-ruby'
+gem 'will_paginate'
 
 #gem 'exception_notifier'
 
