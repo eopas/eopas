@@ -70,9 +70,7 @@ class Transcript < ActiveRecord::Base
   def create_transcription
     # FIXME find a better way of doing this
     if original_file_name
-      # WTF: For some reason if this isn't an instance variable
-      file_path = original.queued_for_write[:original].path
-      # TODO Can we just force the encoding here or should we try and detect it?
+      file_path = original.to_file.path
       @transcription = Transcription.new(:data => File.read(file_path).force_encoding('UTF-8'), :format => transcript_format)
     end
   end

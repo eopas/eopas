@@ -6,6 +6,12 @@
   %table#metadata
     %tr
       %td.name
+        = form.label :format
+      %td.value
+        = form.select :format, options_for_select(MediaItem::FORMATS, @media_item.format), :include_blank => true
+
+    %tr
+      %td.name
         = form.label :original, 'Media File'
       %td.value
         = form.file_field :original

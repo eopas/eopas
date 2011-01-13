@@ -1,5 +1,5 @@
 module Kickvideo #:nodoc:
-  class Encoder < Processor
+  class Video < Processor
     VIDEO_PROFILES = {
       # Default settings should be safe for any install. This is a one-pass
       # bitrate optimization. Nothing great.

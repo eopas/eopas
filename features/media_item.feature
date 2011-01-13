@@ -7,8 +7,6 @@ Feature: Media
     Given the application is set up
       And a user: "johnf1" exists
       And I am logged in as the user "johnf1"
-      And I mock paperclip for "ffmpeg -i /tmp/paperclip-reprocess,27297,0 -ar 22050 -ab 64k -async 2 -acodec libvorbis -b 512k -bt 512k -r 30 -threads 0 -vcodec libtheora -padtop 30 -padright 0 -padbottom 30 -padleft 0 -s 320x180 -f ogg -y /tmp/paperclip-reprocess,27297,0-encoded,27297,0"
-
   Scenario: Upload Page exists if logged in
     Given I am on the home page
      When  I follow "Upload Media"
@@ -21,9 +19,28 @@ Feature: Media
       And I should see "You must be logged in to access that page."
 
   @javascript
-  Scenario: Create a new media item
+  Scenario: Create a new media item Audio
+    When I am on the new media item page
+     And I attach the file "features/test_data/test.mp3" with full path to "Media"
+     And I select "audio" from "Format"
+     And I fill in "Title" with "Test Audio"
+     And I select "31 March 2010" as the "media_item_recorded_at" date
+     And I fill in "Name of Annotator" with "John Ferlito"
+     And I fill in "Name of Participant" with "Random"
+     And I fill in "Copyright Holder" with "John Ferlito"
+     And I select "Germany" from "Country Code"
+     And I select "Korean (kor)" from "Language Code"
+     And I press "Create"
+    Then I should see "Media item was successfully created"
+
+  @wip
+  @javascript
+  Scenario: Create a new media item Video
+    Given I mock kickvideo for "ffmpeg -i.*-acodec libvorbis.*-vcodec libtheora.*-f ogg.*-y"
+      And I mock kickvideo for "ffmpeg -i.*-f image2.*-vcodec png"
     When I am on the new media item page
      And I attach the file "features/test_data/test.m4v" with full path to "Media"
+     And I select "video" from "Format"
      And I fill in "Title" with "Test Video"
      And I select "31 March 2010" as the "media_item_recorded_at" date
      And I fill in "Name of Annotator" with "John Ferlito"

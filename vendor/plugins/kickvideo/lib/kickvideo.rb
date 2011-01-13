@@ -16,5 +16,24 @@ module Paperclip::ClassMethods
       end
     end
   end
+
+  def validates_attached_audio(name, options = {})
+    validates_each(:"#{name}_content_type", options) do |record, attr, value|
+      file = record.send(name).to_file
+      unless file.nil? or Kickvideo::Inspector.new(:file => file.path).audio?
+        record.errors.add(:"#{name}_content_type", :invalid, :default => options[:message], :value => value)
+      end
+    end
+  end
+
+  def validates_attached_media(name, options = {})
+    validates_each(:"#{name}_content_type", options) do |record, attr, value|
+      file = record.send(name).to_file
+      unless file.nil? or Kickvideo::Inspector.new(:file => file.path).video? or  Kickvideo::Inspector.new(:file => file.path).audio?
+        record.errors.add(:"#{name}_content_type", :invalid, :default => options[:message], :value => value)
+      end
+    end
+  end
+
 end
 

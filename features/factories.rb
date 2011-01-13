@@ -30,6 +30,7 @@ end
 Factory.define :media_item do |m|
   m.title 'test video'
   m.private true
+  m.format 'video'
   m.recorded_at Time.now
   m.language_code 'en'
   m.license 'PD'
