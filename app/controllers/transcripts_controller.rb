@@ -5,6 +5,14 @@ class TranscriptsController < ApplicationController
 
   def index
     @transcripts = (Transcript.are_public + current_user.transcripts).uniq
+    if params[:sort] == "media_item"
+      @transcripts = @transcripts.sort_by {|a| a.media_item ? a.media_item.title : ""}
+    else
+      # make sure we got passed a valid column to sort by
+      if Transcript.column_names.find_index(params[:sort])
+        @transcripts = @transcripts.sort_by {|a| a.send(params[:sort]).to_s}
+      end
+    end
   end
 
   def show
@@ -35,7 +43,7 @@ class TranscriptsController < ApplicationController
 
     options = Hash.new
     if @transcript.save
-      flash[:notice] = 'Transcript was successfully validated and added, please edit automatically discovered values' 
+      flash[:notice] = 'Transcript was successfully validated and added, please edit automatically discovered values'
       options[:location] = edit_transcript_path(@transcript)
     end
 
