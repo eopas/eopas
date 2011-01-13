@@ -1,7 +1,8 @@
 db/*.sqlite
-log/*.log
+log/*
 rerun.txt
 tmp/*
 public/stylesheets/compiled/*
 public/system
 capybara*
+solr/data

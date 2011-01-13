@@ -3,6 +3,19 @@ class TranscriptPhrase < ActiveRecord::Base
 
   serialize :words, Array
 
+  # Here we are only setting up search for individual words or morphemes for clickability in a transcript
+  searchable do
+    text :text
+    text :morphemes do |phrase|
+      phrase.words.each do |word|
+        if word[:morphemes]['morpheme']
+          m = word[:morphemes]['morpheme'].join(' ')
+          puts m
+          m
+        end
+      end
+    end
+  end
 
   def to_s
     "\ntranscript_phrase {\n"+

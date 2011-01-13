@@ -17,6 +17,8 @@ gem 'xml-object'
 gem 'libxml-ruby'
 gem 'will_paginate'
 
+gem 'sunspot_rails'
+
 #gem 'exception_notifier'
 
 group :development, :test, :cucumber do
@@ -35,6 +37,8 @@ group :development, :test, :cucumber do
 
     gem 'pickle'
     gem 'factory_girl'
+
+    gem 'hirb'
 
 #    gem 'zombie', :git => 'git://github.com/assaf/zombie.git'
 #    gem 'capybara-zombie', :git => 'git://github.com/plataformatec/capybara-zombie.git'
