@@ -197,6 +197,6 @@ DEPENDENCIES
   rspec-rails
   spork
   sqlite3-ruby
-  will_paginate (= 3.0.pre2)
   sunspot_rails
+  will_paginate (= 3.0.pre2)
   xml-object
