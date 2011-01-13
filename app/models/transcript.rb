@@ -66,6 +66,14 @@ class Transcript < ActiveRecord::Base
     "}\n"
   end
 
+  def self.search(search)
+    if search
+      where(['title LIKE ?', "%#{search}%"])
+    else
+      scoped
+    end
+  end
+
   protected
   def create_transcription
     # FIXME find a better way of doing this

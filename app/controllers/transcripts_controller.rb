@@ -4,15 +4,28 @@ class TranscriptsController < ApplicationController
   filter_access_to :all
 
   def index
-    @transcripts = (Transcript.are_public + current_user.transcripts).uniq
+
+    @transcripts = (Transcript.search(params[:search]).are_public + current_user.transcripts.search(params[:search])).uniq
+
+    # sort by a given column
     if params[:sort] == "media_item"
       @transcripts = @transcripts.sort_by {|a| a.media_item ? a.media_item.title : ""}
     else
       # make sure we got passed a valid column to sort by
       if Transcript.column_names.find_index(params[:sort])
         @transcripts = @transcripts.sort_by {|a| a.send(params[:sort]).to_s}
+      else
+        @transcripts = @transcripts.sort_by {|a| a.title}
       end
     end
+
+    # reverse order if requested
+    if params[:direction] == "desc"
+      @transcripts = @transcripts.reverse
+    end
+
+    # pagination
+    @transcripts = @transcripts.paginate(:per_page => 5, :page => params[:page])
   end
 
   def show

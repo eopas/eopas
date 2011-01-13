@@ -113,20 +113,36 @@ $blue:      #7297ba;
 
 
 // transcript index page
-table#transcripts {
+#transcripts {
   width: 700px;
   margin: auto;
+}
+table#transcripts {
   padding: 10px;
   border-spacing: 2px 2px;
   border: 1px;
   th {
     background-color: $blue;
     color: white;
+    a {
+      color: white;
+    }
     font-weight: bold;
     text-align: center;
   }
   td {
   background-color: $lightblue;
+  }
+  th .current {  
+    padding-right: 18px;  
+    background-repeat: no-repeat;  
+    background-position: right center;  
+  }  
+  th .asc {   
+    background-image: url(/images/up_arrow.png);   
+  }  
+  th .desc {   
+    background-image: url(/images/down_arrow.png);   
   }
 }
 

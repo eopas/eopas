@@ -1,22 +1,31 @@
+#transcripts
+  %h2 Browse Transcripts
 
-%table#transcripts
-  %tr
-    %th.name= link_to "Date", :sort => "date"
-    %th.name= link_to "Creator", :sort => "creator"
-    %th.name= link_to "Title", :sort => "title"
-    %th.name= link_to "Language", :sort => "language_code"
-    %th.name Country
-    %th.name= link_to "Media", :sort => "media_item"
-    %th.name Action
-  - @transcripts.each do |transcript|
+  = form_tag transcripts_path, :method => 'get' do
+    %p
+      = text_field_tag :search, params[:search]
+      = submit_tag "Search", :name => nil
+
+  %table#transcripts
     %tr
-      %td=  transcript.date ? transcript.date.to_date : ""
-      %td=  transcript.creator
-      %td=  link_to transcript.title, transcript
-      %td=  transcript.language_code
-      %td==  transcript.country
-      %td=  transcript.media_item ? transcript.media_item.title : ""
-      %td
-        =link_to 'edit', edit_transcript_path(transcript)
-        =link_to 'show', transcript_path(transcript)
+      %th.name= sortable "date"
+      %th.name= sortable "creator"
+      %th.name= sortable "title"
+      %th.name= sortable "language_code", "Language"
+      %th.name Country
+      %th.name= sortable "media_item", "Media"
+      %th.name Action
+    - @transcripts.each do |transcript|
+      %tr
+        %td=  transcript.date ? transcript.date.to_date : ""
+        %td=  transcript.creator
+        %td=  link_to transcript.title, transcript
+        %td=  transcript.language_code
+        %td==  transcript.country
+        %td=  transcript.media_item ? transcript.media_item.title : ""
+        %td
+          =link_to 'edit', edit_transcript_path(transcript)
+          =link_to 'show', transcript_path(transcript)
+
+  = will_paginate @transcripts
 
