@@ -5,7 +5,8 @@ module Kickvideo #:nodoc:
     # * +format+: The output picture type, e.g. :jpg, :png, :gif
     def initialize(*args, &block)
       super
-      options[:position] ||= 1
+      options[:position] ||= 5
+      options[:geometry] ||= '160x120'
     end
 
     def make
@@ -20,7 +21,7 @@ module Kickvideo #:nodoc:
     protected
 
       def ffmpeg_command(out)
-        "ffmpeg -i #{@file.path} -ss #{options[:position]} -vframes 1 -f image2 -vcodec png #{out}"
+        "ffmpeg -i #{@file.path} -s #{options[:geometry]} -ss #{options[:position]} -vframes 1 -f image2 -vcodec png #{out}"
       end
   end
 end
