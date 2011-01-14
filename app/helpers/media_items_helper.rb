@@ -15,14 +15,32 @@ module MediaItemsHelper
     end
   end
 
+  def media_item_audio_tag(media_item, options = {}, &block)
+    options = {
+      :controls => '',
+      :src      => media_item.original.url(:audio),
+    }.merge(options)
+
+    if block_given?
+      content_tag :audio, yield, options
+    else
+      content_tag 'audio', nil, options
+    end
+  end
+
   def media_item_embed_tag(media_item, options = {}, &block)
+    if media_item.format == 'video'
+      item_url = media_item.original.url(:video)
+    else
+      item_url = media_item.original.url(:audio)
+    end
     options = {
       :class       => 'eopas_player',
       :frameborder => 0,
       :type        => 'text/html',
       :width       => '320',
       :height      => '240',
-      :src         => 'http://'+request.host+(request.port!=80 ? ':'+request.port.to_s : '') + media_item.original.url(:video)
+      :src         => 'http://'+request.host+(request.port!=80 ? ':'+request.port.to_s : '') + item_url
     }.merge(options)
 
     if block_given?

@@ -6,7 +6,10 @@
   - if @media_item.original_processing
     = image_tag '/originals/poster/missing.png'
   -else
-    = media_item_video_tag @media_item, {:preload => 'auto'}
+    - if @media_item.format == 'video'
+      = media_item_video_tag @media_item, {:preload => 'auto'}
+    - else
+      = media_item_audio_tag @media_item, {:preload => 'auto'}
 
     Embed code:
     %br

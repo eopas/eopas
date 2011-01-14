@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(:version => 20110108201232) do
 
   create_table "transcripts", :force => true do |t|
     t.integer  "media_item_id"
-    t.integer  "depositor_id",                                 :null => false
+    t.integer  "depositor_id",                            :null => false
     t.string   "creator"
     t.string   "language_code"
     t.string   "date"
@@ -95,9 +95,8 @@ ActiveRecord::Schema.define(:version => 20110108201232) do
     t.string   "transcript_format"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "string",                :default => "Unknown", :null => false
     t.string   "title"
-    t.boolean  "private",               :default => true,      :null => false
+    t.boolean  "private",               :default => true, :null => false
   end
 
   create_table "users", :force => true do |t|

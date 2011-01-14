@@ -22,3 +22,6 @@ running the tests:
 * rake cucumber:wip
 * bundle exec cucumber -f pretty -p wip features/transcription.feature:24 -b
 
+running transcoding:
+* rake -T    (lists rake tasks)
+* rake jobs:work   (transcodes) 
