@@ -1,3 +1,5 @@
+/*global country_languages */
+
 "use strict";
 
 // Place your application-specific JavaScript functions and classes here
@@ -30,6 +32,28 @@ function setup_embedding() {
     $(this).select();
   });
 }
+
+function parse_hash_ref(href, media) {
+  var anchor = href.replace(/.*#t=(.*)/, "$1");
+  if (!anchor) {
+    return;
+  }
+
+  var times = anchor.split(',');
+  if (times.length != 2) {
+    return;
+  }
+
+
+  var start = times[0];
+  var end = times[1];
+  if (media) {
+    media.attr('currentTime', start);
+    media.attr('data-pause', end);
+    media.trigger('play');
+  }
+}
+
 
 function setup_playback(media) {
   media.bind('timeupdate', function() {
@@ -75,16 +99,13 @@ function setup_playback(media) {
     }
   });
 
-  $('.play_button').click(function() {
-    var start = $(this).attr('data-start');
-    var end   = $(this).attr('data-end');
-    if (media) {
-      media.attr('currentTime', start);
-      media.attr('data-pause', end);
-      media.trigger('play');
-    }
+  $('a.play_button').click(function() {
+    return parse_hash_ref($(this).attr('href'), media);
   });
 
+  media.bind('loadedmetadata', function() {
+      parse_hash_ref(location.href, media);
+  });
 }
 
 // resizing the transcript_display div with the remaining screen-size
@@ -124,18 +145,20 @@ function setup_country_code() {
         child.append("<option selected='selected'> -- Select -- </option>");
       }
 
-      var sorted_keys = new Array();
-      for (code in country_languages[country_code]) {
-        sorted_keys.push(code);
+      var sorted_keys = [];
+      for (var code in country_languages[country_code]) {
+        if (country_languages[country_code].hasOwnProperty(code)) {
+          sorted_keys.push(code);
+        }
       }
       sorted_keys.sort(function(a,b) {
         return country_languages[country_code][a] > country_languages[country_code][b];
       });
 
-      for (i in sorted_keys) {
+      for (var i = 0; i < sorted_keys.length; i++) {
         code = sorted_keys[i];
 
-        selected = '';
+        var selected = '';
         if (code == selected_code) {
           selected = ' selected=selected';
         }

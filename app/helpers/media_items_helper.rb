@@ -4,7 +4,7 @@ module MediaItemsHelper
       :controls => '',
       :width    => 320,
       :height   => 240,
-      :src      => media_item.original.url(:standard),
+      :src      => media_item.original.url(:video),
       :poster   => media_item.original.url(:poster)
     }.merge(options)
 
@@ -22,7 +22,7 @@ module MediaItemsHelper
       :type        => 'text/html',
       :width       => '320',
       :height      => '240',
-      :src         => 'http://'+request.host+(request.port!=80 ? ':'+request.port.to_s : '') + media_item.original.url(:standard)
+      :src         => 'http://'+request.host+(request.port!=80 ? ':'+request.port.to_s : '') + media_item.original.url(:video)
     }.merge(options)
 
     if block_given?
