@@ -25,7 +25,7 @@ class TranscriptsController < ApplicationController
     end
 
     # pagination
-    @transcripts = @transcripts.paginate(:per_page => 5, :page => params[:page])
+    @transcripts = @transcripts.paginate(:per_page => 20, :page => params[:page])
   end
 
   def show
