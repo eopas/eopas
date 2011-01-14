@@ -99,6 +99,9 @@ $blue:      #7297ba;
         text-weight: bold;
       }
     }
+    li#right {
+      float: right;
+    }
   }
 }
 
@@ -111,6 +114,9 @@ $blue:      #7297ba;
   }
 }
 
+#about, #help {
+  margin-right: 15px;
+}
 
 // transcript index page
 #transcripts {

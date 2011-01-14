@@ -8,6 +8,7 @@ Eopas::Application.routes.draw do
 
   # Static
   get 'about', :to => 'static#about', :as => 'about'
+  get 'help',  :to => 'static#help',  :as => 'help'
 
   # Auth
   get 'login',  :to => 'user_sessions#new',     :as => 'login'
