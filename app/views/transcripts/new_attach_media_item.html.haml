@@ -8,12 +8,17 @@
   = hidden_field_tag :transcript_id, @transcript.id
   = hidden_field_tag :media_item_id
 
-  - @media_items.each do |media_item|
-    %li
-      .item
-        = link_to image_tag(media_item.original.url(:thumbnail)), media_item
-        %p
-          = link_to media_item.title, media_item
-          (
-          = link_to 'Attach', '#', 'data-add-media-item' => true, 'data-media-item-id' => media_item.id
-          )
+  %ul.media_items
+    - @media_items.each do |media_item|
+      %li
+        .item
+          - if media_item.format == 'video'
+            = link_to image_tag(media_item.original.url(:thumbnail)), media_item
+          - else
+            = link_to image_tag('/originals/thumbnail/audio.png'), media_item
+          %p
+            = link_to media_item.title, media_item
+          %p
+            (
+            = link_to 'Attach', '#', 'data-add-media-item' => true, 'data-media-item-id' => media_item.id
+            )
