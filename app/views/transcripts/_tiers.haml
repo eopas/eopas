@@ -9,7 +9,7 @@
         %td.controls{:title => "#{tier_phrases[i][0].start_time} to #{tier_phrases[i][0].end_time}"}
           = "s#{i+1}"
           %br
-          = link_to image_tag('/images/play.png'), "#t=#{tier_phrases[i][0].start_time},#{tier_phrases[i][0].end_time}", :class => 'play_button'
+          = link_to image_tag('/images/play.png'), "#t=#{tier_phrases[i][0].start_time},#{tier_phrases[i][0].end_time}", :class => 'play_button', 'data-start' => "#{tier_phrases[i][0].start_time}", 'data-end' => "#{tier_phrases[i][0].end_time}"
         %td.tracks
           - tier_phrases[i].each do |phrase|
             - if !phrase.words.empty?

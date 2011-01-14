@@ -33,27 +33,31 @@ function setup_embedding() {
   });
 }
 
-function parse_hash_ref(href, media) {
-  var anchor = href.replace(/.*#t=(.*)/, "$1");
-  if (!anchor) {
+// changing URL hash on window
+function do_VideoFragment() {
+  var url = window.location.href;
+  var fragment = url.replace(/.*#t=(.*)/, "$1");
+  if (!fragment) {
     return;
   }
 
-  var times = anchor.split(',');
+  var times = fragment.split(',');
   if (times.length != 2) {
     return;
   }
 
-
-  var start = times[0];
+  var start = (1.0*times[0]).toFixed(2);
   var end = times[1];
-  if (media) {
-    media.attr('currentTime', start);
-    media.attr('data-pause', end);
-    media.trigger('play');
+  var m;
+  if ($('video')) {
+    m = $('video').first();
+  } else if ($('audio')) {
+    m = $('audio').first();
   }
+  m.attr('currentTime', start);
+  m.trigger('play');
+  m.attr('data-pause', end);
 }
-
 
 function setup_playback(media) {
   media.bind('timeupdate', function() {
@@ -78,6 +82,8 @@ function setup_playback(media) {
           }
           // highlight currently playing track
           line.find('.tracks').addClass('hilight');
+          // change hash on URL
+          window.location.hash="t="+$(this).attr('data-start')+","+$(this).attr('data-end');
         }
       } else {
         $(this).closest('.line').find('.tracks').removeClass('hilight');
@@ -100,13 +106,11 @@ function setup_playback(media) {
   });
 
   $('a.play_button').click(function() {
-    return parse_hash_ref($(this).attr('href'), media);
-  });
-
-  media.bind('loadedmetadata', function() {
-      parse_hash_ref(location.href, media);
+    window.location.hash="t="+$(this).attr('href').replace(/.*#t=(.*)/, "$1");
+    do_VideoFragment();
   });
 }
+
 
 // resizing the transcript_display div with the remaining screen-size
 function do_onResize() {
@@ -206,6 +210,9 @@ $(document).ready(function() {
 
   // Form bits
   setup_transcript_media_item();
+
+  // on URL hashchange of page
+  media.bind('loadedmetadata', do_VideoFragment);
 });
 
 
