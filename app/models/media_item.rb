@@ -53,7 +53,6 @@ class MediaItem < ActiveRecord::Base
 
   attr_accessible :title, :original, :format, :recorded_at, :annotator_name, :participant_name, :participant_role, :language_code,
                   :copyright, :license, :private, :country_code
-  attr_accessor :country_code # So on validation errror it is still filled in
 
   FORMATS = %w{audio video}
 
@@ -64,6 +63,7 @@ class MediaItem < ActiveRecord::Base
   validates :depositor,     :presence => true, :associated => true
   validates :recorded_at,   :presence => true
   validates :language_code, :presence => true
+  validates :country_code,  :presence => true
   validates :license,       :presence => true
   validates :participant_role, :inclusion => { :in => PARTICIPANT_ROLES + [nil]}
 
@@ -79,6 +79,7 @@ class MediaItem < ActiveRecord::Base
     "   original:  "+self.original_file_name.to_s+"\n"+
     "   annotator: "+self.annotator_name.to_s+"\n"+
     "   language:  "+self.language_code.to_s+"\n"+
+    "   country:   "+self.country_code.to_s+"\n"+
     "   created:   "+self.created_at.to_s+"\n"+
     "}\n"
   end

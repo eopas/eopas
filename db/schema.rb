@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110108201232) do
+ActiveRecord::Schema.define(:version => 20110114162055) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "name"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20110108201232) do
     t.datetime "updated_at"
     t.boolean  "original_processing"
     t.string   "format"
+    t.string   "country_code"
   end
 
   add_index "media_items", ["item_id"], :name => "index_media_items_on_item_id", :unique => true
@@ -84,10 +85,10 @@ ActiveRecord::Schema.define(:version => 20110108201232) do
 
   create_table "transcripts", :force => true do |t|
     t.integer  "media_item_id"
-    t.integer  "depositor_id",                            :null => false
+    t.integer  "depositor_id",                                           :null => false
     t.string   "creator"
     t.string   "language_code"
-    t.string   "date"
+    t.datetime "date",                  :limit => 255
     t.string   "original_file_name"
     t.string   "original_content_type"
     t.string   "original_file_size"
@@ -96,7 +97,8 @@ ActiveRecord::Schema.define(:version => 20110108201232) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
-    t.boolean  "private",               :default => true, :null => false
+    t.boolean  "private",                              :default => true, :null => false
+    t.string   "country_code"
   end
 
   create_table "users", :force => true do |t|

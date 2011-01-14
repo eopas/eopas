@@ -32,9 +32,7 @@ class Transcript < ActiveRecord::Base
   include Paperclip
   has_attached_file :original, :url => "/system/transcript/:attachment/:id/:style/:filename"
 
-  attr_accessible :original, :transcript_format, :title
-
-  attr_accessor :country_code # So on validation errror it is still filled in
+  attr_accessible :original, :transcript_format, :title, :country_code, :language_code, :private, :creator, :date
 
   FORMATS = ['ELAN', 'Toolbox', 'Transcriber', 'EOPAS']
 
@@ -60,6 +58,7 @@ class Transcript < ActiveRecord::Base
     "   depositor:  "+self.depositor.to_s+"\n"+
     "   creator:    "+self.creator.to_s+"\n"+
     "   language:   "+self.language_code.to_s+"\n"+
+    "   country:    "+self.country_code.to_s+"\n"+
     "   date:       "+self.date.to_s+"\n"+
     "   original:   "+self.original_file_name.to_s+"\n"+
     "   created:    "+self.created_at.to_s+"\n"+

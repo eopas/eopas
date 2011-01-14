@@ -6,7 +6,8 @@
     = hidden_field_tag :sort, params[:sort]
     %p
       = text_field_tag :search, params[:search]
-      = submit_tag "Search", :name => nil
+      = submit_tag "Search"
+      = submit_tag "Clear"
 
   %table#transcripts
     %tr
@@ -14,7 +15,7 @@
       %th.name= sortable "creator"
       %th.name= sortable "title"
       %th.name= sortable "language_code", "Language"
-      %th.name Country
+      %th.name= sortable "country_code", "Country"
       %th.name= sortable "media_item", "Media"
       %th.name Action
     - @transcripts.each do |transcript|
@@ -23,7 +24,7 @@
         %td=  transcript.creator
         %td=  link_to transcript.title, transcript
         %td=  transcript.language_code
-        %td==  transcript.country
+        %td=  transcript.country_code
         %td=  transcript.media_item ? transcript.media_item.title : ""
         %td
           =link_to 'edit', edit_transcript_path(transcript)

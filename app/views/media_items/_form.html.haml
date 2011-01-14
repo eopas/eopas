@@ -52,7 +52,6 @@
       %td.value
         = form.select :country_code, options_from_collection_for_select(Country.all.sort_by(&:name), :code, :name, @media_item.country_code), {}, :class => 'country-select', 'data-select-child' => 'media_item_language_code'
 
-
     %tr
       %td.name
         = form.label :language_code, 'Language Code'

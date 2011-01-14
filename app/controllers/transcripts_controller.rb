@@ -4,6 +4,9 @@ class TranscriptsController < ApplicationController
   filter_access_to :all
 
   def index
+    if params[:commit] == 'Clear'
+      params[:search] = ""
+    end
 
     @transcripts = (Transcript.search(params[:search]).are_public + current_user.transcripts.search(params[:search])).uniq
 
@@ -74,7 +77,7 @@ class TranscriptsController < ApplicationController
       flash[:notice] = 'Transcript was successfully updated.'
     end
 
-    respond_with @transcript
+    respond_with @transcript, :location => transcripts_path
   end
 
   def destroy
