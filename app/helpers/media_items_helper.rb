@@ -18,7 +18,7 @@ module MediaItemsHelper
   def media_item_audio_tag(media_item, options = {}, &block)
     options = {
       :controls => '',
-      :src      => media_item.original.url(:audio),
+      :src      => media_item.original.url(:audio)
     }.merge(options)
 
     if block_given?

@@ -4,7 +4,7 @@
 
 .collapse_content
   - if @media_item.original_processing
-    = image_tag '/originals/poster/missing.png'
+    = image_tag '/originals/thumbnail/transcoding.png'
   -else
     - if @media_item.format == 'video'
       = media_item_video_tag @media_item, {:preload => 'auto'}
