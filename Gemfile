@@ -17,7 +17,7 @@ gem 'xml-object'
 gem 'libxml-ruby'
 gem 'will_paginate', '3.0.pre2'
 
-gem 'sunspot_rails'
+#gem 'sunspot_rails'
 
 #gem 'exception_notifier'
 
