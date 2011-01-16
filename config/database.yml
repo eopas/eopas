@@ -9,7 +9,9 @@ common: &COMMON
 
 production:
   <<: *COMMON
-  database: db/production.sqlite
+  database: eopas
+  user: root
+  adapter: mysql
 
 development:
   <<: *COMMON
