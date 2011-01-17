@@ -1,3 +1,1 @@
-ActionMailer::Base.smtp_settings = {
-  :delivery_method => :sendmail
-}
+ActionMailer::Base.delivery_method = :sendmail
