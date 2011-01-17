@@ -68,7 +68,7 @@ GEM
       json (~> 1.4.6)
       term-ansicolor (~> 1.0.5)
     culerity (0.2.13)
-    daemons (1.1.0)
+    daemons (1.0.10)
     database_cleaner (0.6.0)
     declarative_authorization (0.5.2)
     delayed_job (2.1.0.pre2)
@@ -169,6 +169,7 @@ DEPENDENCIES
   capybara
   compass
   cucumber-rails!
+  daemons (= 1.0.10)
   database_cleaner
   declarative_authorization
   delayed_job

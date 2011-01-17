@@ -12,7 +12,7 @@ gem 'declarative_authorization'
 gem 'paperclip'
 gem 'delayed_paperclip'
 gem 'delayed_job'
-#gem 'daemons', '1.0.10' # Need this otherwise delayed job won't start when talking to mysql # https://github.com/tobi/delayed_job/issues#issue/10
+gem 'daemons', '1.0.10' # Need this otherwise delayed job won't start when talking to mysql https://github.com/collectiveidea/delayed_job/issues#issue/81
 gem 'nokogiri'
 gem 'xml-object'
 gem 'libxml-ruby'
