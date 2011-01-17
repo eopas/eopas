@@ -70,7 +70,9 @@ proceeding.
       && apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring \
       && apt-get --quiet update
     aptitude update
-    apt-get install w64codecs w32codecs libavcodec-extra-52
+    apt-get install w64codecs w32codecs libavcodec-extra-52 libavdevice-extra-52 \
+      libavfilter-extra-0 libavformat-extra-52 libpostproc-extra-51 \
+      libswscale-extra-0 ffmpeg
 
 
 

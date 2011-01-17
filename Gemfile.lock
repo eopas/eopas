@@ -171,7 +171,7 @@ DEPENDENCIES
   cucumber-rails!
   database_cleaner
   declarative_authorization
-  delayed_job (= 2.1.0.pre2)
+  delayed_job
   delayed_paperclip
   factory_girl
   haml

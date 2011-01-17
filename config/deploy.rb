@@ -22,6 +22,8 @@ namespace :deploy do
   end
 end
 
+# Delayed job needs this
+set :rails_env, 'production'
 # Delayed job
 after "deploy:stop",    "delayed_job:stop"
 after "deploy:start",   "delayed_job:start"
