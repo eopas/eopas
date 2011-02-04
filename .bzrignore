@@ -1,8 +1,0 @@
-db/*.sqlite
-log/*
-rerun.txt
-tmp/*
-public/stylesheets/compiled/*
-public/system
-capybara*
-solr/data

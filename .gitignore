@@ -1,0 +1,6 @@
+db/*.sqlite
+log/*
+rerun.txt
+tmp/*
+public/stylesheets
+public/system
