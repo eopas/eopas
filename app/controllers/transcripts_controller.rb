@@ -77,7 +77,7 @@ class TranscriptsController < ApplicationController
       flash[:notice] = 'Transcript was successfully updated.'
     end
 
-    respond_with @transcript, :location => transcripts_path
+    respond_with @transcript
   end
 
   def destroy

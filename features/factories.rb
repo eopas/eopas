@@ -32,6 +32,7 @@ Factory.define :media_item do |m|
   m.private true
   m.format 'video'
   m.recorded_at Time.now
+  m.country_code 'au'
   m.language_code 'en'
   m.license 'PD'
   m.attach( "original", "features/test_data/test.m4v", "video/mp4" )
