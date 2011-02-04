@@ -67,6 +67,8 @@ GEM
       gherkin (~> 2.3.2)
       json (~> 1.4.6)
       term-ansicolor (~> 1.0.5)
+    cucumber_spinner (0.2.0)
+      rtui (>= 0.2.2)
     culerity (0.2.13)
     daemons (1.0.10)
     database_cleaner (0.6.0)
@@ -142,6 +144,7 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.4.0)
+    rtui (0.2.2)
     rubyzip (0.9.4)
     selenium-webdriver (0.1.2)
       childprocess (~> 0.1.5)
@@ -169,6 +172,7 @@ DEPENDENCIES
   capybara
   compass
   cucumber-rails!
+  cucumber_spinner
   daemons (= 1.0.10)
   database_cleaner
   declarative_authorization
