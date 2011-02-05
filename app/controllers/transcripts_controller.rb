@@ -18,7 +18,7 @@ class TranscriptsController < ApplicationController
       if Transcript.column_names.find_index(params[:sort])
         @transcripts = @transcripts.sort_by {|a| a.send(params[:sort]).to_s}
       else
-        @transcripts = @transcripts.sort_by {|a| a.title}
+        @transcripts = @transcripts.sort_by {|a| a.title ? a.title : ""}
       end
     end
 
