@@ -1,0 +1,22 @@
+%button#tier_title.hider{'data-hide-selector' => "#tier_list"}
+  == Set Displayed Tracks
+%form#tier_list
+  -# We work this out off the first phrase
+  - first_phrase = @transcript.phrases.first
+
+  - if first_phrase.original
+    %input.tier_info.hider{'data-hide-selector' => ".transcription", :type => 'checkbox', :checked => 'checked'}
+      Show transcription
+      %br
+
+  - if first_phrase.words.size > 0
+    %input.tier_info.hider{'data-hide-selector' => ".morphemes", :type => 'checkbox', :checked => 'checked'}
+      Show morphemes
+      %br
+
+  - if first_phrase.translation
+    %input.tier_info.hider{'data-hide-selector' => ".translation", :type => 'checkbox', :checked => 'checked'}
+      Show translation
+      %br
+
+

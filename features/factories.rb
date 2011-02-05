@@ -47,9 +47,9 @@ Factory.define :transcript do |t|
   t.association :depositor, :factory => :user
 end
 
-Factory.define :transcript_tier do |t|
-end
-
-Factory.define :transcript_phrase do |t|
-end
+#Factory.define :transcript_tier do |t|
+#end
+#
+#Factory.define :transcript_phrase do |t|
+#end
 

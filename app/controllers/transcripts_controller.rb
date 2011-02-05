@@ -60,7 +60,7 @@ class TranscriptsController < ApplicationController
     options = Hash.new
     if @transcript.save
       flash[:notice] = 'Transcript was successfully validated and added, please edit automatically discovered values'
-      options[:location] = edit_transcript_path(@transcript)
+      options[:location] = edit_transcript_path @transcript
     end
 
     respond_with @transcript, options

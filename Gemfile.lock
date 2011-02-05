@@ -94,7 +94,6 @@ GEM
     launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
-    libxml-ruby (1.1.4)
     mail (2.2.13)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -159,7 +158,6 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
     will_paginate (3.0.pre2)
-    xml-object (0.9.93)
     xpath (0.1.2)
       nokogiri (~> 1.3)
     yard (0.6.4)
@@ -182,7 +180,6 @@ DEPENDENCIES
   haml
   hirb
   launchy
-  libxml-ruby
   mysql
   nokogiri
   paperclip
@@ -192,4 +189,3 @@ DEPENDENCIES
   spork
   sqlite3-ruby
   will_paginate (= 3.0.pre2)
-  xml-object

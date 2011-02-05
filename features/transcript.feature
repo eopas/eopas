@@ -48,7 +48,7 @@ Feature: Media Items can have transcriptions
       | transcriber1.xml | ELAN        | No matching global declaration available for the validation root |
       | eopas1.xml       | ELAN        | No matching global declaration available for the validation root |
 
-
+  @wip
   Scenario Outline: Upload valid transcriptions
     Given I am on the new transcript page
      When I attach the file "features/test_data/<file>" to "Transcript"

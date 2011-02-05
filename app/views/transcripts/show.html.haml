@@ -22,10 +22,9 @@
 
 
 #right_column
-  - tiers = @transcript.tiers
   #tiers_info
-    = render :partial => 'tierinfo', :locals => {:tiers => tiers}
+    = render :partial => 'tiers_info'
 
   #transcript_display
-    = render :partial => 'tiers', :locals => {:tiers => tiers}
+    = render :partial => 'phrases'
 

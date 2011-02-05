@@ -2,7 +2,7 @@ require 'transcription'
 
 class ProperSchemaValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
-    unless record.tiers.empty?
+    unless record.new_record?
       return
     end
     transcription = record.instance_variable_get(:@transcription)
@@ -24,7 +24,7 @@ class Transcript < ActiveRecord::Base
   belongs_to :depositor, :class_name => 'User'
   belongs_to :media_item
 
-  has_many :tiers, :class_name => 'TranscriptTier', :dependent => :destroy
+  has_many :phrases, :class_name => 'TranscriptPhrase', :dependent => :destroy
 
   scope :are_private, where(:private => true)
   scope :are_public, where(:private => false)
@@ -47,23 +47,6 @@ class Transcript < ActiveRecord::Base
   validates_attachment_presence :original
 
   before_validation :create_transcription, :on => :create
-  before_save :import_transcription, :on => :create
-
-
-  def to_s
-    "\ntranscript {\n"+
-    "   id:         "+self.id.to_s+"\n"+
-    "   title:      "+self.title.to_s+"\n"+
-    "   media_item: "+self.media_item.to_s+"\n"+
-    "   depositor:  "+self.depositor.to_s+"\n"+
-    "   creator:    "+self.creator.to_s+"\n"+
-    "   language:   "+self.language_code.to_s+"\n"+
-    "   country:    "+self.country_code.to_s+"\n"+
-    "   date:       "+self.date.to_s+"\n"+
-    "   original:   "+self.original_file_name.to_s+"\n"+
-    "   created:    "+self.created_at.to_s+"\n"+
-    "}\n"
-  end
 
   def self.search(search)
     if search
@@ -79,11 +62,6 @@ class Transcript < ActiveRecord::Base
     if original_file_name
       file_path = original.to_file.path
       @transcription = Transcription.new(:data => File.read(file_path).force_encoding('UTF-8'), :format => transcript_format)
-    end
-  end
-
-  def import_transcription
-    if @transcription
       @transcription.import self
     end
   end

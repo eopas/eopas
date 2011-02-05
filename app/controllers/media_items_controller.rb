@@ -46,9 +46,7 @@ class MediaItemsController < ApplicationController
 
       redirect_to media_items_path
     elsif @media_item.transcripts.empty?
-      p Transcript.first
       @media_item.destroy
-      p Transcript.all.first
       flash[:notice] = 'Media Item deleted!'
 
       redirect_to media_items_path

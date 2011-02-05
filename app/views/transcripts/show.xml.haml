@@ -8,9 +8,27 @@
     %meta{:name => "dc:date",     :value => @transcript.date}
 
   %interlinear
-    - @transcript.tiers.each do |tier|
-      %tier{:id => tier.tier_id, :parent => tier.parent_id, :lang => tier.language_code, :linguistic_type => tier.linguistic_type}
-        - tier.phrases.each do |phrase|
-          %phrase{:id => phrase.phrase_id, :startTime => phrase.start_time, :endTime => phrase.end_time, :participant => phrase.participant, :ref_phrase => phrase.ref_phrase}<
-            =phrase.text
+    - phrases = @transcript.phrases
+    - first_phrase = phrases.first
+    - if first_phrase.original
+      %tier{:id => "o", :linguistic_type => 'transcription'}
+        - phrases.each do |phrase|
+          %phrase{:id => "o_#{phrase.phrase_id}", :startTime => phrase.start_time, :endTime => phrase.end_time}
+            %text= phrase.original
+            %wordlist
+              - phrase.words.each do |word|
+                %word
+                  %text= word.word
+                  %morphemelist
+                    - word.morphemes do |morpheme|
+                      %morpheme
+                        %text{:kind => 'morpheme'}= morpheme.morpheme
+                        %text{:kind => 'gloss'}= morpheme.gloss
+    - if first_phrase.original
+      %tier{:id => "fg", :linguistic_type => 'translation'}
+        - phrases.each do |phrase|
+          %phrase{:id => "fg_#{phrase.phrase_id}", :startTime => phrase.start_time, :endTime => phrase.end_time}
+            %text= phrase.translation
+
+
 

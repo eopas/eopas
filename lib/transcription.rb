@@ -15,14 +15,14 @@
 
 require 'nokogiri'
 require 'fileutils'
-require 'xml-object'
-require 'xml-object/adapters/libxml'
 
 class Transcription
 
   def initialize(options = {})
     @data = options[:data]
     @format = options[:format].downcase
+
+    @errors = []
 
     # parse XML file
     @doc = Nokogiri::XML(@data)
@@ -41,7 +41,7 @@ class Transcription
     @xsd = Nokogiri::XML::Schema(File.open(xsdname))
 
     # validate doc and print errors
-    @errors = @xsd.validate(@doc)
+    @errors += @xsd.validate(@doc)
   end
 
   def errors
@@ -49,7 +49,7 @@ class Transcription
   end
 
   def valid?
-    @xsd.valid?(@doc)
+    @xsd.valid?(@doc) and @errors.nil?
   end
 
   def to_eopas
@@ -58,106 +58,97 @@ class Transcription
     @xslt  = Nokogiri::XSLT(File.open(xsltname))
 
     # transcode XML file
-    @e_doc = @xslt.transform(@doc)
+    e_doc = @xslt.transform(@doc)
 
     # transcoding failed and just produced:
     # <?xml version="1.0" encoding="UTF-8"?>
-    return if @e_doc == '<?xml version="1.0" encoding="UTF-8"?>'
+    return if e_doc == '<?xml version="1.0" encoding="UTF-8"?>'
 
-    @e_doc.to_s
+    e_doc
   end
 
   def import(transcript)
-    eopas_xml = to_eopas
-    eopas = XMLObject.new(eopas_xml)
+    doc = to_eopas
+    eopas = doc.xpath('/eopas')
 
-    metas = eopas.header.meta
-    metas = [metas] unless metas.is_a? Array
+    metas = eopas.xpath('//meta')
     metas.each do |meta|
-      case meta.name
+      case meta['name']
       when "dc:creator"
-        transcript.creator = meta.value
+        transcript.creator = meta['value']
       when "dc:language"
-        transcript.language_code = meta.value
+        transcript.language_code = meta['value']
       when "dc:date"
-        transcript.date = meta.value
+        transcript.date = meta['value']
       end
     end
 
-    tiers = eopas.interlinear.tier
-    tiers = [tiers] unless tiers.is_a? Array
+    tiers = eopas.xpath('interlinear/tier')
     tiers.each do |tier|
-      # create new tier
-      t = transcript.tiers.build
-      begin
-        t.tier_id         = tier.id
-      rescue NameError
-      end
-      begin
-        t.language_code   = tier.lang
-      rescue NameError
-      end
-      begin
-        t.linguistic_type = tier.linguistic_type
-      rescue NameError
-      end
-      begin
-        t.parent = transcript.tiers.select{|tt| tt.tier_id == tier.parent}.first
-      rescue NameError
-      end
 
-      phrases = tier.phrase
-      phrases = [phrases] unless phrases.is_a? Array
+      phrases = tier.xpath('phrase')
       phrases.each do |phrase|
         # create new phrase
-        ph = t.phrases.build
-        begin
-          ph.phrase_id       = phrase.id
-        rescue NameError
-        end
-        ph.start_time      = phrase.startTime.to_f
-        ph.end_time        = phrase.endTime.to_f
-        begin
-          ph.ref_phrase      = phrase.ref
-        rescue NameError
-        end
-        begin
-          ph.participant     = phrase.participant
-        rescue NameError
-        end
-        begin
-          ph.text            = phrase.text
-        rescue NameError
-        end
-        ph.words           = []
+        phrase_id = phrase['id'].gsub(/.*_/, '')
 
-        begin
-          words = phrase.wordlist.word
-        rescue NameError => e
-          words = []
+        ph = transcript.phrases.select {|p| p.phrase_id == phrase_id}.first || transcript.phrases.build
+
+        ph.phrase_id  = phrase_id
+        ph.start_time = phrase['startTime'].to_f
+        ph.end_time   = phrase['endTime'].to_f
+
+        case tier['linguistic_type']
+        when 'transcription'
+          import_transcription_phrase phrase, ph
+        when 'translation'
+          import_translation_phrase phrase, ph
+        else
+        @errors << Struct.new(:message).new("Linguistic type #{tier['linguistic_type']} not supported")
+        next
         end
-        words = [words] unless words.is_a? Array
 
-        words.each do |word|
-          new_word = {:text => word.text + "", :morphemes => {} }
+      end
+    end
+  end
 
-          begin
-            morphemes = word.morphemelist.morpheme
-          rescue NameError => e
-            morphemes = []
+  private
+  def import_transcription_phrase(phrase, ph)
+    ph.original = phrase.xpath('text').first.content
+    words = phrase.xpath('wordlist/word')
+
+    word_position = 1
+    words.each do |word|
+      w = ph.words.build
+      w.position = word_position
+      word_position += 1
+      w.word = word.xpath('text').first.content
+
+      morphemes = word.xpath('morphemelist/morpheme')
+
+      morpeheme_position = 1
+      morphemes.each do |morpheme|
+        m = w.morphemes.build
+        m.position = morpeheme_position
+        morpeheme_position += 1
+
+        texts = morpheme.xpath('text')
+        texts.each do |text|
+          case text['kind']
+          when 'morpheme'
+            m.morpheme = text.content
+          when 'gloss'
+            m.gloss = text.content
+          else
+            @errors << Struct.new(:message).new("Unknown text kind #{text['kind']}")
+            next
           end
-          morphemes = [morphemes] unless morphemes.is_a? Array
-
-          morphemes.each do |morpheme|
-            texts = morpheme.text
-            texts.each do |text|
-              new_word[:morphemes][text.kind + ""] ||= []
-              new_word[:morphemes][text.kind + ""] << (text + "")
-            end
-          end
-          ph.words << new_word
         end
       end
     end
   end
+
+  def import_translation_phrase(phrase, ph)
+    ph.translation = phrase.xpath('text').first.content
+  end
+
 end

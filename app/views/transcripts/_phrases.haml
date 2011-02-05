@@ -1,0 +1,38 @@
+- i = 0
+- @transcript.phrases.each do |phrase|
+  %table.line
+    %tr
+      %td.controls{:title => "#{phrase.start_time} to #{phrase.end_time}"}
+        = "s#{i += 1}"
+        %br
+        = link_to image_tag('/images/play.png'), "#t=#{phrase.start_time},#{phrase.end_time}", :class => 'play_button', 'data-start' => "#{phrase.start_time}", 'data-end' => "#{phrase.end_time}"
+      %td.tracks
+        - if phrase.original
+          .tier{:class => [phrase.phrase_id, 'transcription']}
+            = phrase.original #force_encoding('UTF-8')
+
+        - words = phrase.words
+        - unless words.empty?
+          .tier{:class => ["#{phrase.phrase_id}_w", 'morphemes']}
+            - words.each do |word|
+              - morphemes = word.morphemes
+              - colspan = morphemes.empty? ? 1 : morphemes.size
+              %span
+                %table
+                  %tr
+                    %td{:colspan => colspan}
+                      = word[:text] #.force_encoding('UTF-8')
+
+                      %tr
+                        - morphemes.each do |s|
+                          %td{:class => 'morpheme'}= s.morpheme #.force_encoding('UTF-8')
+
+                      %tr
+                        - morphemes.each do |s|
+                          %td{:class => 'gloss'}= s.gloss #.force_encoding('UTF-8')
+
+        - if phrase.translation
+          .tier{:class => [phrase.phrase_id, 'translation']}
+            = phrase.translation #force_encoding('UTF-8')
+
+
