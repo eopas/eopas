@@ -105,7 +105,7 @@ ActiveRecord::Schema.define(:version => 20110114162055) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
-    t.boolean  "private",                              :default => true, :null => false
+    t.boolean  "private",                              :default => false, :null => false
     t.string   "country_code"
   end
 
