@@ -3,6 +3,8 @@ module Kickvideo #:nodoc:
     AUDIO_PROFILES = {
       # Default should work with any install.
       :default => "-ar 22050 -ab 64k -async 2 -acodec libvorbis",
+      # Ogg codec.
+      :ogg => "-ar 22050 -ab 64k -async 2 -acodec libvorbis",
       # MP3 codec. Should also be pretty safe.
       :mp3     => "-ar 22050 -ab 64k -async 2 -acodec libmp3lame",
       # AAC requires a lib that may not be available by default.
