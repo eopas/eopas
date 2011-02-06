@@ -108,8 +108,9 @@ Feature: Media Items can have transcriptions
   Scenario: Delete a transcript
     Given I am on the new transcript page
      Then 0 transcripts should exist
-      And 0 transcript tiers should exist
       And 0 transcript phrases should exist
+      And 0 transcript words should exist
+      And 0 transcript morphemes should exist
 
      When I attach the file "features/test_data/eopas3.xml" to "Transcript"
       And I select "EOPAS" from "Format"
@@ -120,15 +121,15 @@ Feature: Media Items can have transcriptions
       And I should see "EOPAS 3"
       And I should see "rat, this rat"
       And 1 transcripts should exist
-      And 2 transcript tiers should exist
-      And 154 transcript phrases should exist
+      And 77 transcript phrases should exist
 
      When I follow "Delete transcript"
      Then I should see "Transcript deleted"
       And I should not see "EOPAS 3"
       And 0 transcripts should exist
-      And 0 transcript tiers should exist
       And 0 transcript phrases should exist
+      And 0 transcript words should exist
+      And 0 transcript morphemes should exist
 
   @allow-rescue
   Scenario: I can't delete another users transcript

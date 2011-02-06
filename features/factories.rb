@@ -42,14 +42,16 @@ end
 
 Factory.define :transcript do |t|
   t.sequence(:title) {|n| "Title#{n}"}
-  t.attach "original", "features/test_data/elan1.xml", "text/xml"
-  t.transcript_format 'ELAN'
+  t.attach "original", "features/test_data/eopas3.xml", "text/xml"
+  t.transcript_format 'EOPAS'
   t.association :depositor, :factory => :user
 end
 
-#Factory.define :transcript_tier do |t|
-#end
-#
-#Factory.define :transcript_phrase do |t|
-#end
+Factory.define :transcript_phrase do |t|
+end
 
+Factory.define :transcript_word do |t|
+end
+
+Factory.define :transcript_morpheme do |t|
+end
