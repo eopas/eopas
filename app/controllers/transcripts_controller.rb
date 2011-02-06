@@ -2,13 +2,18 @@ class TranscriptsController < ApplicationController
   respond_to :html, :xml
 
   filter_access_to :all
+  before_filter :terms_agreement, :only => [:index, :show]
 
   def index
     if params[:commit] == 'Clear'
       params[:search] = ""
     end
 
-    @transcripts = (Transcript.search(params[:search]).are_public + current_user.transcripts.search(params[:search])).uniq
+    @transcripts = Transcript.search(params[:search]).are_public
+    if current_user
+      @transcripts += current_user.transcripts.search(params[:search])
+    end
+    @transcripts.uniq!
 
     # sort by a given column
     if params[:sort] == "media_item"
@@ -32,9 +37,13 @@ class TranscriptsController < ApplicationController
   end
 
   def show
-    begin
-      @transcript = current_user.transcripts.find params[:id]
-    rescue ActiveRecord::RecordNotFound
+    if current_user
+      begin
+        @transcript = current_user.transcripts.find params[:id]
+      rescue ActiveRecord::RecordNotFound
+        @transcript = Transcript.are_public.find params[:id]
+      end
+    else
       @transcript = Transcript.are_public.find params[:id]
     end
 
@@ -111,6 +120,15 @@ class TranscriptsController < ApplicationController
     flash[:notice] = 'Media Item was added to transcript' if @transcript.save
 
     respond_with @transcript
+  end
+
+  private
+  def terms_agreement
+    return if current_user
+    return if session[:agreed_to_terms]
+
+    store_location
+    redirect_to show_terms_users_path
   end
 
 end

@@ -2,8 +2,8 @@
 
   %ul
     %li= link_to 'Home', root_path, :class => 'header'
+    %li= link_to 'Browse Transcripts', transcripts_path, :class => 'header'
     - if current_user
-      %li= link_to 'Browse Transcripts', transcripts_path, :class => 'header'
       %li= link_to 'Browse Media', media_items_path, :class => 'header'
       %li= link_to 'Upload Transcript', new_transcript_path, :class => 'header'
       %li= link_to 'Upload Media', new_media_item_path, :class => 'header'

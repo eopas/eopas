@@ -1,6 +1,10 @@
 
 authorization do
 
+  role :guest do
+    has_permission_on :transcripts, :to => :read
+  end
+
   role :user do
     has_permission_on :users, :to => :read
     has_permission_on :media_items, :to => :manage
