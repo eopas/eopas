@@ -12,6 +12,7 @@ class CountryLanguage < Struct.new(:code, :name)
         line.force_encoding('ISO-8859-1')
         next if line =~ /^LangID/
         code, country_code, name_type, name = line.strip.split("\t")
+        next unless name_type == "L"
         @@country_languages[country_code] ||= {}
         @@country_languages[country_code][code] = name
       end
