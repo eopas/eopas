@@ -11,9 +11,14 @@
           Transcript
     %tr
       %td.name
-        Creator
+        Participants
       %td.value
-        = @transcript.creator
+        - @transcript.participants.each do |participant|
+          .participant
+            %strong= participant.role
+            == :
+            = participant.name
+            %br
 
     %tr
       %td.name

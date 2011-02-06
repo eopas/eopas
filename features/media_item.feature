@@ -24,12 +24,8 @@ Feature: Media
      And I attach the file "features/test_data/test.mp3" with full path to "Media"
      And I select "audio" from "Format"
      And I fill in "Title" with "Test Audio"
-     And I select "31 March 2010" as the "media_item_recorded_at" date
-     And I fill in "Name of Annotator" with "John Ferlito"
-     And I fill in "Name of Participant" with "Random"
+     And I select "31 March 2010" as the "media_item_recorded_on" date
      And I fill in "Copyright Holder" with "John Ferlito"
-     And I select "Germany" from "Country Code"
-     And I select "Korean (kor)" from "Language Code"
      And I press "Create"
     Then I should see "Media item was successfully created"
 
@@ -41,23 +37,14 @@ Feature: Media
      And I attach the file "features/test_data/test.m4v" with full path to "Media"
      And I select "video" from "Format"
      And I fill in "Title" with "Test Video"
-     And I select "31 March 2010" as the "media_item_recorded_at" date
-     And I fill in "Name of Annotator" with "John Ferlito"
-     And I fill in "Name of Participant" with "Random"
+     And I select "31 March 2010" as the "media_item_recorded_on" date
      And I fill in "Copyright Holder" with "John Ferlito"
-     And I select "Germany" from "Country Code"
-     And I select "Korean (kor)" from "Language Code"
      And I press "Create"
     Then I should see "Media item was successfully created"
      And there should be 1 delayed job
-     And I should see "eopas_test_0" within "tr#item_id"
      And I should see "Test Video"
      And I should see "John Ferlito" within "tr#depositor"
-     And I should see "2010-03-31" within "tr#recorded_at"
-     And I should see "John Ferlito" within "tr#annotator_name"
-     And I should see "Random" within "tr#participant_name"
-     And I should see "speaker" within "tr#participant_role"
-     And I should see "kor" within "tr#language_code"
+     And I should see "2010-03-31" within "tr#recorded_on"
      And I should see "John Ferlito" within "tr#copyright"
      And I should see "CC-AU-BY-SA" within "tr#license"
      And I should see "false" within "tr#private"

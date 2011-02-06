@@ -11,19 +11,13 @@
     %table#metadata
       %tr
         %td.name
-          = form.label :title, 'Title'
+          = form.label :title
         %td.value
           = form.text_field :title, :class => 'text'
 
       %tr
         %td.name
-          = form.label :creator, 'Creator'
-        %td.value
-          = form.text_field :creator, :class => 'text'
-
-      %tr
-        %td.name
-          = form.label :date, 'Date'
+          = form.label :date
         %td.value
           = form.date_select :date, :order => [:day, :month, :year], :start_year => 1950
 
@@ -41,41 +35,6 @@
 
       %tr
         %td.name
-          = form.label :private, 'Make item private?'
-        %td.value
-          = form.check_box :private
-
-
-    = form.submit "Update"
-    -#
-      %tr
-        %td.name
-          = form.label :recorded_at, 'Recorded on'
-        %td.value
-          = form.date_select :recorded_at, :order => [:day, :month, :year], :start_year => 1950
-
-      %tr
-        %td.name
-          = form.label :annotator_name, 'Name of Annotator'
-        %td.value
-          = form.text_field :annotator_name, :class => 'text'
-
-      %tr
-        %td.name
-          = form.label :participant_name, 'Name of Participant'
-        %td.value
-          = form.text_field :participant_name, :class => 'text'
-
-      %tr
-        %td.name
-          = form.label :participant_role, 'Role of Participant'
-        %td.value
-          = form.select :participant_role, options_for_select(MediaItem::PARTICIPANT_ROLES, @transcript.participant_role)
-
-
-      #
-      %tr
-        %td.name
           = form.label :copyright, 'Copyright Holder'
         %td.value
           = form.text_field :copyright, :class => 'text'
@@ -85,4 +44,29 @@
           = form.label :license, 'License'
         %td.value
           = form.select :license, options_from_collection_for_select(License.all, :code, :name, @transcript.license)
+
+      %tr
+        %td.name
+          = form.label :private, 'Make item private?'
+        %td.value
+          = form.check_box :private
+
+      %tr
+        %td.name
+          Participants
+        %td.value
+          = form.fields_for :participants do |builder|
+            %div.participant
+              = builder.label :name
+              = builder.text_field :name, :class => 'text'
+
+              = builder.label :role
+              = builder.select :role, Participant::ROLES, :include_blank => true
+
+              = builder.check_box :_destroy
+              = builder.label :_destroy, 'Remove'
+            %br
+          = link_to 'Add participant', 'javascript:void(0)', 'data-clone-fields' => true
+
+    = form.submit "Update"
 

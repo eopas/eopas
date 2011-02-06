@@ -18,45 +18,21 @@
 
     %tr
       %td.name
-        = form.label :title, 'Title'
+        = form.label :title
       %td.value
         = form.text_field :title, :class => 'text'
 
     %tr
       %td.name
-        = form.label :recorded_at, 'Recorded on'
+        = form.label :description
       %td.value
-        = form.date_select :recorded_at, :order => [:day, :month, :year], :start_year => 1950
+        = form.text_field :description, :class => 'text'
 
     %tr
       %td.name
-        = form.label :annotator_name, 'Name of Annotator'
+        = form.label :recorded_on
       %td.value
-        = form.text_field :annotator_name, :class => 'text'
-
-    %tr
-      %td.name
-        = form.label :participant_name, 'Name of Participant'
-      %td.value
-        = form.text_field :participant_name, :class => 'text'
-
-    %tr
-      %td.name
-        = form.label :participant_role, 'Role of Participant'
-      %td.value
-        = form.select :participant_role, options_for_select(MediaItem::PARTICIPANT_ROLES, @media_item.participant_role)
-
-    %tr
-      %td.name
-        = form.label :country_code, 'Country Code'
-      %td.value
-        = form.select :country_code, options_from_collection_for_select(Country.all.sort_by(&:name), :code, :name, @media_item.country_code), {}, :class => 'country-select', 'data-select-child' => 'media_item_language_code'
-
-    %tr
-      %td.name
-        = form.label :language_code, 'Language Code'
-      %td.value
-        = form.select :language_code, options_for_select([], @media_item.language_code), {}, 'data-option-selected' => @media_item.language_code
+        = form.date_select :recorded_on, :order => [:day, :month, :year], :start_year => 1950
 
     %tr
       %td.name

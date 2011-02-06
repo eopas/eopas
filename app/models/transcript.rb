@@ -25,6 +25,9 @@ class Transcript < ActiveRecord::Base
   belongs_to :media_item
 
   has_many :phrases, :class_name => 'TranscriptPhrase', :dependent => :destroy
+  has_many :participants, :dependent => :destroy
+
+  accepts_nested_attributes_for :participants, :allow_destroy => true, :reject_if => lambda { |participant| participant[:name].blank? }
 
   accepts_nested_attributes_for :phrases
 
@@ -34,7 +37,7 @@ class Transcript < ActiveRecord::Base
   include Paperclip
   has_attached_file :original, :url => "/system/transcript/:attachment/:id/:style/:filename"
 
-  attr_accessible :original, :transcript_format, :title, :country_code, :language_code, :private, :creator, :date
+  attr_accessible :title, :date, :country_code, :language_code, :copyright, :license, :private, :original, :transcript_format, :participants_attributes
 
   FORMATS = ['ELAN', 'Toolbox', 'Transcriber', 'EOPAS']
 
@@ -44,6 +47,9 @@ class Transcript < ActiveRecord::Base
 
   # Validated on second step
   validates :title,             :presence => true, :unless => lambda { new_record? }
+  validates :date,              :presence => true, :unless => lambda { new_record? }
+  validates :country_code,      :presence => true, :unless => lambda { new_record? }
+  validates :language_code,      :presence => true, :unless => lambda { new_record? }
 
   validates_associated :depositor
   validates_attachment_presence :original
@@ -52,7 +58,7 @@ class Transcript < ActiveRecord::Base
 
   def self.search(search)
     if search
-      where(['title LIKE ? OR creator LIKE ?', "%#{search}%", "%#{search}%"])
+      where(['title LIKE ?', "%#{search}%"])
     else
       scoped
     end

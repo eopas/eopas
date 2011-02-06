@@ -38,29 +38,29 @@ ActiveRecord::Schema.define(:version => 20110206052402) do
 
   create_table "media_items", :force => true do |t|
     t.string   "title",                                    :null => false
+    t.text     "description"
+    t.datetime "recorded_on"
+    t.string   "copyright"
+    t.string   "license"
+    t.boolean  "private",               :default => false
     t.integer  "depositor_id",                             :null => false
+    t.string   "format"
     t.string   "original_file_name"
     t.string   "original_content_type"
     t.string   "original_file_size"
     t.datetime "original_updated_at"
-    t.string   "item_id"
-    t.datetime "recorded_at"
-    t.string   "annotator_name"
-    t.string   "annotator_role"
-    t.string   "participant_name"
-    t.string   "participant_role"
-    t.string   "language_code"
-    t.string   "copyright"
-    t.string   "license"
-    t.boolean  "private",               :default => false
+    t.boolean  "original_processing"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "original_processing"
-    t.string   "format"
-    t.string   "country_code"
   end
 
-  add_index "media_items", ["item_id"], :name => "index_media_items_on_item_id", :unique => true
+  create_table "participants", :force => true do |t|
+    t.string   "name"
+    t.string   "role"
+    t.integer  "transcript_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "transcript_morphemes", :force => true do |t|
     t.integer "transcript_word_id", :null => false
@@ -91,11 +91,15 @@ ActiveRecord::Schema.define(:version => 20110206052402) do
   add_index "transcript_words", ["transcript_phrase_id", "position"], :name => "index_transcript_words_on_transcript_phrase_id_and_position", :unique => true
 
   create_table "transcripts", :force => true do |t|
+    t.string   "title"
+    t.datetime "date",                  :limit => 255
+    t.string   "country_code"
+    t.string   "language_code"
+    t.string   "copyright"
+    t.string   "license"
+    t.boolean  "private",                              :default => true, :null => false
     t.integer  "media_item_id"
     t.integer  "depositor_id",                                            :null => false
-    t.string   "creator"
-    t.string   "language_code"
-    t.datetime "date",                  :limit => 255
     t.string   "original_file_name"
     t.string   "original_content_type"
     t.string   "original_file_size"
@@ -103,9 +107,6 @@ ActiveRecord::Schema.define(:version => 20110206052402) do
     t.string   "transcript_format"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "title"
-    t.boolean  "private",                              :default => false, :null => false
-    t.string   "country_code"
   end
 
   create_table "users", :force => true do |t|
