@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110206052402) do
+ActiveRecord::Schema.define(:version => 20110206074057) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "name"
@@ -38,20 +38,21 @@ ActiveRecord::Schema.define(:version => 20110206052402) do
 
   create_table "media_items", :force => true do |t|
     t.string   "title",                                    :null => false
-    t.text     "description"
-    t.datetime "recorded_on"
-    t.string   "copyright"
-    t.string   "license"
-    t.boolean  "private",               :default => false
     t.integer  "depositor_id",                             :null => false
-    t.string   "format"
     t.string   "original_file_name"
     t.string   "original_content_type"
     t.string   "original_file_size"
     t.datetime "original_updated_at"
-    t.boolean  "original_processing"
+    t.datetime "recorded_on"
+    t.string   "copyright"
+    t.string   "license"
+    t.boolean  "private",               :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "original_processing"
+    t.string   "format"
+    t.string   "country_code"
+    t.text     "description"
   end
 
   create_table "participants", :force => true do |t|
@@ -91,15 +92,10 @@ ActiveRecord::Schema.define(:version => 20110206052402) do
   add_index "transcript_words", ["transcript_phrase_id", "position"], :name => "index_transcript_words_on_transcript_phrase_id_and_position", :unique => true
 
   create_table "transcripts", :force => true do |t|
-    t.string   "title"
-    t.datetime "date",                  :limit => 255
-    t.string   "country_code"
-    t.string   "language_code"
-    t.string   "copyright"
-    t.string   "license"
-    t.boolean  "private",                              :default => true, :null => false
     t.integer  "media_item_id"
     t.integer  "depositor_id",                                            :null => false
+    t.string   "language_code"
+    t.datetime "date",                  :limit => 255
     t.string   "original_file_name"
     t.string   "original_content_type"
     t.string   "original_file_size"
@@ -107,6 +103,11 @@ ActiveRecord::Schema.define(:version => 20110206052402) do
     t.string   "transcript_format"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.boolean  "private",                              :default => false, :null => false
+    t.string   "country_code"
+    t.string   "copyright"
+    t.string   "license"
   end
 
   create_table "users", :force => true do |t|
