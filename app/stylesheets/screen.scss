@@ -347,4 +347,22 @@ table.small {
   }
 }
 
+/* Progress bar bits */
+#uploading {
+  display: none;
+  width: 400px;
+
+  #progress {
+    width: 300px;
+    background: #454545;
+    border: 1px solid #222;
+    margin-bottom: 20px;
+    
+    #progressbar {
+      width: 0px;
+      height: 24px;
+      background: #b4e04a;
+    }
+  }
+}
 
