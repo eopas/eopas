@@ -21,7 +21,7 @@
     - @transcripts.each do |transcript|
       %tr
         %td=  transcript.date ? transcript.date.to_date : ""
-        %td=  transcript.creator
+        %td=  #transcript.creator
         %td=  link_to transcript.title, transcript
         %td=  transcript.language_code
         %td=  transcript.country_code

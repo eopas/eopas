@@ -1,56 +1,27 @@
 .collapse_title
   = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
-  == #{@media_item.title} , #{@media_item.recorded_at}
+  == #{@media_item.title} , #{@media_item.recorded_on}
 
 .collapse_content
   %table#metadata.small
-    %tr#item_id
-      %td.name
-        Item ID
-      %td.value
-        = @media_item.item_id
-
     %tr#depositor
       %td.name
         Depositor
       %td.value
         = @media_item.depositor.full_name
 
-    %tr#recorded_at
+    %tr#recorded_on
       %td.name
         Recorded on
       %td.value
-        = @media_item.recorded_at
+        = @media_item.recorded_on
 
-    %tr#annotator_name
-      %td.name
-        Annotator
-      %td.value
-        = @media_item.annotator_name
 
-    %tr#participant_name
+    %tr#description
       %td.name
-        Participant
+        Description
       %td.value
-        = @media_item.participant_name
-
-    %tr#participant_role
-      %td.name
-        Participant Role
-      %td.value
-        = @media_item.participant_role
-
-    %tr#language_code
-      %td.name
-        Language Code
-      %td.value
-        = @media_item.language_code
-
-    %tr#country_code
-      %td.name
-        Country Code
-      %td.value
-        = @media_item.country_code
+        = @media_item.description
 
     %tr#copyright
       %td.name

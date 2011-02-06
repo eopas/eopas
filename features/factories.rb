@@ -29,22 +29,28 @@ end
 
 Factory.define :media_item do |m|
   m.title 'test video'
-  m.private true
-  m.format 'video'
-  m.recorded_at Time.now
-  m.country_code 'au'
-  m.language_code 'en'
+  m.description 'Video created for tesing purposes'
+  m.recorded_on Time.now
+  m.copyright 'Robot Parade 2010'
   m.license 'PD'
-  m.attach( "original", "features/test_data/test.m4v", "video/mp4" )
+  m.private true
   m.association :depositor, :factory => :user
+  m.format 'video'
+  m.attach( "original", "features/test_data/test.m4v", "video/mp4" )
 end
 
 
 Factory.define :transcript do |t|
   t.sequence(:title) {|n| "Title#{n}"}
+  t.date Time.now
+  t.country_code 'au'
+  t.language_code 'en'
+  t.copyright 'Robot Parade 2010'
+  t.license 'PD'
+  t.private true
+  t.association :depositor, :factory => :user
   t.attach "original", "features/test_data/eopas3.xml", "text/xml"
   t.transcript_format 'EOPAS'
-  t.association :depositor, :factory => :user
 end
 
 Factory.define :transcript_phrase do |t|

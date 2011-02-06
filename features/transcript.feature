@@ -48,7 +48,18 @@ Feature: Media Items can have transcriptions
       | transcriber1.xml | ELAN        | No matching global declaration available for the validation root |
       | eopas1.xml       | ELAN        | No matching global declaration available for the validation root |
 
-  @wip
+  Scenario: Add participants
+    Given a transcript exists with depositor: user "johnf1"
+     When I go to that transcript's edit page
+      And I fill in "Name" with "John Ferlito" within ".participant"
+      And I select "speaker" from "Role" within ".participant"
+      And I press "Update"
+     Then I should see "Transcript was successfully updated"
+      And I should see "John Ferlito" within ".participant"
+      And I should see "speaker" within ".participant"
+      And I should see "rat, this rat"
+
+  @javascript
   Scenario Outline: Upload valid transcriptions
     Given I am on the new transcript page
      When I attach the file "features/test_data/<file>" to "Transcript"
@@ -57,32 +68,29 @@ Feature: Media Items can have transcriptions
      Then I should see "Transcript was successfully validated and added"
 
      When I fill in "Title" with "<title>"
+      And I select "Australia" from "Country Code"
+      And I select "Bagu (vmi)" from "Language Code"
       And I press "Update"
      Then I should see "Transcript was successfully updated"
       And I should see "<text>"
       And I should see "<title>"
 
      When I follow "EOPAS" within "#metadata_display"
-     Then I should see "" within "interlinear"
       And I should see "<text>"
 
-    Given I go back
-     When I follow "Original"
-     Then I should see "<text>"
-      And I should see "" within "<format-identifier>"
-
+    # TODO other formats back
     Examples:
-      | file             | format      | text           | format-identifier   | title         |
-      | elan1.xml        | ELAN        | so from here   | annotation_document | ELAN 1        |
-      | elan2.xml        | ELAN        | My name is Joe | annotation_document | ELAN 1        |
-      | eopas1.xml       | EOPAS       | so from here   | eopas               | EOPAS 1       |
-      | eopas2.xml       | EOPAS       | Endis reading  | eopas               | EOPAS 1       |
-      | eopas3.xml       | EOPAS       | rat, this rat  | eopas               | EOPAS 1       |
-      | toolbox1.xml     | Toolbox     | about this wo  | database            | TOOLBOX 1     |
-      | toolbox2.xml     | Toolbox     | about the rat  | database            | TOOLBOX 1     |
-      | toolbox3.xml     | Toolbox     | Litrapong      | database            | TOOLBOX 1     |
-      | transcriber1.xml | Transcriber | pause crowd    | trans               | TRANSCRIBER 1 |
-      | transcriber2.xml | Transcriber | puet soksoki   | trans               | TRANSCRIBER 1 |
+      | file             | format      | text           | title         |
+      #| elan1.xml        | ELAN        | so from here   | ELAN 1        |
+      #| elan2.xml        | ELAN        | My name is Joe | ELAN 1        |
+      #| eopas1.xml       | EOPAS       | so from here   | EOPAS 1       |
+      #| eopas2.xml       | EOPAS       | Endis reading  | EOPAS 1       |
+      | eopas3.xml       | EOPAS       | rat, this rat  | EOPAS 1       |
+      #| toolbox1.xml     | Toolbox     | about this wo  | TOOLBOX 1     |
+      #| toolbox2.xml     | Toolbox     | about the rat  | TOOLBOX 1     |
+      #| toolbox3.xml     | Toolbox     | Litrapong      | TOOLBOX 1     |
+      #| transcriber1.xml | Transcriber | pause crowd    | TRANSCRIBER 1 |
+      #| transcriber2.xml | Transcriber | puet soksoki   | TRANSCRIBER 1 |
 
   @javascript
   Scenario: Attach a media item to a transcript
@@ -106,20 +114,9 @@ Feature: Media Items can have transcriptions
       And I should see "Cow"
 
   Scenario: Delete a transcript
-    Given I am on the new transcript page
-     Then 0 transcripts should exist
-      And 0 transcript phrases should exist
-      And 0 transcript words should exist
-      And 0 transcript morphemes should exist
-
-     When I attach the file "features/test_data/eopas3.xml" to "Transcript"
-      And I select "EOPAS" from "Format"
-      And I press "Validate"
-      And I fill in "Title" with "EOPAS 3"
-      And I press "Update"
-     Then I should see "Transcript was successfully updated"
-      And I should see "EOPAS 3"
-      And I should see "rat, this rat"
+    Given a transcript exists with title: "Moo", depositor: user "johnf1"
+     When I go to that transcript's page
+     Then I should see "rat, this rat"
       And 1 transcripts should exist
       And 77 transcript phrases should exist
 

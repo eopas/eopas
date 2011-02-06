@@ -68,6 +68,7 @@ class TranscriptsController < ApplicationController
 
   def edit
     @transcript = Transcript.find params[:id]
+    (3 - @transcript.participants.size).times { @transcript.participants.build }
   end
 
   def update

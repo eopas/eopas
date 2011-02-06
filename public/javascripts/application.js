@@ -213,6 +213,36 @@ $(document).ready(function() {
 
   // on URL hashchange of page
   media.bind('loadedmetadata', do_VideoFragment);
+
+  // Edit form extra fields
+  $('a[data-clone-fields]').click(function() {
+    var num = $('.participant').length; // how many "duplicatable" input fields we currently have
+    var newNum  = num + 1;    // the numeric ID of the new input field being added
+
+    var newElem = $('.participant').last().clone();
+    newElem.children().each(function() {
+      var child = $(this);
+
+      function attr_update(elem, attr_name) {
+        var attr = elem.attr(attr_name);
+        if (attr) {
+          var index = attr.replace(/.*[_\[]([0-9]+)[_\]].*/, '$1');
+          index = parseInt(index, 10) + 1;
+          attr = attr.replace(/(.*[_\[])[0-9]+([_\]].*)/, '$1' + index + '$2');
+          elem.attr(attr_name, attr);
+        }
+      }
+      attr_update(child, 'for');
+      attr_update(child, 'id');
+      attr_update(child, 'name');
+      child.attr('value', '');
+
+    });
+
+    $('.participant').last().next().after('</br>').after(newElem);
+  });
+
+
 });
 
 

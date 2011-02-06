@@ -17,7 +17,9 @@
     = render :partial => 'details'
 
   - if @transcript.depositor == current_user
-    #remove-transcript
+    #actions
+      = link_to 'Edit transcript', edit_transcript_path(@transcript)
+      %br
       = link_to 'Delete transcript', @transcript, :confirm => "Are you sure?", :method => :delete
 
 

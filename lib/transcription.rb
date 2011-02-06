@@ -74,8 +74,9 @@ class Transcription
     metas = eopas.xpath('//meta')
     metas.each do |meta|
       case meta['name']
-      when "dc:creator"
-        transcript.creator = meta['value']
+      # TODO put this back somehow
+      #when "dc:creator"
+      #  transcript.creator = meta['value']
       when "dc:language"
         transcript.language_code = meta['value']
       when "dc:date"
