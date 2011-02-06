@@ -26,6 +26,8 @@ class Transcript < ActiveRecord::Base
 
   has_many :phrases, :class_name => 'TranscriptPhrase', :dependent => :destroy
 
+  accepts_nested_attributes_for :phrases
+
   scope :are_private, where(:private => true)
   scope :are_public, where(:private => false)
 
