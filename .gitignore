@@ -1,4 +1,5 @@
 db/*.sqlite
+db/*.sqlite-journal
 log/*
 rerun.txt
 tmp/*
