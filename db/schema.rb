@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110114162055) do
+ActiveRecord::Schema.define(:version => 20110206052402) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "name"
@@ -62,38 +62,37 @@ ActiveRecord::Schema.define(:version => 20110114162055) do
 
   add_index "media_items", ["item_id"], :name => "index_media_items_on_item_id", :unique => true
 
+  create_table "transcript_morphemes", :force => true do |t|
+    t.integer "transcript_word_id", :null => false
+    t.integer "position",           :null => false
+    t.string  "morpheme",           :null => false
+    t.string  "gloss",              :null => false
+  end
+
+  add_index "transcript_morphemes", ["transcript_word_id", "position"], :name => "index_transcript_morphemes_on_transcript_word_id_and_position", :unique => true
+
   create_table "transcript_phrases", :force => true do |t|
-    t.integer "transcript_id", :null => false
+    t.integer "transcript_id",                 :null => false
     t.string  "phrase_id"
-    t.float   "start_time",         :null => false
-    t.float   "end_time",           :null => false
-    t.string  "original", :limit => 4096
-    t.string  "translation", :limit => 4096
+    t.float   "start_time",                    :null => false
+    t.float   "end_time",                      :null => false
+    t.string  "original",      :limit => 4096
+    t.string  "translation",   :limit => 4096
   end
 
   add_index "transcript_phrases", ["transcript_id", "phrase_id"], :name => "index_transcript_phrases_on_transcript_id_and_phrase_id", :unique => true
 
   create_table "transcript_words", :force => true do |t|
     t.integer "transcript_phrase_id", :null => false
-    t.integer :position, :null => false
-    t.string  "word", :null => false
+    t.integer "position",             :null => false
+    t.string  "word",                 :null => false
   end
 
   add_index "transcript_words", ["transcript_phrase_id", "position"], :name => "index_transcript_words_on_transcript_phrase_id_and_position", :unique => true
 
-  create_table "transcript_morphemes", :force => true do |t|
-    t.integer "transcript_word_id", :null => false
-    t.integer :position, :null => false
-    t.string  "morpheme", :null => false
-    t.string  "gloss", :null => false
-  end
-
-  add_index "transcript_morphemes", ["transcript_word_id", "position"], :name => "index_transcript_morphemes_on_transcript_word_id_and_position", :unique => true
-
-
   create_table "transcripts", :force => true do |t|
     t.integer  "media_item_id"
-    t.integer  "depositor_id",                                           :null => false
+    t.integer  "depositor_id",                                            :null => false
     t.string   "creator"
     t.string   "language_code"
     t.datetime "date",                  :limit => 255
