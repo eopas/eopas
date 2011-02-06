@@ -33,7 +33,7 @@ Feature: Media Items can have transcriptions
     When I am on that transcript's page
     Then I should see "Link"
 
-  Scenario Outline: Bad transcript doesn't vaidate
+  Scenario Outline: Bad transcript doesn't validate
     Given I am on the new transcript page
      When I attach the file "features/test_data/<file>" to "Transcript"
       And I select "<format>" from "Format"

@@ -67,8 +67,8 @@ ActiveRecord::Schema.define(:version => 20110114162055) do
     t.string  "phrase_id"
     t.float   "start_time",         :null => false
     t.float   "end_time",           :null => false
-    t.string  "original"
-    t.string  "translation"
+    t.string  "original", :limit => 4096
+    t.string  "translation", :limit => 4096
   end
 
   add_index "transcript_phrases", ["transcript_id", "phrase_id"], :name => "index_transcript_phrases_on_transcript_id_and_phrase_id", :unique => true
