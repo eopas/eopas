@@ -29,6 +29,8 @@ class Transcript < ActiveRecord::Base
 
   accepts_nested_attributes_for :participants, :allow_destroy => true, :reject_if => lambda { |participant| participant[:name].blank? }
 
+  accepts_nested_attributes_for :phrases
+
   scope :are_private, where(:private => true)
   scope :are_public, where(:private => false)
 

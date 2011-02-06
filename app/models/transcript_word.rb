@@ -3,6 +3,8 @@ class TranscriptWord < ActiveRecord::Base
 
   has_many :morphemes, :class_name => 'TranscriptMorpheme', :dependent => :destroy
 
+  accepts_nested_attributes_for :morphemes
+
   validates :position,    :presence => true, :numericality => true
   validates :word,        :presence => true
 end
