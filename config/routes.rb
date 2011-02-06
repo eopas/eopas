@@ -21,6 +21,10 @@ Eopas::Application.routes.draw do
     member do
       get :confirm
     end
+    collection do
+      get :show_terms
+      post :agree_to_terms
+    end
   end
   resources :forgotten_passwords
 

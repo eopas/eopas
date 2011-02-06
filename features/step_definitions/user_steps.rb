@@ -1,6 +1,5 @@
 Given /^I am logged in as #{capture_model}$/ do |user|
-  # TODO: this should find the user with the given contraint in capture_model, rather than the first one
-  @user = find_model!(user)
+  @user = model!(user)
 
   Given 'I go to the homepage'
   And 'I follow "Login"'

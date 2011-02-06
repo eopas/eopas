@@ -91,5 +91,17 @@ class UsersController < ApplicationController
     end
   end
 
+  def show_terms
+  end
+
+  def agree_to_terms
+    if params[:agree]
+      session[:agreed_to_terms] = true
+      redirect_back_or_default root_path
+    else
+      flash[:error] = 'You must agree to the terms before you can view transcripts without a login'
+      redirect_to show_terms_users_path
+    end
+  end
 end
 
