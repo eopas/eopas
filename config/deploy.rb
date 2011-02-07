@@ -2,9 +2,9 @@
 require "bundler/capistrano"
 
 set :application, "eopas"
-set :repository,  "lp:eopas"
+set :repository,  "git://github.com/eopas/eopas.git"
 
-set :scm, :bzr
+set :scm, :git
 
 role :web, "eopas.rnld.unimelb.edu.au"
 role :app, "eopas.rnld.unimelb.edu.au"
