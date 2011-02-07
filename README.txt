@@ -56,12 +56,55 @@ Some Toolbox files use camel-case on element and attribute names.
 Others come with a namespace of "tb:" on all the elements.
 These differences will be removed using a clean-up script called fixToolbox.xsl.
 
+The above example gets transformed into EOPAS:
 
+<?xml version="1.0" encoding="UTF-8"?>
+<eopas xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <header>
+    <meta name="dc:type" value="text/xml"/>
+    <meta name="dc:contributor" value="Narrator"/>
+  </header>
+  <interlinear>
+    <tier id="o_107" linguistic_type="transcription">
+      <phrase endTime="5.465" startTime="0.020" id="o_107:001">
+        <text>Amurin </text>
+        <wordlist>
+          <word>
+            <text>Amurin</text>
+            <morphemelist>
+              <morpheme>
+                <text kind="morpheme">a=</text>
+                <text kind="gloss">1S.RS=</text>
+              </morpheme>
+              <morpheme>
+                <text kind="morpheme">mur</text>
+                <text kind="gloss">want</text>
+              </morpheme>
+              <morpheme>
+                <text kind="morpheme">-i</text>
+                <text kind="gloss">-TS</text>
+              </morpheme>
+              <morpheme>
+                <text kind="morpheme">-n</text>
+                <text kind="gloss">-3S.O</text>
+              </morpheme>
+            </morphemelist>
+          </word>
+        </wordlist>
+      </phrase>
+    </tier>
+    <tier id="fg_107" linguistic_type="translation">
+      <phrase startTime="0.020" endTime="5.465" id="fg_107:001"/>
+    </tier>
+  </interlinear>
+</eopas>
+
+Notice how there is a transcription and a translation tier.
+These are the important tiers that the EOPAS system cares about.
 
 
 2. ELAN
 =======
-
 
 3. Transcriber
 ==============

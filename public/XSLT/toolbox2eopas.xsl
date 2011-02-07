@@ -15,18 +15,18 @@ version="1.0">
     <xsl:apply-templates/>
   </xsl:template>
 
-  <xsl:variable name="narrator"/>
   <xsl:template match="/database">
-    <xsl:if test="/database/itmgroup/nt">
-      <xsl:variable name="narrator" select="/database/itmgroup/nt/text()"/>
-    </xsl:if>
-
     <eopas>
       <header>
         <meta>
           <!-- MIME Type -->
           <xsl:attribute name="name">dc:type</xsl:attribute>
           <xsl:attribute name="value">text/xml</xsl:attribute>
+        </meta>
+        <meta>
+          <!-- MIME Type -->
+          <xsl:attribute name="name">dc:contributor</xsl:attribute>
+          <xsl:attribute name="value"><xsl:value-of select="/database/itmgroup/nt/text()"/></xsl:attribute>
         </meta>
       </header>
 
@@ -69,12 +69,6 @@ version="1.0">
                 </xsl:attribute>
 
                 <xsl:attribute name="id">o_<xsl:value-of select="id"/></xsl:attribute>
-
-                <xsl:if test="$narrator != ''">
-                  <xsl:attribute name="participant">
-                    <xsl:value-of select="$narrator"/>
-                  </xsl:attribute>
-                </xsl:if>
 
                 <!-- compose text together -->
                 <!-- for each "txGroup" and "txgroup" -->
