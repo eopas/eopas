@@ -69,7 +69,7 @@ Feature: Media Items can have transcriptions
 
      When I fill in "Title" with "<title>"
       And I select "Australia" from "Country Code"
-      And I select "Bagu (vmi)" from "Language Code"
+      And I select "Miwa (vmi)" from "Language Code"
       And I press "Update"
      Then I should see "Transcript was successfully updated"
       And I should see "<text>"
