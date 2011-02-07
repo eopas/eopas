@@ -25,3 +25,8 @@ running the tests:
 running transcoding:
 * rake -T    (lists rake tasks)
 * rake jobs:work   (transcodes) 
+
+running XSLT:
+* rails runner bin/xslt.rb [xml file] [xsl file]
+* rails runner bin/validate.rb [xml file] [format in Toolbox/Elan/Transcriber/Eopas]
+* rails runner bin/transcode.rb [xml file] [format in Toolbox/Elan/Transcriber/Eopas]
