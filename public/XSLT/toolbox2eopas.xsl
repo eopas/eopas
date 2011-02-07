@@ -143,11 +143,6 @@ version="1.0">
 
                 <xsl:attribute name="id">fg_<xsl:value-of select="id"/></xsl:attribute>
 
-                <xsl:if test="$narrator != ''">
-                  <xsl:attribute name="participant">
-                    <xsl:value-of select="$narrator"/>
-                  </xsl:attribute>
-                </xsl:if>
                 <text>
                   <xsl:value-of select="fg/text()"/>
                 </text>

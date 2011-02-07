@@ -56,6 +56,16 @@ Some Toolbox files use camel-case on element and attribute names.
 Others come with a namespace of "tb:" on all the elements.
 These differences will be removed using a clean-up script called fixToolbox.xsl.
 
+The following mapping is done:
+* itmgroup          -> tier@linguistic_type['transcription']
+* idgroup           ->   phrase
+* concat txgroup/tx ->     text
+* txgroup           ->     wordlist
+* tx                ->       word/text
+* mr                ->         morphemelist/morpheme/text@kind['morpheme']
+* mg                ->         morphemelist/morpheme/text@kind['gloss']
+* fg                -> tier@linguistic_type['translation']/phrase/text
+
 The above example gets transformed into EOPAS:
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -94,17 +104,91 @@ The above example gets transformed into EOPAS:
       </phrase>
     </tier>
     <tier id="fg_107" linguistic_type="translation">
-      <phrase startTime="0.020" endTime="5.465" id="fg_107:001"/>
+      <phrase startTime="0.020" endTime="5.465" id="fg_107:001">
+        <text>I want to tell you. You, children of today,</text>
+      </phrase>
     </tier>
   </interlinear>
 </eopas>
 
 Notice how there is a transcription and a translation tier.
-These are the important tiers that the EOPAS system cares about.
+These are the only tiers that the EOPAS system cares about.
 
 
 2. ELAN
 =======
+XML Schema Definitions are e.g. at http://www.mpi.nl/tools/elan/EAFv2.7.xsd
+
+A typical example file:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DATE="2006-10-16T11:59:34+10:00" AUTHOR="" VERSION="2.3" FORMAT="2.3">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/Data/elan/elan-example1.mpg" MIME_TYPE="video/mpeg"/>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="0"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="280"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="440"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="780"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="1250"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="1340"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="1570"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="1600"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="1810"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="2000"/>
+        [further <TIME_SLOT/>]
+    </TIME_ORDER>
+    <TIER TIER_ID="NeparrŋaGumbula" PARTICIPANT="Neparrŋa Gumbula" LINGUISTIC_TYPE_REF="utterance" DEFAULT_LOCALE="en">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts2" TIME_SLOT_REF2="ts5">
+                <ANNOTATION_VALUE>so from here.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        [further <ANNOTATION></ANNOTATION>]
+    </TIER>
+    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="utterance" PARTICIPANT="" TIER_ID="W-Spch">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts4" TIME_SLOT_REF2="ts23">
+                <ANNOTATION_VALUE>so you go out of the Institute to the Saint Anna Straat.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        [further <ANNOTATION></ANNOTATION>]
+    </TIER>
+    [further <TIER></TIER>]
+    <LINGUISTIC_TYPE LINGUISTIC_TYPE_ID="utterance" TIME_ALIGNABLE="true" GRAPHIC_REFERENCES="false"/>    
+    <LOCALE COUNTRY_CODE="US" LANGUAGE_CODE="en"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation&apos;s time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>
+
+The following LINGUISTIC_TYPE tiers have been seen in the wild:
+* utterance
+* words
+* part of speech
+* phonetic_transcription
+* gestures
+* gesture_phases
+* gesture_meaning
+* ref
+* tx
+* mr
+* mg
+* fg
+
+The EOPAS system will only make use of the following tiers with the following mapping:
+* utterance (last one)   -> tier@linguistic_type['transcription']/phrase/text
+* words                  ->   phrase/wordlist/word/text
+OR:
+* ref               -> tier@linguistic_type['transcription']/phrase/text
+* tx                ->   phrase/wordlist/word/text
+* mr                ->   phrase/wordlist/word/morphemelist/morpheme/text@kind['morpheme']
+* mg                ->   phrase/wordlist/word/morphemelist/morpheme/text@kind['gloss']
+* fg                -> tier@linguistic_type['translation']/phrase/text
+
+
 
 3. Transcriber
 ==============
