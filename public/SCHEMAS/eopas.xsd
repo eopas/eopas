@@ -129,7 +129,7 @@
   <!-- ********************** MORPHEME LEVEL ********************** -->
   <xsd:complexType name="morphemeType">
     <xsd:annotation>
-      <xsd:documentation>Wrapper element for morpheme structure</xsd:documentation>
+      <xsd:documentation>Wrapper element for morpheme or gloss structure</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="text" type="morphemeTextType" minOccurs="0" maxOccurs="unbounded"/>
