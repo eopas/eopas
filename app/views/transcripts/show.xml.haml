@@ -15,15 +15,17 @@
         - phrases.each do |phrase|
           %phrase{:id => "o_#{phrase.phrase_id}", :startTime => phrase.start_time, :endTime => phrase.end_time}
             %text= phrase.original
-            %wordlist
-              - phrase.words.each do |word|
-                %word
-                  %text= word.word
-                  %morphemelist
-                    - word.morphemes do |morpheme|
-                      %morpheme
-                        %text{:kind => 'morpheme'}= morpheme.morpheme
-                        %text{:kind => 'gloss'}= morpheme.gloss
+            - unless phrase.words.empty?
+              %wordlist
+                - phrase.words.each do |word|
+                  %word
+                    %text= word.word
+                    - unless word.morphemes.empty?
+                      %morphemelist
+                        - word.morphemes do |morpheme|
+                          %morpheme
+                            %text{:kind => 'morpheme'}= morpheme.morpheme
+                            %text{:kind => 'gloss'}= morpheme.gloss
     - if first_phrase.original
       %tier{:id => "fg", :linguistic_type => 'translation'}
         - phrases.each do |phrase|

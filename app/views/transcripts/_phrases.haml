@@ -21,15 +21,16 @@
                 %table
                   %tr
                     %td{:colspan => colspan}
-                      = word[:text] #.force_encoding('UTF-8')
+                      = word[:word] #.force_encoding('UTF-8')
 
-                      %tr
-                        - morphemes.each do |s|
-                          %td{:class => 'morpheme'}= s.morpheme #.force_encoding('UTF-8')
+                      - unless morphemes.empty?
+                        %tr
+                          - morphemes.each do |s|
+                            %td{:class => 'morpheme'}= s.morpheme #.force_encoding('UTF-8')
 
-                      %tr
-                        - morphemes.each do |s|
-                          %td{:class => 'gloss'}= s.gloss #.force_encoding('UTF-8')
+                        %tr
+                          - morphemes.each do |s|
+                            %td{:class => 'gloss'}= s.gloss #.force_encoding('UTF-8')
 
         - if phrase.translation
           .tier{:class => [phrase.phrase_id, 'translation']}

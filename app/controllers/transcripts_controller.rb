@@ -82,7 +82,6 @@ class TranscriptsController < ApplicationController
 
   def update
     @transcript = Transcript.find params[:id]
-
     if @transcript.update_attributes(params[:transcript])
       flash[:notice] = 'Transcript was successfully updated.'
     end

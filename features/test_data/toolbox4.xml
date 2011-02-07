@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <itmGroup>
+        <itm>78</itm>
+          <idGroup>
+            <id>78:A</id>
+            <txGroup>
+                <tx>ngar-uba-gi-yung,</tx>
+                <mr id="078-001">ngar-uba-gi-yung</mr>
+                <mg>that (FSg)</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ngara-ngari-ma_ra-yung,</tx>
+                <mr id="078-002">ngara-ngari-ma_ra-yung</mr>
+                <mg>(woman's) daughter</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ngara-ngari-ma_ra-yu-maji:,</tx>
+                <mr id="078-003">ngara-ngari-ma_ra-yu-maji:</mr>
+                <mg>if her daughter</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ngara-ngari-lhari-yung</tx>
+                <mr id="078-004">ngara-ngari-lhari-yung</mr>
+                <mg>his sister</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ngara-ngari-lhari-yu-maji:,</tx>
+                <mr id="078-005">ngara-ngari-lhari-yu-maji:</mr>
+                <mg>if his sister</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ngar-uba-gi-yung</tx>
+                <mr id="078-006">ngar-uba-gi-yung</mr>
+                <mg>that (FSg)</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ambiringa=yaba-ng </tx>
+                <mr id="078-007">ambiringa=yaba-ng </mr>
+                <mg>they will bear her</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ngara-ma_ni-nyung</tx>
+                <mr id="078-008">ngara-ma_ni-nyung</mr>
+                <mg>woman</mg>
+            </txGroup>
+            <txGroup>
+                <tx>an-uba-gu</tx>
+                <mr id="078-009">an-uba-gu</mr>
+                <mg>there</mg>
+            </txGroup>
+            <txGroup>
+                <tx>mana-da:n-jinyung,</tx>
+                <mr id="078-010">mana-da:n-jinyung</mr>
+                <mg>of belly</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ba-gi-yung</tx>
+                <mr id="078-011">ba-gi-yung</mr>
+                <mg>he is there </mg>
+            </txGroup>
+            <fg>Suppose that someone who is the true sister ('of the belly') of a man bears a
+                daughter (the man's SiDa). </fg>
+        </idGroup>
+        <idGroup>
+            <id>78:B</id>
+            <txGroup>
+                <tx>ba-gi-yung</tx>
+                <mr id="078-012">ba-gi-yung</mr>
+                <mg>he is there</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ni-ga:-'yung</tx>
+                <mr id="078-013">ni-ga:-'yung</mr>
+                <mg>s for him </mg>
+            </txGroup>
+            <txGroup>
+                <tx>nu:- 'ba-gi-yung,</tx>
+                <mr id="078-014">nu:- 'ba-gi-yung</mr>
+                <mg>that (MSg)</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ni-ga-maji:</tx>
+                <mr id="078-015">ni-ga-maji:</mr>
+                <mg>if he</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ambuni:='-ny</tx>
+                <mr id="078-016">ambuni:='-ny</mr>
+                <mg>they give him p</mg>
+            </txGroup>
+            <txGroup>
+                <tx>an-uwa-ga:-'la,</tx>
+                <mr id="078-017">an-uwa-ga:-'la</mr>
+                <mg/>
+            </txGroup>
+            <txGroup>
+                <tx>ambuni:='-ny-maji:,</tx>
+                <mr id="078-018">ambuni:='-ny-maji:</mr>
+                <mg>if they give him p</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ni-ga:-'yung</tx>
+                <mr id="078-019">ni-ga:-'yung</mr>
+                <mg>as for him </mg>
+            </txGroup>
+            <txGroup>
+                <tx>ngari-ma_ra-yung</tx>
+                <mr id="078-020">ngari-ma_ra-yung</mr>
+                <mg>SiDa</mg>
+            </txGroup>
+            <txGroup>
+                <tx> ana:-'ji:-'li</tx>
+                <mr id="078-021"> ana:-'ji:-'li</mr>
+                <mg>from here</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ana-wungali</tx>
+                <mr id="078-022">ana-wungali</mr>
+                <mg> exchange</mg>
+            </txGroup>
+            <txGroup>
+                <tx>wu:-nguny</tx>
+                <mr id="078-023">wu:-nguny</mr>
+                <mg>they are</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ju=ngunyju</tx>
+                <mr id="078-024">ju=ngunyju</mr>
+                <mg>equivalent</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ambani:='-ny,</tx>
+                <mr id="078-025">ambani:='-ny</mr>
+                <mg>he will give them p</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ni-ga</tx>
+                <mr id="078-026">ni-ga</mr>
+                <mg>he</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ambuni: '-ny</tx>
+                <mr id="078-027">ambuni: '-ny</mr>
+                <mg>they will give him p</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ni-ga:-'yung</tx>
+                <mr id="078-028">ni-ga:-'yung</mr>
+                <mg>as for him</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ambani:='-ny</tx>
+                <mr id="078-029">ambani:='-ny</mr>
+                <mg>he will give them p</mg>
+            </txGroup>
+            <txGroup>
+                <tx>ana-wungali.</tx>
+                <mr id="078-030">ana-wungali</mr>
+                <mg>exchange</mg>
+            </txGroup>
+            <fg>Then if some people give that man (a wife), he will give them his new'sister's
+                daughter (as a wife for one of them). There will be an equal exchange, they will be
+                even. Note: There is an ideal of having men in the appropriate kinship relations
+                exchange their sister's daughters, since a man has considerable influence in
+                arranging the marriage of his sister's daughters. Two men arranging such a trade
+                should ideally be in the relationship of MoMoBrSo and FaSiDaSo to each other (hence
+                in avoidance relationship). Actual bestowal politics was actually rather more
+                complicated than this simple exchange scheme indicates, and direct one-for-one
+                trades were unusual. Typically, the giving of a woman from one group to another
+                produced a strong but diffuse debt which would give the first group a strong claim
+                to receiving a woman back from the second group as one became available later on,
+                but this claim would not necessarily be implemented. Nowadays such exchanges are
+                even more impracticable because the mission discourages pre-arranged marriages.
+            </fg>
+        </idGroup>
+    </itmGroup>
+</database>
