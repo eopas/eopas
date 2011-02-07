@@ -12,7 +12,7 @@
   %table#transcripts
     %tr
       %th.name= sortable "date"
-      %th.name= sortable "creator"
+      %th.name= sortable "depositor"
       %th.name= sortable "title"
       %th.name= sortable "language_code", "Language"
       %th.name= sortable "country_code", "Country"
@@ -21,7 +21,7 @@
     - @transcripts.each do |transcript|
       %tr
         %td=  transcript.date ? transcript.date.to_date : ""
-        %td=  #transcript.creator
+        %td=  transcript.depositor.first_name + " " + transcript.depositor.last_name
         %td=  link_to transcript.title, transcript
         %td=  transcript.language_code
         %td=  transcript.country_code
