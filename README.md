@@ -1,8 +1,6 @@
 
 
 
-
-
 Install
 =======
 
@@ -133,8 +131,19 @@ johnf's PPA.
         passenger_enabled on;
         passenger_use_global_queue on;
         client_max_body_size 100m; # Nice and big for videos
+        track_uploads eopas 30s;
       }
+
+      location /upload_progress {
+        report_uploads eopas;
+      }
+
     }
+
+    vi /etc/nginx/conf.d/upload_progress.conf
+
+      upload_progress eopas 1m;
+      upload_progress_json_output;
 
     echo -e "passenger_ruby /usr/bin/ruby1.9.1;\n" >> /etc/nginx/conf.d/passenger_ruby1.9.2.conf
 

@@ -36,7 +36,7 @@ jQuery.nginxUploadProgress = function(e, nginx_progress_url, progress_bar_id, uu
 				bar.width(w + '%');
 			}
 			/* we are done, stop the interval */
-			if (upload.state == 'done') {
+			if (upload.state == 'done' || upload.state == 'error') {
 				window.clearTimeout(e.timer);
 			}
 		}
