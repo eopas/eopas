@@ -4,2234 +4,2265 @@
     <meta name="dc:type" value="text/xml"/>
     <meta name="dc:source" value="98015a"/>
     <meta name="dc:creator" value="pdsc"/>
+    <meta name="spk1" value="Endis Kalsarap"/>
   </header>
   <interlinear>
-    <tier id="Syncs" parent="Turns" linguistic_type="orthographic">
-      <phrase id="s1" startTime="0" endTime="5.868">
+    <tier id="Syncs" linguistic_type="transcription">
+      <phrase speaker="spk1" id="s1" startTime="0" endTime="5.868">
         <text>[lead in silence]</text>
       </phrase>
-      <phrase id="s2" startTime="5.868" endTime="12.964">
+      <phrase speaker="spk1" id="s2" startTime="5.868" endTime="12.964">
         <text>id 31 October, Endis reading words</text>
       </phrase>
-      <phrase id="s3" startTime="12.964" endTime="16.377">
+      <phrase speaker="spk1" id="s3" startTime="12.964" endTime="16.377">
         <text>sfiu</text>
       </phrase>
-      <phrase id="s4" startTime="16.377" endTime="21.233">
+      <phrase speaker="spk1" id="s4" startTime="16.377" endTime="21.233">
         <text>kat porpres npatin</text>
       </phrase>
-      <phrase id="s5" startTime="21.233" endTime="24.251">
+      <phrase speaker="spk1" id="s5" startTime="21.233" endTime="24.251">
         <text>p$roro</text>
       </phrase>
-      <phrase id="s6" startTime="24.251" endTime="27.335">
+      <phrase speaker="spk1" id="s6" startTime="24.251" endTime="27.335">
         <text>nrig</text>
       </phrase>
-      <phrase id="s7" startTime="27.335" endTime="30.662">
+      <phrase speaker="spk1" id="s7" startTime="27.335" endTime="30.662">
         <text>ntan</text>
       </phrase>
-      <phrase id="s8" startTime="30.662" endTime="32.348">
+      <phrase speaker="spk1" id="s8" startTime="30.662" endTime="32.348">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s9" startTime="32.348" endTime="35.342">
+      <phrase speaker="spk1" id="s9" startTime="32.348" endTime="35.342">
         <text>nafet</text>
       </phrase>
-      <phrase id="s10" startTime="35.342" endTime="38.613">
+      <phrase speaker="spk1" id="s10" startTime="35.342" endTime="38.613">
         <text>puk</text>
       </phrase>
-      <phrase id="s11" startTime="38.613" endTime="41.511">
+      <phrase speaker="spk1" id="s11" startTime="38.613" endTime="41.511">
         <text>kuom</text>
       </phrase>
-      <phrase id="s12" startTime="41.511" endTime="44.610">
+      <phrase speaker="spk1" id="s12" startTime="41.511" endTime="44.610">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s13" startTime="44.610" endTime="48.577">
+      <phrase speaker="spk1" id="s13" startTime="44.610" endTime="48.577">
         <text>p$aup$al</text>
       </phrase>
-      <phrase id="s14" startTime="48.577" endTime="51.936">
+      <phrase speaker="spk1" id="s14" startTime="48.577" endTime="51.936">
         <text>ptom</text>
       </phrase>
-      <phrase id="s15" startTime="51.936" endTime="55.290">
+      <phrase speaker="spk1" id="s15" startTime="51.936" endTime="55.290">
         <text>fusuer</text>
       </phrase>
-      <phrase id="s16" startTime="55.290" endTime="58.338">
+      <phrase speaker="spk1" id="s16" startTime="55.290" endTime="58.338">
         <text>kat</text>
       </phrase>
-      <phrase id="s17" startTime="58.338" endTime="61.620">
+      <phrase speaker="spk1" id="s17" startTime="58.338" endTime="61.620">
         <text>urur</text>
       </phrase>
-      <phrase id="s18" startTime="61.620" endTime="65.183">
+      <phrase speaker="spk1" id="s18" startTime="61.620" endTime="65.183">
         <text>telekor</text>
       </phrase>
-      <phrase id="s19" startTime="65.183" endTime="68.710">
+      <phrase speaker="spk1" id="s19" startTime="65.183" endTime="68.710">
         <text>kuyaf</text>
       </phrase>
-      <phrase id="s20" startTime="68.710" endTime="73.201">
+      <phrase speaker="spk1" id="s20" startTime="68.710" endTime="73.201">
         <text>nagal</text>
       </phrase>
-      <phrase id="s21" startTime="73.201" endTime="76.794">
+      <phrase speaker="spk1" id="s21" startTime="73.201" endTime="76.794">
         <text>sisi</text>
       </phrase>
-      <phrase id="s22" startTime="76.794" endTime="79.734">
+      <phrase speaker="spk1" id="s22" startTime="76.794" endTime="79.734">
         <text>nmarit</text>
       </phrase>
-      <phrase id="s23" startTime="79.734" endTime="82.722">
+      <phrase speaker="spk1" id="s23" startTime="79.734" endTime="82.722">
         <text>tok</text>
       </phrase>
-      <phrase id="s24" startTime="82.722" endTime="86.437">
+      <phrase speaker="spk1" id="s24" startTime="82.722" endTime="86.437">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s25" startTime="86.437" endTime="90.628">
+      <phrase speaker="spk1" id="s25" startTime="86.437" endTime="90.628">
         <text>ulu</text>
       </phrase>
-      <phrase id="s26" startTime="90.628" endTime="94.071">
+      <phrase speaker="spk1" id="s26" startTime="90.628" endTime="94.071">
         <text>por</text>
       </phrase>
-      <phrase id="s27" startTime="94.071" endTime="98.203">
+      <phrase speaker="spk1" id="s27" startTime="94.071" endTime="98.203">
         <text>krip</text>
       </phrase>
-      <phrase id="s28" startTime="98.203" endTime="102.128">
+      <phrase speaker="spk1" id="s28" startTime="98.203" endTime="102.128">
         <text>tam$as</text>
       </phrase>
-      <phrase id="s29" startTime="102.128" endTime="106.417">
+      <phrase speaker="spk1" id="s29" startTime="102.128" endTime="106.417">
         <text>pakofai</text>
       </phrase>
-      <phrase id="s30" startTime="106.417" endTime="109.046">
+      <phrase speaker="spk1" id="s30" startTime="106.417" endTime="109.046">
         <text>gar</text>
       </phrase>
-      <phrase id="s31" startTime="109.046" endTime="112.040">
+      <phrase speaker="spk1" id="s31" startTime="109.046" endTime="112.040">
         <text>ntar</text>
       </phrase>
-      <phrase id="s32" startTime="112.040" endTime="114.620">
+      <phrase speaker="spk1" id="s32" startTime="112.040" endTime="114.620">
         <text>nfer</text>
       </phrase>
-      <phrase id="s33" startTime="114.620" endTime="117.824">
+      <phrase speaker="spk1" id="s33" startTime="114.620" endTime="117.824">
         <text>ser</text>
       </phrase>
-      <phrase id="s34" startTime="117.824" endTime="121.507">
+      <phrase speaker="spk1" id="s34" startTime="117.824" endTime="121.507">
         <text>tm$en sali</text>
       </phrase>
-      <phrase id="s35" startTime="121.507" endTime="124.800">
+      <phrase speaker="spk1" id="s35" startTime="121.507" endTime="124.800">
         <text>nuof</text>
       </phrase>
-      <phrase id="s36" startTime="124.800" endTime="128.417">
+      <phrase speaker="spk1" id="s36" startTime="124.800" endTime="128.417">
         <text>m$tal</text>
       </phrase>
-      <phrase id="s37" startTime="128.417" endTime="133.698">
+      <phrase speaker="spk1" id="s37" startTime="128.417" endTime="133.698">
         <text>nam$as</text>
       </phrase>
-      <phrase id="s38" startTime="133.698" endTime="136.153">
+      <phrase speaker="spk1" id="s38" startTime="133.698" endTime="136.153">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s39" startTime="136.153" endTime="141.607">
+      <phrase speaker="spk1" id="s39" startTime="136.153" endTime="141.607">
         <text>m$al na kilkilwen</text>
       </phrase>
-      <phrase id="s40" startTime="141.607" endTime="144.870">
+      <phrase speaker="spk1" id="s40" startTime="141.607" endTime="144.870">
         <text>pulp$au</text>
       </phrase>
-      <phrase id="s41" startTime="144.870" endTime="148.759">
+      <phrase speaker="spk1" id="s41" startTime="144.870" endTime="148.759">
         <text>tafafu</text>
       </phrase>
-      <phrase id="s42" startTime="148.759" endTime="152.477">
+      <phrase speaker="spk1" id="s42" startTime="148.759" endTime="152.477">
         <text>mal</text>
       </phrase>
-      <phrase id="s43" startTime="152.477" endTime="156.571">
+      <phrase speaker="spk1" id="s43" startTime="152.477" endTime="156.571">
         <text>mankerkrei</text>
       </phrase>
-      <phrase id="s44" startTime="156.571" endTime="160.343">
+      <phrase speaker="spk1" id="s44" startTime="156.571" endTime="160.343">
         <text>ga</text>
       </phrase>
-      <phrase id="s45" startTime="160.343" endTime="165.912">
+      <phrase speaker="spk1" id="s45" startTime="160.343" endTime="165.912">
         <text>np$au</text>
       </phrase>
-      <phrase id="s46" startTime="165.912" endTime="169.339">
+      <phrase speaker="spk1" id="s46" startTime="165.912" endTime="169.339">
         <text>met matur</text>
       </phrase>
-      <phrase id="s47" startTime="169.339" endTime="172.811">
+      <phrase speaker="spk1" id="s47" startTime="169.339" endTime="172.811">
         <text>p$auftin</text>
       </phrase>
-      <phrase id="s48" startTime="172.811" endTime="174.607">
+      <phrase speaker="spk1" id="s48" startTime="172.811" endTime="174.607">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s49" startTime="174.607" endTime="178.935">
+      <phrase speaker="spk1" id="s49" startTime="174.607" endTime="178.935">
         <text>m$ol</text>
       </phrase>
-      <phrase id="s50" startTime="178.935" endTime="182.272">
+      <phrase speaker="spk1" id="s50" startTime="178.935" endTime="182.272">
         <text>mol</text>
       </phrase>
-      <phrase id="s51" startTime="182.272" endTime="185.559">
+      <phrase speaker="spk1" id="s51" startTime="182.272" endTime="185.559">
         <text>tap$ou</text>
       </phrase>
-      <phrase id="s52" startTime="185.559" endTime="189.332">
+      <phrase speaker="spk1" id="s52" startTime="185.559" endTime="189.332">
         <text>takinrog</text>
       </phrase>
-      <phrase id="s53" startTime="189.332" endTime="192.894">
+      <phrase speaker="spk1" id="s53" startTime="189.332" endTime="192.894">
         <text>nam$</text>
       </phrase>
-      <phrase id="s54" startTime="192.894" endTime="196.763">
+      <phrase speaker="spk1" id="s54" startTime="192.894" endTime="196.763">
         <text>nam$kano</text>
       </phrase>
-      <phrase id="s55" startTime="196.763" endTime="200.081">
+      <phrase speaker="spk1" id="s55" startTime="196.763" endTime="200.081">
         <text>naam$</text>
       </phrase>
-      <phrase id="s56" startTime="200.081" endTime="205.524">
+      <phrase speaker="spk1" id="s56" startTime="200.081" endTime="205.524">
         <text>nator</text>
       </phrase>
-      <phrase id="s57" startTime="205.524" endTime="212.051">
+      <phrase speaker="spk1" id="s57" startTime="205.524" endTime="212.051">
         <text>nam$ek ilaotiktik</text>
       </phrase>
-      <phrase id="s58" startTime="212.051" endTime="215.582">
+      <phrase speaker="spk1" id="s58" startTime="212.051" endTime="215.582">
         <text>nrag</text>
       </phrase>
-      <phrase id="s59" startTime="215.582" endTime="218.635">
+      <phrase speaker="spk1" id="s59" startTime="215.582" endTime="218.635">
         <text>tlai</text>
       </phrase>
-      <phrase id="s60" startTime="218.635" endTime="222.677">
+      <phrase speaker="spk1" id="s60" startTime="218.635" endTime="222.677">
         <text>elagsau</text>
       </phrase>
-      <phrase id="s61" startTime="222.677" endTime="226.031">
+      <phrase speaker="spk1" id="s61" startTime="222.677" endTime="226.031">
         <text>us</text>
       </phrase>
-      <phrase id="s62" startTime="226.031" endTime="229.408">
+      <phrase speaker="spk1" id="s62" startTime="226.031" endTime="229.408">
         <text>ntaknatu</text>
       </phrase>
-      <phrase id="s63" startTime="229.408" endTime="233.490">
+      <phrase speaker="spk1" id="s63" startTime="229.408" endTime="233.490">
         <text>nafanu sa</text>
       </phrase>
-      <phrase id="s64" startTime="233.490" endTime="236.682">
+      <phrase speaker="spk1" id="s64" startTime="233.490" endTime="236.682">
         <text>welu</text>
       </phrase>
-      <phrase id="s65" startTime="236.682" endTime="239.706">
+      <phrase speaker="spk1" id="s65" startTime="236.682" endTime="239.706">
         <text>ataf</text>
       </phrase>
-      <phrase id="s66" startTime="239.706" endTime="242.670">
+      <phrase speaker="spk1" id="s66" startTime="239.706" endTime="242.670">
         <text>esa</text>
       </phrase>
-      <phrase id="s67" startTime="242.670" endTime="245.544">
+      <phrase speaker="spk1" id="s67" startTime="242.670" endTime="245.544">
         <text>kia</text>
       </phrase>
-      <phrase id="s68" startTime="245.544" endTime="248.957">
+      <phrase speaker="spk1" id="s68" startTime="245.544" endTime="248.957">
         <text>katom</text>
       </phrase>
-      <phrase id="s69" startTime="248.957" endTime="251.741">
+      <phrase speaker="spk1" id="s69" startTime="248.957" endTime="251.741">
         <text>of</text>
       </phrase>
-      <phrase id="s70" startTime="251.741" endTime="255.747">
+      <phrase speaker="spk1" id="s70" startTime="251.741" endTime="255.747">
         <text>sul</text>
       </phrase>
-      <phrase id="s71" startTime="255.747" endTime="258.562">
+      <phrase speaker="spk1" id="s71" startTime="255.747" endTime="258.562">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s72" startTime="258.562" endTime="261.765">
+      <phrase speaker="spk1" id="s72" startTime="258.562" endTime="261.765">
         <text>nap$kal</text>
       </phrase>
-      <phrase id="s73" startTime="261.765" endTime="265.679">
+      <phrase speaker="spk1" id="s73" startTime="261.765" endTime="265.679">
         <text>m$aser</text>
       </phrase>
-      <phrase id="s74" startTime="265.679" endTime="266.726">
+      <phrase speaker="spk1" id="s74" startTime="265.679" endTime="266.726">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s75" startTime="266.726" endTime="270.110">
+      <phrase speaker="spk1" id="s75" startTime="266.726" endTime="270.110">
         <text>paikor</text>
       </phrase>
-      <phrase id="s76" startTime="270.110" endTime="273.238">
+      <phrase speaker="spk1" id="s76" startTime="270.110" endTime="273.238">
         <text>sil</text>
       </phrase>
-      <phrase id="s77" startTime="273.238" endTime="276.975">
+      <phrase speaker="spk1" id="s77" startTime="273.238" endTime="276.975">
         <text>srakro</text>
       </phrase>
-      <phrase id="s78" startTime="276.975" endTime="281.071">
+      <phrase speaker="spk1" id="s78" startTime="276.975" endTime="281.071">
         <text>mu</text>
       </phrase>
-      <phrase id="s79" startTime="281.071" endTime="284.843">
+      <phrase speaker="spk1" id="s79" startTime="281.071" endTime="284.843">
         <text>mapul</text>
       </phrase>
-      <phrase id="s80" startTime="284.843" endTime="287.064">
+      <phrase speaker="spk1" id="s80" startTime="284.843" endTime="287.064">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s81" startTime="287.064" endTime="290.779">
+      <phrase speaker="spk1" id="s81" startTime="287.064" endTime="290.779">
         <text>gki</text>
       </phrase>
-      <phrase id="s82" startTime="290.779" endTime="295.570">
+      <phrase speaker="spk1" id="s82" startTime="290.779" endTime="295.570">
         <text>ntap$rai</text>
       </phrase>
-      <phrase id="s83" startTime="295.570" endTime="299.486">
+      <phrase speaker="spk1" id="s83" startTime="295.570" endTime="299.486">
         <text>nega</text>
       </phrase>
-      <phrase id="s84" startTime="299.486" endTime="303.229">
+      <phrase speaker="spk1" id="s84" startTime="299.486" endTime="303.229">
         <text>maur</text>
       </phrase>
-      <phrase id="s85" startTime="303.229" endTime="305.929">
+      <phrase speaker="spk1" id="s85" startTime="303.229" endTime="305.929">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s86" startTime="305.929" endTime="309.217">
+      <phrase speaker="spk1" id="s86" startTime="305.929" endTime="309.217">
         <text>tp$e</text>
       </phrase>
-      <phrase id="s87" startTime="309.217" endTime="313.225">
+      <phrase speaker="spk1" id="s87" startTime="309.217" endTime="313.225">
         <text>p$usai</text>
       </phrase>
-      <phrase id="s88" startTime="313.225" endTime="317.357">
+      <phrase speaker="spk1" id="s88" startTime="313.225" endTime="317.357">
         <text>tartar wes</text>
       </phrase>
-      <phrase id="s89" startTime="317.357" endTime="320.86">
+      <phrase speaker="spk1" id="s89" startTime="317.357" endTime="320.86">
         <text>m$la</text>
       </phrase>
-      <phrase id="s90" startTime="320.86" endTime="323.075">
+      <phrase speaker="spk1" id="s90" startTime="320.86" endTime="323.075">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s91" startTime="323.075" endTime="326.325">
+      <phrase speaker="spk1" id="s91" startTime="323.075" endTime="326.325">
         <text>p$akati</text>
       </phrase>
-      <phrase id="s92" startTime="326.325" endTime="327.822">
+      <phrase speaker="spk1" id="s92" startTime="326.325" endTime="327.822">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s93" startTime="327.822" endTime="336.261">
+      <phrase speaker="spk1" id="s93" startTime="327.822" endTime="336.261">
         <text>tm$en [hesitation]</text>
       </phrase>
-      <phrase id="s94" startTime="336.261" endTime="339.914">
+      <phrase speaker="spk1" id="s94" startTime="336.261" endTime="339.914">
         <text>tm$en p$etnrakati</text>
       </phrase>
-      <phrase id="s95" startTime="339.914" endTime="343.567">
+      <phrase speaker="spk1" id="s95" startTime="339.914" endTime="343.567">
         <text>kut</text>
       </phrase>
-      <phrase id="s96" startTime="343.567" endTime="347.130">
+      <phrase speaker="spk1" id="s96" startTime="343.567" endTime="347.130">
         <text>katsoki</text>
       </phrase>
-      <phrase id="s97" startTime="347.130" endTime="351.677">
+      <phrase speaker="spk1" id="s97" startTime="347.130" endTime="351.677">
         <text>sai ki naar</text>
       </phrase>
-      <phrase id="s98" startTime="351.677" endTime="354.814">
+      <phrase speaker="spk1" id="s98" startTime="351.677" endTime="354.814">
         <text>fainteki</text>
       </phrase>
-      <phrase id="s99" startTime="354.814" endTime="358.087">
+      <phrase speaker="spk1" id="s99" startTime="354.814" endTime="358.087">
         <text>motsoki</text>
       </phrase>
-      <phrase id="s100" startTime="358.087" endTime="359.891">
+      <phrase speaker="spk1" id="s100" startTime="358.087" endTime="359.891">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s101" startTime="359.891" endTime="363.283">
+      <phrase speaker="spk1" id="s101" startTime="359.891" endTime="363.283">
         <text>pus maan</text>
       </phrase>
-      <phrase id="s102" startTime="363.283" endTime="367.085">
+      <phrase speaker="spk1" id="s102" startTime="363.283" endTime="367.085">
         <text>m$ol</text>
       </phrase>
-      <phrase id="s103" startTime="367.085" endTime="371.002">
+      <phrase speaker="spk1" id="s103" startTime="367.085" endTime="371.002">
         <text>nam$or</text>
       </phrase>
-      <phrase id="s104" startTime="371.002" endTime="374.415">
+      <phrase speaker="spk1" id="s104" startTime="371.002" endTime="374.415">
         <text>nfal</text>
       </phrase>
-      <phrase id="s105" startTime="374.415" endTime="377.858">
+      <phrase speaker="spk1" id="s105" startTime="374.415" endTime="377.858">
         <text>nametfau</text>
       </phrase>
-      <phrase id="s106" startTime="377.858" endTime="381.511">
+      <phrase speaker="spk1" id="s106" startTime="377.858" endTime="381.511">
         <text>liksaal</text>
       </phrase>
-      <phrase id="s107" startTime="381.511" endTime="385.463">
+      <phrase speaker="spk1" id="s107" startTime="381.511" endTime="385.463">
         <text>skasok</text>
       </phrase>
-      <phrase id="s108" startTime="385.463" endTime="389.265">
+      <phrase speaker="spk1" id="s108" startTime="385.463" endTime="389.265">
         <text>tigtig</text>
       </phrase>
-      <phrase id="s109" startTime="389.265" endTime="392.820">
+      <phrase speaker="spk1" id="s109" startTime="389.265" endTime="392.820">
         <text>sup$sup$</text>
       </phrase>
-      <phrase id="s110" startTime="392.820" endTime="396.750">
+      <phrase speaker="spk1" id="s110" startTime="392.820" endTime="396.750">
         <text>os</text>
       </phrase>
-      <phrase id="s111" startTime="396.750" endTime="400.313">
+      <phrase speaker="spk1" id="s111" startTime="396.750" endTime="400.313">
         <text>ftin</text>
       </phrase>
-      <phrase id="s112" startTime="400.313" endTime="404.266">
+      <phrase speaker="spk1" id="s112" startTime="400.313" endTime="404.266">
         <text>tfale</text>
       </phrase>
-      <phrase id="s113" startTime="404.266" endTime="407.434">
+      <phrase speaker="spk1" id="s113" startTime="404.266" endTime="407.434">
         <text>kefi</text>
       </phrase>
-      <phrase id="s114" startTime="407.434" endTime="411.145">
+      <phrase speaker="spk1" id="s114" startTime="407.434" endTime="411.145">
         <text>silf</text>
       </phrase>
-      <phrase id="s115" startTime="411.145" endTime="414.708">
+      <phrase speaker="spk1" id="s115" startTime="411.145" endTime="414.708">
         <text>tasok</text>
       </phrase>
-      <phrase id="s116" startTime="414.708" endTime="419.354">
+      <phrase speaker="spk1" id="s116" startTime="414.708" endTime="419.354">
         <text>tifli iskei</text>
       </phrase>
-      <phrase id="s117" startTime="419.354" endTime="422.881">
+      <phrase speaker="spk1" id="s117" startTime="419.354" endTime="422.881">
         <text>ptol</text>
       </phrase>
-      <phrase id="s118" startTime="422.881" endTime="426.899">
+      <phrase speaker="spk1" id="s118" startTime="422.881" endTime="426.899">
         <text>mol</text>
       </phrase>
-      <phrase id="s119" startTime="426.899" endTime="430.568">
+      <phrase speaker="spk1" id="s119" startTime="426.899" endTime="430.568">
         <text>plakori</text>
       </phrase>
-      <phrase id="s120" startTime="430.568" endTime="431.855">
+      <phrase speaker="spk1" id="s120" startTime="430.568" endTime="431.855">
         <text>marik</text>
       </phrase>
-      <phrase id="s121" startTime="431.855" endTime="437.370">
+      <phrase speaker="spk1" id="s121" startTime="431.855" endTime="437.370">
         <text>naun</text>
       </phrase>
-      <phrase id="s122" startTime="437.370" endTime="440.388">
+      <phrase speaker="spk1" id="s122" startTime="437.370" endTime="440.388">
         <text>tkan</text>
       </phrase>
-      <phrase id="s123" startTime="440.388" endTime="444.041">
+      <phrase speaker="spk1" id="s123" startTime="440.388" endTime="444.041">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s124" startTime="444.041" endTime="447.832">
+      <phrase speaker="spk1" id="s124" startTime="444.041" endTime="447.832">
         <text>taktak naniu</text>
       </phrase>
-      <phrase id="s125" startTime="447.832" endTime="451.838">
+      <phrase speaker="spk1" id="s125" startTime="447.832" endTime="451.838">
         <text>kat naniu</text>
       </phrase>
-      <phrase id="s126" startTime="451.838" endTime="455.739">
+      <phrase speaker="spk1" id="s126" startTime="451.838" endTime="455.739">
         <text>koof</text>
       </phrase>
-      <phrase id="s127" startTime="455.739" endTime="459.487">
+      <phrase speaker="spk1" id="s127" startTime="455.739" endTime="459.487">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s128" startTime="459.487" endTime="462.835">
+      <phrase speaker="spk1" id="s128" startTime="459.487" endTime="462.835">
         <text>kineu</text>
       </phrase>
-      <phrase id="s129" startTime="462.835" endTime="466.577">
+      <phrase speaker="spk1" id="s129" startTime="462.835" endTime="466.577">
         <text>m$ol</text>
       </phrase>
-      <phrase id="s130" startTime="466.577" endTime="470.585">
+      <phrase speaker="spk1" id="s130" startTime="466.577" endTime="470.585">
         <text>seraletuok</text>
       </phrase>
-      <phrase id="s131" startTime="470.585" endTime="473.513">
+      <phrase speaker="spk1" id="s131" startTime="470.585" endTime="473.513">
         <text>su</text>
       </phrase>
-      <phrase id="s132" startTime="473.513" endTime="478.394">
+      <phrase speaker="spk1" id="s132" startTime="473.513" endTime="478.394">
         <text>a su naftinwen</text>
       </phrase>
-      <phrase id="s133" startTime="478.394" endTime="482.561">
+      <phrase speaker="spk1" id="s133" startTime="478.394" endTime="482.561">
         <text>naatap</text>
       </phrase>
-      <phrase id="s134" startTime="482.561" endTime="486.088">
+      <phrase speaker="spk1" id="s134" startTime="482.561" endTime="486.088">
         <text>naanik</text>
       </phrase>
-      <phrase id="s135" startTime="486.088" endTime="489.950">
+      <phrase speaker="spk1" id="s135" startTime="486.088" endTime="489.950">
         <text>preg wel</text>
       </phrase>
-      <phrase id="s136" startTime="489.950" endTime="494.762">
+      <phrase speaker="spk1" id="s136" startTime="489.950" endTime="494.762">
         <text>puet soksoki</text>
       </phrase>
-      <phrase id="s137" startTime="494.762" endTime="498.924">
+      <phrase speaker="spk1" id="s137" startTime="494.762" endTime="498.924">
         <text>sarsoki</text>
       </phrase>
-      <phrase id="s138" startTime="498.924" endTime="502.667">
+      <phrase speaker="spk1" id="s138" startTime="498.924" endTime="502.667">
         <text>ur</text>
       </phrase>
-      <phrase id="s139" startTime="502.667" endTime="506.289">
+      <phrase speaker="spk1" id="s139" startTime="502.667" endTime="506.289">
         <text>mlau</text>
       </phrase>
-      <phrase id="s140" startTime="506.289" endTime="510.049">
+      <phrase speaker="spk1" id="s140" startTime="506.289" endTime="510.049">
         <text>nakur</text>
       </phrase>
-      <phrase id="s141" startTime="510.049" endTime="513.372">
+      <phrase speaker="spk1" id="s141" startTime="510.049" endTime="513.372">
         <text>sikskei</text>
       </phrase>
-      <phrase id="s142" startTime="513.372" endTime="516.935">
+      <phrase speaker="spk1" id="s142" startTime="513.372" endTime="516.935">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s143" startTime="516.935" endTime="520.975">
+      <phrase speaker="spk1" id="s143" startTime="516.935" endTime="520.975">
         <text>man seserik</text>
       </phrase>
-      <phrase id="s144" startTime="520.975" endTime="522.502">
+      <phrase speaker="spk1" id="s144" startTime="520.975" endTime="522.502">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s145" startTime="522.502" endTime="527.799">
+      <phrase speaker="spk1" id="s145" startTime="522.502" endTime="527.799">
         <text>matuktukurik</text>
       </phrase>
-      <phrase id="s146" startTime="527.799" endTime="531.027">
+      <phrase speaker="spk1" id="s146" startTime="527.799" endTime="531.027">
         <text>p$el</text>
       </phrase>
-      <phrase id="s147" startTime="531.027" endTime="534.805">
+      <phrase speaker="spk1" id="s147" startTime="531.027" endTime="534.805">
         <text>em$rom</text>
       </phrase>
-      <phrase id="s148" startTime="534.805" endTime="538.248">
+      <phrase speaker="spk1" id="s148" startTime="534.805" endTime="538.248">
         <text>naal</text>
       </phrase>
-      <phrase id="s149" startTime="538.248" endTime="542.494">
+      <phrase speaker="spk1" id="s149" startTime="538.248" endTime="542.494">
         <text>naal raru</text>
       </phrase>
-      <phrase id="s150" startTime="542.494" endTime="546.844">
+      <phrase speaker="spk1" id="s150" startTime="542.494" endTime="546.844">
         <text>naal nasum$</text>
       </phrase>
-      <phrase id="s151" startTime="546.844" endTime="551.443">
+      <phrase speaker="spk1" id="s151" startTime="546.844" endTime="551.443">
         <text>naken</text>
       </phrase>
-      <phrase id="s152" startTime="551.443" endTime="556.258">
+      <phrase speaker="spk1" id="s152" startTime="551.443" endTime="556.258">
         <text>til nafsansa</text>
       </phrase>
-      <phrase id="s153" startTime="556.258" endTime="560.480">
+      <phrase speaker="spk1" id="s153" startTime="556.258" endTime="560.480">
         <text>suer naat</text>
       </phrase>
-      <phrase id="s154" startTime="560.480" endTime="565.000">
+      <phrase speaker="spk1" id="s154" startTime="560.480" endTime="565.000">
         <text>pesp$ot</text>
       </phrase>
-      <phrase id="s155" startTime="565.000" endTime="569.072">
+      <phrase speaker="spk1" id="s155" startTime="565.000" endTime="569.072">
         <text>p$atfat</text>
       </phrase>
-      <phrase id="s156" startTime="569.072" endTime="572.950">
+      <phrase speaker="spk1" id="s156" startTime="569.072" endTime="572.950">
         <text>ter</text>
       </phrase>
-      <phrase id="s157" startTime="572.950" endTime="576.333">
+      <phrase speaker="spk1" id="s157" startTime="572.950" endTime="576.333">
         <text>naur</text>
       </phrase>
-      <phrase id="s158" startTime="576.333" endTime="580.195">
+      <phrase speaker="spk1" id="s158" startTime="576.333" endTime="580.195">
         <text>karkar</text>
       </phrase>
-      <phrase id="s159" startTime="580.195" endTime="582.626">
+      <phrase speaker="spk1" id="s159" startTime="580.195" endTime="582.626">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s160" startTime="582.626" endTime="585.608">
+      <phrase speaker="spk1" id="s160" startTime="582.626" endTime="585.608">
         <text>mukalkal</text>
       </phrase>
-      <phrase id="s161" startTime="585.608" endTime="588.243">
+      <phrase speaker="spk1" id="s161" startTime="585.608" endTime="588.243">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s162" startTime="588.243" endTime="590.967">
+      <phrase speaker="spk1" id="s162" startTime="588.243" endTime="590.967">
         <text>neu</text>
       </phrase>
-      <phrase id="s163" startTime="590.967" endTime="594.740">
+      <phrase speaker="spk1" id="s163" startTime="590.967" endTime="594.740">
         <text>susa</text>
       </phrase>
-      <phrase id="s164" startTime="594.740" endTime="598.722">
+      <phrase speaker="spk1" id="s164" startTime="594.740" endTime="598.722">
         <text>karkor</text>
       </phrase>
-      <phrase id="s165" startTime="598.722" endTime="603.014">
+      <phrase speaker="spk1" id="s165" startTime="598.722" endTime="603.014">
         <text>Yesu</text>
       </phrase>
-      <phrase id="s166" startTime="603.014" endTime="607.745">
+      <phrase speaker="spk1" id="s166" startTime="603.014" endTime="607.745">
         <text>papuen</text>
       </phrase>
-      <phrase id="s167" startTime="607.745" endTime="611.398">
+      <phrase speaker="spk1" id="s167" startTime="607.745" endTime="611.398">
         <text>kano</text>
       </phrase>
-      <phrase id="s168" startTime="611.398" endTime="614.828">
+      <phrase speaker="spk1" id="s168" startTime="611.398" endTime="614.828">
         <text>nasun</text>
       </phrase>
-      <phrase id="s169" startTime="614.828" endTime="616.894">
+      <phrase speaker="spk1" id="s169" startTime="614.828" endTime="616.894">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s170" startTime="616.894" endTime="620.491">
+      <phrase speaker="spk1" id="s170" startTime="616.894" endTime="620.491">
         <text>krokur</text>
       </phrase>
-      <phrase id="s171" startTime="620.491" endTime="624.174">
+      <phrase speaker="spk1" id="s171" startTime="620.491" endTime="624.174">
         <text>nrilkau</text>
       </phrase>
-      <phrase id="s172" startTime="624.174" endTime="628.785">
+      <phrase speaker="spk1" id="s172" startTime="624.174" endTime="628.785">
         <text>sok pak etan</text>
       </phrase>
-      <phrase id="s173" startTime="628.785" endTime="632.288">
+      <phrase speaker="spk1" id="s173" startTime="628.785" endTime="632.288">
         <text>sok</text>
       </phrase>
-      <phrase id="s174" startTime="632.288" endTime="636.629">
+      <phrase speaker="spk1" id="s174" startTime="632.288" endTime="636.629">
         <text>namlaskos</text>
       </phrase>
-      <phrase id="s175" startTime="636.629" endTime="640.102">
+      <phrase speaker="spk1" id="s175" startTime="636.629" endTime="640.102">
         <text>nmalok</text>
       </phrase>
-      <phrase id="s176" startTime="640.102" endTime="641.995">
+      <phrase speaker="spk1" id="s176" startTime="640.102" endTime="641.995">
         <text>kamp$or</text>
       </phrase>
-      <phrase id="s177" startTime="641.995" endTime="647.814">
+      <phrase speaker="spk1" id="s177" startTime="641.995" endTime="647.814">
         <text>p$i</text>
       </phrase>
-      <phrase id="s178" startTime="647.814" endTime="651.622">
+      <phrase speaker="spk1" id="s178" startTime="647.814" endTime="651.622">
         <text>watiam</text>
       </phrase>
-      <phrase id="s179" startTime="651.622" endTime="656.137">
+      <phrase speaker="spk1" id="s179" startTime="651.622" endTime="656.137">
         <text>krakpun</text>
       </phrase>
-      <phrase id="s180" startTime="656.137" endTime="659.845">
+      <phrase speaker="spk1" id="s180" startTime="656.137" endTime="659.845">
         <text>pkapun</text>
       </phrase>
-      <phrase id="s181" startTime="659.845" endTime="663.222">
+      <phrase speaker="spk1" id="s181" startTime="659.845" endTime="663.222">
         <text>sik</text>
       </phrase>
-      <phrase id="s182" startTime="663.222" endTime="666.875">
+      <phrase speaker="spk1" id="s182" startTime="663.222" endTime="666.875">
         <text>wal nrea</text>
       </phrase>
-      <phrase id="s183" startTime="666.875" endTime="671.187">
+      <phrase speaker="spk1" id="s183" startTime="666.875" endTime="671.187">
         <text>nap$utwen</text>
       </phrase>
-      <phrase id="s184" startTime="671.187" endTime="674.959">
+      <phrase speaker="spk1" id="s184" startTime="671.187" endTime="674.959">
         <text>tam$el</text>
       </phrase>
-      <phrase id="s185" startTime="674.959" endTime="678.676">
+      <phrase speaker="spk1" id="s185" startTime="674.959" endTime="678.676">
         <text>tap$etu</text>
       </phrase>
-      <phrase id="s186" startTime="678.676" endTime="682.449">
+      <phrase speaker="spk1" id="s186" startTime="678.676" endTime="682.449">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s187" startTime="682.449" endTime="685.947">
+      <phrase speaker="spk1" id="s187" startTime="682.449" endTime="685.947">
         <text>masmes</text>
       </phrase>
-      <phrase id="s188" startTime="685.947" endTime="689.833">
+      <phrase speaker="spk1" id="s188" startTime="685.947" endTime="689.833">
         <text>tm$otum</text>
       </phrase>
-      <phrase id="s189" startTime="689.833" endTime="691.569">
+      <phrase speaker="spk1" id="s189" startTime="689.833" endTime="691.569">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s190" startTime="691.569" endTime="694.833">
+      <phrase speaker="spk1" id="s190" startTime="691.569" endTime="694.833">
         <text>pul</text>
       </phrase>
-      <phrase id="s191" startTime="694.833" endTime="698.791">
+      <phrase speaker="spk1" id="s191" startTime="694.833" endTime="698.791">
         <text>pul nkas</text>
       </phrase>
-      <phrase id="s192" startTime="698.791" endTime="702.468">
+      <phrase speaker="spk1" id="s192" startTime="698.791" endTime="702.468">
         <text>sikti</text>
       </phrase>
-      <phrase id="s193" startTime="702.468" endTime="706.542">
+      <phrase speaker="spk1" id="s193" startTime="702.468" endTime="706.542">
         <text>sap$le</text>
       </phrase>
-      <phrase id="s194" startTime="706.542" endTime="710.809">
+      <phrase speaker="spk1" id="s194" startTime="706.542" endTime="710.809">
         <text>klop nap$rai</text>
       </phrase>
-      <phrase id="s195" startTime="710.809" endTime="712.156">
+      <phrase speaker="spk1" id="s195" startTime="710.809" endTime="712.156">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s196" startTime="712.156" endTime="716.144">
+      <phrase speaker="spk1" id="s196" startTime="712.156" endTime="716.144">
         <text>napkun</text>
       </phrase>
-      <phrase id="s197" startTime="716.144" endTime="719.938">
+      <phrase speaker="spk1" id="s197" startTime="716.144" endTime="719.938">
         <text>kumol</text>
       </phrase>
-      <phrase id="s198" startTime="719.938" endTime="723.675">
+      <phrase speaker="spk1" id="s198" startTime="719.938" endTime="723.675">
         <text>naturiai</text>
       </phrase>
-      <phrase id="s199" startTime="723.675" endTime="727.866">
+      <phrase speaker="spk1" id="s199" startTime="723.675" endTime="727.866">
         <text>latana</text>
       </phrase>
-      <phrase id="s200" startTime="727.866" endTime="731.07">
+      <phrase speaker="spk1" id="s200" startTime="727.866" endTime="731.07">
         <text>kapu</text>
       </phrase>
-      <phrase id="s201" startTime="731.07" endTime="732.627">
+      <phrase speaker="spk1" id="s201" startTime="731.07" endTime="732.627">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s202" startTime="732.627" endTime="736.489">
+      <phrase speaker="spk1" id="s202" startTime="732.627" endTime="736.489">
         <text>temlap</text>
       </phrase>
-      <phrase id="s203" startTime="736.489" endTime="740.225">
+      <phrase speaker="spk1" id="s203" startTime="736.489" endTime="740.225">
         <text>fkar</text>
       </phrase>
-      <phrase id="s204" startTime="740.225" endTime="743.931">
+      <phrase speaker="spk1" id="s204" startTime="740.225" endTime="743.931">
         <text>en</text>
       </phrase>
-      <phrase id="s205" startTime="743.931" endTime="747.973">
+      <phrase speaker="spk1" id="s205" startTime="743.931" endTime="747.973">
         <text>entan</text>
       </phrase>
-      <phrase id="s206" startTime="747.973" endTime="752.165">
+      <phrase speaker="spk1" id="s206" startTime="747.973" endTime="752.165">
         <text>psol</text>
       </phrase>
-      <phrase id="s207" startTime="752.165" endTime="756.213">
+      <phrase speaker="spk1" id="s207" startTime="752.165" endTime="756.213">
         <text>ntawutmal</text>
       </phrase>
-      <phrase id="s208" startTime="756.213" endTime="759.800">
+      <phrase speaker="spk1" id="s208" startTime="756.213" endTime="759.800">
         <text>pei</text>
       </phrase>
-      <phrase id="s209" startTime="759.800" endTime="763.412">
+      <phrase speaker="spk1" id="s209" startTime="759.800" endTime="763.412">
         <text>nam$romin</text>
       </phrase>
-      <phrase id="s210" startTime="763.412" endTime="766.616">
+      <phrase speaker="spk1" id="s210" startTime="763.412" endTime="766.616">
         <text>nru</text>
       </phrase>
-      <phrase id="s211" startTime="766.616" endTime="769.939">
+      <phrase speaker="spk1" id="s211" startTime="766.616" endTime="769.939">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s212" startTime="769.939" endTime="773.758">
+      <phrase speaker="spk1" id="s212" startTime="769.939" endTime="773.758">
         <text>natur mus</text>
       </phrase>
-      <phrase id="s213" startTime="773.758" endTime="777.045">
+      <phrase speaker="spk1" id="s213" startTime="773.758" endTime="777.045">
         <text>tap</text>
       </phrase>
-      <phrase id="s214" startTime="777.045" endTime="780.518">
+      <phrase speaker="spk1" id="s214" startTime="777.045" endTime="780.518">
         <text>tgof</text>
       </phrase>
-      <phrase id="s215" startTime="780.518" endTime="784.949">
+      <phrase speaker="spk1" id="s215" startTime="780.518" endTime="784.949">
         <text>nrog lele</text>
       </phrase>
-      <phrase id="s216" startTime="784.949" endTime="790.125">
+      <phrase speaker="spk1" id="s216" startTime="784.949" endTime="790.125">
         <text>manimat</text>
       </phrase>
-      <phrase id="s217" startTime="790.125" endTime="794.131">
+      <phrase speaker="spk1" id="s217" startTime="790.125" endTime="794.131">
         <text>p$oot</text>
       </phrase>
-      <phrase id="s218" startTime="794.131" endTime="798.622">
+      <phrase speaker="spk1" id="s218" startTime="794.131" endTime="798.622">
         <text>ptuki namle</text>
       </phrase>
-      <phrase id="s219" startTime="798.622" endTime="802.484">
+      <phrase speaker="spk1" id="s219" startTime="798.622" endTime="802.484">
         <text>tum$alu</text>
       </phrase>
-      <phrase id="s220" startTime="802.484" endTime="806.017">
+      <phrase speaker="spk1" id="s220" startTime="802.484" endTime="806.017">
         <text>maur</text>
       </phrase>
-      <phrase id="s221" startTime="806.017" endTime="810.089">
+      <phrase speaker="spk1" id="s221" startTime="806.017" endTime="810.089">
         <text>kotfak</text>
       </phrase>
-      <phrase id="s222" startTime="810.089" endTime="813.500">
+      <phrase speaker="spk1" id="s222" startTime="810.089" endTime="813.500">
         <text>pram</text>
       </phrase>
-      <phrase id="s223" startTime="813.500" endTime="818.021">
+      <phrase speaker="spk1" id="s223" startTime="813.500" endTime="818.021">
         <text>natam$ol psir</text>
       </phrase>
-      <phrase id="s224" startTime="818.021" endTime="821.578">
+      <phrase speaker="spk1" id="s224" startTime="818.021" endTime="821.578">
         <text>limnai</text>
       </phrase>
-      <phrase id="s225" startTime="821.578" endTime="823.284">
+      <phrase speaker="spk1" id="s225" startTime="821.578" endTime="823.284">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s226" startTime="823.284" endTime="826.967">
+      <phrase speaker="spk1" id="s226" startTime="823.284" endTime="826.967">
         <text>npakor</text>
       </phrase>
-      <phrase id="s227" startTime="826.967" endTime="828.350">
+      <phrase speaker="spk1" id="s227" startTime="826.967" endTime="828.350">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s228" startTime="828.350" endTime="831.458">
+      <phrase speaker="spk1" id="s228" startTime="828.350" endTime="831.458">
         <text>pai</text>
       </phrase>
-      <phrase id="s229" startTime="831.458" endTime="835.064">
+      <phrase speaker="spk1" id="s229" startTime="831.458" endTime="835.064">
         <text>nrakut</text>
       </phrase>
-      <phrase id="s230" startTime="835.064" endTime="838.932">
+      <phrase speaker="spk1" id="s230" startTime="835.064" endTime="838.932">
         <text>ske</text>
       </phrase>
-      <phrase id="s231" startTime="838.932" endTime="842.699">
+      <phrase speaker="spk1" id="s231" startTime="838.932" endTime="842.699">
         <text>tuleg</text>
       </phrase>
-      <phrase id="s232" startTime="842.699" endTime="846.291">
+      <phrase speaker="spk1" id="s232" startTime="842.699" endTime="846.291">
         <text>namrem</text>
       </phrase>
-      <phrase id="s233" startTime="846.291" endTime="849.578">
+      <phrase speaker="spk1" id="s233" startTime="846.291" endTime="849.578">
         <text>tp$il nkap</text>
       </phrase>
-      <phrase id="s234" startTime="849.578" endTime="853.560">
+      <phrase speaker="spk1" id="s234" startTime="849.578" endTime="853.560">
         <text>napil</text>
       </phrase>
-      <phrase id="s235" startTime="853.560" endTime="856.854">
+      <phrase speaker="spk1" id="s235" startTime="853.560" endTime="856.854">
         <text>sor</text>
       </phrase>
-      <phrase id="s236" startTime="856.854" endTime="859.069">
+      <phrase speaker="spk1" id="s236" startTime="856.854" endTime="859.069">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s237" startTime="859.069" endTime="862.572">
+      <phrase speaker="spk1" id="s237" startTime="859.069" endTime="862.572">
         <text>nasul</text>
       </phrase>
-      <phrase id="s238" startTime="862.572" endTime="866.336">
+      <phrase speaker="spk1" id="s238" startTime="862.572" endTime="866.336">
         <text>lewi</text>
       </phrase>
-      <phrase id="s239" startTime="866.336" endTime="870.302">
+      <phrase speaker="spk1" id="s239" startTime="866.336" endTime="870.302">
         <text>nanromien</text>
       </phrase>
-      <phrase id="s240" startTime="870.302" endTime="874.134">
+      <phrase speaker="spk1" id="s240" startTime="870.302" endTime="874.134">
         <text>pasa</text>
       </phrase>
-      <phrase id="s241" startTime="874.134" endTime="878.086">
+      <phrase speaker="spk1" id="s241" startTime="874.134" endTime="878.086">
         <text>naik maan</text>
       </phrase>
-      <phrase id="s242" startTime="878.086" endTime="882.398">
+      <phrase speaker="spk1" id="s242" startTime="878.086" endTime="882.398">
         <text>nasok nkanr</text>
       </phrase>
-      <phrase id="s243" startTime="882.398" endTime="885.888">
+      <phrase speaker="spk1" id="s243" startTime="882.398" endTime="885.888">
         <text>naf</text>
       </phrase>
-      <phrase id="s244" startTime="885.888" endTime="889.6">
+      <phrase speaker="spk1" id="s244" startTime="885.888" endTime="889.6">
         <text>pur</text>
       </phrase>
-      <phrase id="s245" startTime="889.6" endTime="893.732">
+      <phrase speaker="spk1" id="s245" startTime="889.6" endTime="893.732">
         <text>nrog perkat</text>
       </phrase>
-      <phrase id="s246" startTime="893.732" endTime="897.851">
+      <phrase speaker="spk1" id="s246" startTime="893.732" endTime="897.851">
         <text>of</text>
       </phrase>
-      <phrase id="s247" startTime="897.851" endTime="901.618">
+      <phrase speaker="spk1" id="s247" startTime="897.851" endTime="901.618">
         <text>ntankep</text>
       </phrase>
-      <phrase id="s248" startTime="901.618" endTime="905.570">
+      <phrase speaker="spk1" id="s248" startTime="901.618" endTime="905.570">
         <text>ofag</text>
       </phrase>
-      <phrase id="s249" startTime="905.570" endTime="909.522">
+      <phrase speaker="spk1" id="s249" startTime="905.570" endTime="909.522">
         <text>tatu</text>
       </phrase>
-      <phrase id="s250" startTime="909.522" endTime="913.444">
+      <phrase speaker="spk1" id="s250" startTime="909.522" endTime="913.444">
         <text>tatu raru</text>
       </phrase>
-      <phrase id="s251" startTime="913.444" endTime="917.545">
+      <phrase speaker="spk1" id="s251" startTime="913.444" endTime="917.545">
         <text>namal nkas</text>
       </phrase>
-      <phrase id="s252" startTime="917.545" endTime="921.491">
+      <phrase speaker="spk1" id="s252" startTime="917.545" endTime="921.491">
         <text>pisp$lolo</text>
       </phrase>
-      <phrase id="s253" startTime="921.491" endTime="927.365">
+      <phrase speaker="spk1" id="s253" startTime="921.491" endTime="927.365">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s254" startTime="927.365" endTime="930.891">
+      <phrase speaker="spk1" id="s254" startTime="927.365" endTime="930.891">
         <text>lemis</text>
       </phrase>
-      <phrase id="s255" startTime="930.891" endTime="935.263">
+      <phrase speaker="spk1" id="s255" startTime="930.891" endTime="935.263">
         <text>leser</text>
       </phrase>
-      <phrase id="s256" startTime="935.263" endTime="939.018">
+      <phrase speaker="spk1" id="s256" startTime="935.263" endTime="939.018">
         <text>lel namrun</text>
       </phrase>
-      <phrase id="s257" startTime="939.018" endTime="942.928">
+      <phrase speaker="spk1" id="s257" startTime="939.018" endTime="942.928">
         <text>nremet</text>
       </phrase>
-      <phrase id="s258" startTime="942.928" endTime="946.934">
+      <phrase speaker="spk1" id="s258" startTime="942.928" endTime="946.934">
         <text>malosak</text>
       </phrase>
-      <phrase id="s259" startTime="946.934" endTime="952.622">
+      <phrase speaker="spk1" id="s259" startTime="946.934" endTime="952.622">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s260" startTime="952.622" endTime="956.874">
+      <phrase speaker="spk1" id="s260" startTime="952.622" endTime="956.874">
         <text>nem$ap$m$ap$</text>
       </phrase>
-      <phrase id="s261" startTime="956.874" endTime="960.077">
+      <phrase speaker="spk1" id="s261" startTime="956.874" endTime="960.077">
         <text>pitar</text>
       </phrase>
-      <phrase id="s262" startTime="960.077" endTime="963.257">
+      <phrase speaker="spk1" id="s262" startTime="960.077" endTime="963.257">
         <text>kut</text>
       </phrase>
-      <phrase id="s263" startTime="963.257" endTime="967.233">
+      <phrase speaker="spk1" id="s263" startTime="963.257" endTime="967.233">
         <text>nrom</text>
       </phrase>
-      <phrase id="s264" startTime="967.233" endTime="971.625">
+      <phrase speaker="spk1" id="s264" startTime="967.233" endTime="971.625">
         <text>maat</text>
       </phrase>
-      <phrase id="s265" startTime="971.625" endTime="976.332">
+      <phrase speaker="spk1" id="s265" startTime="971.625" endTime="976.332">
         <text>namat rar</text>
       </phrase>
-      <phrase id="s266" startTime="976.332" endTime="980.104">
+      <phrase speaker="spk1" id="s266" startTime="976.332" endTime="980.104">
         <text>nag</text>
       </phrase>
-      <phrase id="s267" startTime="980.104" endTime="983.997">
+      <phrase speaker="spk1" id="s267" startTime="980.104" endTime="983.997">
         <text>nam$sat</text>
       </phrase>
-      <phrase id="s268" startTime="983.997" endTime="988.819">
+      <phrase speaker="spk1" id="s268" startTime="983.997" endTime="988.819">
         <text>nal narun</text>
       </phrase>
-      <phrase id="s269" startTime="988.819" endTime="992.406">
+      <phrase speaker="spk1" id="s269" startTime="988.819" endTime="992.406">
         <text>matsik</text>
       </phrase>
-      <phrase id="s270" startTime="992.406" endTime="993.963">
+      <phrase speaker="spk1" id="s270" startTime="992.406" endTime="993.963">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s271" startTime="993.963" endTime="997.615">
+      <phrase speaker="spk1" id="s271" startTime="993.963" endTime="997.615">
         <text>pirket</text>
       </phrase>
-      <phrase id="s272" startTime="997.615" endTime="1000.915">
+      <phrase speaker="spk1" id="s272" startTime="997.615" endTime="1000.915">
         <text>p$au taarag</text>
       </phrase>
-      <phrase id="s273" startTime="1000.915" endTime="1004.562">
+      <phrase speaker="spk1" id="s273" startTime="1000.915" endTime="1004.562">
         <text>krakpes</text>
       </phrase>
-      <phrase id="s274" startTime="1004.562" endTime="1007.645">
+      <phrase speaker="spk1" id="s274" startTime="1004.562" endTime="1007.645">
         <text>sm$ol</text>
       </phrase>
-      <phrase id="s275" startTime="1007.645" endTime="1012.982">
+      <phrase speaker="spk1" id="s275" startTime="1007.645" endTime="1012.982">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s276" startTime="1012.982" endTime="1016.730">
+      <phrase speaker="spk1" id="s276" startTime="1012.982" endTime="1016.730">
         <text>tut naniu</text>
       </phrase>
-      <phrase id="s277" startTime="1016.730" endTime="1020.437">
+      <phrase speaker="spk1" id="s277" startTime="1016.730" endTime="1020.437">
         <text>pul</text>
       </phrase>
-      <phrase id="s278" startTime="1020.437" endTime="1024.599">
+      <phrase speaker="spk1" id="s278" startTime="1020.437" endTime="1024.599">
         <text>minrog</text>
       </phrase>
-      <phrase id="s279" startTime="1024.599" endTime="1028.679">
+      <phrase speaker="spk1" id="s279" startTime="1024.599" endTime="1028.679">
         <text>nanuei</text>
       </phrase>
-      <phrase id="s280" startTime="1028.679" endTime="1032.601">
+      <phrase speaker="spk1" id="s280" startTime="1028.679" endTime="1032.601">
         <text>kalo</text>
       </phrase>
-      <phrase id="s281" startTime="1032.601" endTime="1036.583">
+      <phrase speaker="spk1" id="s281" startTime="1032.601" endTime="1036.583">
         <text>natam$ol</text>
       </phrase>
-      <phrase id="s282" startTime="1036.583" endTime="1040.257">
+      <phrase speaker="spk1" id="s282" startTime="1036.583" endTime="1040.257">
         <text>magko</text>
       </phrase>
-      <phrase id="s283" startTime="1040.257" endTime="1044.484">
+      <phrase speaker="spk1" id="s283" startTime="1040.257" endTime="1044.484">
         <text>maurikat</text>
       </phrase>
-      <phrase id="s284" startTime="1044.484" endTime="1048.257">
+      <phrase speaker="spk1" id="s284" startTime="1044.484" endTime="1048.257">
         <text>nansiik</text>
       </phrase>
-      <phrase id="s285" startTime="1048.257" endTime="1052.508">
+      <phrase speaker="spk1" id="s285" startTime="1048.257" endTime="1052.508">
         <text>natog</text>
       </phrase>
-      <phrase id="s286" startTime="1052.508" endTime="1056.454">
+      <phrase speaker="spk1" id="s286" startTime="1052.508" endTime="1056.454">
         <text>maniot</text>
       </phrase>
-      <phrase id="s287" startTime="1056.454" endTime="1060.555">
+      <phrase speaker="spk1" id="s287" startTime="1056.454" endTime="1060.555">
         <text>lap</text>
       </phrase>
-      <phrase id="s288" startTime="1060.555" endTime="1065.310">
+      <phrase speaker="spk1" id="s288" startTime="1060.555" endTime="1065.310">
         <text>nkis</text>
       </phrase>
-      <phrase id="s289" startTime="1065.310" endTime="1068.783">
+      <phrase speaker="spk1" id="s289" startTime="1065.310" endTime="1068.783">
         <text>ferfer</text>
       </phrase>
-      <phrase id="s290" startTime="1068.783" endTime="1070.999">
+      <phrase speaker="spk1" id="s290" startTime="1068.783" endTime="1070.999">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s291" startTime="1070.999" endTime="1074.621">
+      <phrase speaker="spk1" id="s291" startTime="1070.999" endTime="1074.621">
         <text>naftorien</text>
       </phrase>
-      <phrase id="s292" startTime="1074.621" endTime="1078.734">
+      <phrase speaker="spk1" id="s292" startTime="1074.621" endTime="1078.734">
         <text>nlakwen</text>
       </phrase>
-      <phrase id="s293" startTime="1078.734" endTime="1082.476">
+      <phrase speaker="spk1" id="s293" startTime="1078.734" endTime="1082.476">
         <text>nak nrain</text>
       </phrase>
-      <phrase id="s294" startTime="1082.476" endTime="1086.273">
+      <phrase speaker="spk1" id="s294" startTime="1082.476" endTime="1086.273">
         <text>ptour</text>
       </phrase>
-      <phrase id="s295" startTime="1086.273" endTime="1089.647">
+      <phrase speaker="spk1" id="s295" startTime="1086.273" endTime="1089.647">
         <text>natir</text>
       </phrase>
-      <phrase id="s296" startTime="1089.647" endTime="1092.318">
+      <phrase speaker="spk1" id="s296" startTime="1089.647" endTime="1092.318">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s297" startTime="1092.318" endTime="1096.025">
+      <phrase speaker="spk1" id="s297" startTime="1092.318" endTime="1096.025">
         <text>fisfis</text>
       </phrase>
-      <phrase id="s298" startTime="1096.025" endTime="1099.743">
+      <phrase speaker="spk1" id="s298" startTime="1096.025" endTime="1099.743">
         <text>m$iit</text>
       </phrase>
-      <phrase id="s299" startTime="1099.743" endTime="1103.629">
+      <phrase speaker="spk1" id="s299" startTime="1099.743" endTime="1103.629">
         <text>tefkau</text>
       </phrase>
-      <phrase id="s300" startTime="1103.629" endTime="1107.611">
+      <phrase speaker="spk1" id="s300" startTime="1103.629" endTime="1107.611">
         <text>mases</text>
       </phrase>
-      <phrase id="s301" startTime="1107.611" endTime="1110.417">
+      <phrase speaker="spk1" id="s301" startTime="1107.611" endTime="1110.417">
         <text>iak</text>
       </phrase>
-      <phrase id="s302" startTime="1110.417" endTime="1112.465">
+      <phrase speaker="spk1" id="s302" startTime="1110.417" endTime="1112.465">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s303" startTime="1112.465" endTime="1116.426">
+      <phrase speaker="spk1" id="s303" startTime="1112.465" endTime="1116.426">
         <text>nap$et</text>
       </phrase>
-      <phrase id="s304" startTime="1116.426" endTime="1120.342">
+      <phrase speaker="spk1" id="s304" startTime="1116.426" endTime="1120.342">
         <text>nap$kas</text>
       </phrase>
-      <phrase id="s305" startTime="1120.342" endTime="1124.150">
+      <phrase speaker="spk1" id="s305" startTime="1120.342" endTime="1124.150">
         <text>tekatpi</text>
       </phrase>
-      <phrase id="s306" startTime="1124.150" endTime="1128.396">
+      <phrase speaker="spk1" id="s306" startTime="1124.150" endTime="1128.396">
         <text>nalkis</text>
       </phrase>
-      <phrase id="s307" startTime="1128.396" endTime="1131.758">
+      <phrase speaker="spk1" id="s307" startTime="1128.396" endTime="1131.758">
         <text>maumau</text>
       </phrase>
-      <phrase id="s308" startTime="1131.758" endTime="1133.075">
+      <phrase speaker="spk1" id="s308" startTime="1131.758" endTime="1133.075">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s309" startTime="1133.075" endTime="1136.488">
+      <phrase speaker="spk1" id="s309" startTime="1133.075" endTime="1136.488">
         <text>neet</text>
       </phrase>
-      <phrase id="s310" startTime="1136.488" endTime="1140.560">
+      <phrase speaker="spk1" id="s310" startTime="1136.488" endTime="1140.560">
         <text>patlas</text>
       </phrase>
-      <phrase id="s311" startTime="1140.560" endTime="1144.556">
+      <phrase speaker="spk1" id="s311" startTime="1140.560" endTime="1144.556">
         <text>seltra</text>
       </phrase>
-      <phrase id="s312" startTime="1144.556" endTime="1148.664">
+      <phrase speaker="spk1" id="s312" startTime="1144.556" endTime="1148.664">
         <text>tlasi</text>
       </phrase>
-      <phrase id="s313" startTime="1148.664" endTime="1153.095">
+      <phrase speaker="spk1" id="s313" startTime="1148.664" endTime="1153.095">
         <text>nafkou</text>
       </phrase>
-      <phrase id="s314" startTime="1153.095" endTime="1156.802">
+      <phrase speaker="spk1" id="s314" startTime="1153.095" endTime="1156.802">
         <text>gaf</text>
       </phrase>
-      <phrase id="s315" startTime="1156.802" endTime="1158.718">
+      <phrase speaker="spk1" id="s315" startTime="1156.802" endTime="1158.718">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s316" startTime="1158.718" endTime="1162.760">
+      <phrase speaker="spk1" id="s316" startTime="1158.718" endTime="1162.760">
         <text>m$au naliati</text>
       </phrase>
-      <phrase id="s317" startTime="1162.760" endTime="1166.652">
+      <phrase speaker="spk1" id="s317" startTime="1162.760" endTime="1166.652">
         <text>tak maloput</text>
       </phrase>
-      <phrase id="s318" startTime="1166.652" endTime="1170.844">
+      <phrase speaker="spk1" id="s318" startTime="1166.652" endTime="1170.844">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s319" startTime="1170.844" endTime="1174.586">
+      <phrase speaker="spk1" id="s319" startTime="1170.844" endTime="1174.586">
         <text>namal taaf</text>
       </phrase>
-      <phrase id="s320" startTime="1174.586" endTime="1177.976">
+      <phrase speaker="spk1" id="s320" startTime="1174.586" endTime="1177.976">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s321" startTime="1177.976" endTime="1181.443">
+      <phrase speaker="spk1" id="s321" startTime="1177.976" endTime="1181.443">
         <text>ntafatu</text>
       </phrase>
-      <phrase id="s322" startTime="1181.443" endTime="1183.030">
+      <phrase speaker="spk1" id="s322" startTime="1181.443" endTime="1183.030">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s323" startTime="1183.030" endTime="1187.127">
+      <phrase speaker="spk1" id="s323" startTime="1183.030" endTime="1187.127">
         <text>mantap$arp$ar</text>
       </phrase>
-      <phrase id="s324" startTime="1187.127" endTime="1191.441">
+      <phrase speaker="spk1" id="s324" startTime="1187.127" endTime="1191.441">
         <text>kraksmanr</text>
       </phrase>
-      <phrase id="s325" startTime="1191.441" endTime="1195.236">
+      <phrase speaker="spk1" id="s325" startTime="1191.441" endTime="1195.236">
         <text>sraf</text>
       </phrase>
-      <phrase id="s326" startTime="1195.236" endTime="1199.368">
+      <phrase speaker="spk1" id="s326" startTime="1195.236" endTime="1199.368">
         <text>sursap$</text>
       </phrase>
-      <phrase id="s327" startTime="1199.368" endTime="1203.440">
+      <phrase speaker="spk1" id="s327" startTime="1199.368" endTime="1203.440">
         <text>krakpel</text>
       </phrase>
-      <phrase id="s328" startTime="1203.440" endTime="1207.906">
+      <phrase speaker="spk1" id="s328" startTime="1203.440" endTime="1207.906">
         <text>srafnoi</text>
       </phrase>
-      <phrase id="s329" startTime="1207.906" endTime="1212.214">
+      <phrase speaker="spk1" id="s329" startTime="1207.906" endTime="1212.214">
         <text>kau i mo</text>
       </phrase>
-      <phrase id="s330" startTime="1212.214" endTime="1216.495">
+      <phrase speaker="spk1" id="s330" startTime="1212.214" endTime="1216.495">
         <text>atlag</text>
       </phrase>
-      <phrase id="s331" startTime="1216.495" endTime="1221.076">
+      <phrase speaker="spk1" id="s331" startTime="1216.495" endTime="1221.076">
         <text>pulp$og</text>
       </phrase>
-      <phrase id="s332" startTime="1221.076" endTime="1224.938">
+      <phrase speaker="spk1" id="s332" startTime="1221.076" endTime="1224.938">
         <text>katnam</text>
       </phrase>
-      <phrase id="s333" startTime="1224.938" endTime="1228.898">
+      <phrase speaker="spk1" id="s333" startTime="1224.938" endTime="1228.898">
         <text>iak</text>
       </phrase>
-      <phrase id="s334" startTime="1228.898" endTime="1232.215">
+      <phrase speaker="spk1" id="s334" startTime="1228.898" endTime="1232.215">
         <text>rait</text>
       </phrase>
-      <phrase id="s335" startTime="1232.215" endTime="1236.018">
+      <phrase speaker="spk1" id="s335" startTime="1232.215" endTime="1236.018">
         <text>raitok</text>
       </phrase>
-      <phrase id="s336" startTime="1236.018" endTime="1239.820">
+      <phrase speaker="spk1" id="s336" startTime="1236.018" endTime="1239.820">
         <text>ntaf</text>
       </phrase>
-      <phrase id="s337" startTime="1239.820" endTime="1243.922">
+      <phrase speaker="spk1" id="s337" startTime="1239.820" endTime="1243.922">
         <text>lagarof</text>
       </phrase>
-      <phrase id="s338" startTime="1243.922" endTime="1248.397">
+      <phrase speaker="spk1" id="s338" startTime="1243.922" endTime="1248.397">
         <text>pakmaalep</text>
       </phrase>
-      <phrase id="s339" startTime="1248.397" endTime="1250.223">
+      <phrase speaker="spk1" id="s339" startTime="1248.397" endTime="1250.223">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s340" startTime="1250.223" endTime="1254.068">
+      <phrase speaker="spk1" id="s340" startTime="1250.223" endTime="1254.068">
         <text>palkias</text>
       </phrase>
-      <phrase id="s341" startTime="1254.068" endTime="1257.907">
+      <phrase speaker="spk1" id="s341" startTime="1254.068" endTime="1257.907">
         <text>nkanr</text>
       </phrase>
-      <phrase id="s342" startTime="1257.907" endTime="1261.703">
+      <phrase speaker="spk1" id="s342" startTime="1257.907" endTime="1261.703">
         <text>nrus</text>
       </phrase>
-      <phrase id="s343" startTime="1261.703" endTime="1264.997">
+      <phrase speaker="spk1" id="s343" startTime="1261.703" endTime="1264.997">
         <text>nlel</text>
       </phrase>
-      <phrase id="s344" startTime="1264.997" endTime="1268.388">
+      <phrase speaker="spk1" id="s344" startTime="1264.997" endTime="1268.388">
         <text>lao</text>
       </phrase>
-      <phrase id="s345" startTime="1268.388" endTime="1272.550">
+      <phrase speaker="spk1" id="s345" startTime="1268.388" endTime="1272.550">
         <text>polfai</text>
       </phrase>
-      <phrase id="s346" startTime="1272.550" endTime="1276.801">
+      <phrase speaker="spk1" id="s346" startTime="1272.550" endTime="1276.801">
         <text>kano neu</text>
       </phrase>
-      <phrase id="s347" startTime="1276.801" endTime="1280.933">
+      <phrase speaker="spk1" id="s347" startTime="1276.801" endTime="1280.933">
         <text>kipwi</text>
       </phrase>
-      <phrase id="s348" startTime="1280.933" endTime="1284.939">
+      <phrase speaker="spk1" id="s348" startTime="1280.933" endTime="1284.939">
         <text>nakte</text>
       </phrase>
-      <phrase id="s349" startTime="1284.939" endTime="1287.819">
+      <phrase speaker="spk1" id="s349" startTime="1284.939" endTime="1287.819">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s350" startTime="1287.819" endTime="1292.364">
+      <phrase speaker="spk1" id="s350" startTime="1287.819" endTime="1292.364">
         <text>nrpasok</text>
       </phrase>
-      <phrase id="s351" startTime="1292.364" endTime="1297.471">
+      <phrase speaker="spk1" id="s351" startTime="1292.364" endTime="1297.471">
         <text>tep$lasnakin</text>
       </phrase>
-      <phrase id="s352" startTime="1297.471" endTime="1300.998">
+      <phrase speaker="spk1" id="s352" startTime="1297.471" endTime="1300.998">
         <text>karo</text>
       </phrase>
-      <phrase id="s353" startTime="1300.998" endTime="1304.716">
+      <phrase speaker="spk1" id="s353" startTime="1300.998" endTime="1304.716">
         <text>puu</text>
       </phrase>
-      <phrase id="s354" startTime="1304.716" endTime="1308.034">
+      <phrase speaker="spk1" id="s354" startTime="1304.716" endTime="1308.034">
         <text>nagi</text>
       </phrase>
-      <phrase id="s355" startTime="1308.034" endTime="1309.201">
+      <phrase speaker="spk1" id="s355" startTime="1308.034" endTime="1309.201">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s356" startTime="1309.201" endTime="1312.830">
+      <phrase speaker="spk1" id="s356" startTime="1309.201" endTime="1312.830">
         <text>nam$el</text>
       </phrase>
-      <phrase id="s357" startTime="1312.830" endTime="1316.992">
+      <phrase speaker="spk1" id="s357" startTime="1312.830" endTime="1316.992">
         <text>natunrun</text>
       </phrase>
-      <phrase id="s358" startTime="1316.992" endTime="1320.758">
+      <phrase speaker="spk1" id="s358" startTime="1316.992" endTime="1320.758">
         <text>nafon</text>
       </phrase>
-      <phrase id="s359" startTime="1320.758" endTime="1322.196">
+      <phrase speaker="spk1" id="s359" startTime="1320.758" endTime="1322.196">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s360" startTime="1322.196" endTime="1325.882">
+      <phrase speaker="spk1" id="s360" startTime="1322.196" endTime="1325.882">
         <text>nalauna</text>
       </phrase>
-      <phrase id="s361" startTime="1325.882" endTime="1329.594">
+      <phrase speaker="spk1" id="s361" startTime="1325.882" endTime="1329.594">
         <text>p$anuk</text>
       </phrase>
-      <phrase id="s362" startTime="1329.594" endTime="1333.756">
+      <phrase speaker="spk1" id="s362" startTime="1329.594" endTime="1333.756">
         <text>nfar</text>
       </phrase>
-      <phrase id="s363" startTime="1333.756" endTime="1336.714">
+      <phrase speaker="spk1" id="s363" startTime="1333.756" endTime="1336.714">
         <text>napot</text>
       </phrase>
-      <phrase id="s364" startTime="1336.714" endTime="1339.798">
+      <phrase speaker="spk1" id="s364" startTime="1336.714" endTime="1339.798">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s365" startTime="1339.798" endTime="1343.397">
+      <phrase speaker="spk1" id="s365" startTime="1339.798" endTime="1343.397">
         <text>nafil</text>
       </phrase>
-      <phrase id="s366" startTime="1343.397" endTime="1346.924">
+      <phrase speaker="spk1" id="s366" startTime="1343.397" endTime="1346.924">
         <text>arum</text>
       </phrase>
-      <phrase id="s367" startTime="1346.924" endTime="1350.368">
+      <phrase speaker="spk1" id="s367" startTime="1346.924" endTime="1350.368">
         <text>nanu</text>
       </phrase>
-      <phrase id="s368" startTime="1350.368" endTime="1354.499">
+      <phrase speaker="spk1" id="s368" startTime="1350.368" endTime="1354.499">
         <text>nkaso</text>
       </phrase>
-      <phrase id="s369" startTime="1354.499" endTime="1358.661">
+      <phrase speaker="spk1" id="s369" startTime="1354.499" endTime="1358.661">
         <text>ntau</text>
       </phrase>
-      <phrase id="s370" startTime="1358.661" endTime="1362.044">
+      <phrase speaker="spk1" id="s370" startTime="1358.661" endTime="1362.044">
         <text>nuk</text>
       </phrase>
-      <phrase id="s371" startTime="1362.044" endTime="1365.828">
+      <phrase speaker="spk1" id="s371" startTime="1362.044" endTime="1365.828">
         <text>tarag</text>
       </phrase>
-      <phrase id="s372" startTime="1365.828" endTime="1369.421">
+      <phrase speaker="spk1" id="s372" startTime="1365.828" endTime="1369.421">
         <text>faum</text>
       </phrase>
-      <phrase id="s373" startTime="1369.421" endTime="1373.699">
+      <phrase speaker="spk1" id="s373" startTime="1369.421" endTime="1373.699">
         <text>atlag faum</text>
       </phrase>
-      <phrase id="s374" startTime="1373.699" endTime="1377.748">
+      <phrase speaker="spk1" id="s374" startTime="1373.699" endTime="1377.748">
         <text>tesa faum</text>
       </phrase>
-      <phrase id="s375" startTime="1377.748" endTime="1381.765">
+      <phrase speaker="spk1" id="s375" startTime="1377.748" endTime="1381.765">
         <text>nanrognrogon</text>
       </phrase>
-      <phrase id="s376" startTime="1381.765" endTime="1386.046">
+      <phrase speaker="spk1" id="s376" startTime="1381.765" endTime="1386.046">
         <text>atlag karu</text>
       </phrase>
-      <phrase id="s377" startTime="1386.046" endTime="1389.849">
+      <phrase speaker="spk1" id="s377" startTime="1386.046" endTime="1389.849">
         <text>p$og</text>
       </phrase>
-      <phrase id="s378" startTime="1389.849" endTime="1393.591">
+      <phrase speaker="spk1" id="s378" startTime="1389.849" endTime="1393.591">
         <text>ilfot</text>
       </phrase>
-      <phrase id="s379" startTime="1393.591" endTime="1397.399">
+      <phrase speaker="spk1" id="s379" startTime="1393.591" endTime="1397.399">
         <text>tiik</text>
       </phrase>
-      <phrase id="s380" startTime="1397.399" endTime="1401.286">
+      <phrase speaker="spk1" id="s380" startTime="1397.399" endTime="1401.286">
         <text>waser</text>
       </phrase>
-      <phrase id="s381" startTime="1401.286" endTime="1404.981">
+      <phrase speaker="spk1" id="s381" startTime="1401.286" endTime="1404.981">
         <text>nres</text>
       </phrase>
-      <phrase id="s382" startTime="1404.981" endTime="1408.861">
+      <phrase speaker="spk1" id="s382" startTime="1404.981" endTime="1408.861">
         <text>sum$sm$ol</text>
       </phrase>
-      <phrase id="s383" startTime="1408.861" endTime="1412.783">
+      <phrase speaker="spk1" id="s383" startTime="1408.861" endTime="1412.783">
         <text>pier</text>
       </phrase>
-      <phrase id="s384" startTime="1412.783" endTime="1416.621">
+      <phrase speaker="spk1" id="s384" startTime="1412.783" endTime="1416.621">
         <text>nagor</text>
       </phrase>
-      <phrase id="s385" startTime="1416.621" endTime="1420.692">
+      <phrase speaker="spk1" id="s385" startTime="1416.621" endTime="1420.692">
         <text>malfanen</text>
       </phrase>
-      <phrase id="s386" startTime="1420.692" endTime="1423.842">
+      <phrase speaker="spk1" id="s386" startTime="1420.692" endTime="1423.842">
         <text>mer</text>
       </phrase>
-      <phrase id="s387" startTime="1423.842" endTime="1426.447">
+      <phrase speaker="spk1" id="s387" startTime="1423.842" endTime="1426.447">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s388" startTime="1426.447" endTime="1429.842">
+      <phrase speaker="spk1" id="s388" startTime="1426.447" endTime="1429.842">
         <text>palkor</text>
       </phrase>
-      <phrase id="s389" startTime="1429.842" endTime="1434.453">
+      <phrase speaker="spk1" id="s389" startTime="1429.842" endTime="1434.453">
         <text>laokro</text>
       </phrase>
-      <phrase id="s390" startTime="1434.453" endTime="1438.105">
+      <phrase speaker="spk1" id="s390" startTime="1434.453" endTime="1438.105">
         <text>namos</text>
       </phrase>
-      <phrase id="s391" startTime="1438.105" endTime="1441.375">
+      <phrase speaker="spk1" id="s391" startTime="1438.105" endTime="1441.375">
         <text>wit</text>
       </phrase>
-      <phrase id="s392" startTime="1441.375" endTime="1445.057">
+      <phrase speaker="spk1" id="s392" startTime="1441.375" endTime="1445.057">
         <text>ni</text>
       </phrase>
-      <phrase id="s393" startTime="1445.057" endTime="1448.435">
+      <phrase speaker="spk1" id="s393" startTime="1445.057" endTime="1448.435">
         <text>nrap</text>
       </phrase>
-      <phrase id="s394" startTime="1448.435" endTime="1452.267">
+      <phrase speaker="spk1" id="s394" startTime="1448.435" endTime="1452.267">
         <text>motu</text>
       </phrase>
-      <phrase id="s395" startTime="1452.267" endTime="1456.876">
+      <phrase speaker="spk1" id="s395" startTime="1452.267" endTime="1456.876">
         <text>nafitiawian</text>
       </phrase>
-      <phrase id="s396" startTime="1456.876" endTime="1461.301">
+      <phrase speaker="spk1" id="s396" startTime="1456.876" endTime="1461.301">
         <text>kapuer</text>
       </phrase>
-      <phrase id="s397" startTime="1461.301" endTime="1465.732">
+      <phrase speaker="spk1" id="s397" startTime="1461.301" endTime="1465.732">
         <text>matu tiawi</text>
       </phrase>
-      <phrase id="s398" startTime="1465.732" endTime="1469.271">
+      <phrase speaker="spk1" id="s398" startTime="1465.732" endTime="1469.271">
         <text>tuei</text>
       </phrase>
-      <phrase id="s399" startTime="1469.271" endTime="1472.948">
+      <phrase speaker="spk1" id="s399" startTime="1469.271" endTime="1472.948">
         <text>iskei</text>
       </phrase>
-      <phrase id="s400" startTime="1472.948" endTime="1476.397">
+      <phrase speaker="spk1" id="s400" startTime="1472.948" endTime="1476.397">
         <text>m$as</text>
       </phrase>
-      <phrase id="s401" startTime="1476.397" endTime="1479.804">
+      <phrase speaker="spk1" id="s401" startTime="1476.397" endTime="1479.804">
         <text>maaf</text>
       </phrase>
-      <phrase id="s402" startTime="1479.804" endTime="1483.642">
+      <phrase speaker="spk1" id="s402" startTime="1479.804" endTime="1483.642">
         <text>maag</text>
       </phrase>
-      <phrase id="s403" startTime="1483.642" endTime="1487.025">
+      <phrase speaker="spk1" id="s403" startTime="1483.642" endTime="1487.025">
         <text>p$elgat</text>
       </phrase>
-      <phrase id="s404" startTime="1487.025" endTime="1491.091">
+      <phrase speaker="spk1" id="s404" startTime="1487.025" endTime="1491.091">
         <text>plag</text>
       </phrase>
-      <phrase id="s405" startTime="1491.091" endTime="1495.133">
+      <phrase speaker="spk1" id="s405" startTime="1491.091" endTime="1495.133">
         <text>ko</text>
       </phrase>
-      <phrase id="s406" startTime="1495.133" endTime="1498.734">
+      <phrase speaker="spk1" id="s406" startTime="1495.133" endTime="1498.734">
         <text>m$ol</text>
       </phrase>
-      <phrase id="s407" startTime="1498.734" endTime="1502.291">
+      <phrase speaker="spk1" id="s407" startTime="1498.734" endTime="1502.291">
         <text>p$rakot</text>
       </phrase>
-      <phrase id="s408" startTime="1502.291" endTime="1506.303">
+      <phrase speaker="spk1" id="s408" startTime="1502.291" endTime="1506.303">
         <text>mtapes</text>
       </phrase>
-      <phrase id="s409" startTime="1506.303" endTime="1509.147">
+      <phrase speaker="spk1" id="s409" startTime="1506.303" endTime="1509.147">
         <text>p$otae</text>
       </phrase>
-      <phrase id="s410" startTime="1509.147" endTime="1513.058">
+      <phrase speaker="spk1" id="s410" startTime="1509.147" endTime="1513.058">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s411" startTime="1513.058" endTime="1516.765">
+      <phrase speaker="spk1" id="s411" startTime="1513.058" endTime="1516.765">
         <text>ifmertik</text>
       </phrase>
-      <phrase id="s412" startTime="1516.765" endTime="1520.094">
+      <phrase speaker="spk1" id="s412" startTime="1516.765" endTime="1520.094">
         <text>p$et</text>
       </phrase>
-      <phrase id="s413" startTime="1520.094" endTime="1524.370">
+      <phrase speaker="spk1" id="s413" startTime="1520.094" endTime="1524.370">
         <text>taligftin</text>
       </phrase>
-      <phrase id="s414" startTime="1524.370" endTime="1529.011">
+      <phrase speaker="spk1" id="s414" startTime="1524.370" endTime="1529.011">
         <text>waal nakit</text>
       </phrase>
-      <phrase id="s415" startTime="1529.011" endTime="1532.74">
+      <phrase speaker="spk1" id="s415" startTime="1529.011" endTime="1532.74">
         <text>mam</text>
       </phrase>
-      <phrase id="s416" startTime="1532.74" endTime="1535.301">
+      <phrase speaker="spk1" id="s416" startTime="1532.74" endTime="1535.301">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s417" startTime="1535.301" endTime="1538.967">
+      <phrase speaker="spk1" id="s417" startTime="1535.301" endTime="1538.967">
         <text>nmaron i miit</text>
       </phrase>
-      <phrase id="s418" startTime="1538.967" endTime="1540.165">
+      <phrase speaker="spk1" id="s418" startTime="1538.967" endTime="1540.165">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s419" startTime="1540.165" endTime="1543.368">
+      <phrase speaker="spk1" id="s419" startTime="1540.165" endTime="1543.368">
         <text>lu</text>
       </phrase>
-      <phrase id="s420" startTime="1543.368" endTime="1547.380">
+      <phrase speaker="spk1" id="s420" startTime="1543.368" endTime="1547.380">
         <text>raru m$ol</text>
       </phrase>
-      <phrase id="s421" startTime="1547.380" endTime="1550.76">
+      <phrase speaker="spk1" id="s421" startTime="1547.380" endTime="1550.76">
         <text>nsem$</text>
       </phrase>
-      <phrase id="s422" startTime="1550.76" endTime="1553.035">
+      <phrase speaker="spk1" id="s422" startTime="1550.76" endTime="1553.035">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s423" startTime="1553.035" endTime="1556.298">
+      <phrase speaker="spk1" id="s423" startTime="1553.035" endTime="1556.298">
         <text>ekat</text>
       </phrase>
-      <phrase id="s424" startTime="1556.298" endTime="1560.286">
+      <phrase speaker="spk1" id="s424" startTime="1556.298" endTime="1560.286">
         <text>ektem</text>
       </phrase>
-      <phrase id="s425" startTime="1560.286" endTime="1565.281">
+      <phrase speaker="spk1" id="s425" startTime="1560.286" endTime="1565.281">
         <text>mlap$erik</text>
       </phrase>
-      <phrase id="s426" startTime="1565.281" endTime="1570.251">
+      <phrase speaker="spk1" id="s426" startTime="1565.281" endTime="1570.251">
         <text>mlapuas</text>
       </phrase>
-      <phrase id="s427" startTime="1570.251" endTime="1573.916">
+      <phrase speaker="spk1" id="s427" startTime="1570.251" endTime="1573.916">
         <text>sokfal</text>
       </phrase>
-      <phrase id="s428" startTime="1573.916" endTime="1574.210">
+      <phrase speaker="spk1" id="s428" startTime="1573.916" endTime="1574.210">
         <text>piatlak</text>
       </phrase>
-      <phrase id="s429" startTime="1574.210" endTime="1581.857">
+      <phrase speaker="spk1" id="s429" startTime="1574.210" endTime="1581.857">
         <text>mapul</text>
       </phrase>
-      <phrase id="s430" startTime="1581.857" endTime="1585.629">
+      <phrase speaker="spk1" id="s430" startTime="1581.857" endTime="1585.629">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s431" startTime="1585.629" endTime="1588.473">
+      <phrase speaker="spk1" id="s431" startTime="1585.629" endTime="1588.473">
         <text>pai</text>
       </phrase>
-      <phrase id="s432" startTime="1588.473" endTime="1590.336">
+      <phrase speaker="spk1" id="s432" startTime="1588.473" endTime="1590.336">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s433" startTime="1590.336" endTime="1593.923">
+      <phrase speaker="spk1" id="s433" startTime="1590.336" endTime="1593.923">
         <text>gafgef</text>
       </phrase>
-      <phrase id="s434" startTime="1593.923" endTime="1597.725">
+      <phrase speaker="spk1" id="s434" startTime="1593.923" endTime="1597.725">
         <text>nawes</text>
       </phrase>
-      <phrase id="s435" startTime="1597.725" endTime="1601.743">
+      <phrase speaker="spk1" id="s435" startTime="1597.725" endTime="1601.743">
         <text>palus</text>
       </phrase>
-      <phrase id="s436" startTime="1601.743" endTime="1605.611">
+      <phrase speaker="spk1" id="s436" startTime="1601.743" endTime="1605.611">
         <text>sek</text>
       </phrase>
-      <phrase id="s437" startTime="1605.611" endTime="1608.989">
+      <phrase speaker="spk1" id="s437" startTime="1605.611" endTime="1608.989">
         <text>suar</text>
       </phrase>
-      <phrase id="s438" startTime="1608.989" endTime="1611.953">
+      <phrase speaker="spk1" id="s438" startTime="1608.989" endTime="1611.953">
         <text>ntai</text>
       </phrase>
-      <phrase id="s439" startTime="1611.953" endTime="1615.187">
+      <phrase speaker="spk1" id="s439" startTime="1611.953" endTime="1615.187">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s440" startTime="1615.187" endTime="1618.540">
+      <phrase speaker="spk1" id="s440" startTime="1615.187" endTime="1618.540">
         <text>mana</text>
       </phrase>
-      <phrase id="s441" startTime="1618.540" endTime="1622.499">
+      <phrase speaker="spk1" id="s441" startTime="1618.540" endTime="1622.499">
         <text>nipu</text>
       </phrase>
-      <phrase id="s442" startTime="1622.499" endTime="1626.295">
+      <phrase speaker="spk1" id="s442" startTime="1622.499" endTime="1626.295">
         <text>nau</text>
       </phrase>
-      <phrase id="s443" startTime="1626.295" endTime="1629.804">
+      <phrase speaker="spk1" id="s443" startTime="1626.295" endTime="1629.804">
         <text>naki</text>
       </phrase>
-      <phrase id="s444" startTime="1629.804" endTime="1633.301">
+      <phrase speaker="spk1" id="s444" startTime="1629.804" endTime="1633.301">
         <text>nfak</text>
       </phrase>
-      <phrase id="s445" startTime="1633.301" endTime="1637.433">
+      <phrase speaker="spk1" id="s445" startTime="1633.301" endTime="1637.433">
         <text>nparom</text>
       </phrase>
-      <phrase id="s446" startTime="1637.433" endTime="1641.176">
+      <phrase speaker="spk1" id="s446" startTime="1637.433" endTime="1641.176">
         <text>nuo</text>
       </phrase>
-      <phrase id="s447" startTime="1641.176" endTime="1645.223">
+      <phrase speaker="spk1" id="s447" startTime="1641.176" endTime="1645.223">
         <text>kor</text>
       </phrase>
-      <phrase id="s448" startTime="1645.223" endTime="1649.001">
+      <phrase speaker="spk1" id="s448" startTime="1645.223" endTime="1649.001">
         <text>kotieu</text>
       </phrase>
-      <phrase id="s449" startTime="1649.001" endTime="1652.737">
+      <phrase speaker="spk1" id="s449" startTime="1649.001" endTime="1652.737">
         <text>tol</text>
       </phrase>
-      <phrase id="s450" startTime="1652.737" endTime="1657.228">
+      <phrase speaker="spk1" id="s450" startTime="1652.737" endTime="1657.228">
         <text>awo alua</text>
       </phrase>
-      <phrase id="s451" startTime="1657.228" endTime="1660.767">
+      <phrase speaker="spk1" id="s451" startTime="1657.228" endTime="1660.767">
         <text>nrep nrapagi</text>
       </phrase>
-      <phrase id="s452" startTime="1660.767" endTime="1664.444">
+      <phrase speaker="spk1" id="s452" startTime="1660.767" endTime="1664.444">
         <text>les</text>
       </phrase>
-      <phrase id="s453" startTime="1664.444" endTime="1668.592">
+      <phrase speaker="spk1" id="s453" startTime="1664.444" endTime="1668.592">
         <text>ntm$at</text>
       </phrase>
-      <phrase id="s454" startTime="1668.592" endTime="1672.395">
+      <phrase speaker="spk1" id="s454" startTime="1668.592" endTime="1672.395">
         <text>nlakotao</text>
       </phrase>
-      <phrase id="s455" startTime="1672.395" endTime="1675.539">
+      <phrase speaker="spk1" id="s455" startTime="1672.395" endTime="1675.539">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s456" startTime="1675.539" endTime="1678.862">
+      <phrase speaker="spk1" id="s456" startTime="1675.539" endTime="1678.862">
         <text>nanu</text>
       </phrase>
-      <phrase id="s457" startTime="1678.862" endTime="1682.215">
+      <phrase speaker="spk1" id="s457" startTime="1678.862" endTime="1682.215">
         <text>plik</text>
       </phrase>
-      <phrase id="s458" startTime="1682.215" endTime="1685.631">
+      <phrase speaker="spk1" id="s458" startTime="1682.215" endTime="1685.631">
         <text>mul</text>
       </phrase>
-      <phrase id="s459" startTime="1685.631" endTime="1689.579">
+      <phrase speaker="spk1" id="s459" startTime="1685.631" endTime="1689.579">
         <text>nlak nait</text>
       </phrase>
-      <phrase id="s460" startTime="1689.579" endTime="1692.872">
+      <phrase speaker="spk1" id="s460" startTime="1689.579" endTime="1692.872">
         <text>nlas</text>
       </phrase>
-      <phrase id="s461" startTime="1692.872" endTime="1697.876">
+      <phrase speaker="spk1" id="s461" startTime="1692.872" endTime="1697.876">
         <text>kano</text>
       </phrase>
-      <phrase id="s462" startTime="1697.876" endTime="1702.451">
+      <phrase speaker="spk1" id="s462" startTime="1697.876" endTime="1702.451">
         <text>natam$ol</text>
       </phrase>
-      <phrase id="s463" startTime="1702.451" endTime="1706.403">
+      <phrase speaker="spk1" id="s463" startTime="1702.451" endTime="1706.403">
         <text>nrafi</text>
       </phrase>
-      <phrase id="s464" startTime="1706.403" endTime="1710.687">
+      <phrase speaker="spk1" id="s464" startTime="1706.403" endTime="1710.687">
         <text>telomlom</text>
       </phrase>
-      <phrase id="s465" startTime="1710.687" endTime="1714.581">
+      <phrase speaker="spk1" id="s465" startTime="1710.687" endTime="1714.581">
         <text>lei</text>
       </phrase>
-      <phrase id="s466" startTime="1714.581" endTime="1718.024">
+      <phrase speaker="spk1" id="s466" startTime="1714.581" endTime="1718.024">
         <text>far</text>
       </phrase>
-      <phrase id="s467" startTime="1718.024" endTime="1722.814">
+      <phrase speaker="spk1" id="s467" startTime="1718.024" endTime="1722.814">
         <text>ki faar ki naki</text>
       </phrase>
-      <phrase id="s468" startTime="1722.814" endTime="1726.516">
+      <phrase speaker="spk1" id="s468" startTime="1722.814" endTime="1726.516">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s469" startTime="1726.516" endTime="1728.221">
+      <phrase speaker="spk1" id="s469" startTime="1726.516" endTime="1728.221">
         <text>pai nafum$kas</text>
       </phrase>
-      <phrase id="s470" startTime="1728.221" endTime="1734.850">
+      <phrase speaker="spk1" id="s470" startTime="1728.221" endTime="1734.850">
         <text>kotieu</text>
       </phrase>
-      <phrase id="s471" startTime="1734.850" endTime="1739.078">
+      <phrase speaker="spk1" id="s471" startTime="1734.850" endTime="1739.078">
         <text>pregfu</text>
       </phrase>
-      <phrase id="s472" startTime="1739.078" endTime="1742.794">
+      <phrase speaker="spk1" id="s472" startTime="1739.078" endTime="1742.794">
         <text>inror</text>
       </phrase>
-      <phrase id="s473" startTime="1742.794" endTime="1746.387">
+      <phrase speaker="spk1" id="s473" startTime="1742.794" endTime="1746.387">
         <text>wak</text>
       </phrase>
-      <phrase id="s474" startTime="1746.387" endTime="1750.040">
+      <phrase speaker="spk1" id="s474" startTime="1746.387" endTime="1750.040">
         <text>elkao</text>
       </phrase>
-      <phrase id="s475" startTime="1750.040" endTime="1753.486">
+      <phrase speaker="spk1" id="s475" startTime="1750.040" endTime="1753.486">
         <text>alak</text>
       </phrase>
-      <phrase id="s476" startTime="1753.486" endTime="1757.078">
+      <phrase speaker="spk1" id="s476" startTime="1753.486" endTime="1757.078">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s477" startTime="1757.078" endTime="1760.911">
+      <phrase speaker="spk1" id="s477" startTime="1757.078" endTime="1760.911">
         <text>konrkai</text>
       </phrase>
-      <phrase id="s478" startTime="1760.911" endTime="1764.336">
+      <phrase speaker="spk1" id="s478" startTime="1760.911" endTime="1764.336">
         <text>liu</text>
       </phrase>
-      <phrase id="s479" startTime="1764.336" endTime="1768.384">
+      <phrase speaker="spk1" id="s479" startTime="1764.336" endTime="1768.384">
         <text>naulum</text>
       </phrase>
-      <phrase id="s480" startTime="1768.384" endTime="1772.360">
+      <phrase speaker="spk1" id="s480" startTime="1768.384" endTime="1772.360">
         <text>kin</text>
       </phrase>
-      <phrase id="s481" startTime="1772.360" endTime="1776.598">
+      <phrase speaker="spk1" id="s481" startTime="1772.360" endTime="1776.598">
         <text>laufal</text>
       </phrase>
-      <phrase id="s482" startTime="1776.598" endTime="1780.760">
+      <phrase speaker="spk1" id="s482" startTime="1776.598" endTime="1780.760">
         <text>Ekasik</text>
       </phrase>
-      <phrase id="s483" startTime="1780.760" endTime="1784.981">
+      <phrase speaker="spk1" id="s483" startTime="1780.760" endTime="1784.981">
         <text>Elunak</text>
       </phrase>
-      <phrase id="s484" startTime="1784.981" endTime="1790.071">
+      <phrase speaker="spk1" id="s484" startTime="1784.981" endTime="1790.071">
         <text>Epkat</text>
       </phrase>
-      <phrase id="s485" startTime="1790.071" endTime="1794.382">
+      <phrase speaker="spk1" id="s485" startTime="1790.071" endTime="1794.382">
         <text>Esirsak</text>
       </phrase>
-      <phrase id="s486" startTime="1794.382" endTime="1798.305">
+      <phrase speaker="spk1" id="s486" startTime="1794.382" endTime="1798.305">
         <text>sago</text>
       </phrase>
-      <phrase id="s487" startTime="1798.305" endTime="1802.167">
+      <phrase speaker="spk1" id="s487" startTime="1798.305" endTime="1802.167">
         <text>slaur</text>
       </phrase>
-      <phrase id="s488" startTime="1802.167" endTime="1806.581">
+      <phrase speaker="spk1" id="s488" startTime="1802.167" endTime="1806.581">
         <text>Nai sraper</text>
       </phrase>
-      <phrase id="s489" startTime="1806.581" endTime="1811.486">
+      <phrase speaker="spk1" id="s489" startTime="1806.581" endTime="1811.486">
         <text>Earteuteu</text>
       </phrase>
-      <phrase id="s490" startTime="1811.486" endTime="1816.372">
+      <phrase speaker="spk1" id="s490" startTime="1811.486" endTime="1816.372">
         <text>Efaatposfiu</text>
       </phrase>
-      <phrase id="s491" startTime="1816.372" endTime="1820.168">
+      <phrase speaker="spk1" id="s491" startTime="1816.372" endTime="1820.168">
         <text>Egis</text>
       </phrase>
-      <phrase id="s492" startTime="1820.168" endTime="1824.575">
+      <phrase speaker="spk1" id="s492" startTime="1820.168" endTime="1824.575">
         <text>Ekasufat</text>
       </phrase>
-      <phrase id="s493" startTime="1824.575" endTime="1829.346">
+      <phrase speaker="spk1" id="s493" startTime="1824.575" endTime="1829.346">
         <text>Ekmalsog</text>
       </phrase>
-      <phrase id="s494" startTime="1829.346" endTime="1834.726">
+      <phrase speaker="spk1" id="s494" startTime="1829.346" endTime="1834.726">
         <text>Elak katapel</text>
       </phrase>
-      <phrase id="s495" startTime="1834.726" endTime="1838.714">
+      <phrase speaker="spk1" id="s495" startTime="1834.726" endTime="1838.714">
         <text>Elak naipir</text>
       </phrase>
-      <phrase id="s496" startTime="1838.714" endTime="1842.786">
+      <phrase speaker="spk1" id="s496" startTime="1838.714" endTime="1842.786">
         <text>Elak ntraopit</text>
       </phrase>
-      <phrase id="s497" startTime="1842.786" endTime="1847.540">
+      <phrase speaker="spk1" id="s497" startTime="1842.786" endTime="1847.540">
         <text>Elak tuplis</text>
       </phrase>
-      <phrase id="s498" startTime="1847.540" endTime="1851.942">
+      <phrase speaker="spk1" id="s498" startTime="1847.540" endTime="1851.942">
         <text>Elignairo</text>
       </phrase>
-      <phrase id="s499" startTime="1851.942" endTime="1856.103">
+      <phrase speaker="spk1" id="s499" startTime="1851.942" endTime="1856.103">
         <text>Em$asin</text>
       </phrase>
-      <phrase id="s500" startTime="1856.103" endTime="1857.481">
+      <phrase speaker="spk1" id="s500" startTime="1856.103" endTime="1857.481">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s501" startTime="1857.481" endTime="1861.193">
+      <phrase speaker="spk1" id="s501" startTime="1857.481" endTime="1861.193">
         <text>Emetp$er</text>
       </phrase>
-      <phrase id="s502" startTime="1861.193" endTime="1865.711">
+      <phrase speaker="spk1" id="s502" startTime="1861.193" endTime="1865.711">
         <text>Emetaikes</text>
       </phrase>
-      <phrase id="s503" startTime="1865.711" endTime="1870.376">
+      <phrase speaker="spk1" id="s503" startTime="1865.711" endTime="1870.376">
         <text>Emtapenr</text>
       </phrase>
-      <phrase id="s504" startTime="1870.376" endTime="1875.107">
+      <phrase speaker="spk1" id="s504" startTime="1870.376" endTime="1875.107">
         <text>Em$urpau</text>
       </phrase>
-      <phrase id="s505" startTime="1875.107" endTime="1879.238">
+      <phrase speaker="spk1" id="s505" startTime="1875.107" endTime="1879.238">
         <text>Enfet</text>
       </phrase>
-      <phrase id="s506" startTime="1879.238" endTime="1883.199">
+      <phrase speaker="spk1" id="s506" startTime="1879.238" endTime="1883.199">
         <text>Epakor</text>
       </phrase>
-      <phrase id="s507" startTime="1883.199" endTime="1887.540">
+      <phrase speaker="spk1" id="s507" startTime="1883.199" endTime="1887.540">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s508" startTime="1887.540" endTime="1891.372">
+      <phrase speaker="spk1" id="s508" startTime="1887.540" endTime="1891.372">
         <text>Ep$aor</text>
       </phrase>
-      <phrase id="s509" startTime="1891.372" endTime="1896.396">
+      <phrase speaker="spk1" id="s509" startTime="1891.372" endTime="1896.396">
         <text>Ep$au napkas</text>
       </phrase>
-      <phrase id="s510" startTime="1896.396" endTime="1899.750">
+      <phrase speaker="spk1" id="s510" startTime="1896.396" endTime="1899.750">
         <text>Ep$uf</text>
       </phrase>
-      <phrase id="s511" startTime="1899.750" endTime="1903.917">
+      <phrase speaker="spk1" id="s511" startTime="1899.750" endTime="1903.917">
         <text>Eraniau</text>
       </phrase>
-      <phrase id="s512" startTime="1903.917" endTime="1907.923">
+      <phrase speaker="spk1" id="s512" startTime="1903.917" endTime="1907.923">
         <text>Erasa</text>
       </phrase>
-      <phrase id="s513" startTime="1907.923" endTime="1912.265">
+      <phrase speaker="spk1" id="s513" startTime="1907.923" endTime="1912.265">
         <text>Erkao</text>
       </phrase>
-      <phrase id="s514" startTime="1912.265" endTime="1917.032">
+      <phrase speaker="spk1" id="s514" startTime="1912.265" endTime="1917.032">
         <text>Eskaotae</text>
       </phrase>
-      <phrase id="s515" startTime="1917.032" endTime="1921.096">
+      <phrase speaker="spk1" id="s515" startTime="1917.032" endTime="1921.096">
         <text>Etilkit</text>
       </phrase>
-      <phrase id="s516" startTime="1921.096" endTime="1925.384">
+      <phrase speaker="spk1" id="s516" startTime="1921.096" endTime="1925.384">
         <text>Etroki</text>
       </phrase>
-      <phrase id="s517" startTime="1925.384" endTime="1930.174">
+      <phrase speaker="spk1" id="s517" startTime="1925.384" endTime="1930.174">
         <text>Naigot</text>
       </phrase>
-      <phrase id="s518" startTime="1930.174" endTime="1934.390">
+      <phrase speaker="spk1" id="s518" startTime="1930.174" endTime="1934.390">
         <text>natin</text>
       </phrase>
-      <phrase id="s519" startTime="1934.390" endTime="1938.521">
+      <phrase speaker="spk1" id="s519" startTime="1934.390" endTime="1938.521">
         <text>tastes</text>
       </phrase>
-      <phrase id="s520" startTime="1938.521" endTime="1942.354">
+      <phrase speaker="spk1" id="s520" startTime="1938.521" endTime="1942.354">
         <text>gkem</text>
       </phrase>
-      <phrase id="s521" startTime="1942.354" endTime="1945.745">
+      <phrase speaker="spk1" id="s521" startTime="1942.354" endTime="1945.745">
         <text>kamarat</text>
       </phrase>
-      <phrase id="s522" startTime="1945.745" endTime="1951.607">
+      <phrase speaker="spk1" id="s522" startTime="1945.745" endTime="1951.607">
         <text>nafnag ni afsak</text>
       </phrase>
-      <phrase id="s523" startTime="1951.607" endTime="1955.895">
+      <phrase speaker="spk1" id="s523" startTime="1951.607" endTime="1955.895">
         <text>namkaanr</text>
       </phrase>
-      <phrase id="s524" startTime="1955.895" endTime="1960.559">
+      <phrase speaker="spk1" id="s524" startTime="1955.895" endTime="1960.559">
         <text>suski</text>
       </phrase>
-      <phrase id="s525" startTime="1960.559" endTime="1964.678">
+      <phrase speaker="spk1" id="s525" startTime="1960.559" endTime="1964.678">
         <text>tatakal</text>
       </phrase>
-      <phrase id="s526" startTime="1964.678" endTime="1970.021">
+      <phrase speaker="spk1" id="s526" startTime="1964.678" endTime="1970.021">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s527" startTime="1970.021" endTime="1973.540">
+      <phrase speaker="spk1" id="s527" startTime="1970.021" endTime="1973.540">
         <text>natfer</text>
       </phrase>
-      <phrase id="s528" startTime="1973.540" endTime="1978.390">
+      <phrase speaker="spk1" id="s528" startTime="1973.540" endTime="1978.390">
         <text>m$orm$rom</text>
       </phrase>
-      <phrase id="s529" startTime="1978.390" endTime="1981.821">
+      <phrase speaker="spk1" id="s529" startTime="1978.390" endTime="1981.821">
         <text>nanrup$</text>
       </phrase>
-      <phrase id="s530" startTime="1981.821" endTime="1985.587">
+      <phrase speaker="spk1" id="s530" startTime="1981.821" endTime="1985.587">
         <text>naroi</text>
       </phrase>
-      <phrase id="s531" startTime="1985.587" endTime="1987.473">
+      <phrase speaker="spk1" id="s531" startTime="1985.587" endTime="1987.473">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s532" startTime="1987.473" endTime="1991.934">
+      <phrase speaker="spk1" id="s532" startTime="1987.473" endTime="1991.934">
         <text>m$al nlawen</text>
       </phrase>
-      <phrase id="s533" startTime="1991.934" endTime="1996.186">
+      <phrase speaker="spk1" id="s533" startTime="1991.934" endTime="1996.186">
         <text>nrali</text>
       </phrase>
-      <phrase id="s534" startTime="1996.186" endTime="1999.839">
+      <phrase speaker="spk1" id="s534" startTime="1996.186" endTime="1999.839">
         <text>slo</text>
       </phrase>
-      <phrase id="s535" startTime="1999.839" endTime="2004.036">
+      <phrase speaker="spk1" id="s535" startTime="1999.839" endTime="2004.036">
         <text>sii loop</text>
       </phrase>
-      <phrase id="s536" startTime="2004.036" endTime="2008.525">
+      <phrase speaker="spk1" id="s536" startTime="2004.036" endTime="2008.525">
         <text>nakoi</text>
       </phrase>
-      <phrase id="s537" startTime="2008.525" endTime="2012.058">
+      <phrase speaker="spk1" id="s537" startTime="2008.525" endTime="2012.058">
         <text>put</text>
       </phrase>
-      <phrase id="s538" startTime="2012.058" endTime="2016.453">
+      <phrase speaker="spk1" id="s538" startTime="2012.058" endTime="2016.453">
         <text>Naariar</text>
       </phrase>
-      <phrase id="s539" startTime="2016.453" endTime="2021.453">
+      <phrase speaker="spk1" id="s539" startTime="2016.453" endTime="2021.453">
         <text>nagis</text>
       </phrase>
-      <phrase id="s540" startTime="2021.453" endTime="2025.148">
+      <phrase speaker="spk1" id="s540" startTime="2021.453" endTime="2025.148">
         <text>tu</text>
       </phrase>
-      <phrase id="s541" startTime="2025.148" endTime="2027.381">
+      <phrase speaker="spk1" id="s541" startTime="2025.148" endTime="2027.381">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s542" startTime="2027.381" endTime="2030.687">
+      <phrase speaker="spk1" id="s542" startTime="2027.381" endTime="2030.687">
         <text>lul</text>
       </phrase>
-      <phrase id="s543" startTime="2030.687" endTime="2034.819">
+      <phrase speaker="spk1" id="s543" startTime="2030.687" endTime="2034.819">
         <text>sup$ lua</text>
       </phrase>
-      <phrase id="s544" startTime="2034.819" endTime="2039.280">
+      <phrase speaker="spk1" id="s544" startTime="2034.819" endTime="2039.280">
         <text>sai suek</text>
       </phrase>
-      <phrase id="s545" startTime="2039.280" endTime="2043.537">
+      <phrase speaker="spk1" id="s545" startTime="2039.280" endTime="2043.537">
         <text>sik</text>
       </phrase>
-      <phrase id="s546" startTime="2043.537" endTime="2048.066">
+      <phrase speaker="spk1" id="s546" startTime="2043.537" endTime="2048.066">
         <text>tiik</text>
       </phrase>
-      <phrase id="s547" startTime="2048.066" endTime="2052.552">
+      <phrase speaker="spk1" id="s547" startTime="2048.066" endTime="2052.552">
         <text>nakik</text>
       </phrase>
-      <phrase id="s548" startTime="2052.552" endTime="2057.367">
+      <phrase speaker="spk1" id="s548" startTime="2052.552" endTime="2057.367">
         <text>nam$tam$ot</text>
       </phrase>
-      <phrase id="s549" startTime="2057.367" endTime="2061.175">
+      <phrase speaker="spk1" id="s549" startTime="2057.367" endTime="2061.175">
         <text>faria</text>
       </phrase>
-      <phrase id="s550" startTime="2061.175" endTime="2065.397">
+      <phrase speaker="spk1" id="s550" startTime="2061.175" endTime="2065.397">
         <text>tfarfar</text>
       </phrase>
-      <phrase id="s551" startTime="2065.397" endTime="2069.528">
+      <phrase speaker="spk1" id="s551" startTime="2065.397" endTime="2069.528">
         <text>poler</text>
       </phrase>
-      <phrase id="s552" startTime="2069.528" endTime="2073.625">
+      <phrase speaker="spk1" id="s552" startTime="2069.528" endTime="2073.625">
         <text>petet</text>
       </phrase>
-      <phrase id="s553" startTime="2073.625" endTime="2077.970">
+      <phrase speaker="spk1" id="s553" startTime="2073.625" endTime="2077.970">
         <text>laosok</text>
       </phrase>
-      <phrase id="s554" startTime="2077.970" endTime="2082.066">
+      <phrase speaker="spk1" id="s554" startTime="2077.970" endTime="2082.066">
         <text>lup$</text>
       </phrase>
-      <phrase id="s555" startTime="2082.066" endTime="2086.385">
+      <phrase speaker="spk1" id="s555" startTime="2082.066" endTime="2086.385">
         <text>smani</text>
       </phrase>
-      <phrase id="s556" startTime="2086.385" endTime="2090.397">
+      <phrase speaker="spk1" id="s556" startTime="2086.385" endTime="2090.397">
         <text>suman</text>
       </phrase>
-      <phrase id="s557" startTime="2090.397" endTime="2094.495">
+      <phrase speaker="spk1" id="s557" startTime="2090.397" endTime="2094.495">
         <text>lot</text>
       </phrase>
-      <phrase id="s558" startTime="2094.495" endTime="2099.636">
+      <phrase speaker="spk1" id="s558" startTime="2094.495" endTime="2099.636">
         <text>tafesfes</text>
       </phrase>
-      <phrase id="s559" startTime="2099.636" endTime="2104.127">
+      <phrase speaker="spk1" id="s559" startTime="2099.636" endTime="2104.127">
         <text>fnau</text>
       </phrase>
-      <phrase id="s560" startTime="2104.127" endTime="2108.169">
+      <phrase speaker="spk1" id="s560" startTime="2104.127" endTime="2108.169">
         <text>flak</text>
       </phrase>
-      <phrase id="s561" startTime="2108.169" endTime="2112.906">
+      <phrase speaker="spk1" id="s561" startTime="2108.169" endTime="2112.906">
         <text>tien</text>
       </phrase>
-      <phrase id="s562" startTime="2112.906" endTime="2117.278">
+      <phrase speaker="spk1" id="s562" startTime="2112.906" endTime="2117.278">
         <text>puri</text>
       </phrase>
-      <phrase id="s563" startTime="2117.278" endTime="2120.93">
+      <phrase speaker="spk1" id="s563" startTime="2117.278" endTime="2120.93">
         <text>kis</text>
       </phrase>
-      <phrase id="s564" startTime="2120.93" endTime="2122.727">
+      <phrase speaker="spk1" id="s564" startTime="2120.93" endTime="2122.727">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s565" startTime="2122.727" endTime="2126.02">
+      <phrase speaker="spk1" id="s565" startTime="2122.727" endTime="2126.02">
         <text>kuti</text>
       </phrase>
-      <phrase id="s566" startTime="2126.02" endTime="2129.374">
+      <phrase speaker="spk1" id="s566" startTime="2126.02" endTime="2129.374">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s567" startTime="2129.374" endTime="2132.847">
+      <phrase speaker="spk1" id="s567" startTime="2129.374" endTime="2132.847">
         <text>worwi</text>
       </phrase>
-      <phrase id="s568" startTime="2132.847" endTime="2134.673">
+      <phrase speaker="spk1" id="s568" startTime="2132.847" endTime="2134.673">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s569" startTime="2134.673" endTime="2138.183">
+      <phrase speaker="spk1" id="s569" startTime="2134.673" endTime="2138.183">
         <text>manmun</text>
       </phrase>
-      <phrase id="s570" startTime="2138.183" endTime="2140.218">
+      <phrase speaker="spk1" id="s570" startTime="2138.183" endTime="2140.218">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s571" startTime="2140.218" endTime="2143.662">
+      <phrase speaker="spk1" id="s571" startTime="2140.218" endTime="2143.662">
         <text>p$op$</text>
       </phrase>
-      <phrase id="s572" startTime="2143.662" endTime="2147.792">
+      <phrase speaker="spk1" id="s572" startTime="2143.662" endTime="2147.792">
         <text>fon</text>
       </phrase>
-      <phrase id="s573" startTime="2147.792" endTime="2151.654">
+      <phrase speaker="spk1" id="s573" startTime="2147.792" endTime="2151.654">
         <text>nrau</text>
       </phrase>
-      <phrase id="s574" startTime="2151.654" endTime="2155.576">
+      <phrase speaker="spk1" id="s574" startTime="2151.654" endTime="2155.576">
         <text>napos</text>
       </phrase>
-      <phrase id="s575" startTime="2155.576" endTime="2158.983">
+      <phrase speaker="spk1" id="s575" startTime="2155.576" endTime="2158.983">
         <text>woi</text>
       </phrase>
-      <phrase id="s576" startTime="2158.983" endTime="2162.936">
+      <phrase speaker="spk1" id="s576" startTime="2158.983" endTime="2162.936">
         <text>noop</text>
       </phrase>
-      <phrase id="s577" startTime="2162.936" endTime="2167.612">
+      <phrase speaker="spk1" id="s577" startTime="2162.936" endTime="2167.612">
         <text>nap$ei luk</text>
       </phrase>
-      <phrase id="s578" startTime="2167.612" endTime="2171.325">
+      <phrase speaker="spk1" id="s578" startTime="2167.612" endTime="2171.325">
         <text>punopun</text>
       </phrase>
-      <phrase id="s579" startTime="2171.325" endTime="2175.127">
+      <phrase speaker="spk1" id="s579" startTime="2171.325" endTime="2175.127">
         <text>fu</text>
       </phrase>
-      <phrase id="s580" startTime="2175.127" endTime="2179.170">
+      <phrase speaker="spk1" id="s580" startTime="2175.127" endTime="2179.170">
         <text>pu</text>
       </phrase>
-      <phrase id="s581" startTime="2179.170" endTime="2182.684">
+      <phrase speaker="spk1" id="s581" startTime="2179.170" endTime="2182.684">
         <text>tkau</text>
       </phrase>
-      <phrase id="s582" startTime="2182.684" endTime="2186.456">
+      <phrase speaker="spk1" id="s582" startTime="2182.684" endTime="2186.456">
         <text>safei</text>
       </phrase>
-      <phrase id="s583" startTime="2186.456" endTime="2191.426">
+      <phrase speaker="spk1" id="s583" startTime="2186.456" endTime="2191.426">
         <text>mok npatin iskei</text>
       </phrase>
-      <phrase id="s584" startTime="2191.426" endTime="2195.259">
+      <phrase speaker="spk1" id="s584" startTime="2191.426" endTime="2195.259">
         <text>mok</text>
       </phrase>
-      <phrase id="s585" startTime="2195.259" endTime="2199.211">
+      <phrase speaker="spk1" id="s585" startTime="2195.259" endTime="2199.211">
         <text>sul</text>
       </phrase>
-      <phrase id="s586" startTime="2199.211" endTime="2203.313">
+      <phrase speaker="spk1" id="s586" startTime="2199.211" endTime="2203.313">
         <text>fatsaal</text>
       </phrase>
-      <phrase id="s587" startTime="2203.313" endTime="2207.037">
+      <phrase speaker="spk1" id="s587" startTime="2203.313" endTime="2207.037">
         <text>p$opu</text>
       </phrase>
-      <phrase id="s588" startTime="2207.037" endTime="2211.498">
+      <phrase speaker="spk1" id="s588" startTime="2207.037" endTime="2211.498">
         <text>naup$o</text>
       </phrase>
-      <phrase id="s589" startTime="2211.498" endTime="2215.391">
+      <phrase speaker="spk1" id="s589" startTime="2211.498" endTime="2215.391">
         <text>tof</text>
       </phrase>
-      <phrase id="s590" startTime="2215.391" endTime="2220.057">
+      <phrase speaker="spk1" id="s590" startTime="2215.391" endTime="2220.057">
         <text>nruski</text>
       </phrase>
-      <phrase id="s591" startTime="2220.057" endTime="2223.656">
+      <phrase speaker="spk1" id="s591" startTime="2220.057" endTime="2223.656">
         <text>tik</text>
       </phrase>
-      <phrase id="s592" startTime="2223.656" endTime="2227.123">
+      <phrase speaker="spk1" id="s592" startTime="2223.656" endTime="2227.123">
         <text>sai</text>
       </phrase>
-      <phrase id="s593" startTime="2227.123" endTime="2231.075">
+      <phrase speaker="spk1" id="s593" startTime="2227.123" endTime="2231.075">
         <text>metmaat</text>
       </phrase>
-      <phrase id="s594" startTime="2231.075" endTime="2235.314">
+      <phrase speaker="spk1" id="s594" startTime="2231.075" endTime="2235.314">
         <text>maa kapu</text>
       </phrase>
-      <phrase id="s595" startTime="2235.314" endTime="2239.401">
+      <phrase speaker="spk1" id="s595" startTime="2235.314" endTime="2239.401">
         <text>tanum$</text>
       </phrase>
-      <phrase id="s596" startTime="2239.401" endTime="2243.979">
+      <phrase speaker="spk1" id="s596" startTime="2239.401" endTime="2243.979">
         <text>Kwinslan</text>
       </phrase>
-      <phrase id="s597" startTime="2243.979" endTime="2248.410">
+      <phrase speaker="spk1" id="s597" startTime="2243.979" endTime="2248.410">
         <text>pnut</text>
       </phrase>
-      <phrase id="s598" startTime="2248.410" endTime="2253.230">
+      <phrase speaker="spk1" id="s598" startTime="2248.410" endTime="2253.230">
         <text>p$op$</text>
       </phrase>
-      <phrase id="s599" startTime="2253.230" endTime="2257.547">
+      <phrase speaker="spk1" id="s599" startTime="2253.230" endTime="2257.547">
         <text>smus</text>
       </phrase>
-      <phrase id="s600" startTime="2257.547" endTime="2261.703">
+      <phrase speaker="spk1" id="s600" startTime="2257.547" endTime="2261.703">
         <text>plak</text>
       </phrase>
-      <phrase id="s601" startTime="2261.703" endTime="2266.200">
+      <phrase speaker="spk1" id="s601" startTime="2261.703" endTime="2266.200">
         <text>us</text>
       </phrase>
-      <phrase id="s602" startTime="2266.200" endTime="2268.773">
+      <phrase speaker="spk1" id="s602" startTime="2266.200" endTime="2268.773">
         <text>sin</text>
       </phrase>
-      <phrase id="s603" startTime="2268.773" endTime="2272.935">
+      <phrase speaker="spk1" id="s603" startTime="2268.773" endTime="2272.935">
         <text>nop i ser</text>
       </phrase>
-      <phrase id="s604" startTime="2272.935" endTime="2277.066">
+      <phrase speaker="spk1" id="s604" startTime="2272.935" endTime="2277.066">
         <text>tuput</text>
       </phrase>
-      <phrase id="s605" startTime="2277.066" endTime="2280.509">
+      <phrase speaker="spk1" id="s605" startTime="2277.066" endTime="2280.509">
         <text>sik</text>
       </phrase>
-      <phrase id="s606" startTime="2280.509" endTime="2283.796">
+      <phrase speaker="spk1" id="s606" startTime="2280.509" endTime="2283.796">
         <text>kusu</text>
       </phrase>
-      <phrase id="s607" startTime="2283.796" endTime="2286.174">
+      <phrase speaker="spk1" id="s607" startTime="2283.796" endTime="2286.174">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s608" startTime="2286.174" endTime="2289.611">
+      <phrase speaker="spk1" id="s608" startTime="2286.174" endTime="2289.611">
         <text>met</text>
       </phrase>
-      <phrase id="s609" startTime="2289.611" endTime="2294.455">
+      <phrase speaker="spk1" id="s609" startTime="2289.611" endTime="2294.455">
         <text>fai mantu</text>
       </phrase>
-      <phrase id="s610" startTime="2294.455" endTime="2298.323">
+      <phrase speaker="spk1" id="s610" startTime="2294.455" endTime="2298.323">
         <text>fai p$og</text>
       </phrase>
-      <phrase id="s611" startTime="2298.323" endTime="2302.509">
+      <phrase speaker="spk1" id="s611" startTime="2298.323" endTime="2302.509">
         <text>fai</text>
       </phrase>
-      <phrase id="s612" startTime="2302.509" endTime="2306.727">
+      <phrase speaker="spk1" id="s612" startTime="2302.509" endTime="2306.727">
         <text>ptak</text>
       </phrase>
-      <phrase id="s613" startTime="2306.727" endTime="2310.554">
+      <phrase speaker="spk1" id="s613" startTime="2306.727" endTime="2310.554">
         <text>wesi</text>
       </phrase>
-      <phrase id="s614" startTime="2310.554" endTime="2314.446">
+      <phrase speaker="spk1" id="s614" startTime="2310.554" endTime="2314.446">
         <text>miel</text>
       </phrase>
-      <phrase id="s615" startTime="2314.446" endTime="2318.398">
+      <phrase speaker="spk1" id="s615" startTime="2314.446" endTime="2318.398">
         <text>ntan</text>
       </phrase>
-      <phrase id="s616" startTime="2318.398" endTime="2322.021">
+      <phrase speaker="spk1" id="s616" startTime="2318.398" endTime="2322.021">
         <text>m$lato</text>
       </phrase>
-      <phrase id="s617" startTime="2322.021" endTime="2326.123">
+      <phrase speaker="spk1" id="s617" startTime="2322.021" endTime="2326.123">
         <text>sunra</text>
       </phrase>
-      <phrase id="s618" startTime="2326.123" endTime="2330.827">
+      <phrase speaker="spk1" id="s618" startTime="2326.123" endTime="2330.827">
         <text>nkaspau</text>
       </phrase>
-      <phrase id="s619" startTime="2330.827" endTime="2334.862">
+      <phrase speaker="spk1" id="s619" startTime="2330.827" endTime="2334.862">
         <text>nasul</text>
       </phrase>
-      <phrase id="s620" startTime="2334.862" endTime="2339.473">
+      <phrase speaker="spk1" id="s620" startTime="2334.862" endTime="2339.473">
         <text>nmaat</text>
       </phrase>
-      <phrase id="s621" startTime="2339.473" endTime="2348.400">
+      <phrase speaker="spk1" id="s621" startTime="2339.473" endTime="2348.400">
         <text>nskau</text>
       </phrase>
-      <phrase id="s622" startTime="2348.400" endTime="2351.633">
+      <phrase speaker="spk1" id="s622" startTime="2348.400" endTime="2351.633">
         <text>tum$o</text>
       </phrase>
-      <phrase id="s623" startTime="2351.633" endTime="2355.376">
+      <phrase speaker="spk1" id="s623" startTime="2351.633" endTime="2355.376">
         <text>[silence] [error]</text>
       </phrase>
-      <phrase id="s624" startTime="2355.376" endTime="2359.537">
+      <phrase speaker="spk1" id="s624" startTime="2355.376" endTime="2359.537">
         <text>nragi keftin</text>
       </phrase>
-      <phrase id="s625" startTime="2359.537" endTime="2363.280">
+      <phrase speaker="spk1" id="s625" startTime="2359.537" endTime="2363.280">
         <text>sif</text>
       </phrase>
-      <phrase id="s626" startTime="2363.280" endTime="2367.471">
+      <phrase speaker="spk1" id="s626" startTime="2363.280" endTime="2367.471">
         <text>tum$om tao</text>
       </phrase>
-      <phrase id="s627" startTime="2367.471" endTime="2371.324">
+      <phrase speaker="spk1" id="s627" startTime="2367.471" endTime="2371.324">
         <text>mer</text>
       </phrase>
-      <phrase id="s628" startTime="2371.324" endTime="2376.294">
+      <phrase speaker="spk1" id="s628" startTime="2371.324" endTime="2376.294">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s629" startTime="2376.294" endTime="2381.000">
+      <phrase speaker="spk1" id="s629" startTime="2376.294" endTime="2381.000">
         <text>ler wes</text>
       </phrase>
-      <phrase id="s630" startTime="2381.000" endTime="2385.575">
+      <phrase speaker="spk1" id="s630" startTime="2381.000" endTime="2385.575">
         <text>surwel</text>
       </phrase>
-      <phrase id="s631" startTime="2385.575" endTime="2389.850">
+      <phrase speaker="spk1" id="s631" startTime="2385.575" endTime="2389.850">
         <text>termau</text>
       </phrase>
-      <phrase id="s632" startTime="2389.850" endTime="2394.305">
+      <phrase speaker="spk1" id="s632" startTime="2389.850" endTime="2394.305">
         <text>marmar</text>
       </phrase>
-      <phrase id="s633" startTime="2394.305" endTime="2398.198">
+      <phrase speaker="spk1" id="s633" startTime="2394.305" endTime="2398.198">
         <text>p$ip$</text>
       </phrase>
-      <phrase id="s634" startTime="2398.198" endTime="2402.605">
+      <phrase speaker="spk1" id="s634" startTime="2398.198" endTime="2402.605">
         <text>sisi</text>
       </phrase>
-      <phrase id="s635" startTime="2402.605" endTime="2406.647">
+      <phrase speaker="spk1" id="s635" startTime="2402.605" endTime="2406.647">
         <text>ser</text>
       </phrase>
-      <phrase id="s636" startTime="2406.647" endTime="2411.222">
+      <phrase speaker="spk1" id="s636" startTime="2406.647" endTime="2411.222">
         <text>atol kanr</text>
       </phrase>
-      <phrase id="s637" startTime="2411.222" endTime="2415.535">
+      <phrase speaker="spk1" id="s637" startTime="2411.222" endTime="2415.535">
         <text>soklep</text>
       </phrase>
-      <phrase id="s638" startTime="2415.535" endTime="2420.209">
+      <phrase speaker="spk1" id="s638" startTime="2415.535" endTime="2420.209">
         <text>nfat</text>
       </phrase>
-      <phrase id="s639" startTime="2420.209" endTime="2424.784">
+      <phrase speaker="spk1" id="s639" startTime="2420.209" endTime="2424.784">
         <text>matu</text>
       </phrase>
-      <phrase id="s640" startTime="2424.784" endTime="2429.125">
+      <phrase speaker="spk1" id="s640" startTime="2424.784" endTime="2429.125">
         <text>nrafkor</text>
       </phrase>
-      <phrase id="s641" startTime="2429.125" endTime="2433.826">
+      <phrase speaker="spk1" id="s641" startTime="2429.125" endTime="2433.826">
         <text>kintapul</text>
       </phrase>
-      <phrase id="s642" startTime="2433.826" endTime="2437.479">
+      <phrase speaker="spk1" id="s642" startTime="2433.826" endTime="2437.479">
         <text>naan</text>
       </phrase>
-      <phrase id="s643" startTime="2437.479" endTime="2440.694">
+      <phrase speaker="spk1" id="s643" startTime="2437.479" endTime="2440.694">
         <text>mam</text>
       </phrase>
-      <phrase id="s644" startTime="2440.694" endTime="2444.790">
+      <phrase speaker="spk1" id="s644" startTime="2440.694" endTime="2444.790">
         <text>matu</text>
       </phrase>
-      <phrase id="s645" startTime="2444.790" endTime="2449.520">
+      <phrase speaker="spk1" id="s645" startTime="2444.790" endTime="2449.520">
         <text>nua nkas mam</text>
       </phrase>
-      <phrase id="s646" startTime="2449.520" endTime="2453.383">
+      <phrase speaker="spk1" id="s646" startTime="2449.520" endTime="2453.383">
         <text>sok</text>
       </phrase>
-      <phrase id="s647" startTime="2453.383" endTime="2457.520">
+      <phrase speaker="spk1" id="s647" startTime="2453.383" endTime="2457.520">
         <text>naiser</text>
       </phrase>
-      <phrase id="s648" startTime="2457.520" endTime="2461.197">
+      <phrase speaker="spk1" id="s648" startTime="2457.520" endTime="2461.197">
         <text>naum$</text>
       </phrase>
-      <phrase id="s649" startTime="2461.197" endTime="2465.119">
+      <phrase speaker="spk1" id="s649" startTime="2461.197" endTime="2465.119">
         <text>sel naai</text>
       </phrase>
-      <phrase id="s650" startTime="2465.119" endTime="2468.970">
+      <phrase speaker="spk1" id="s650" startTime="2465.119" endTime="2468.970">
         <text>takto</text>
       </phrase>
-      <phrase id="s651" startTime="2468.970" endTime="2472.593">
+      <phrase speaker="spk1" id="s651" startTime="2468.970" endTime="2472.593">
         <text>natik nai</text>
       </phrase>
-      <phrase id="s652" startTime="2472.593" endTime="2474.144">
+      <phrase speaker="spk1" id="s652" startTime="2472.593" endTime="2474.144">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s653" startTime="2474.144" endTime="2477.779">
+      <phrase speaker="spk1" id="s653" startTime="2474.144" endTime="2477.779">
         <text>napu</text>
       </phrase>
-      <phrase id="s654" startTime="2477.779" endTime="2482.473">
+      <phrase speaker="spk1" id="s654" startTime="2477.779" endTime="2482.473">
         <text>kof</text>
       </phrase>
-      <phrase id="s655" startTime="2482.473" endTime="2487.300">
+      <phrase speaker="spk1" id="s655" startTime="2482.473" endTime="2487.300">
         <text>susu katog</text>
       </phrase>
-      <phrase id="s656" startTime="2487.300" endTime="2492.114">
+      <phrase speaker="spk1" id="s656" startTime="2487.300" endTime="2492.114">
         <text>fatmpasok</text>
       </phrase>
-      <phrase id="s657" startTime="2492.114" endTime="2496.248">
+      <phrase speaker="spk1" id="s657" startTime="2492.114" endTime="2496.248">
         <text>nparfat</text>
       </phrase>
-      <phrase id="s658" startTime="2496.248" endTime="2500.829">
+      <phrase speaker="spk1" id="s658" startTime="2496.248" endTime="2500.829">
         <text>nar fat</text>
       </phrase>
-      <phrase id="s659" startTime="2500.829" endTime="2505.404">
+      <phrase speaker="spk1" id="s659" startTime="2500.829" endTime="2505.404">
         <text>mlil</text>
       </phrase>
-      <phrase id="s660" startTime="2505.404" endTime="2509.182">
+      <phrase speaker="spk1" id="s660" startTime="2505.404" endTime="2509.182">
         <text>lul</text>
       </phrase>
-      <phrase id="s661" startTime="2509.182" endTime="2513.733">
+      <phrase speaker="spk1" id="s661" startTime="2509.182" endTime="2513.733">
         <text>tal ki naki</text>
       </phrase>
-      <phrase id="s662" startTime="2513.733" endTime="2517.715">
+      <phrase speaker="spk1" id="s662" startTime="2513.733" endTime="2517.715">
         <text>pau nmarit</text>
       </phrase>
-      <phrase id="s663" startTime="2517.715" endTime="2522.170">
+      <phrase speaker="spk1" id="s663" startTime="2517.715" endTime="2522.170">
         <text>pau</text>
       </phrase>
-      <phrase id="s664" startTime="2522.170" endTime="2526.511">
+      <phrase speaker="spk1" id="s664" startTime="2522.170" endTime="2526.511">
         <text>nasuk</text>
       </phrase>
-      <phrase id="s665" startTime="2526.511" endTime="2530.853">
+      <phrase speaker="spk1" id="s665" startTime="2526.511" endTime="2530.853">
         <text>tkas</text>
       </phrase>
-      <phrase id="s666" startTime="2530.853" endTime="2532.440">
+      <phrase speaker="spk1" id="s666" startTime="2530.853" endTime="2532.440">
         <text>tar</text>
       </phrase>
-      <phrase id="s667" startTime="2532.440" endTime="2536.787">
+      <phrase speaker="spk1" id="s667" startTime="2532.440" endTime="2536.787">
         <text>to i tar</text>
       </phrase>
-      <phrase id="s668" startTime="2536.787" endTime="2540.344">
+      <phrase speaker="spk1" id="s668" startTime="2536.787" endTime="2540.344">
         <text>nako</text>
       </phrase>
-      <phrase id="s669" startTime="2540.344" endTime="2544.268">
+      <phrase speaker="spk1" id="s669" startTime="2540.344" endTime="2544.268">
         <text>nakonkas</text>
       </phrase>
-      <phrase id="s670" startTime="2544.268" endTime="2548.459">
+      <phrase speaker="spk1" id="s670" startTime="2544.268" endTime="2548.459">
         <text>nasinren</text>
       </phrase>
-      <phrase id="s671" startTime="2548.459" endTime="2549.088">
+      <phrase speaker="spk1" id="s671" startTime="2548.459" endTime="2549.088">
         <text>[sniff]</text>
       </phrase>
-      <phrase id="s672" startTime="2549.088" endTime="2552.202">
+      <phrase speaker="spk1" id="s672" startTime="2549.088" endTime="2552.202">
         <text>marit</text>
       </phrase>
-      <phrase id="s673" startTime="2552.202" endTime="2555.345">
+      <phrase speaker="spk1" id="s673" startTime="2552.202" endTime="2555.345">
         <text>nmai</text>
       </phrase>
-      <phrase id="s674" startTime="2555.345" endTime="2558.190">
+      <phrase speaker="spk1" id="s674" startTime="2555.345" endTime="2558.190">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s675" startTime="2558.190" endTime="2561.495">
+      <phrase speaker="spk1" id="s675" startTime="2558.190" endTime="2561.495">
         <text>ntuk</text>
       </phrase>
-      <phrase id="s676" startTime="2561.495" endTime="2564.914">
+      <phrase speaker="spk1" id="s676" startTime="2561.495" endTime="2564.914">
         <text>mtet</text>
       </phrase>
-      <phrase id="s677" startTime="2564.914" endTime="2569.370">
+      <phrase speaker="spk1" id="s677" startTime="2564.914" endTime="2569.370">
         <text>nsat nawi</text>
       </phrase>
-      <phrase id="s678" startTime="2569.370" endTime="2573.442">
+      <phrase speaker="spk1" id="s678" startTime="2569.370" endTime="2573.442">
         <text>liuliu</text>
       </phrase>
-      <phrase id="s679" startTime="2573.442" endTime="2577.488">
+      <phrase speaker="spk1" id="s679" startTime="2573.442" endTime="2577.488">
         <text>manopnop</text>
       </phrase>
-      <phrase id="s680" startTime="2577.488" endTime="2581.815">
+      <phrase speaker="spk1" id="s680" startTime="2577.488" endTime="2581.815">
         <text>eslaor</text>
       </phrase>
-      <phrase id="s681" startTime="2581.815" endTime="2585.354">
+      <phrase speaker="spk1" id="s681" startTime="2581.815" endTime="2585.354">
         <text>kau</text>
       </phrase>
-      <phrase id="s682" startTime="2585.354" endTime="2589.000">
+      <phrase speaker="spk1" id="s682" startTime="2585.354" endTime="2589.000">
         <text>selsel</text>
       </phrase>
-      <phrase id="s683" startTime="2589.000" endTime="2592.443">
+      <phrase speaker="spk1" id="s683" startTime="2589.000" endTime="2592.443">
         <text>folfolm$ak ki nar</text>
       </phrase>
-      <phrase id="s684" startTime="2594.413" endTime="2595.635">
+      <phrase speaker="spk1" id="s684" startTime="2592.443" endTime="2594.413">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s685" startTime="2594.413" endTime="2595.635">
         <text>nam$tam$ot</text>
       </phrase>
-      <phrase id="s685" startTime="2598.425" endTime="2599.549">
+      <phrase speaker="spk1" id="s686" startTime="2595.635" endTime="2597.163">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s687" startTime="2597.163" endTime="2598.222">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s688" startTime="2598.222" endTime="2598.425">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s689" startTime="2598.425" endTime="2599.549">
         <text>nasoksok</text>
       </phrase>
-      <phrase id="s686" startTime="2604.589" endTime="2606.060">
+      <phrase speaker="spk1" id="s690" startTime="2599.549" endTime="2600.802">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s691" startTime="2600.802" endTime="2602.104">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s692" startTime="2602.104" endTime="2602.174">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s693" startTime="2602.174" endTime="2603.3">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s694" startTime="2603.3" endTime="2604.589">
+        <text/>
+      </phrase>
+      <phrase speaker="spk1" id="s695" startTime="2604.589" endTime="2606.060">
         <text>etak</text>
       </phrase>
-      <phrase id="s687" startTime="2606.060" endTime="2609.802">
+      <phrase speaker="spk1" id="s696" startTime="2606.060" endTime="2609.802">
         <text>sman</text>
       </phrase>
-      <phrase id="s688" startTime="2609.802" endTime="2613.047">
+      <phrase speaker="spk1" id="s697" startTime="2609.802" endTime="2613.047">
         <text>pir naal</text>
       </phrase>
-      <phrase id="s689" startTime="2613.047" endTime="2617.173">
+      <phrase speaker="spk1" id="s698" startTime="2613.047" endTime="2617.173">
         <text>wasao</text>
       </phrase>
-      <phrase id="s690" startTime="2617.173" endTime="2621.545">
+      <phrase speaker="spk1" id="s699" startTime="2617.173" endTime="2621.545">
         <text>wosau</text>
       </phrase>
-      <phrase id="s691" startTime="2621.545" endTime="2625.733">
+      <phrase speaker="spk1" id="s700" startTime="2621.545" endTime="2625.733">
         <text>man nap$lo</text>
       </phrase>
-      <phrase id="s692" startTime="2625.733" endTime="2629.897">
+      <phrase speaker="spk1" id="s701" startTime="2625.733" endTime="2629.897">
         <text>mermer</text>
       </phrase>
-      <phrase id="s693" startTime="2629.897" endTime="2633.879">
+      <phrase speaker="spk1" id="s702" startTime="2629.897" endTime="2633.879">
         <text>mrag</text>
       </phrase>
-      <phrase id="s694" startTime="2633.879" endTime="2636.758">
+      <phrase speaker="spk1" id="s703" startTime="2633.879" endTime="2636.758">
         <text>fit</text>
       </phrase>
-      <phrase id="s695" startTime="2636.758" endTime="2640.554">
+      <phrase speaker="spk1" id="s704" startTime="2636.758" endTime="2640.554">
         <text>lul</text>
       </phrase>
-      <phrase id="s696" startTime="2640.554" endTime="2644.626">
+      <phrase speaker="spk1" id="s705" startTime="2640.554" endTime="2644.626">
         <text>nrogtesa</text>
       </phrase>
-      <phrase id="s697" startTime="2644.626" endTime="2648.428">
+      <phrase speaker="spk1" id="s706" startTime="2644.626" endTime="2648.428">
         <text>rowat</text>
       </phrase>
-      <phrase id="s698" startTime="2648.428" endTime="2652.045">
+      <phrase speaker="spk1" id="s707" startTime="2648.428" endTime="2652.045">
         <text>nlae</text>
       </phrase>
-      <phrase id="s699" startTime="2652.045" endTime="2655.847">
+      <phrase speaker="spk1" id="s708" startTime="2652.045" endTime="2655.847">
         <text>nati</text>
       </phrase>
-      <phrase id="s700" startTime="2655.847" endTime="2659.201">
+      <phrase speaker="spk1" id="s709" startTime="2655.847" endTime="2659.201">
         <text>natien</text>
       </phrase>
-      <phrase id="s701" startTime="2659.201" endTime="2663.009">
+      <phrase speaker="spk1" id="s710" startTime="2659.201" endTime="2663.009">
         <text>ntas</text>
       </phrase>
-      <phrase id="s702" startTime="2663.009" endTime="2666.386">
+      <phrase speaker="spk1" id="s711" startTime="2663.009" endTime="2666.386">
         <text>nawen</text>
       </phrase>
-      <phrase id="s703" startTime="2666.386" endTime="2670.798">
+      <phrase speaker="spk1" id="s712" startTime="2666.386" endTime="2670.798">
         <text>makos</text>
       </phrase>
-      <phrase id="s704" startTime="2670.798" endTime="2674.960">
+      <phrase speaker="spk1" id="s713" startTime="2670.798" endTime="2674.960">
         <text>tien</text>
       </phrase>
-      <phrase id="s705" startTime="2674.960" endTime="2678.242">
+      <phrase speaker="spk1" id="s714" startTime="2674.960" endTime="2678.242">
         <text>nap$el [correction]</text>
       </phrase>
-      <phrase id="s706" startTime="2678.242" endTime="2681.193">
+      <phrase speaker="spk1" id="s715" startTime="2678.242" endTime="2681.193">
         <text>napel</text>
       </phrase>
-      <phrase id="s707" startTime="2681.193" endTime="2684.570">
+      <phrase speaker="spk1" id="s716" startTime="2681.193" endTime="2684.570">
         <text>tut</text>
       </phrase>
-      <phrase id="s708" startTime="2684.570" endTime="2688.972">
+      <phrase speaker="spk1" id="s717" startTime="2684.570" endTime="2688.972">
         <text>aliat toknak</text>
       </phrase>
-      <phrase id="s709" startTime="2688.972" endTime="2689.900">
+      <phrase speaker="spk1" id="s718" startTime="2688.972" endTime="2689.900">
         <text>[sniff]</text>
       </phrase>
-      <phrase id="s710" startTime="2689.900" endTime="2693.014">
+      <phrase speaker="spk1" id="s719" startTime="2689.900" endTime="2693.014">
         <text>mas</text>
       </phrase>
-      <phrase id="s711" startTime="2693.014" endTime="2696.547">
+      <phrase speaker="spk1" id="s720" startTime="2693.014" endTime="2696.547">
         <text>nam$tam$ot</text>
       </phrase>
-      <phrase id="s712" startTime="2696.547" endTime="2699.990">
+      <phrase speaker="spk1" id="s721" startTime="2696.547" endTime="2699.990">
         <text>menal</text>
       </phrase>
-      <phrase id="s713" startTime="2699.990" endTime="2703.247">
+      <phrase speaker="spk1" id="s722" startTime="2699.990" endTime="2703.247">
         <text>na</text>
       </phrase>
-      <phrase id="s714" startTime="2703.247" endTime="2706.930">
+      <phrase speaker="spk1" id="s723" startTime="2703.247" endTime="2706.930">
         <text>kafrag</text>
       </phrase>
-      <phrase id="s715" startTime="2706.930" endTime="2711.092">
+      <phrase speaker="spk1" id="s724" startTime="2706.930" endTime="2711.092">
         <text>mkalkal</text>
       </phrase>
-      <phrase id="s716" startTime="2711.092" endTime="2715.104">
+      <phrase speaker="spk1" id="s725" startTime="2711.092" endTime="2715.104">
         <text>mamuen</text>
       </phrase>
-      <phrase id="s717" startTime="2715.104" endTime="2718.397">
+      <phrase speaker="spk1" id="s726" startTime="2715.104" endTime="2718.397">
         <text>laglag</text>
       </phrase>
-      <phrase id="s718" startTime="2718.397" endTime="2722.02">
+      <phrase speaker="spk1" id="s727" startTime="2718.397" endTime="2722.02">
         <text>kapil</text>
       </phrase>
-      <phrase id="s719" startTime="2722.02" endTime="2724.116">
+      <phrase speaker="spk1" id="s728" startTime="2722.02" endTime="2724.116">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s720" startTime="2724.116" endTime="2727.233">
+      <phrase speaker="spk1" id="s729" startTime="2724.116" endTime="2727.233">
         <text>mtas</text>
       </phrase>
-      <phrase id="s721" startTime="2727.233" endTime="2728.910">
+      <phrase speaker="spk1" id="s730" startTime="2727.233" endTime="2728.910">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s722" startTime="2728.910" endTime="2732.504">
+      <phrase speaker="spk1" id="s731" startTime="2728.910" endTime="2732.504">
         <text>sarsar</text>
       </phrase>
-      <phrase id="s723" startTime="2732.504" endTime="2736.359">
+      <phrase speaker="spk1" id="s732" startTime="2732.504" endTime="2736.359">
         <text>kar</text>
       </phrase>
-      <phrase id="s724" startTime="2736.359" endTime="2740.012">
+      <phrase speaker="spk1" id="s733" startTime="2736.359" endTime="2740.012">
         <text>soro</text>
       </phrase>
-      <phrase id="s725" startTime="2740.012" endTime="2743.401">
+      <phrase speaker="spk1" id="s734" startTime="2740.012" endTime="2743.401">
         <text>elau</text>
       </phrase>
-      <phrase id="s726" startTime="2743.401" endTime="2748.485">
+      <phrase speaker="spk1" id="s735" startTime="2743.401" endTime="2748.485">
         <text>nalwaniksu</text>
       </phrase>
-      <phrase id="s727" startTime="2748.485" endTime="2752.886">
+      <phrase speaker="spk1" id="s736" startTime="2748.485" endTime="2752.886">
         <text>nariuriu</text>
       </phrase>
-      <phrase id="s728" startTime="2752.886" endTime="2757.592">
+      <phrase speaker="spk1" id="s737" startTime="2752.886" endTime="2757.592">
         <text>natiktik ntas</text>
       </phrase>
-      <phrase id="s729" startTime="2757.592" endTime="2761.423">
+      <phrase speaker="spk1" id="s738" startTime="2757.592" endTime="2761.423">
         <text>takuer</text>
       </phrase>
-      <phrase id="s730" startTime="2761.423" endTime="2765.706">
+      <phrase speaker="spk1" id="s739" startTime="2761.423" endTime="2765.706">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s731" startTime="2765.706" endTime="2770.880">
+      <phrase speaker="spk1" id="s740" startTime="2765.706" endTime="2770.880">
         <text>nasakien</text>
       </phrase>
-      <phrase id="s732" startTime="2770.880" endTime="2774.956">
+      <phrase speaker="spk1" id="s741" startTime="2770.880" endTime="2774.956">
         <text>nafetfet</text>
       </phrase>
-      <phrase id="s733" startTime="2774.956" endTime="2779.088">
+      <phrase speaker="spk1" id="s742" startTime="2774.956" endTime="2779.088">
         <text>tekaru</text>
       </phrase>
-      <phrase id="s734" startTime="2779.088" endTime="2783.693">
+      <phrase speaker="spk1" id="s743" startTime="2779.088" endTime="2783.693">
         <text>temen karu</text>
       </phrase>
-      <phrase id="s735" startTime="2783.693" endTime="2788.213">
+      <phrase speaker="spk1" id="s744" startTime="2783.693" endTime="2788.213">
         <text>namtlen</text>
       </phrase>
-      <phrase id="s736" startTime="2788.213" endTime="2792.501">
+      <phrase speaker="spk1" id="s745" startTime="2788.213" endTime="2792.501">
         <text>lek nat</text>
       </phrase>
-      <phrase id="s737" startTime="2792.501" endTime="2797.082">
+      <phrase speaker="spk1" id="s746" startTime="2792.501" endTime="2797.082">
         <text>npatin</text>
       </phrase>
-      <phrase id="s738" startTime="2797.082" endTime="2801.172">
+      <phrase speaker="spk1" id="s747" startTime="2797.082" endTime="2801.172">
         <text>nras</text>
       </phrase>
-      <phrase id="s739" startTime="2801.172" endTime="2805.179">
+      <phrase speaker="spk1" id="s748" startTime="2801.172" endTime="2805.179">
         <text>katp$o</text>
       </phrase>
-      <phrase id="s740" startTime="2805.179" endTime="2808.821">
+      <phrase speaker="spk1" id="s749" startTime="2805.179" endTime="2808.821">
         <text>sor</text>
       </phrase>
-      <phrase id="s741" startTime="2808.821" endTime="2810.138">
+      <phrase speaker="spk1" id="s750" startTime="2808.821" endTime="2810.138">
         <text>[silence]</text>
       </phrase>
-      <phrase id="s742" startTime="2810.138" endTime="2814.158">
+      <phrase speaker="spk1" id="s751" startTime="2810.138" endTime="2814.158">
         <text>naitar</text>
+      </phrase>
+      <phrase speaker="spk1" id="s752" startTime="2814.158" endTime="2819.599">
+        <text/>
       </phrase>
     </tier>
   </interlinear>

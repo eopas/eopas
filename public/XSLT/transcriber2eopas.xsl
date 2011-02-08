@@ -13,7 +13,7 @@ version="1.0">
     </xsl:if>
     <xsl:apply-templates/>
   </xsl:template>
-  <xsl:template match="/Trans/Episode">
+  <xsl:template match="/Trans">
     <eopas>
       <header>
         <meta>
@@ -35,27 +35,35 @@ version="1.0">
             <xsl:value-of select="$creator"/>
           </xsl:attribute>
         </meta>
+        <!-- Add all speakers to metadata -->
+        <xsl:for-each select="Speakers/Speaker">
+          <meta>
+            <xsl:attribute name="name">
+              <xsl:value-of select="./@id"/>
+            </xsl:attribute>
+            <xsl:attribute name="value">
+              <xsl:value-of select="./@name"/>
+            </xsl:attribute>
+          </meta>
+        </xsl:for-each>
       </header>
 
       <interlinear>
-<!-- REMOVED OTHER TIERS TO HAVE THIS WORK WITH SYSTEM -->
-
         <!-- Sync tier -->
         <tier>
           <!-- Metadata for sync tier -->
           <xsl:attribute name="id">Syncs</xsl:attribute>
-          <xsl:attribute name="parent">Turns</xsl:attribute>
-          <xsl:attribute name="linguistic_type">orthographic</xsl:attribute>
+          <xsl:attribute name="linguistic_type">transcription</xsl:attribute>
 
           <!-- Phrases of sync tier -->
-          <xsl:for-each select="Section/Turn/text()">
-            <xsl:if test="not(local-name(.)='Sync')">
+          <xsl:for-each select="Episode/Section/Turn">
+
+            <xsl:for-each select="Sync">
               <phrase>
-                <xsl:variable name="speakerId" select="@speaker"/>
-                <xsl:variable name="speaker" select="/Trans/Speakers/Speaker[@id=$speakerId]/@name"/>
+                <xsl:attribute name="speaker"><xsl:value-of select="../@speaker"/></xsl:attribute>
                 <xsl:attribute name="id">s<xsl:value-of select="position()"/></xsl:attribute>
                 <xsl:attribute name="startTime">
-                  <xsl:value-of select="(preceding-sibling::Sync)[last()]/@time"/>
+                  <xsl:value-of select="@time"/>
                 </xsl:attribute>
                 <xsl:attribute name="endTime">
                   <xsl:choose>
@@ -68,10 +76,15 @@ version="1.0">
                   </xsl:choose>
                 </xsl:attribute>
                 <text>
-                  <xsl:value-of select="normalize-space(.)"/>
+                  <xsl:if test="name(following-sibling::node())!='Sync'">
+                    <xsl:value-of select="normalize-space((following-sibling::text()))"/>
+                  </xsl:if>
+                  <xsl:if test="name(following-sibling::node())='Comment'">[<xsl:value-of select="(following-sibling::Comment)[1]/@desc"/>]</xsl:if>
+                  <xsl:if test="name(following-sibling::node())='Event'">[<xsl:value-of select="(following-sibling::Event)[1]/@desc"/> - <xsl:value-of select="(following-sibling::Event)[1]/@extent"/>]</xsl:if>
                 </text>
               </phrase>
-            </xsl:if>
+            </xsl:for-each>
+
           </xsl:for-each>
         </tier>
 
