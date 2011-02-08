@@ -34,21 +34,7 @@
           <xsd:attribute name="name">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
-                 <xsd:enumeration value="dc:contributor"/>
-                 <xsd:enumeration value="dc:coverage"/>
-                 <xsd:enumeration value="dc:creator"/>
-                 <xsd:enumeration value="dc:date"/>
-                 <xsd:enumeration value="dc:description"/>
-                 <xsd:enumeration value="dc:format"/>
-                 <xsd:enumeration value="dc:identifier"/>
-                 <xsd:enumeration value="dc:language"/>
-                 <xsd:enumeration value="dc:publisher"/>
-                 <xsd:enumeration value="dc:relation"/>
-                 <xsd:enumeration value="dc:rights"/>
-                 <xsd:enumeration value="dc:source"/>
-                 <xsd:enumeration value="dc:subject"/>
-                 <xsd:enumeration value="dc:title"/>
-                 <xsd:enumeration value="dc:type"/>
+                 <xsd:whiteSpace value="replace"/>
               </xsd:restriction>
             </xs:simpleType>
           </xsd:attribute>

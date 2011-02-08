@@ -84,13 +84,13 @@ Feature: Media Items can have transcriptions
       #| elan1.xml        | ELAN        | so from here   | ELAN 1        |
       #| elan2.xml        | ELAN        | My name is Joe | ELAN 1        |
       #| eopas1.xml       | EOPAS       | so from here   | EOPAS 1       |
-      #| eopas2.xml       | EOPAS       | Endis reading  | EOPAS 1       |
+      | eopas2.xml       | EOPAS       | Endis reading  | EOPAS 1       |
       | eopas3.xml       | EOPAS       | rat, this rat  | EOPAS 1       |
-      #| toolbox1.xml     | Toolbox     | about this wo  | TOOLBOX 1     |
-      #| toolbox2.xml     | Toolbox     | about the rat  | TOOLBOX 1     |
-      #| toolbox3.xml     | Toolbox     | Litrapong      | TOOLBOX 1     |
-      #| transcriber1.xml | Transcriber | pause crowd    | TRANSCRIBER 1 |
-      #| transcriber2.xml | Transcriber | puet soksoki   | TRANSCRIBER 1 |
+      | toolbox1.xml     | Toolbox     | about this wo  | TOOLBOX 1     |
+      | toolbox2.xml     | Toolbox     | about the rat  | TOOLBOX 1     |
+      | toolbox3.xml     | Toolbox     | Litrapong      | TOOLBOX 1     |
+      | transcriber1.xml | Transcriber | pause crowd    | TRANSCRIBER 1 |
+      | transcriber2.xml | Transcriber | puet soksoki   | TRANSCRIBER 1 |
 
   @javascript
   Scenario: Attach a media item to a transcript
