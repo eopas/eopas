@@ -59,30 +59,32 @@ version="1.0">
           <xsl:for-each select="Episode/Section/Turn">
 
             <xsl:for-each select="Sync">
-              <phrase>
-                <xsl:attribute name="speaker"><xsl:value-of select="../@speaker"/></xsl:attribute>
-                <xsl:attribute name="id">s<xsl:value-of select="position()"/></xsl:attribute>
-                <xsl:attribute name="startTime">
-                  <xsl:value-of select="@time"/>
-                </xsl:attribute>
-                <xsl:attribute name="endTime">
-                  <xsl:choose>
-                    <xsl:when test="(following-sibling::Sync)[1]/@time">
-                      <xsl:value-of select="(following-sibling::Sync)[1]/@time"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                      <xsl:value-of select="../@endTime"/>
-                    </xsl:otherwise>
-                  </xsl:choose>
-                </xsl:attribute>
-                <text>
-                  <xsl:if test="name(following-sibling::node())!='Sync'">
+              <xsl:if test="following-sibling::node()">
+              <xsl:if test="name(following-sibling::node())!='Sync'">
+                <phrase>
+                  <xsl:attribute name="participant"><xsl:value-of select="../@speaker"/></xsl:attribute>
+                  <xsl:attribute name="id">s<xsl:value-of select="count(preceding::Sync)+1"/></xsl:attribute>
+                  <xsl:attribute name="startTime">
+                    <xsl:value-of select="@time"/>
+                  </xsl:attribute>
+                  <xsl:attribute name="endTime">
+                    <xsl:choose>
+                      <xsl:when test="(following-sibling::Sync)[1]/@time">
+                        <xsl:value-of select="(following-sibling::Sync)[1]/@time"/>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:value-of select="../@endTime"/>
+                      </xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:attribute>
+                  <text>
                     <xsl:value-of select="normalize-space((following-sibling::text()))"/>
-                  </xsl:if>
-                  <xsl:if test="name(following-sibling::node())='Comment'">[<xsl:value-of select="(following-sibling::Comment)[1]/@desc"/>]</xsl:if>
-                  <xsl:if test="name(following-sibling::node())='Event'">[<xsl:value-of select="(following-sibling::Event)[1]/@desc"/> - <xsl:value-of select="(following-sibling::Event)[1]/@extent"/>]</xsl:if>
-                </text>
-              </phrase>
+                    <xsl:if test="name(following-sibling::node())='Comment'">[<xsl:value-of select="(following-sibling::Comment)[1]/@desc"/>]</xsl:if>
+                    <xsl:if test="name(following-sibling::node())='Event'">[<xsl:value-of select="(following-sibling::Event)[1]/@desc"/> - <xsl:value-of select="(following-sibling::Event)[1]/@extent"/>]</xsl:if>
+                  </text>
+                </phrase>
+              </xsl:if>
+              </xsl:if>
             </xsl:for-each>
 
           </xsl:for-each>

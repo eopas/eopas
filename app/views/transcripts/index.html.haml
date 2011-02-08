@@ -29,6 +29,7 @@
         %td
           =link_to 'edit', edit_transcript_path(transcript)
           =link_to 'show', transcript_path(transcript)
+          =link_to 'delete', transcript, :confirm => "Are you sure?", :method => :delete
 
   = will_paginate @transcripts
 

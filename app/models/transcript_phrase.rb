@@ -3,6 +3,8 @@ class TranscriptPhrase < ActiveRecord::Base
 
   has_many :words, :class_name => 'TranscriptWord', :dependent => :destroy
 
+  default_scope order(:start_time)
+
   accepts_nested_attributes_for :words
 
   validates :start_time,  :presence => true, :numericality => true
