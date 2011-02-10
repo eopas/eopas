@@ -46,10 +46,11 @@ function do_time_change(fragment) {
 
   var start = (1.0*times[0]).toFixed(2);
   var end = times[1];
+
   var m;
-  if ($('video')) {
+  if ($('video').length) {
     m = $('video').first();
-  } else if ($('audio')) {
+  } else if ($('audio').length) {
     m = $('audio').first();
   }
   m.attr('currentTime', start);
@@ -218,7 +219,9 @@ function setup_transcript_media_item() {
 }
 
 function setup_validations() {
-  $('form.validate').validate();
+  if ($('form.validate').length) {
+    $('form.validate').validate();
+  }
 }
 
 function setup_concordance() {
@@ -263,9 +266,9 @@ $(document).ready(function() {
 
   // Get media element
   var media;
-  if ($('video')) {
+  if ($('video').length) {
     media = $('video').first();
-  } else if ($('audio')) {
+  } else if ($('audio').length) {
     media = $('audio').first();
   }
 
