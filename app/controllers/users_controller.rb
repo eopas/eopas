@@ -67,7 +67,7 @@ class UsersController < ApplicationController
       @user.email      = user[:email]
       details_changed  = true
     end
-    if (user[:password] = user[:password_confirmation])
+    if (user[:password] == user[:password_confirmation])
       @user.password              = user[:password]
       @user.password_confirmation = user[:password_confirmation]
       password_changed = true

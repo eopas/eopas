@@ -1,5 +1,12 @@
 
 #left_column
+
+  #concordance.collapse_box.hidden
+    .collapse_title
+      = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
+      Concordance
+    .collapse_content
+
   - if @media_item
     %h3
       = @media_item.title
@@ -15,12 +22,6 @@
 
   #metadata_display.collapse_box
     = render :partial => 'details'
-
-  #concordance.collapse_box.hidden
-    .collapse_title
-      = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
-      Concordance
-    .collapse_content
 
 
   - if @transcript.depositor == current_user
