@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EOPAS: ETHNOER Online Presentation and Annotation System
+title: 'EOPAS: ETHNOER Online Presentation and Annotation System'
 ---
 
 
