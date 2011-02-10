@@ -39,6 +39,8 @@ group :development, :test, :cucumber do
 
     gem 'cucumber_spinner'
 
+    gem 'railroady'
+
 #    gem 'zombie', :git => 'git://github.com/assaf/zombie.git'
 #    gem 'capybara-zombie', :git => 'git://github.com/plataformatec/capybara-zombie.git'
 end
