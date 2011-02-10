@@ -47,7 +47,7 @@ version="1.0">
                 <!-- get start and end time -->
                 <xsl:variable name="s" select="aud"/>
                 <xsl:variable name="delimiter" select="' '"/>
-                <xsl:variable name="partOnly" select="substring-after($s, $delimiter)"/>
+                <xsl:variable name="partOnly" select="substring-after(normalize-space($s), $delimiter)"/>
                 <xsl:variable name="timeOnly">
                   <xsl:choose>
                     <xsl:when test="contains(substring-after($partOnly, $delimiter), $delimiter)">
