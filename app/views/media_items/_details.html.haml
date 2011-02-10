@@ -41,7 +41,7 @@
       %td.value
         = @media_item.private
 
-    - if (@media_item.depositor.id == current_user.id)
+    - if (current_user and @media_item.depositor.id == current_user.id)
       %tr
         %td.name
           Download

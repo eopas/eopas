@@ -16,8 +16,6 @@ gem 'daemons', '1.0.10' # Need this otherwise delayed job won't start when talki
 gem 'nokogiri'
 gem 'will_paginate', '3.0.pre2'
 
-#gem 'exception_notifier'
-
 group :development, :test, :cucumber do
     gem 'sqlite3-ruby'
 

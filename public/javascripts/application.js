@@ -217,6 +217,10 @@ function setup_transcript_media_item() {
 
 }
 
+function setup_validations() {
+  $('form.validate').validate();
+}
+
 function setup_concordance() {
   $('.concordance').click(function() {
       var type = $(this).attr('data-type');
@@ -283,6 +287,7 @@ $(document).ready(function() {
 
   // Search
   setup_concordance();
+  setup_validations();
 
   // on URL hashchange of page
   if (media.size() > 0) {

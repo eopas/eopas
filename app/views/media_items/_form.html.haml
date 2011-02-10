@@ -8,19 +8,19 @@
       %td.name
         = form.label :format
       %td.value
-        = form.select :format, options_for_select(MediaItem::FORMATS, @media_item.format), :include_blank => true
+        = form.select :format, options_for_select(MediaItem::FORMATS, @media_item.format), :include_blank => true, :class => 'required'
 
     %tr
       %td.name
         = form.label :original, 'Media File'
       %td.value
-        = form.file_field :original
+        = form.file_field :original, :class => 'required'
 
     %tr
       %td.name
         = form.label :title
       %td.value
-        = form.text_field :title, :class => 'text'
+        = form.text_field :title, :class => 'text', :class => 'required'
 
     %tr
       %td.name
@@ -32,19 +32,19 @@
       %td.name
         = form.label :recorded_on
       %td.value
-        = form.date_select :recorded_on, :order => [:day, :month, :year], :start_year => 1950
+        = form.date_select :recorded_on, :order => [:day, :month, :year], :start_year => 1950, :class => 'required'
 
     %tr
       %td.name
         = form.label :copyright, 'Copyright Holder'
       %td.value
-        = form.text_field :copyright, :class => 'text'
+        = form.text_field :copyright, :class => 'text', :class => 'required'
 
     %tr
       %td.name
         = form.label :license, 'License'
       %td.value
-        = form.select :license, options_from_collection_for_select(License.all, :code, :name, @media_item.license)
+        = form.select :license, options_from_collection_for_select(License.all, :code, :name, @media_item.license), :class => 'required'
 
     %tr
       %td.name
