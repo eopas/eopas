@@ -366,3 +366,24 @@ table.small {
   }
 }
 
+
+.hidden {
+  display: none;
+}
+
+.impress {
+  background: #3399CC !important;
+  border: 3px solid #CC0033 !important;
+}
+
+
+#concordance {
+  .search {
+    font-weight: bold;
+  }
+  .left {
+    text-align: right;
+  }
+}
+
+

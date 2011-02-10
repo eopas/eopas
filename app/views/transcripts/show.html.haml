@@ -16,13 +16,18 @@
   #metadata_display.collapse_box
     = render :partial => 'details'
 
+  #concordance.collapse_box.hidden
+    .collapse_title
+      = image_tag '/images/minimize_grey.png', :class => 'collapse_icon'
+      Concordance
+    .collapse_content
+
+
   - if @transcript.depositor == current_user
     #actions
       = link_to 'Edit transcript metadata', edit_transcript_path(@transcript)
       %br
       = link_to 'Delete transcript', @transcript, :confirm => "Are you sure?", :method => :delete
-
-
 #right_column
   #tiers_info
     = render :partial => 'tiers_info'

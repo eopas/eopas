@@ -140,4 +140,3 @@ Feature: Media Items can have transcriptions
     Then I should see "ActiveRecord::RecordNotFound"
 
 
-

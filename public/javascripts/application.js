@@ -33,10 +33,8 @@ function setup_embedding() {
   });
 }
 
-// changing URL hash on window
-function do_VideoFragment() {
-  var url = window.location.href;
-  var fragment = url.replace(/.*#t=(.*)/, "$1");
+function do_time_change(fragment) {
+  fragment = fragment.replace(/#t=(.*)/, "$1");
   if (!fragment) {
     return;
   }
@@ -57,6 +55,40 @@ function do_VideoFragment() {
   m.attr('currentTime', start);
   m.trigger('play');
   m.attr('data-pause', end);
+}
+
+function do_transcript_change(fragment) {
+  var matches = fragment.match(/^#!\/p([^\/]*)(?:\/w([^\/]*))?(?:\/m([^\/]*))?/);
+  var phrase_num = matches[1];
+  var word_num = matches[2];
+  var morpheme_num = matches[3];
+
+  var phrase = '.phrase:eq(' + (phrase_num - 1) + ')';
+  $('#transcript_display').scrollTo(phrase);
+
+  var elem;
+  if (word_num) {
+    elem = phrase + ' .word:eq(' + (word_num - 1) + ')';
+
+    if (morpheme_num) {
+      elem = elem + ' .morpheme:eq(' + (morpheme_num - 1) + ')';
+    }
+  }
+
+  jQuery('.impress').removeClass('impress');
+  $(elem).addClass('impress');
+}
+
+// changing URL hash on window
+function do_fragment_change() {
+  var fragment = window.location.hash;
+
+  if (fragment.match(/^#t=/)) {
+    do_time_change(fragment);
+  }
+  else if (fragment.match(/^#!/)) {
+    do_transcript_change(fragment);
+  }
 }
 
 function setup_playback(media) {
@@ -106,8 +138,8 @@ function setup_playback(media) {
   });
 
   $('a.play_button').click(function() {
-    window.location.hash="t="+$(this).attr('href').replace(/.*#t=(.*)/, "$1");
-    do_VideoFragment();
+    window.location.hash = "t="+ $(this).attr('href').replace(/.*#t=(.*)/, "$1");
+    do_fragment_change();
   });
 }
 
@@ -185,6 +217,44 @@ function setup_transcript_media_item() {
 
 }
 
+function setup_concordance() {
+  $('.concordance').click(function() {
+      var type = $(this).attr('data-type');
+      var search = $(this).attr('data-search');
+      var language_code = $(this).attr('data-language-code');
+
+      var url = '/transcript_phrases?search=' + search + '&type=' + type + '&language_code=' + language_code;
+
+      $.get(url,
+        function(data) {
+          $('#concordance .collapse_content').html(data);
+          $('#concordance').show();
+        }
+      );
+  });
+
+  $('.concordance_phrase').live('click', function() {
+      var id = $(this).attr('data-id');
+      var phrase_num = $(this).attr('data-phrase-num');
+      var word_num = $(this).attr('data-word-num');
+      var morpheme_num = $(this).attr('data-morpheme-num');
+
+      var url = location.href.replace(/#.*/, '') + '#!/p' + phrase_num;
+      if (word_num) {
+        url += '/w' + word_num;
+
+        if (morpheme_num) {
+          url += '/m' + morpheme_num;
+        }
+      }
+
+      location.href = url;
+      do_fragment_change();
+  });
+
+}
+
+
 $(document).ready(function() {
 
   // Get media element
@@ -211,8 +281,16 @@ $(document).ready(function() {
   // Form bits
   setup_transcript_media_item();
 
+  // Search
+  setup_concordance();
+
   // on URL hashchange of page
-  media.bind('loadedmetadata', do_VideoFragment);
+  if (media.size() > 0) {
+    media.bind('loadedmetadata', do_fragment_change);
+  }
+  else {
+    do_fragment_change();
+  }
 
   // Edit form extra fields
   $('a[data-clone-fields]').click(function() {
