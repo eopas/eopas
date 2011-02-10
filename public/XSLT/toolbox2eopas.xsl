@@ -68,7 +68,8 @@ version="1.0">
                   <xsl:value-of select="$startTime"/>
                 </xsl:attribute>
 
-                <xsl:attribute name="id">o_<xsl:value-of select="id"/></xsl:attribute>
+                <xsl:variable name="o_ident" select="id"/>
+                <xsl:attribute name="id">o_<xsl:value-of select="translate($o_ident,':','-')"/></xsl:attribute>
 
                 <!-- compose text together -->
                 <!-- for each "txGroup" and "txgroup" -->
@@ -112,7 +113,8 @@ version="1.0">
           <!-- create translation (free gloss) tier -->
           <tier>
             <!-- Metadata per tier -->
-            <xsl:attribute name="id">fg_<xsl:value-of select="./itm/text()"/></xsl:attribute>
+            <xsl:variable name="fg_ident" select="./itm/text()"/>
+            <xsl:attribute name="id">fg_<xsl:value-of select="translate($fg_ident,':','-')"/></xsl:attribute>
             <xsl:attribute name="linguistic_type">translation</xsl:attribute>
 
             <!-- individual phrases -->
@@ -121,7 +123,7 @@ version="1.0">
                 <!-- get start and end time -->
                 <xsl:variable name="s" select="aud"/>
                 <xsl:variable name="delimiter" select="' '"/>
-                <xsl:variable name="partOnly" select="substring-after($s, $delimiter)"/>
+                <xsl:variable name="partOnly" select="substring-after(normalize-space($s), $delimiter)"/>
                 <xsl:variable name="timeOnly">
                   <xsl:choose>
                     <xsl:when test="contains(substring-after($partOnly, $delimiter), $delimiter)">
@@ -141,7 +143,8 @@ version="1.0">
                   <xsl:value-of select="$endTime"/>
                 </xsl:attribute>
 
-                <xsl:attribute name="id">fg_<xsl:value-of select="id"/></xsl:attribute>
+                <xsl:variable name="ident" select="id"/>
+                <xsl:attribute name="id">fg_<xsl:value-of select="translate($ident,':','-')"/></xsl:attribute>
 
                 <text>
                   <xsl:value-of select="fg/text()"/>
