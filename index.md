@@ -18,6 +18,8 @@ from a multitude of linguistic tools, such as ELAN, Transcriber, or IGT
 Install
 -------
 
+Download the latest version from [Github](http://github.com/eopas/eopas/downloads)
+
 Please check the [README](https://github.com/eopas/eopas/blob/master/README.md)
 for the latest installation instructions.
 
