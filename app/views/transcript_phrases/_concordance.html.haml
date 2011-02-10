@@ -27,7 +27,7 @@
       %td.search
         = @search
       %td.right
-        - if right
-          = right.force_encoding('utf-8')
+        - unless right.nil?
+          = right.force_encoding('UTF-8')
 
 
