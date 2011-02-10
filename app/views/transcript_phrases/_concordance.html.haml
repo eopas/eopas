@@ -23,7 +23,7 @@
 
     %tr.concordance_phrase{'data-phrase-num' => phrase_num , 'data-word-num' => word_num, 'data-morpheme-num' => morpheme_num}
       %td.left
-        = left
+        = left.force_encoding('UTF-8')
       %td.search
         = @search
       %td.right
