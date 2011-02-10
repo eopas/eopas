@@ -3,7 +3,6 @@ layout: default
 title: 'EOPAS: ETHNOER Online Presentation and Annotation System'
 ---
 
-
 About
 -----
 
@@ -31,6 +30,8 @@ How does it work? [Check the README](https://github.com/eopas/eopas#readme).
 Having problems? [Report a bug](http://github.com/eopas/eopas/issues).
 
 Other Questions? [Check the wiki](https://github.com/eopas/eopas/wiki).
+
+More questions? [Check out the mailing lists](http://sourceforge.net/projects/eopas/support).
 
 Want to help out? [Download the source](http://github.com/eopas.eopas).
 
