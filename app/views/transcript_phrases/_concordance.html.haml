@@ -1,0 +1,32 @@
+%table
+  - @phrases.each do |phrase|
+    :ruby
+      phrase_num = phrase.transcript.phrases.index(phrase) + 1
+
+      case @type
+      when 'word'
+        text = phrase.original
+        word_num = phrase.words.select {|w| w.word == @search}.first.position
+      when 'morpheme'
+        text = phrase.words.map {|w| w.morphemes.map{ |m| m.morpheme}.join(' ') }.join(' ')
+        morpheme = phrase.words.map {|w| w.morphemes.select {|m| m.morpheme == @search}}.flatten.compact.first
+        word_num = morpheme.word.position
+        morpheme_num = morpheme.position
+      end
+
+      left, right = text.split /[ ,]#{@search}[ ,]/
+
+      left = truncate left.reverse, :length => 23
+      left = left.reverse
+
+      right = truncate right, :length => 23
+
+    %tr.concordance_phrase{'data-phrase-num' => phrase_num , 'data-word-num' => word_num, 'data-morpheme-num' => morpheme_num}
+      %td.left
+        = left
+      %td.search
+        = @search
+      %td.right
+        = right
+
+
