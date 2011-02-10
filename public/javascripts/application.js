@@ -272,10 +272,13 @@ $(document).ready(function() {
     media = $('audio').first();
   }
 
+  if (media) {
+  }
+
+
   // Collapsing elements
   setup_div_toggle();
   setup_hider();
-  setup_playback(media);
   setup_embedding();
 
   // Country Code Selector
@@ -293,7 +296,8 @@ $(document).ready(function() {
   setup_validations();
 
   // on URL hashchange of page
-  if (media.size() > 0) {
+  if (media) {
+    setup_playback(media);
     media.bind('loadedmetadata', do_fragment_change);
   }
   else {
