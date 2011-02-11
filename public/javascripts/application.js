@@ -230,7 +230,7 @@ function setup_concordance() {
       var search = $(this).attr('data-search');
       var language_code = $(this).attr('data-language-code');
 
-      var url = '/transcript_phrases?search=' + escape(search) + '&type=' + type + '&language_code=' + language_code;
+      var url = '/transcript_phrases?search=' + encodeURIComponent(search) + '&type=' + type + '&language_code=' + language_code;
 
       $.get(url,
         function(data) {
