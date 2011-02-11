@@ -37,7 +37,7 @@ class Transcript < ActiveRecord::Base
   include Paperclip
   has_attached_file :original, :url => "/system/transcript/:attachment/:id/:style/:filename"
 
-  attr_accessible :title, :date, :country_code, :language_code, :copyright, :license, :private, :original, :transcript_format, :participants_attributes
+  attr_accessible :title, :date, :country_code, :language_code, :copyright, :license, :private, :original, :transcript_format, :participants_attributes, :description
 
   FORMATS = ['ELAN', 'Toolbox', 'Transcriber', 'EOPAS']
 

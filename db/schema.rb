@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110206074057) do
+ActiveRecord::Schema.define(:version => 20110211064726) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "name"
@@ -108,6 +108,7 @@ ActiveRecord::Schema.define(:version => 20110206074057) do
     t.string   "country_code"
     t.string   "copyright"
     t.string   "license"
+    t.text     "description"
   end
 
   create_table "users", :force => true do |t|

@@ -13,7 +13,13 @@
         %td.name
           = form.label :title
         %td.value
-          = form.text_field :title, :class => 'text'
+          = form.text_field :title, :class => 'text', :size => 40
+
+      %tr
+        %td.name
+          = form.label :description
+        %td.value
+          = form.text_area :description, :class => 'text', :rows => 5, :cols => 50
 
       %tr
         %td.name
@@ -37,7 +43,7 @@
         %td.name
           = form.label :copyright, 'Copyright Holder'
         %td.value
-          = form.text_field :copyright, :class => 'text'
+          = form.text_field :copyright, :class => 'text', :size => 40
 
       %tr
         %td.name
