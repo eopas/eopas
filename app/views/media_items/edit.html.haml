@@ -1,0 +1,11 @@
+#media_details
+  %h2 Edit Media Item Details
+
+  = form_for @media_item, :html => { :multipart => true, :class => 'validate'} do |f|
+    = error_messages @media_item
+
+    = render :partial => 'form', :object => f
+
+    = f.submit "Update"
+
+  * required attributes

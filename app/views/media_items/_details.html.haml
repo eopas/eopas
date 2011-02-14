@@ -20,7 +20,7 @@
       %td.name
         Description
       %td.value
-        = @media_item.description
+        = truncate @media_item.description, :length => 100
 
     %tr#copyright
       %td.name
@@ -47,4 +47,5 @@
         %td.value
           = link_to @media_item.original_file_name, @media_item.original.url(:standard)
 
+  = link_to 'Edit media item metadata', edit_media_item_path(@media_item)
 

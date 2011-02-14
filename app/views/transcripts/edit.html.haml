@@ -12,30 +12,35 @@
       %tr
         %td.name
           = form.label :title
+          * 
         %td.value
           = form.text_field :title, :class => 'text', :size => 40
 
       %tr
         %td.name
           = form.label :description
+          *
         %td.value
           = form.text_area :description, :class => 'text', :rows => 5, :cols => 50
 
       %tr
         %td.name
           = form.label :date
+          *
         %td.value
           = form.date_select :date, :order => [:day, :month, :year], :start_year => 1950
 
       %tr
         %td.name
           = form.label :country_code, 'Country Code'
+          *
         %td.value
           = form.select :country_code, options_from_collection_for_select(Country.all.sort_by(&:name), :code, :name, @transcript.country_code), {}, :class => 'country-select', 'data-select-child' => 'transcript_language_code'
 
       %tr
         %td.name
           = form.label :language_code, 'Language Code'
+          *
         %td.value
           = form.select :language_code, options_for_select([], @transcript.language_code), {}, 'data-option-selected' => @transcript.language_code
 
@@ -75,4 +80,6 @@
           = link_to 'Add participant', 'javascript:void(0)', 'data-clone-fields' => true
 
     = form.submit "Update"
+    
+  * required attributes
 

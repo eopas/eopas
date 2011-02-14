@@ -24,6 +24,19 @@ class MediaItemsController < ApplicationController
     respond_with @media_item
   end
 
+  def edit
+    @media_item = MediaItem.find params[:id]
+  end
+
+  def update
+    @media_item = MediaItem.find params[:id]
+    if @media_item.update_attributes(params[:media_item])
+      flash[:notice] = 'Media item was successfully updated.'
+    end
+
+    respond_with @media_item
+  end
+
   def show
     begin
       @media_item = current_user.media_items.find params[:id]

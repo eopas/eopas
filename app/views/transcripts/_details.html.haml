@@ -42,7 +42,7 @@
       %td.name
         Description
       %td.value
-        = @transcript.description
+        = truncate @transcript.description, :length => 100
 
     %tr
       %td.name
