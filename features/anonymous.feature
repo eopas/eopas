@@ -36,7 +36,7 @@ Feature: Media Items should have transcriptions
   Scenario: When Anonymous logs in she should see public only and have to agree
     When I go to the home page
      And I follow "Browse Transcripts"
-    Then I should see "I agree to these conditions"
+    Then I should see "By clicking here I agree that I will not contravene this licence."
     When I check "agree"
      And I press "Submit"
     Then I should not see "Private Transcript"

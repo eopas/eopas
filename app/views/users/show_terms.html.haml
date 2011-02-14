@@ -1,8 +1,15 @@
-Terms and Conditons
+%h2 Terms and Conditions
 
-PUT SOMEHTING HER
+#paragraph
+  I agree to use the media and transcripts provided in the EOPAS system for research purposes only. Each item in this EOPAS collection is typically archived somewhere else and is covered by its own licence. If you want a copy of the original media you should contact the depositor or locate the media in the source archive.
+
+#paragraph
+  The whole EOPAS collection is, by default covered by a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Australia (CC BY-NC-SA 3.0) (http://creativecommons.org/licenses/by-nc-sa/3.0/au/deed.en).
+
 
 = form_tag agree_to_terms_users_path, :method => :post do
-  = check_box_tag :agree
-  I agree to these conditions
+  #paragraph
+    = check_box_tag :agree
+    By clicking here I agree that I will not contravene this licence.
+  
   = submit_tag 'Submit'

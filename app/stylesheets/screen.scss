@@ -114,8 +114,10 @@ $blue:      #7297ba;
   }
 }
 
-#about, #help {
-  margin-right: 15px;
+#paragraph {
+  max-width: 600px;
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 
 // transcript index page

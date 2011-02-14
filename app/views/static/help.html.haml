@@ -1,15 +1,75 @@
-#help
-  %h2 Help for Eopas
+%h2 Help for EOPAS: Frequently asked questions
 
-  %p Frequently asked questions
+%h3 How to cite a phrase?
 
-  %h3 How to cite a phrase?
+#paragraph
+  As a video or audio element plays back and there are annotation phrases, the URL of the browser changes. The URL adapts to the time code of the phrase. You can pause the video or audio element and cut and paste the URL for citation purposes.
   
-  %p
-    As a video or audio element plays back and there are annotation phrases, the URL of the browser changes.
-    The URL adapts to the time code of the phrase.
-    You can pause the video or audio element and cut and paste the URL for citation purposes.
-    
-  %p
-    Alternatively, you can also right click on the little black "play" button of a phrase and copy the link address.
-    
+#paragraph
+  Alternatively, you can also right click on the little black "play" button of a phrase and copy the link address.
+
+
+%h3 What format does a Toolbox input file have to be for import?
+
+#paragraph
+  Some Toolbox files use camel-case on element and attribute names.
+  Others come with a namespace of "tb:" on all the elements.
+  These differences will be removed using a clean-up script called fixToolbox.xsl.
+
+#paragraph
+  The following mapping of Toolbox elements to EOPAS is undertaken:
+
+%ul
+  %li
+    %pre
+      itmgroup          -> tier@linguistic_type['transcription']
+  %li
+    %pre
+      idgroup           ->   phrase
+  %li
+    %pre
+      concat txgroup/tx ->     text
+  %li
+    %pre
+      txgroup           ->     wordlist
+  %li
+    %pre
+      tx                ->       word/text
+  %li
+    %pre
+      mr                ->         morphemelist/morpheme/text@kind['morpheme']
+  %li
+    %pre
+      mg                ->         morphemelist/morpheme/text@kind['gloss']
+  %li
+    %pre
+      fg                -> tier@linguistic_type['translation']/phrase/text
+
+
+%h3 What format does a Transcriber input file have to be for import?
+
+#paragraph
+
+  In EOPAS we don't know about different speakers, so speaker turns are removed.
+  The EOPAS XML file format moves the speaker information on the phrase.
+  Topic information and the sections are removed.
+
+#paragraph
+  The following mapping of Transcriber elements to EOPAS is undertaken:
+
+%ul
+  %li
+    %pre
+      Episode            -> tier@linguistic_type['transcription']
+  %li
+    %pre
+      Sync               ->   phrase with Turn@speaker
+  %li
+    %pre
+      Sync.content()     ->     text
+  %li
+    %pre
+      Comment@desc       ->     text with "[" "]"
+  %li
+    %pre
+      Event@desc+@extent ->     text with "[" "]"

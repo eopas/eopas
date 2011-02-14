@@ -7,7 +7,6 @@ Eopas::Application.routes.draw do
   end
 
   # Static
-  get 'about', :to => 'static#about', :as => 'about'
   get 'help',  :to => 'static#help',  :as => 'help'
 
   # Auth

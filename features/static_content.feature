@@ -11,13 +11,13 @@ Feature: Website needs static content
     Then I should see "EOPAS"
 
   Scenario: Home Page link goes to homepage
-    When I am on the about page
+    When I am on the help page
     And  I follow "Home"
     Then I should be on the home page
 
-  Scenario: About Page exists
+  Scenario: Help Page exists
     When I go to the home page
-    And  I follow "About"
-    Then I should be on the about page
-    And  I should see "About Eopas"
+    And  I follow "Help"
+    Then I should be on the help page
+    And  I should see "Help for EOPAS"
 
