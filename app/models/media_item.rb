@@ -50,7 +50,6 @@ class MediaItem < ActiveRecord::Base
   validates :depositor,     :presence => true
 
   validates :title,         :presence => true
-  validates :description,   :presence => true
   validates :depositor,     :presence => true, :associated => true
   validates :recorded_on,   :presence => true
   validates :copyright,     :presence => true

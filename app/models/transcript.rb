@@ -47,7 +47,6 @@ class Transcript < ActiveRecord::Base
 
   # Validated on second step
   validates :title,             :presence => true, :unless => lambda { new_record? }
-  validates :description,       :presence => true, :unless => lambda { new_record? }
   validates :date,              :presence => true, :unless => lambda { new_record? }
   validates :country_code,      :presence => true, :unless => lambda { new_record? }
   validates :language_code,      :presence => true, :unless => lambda { new_record? }
