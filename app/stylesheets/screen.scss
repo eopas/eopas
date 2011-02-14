@@ -48,7 +48,12 @@ $blue:      #7297ba;
 
 #footer {
   text-align: center;
-  padding: 20px;
+  margin-top: 20px;
+  p {
+    margin-left: 10%;
+    width: 80%;
+    font-size: .8em;
+  }
 }
 
 #flash_error {
@@ -71,9 +76,6 @@ $blue:      #7297ba;
 
 #menu {
   background-color: $ocre;
-  margin-bottom: 10px;
-  padding: 2px;
-  padding-left: 8px;
   margin-bottom: 10px;
   height: 20px;
   ul {
