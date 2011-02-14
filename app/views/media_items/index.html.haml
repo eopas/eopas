@@ -12,7 +12,7 @@
         %p
           = link_to media_item.title, media_item
         %p.description
-          = truncate media_item.description, :length => 35 || "no description"
+          = truncate media_item.description, :length => 35
         %p
           = link_to 'Edit', edit_media_item_path(media_item)
             
