@@ -93,6 +93,7 @@ function do_fragment_change() {
 }
 
 function setup_playback(media) {
+  // on timeupdate check if we are still playing and adjust the highlighted region
   media.bind('timeupdate', function() {
     var cur_time = parseFloat(media.attr('currentTime'));
     if (media.attr('paused') || media.attr('ended')) {
@@ -120,18 +121,25 @@ function setup_playback(media) {
         }
       } else {
         $(this).closest('.line').find('.tracks').removeClass('hilight');
-      }
+      }      
     });
+    
+    // pause the video if we played past the last segment
+    if (cur_time > (parseFloat($('.play_button').last().attr('data-end')))) {
+      media.trigger('pause');
+      media.attr('data-pause', '');
+    }
 
     // Pause the video if we played a segment and it's finished
     var pause_time = parseFloat(media.attr('data-pause'))+0.1;
     if (pause_time) {
-      if (Math.abs(pause_time - cur_time) < 0.1) {
+      // we've just gone past the end of the segment, trigger a pause
+      if (Math.abs(cur_time - pause_time) < 0.1 && Math.abs(cur_time - pause_time) > 0.0) {
         media.trigger('pause');
         media.attr('data-pause', '');
       }
       // Something weird happend and we missed the pause
-      // maybe user skipped ahead
+      // maybe user skipped ahead; so just reset the data-pause attribute
       if (media.attr('currentTime') > pause_time) {
         media.attr('data-pause', '');
       }
@@ -271,10 +279,6 @@ $(document).ready(function() {
   } else if ($('audio').length) {
     media = $('audio').first();
   }
-
-  if (media) {
-  }
-
 
   // Collapsing elements
   setup_div_toggle();
