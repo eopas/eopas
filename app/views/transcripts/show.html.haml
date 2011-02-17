@@ -9,10 +9,12 @@
 
   - if @transcript
     %h3
+      = @transcript.title
       -if @transcript.country_code
         - if @transcript.language_code
-          ="; " + CountryLanguage.find_by_country_code_and_code(@transcript.country_code, @transcript.language_code).name
-        ="; " + Country.find(@transcript.country_code).name
+          = "; " + CountryLanguage.find_by_country_code_and_code(@transcript.country_code, @transcript.language_code).name
+        = "; " + Country.find(@transcript.country_code).name
+
 
   - if @media_item
     #media_display.collapse_box
