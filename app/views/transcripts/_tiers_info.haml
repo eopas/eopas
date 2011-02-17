@@ -1,5 +1,10 @@
 %button#tier_title.hider{'data-hide-selector' => "#tier_list"}
   == Set Displayed Tracks
+
+%div#url
+  Current Segment:
+  %textarea#cur_url
+    
 %form#tier_list
   -# We work this out off the first phrase
   - first_phrase = @transcript.phrases.first

@@ -50,7 +50,8 @@ function do_time_change(fragment) {
   var m;
   if ($('video').length) {
     m = $('video').first();
-  } else if ($('audio').length) {
+  } 
+  else if ($('audio').length) {
     m = $('audio').first();
   }
   m.attr('currentTime', start);
@@ -80,9 +81,17 @@ function do_transcript_change(fragment) {
   $(elem).addClass('impress');
 }
 
+// set url in current url box
+function set_url(fragment) {
+  var baseurl = window.location.protocol+"//"+window.location.host+window.location.pathname
+  var url = baseurl + fragment;
+  $('textarea#cur_url').text(url);  
+}
+
 // changing URL hash on window
 function do_fragment_change() {
   var fragment = window.location.hash;
+  set_url(fragment);
 
   if (fragment.match(/^#t=/)) {
     do_time_change(fragment);
@@ -116,14 +125,16 @@ function setup_playback(media) {
           }
           // highlight currently playing track
           line.find('.tracks').addClass('hilight');
-          // change hash on URL
-          window.location.hash="t="+$(this).attr('data-start')+","+$(this).attr('data-end');
+
+          // change hash on URL in cur_url textarea
+          set_url("#t="+$(this).attr('data-start')+","+$(this).attr('data-end'));
         }
-      } else {
+      } 
+      else {
         $(this).closest('.line').find('.tracks').removeClass('hilight');
       }      
     });
-    
+
     // pause the video if we played past the last segment
     if (cur_time > (parseFloat($('.play_button').last().attr('data-end')))) {
       media.trigger('pause');
@@ -148,7 +159,6 @@ function setup_playback(media) {
 
   $('a.play_button').click(function() {
     window.location.hash = "t="+ $(this).attr('href').replace(/.*#t=(.*)/, "$1");
-    do_fragment_change();
   });
 }
 
@@ -164,10 +174,12 @@ function do_onResize() {
     var x = $('body').offsetWidth - 380;
     elem.width(x);
     //elem.style.height = '700px';
-  } else if ($.browser.opera) {
+  } 
+  else if ($.browser.opera) {
     // Opera is special: it doesn't like changing width
     elem.height(window.innerHeight - 140);
-  } else {
+  } 
+  else {
     elem.width(window.innerWidth - 395);
     elem.height(window.innerHeight - 140);
   }
@@ -264,7 +276,6 @@ function setup_concordance() {
       }
 
       location.href = url;
-      do_fragment_change();
   });
 
 }
@@ -276,7 +287,8 @@ $(document).ready(function() {
   var media;
   if ($('video').length) {
     media = $('video').first();
-  } else if ($('audio').length) {
+  } 
+  else if ($('audio').length) {
     media = $('audio').first();
   }
 
@@ -299,7 +311,7 @@ $(document).ready(function() {
   setup_concordance();
   setup_validations();
 
-  // on URL hashchange of page
+  // if the page is loaded with a different hash, execute that
   if (media) {
     setup_playback(media);
     media.bind('loadedmetadata', do_fragment_change);
@@ -307,6 +319,11 @@ $(document).ready(function() {
   else {
     do_fragment_change();
   }
+
+  // also act on hash change of page
+  $(window).bind('hashchange', function() {
+    do_fragment_change();    
+  });
 
   // Edit form extra fields
   $('a[data-clone-fields]').click(function() {
@@ -335,7 +352,6 @@ $(document).ready(function() {
 
     $('.participant').last().next().after('</br>').after(newElem);
   });
-
 
 });
 

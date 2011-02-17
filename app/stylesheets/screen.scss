@@ -274,11 +274,20 @@ table.small {
 }
 #right_column {
   margin: 0 20px 10px 350px;
+  #url {
+    float: right;
+    #cur_url {
+      width: 315px;
+      height: 15px;
+      font-size: 10px;
+    }
+  }
 }
 
 #tiers_info {
   display: inline;
   float: left;
+  width: 100%;
   margin-bottom: 1em;
   #tier_title {
     background-color: $lightgrey;
