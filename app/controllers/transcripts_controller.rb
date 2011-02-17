@@ -10,8 +10,16 @@ class TranscriptsController < ApplicationController
     end
 
     @transcripts = Transcript.search(params[:search]).are_public
+    if params[:language_code]
+      @transcripts = @transcripts.where(:language_code => params[:language_code])
+    end
+
     if current_user
-      @transcripts += current_user.transcripts.search(params[:search])
+      t2 = current_user.transcripts.search(params[:search])
+      if params[:language_code]
+        t2 = t2.where(:language_code => params[:language_code])
+      end
+      @transcripts += t2
     end
     @transcripts.uniq!
 

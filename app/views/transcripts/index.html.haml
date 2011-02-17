@@ -28,7 +28,7 @@
           %br
           = "#{transcript.phrases.count} phrases"
         %td=  transcript.description
-        %td=  transcript.language_code
+        %td= link_to transcript.language_code, transcripts_path(:language_code => transcript.language_code)
         %td=  transcript.country_code
         %td=  transcript.media_item ? transcript.media_item.title : ""
         %td

@@ -58,7 +58,7 @@ class Transcript < ActiveRecord::Base
 
   def self.search(search)
     if search
-      where(['title LIKE ?', "%#{search}%"])
+      where(['title LIKE ? OR description LIKE ? OR country_code LIKE ? OR language_code LIKE ?', "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%"])
     else
       scoped
     end
