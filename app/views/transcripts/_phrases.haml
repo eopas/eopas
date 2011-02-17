@@ -9,7 +9,7 @@
       %td.tracks.phrase
         - if phrase.original
           .tier{:class => [phrase.phrase_id, 'transcription']}
-            = phrase.original #force_encoding('UTF-8')
+            = phrase.original
 
         - words = phrase.words
         - unless words.empty?
@@ -22,21 +22,21 @@
                   %tr
                     %td{:colspan => colspan}
                       %span.concordance{'data-type' => 'word', 'data-search' => word[:word], 'data-language-code' => @transcript.language_code}
-                        = word[:word] #.force_encoding('UTF-8')
+                        = word[:word]
 
                       - unless morphemes.empty?
                         %tr
                           - morphemes.each do |s|
                             %td.morpheme
                               %span.concordance{'data-type' => 'morpheme', 'data-search' => s.morpheme, 'data-language-code' => @transcript.language_code}
-                                = s.morpheme #.force_encoding('UTF-8')
+                                = s.morpheme
 
                         %tr
                           - morphemes.each do |s|
-                            %td.gloss= s.gloss #.force_encoding('UTF-8')
+                            %td.gloss= s.gloss
 
         - if phrase.translation
           .tier{:class => [phrase.phrase_id, 'translation']}
-            = phrase.translation #force_encoding('UTF-8')
+            = phrase.translation
 
 

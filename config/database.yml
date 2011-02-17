@@ -11,7 +11,7 @@ production:
   <<: *COMMON
   database: eopas
   user: root
-  adapter: mysql
+  adapter: mysql2
 
 development:
   <<: *COMMON

@@ -3,7 +3,7 @@ source 'http://gemcutter.org'
 
 gem 'rails', '3.0.4'
 
-gem 'mysql'
+gem 'mysql2'
 
 gem 'haml'
 gem 'compass'
