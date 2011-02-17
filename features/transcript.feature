@@ -103,7 +103,17 @@ Feature: Media Items can have transcriptions
      When I follow "Link to Media Item"
       And I follow "Attach"
      Then I should be on that transcript's page
-     And I should see "Cow"
+      And I should see "Unlink Media Item"
+
+  Scenario: Detach a media item to a transcript
+    Given a media item "media" exists with original_file_name: "features/test_data/eopas3.xml", depositor: user "johnf1", title: "Cow"
+      And a transcript exists with title: "Moo", depositor: user "johnf1", media_item: media item "media"
+
+     When I go to that transcript's page
+     Then I should see "Unlink Media Item"
+     When I follow "Unlink Media Item"
+     Then I should be on that transcript's page
+      And I should see "Link to Media Item"
 
   Scenario: List of transcripts
     Given a transcript exists with title: "Moo", depositor: user "johnf1"

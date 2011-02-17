@@ -35,6 +35,7 @@ Eopas::Application.routes.draw do
     get 'eopas', :on => :member, :action => :show, :format => :xml
     get 'new_media_item', :on => :member, :action => :new_attach_media_item
     post 'create_media_item', :on => :member, :action => :create_attach_media_item
+    delete 'remove_media_item', :on => :member, :action => :remove_media_item
   end
 
   resources :transcript_phrases, :only => [:index]
