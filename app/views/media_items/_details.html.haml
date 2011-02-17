@@ -47,5 +47,11 @@
         %td.value
           = link_to @media_item.original_file_name, @media_item.original.url(:standard)
 
+  Embed code:
+  %br
+  %textarea#embed_code
+    = html_escape(media_item_embed_tag @media_item)
+  %br
+            
   = link_to 'Edit media item metadata', edit_media_item_path(@media_item)
 

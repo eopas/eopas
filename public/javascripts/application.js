@@ -85,7 +85,7 @@ function do_transcript_change(fragment) {
 function set_url(fragment) {
   var baseurl = window.location.protocol+"//"+window.location.host+window.location.pathname
   var url = baseurl + fragment;
-  $('textarea#cur_url').text(url);  
+  $('span#cur_url').html("<a href='"+url+"'>"+url+"</a>");  
 }
 
 // changing URL hash on window
@@ -158,6 +158,8 @@ function setup_playback(media) {
   });
 
   $('a.play_button').click(function() {
+    // need to reset it first in case we have moved past the phrase so it actually does something
+    window.location.hash = "";
     window.location.hash = "t="+ $(this).attr('href').replace(/.*#t=(.*)/, "$1");
   });
 }
@@ -292,6 +294,11 @@ $(document).ready(function() {
     media = $('audio').first();
   }
 
+  // also act on hash change of page
+  $(window).bind('hashchange', function() {
+    do_fragment_change();    
+  });
+
   // Collapsing elements
   setup_div_toggle();
   setup_hider();
@@ -320,10 +327,6 @@ $(document).ready(function() {
     do_fragment_change();
   }
 
-  // also act on hash change of page
-  $(window).bind('hashchange', function() {
-    do_fragment_change();    
-  });
 
   // Edit form extra fields
   $('a[data-clone-fields]').click(function() {

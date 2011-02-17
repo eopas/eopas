@@ -14,7 +14,7 @@
       %th.name= sortable "date"
       %th.name= sortable "depositor"
       %th.name= sortable "title"
-      %th.name= "description"
+      %th.name Description
       %th.name= sortable "language_code", "Language"
       %th.name= sortable "country_code", "Country"
       %th.name= sortable "media_item", "Media"
@@ -32,9 +32,9 @@
         %td=  transcript.country_code
         %td=  transcript.media_item ? transcript.media_item.title : ""
         %td
-          =link_to 'edit', edit_transcript_path(transcript)
-          =link_to 'show', transcript_path(transcript)
-          =link_to 'delete', transcript, :confirm => "Are you sure?", :method => :delete
+          =link_to 'Edit', edit_transcript_path(transcript)
+          =link_to 'Show', transcript_path(transcript)
+          =link_to 'Delete', transcript, :confirm => "Are you sure?", :method => :delete
 
   = will_paginate @transcripts
 

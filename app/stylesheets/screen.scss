@@ -208,8 +208,7 @@ div.info {
   padding: 15px;
   float: left;
   @include border-radius(5px);
-  @include box-shadow(#ccc, 10px, 5px, 5px);
-s  
+  @include box-shadow(#ccc, 10px, 5px, 5px);  
   ul {
     margin: 0;
   }
@@ -223,14 +222,15 @@ table#metadata {
     text-align: right;
     width: 107px;
   }
-  td.content{
-  }
 }
-table.small {
+table#metadata.small {
   td {
     padding: 0px 4px;
     font-family: Arial;
     font-size: 12px;
+  }
+  td.name {
+    width: 50px;
   }
 }
 
@@ -261,15 +261,15 @@ table.small {
   }
   #media_display {
     display: block;
-    #embed_code {
-      width: 315px;
-      height: 15px;
-      display: block;
-      font-size: 10px;
-    }
   }
   #metadata_display {
     display: block;
+    #embed_code {
+      width: 315px;
+      height: 20px;
+      display: block;
+      font-size: 10px;
+    }
   }
 }
 #right_column {
@@ -277,9 +277,7 @@ table.small {
   #url {
     float: right;
     #cur_url {
-      width: 315px;
       height: 15px;
-      font-size: 10px;
     }
   }
 }
