@@ -98,6 +98,16 @@ class TranscriptsController < ApplicationController
     redirect_to transcripts_path
   end
 
+  filter_access_to :remove_media_item, :require => :delete
+  def remove_media_item
+    @transcript = current_user.transcripts.find params[:id]
+    @transcript.media_item_id = nil
+    @transcript.save
+    flash[:notice] = 'Media detached!'
+
+    redirect_to @transcript
+  end
+
 
   filter_access_to :new_attach_media_item, :require => :new
   def new_attach_media_item

@@ -228,7 +228,6 @@ function setup_country_code() {
 }
 
 function setup_transcript_media_item() {
-
   // bind "click" event for links with title="submit" 
   $("a[data-add-media-item]").click( function() {
     var form = $(this).parents("form");
@@ -237,7 +236,6 @@ function setup_transcript_media_item() {
     media_item.val(media_item_id);
     form.submit();
   });
-
 }
 
 function setup_validations() {
@@ -293,6 +291,7 @@ $(document).ready(function() {
   else if ($('audio').length) {
     media = $('audio').first();
   }
+  set_url("");
 
   // also act on hash change of page
   $(window).bind('hashchange', function() {
