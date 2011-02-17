@@ -264,11 +264,12 @@ function setup_concordance() {
 
   $('.concordance_phrase').live('click', function() {
       var id = $(this).attr('data-id');
+      var transcript_id = $(this).attr('data-transcript-id');
       var phrase_num = $(this).attr('data-phrase-num');
       var word_num = $(this).attr('data-word-num');
       var morpheme_num = $(this).attr('data-morpheme-num');
 
-      var url = location.href.replace(/#.*/, '') + '#!/p' + phrase_num;
+      var url = '/transcripts/' + transcript_id + '#!/p' + phrase_num;
       if (word_num) {
         url += '/w' + word_num;
 
