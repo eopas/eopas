@@ -256,6 +256,9 @@ table.small {
 #left_column {
   display: static;
   float: left;
+  h3 {
+    width: 330px;
+  }
   #media_display {
     display: block;
     #embed_code {

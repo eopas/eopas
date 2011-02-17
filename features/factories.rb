@@ -43,7 +43,7 @@ end
 Factory.define :transcript do |t|
   t.sequence(:title) {|n| "Title#{n}"}
   t.date Time.now
-  t.country_code 'au'
+  t.country_code 'AU'
   t.language_code 'en'
   t.copyright 'Robot Parade 2010'
   t.license 'PD'
