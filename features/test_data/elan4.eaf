@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2011-02-10T10:01:45+10:00" FORMAT="2.7" VERSION="2.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.7.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///Users/user/Documents/Noumea workshop/NT5-Kalsarap-epakor.mp4" MEDIA_URL="file:///Users/user/Documents/Noumea workshop/NT5-Kalsarap-epakor.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="file:/./NT5-Kalsarap-epakor.wav"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///Users/user/Documents/Noumea workshop/NT5-Kalsarap-epakor.mp4" MIME_TYPE="video/*" RELATIVE_MEDIA_URL="file:/./NT5-Kalsarap-epakor.mp4"/>
+        <PROPERTY NAME="lastUsedAnnotationId">28</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="170"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="2330"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="3021"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="8008"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="8008"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="11640"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="11640"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="14820"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="14820"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="17100"/>
+        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="17100"/>
+        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="22573"/>
+        <TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="22573"/>
+        <TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="28940"/>
+        <TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="28940"/>
+        <TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="34773"/>
+        <TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="34773"/>
+        <TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="38606"/>
+        <TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="38606"/>
+        <TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="42815"/>
+        <TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="42855"/>
+        <TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="48075"/>
+        <TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="49150"/>
+        <TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="53900"/>
+        <TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="55450"/>
+        <TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="60250"/>
+        <TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="60370"/>
+        <TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="64510"/>
+        <TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="64760"/>
+        <TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="68430"/>
+        <TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="70530"/>
+        <TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="72660"/>
+        <TIME_SLOT TIME_SLOT_ID="ts33" TIME_VALUE="73000"/>
+        <TIME_SLOT TIME_SLOT_ID="ts34" TIME_VALUE="75930"/>
+        <TIME_SLOT TIME_SLOT_ID="ts35" TIME_VALUE="76550"/>
+        <TIME_SLOT TIME_SLOT_ID="ts36" TIME_VALUE="79520"/>
+        <TIME_SLOT TIME_SLOT_ID="ts37" TIME_VALUE="81560"/>
+        <TIME_SLOT TIME_SLOT_ID="ts38" TIME_VALUE="85780"/>
+        <TIME_SLOT TIME_SLOT_ID="ts39" TIME_VALUE="86210"/>
+        <TIME_SLOT TIME_SLOT_ID="ts40" TIME_VALUE="90810"/>
+        <TIME_SLOT TIME_SLOT_ID="ts41" TIME_VALUE="92390"/>
+        <TIME_SLOT TIME_SLOT_ID="ts42" TIME_VALUE="97960"/>
+        <TIME_SLOT TIME_SLOT_ID="ts43" TIME_VALUE="98160"/>
+        <TIME_SLOT TIME_SLOT_ID="ts44" TIME_VALUE="107040"/>
+        <TIME_SLOT TIME_SLOT_ID="ts45" TIME_VALUE="107340"/>
+        <TIME_SLOT TIME_SLOT_ID="ts46" TIME_VALUE="112010"/>
+        <TIME_SLOT TIME_SLOT_ID="ts47" TIME_VALUE="113270"/>
+        <TIME_SLOT TIME_SLOT_ID="ts48" TIME_VALUE="118110"/>
+        <TIME_SLOT TIME_SLOT_ID="ts49" TIME_VALUE="118950"/>
+        <TIME_SLOT TIME_SLOT_ID="ts50" TIME_VALUE="120260"/>
+        <TIME_SLOT TIME_SLOT_ID="ts51" TIME_VALUE="121290"/>
+        <TIME_SLOT TIME_SLOT_ID="ts52" TIME_VALUE="125010"/>
+    </TIME_ORDER>
+    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="default-lt" TIER_ID="default">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+                <ANNOTATION_VALUE>Me nai ne,
+</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+                <ANNOTATION_VALUE>ipi nai nen kin iser totur faat.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>Me kineu aleka ipi tenmaagwen </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+                <ANNOTATION_VALUE>neu nen asees leka.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+                <ANNOTATION_VALUE> Go amurin na katrausi, na akam, akit tukfo tu tae.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+                <ANNOTATION_VALUE> Selwan nai nen ito, ipitlak faat iskei itu kor nameten.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+                <ANNOTATION_VALUE>Me namten ipan pato elag Elakmamiel.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts18">
+                <ANNOTATION_VALUE> Nlaken, kineu asees tu Ertap, </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a9" TIME_SLOT_REF1="ts19" TIME_SLOT_REF2="ts20">
+                <ANNOTATION_VALUE>go atae esan kin namet nai nen itkos. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts22">
+                <ANNOTATION_VALUE>Teetwei ifwel kumur p̃asol nalenan knen</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a15" TIME_SLOT_REF1="ts23" TIME_SLOT_REF2="ts24">
+                <ANNOTATION_VALUE>p̃afo mas nkas, nap̃rat keskei me p̃afaskin Elakmamiel</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+                <ANNOTATION_VALUE>Me selwan kupaski, malen kumai pak elau Epakor, </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+                <ANNOTATION_VALUE>kulek nap̃rat sees nen kin ito sal elau, </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a17" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+                <ANNOTATION_VALUE>iplak nmaagwen. Ipi nmaagwen p̃ur.   </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a18" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts32">
+                <ANNOTATION_VALUE>Go aleka ito panpan tuk mees, me</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a19" TIME_SLOT_REF1="ts33" TIME_SLOT_REF2="ts34">
+                <ANNOTATION_VALUE>Tata Sailas, ipreg talm̃at wes.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a20" TIME_SLOT_REF1="ts35" TIME_SLOT_REF2="ts36">
+                <ANNOTATION_VALUE>Go nai-, naor nen imsai to ip̃on. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a21" TIME_SLOT_REF1="ts37" TIME_SLOT_REF2="ts38">
+                <ANNOTATION_VALUE>   Go natam̃ol rumer kano- rutap tae san itkos mau, me</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a22" TIME_SLOT_REF1="ts39" TIME_SLOT_REF2="ts40">
+                <ANNOTATION_VALUE> komam nen kin utae, teesa ni maarik Sailas, gar rutae. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a23" TIME_SLOT_REF1="ts41" TIME_SLOT_REF2="ts42">
+                <ANNOTATION_VALUE>Me nam̃er laap ni Ertap rutae. Tete rutae, me tete rutap tae mau.   </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a24" TIME_SLOT_REF1="ts43" TIME_SLOT_REF2="ts44">
+                <ANNOTATION_VALUE>Me Tata Sailas ipreg talm̃at go talm̃at nen, ilao na nafis,  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a25" TIME_SLOT_REF1="ts45" TIME_SLOT_REF2="ts46">
+                <ANNOTATION_VALUE>Go kutae nafis, ipi tenmatun iskei nen kin ipu ntan naor laap.    </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a26" TIME_SLOT_REF1="ts47" TIME_SLOT_REF2="ts48">
+                <ANNOTATION_VALUE>Go mees namet nai nen kip̃on  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a27" TIME_SLOT_REF1="ts49" TIME_SLOT_REF2="ts50">
+                <ANNOTATION_VALUE>Kumer kano pam̃ori.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a28" TIME_SLOT_REF1="ts51" TIME_SLOT_REF2="ts52">
+                <ANNOTATION_VALUE>Ipi natrauswen sees m̃as, go apsawi ki mus nen kofo nrogo.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
+    <LOCALE COUNTRY_CODE="US" LANGUAGE_CODE="en"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>
