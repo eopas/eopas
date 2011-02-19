@@ -75,8 +75,13 @@ class Transcription
     metas.each do |meta|
       case meta['name']
       # TODO put this back somehow
-      #when "dc:creator"
-      #  transcript.creator = meta['value']
+      when "dc:creator"
+        if !meta['value'].empty?
+          pa = transcript.participants.build
+          pa.role = "creator"
+          pa.name = meta['value']
+          pa.transcript = transcript
+        end
       when "dc:language"
         transcript.language_code = meta['value']
       when "dc:date"
@@ -90,7 +95,7 @@ class Transcription
       phrases = tier.xpath('phrase')
       phrases.each do |phrase|
         # create new phrase
-        phrase_id = phrase['id'].gsub(/.*_/, '')
+        phrase_id = phrase['id'][/\d+/]
 
         ph = transcript.phrases.select {|p| p.phrase_id == phrase_id}.first || transcript.phrases.build
 
@@ -107,7 +112,6 @@ class Transcription
         @errors << Struct.new(:message).new("Linguistic type #{tier['linguistic_type']} not supported")
         next
         end
-
       end
     end
   end
