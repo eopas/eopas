@@ -115,84 +115,7 @@ Notice how there is a transcription and a translation tier.
 These are the only tiers that the EOPAS system cares about.
 
 
-2. ELAN
-=======
-XML Schema Definitions are e.g. at http://www.mpi.nl/tools/elan/EAFv2.7.xsd
-
-A typical example file:
-
-<?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DATE="2006-10-16T11:59:34+10:00" AUTHOR="" VERSION="2.3" FORMAT="2.3">
-    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/Data/elan/elan-example1.mpg" MIME_TYPE="video/mpeg"/>
-    </HEADER>
-    <TIME_ORDER>
-        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="0"/>
-        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="280"/>
-        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="440"/>
-        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="780"/>
-        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="1250"/>
-        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="1340"/>
-        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="1570"/>
-        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="1600"/>
-        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="1810"/>
-        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="2000"/>
-        [further <TIME_SLOT/>]
-    </TIME_ORDER>
-    <TIER TIER_ID="NeparrŋaGumbula" PARTICIPANT="Neparrŋa Gumbula" LINGUISTIC_TYPE_REF="utterance" DEFAULT_LOCALE="en">
-        <ANNOTATION>
-            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts2" TIME_SLOT_REF2="ts5">
-                <ANNOTATION_VALUE>so from here.</ANNOTATION_VALUE>
-            </ALIGNABLE_ANNOTATION>
-        </ANNOTATION>
-        [further <ANNOTATION></ANNOTATION>]
-    </TIER>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="utterance" PARTICIPANT="" TIER_ID="W-Spch">
-        <ANNOTATION>
-            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts4" TIME_SLOT_REF2="ts23">
-                <ANNOTATION_VALUE>so you go out of the Institute to the Saint Anna Straat.</ANNOTATION_VALUE>
-            </ALIGNABLE_ANNOTATION>
-        </ANNOTATION>
-        [further <ANNOTATION></ANNOTATION>]
-    </TIER>
-    [further <TIER></TIER>]
-    <LINGUISTIC_TYPE LINGUISTIC_TYPE_ID="utterance" TIME_ALIGNABLE="true" GRAPHIC_REFERENCES="false"/>    
-    <LOCALE COUNTRY_CODE="US" LANGUAGE_CODE="en"/>
-    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
-    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
-    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
-    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation&apos;s time interval, gaps are allowed" STEREOTYPE="Included_In"/>
-</ANNOTATION_DOCUMENT>
-
-The following LINGUISTIC_TYPE tiers have been seen in the wild:
-* utterance
-* words
-* part of speech
-* phonetic_transcription
-* gestures
-* gesture_phases
-* gesture_meaning
-* ref
-* tx
-* mr
-* mg
-* fg
-
-The EOPAS system will only make use of the following tiers with the following mapping:
-* utterance (last one)   -> tier@linguistic_type['transcription']/phrase/text
-* words                  ->   phrase/wordlist/word/text
-OR:
-* ref               -> tier@linguistic_type['transcription']/phrase/text
-* tx                ->   phrase/wordlist/word/text
-* mr                ->   phrase/wordlist/word/morphemelist/morpheme/text@kind['morpheme']
-* mg                ->   phrase/wordlist/word/morphemelist/morpheme/text@kind['gloss']
-* fg                -> tier@linguistic_type['translation']/phrase/text
-
-
-TB Continued
-
-
-3. Transcriber
+2. Transcriber
 ==============
 
 See : http://trans.sourceforge.net/en/presentation.php
@@ -265,3 +188,137 @@ The above example gets transformed into EOPAS:
 
 Note how there is only a transcription tier and
 the Comment and Event elements are transformed into text.
+
+
+3. ELAN
+=======
+XML Schema Definitions are e.g. at http://www.mpi.nl/tools/elan/EAFv2.7.xsd
+
+A typical example file:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DATE="2006-10-16T11:59:34+10:00" AUTHOR="" VERSION="2.3" FORMAT="2.3">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/Data/elan/elan-example1.mpg" MIME_TYPE="video/mpeg"/>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="0"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="280"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="440"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="780"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="1250"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="1340"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="1570"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="1600"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="1810"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="2000"/>
+        [further <TIME_SLOT/>]
+    </TIME_ORDER>
+    <TIER TIER_ID="NeparrŋaGumbula" PARTICIPANT="Neparrŋa Gumbula" LINGUISTIC_TYPE_REF="utterance" DEFAULT_LOCALE="en">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts2" TIME_SLOT_REF2="ts5">
+                <ANNOTATION_VALUE>so from here.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        [further <ANNOTATION></ANNOTATION>]
+    </TIER>
+    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="utterance" PARTICIPANT="" TIER_ID="W-Spch">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts4" TIME_SLOT_REF2="ts23">
+                <ANNOTATION_VALUE>so you go out of the Institute to the Saint Anna Straat.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        [further <ANNOTATION></ANNOTATION>]
+    </TIER>
+    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="words" PARENT_REF="W-Spch" PARTICIPANT="" TIER_ID="W-Words">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a23" TIME_SLOT_REF1="ts4" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE>so</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a24" TIME_SLOT_REF1="ts6" TIME_SLOT_REF2="ts7">
+                <ANNOTATION_VALUE>you</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a25" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts9">
+                <ANNOTATION_VALUE>go</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        [further <ANNOTATION></ANNOTATION>]
+    </TIER>
+    [further <TIER></TIER>]
+    <LINGUISTIC_TYPE LINGUISTIC_TYPE_ID="utterance" TIME_ALIGNABLE="true" GRAPHIC_REFERENCES="false"/>    
+    <LOCALE COUNTRY_CODE="US" LANGUAGE_CODE="en"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation&apos;s time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>
+
+Elan can have a very wide number of formats, not all of which can be parsed by EOPAS.
+The following LINGUISTIC_TYPE tiers have been seen in the wild:
+* default-lt
+* utterance
+* words
+* part of speech
+* phonetic_transcription
+* gestures
+* gesture_phases
+* gesture_meaning
+* ref
+* tx
+* mr
+* mg
+* fg
+
+Many more are possible.
+
+Only three different styles are being supported.
+
+The EOPAS system will only make use of the following tiers with the following mapping:
+* default-lt        -> tier@linguistic_type['transcription']/phrase/text
+OR:
+* utterance         -> tier@linguistic_type['transcription']/phrase/text
+* words             ->   phrase/wordlist/word/text
+OR:
+* ref               -> tier@linguistic_type['transcription']/phrase/text
+* tx                ->   phrase/wordlist/word/text
+* mr                ->   phrase/wordlist/word/morphemelist/morpheme/text@kind['morpheme']
+* mg                ->   phrase/wordlist/word/morphemelist/morpheme/text@kind['gloss']
+* fg                -> tier@linguistic_type['translation']/phrase/text
+
+The above example gets transformed into EOPAS:
+<?xml version="1.0" encoding="UTF-8"?>
+<eopas xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <header>
+    <meta name="dc:type" value="text/xml"/>
+    <meta name="dc:source" value="file:///D:/Data/elan/elan-example1.mpg"/>
+    <meta name="dc:creator" value=""/>
+    <meta name="dc:language" value="en-US"/>
+    <meta name="dc:date" value="2006-06-13T15:09:43+01:00"/>
+  </header>
+  <interlinear>
+    <tier id="tier_1" linguistic_type="transcription">
+      <phrase id="a1" startTime="0.28" endTime="1.25">
+        <text>so from here.</text>
+        <wordlist/>
+      </phrase>
+      <phrase id="a8" startTime="0.78" endTime="4.09">
+        <text>so you go out of the Institute to the Saint Anna Straat.</text>
+        <wordlist>
+          <word>
+            <text>so</text>
+          </word>
+          <word>
+            <text>you</text>
+          </word>
+          <word>
+            <text>go</text>
+          </word>
+        </wordlist>
+      </phrase>
+    </tier>
+  </interlinear>
+</eopas>

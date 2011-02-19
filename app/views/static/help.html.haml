@@ -96,3 +96,47 @@
   %li
     %pre
       Event@desc+@extent ->     text with "[" "]"
+
+
+%h3 What format does an Elan input file have to be for import?
+
+#paragraph
+
+  Elan allows a vast combination of tier types and the choice of tier names is up to the author.
+  The EOPAS file format only supports a limited structure, so only three different types of Elan files are being supported.
+
+#paragraph
+  Option 1: The following mapping of Elan elements with default-lt tiers is undertaken:
+%ul
+  %li
+    %pre
+      tier=default-lt    -> tier@linguistic_type['transcription']/phrase/text
+
+#paragraph
+  Option 2: The following mapping of Elan elements with utterance tiers is undertaken:
+%ul
+  %li
+    %pre
+      tier=utterance     -> tier@linguistic_type['transcription']/phrase/text
+  %li
+    %pre
+      tier=words         ->   phrase/wordlist/word/text
+
+#paragraph
+  Option 3: The following mapping of Elan elements with ref tiers is undertaken:
+%ul
+  %li
+    %pre
+      tier=ref           -> tier@linguistic_type['transcription']/phrase/text
+  %li
+    %pre
+      tier=tx            ->   wordlist/word/text
+  %li
+    %pre
+      tier=mr            ->        morphemelist/morpheme/text@kind['morpheme']
+  %li
+    %pre
+      tier=mg            ->        morphemelist/morpheme/text@kind['gloss']
+  %li
+    %pre
+      tier=fg            -> tier@linguistic_type['translation']/phrase/text

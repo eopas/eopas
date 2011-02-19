@@ -78,19 +78,22 @@ Feature: Media Items can have transcriptions
      When I follow "EOPAS" within "#metadata_display"
       And I should see "<text>"
 
-    # TODO other formats back
     Examples:
       | file             | format      | text           | title         |
-      #| elan1.xml        | ELAN        | so from here   | ELAN 1        |
-      #| elan2.xml        | ELAN        | My name is Joe | ELAN 1        |
-      #| eopas1.xml       | EOPAS       | so from here   | EOPAS 1       |
-      | eopas2.xml       | EOPAS       | Endis reading  | EOPAS 1       |
-      | eopas3.xml       | EOPAS       | rat, this rat  | EOPAS 1       |
+      | elan1.xml        | ELAN        | so from here   | ELAN 1        |
+      | elan2.xml        | ELAN        | My name is Joe | ELAN 2        |
+      | elan3.xml        | ELAN        | Amurin na      | ELAN 3        |
+      | elan4.eaf        | ELAN        | Me nai ne      | ELAN 4        |
+      | eopas1.xml       | EOPAS       | so from here   | EOPAS 1       |
+      | eopas2.xml       | EOPAS       | Endis reading  | EOPAS 2       |
+      | eopas3.xml       | EOPAS       | rat, this rat  | EOPAS 3       |
       | toolbox1.xml     | Toolbox     | about this wo  | TOOLBOX 1     |
-      | toolbox2.xml     | Toolbox     | about the rat  | TOOLBOX 1     |
-      | toolbox3.xml     | Toolbox     | Litrapong      | TOOLBOX 1     |
+      | toolbox2.xml     | Toolbox     | about the rat  | TOOLBOX 2     |
+      | toolbox3.xml     | Toolbox     | Litrapong      | TOOLBOX 3     |
+      | toolbox4.xml     | Toolbox     | ngar-uba-gi    | TOOLBOX 4     |
+      | toolbox5.xml     | Toolbox     | ipiatlak       | TOOLBOX 5     |
       | transcriber1.xml | Transcriber | pause crowd    | TRANSCRIBER 1 |
-      | transcriber2.xml | Transcriber | puet soksoki   | TRANSCRIBER 1 |
+      | transcriber2.xml | Transcriber | puet soksoki   | TRANSCRIBER 2 |
 
   @javascript
   Scenario: Attach a media item to a transcript

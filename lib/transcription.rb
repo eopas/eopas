@@ -95,7 +95,7 @@ class Transcription
       phrases = tier.xpath('phrase')
       phrases.each do |phrase|
         # create new phrase
-        phrase_id = phrase['id'][/\d+/]
+        phrase_id = phrase['id'].gsub(/.*_/, '')
 
         ph = transcript.phrases.select {|p| p.phrase_id == phrase_id}.first || transcript.phrases.build
 
