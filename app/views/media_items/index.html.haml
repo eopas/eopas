@@ -11,8 +11,6 @@
           = link_to image_tag('/originals/thumbnail/audio.png'), media_item
         %p
           = link_to media_item.title, media_item
-        %p.description
-          = truncate media_item.description, :length => 35
         %p
           = link_to 'Edit', edit_media_item_path(media_item)
           = link_to 'Delete', media_item, :confirm => "Are you sure?", :method => :delete
