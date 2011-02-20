@@ -250,6 +250,10 @@ function setup_concordance() {
       var search = $(this).attr('data-search');
       var language_code = $(this).attr('data-language-code');
 
+      var fragment = '!'+$(this).attr('data-addr');
+      window.location.hash = "";
+      window.location.hash = fragment;
+
       var url = '/transcript_phrases?search=' + encodeURIComponent(search) + '&type=' + type + '&language_code=' + language_code;
 
       $.get(url,
