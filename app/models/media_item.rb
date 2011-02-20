@@ -47,7 +47,6 @@ class MediaItem < ActiveRecord::Base
   FORMATS = %w{audio video}
 
   validates :format, :presence => true, :inclusion => { :in => FORMATS }
-  validates :depositor,     :presence => true
 
   validates :title,         :presence => true
   validates :depositor,     :presence => true, :associated => true

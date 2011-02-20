@@ -11,7 +11,7 @@
           = form.label :format
           *
         %td.value
-          = form.select :format, options_for_select(MediaItem::FORMATS, @media_item.format), :include_blank => true, :class => 'required'
+          = form.select :format, options_for_select(MediaItem::FORMATS, @media_item.format), { :include_blank => true }, :class => 'required'
 
       %tr
         %td.name

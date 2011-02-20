@@ -9,7 +9,9 @@ class MediaItemsController < ApplicationController
 
   def new
     @media_item = MediaItem.new(
+      :title            => "EOPAS media",
       :license          => "CC-AU-BY-SA",
+      :copyright        => current_user.full_name,
       :private          => false,
     )
   end
