@@ -3,7 +3,7 @@
   %header
     %meta{:name => "dc:type", :value => "text/xml"}
     %meta{:name => "dc:source",   :value => @transcript.original_file_name}
-    -#%meta{:name => "dc:creator",  :value => @transcript.creator}
+    %meta{:name => "dc:creator",  :value => @transcript.depositor.first_name + ' ' + @transcript.depositor.last_name}
     %meta{:name => "dc:language", :value => @transcript.language_code}
     %meta{:name => "dc:date",     :value => @transcript.date}
 
@@ -26,7 +26,7 @@
                           %morpheme
                             %text{:kind => 'morpheme'}= morpheme.morpheme
                             %text{:kind => 'gloss'}= morpheme.gloss
-    - if first_phrase.original
+    - if first_phrase.translation
       %tier{:id => "fg", :linguistic_type => 'translation'}
         - phrases.each do |phrase|
           %phrase{:id => "fg_#{phrase.phrase_id}", :startTime => phrase.start_time, :endTime => phrase.end_time}
