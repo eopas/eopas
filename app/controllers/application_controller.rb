@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   end
 
   def delayed_job_admin_authentication
-    permitted_to? :manage, :app_config
+    permission_denied unless permitted_to? :manage, :app_config
   end
 
   protected
