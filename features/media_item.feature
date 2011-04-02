@@ -24,7 +24,7 @@ Feature: Media
      And I attach the file "features/test_data/test.mp3" with full path to "Media"
      And I select "audio" from "Format"
      And I fill in "Title" with "Test Audio"
-     And I select "31 March 2010" as the "media_item_recorded_on" date
+     And I select "31 March 2010" as the "Recorded on" date
      And I fill in "Copyright Holder" with "John Ferlito"
      And I press "Create"
     Then I should see "Media item was successfully created"
@@ -37,7 +37,7 @@ Feature: Media
      And I attach the file "features/test_data/test.m4v" with full path to "Media"
      And I select "video" from "Format"
      And I fill in "Title" with "Test Video"
-     And I select "31 March 2010" as the "media_item_recorded_on" date
+     And I select "31 March 2010" as the "Recorded on" date
      And I fill in "Copyright Holder" with "John Ferlito"
      And I press "Create"
     Then I should see "Media item was successfully created"
