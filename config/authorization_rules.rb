@@ -13,6 +13,7 @@ authorization do
 
   role :admin do
     includes :user
+    has_permission_on :app_config, :to => :manage
   end
 end
 

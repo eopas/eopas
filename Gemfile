@@ -12,6 +12,7 @@ gem 'declarative_authorization'
 gem 'paperclip'
 gem 'delayed_paperclip'
 gem 'delayed_job'
+gem 'delayed_job_admin'
 gem 'daemons', '1.0.10' # Need this otherwise delayed job won't start when talking to mysql https://github.com/collectiveidea/delayed_job/issues#issue/81
 gem 'nokogiri'
 gem 'will_paginate', '3.0.pre2'

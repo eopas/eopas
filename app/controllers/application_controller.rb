@@ -21,6 +21,10 @@ class ApplicationController < ActionController::Base
     session[:return_to] = nil
   end
 
+  def delayed_job_admin_authentication
+    permitted_to? :manage, :app_config
+  end
+
   protected
   def permission_denied
     if current_user
