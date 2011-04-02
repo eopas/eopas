@@ -31,8 +31,17 @@ class Transcript < ActiveRecord::Base
 
   accepts_nested_attributes_for :phrases
 
-  scope :are_private, where(:private => true)
-  scope :are_public, where(:private => false)
+  # Access AREL so we can do an OR without writing SQL
+  scope :current_user_and_public, lambda { |user|
+    if user
+      where(
+        arel_table[:private].eq(false).
+        or(arel_table[:depositor_id].eq(user.id))
+      )
+    else
+      where(:private => false)
+    end
+  }
 
   include Paperclip
   has_attached_file :original, :url => "/system/transcript/:attachment/:id/:style/:filename"

@@ -4,7 +4,11 @@ class MediaItemsController < ApplicationController
   filter_access_to :all
 
   def index
-    @media_items = (MediaItem.are_public + current_user.media_items).uniq
+    if current_user and current_user.admin?
+      @media_items = MediaItem.all
+    else
+      @media_items = MediaItem.current_user_and_public(current_user)
+    end
   end
 
   def new
@@ -27,11 +31,20 @@ class MediaItemsController < ApplicationController
   end
 
   def edit
-    @media_item = MediaItem.find params[:id]
+    if current_user and current_user.admin?
+      @media_item = MediaItem.find params[:id]
+    else
+      @media_item = current_user.media_items.find params[:id]
+    end
   end
 
   def update
-    @media_item = MediaItem.find params[:id]
+    if current_user and current_user.admin?
+      @media_item = MediaItem.find params[:id]
+    else
+      @media_item = current_user.media_items.find params[:id]
+    end
+
     if @media_item.update_attributes(params[:media_item])
       flash[:notice] = 'Media item was successfully updated.'
     end
@@ -40,17 +53,22 @@ class MediaItemsController < ApplicationController
   end
 
   def show
-    begin
-      @media_item = current_user.media_items.find params[:id]
-    rescue ActiveRecord::RecordNotFound
-      @media_item = MediaItem.are_public.find params[:id]
+    if current_user and current_user.admin?
+      @media_item = MediaItem.find params[:id]
+    else
+      @media_item = MediaItem.current_user_and_public(current_user).find params[:id]
     end
 
     @transcripts = @media_item.transcripts
   end
 
   def destroy
-    @media_item = current_user.media_items.find params[:id]
+
+    if current_user and current_user.admin?
+      @media_item = MediaItem.find params[:id]
+    else
+      @media_item = current_user.media_items.find params[:id]
+    end
 
     if params[:force] == 'true'
       @media_item.destroy
@@ -69,7 +87,5 @@ class MediaItemsController < ApplicationController
       render '/media_items/show'
     end
   end
-
-
 
 end

@@ -9,19 +9,15 @@ class TranscriptsController < ApplicationController
       params[:search] = ""
     end
 
-    @transcripts = Transcript.search(params[:search]).are_public
-    if params[:language_code]
-      @transcripts = @transcripts.where(:language_code => params[:language_code])
+    if current_user and current_user.admin?
+      @transcripts = Transcript.all
+    else
+      @transcripts = Transcript.current_user_and_public(current_user).search params[:search]
     end
 
-    if current_user
-      t2 = current_user.transcripts.search(params[:search])
-      if params[:language_code]
-        t2 = t2.where(:language_code => params[:language_code])
-      end
-      @transcripts += t2
+    if params[:language_code]
+      @transcripts = @transcripts.where :language_code => params[:language_code]
     end
-    @transcripts.uniq!
 
     # sort by a given column
     if params[:sort] == "media_item"
@@ -45,14 +41,10 @@ class TranscriptsController < ApplicationController
   end
 
   def show
-    if current_user
-      begin
-        @transcript = current_user.transcripts.find params[:id]
-      rescue ActiveRecord::RecordNotFound
-        @transcript = Transcript.are_public.find params[:id]
-      end
+    if current_user and current_user.admin?
+      @transcript = Transcript.find params[:id]
     else
-      @transcript = Transcript.are_public.find params[:id]
+      @transcript = Transcript.current_user_and_public(current_user).find params[:id]
     end
 
     @media_item = @transcript.media_item
@@ -84,12 +76,20 @@ class TranscriptsController < ApplicationController
   end
 
   def edit
-    @transcript = Transcript.find params[:id]
+    if current_user and current_user.admin?
+      @transcript = Transcript.find params[:id]
+    else
+      @transcript = current_user.transcripts.find params[:id]
+    end
     (3 - @transcript.participants.size).times { @transcript.participants.build }
   end
 
   def update
-    @transcript = Transcript.find params[:id]
+    if current_user and current_user.admin?
+      @transcript = Transcript.find params[:id]
+    else
+      @transcript = current_user.transcripts.find params[:id]
+    end
     if @transcript.update_attributes(params[:transcript])
       flash[:notice] = 'Transcript was successfully updated.'
     end
@@ -98,7 +98,11 @@ class TranscriptsController < ApplicationController
   end
 
   def destroy
-    @transcript = current_user.transcripts.find params[:id]
+    if current_user and current_user.admin?
+      @transcript = Transcript.find params[:id]
+    else
+      @transcript = current_user.transcripts.find params[:id]
+    end
 
     @transcript.destroy
     flash[:notice] = 'Transcript deleted!'
@@ -119,17 +123,26 @@ class TranscriptsController < ApplicationController
 
   filter_access_to :new_attach_media_item, :require => :new
   def new_attach_media_item
-    @transcript = current_user.transcripts.find params[:id]
-    @media_items = (MediaItem.are_public + current_user.media_items).uniq
+    if current_user and current_user.admin?
+      @transcript = Transcript.find params[:id]
+    else
+      @transcript = current_user.transcripts.find params[:id]
+    end
+    @media_items = MediaItem.current_user_and_public(current_user)
   end
 
   filter_access_to :create_attach_media_item, :require => :create
   def create_attach_media_item
-    @transcript = current_user.transcripts.find params[:transcript_id]
-    begin
-      @media_item = current_user.media_items.find params[:media_item_id]
-    rescue ActiveRecord::RecordNotFound
-      @media_item = MediaItem.are_public.find params[:media_item_id]
+    if current_user and current_user.admin?
+      @transcript = Transcript.find params[:transcript_id]
+    else
+      @transcript = current_user.transcripts.find params[:transcript_id]
+    end
+
+    if current_user and current_user.admin?
+      @media_item = MediaItem.find params[:media_item_id]
+    else
+      @media_item = MediaItem.current_user_and_public(current_user).find params[:media_item_id]
     end
 
     @transcript.media_item = @media_item

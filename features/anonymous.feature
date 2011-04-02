@@ -22,13 +22,24 @@ Feature: Media Items should have transcriptions
      And I follow "Public Transcript"
     Then I should see "Public Transcript" within "#metadata_display"
 
+  Scenario: When an admin logs in she can see everything
+    When I am logged in as user: "admin"
+     And I go to the transcripts page
+    Then I should see "Private Transcript"
+     And I should see "Public Transcript"
+    When I follow "Private Transcript"
+    Then I should see "Private Transcript" within "#metadata_display"
+    When I go to the transcripts page
+     And I follow "Public Transcript"
+    Then I should see "Public Transcript" within "#metadata_display"
+
   Scenario: A normal user can't see delayed_jobs_page
     Given I am logged in as user: "silvia"
      When I go to the delayed job admin page
      Then I should not see "attempts"
 
   Scenario: An admin user can see delayed_jobs_page
-    Given I am logged in as user: "silvia"
+    Given I am logged in as user: "admin"
      When I go to the delayed job admin page
      Then I should see "attempts"
 

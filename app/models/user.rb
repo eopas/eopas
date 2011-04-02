@@ -37,6 +37,10 @@ class User < ActiveRecord::Base
     roles || []
   end
 
+  def admin?
+    roles.include?(:admin)
+  end
+
   def to_s
     "\nuser {\n"+
     "   id:         "+self.id.to_s+"\n"+
