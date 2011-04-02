@@ -61,7 +61,7 @@ account.
 
 * We recommend using medibuntu for ffmpeg as it supports more codecs. There are
 some licensing issues involved. Please make sure you are aware of these before
-proceeding.
+proceeding. ffmpeg is used for transcoding media files.
 
     wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list \
       && apt-get --quiet update \
@@ -93,6 +93,7 @@ proceeding.
 * Run the migrations
 
   cap deploy:migrations
+
 
 Set up the Web Server
 ---------------------
@@ -151,8 +152,30 @@ johnf's PPA.
 
     service nginx restart
 
+
 Set up the application
 ----------------------
 
 Browse to http://DOMAIN and follow the prompts
+
+
+Information about automatic transcoding
+---------------------------------------
+
+When you deploy with capistrano, the delayed_jobs gem will be set up for you
+and take care of the transcoding tasks necessary after uploading audio and video files.
+Normally, everything should be fine. But occasionally you may need to deal with stuck
+jobs or other issues.
+
+* Running the delayed_jobs demon by hand if necessary
+
+  RAILS_ENV=production ./scripts/delayed_job start
+
+* Clearing the jobs queue
+
+  rake jobs:clear
+
+* Checking the jobs queue as an admin user
+
+  http://DOMAIN/delayed_job_admin_
 
