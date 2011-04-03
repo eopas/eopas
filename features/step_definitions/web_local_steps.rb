@@ -18,5 +18,3 @@ end
 When /^(?:|I )make a DELETE request to (.+)$/ do |page_name|
   visit_delete path_to(page_name)
 end
-
-

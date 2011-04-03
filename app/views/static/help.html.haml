@@ -81,13 +81,13 @@
 %ul
   %li
     %pre
-      itmgroup          -> tier@linguistic_type['transcription']
+      itmgroup          -> get each
   %li
     %pre
       idgroup           ->   phrase
   %li
     %pre
-      concat txgroup/tx ->     text
+      concat txgroup/tx ->     transcription
   %li
     %pre
       txgroup           ->     wordlist
@@ -102,7 +102,7 @@
       mg                ->         morphemelist/morpheme/text@kind['gloss']
   %li
     %pre
-      fg                -> tier@linguistic_type['translation']/phrase/text
+      fg                ->     translation
 
 
 %h3 What format does a Transcriber input file have to be for import?
@@ -118,19 +118,19 @@
 %ul
   %li
     %pre
-      Episode            -> tier@linguistic_type['transcription']
+      Episode            -> get each
   %li
     %pre
       Sync               ->   phrase with Turn@speaker
   %li
     %pre
-      Sync.content()     ->     text
+      Sync.content()     ->     transcription
   %li
     %pre
-      Comment@desc       ->     text with "[" "]"
+      Comment@desc       ->     transcription with "[" "]"
   %li
     %pre
-      Event@desc+@extent ->     text with "[" "]"
+      Event@desc+@extent ->     transcription with "[" "]"
 
 
 %h3 What format does an Elan input file have to be for import?
@@ -144,14 +144,14 @@
 %ul
   %li
     %pre
-      tier=default-lt    -> tier@linguistic_type['transcription']/phrase/text
+      tier=default-lt    -> phrase/transcription
 
 #paragraph
   Option 2: The following mapping of Elan elements with utterance tiers is undertaken:
 %ul
   %li
     %pre
-      tier=utterance     -> tier@linguistic_type['transcription']/phrase/text
+      tier=utterance     -> phrase/transcription
   %li
     %pre
       tier=words         ->   phrase/wordlist/word/text
@@ -161,7 +161,7 @@
 %ul
   %li
     %pre
-      tier=ref           -> tier@linguistic_type['transcription']/phrase/text
+      tier=ref           -> phrase/transcription
   %li
     %pre
       tier=tx            ->   wordlist/word/text
@@ -173,7 +173,7 @@
       tier=mg            ->        morphemelist/morpheme/text@kind['gloss']
   %li
     %pre
-      tier=fg            -> tier@linguistic_type['translation']/phrase/text
+      tier=fg            ->   translation
 
 %h3 What is involved in writing support for a new format?
 

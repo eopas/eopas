@@ -11,26 +11,19 @@
     - phrases = @transcript.phrases
     - first_phrase = phrases.first
     - if first_phrase.original
-      %tier{:id => "o", :linguistic_type => 'transcription'}
-        - phrases.each do |phrase|
-          %phrase{:id => "o_#{phrase.phrase_id}", :startTime => phrase.start_time, :endTime => phrase.end_time}
-            %text= phrase.original
-            - unless phrase.words.empty?
-              %wordlist
-                - phrase.words.each do |word|
-                  %word
-                    %text= word.word
-                    - unless word.morphemes.empty?
-                      %morphemelist
-                        - word.morphemes do |morpheme|
-                          %morpheme
-                            %text{:kind => 'morpheme'}= morpheme.morpheme
-                            %text{:kind => 'gloss'}= morpheme.gloss
-    - if first_phrase.translation
-      %tier{:id => "fg", :linguistic_type => 'translation'}
-        - phrases.each do |phrase|
-          %phrase{:id => "fg_#{phrase.phrase_id}", :startTime => phrase.start_time, :endTime => phrase.end_time}
-            %text= phrase.translation
-
-
-
+      - phrases.each do |phrase|
+        %phrase{:id => "o_#{phrase.phrase_id}", :startTime => phrase.start_time, :endTime => phrase.end_time}
+          %transcription= phrase.original
+          - unless phrase.words.empty?
+            %wordlist
+              - phrase.words.each do |word|
+                %word
+                  %text= word.word
+                  - unless word.morphemes.empty?
+                    %morphemelist
+                      - word.morphemes do |morpheme|
+                        %morpheme
+                          %text{:kind => 'morpheme'}= morpheme.morpheme
+                          %text{:kind => 'gloss'}= morpheme.gloss
+          - unless phrase.translation.nil?
+            %translation= phrase.translation
