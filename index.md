@@ -35,7 +35,7 @@ Other Questions? [Check the wiki](https://github.com/eopas/eopas/wiki).
 
 More questions? [Check out the mailing lists](http://sourceforge.net/projects/eopas/support).
 
-Want to help out? [Download the source](http://github.com/eopas.eopas).
+Want to help out? [Download the source](https://github.com/eopas/eopas).
 
 EOPAS <a href="http://en.wikipedia.org/wiki/GPL_License">GPL V3 Licensed</a>.
 
