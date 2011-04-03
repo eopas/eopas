@@ -1,36 +1,32 @@
 
 
+# Install
 
-Install
-=======
+These instructions are geared towards installing the EOPAS application on an
+Ubuntu Lucid LTS system. These instructions assume you will be using capistrano
+to deploy the application.
 
-These instructions are catered towards installing the EOPAS application on an
-Ubuntu Lucid LTS machine.
+## Set up the database
 
-Set up the database
--------------------
-
-* Install mysql if it isn't already installed
-
+* Install MySQL if it isn't already installed
 
     aptitude instal mysql-server
 
-* Create the eopas database and user
+* Create the EOPAS database and user
 
     mysql
     mysql> CREATE DATABASE eopas;
     mysql> GRANT ALL ON eopas.* to eopas@`%` IDENTIFIED BY 'PASSWORD'
 
-* Edit database.yml to suit database name, username and password.
+* Edit config/database.yml to suit database name, username and password.
 
 * Run the migrations
 
     cap deploy:migrations
 
 
+## Deploy the application
 
-Deploy the application
-----------------------
 
 * First set up the **deploy** user
 
@@ -95,8 +91,8 @@ proceeding. ffmpeg is used for transcoding media files.
   cap deploy:migrations
 
 
-Set up the Web Server
----------------------
+## Set up the Web Server
+
 
 This example shows how to set up EOPAS using Nginx with passenger support. There
 are many other ways to set up a rails application including using Apache.
@@ -153,29 +149,29 @@ johnf's PPA.
     service nginx restart
 
 
-Set up the application
-----------------------
+## Set up the application
+
 
 Browse to http://DOMAIN and follow the prompts
 
 
-Information about automatic transcoding
----------------------------------------
+## Information about automatic transcoding
 
-When you deploy with capistrano, the delayed_jobs gem will be set up for you
+
+When you deploy with capistrano, the delayed\_jobs gem will be set up for you
 and take care of the transcoding tasks necessary after uploading audio and video files.
 Normally, everything should be fine. But occasionally you may need to deal with stuck
 jobs or other issues.
 
-* Running the delayed_jobs demon by hand if necessary
+* Running the delayed\_jobs demon by hand if necessary
 
-  RAILS_ENV=production ./scripts/delayed_job start
+    RAILS_ENV=production ./scripts/delayed_job start
 
 * Clearing the jobs queue
 
-  rake jobs:clear
+    rake jobs:clear
 
 * Checking the jobs queue as an admin user
 
-  http://DOMAIN/delayed_job_admin_
+    http://DOMAIN/delayed_job_admin
 
