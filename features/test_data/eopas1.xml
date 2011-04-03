@@ -8,401 +8,399 @@
     <meta name="dc:date" value="2006-06-13T15:09:43+01:00"/>
   </header>
   <interlinear>
-    <tier id="tier_1" linguistic_type="transcription">
-      <phrase id="a1" startTime="0.28" endTime="1.25">
-        <text>so from here.</text>
-        <wordlist/>
-      </phrase>
-      <phrase id="a8" startTime="0.78" endTime="4.09">
-        <text>so you go out of the Institute to the Saint Anna Straat.</text>
-        <wordlist>
-          <word>
-            <text>so</text>
-          </word>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>go</text>
-          </word>
-          <word>
-            <text>out</text>
-          </word>
-          <word>
-            <text>of</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>Institute</text>
-          </word>
-          <word>
-            <text>to</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>Saint</text>
-          </word>
-          <word>
-            <text>Anna</text>
-          </word>
-          <word>
-            <text>Straat</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a2" startTime="4.04" endTime="4.4">
-        <text>yeah</text>
-        <wordlist/>
-      </phrase>
-      <phrase id="a9" startTime="4.6" endTime="10.07">
-        <text>and then you go the other, Saint Anna Straat to this to the center of the town, to this big rotunde.</text>
-        <wordlist>
-          <word>
-            <text>and</text>
-          </word>
-          <word>
-            <text>then</text>
-          </word>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>go</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>other</text>
-          </word>
-          <word>
-            <text>Saint</text>
-          </word>
-          <word>
-            <text>Anna</text>
-          </word>
-          <word>
-            <text>Straat</text>
-          </word>
-          <word>
-            <text>to</text>
-          </word>
-          <word>
-            <text>this</text>
-          </word>
-          <word>
-            <text>to</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>center</text>
-          </word>
-          <word>
-            <text>of</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>town</text>
-          </word>
-          <word>
-            <text>to</text>
-          </word>
-          <word>
-            <text>this</text>
-          </word>
-          <word>
-            <text>big</text>
-          </word>
-          <word>
-            <text>rotunde</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a3" startTime="10.06" endTime="10.46">
-        <text>ja</text>
-        <wordlist/>
-      </phrase>
-      <phrase id="a10" startTime="11.15" endTime="13.24">
-        <text>and you follow then the sign Kleef</text>
-        <wordlist>
-          <word>
-            <text>and</text>
-          </word>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>follow</text>
-          </word>
-          <word>
-            <text>then</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>sign</text>
-          </word>
-          <word>
-            <text>Kleef</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a11" startTime="13.31" endTime="14.54">
-        <text>that's the oranje single</text>
-        <wordlist>
-          <word>
-            <text>that</text>
-          </word>
-          <word>
-            <text>'s</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>Oranje</text>
-          </word>
-          <word>
-            <text>Single</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a4" startTime="14.62" endTime="14.99">
-        <text>ja</text>
-        <wordlist/>
-      </phrase>
-      <phrase id="a12" startTime="15.33" endTime="17.19">
-        <text>then you follow the sign kleef</text>
-        <wordlist>
-          <word>
-            <text>then</text>
-          </word>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>follow</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>sign</text>
-          </word>
-          <word>
-            <text>Kleef</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a13" startTime="17.57" endTime="18.75">
-        <text>you come down</text>
-        <wordlist>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>come</text>
-          </word>
-          <word>
-            <text>down</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a14" startTime="18.99" endTime="21.81">
-        <text>you know eh after this trajanus plein</text>
-        <wordlist>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>know</text>
-          </word>
-          <word>
-            <text>eh</text>
-          </word>
-          <word>
-            <text>after</text>
-          </word>
-          <word>
-            <text>this</text>
-          </word>
-          <word>
-            <text>Trajanus</text>
-          </word>
-          <word>
-            <text>Plein</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a15" startTime="21.86" endTime="22.93">
-        <text>you come down to the</text>
-        <wordlist>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>come</text>
-          </word>
-          <word>
-            <text>down</text>
-          </word>
-          <word>
-            <text>to</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a5" startTime="22.83" endTime="23.87">
-        <text>there is another plein</text>
-        <wordlist/>
-      </phrase>
-      <phrase id="a16" startTime="23.47" endTime="25.05">
-        <text>rhine eh valley</text>
-        <wordlist>
-          <word>
-            <text>Rhine</text>
-          </word>
-          <word>
-            <text>eh</text>
-          </word>
-          <word>
-            <text>valley</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a17" startTime="25.08" endTime="27.01">
-        <text>yeah that's another eh</text>
-        <wordlist>
-          <word>
-            <text>yeah</text>
-          </word>
-          <word>
-            <text>that</text>
-          </word>
-          <word>
-            <text>'s</text>
-          </word>
-          <word>
-            <text>another</text>
-          </word>
-          <word>
-            <text>eh</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a6" startTime="27.03" endTime="27.99">
-        <text>rotunda</text>
-        <wordlist/>
-      </phrase>
-      <phrase id="a18" startTime="28.16" endTime="29.11">
-        <text>kind of rotunde</text>
-        <wordlist>
-          <word>
-            <text>kind</text>
-          </word>
-          <word>
-            <text>of</text>
-          </word>
-          <word>
-            <text>rotunde</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a7" startTime="29.01" endTime="29.48">
-        <text>ja</text>
-        <wordlist/>
-      </phrase>
-      <phrase id="a19" startTime="29.37" endTime="31.23">
-        <text>and then you follow the signs kleef</text>
-        <wordlist>
-          <word>
-            <text>and</text>
-          </word>
-          <word>
-            <text>then</text>
-          </word>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>follow</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>signs</text>
-          </word>
-          <word>
-            <text>kleef</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a20" startTime="31.32" endTime="31.999">
-        <text>go down</text>
-        <wordlist>
-          <word>
-            <text>go</text>
-          </word>
-          <word>
-            <text>down</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a21" startTime="32.379" endTime="34.29">
-        <text>and then you go the this way</text>
-        <wordlist>
-          <word>
-            <text>and</text>
-          </word>
-          <word>
-            <text>then</text>
-          </word>
-          <word>
-            <text>you</text>
-          </word>
-          <word>
-            <text>go</text>
-          </word>
-          <word>
-            <text>the</text>
-          </word>
-          <word>
-            <text>this</text>
-          </word>
-          <word>
-            <text>way</text>
-          </word>
-        </wordlist>
-      </phrase>
-      <phrase id="a22" startTime="34.38" endTime="36.18">
-        <text>eh ja to kleef</text>
-        <wordlist>
-          <word>
-            <text>eh</text>
-          </word>
-          <word>
-            <text>ja</text>
-          </word>
-          <word>
-            <text>to</text>
-          </word>
-          <word>
-            <text>Kleef</text>
-          </word>
-        </wordlist>
-      </phrase>
-    </tier>
+    <phrase id="a1" startTime="0.28" endTime="1.25">
+      <transcription>so from here.</transcription>
+      <wordlist/>
+    </phrase>
+    <phrase id="a8" startTime="0.78" endTime="4.09">
+      <transcription>so you go out of the Institute to the Saint Anna Straat.</transcription>
+      <wordlist>
+        <word>
+          <text>so</text>
+        </word>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>go</text>
+        </word>
+        <word>
+          <text>out</text>
+        </word>
+        <word>
+          <text>of</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>Institute</text>
+        </word>
+        <word>
+          <text>to</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>Saint</text>
+        </word>
+        <word>
+          <text>Anna</text>
+        </word>
+        <word>
+          <text>Straat</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a2" startTime="4.04" endTime="4.4">
+      <transcription>yeah</transcription>
+      <wordlist/>
+    </phrase>
+    <phrase id="a9" startTime="4.6" endTime="10.07">
+      <transcription>and then you go the other, Saint Anna Straat to this to the center of the town, to this big rotunde.</transcription>
+      <wordlist>
+        <word>
+          <text>and</text>
+        </word>
+        <word>
+          <text>then</text>
+        </word>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>go</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>other</text>
+        </word>
+        <word>
+          <text>Saint</text>
+        </word>
+        <word>
+          <text>Anna</text>
+        </word>
+        <word>
+          <text>Straat</text>
+        </word>
+        <word>
+          <text>to</text>
+        </word>
+        <word>
+          <text>this</text>
+        </word>
+        <word>
+          <text>to</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>center</text>
+        </word>
+        <word>
+          <text>of</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>town</text>
+        </word>
+        <word>
+          <text>to</text>
+        </word>
+        <word>
+          <text>this</text>
+        </word>
+        <word>
+          <text>big</text>
+        </word>
+        <word>
+          <text>rotunde</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a3" startTime="10.06" endTime="10.46">
+      <transcription>ja</transcription>
+      <wordlist/>
+    </phrase>
+    <phrase id="a10" startTime="11.15" endTime="13.24">
+      <transcription>and you follow then the sign Kleef</transcription>
+      <wordlist>
+        <word>
+          <text>and</text>
+        </word>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>follow</text>
+        </word>
+        <word>
+          <text>then</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>sign</text>
+        </word>
+        <word>
+          <text>Kleef</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a11" startTime="13.31" endTime="14.54">
+      <transcription>that's the oranje single</transcription>
+      <wordlist>
+        <word>
+          <text>that</text>
+        </word>
+        <word>
+          <text>'s</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>Oranje</text>
+        </word>
+        <word>
+          <text>Single</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a4" startTime="14.62" endTime="14.99">
+      <transcription>ja</transcription>
+      <wordlist/>
+    </phrase>
+    <phrase id="a12" startTime="15.33" endTime="17.19">
+      <transcription>then you follow the sign kleef</transcription>
+      <wordlist>
+        <word>
+          <text>then</text>
+        </word>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>follow</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>sign</text>
+        </word>
+        <word>
+          <text>Kleef</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a13" startTime="17.57" endTime="18.75">
+      <transcription>you come down</transcription>
+      <wordlist>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>come</text>
+        </word>
+        <word>
+          <text>down</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a14" startTime="18.99" endTime="21.81">
+      <transcription>you know eh after this trajanus plein</transcription>
+      <wordlist>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>know</text>
+        </word>
+        <word>
+          <text>eh</text>
+        </word>
+        <word>
+          <text>after</text>
+        </word>
+        <word>
+          <text>this</text>
+        </word>
+        <word>
+          <text>Trajanus</text>
+        </word>
+        <word>
+          <text>Plein</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a15" startTime="21.86" endTime="22.93">
+      <transcription>you come down to the</transcription>
+      <wordlist>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>come</text>
+        </word>
+        <word>
+          <text>down</text>
+        </word>
+        <word>
+          <text>to</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a5" startTime="22.83" endTime="23.87">
+      <transcription>there is another plein</transcription>
+      <wordlist/>
+    </phrase>
+    <phrase id="a16" startTime="23.47" endTime="25.05">
+      <transcription>rhine eh valley</transcription>
+      <wordlist>
+        <word>
+          <text>Rhine</text>
+        </word>
+        <word>
+          <text>eh</text>
+        </word>
+        <word>
+          <text>valley</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a17" startTime="25.08" endTime="27.01">
+      <transcription>yeah that's another eh</transcription>
+      <wordlist>
+        <word>
+          <text>yeah</text>
+        </word>
+        <word>
+          <text>that</text>
+        </word>
+        <word>
+          <text>'s</text>
+        </word>
+        <word>
+          <text>another</text>
+        </word>
+        <word>
+          <text>eh</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a6" startTime="27.03" endTime="27.99">
+      <transcription>rotunda</transcription>
+      <wordlist/>
+    </phrase>
+    <phrase id="a18" startTime="28.16" endTime="29.11">
+      <transcription>kind of rotunde</transcription>
+      <wordlist>
+        <word>
+          <text>kind</text>
+        </word>
+        <word>
+          <text>of</text>
+        </word>
+        <word>
+          <text>rotunde</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a7" startTime="29.01" endTime="29.48">
+      <transcription>ja</transcription>
+      <wordlist/>
+    </phrase>
+    <phrase id="a19" startTime="29.37" endTime="31.23">
+      <transcription>and then you follow the signs kleef</transcription>
+      <wordlist>
+        <word>
+          <text>and</text>
+        </word>
+        <word>
+          <text>then</text>
+        </word>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>follow</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>signs</text>
+        </word>
+        <word>
+          <text>kleef</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a20" startTime="31.32" endTime="31.999">
+      <transcription>go down</transcription>
+      <wordlist>
+        <word>
+          <text>go</text>
+        </word>
+        <word>
+          <text>down</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a21" startTime="32.379" endTime="34.29">
+      <transcription>and then you go the this way</transcription>
+      <wordlist>
+        <word>
+          <text>and</text>
+        </word>
+        <word>
+          <text>then</text>
+        </word>
+        <word>
+          <text>you</text>
+        </word>
+        <word>
+          <text>go</text>
+        </word>
+        <word>
+          <text>the</text>
+        </word>
+        <word>
+          <text>this</text>
+        </word>
+        <word>
+          <text>way</text>
+        </word>
+      </wordlist>
+    </phrase>
+    <phrase id="a22" startTime="34.38" endTime="36.18">
+      <transcription>eh ja to kleef</transcription>
+      <wordlist>
+        <word>
+          <text>eh</text>
+        </word>
+        <word>
+          <text>ja</text>
+        </word>
+        <word>
+          <text>to</text>
+        </word>
+        <word>
+          <text>Kleef</text>
+        </word>
+      </wordlist>
+    </phrase>
   </interlinear>
 </eopas>

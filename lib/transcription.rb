@@ -89,36 +89,25 @@ class Transcription
       end
     end
 
-    tiers = eopas.xpath('interlinear/tier')
-    tiers.each do |tier|
+    phrases = eopas.xpath('interlinear/phrase')
+    phrases.each do |phrase|
+      # create new phrase
+      ph = transcript.phrases.build
 
-      phrases = tier.xpath('phrase')
-      phrases.each do |phrase|
-        # create new phrase
-        phrase_id = phrase['id'].gsub(/.*_/, '')
+      ph.phrase_id  = phrase['id'].gsub(/.*_/, '')
+      ph.start_time = phrase['startTime'].to_f
+      ph.end_time   = phrase['endTime'].to_f
 
-        ph = transcript.phrases.select {|p| p.phrase_id == phrase_id}.first || transcript.phrases.build
-
-        ph.phrase_id  = phrase_id
-        ph.start_time = phrase['startTime'].to_f
-        ph.end_time   = phrase['endTime'].to_f
-
-        case tier['linguistic_type']
-        when 'transcription'
-          import_transcription_phrase phrase, ph
-        when 'translation'
-          import_translation_phrase phrase, ph
-        else
-        @errors << Struct.new(:message).new("Linguistic type #{tier['linguistic_type']} not supported")
-        next
-        end
-      end
+      import_phrase phrase, ph
     end
   end
 
   private
-  def import_transcription_phrase(phrase, ph)
-    ph.original = phrase.xpath('text').first.content
+  def import_phrase(phrase, ph)
+    ph.original = phrase.xpath('transcription').first.content
+    unless phrase.xpath('translation').empty?
+      ph.translation = phrase.xpath('translation').first.content
+    end
     words = phrase.xpath('wordlist/word')
 
     word_position = 1
@@ -150,10 +139,6 @@ class Transcription
         end
       end
     end
-  end
-
-  def import_translation_phrase(phrase, ph)
-    ph.translation = phrase.xpath('text').first.content
   end
 
 end

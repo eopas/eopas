@@ -3,8 +3,8 @@
   <xsd:annotation>
     <xsd:documentation xml:lang="en">
       EOPAS 2010 Annotation Format
-      version 2.0
-      August 2010
+      version 2.1
+      April 2011
       Schema by Ronald Schroeter (itee - uq) 2006, v1.0
       Adapted by Silvia Pfeiffer, John Ferlito
     </xsd:documentation>
@@ -47,22 +47,8 @@
   <!-- ********************** Interlinear TEXT LEVEL ********************** -->
   <xsd:complexType name="interlinearTextType">
     <xsd:sequence>
-      <xsd:element name="tier" type="tierType" maxOccurs="unbounded"/>
-    </xsd:sequence>
-  </xsd:complexType>
-
-  <!-- ********************** TIER LEVEL ********************** -->
-  <xsd:complexType name="tierType">
-    <xsd:annotation>
-      <xsd:documentation>Wrapper element for the collection of phrases, sentences, intonation units, chunks, segments, etc.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:sequence>
       <xsd:element name="phrase" type="phraseType" maxOccurs="unbounded"/>
     </xsd:sequence>
-    <xsd:attribute name="id" type="xsd:ID" />
-    <xsd:attribute name="parent" type="xsd:string" />
-    <xsd:attribute name="lang" type="xsd:string" />
-    <xsd:attribute name="linguistic_type" type="xsd:string" />
   </xsd:complexType>
 
   <!-- ********************** Phrase LEVEL ********************** -->
@@ -71,13 +57,13 @@
       <xsd:documentation>Wrapper element for phrases</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="text"  type="xsd:string"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="transcription"  type="xsd:string"  minOccurs="0" maxOccurs="1"/>
       <xsd:element name="wordlist" type="wordsType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="translation" type="xsd:string" minOccurs="0" maxOccurs="1"/>
     </xsd:sequence>
     <xsd:attribute name="startTime" type="xsd:string" use="required"/>
     <xsd:attribute name="endTime" type="xsd:string" use="required"/>
     <xsd:attribute name="id" type="xsd:ID"/>
-    <xsd:attribute name="ref" type="xsd:string"/>
     <xsd:attribute name="participant" type="xsd:string" />
   </xsd:complexType>
 
