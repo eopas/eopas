@@ -1,14 +1,14 @@
 class Country < Struct.new(:code, :name)
 
   def self.setup_countries
+    data = File.open("#{Rails.root}/data/CountryCodes.tab", "rb").read
+    data = Iconv.iconv('UTF8', 'ISO-8859-1', data).first.force_encoding('UTF-8')
+
     countries = {}
-    File.open("#{Rails.root}/data/CountryCodes.tab") do |f|
-      f.each_line do |line|
-        line.force_encoding('ISO-8859-1')
-        next if line =~ /^CountryID/
-        code, name, area = line.split("\t")
-        countries[code] = name
-      end
+    data.each_line do |line|
+      next if line =~ /^CountryID/
+      code, name, area = line.split("\t")
+      countries[code] = name
     end
 
     countries

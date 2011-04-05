@@ -7,15 +7,14 @@ class CountryLanguage < Struct.new(:code, :name)
   end
 
   def self.setup_languages
-    File.open("#{Rails.root}/data/LanguageIndex.tab") do |f|
-      f.each_line do |line|
-        line.force_encoding('ISO-8859-1')
-        next if line =~ /^LangID/
+    data = File.open("#{Rails.root}/data/LanguageIndex.tab", "rb").read
+    data = Iconv.iconv('UTF8', 'ISO-8859-1', data).first.force_encoding('UTF-8')
+    data.each_line do |line|
+      next if line =~ /^LangID/
         code, country_code, name_type, name = line.strip.split("\t")
-        next unless name_type == "L"
-        @@country_languages[country_code] ||= {}
-        @@country_languages[country_code][code] = name
-      end
+      next unless name_type == "L"
+      @@country_languages[country_code] ||= {}
+      @@country_languages[country_code][code] = name
     end
   end
 
