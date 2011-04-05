@@ -1,3 +1,5 @@
+require 'iconv'
+
 class CountryLanguage < Struct.new(:code, :name)
 
   @@country_languages = {}

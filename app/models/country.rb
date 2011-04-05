@@ -1,3 +1,5 @@
+require 'iconv'
+
 class Country < Struct.new(:code, :name)
 
   def self.setup_countries
