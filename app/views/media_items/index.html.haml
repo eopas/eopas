@@ -12,6 +12,7 @@
         %p
           = link_to media_item.title, media_item
         %p
-          = link_to 'Edit', edit_media_item_path(media_item)
-          = link_to 'Delete', media_item, :confirm => "Are you sure?", :method => :delete
+          - if current_user and (media_item.depositor.id == current_user.id or current_user.admin?)
+            = link_to 'Edit', edit_media_item_path(media_item)
+            = link_to 'Delete', media_item, :confirm => "Are you sure?", :method => :delete
             

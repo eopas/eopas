@@ -40,7 +40,7 @@
       %td.value
         = @media_item.private
 
-    - if (current_user and @media_item.depositor.id == current_user.id)
+    - if current_user and (@media_item.depositor.id == current_user.id or current_user.admin?)
       %tr
         %td.name
           Download
@@ -52,6 +52,6 @@
   %textarea#embed_code
     = html_escape(media_item_embed_tag @media_item)
   %br
-            
-  = link_to 'Edit media item metadata', edit_media_item_path(@media_item)
+  - if current_user and (@media_item.depositor.id == current_user.id or current_user.admin?)
+    = link_to 'Edit media item metadata', edit_media_item_path(@media_item)
 

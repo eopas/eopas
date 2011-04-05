@@ -32,9 +32,10 @@
         %td=  transcript.country_code
         %td=  transcript.media_item ? transcript.media_item.title : ""
         %td
-          =link_to 'Edit', edit_transcript_path(transcript)
           =link_to 'Show', transcript_path(transcript)
-          =link_to 'Delete', transcript, :confirm => "Are you sure?", :method => :delete
+          - if current_user and (transcript.depositor.id == current_user.id or current_user.admin?)
+            =link_to 'Edit', edit_transcript_path(transcript)
+            =link_to 'Delete', transcript, :confirm => "Are you sure?", :method => :delete
 
   = will_paginate @transcripts
 

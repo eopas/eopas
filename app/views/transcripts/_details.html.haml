@@ -57,4 +57,5 @@
         = link_to "EOPAS", eopas_transcript_path(@transcript)
         = link_to "Original (#{@transcript.transcript_format})", @transcript.original.url
 
-  = link_to 'Edit transcript metadata', edit_transcript_path(@transcript)
+  - if current_user and (@transcript.depositor.id == current_user.id or current_user.admin?)
+    = link_to 'Edit transcript metadata', edit_transcript_path(@transcript)

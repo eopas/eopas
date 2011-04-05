@@ -29,7 +29,7 @@
     = render :partial => 'details'
 
 
-  - if @transcript.depositor == current_user
+  - if current_user and (@transcript.depositor.id == current_user.id or current_user.admin?)
     #actions
       -if @media_item
         = link_to 'Unlink Media Item', remove_media_item_transcript_path(@transcript), :confirm => "Are you sure?", :method => :delete
