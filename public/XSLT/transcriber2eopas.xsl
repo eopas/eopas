@@ -28,13 +28,15 @@ version="1.0">
             <xsl:value-of select="$mediafile"/>
           </xsl:attribute>
         </meta>
-        <meta>
-          <!-- Dublin Core "creator" -->
-          <xsl:attribute name="name">dc:creator</xsl:attribute>
-          <xsl:attribute name="value">
-            <xsl:value-of select="$creator"/>
-          </xsl:attribute>
-        </meta>
+        <xsl:if test="normalize-space($creator) != ''">
+          <meta>
+            <!-- Dublin Core "creator" -->
+            <xsl:attribute name="name">dc:creator</xsl:attribute>
+            <xsl:attribute name="value">
+              <xsl:value-of select="$creator"/>
+            </xsl:attribute>
+          </meta>
+        </xsl:if>
         <!-- Add all speakers to metadata -->
         <xsl:for-each select="Speakers/Speaker">
           <meta>
@@ -57,7 +59,9 @@ version="1.0">
             <xsl:if test="following-sibling::node()">
             <xsl:if test="name(following-sibling::node())!='Sync'">
               <phrase>
-                <xsl:attribute name="participant"><xsl:value-of select="../@speaker"/></xsl:attribute>
+                <xsl:if test="normalize-space(../@speaker) != ''">
+                  <xsl:attribute name="participant"><xsl:value-of select="../@speaker"/></xsl:attribute>
+                </xsl:if>
                 <xsl:attribute name="id">s<xsl:value-of select="count(preceding::Sync)+1"/></xsl:attribute>
                 <xsl:attribute name="startTime">
                   <xsl:value-of select="@time"/>
