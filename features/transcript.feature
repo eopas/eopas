@@ -92,6 +92,7 @@ Feature: Media Items can have transcriptions
       | toolbox3.xml     | Toolbox     | Litrapong      | TOOLBOX 3     |
       | toolbox4.xml     | Toolbox     | ngar-uba-gi    | TOOLBOX 4     |
       | toolbox5.xml     | Toolbox     | ipiatlak       | TOOLBOX 5     |
+      | toolbox6.xml     | Toolbox     | murrinh        | TOOLBOX 6     |
       | transcriber1.xml | Transcriber | pause crowd    | TRANSCRIBER 1 |
       | transcriber2.xml | Transcriber | puet soksoki   | TRANSCRIBER 2 |
 
