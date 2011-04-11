@@ -175,3 +175,18 @@ jobs or other issues.
 
     http://DOMAIN/delayed_job_admin
 
+
+## Updating the language codes
+
+
+The language codes in use for EOPAS are sourced from http://www.ethnologue.com/codes/.
+
+To update them:
+
+* Download the latest version of the three tables from
+
+    http://www.ethnologue.com/codes/default.asp#downloading
+
+* Copy them into the data directory, overwriting the existing files there
+
+Done!
