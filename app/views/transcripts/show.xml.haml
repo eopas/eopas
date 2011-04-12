@@ -14,14 +14,16 @@
       - phrases.each do |phrase|
         %phrase{:id => "o_#{phrase.phrase_id}", :startTime => phrase.start_time, :endTime => phrase.end_time}
           %transcription= phrase.original
-          - unless phrase.words.empty?
+          - words = phrase.words
+          - unless words.empty?
             %wordlist
-              - phrase.words.each do |word|
+              - words.each do |word|
+                - morphemes = word.morphemes
                 %word
-                  %text= word.word
-                  - unless word.morphemes.empty?
+                  %text= word[:word]
+                  - unless morphemes.empty?
                     %morphemelist
-                      - word.morphemes do |morpheme|
+                      - morphemes.each do |morpheme|
                         %morpheme
                           %text{:kind => 'morpheme'}= morpheme.morpheme
                           %text{:kind => 'gloss'}= morpheme.gloss
