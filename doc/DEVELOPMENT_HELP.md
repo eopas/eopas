@@ -23,7 +23,7 @@
 
 ## Running an application console
 
-    ./script/rails cconsole
+    ./script/rails console
 
 ## Running the tests
 
