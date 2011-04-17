@@ -62,8 +62,9 @@ version="1.0">
                   <xsl:value-of select="$endTime"/>
                 </xsl:attribute>
 
+                <!-- the identifier has to be unique -->
                 <xsl:variable name="o_ident" select="id"/>
-                <xsl:attribute name="id">o_<xsl:value-of select="translate($o_ident,':','-')"/></xsl:attribute>
+                <xsl:attribute name="id"><xsl:value-of select="translate($o_ident,':','-')"/>_<xsl:value-of select="count(preceding::idgroup)+1"/></xsl:attribute>
 
                 <!-- compose text together -->
                 <!-- for each "txGroup" and "txgroup" -->
