@@ -54,9 +54,10 @@ function do_time_change(fragment) {
   else if ($('audio').length) {
     m = $('audio').first();
   }
+  m.attr('data-start', start);
+  m.attr('data-pause', end);
   m.attr('currentTime', start);
   m.trigger('play');
-  m.attr('data-pause', end);
 }
 
 function do_transcript_change(fragment) {
