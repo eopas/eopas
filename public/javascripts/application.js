@@ -44,8 +44,8 @@ function do_time_change(fragment) {
     return;
   }
 
-  var start = (1.0*times[0]).toFixed(2);
-  var end = times[1];
+  var start = parseFloat(times[0]);
+  var end = parseFloat(times[1]);
 
   var m;
   if ($('video').length) {
