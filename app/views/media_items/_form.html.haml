@@ -15,17 +15,18 @@
 
       %tr
         %td.name
-          = form.label :original, 'Media File'
+          = form.label :media, 'Media File'
           *
         %td.value
-          = form.file_field :original, :class => 'required'
+          = form.file_field :media, :class => 'required'
+          = form.hidden_field :media_cache
     - else
       %tr
         %td.name
           = @media_item.format.titleize
         %td.value
           - if @media_item.format == 'video'
-            = link_to image_tag(@media_item.original.url(:thumbnail)), @media_item
+            = link_to image_tag(@media_item.media.thumb.url), @media_item
     %tr
       %td.name
         = form.label :title

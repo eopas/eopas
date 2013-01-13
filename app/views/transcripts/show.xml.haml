@@ -2,7 +2,7 @@
 %eopas{'xmlns:dc' => "http://purl.org/dc/elements/1.1/"}
   %header
     %meta{:name => "dc:type", :value => "text/xml"}
-    %meta{:name => "dc:source",   :value => @transcript.original_file_name}
+    %meta{:name => "dc:source",   :value => @transcript.source.file.basename}
     %meta{:name => "dc:creator",  :value => @transcript.depositor.first_name + ' ' + @transcript.depositor.last_name}
     %meta{:name => "dc:language", :value => @transcript.language_code}
     %meta{:name => "dc:date",     :value => @transcript.date}

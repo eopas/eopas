@@ -43,14 +43,13 @@ class Transcript < ActiveRecord::Base
     end
   }
 
-  include Paperclip
-  has_attached_file :original, :url => "/system/transcript/:attachment/:id/:style/:filename"
+  mount_uploader :source, TranscriptUploader
 
-  attr_accessible :title, :date, :country_code, :language_code, :copyright, :license, :private, :original, :transcript_format, :participants_attributes, :description
+  attr_accessible :title, :date, :country_code, :language_code, :copyright, :license, :private, :source, :source_cache, :transcript_format, :participants_attributes, :description
 
   FORMATS = ['ELAN', 'Toolbox', 'Transcriber', 'EOPAS']
 
-  validates :original,          :presence => true, :proper_schema => true
+  validates :source,            :presence => true, :integrity => true, :processing => true, :proper_schema => true
   validates :transcript_format, :presence => true, :inclusion => { :in => FORMATS }
   validates :depositor,         :presence => true
 
@@ -61,7 +60,6 @@ class Transcript < ActiveRecord::Base
   validates :language_code,      :presence => true, :unless => lambda { new_record? }
 
   validates_associated :depositor
-  validates_attachment_presence :original
 
   def self.search(search)
     if search
@@ -72,12 +70,9 @@ class Transcript < ActiveRecord::Base
   end
 
   def create_transcription
-    # FIXME find a better way of doing this
-    if original_file_name
-      file_path = original.queued_for_write[:original].path
-      @transcription = Transcription.new(:data => File.read(file_path).force_encoding('UTF-8'), :format => transcript_format)
-      @transcription.import self
-    end
+    file_path = source.file.path
+    @transcription = Transcription.new(:data => File.read(file_path).force_encoding('UTF-8'), :format => transcript_format)
+    @transcription.import self
   end
 
 end
