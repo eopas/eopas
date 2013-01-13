@@ -50,7 +50,7 @@ class Transcript < ActiveRecord::Base
 
   FORMATS = ['ELAN', 'Toolbox', 'Transcriber', 'EOPAS']
 
-  #validates :original,          :presence => true, :proper_schema => true
+  validates :original,          :presence => true, :proper_schema => true
   validates :transcript_format, :presence => true, :inclusion => { :in => FORMATS }
   validates :depositor,         :presence => true
 

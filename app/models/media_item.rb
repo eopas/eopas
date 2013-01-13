@@ -63,7 +63,8 @@ class MediaItem < ActiveRecord::Base
   validates :copyright,     :presence => true
   validates :license,       :presence => true
 
-  validates_attachment_presence :original
-  validates_attached_media :original
+# FIXME: upload & transcoding
+#  validates_attachment_presence :original
+#  validates_attached_media :original
 
 end

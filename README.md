@@ -91,62 +91,6 @@ proceeding. ffmpeg is used for transcoding media files.
   cap deploy:migrations
 
 
-## Set up the Web Server
-
-
-This example shows how to set up EOPAS using Nginx with passenger support. There
-are many other ways to set up a rails application including using Apache.
-
-**Note:** Currently Nginx with passenger support isn't in Ubuntu. So we use
-johnf's PPA.
-
-**Note:** Currently Ruby1.9.2 isn't in Ubuntu. So we use johnf's PPA.
-
-* Install nginx
-
-    apt-add-repository ppa:johnf-inodes/nginx
-    apt-add-repository ppa:johnf-inodes/ruby192
-    aptitude update
-    apt-get install nginx-passenger
-
-* Configure nginx
-
-
-    vi /etc/nginx/sites-enabled/eopas
-
-    server {
-      listen  [::]:80;
-      server_name eopas.rnld.unimelb.edu.au;
-
-      rails_env production;
-
-      access_log  /srv/www/eopas/shared/log/access.log;
-      error_log  /srv/www/eopas/shared/log/error.log;
-
-      location / {
-        root /srv/www/eopas/current/public;
-        passenger_enabled on;
-        passenger_use_global_queue on;
-        client_max_body_size 100m; # Nice and big for videos
-        track_uploads eopas 30s;
-      }
-
-      location /upload_progress {
-        report_uploads eopas;
-      }
-
-    }
-
-    vi /etc/nginx/conf.d/upload_progress.conf
-
-      upload_progress eopas 1m;
-      upload_progress_json_output;
-
-    echo -e "passenger_ruby /usr/bin/ruby1.9.1;\n" >> /etc/nginx/conf.d/passenger_ruby1.9.2.conf
-
-* Restart nginx
-
-    service nginx restart
 
 
 ## Set up the application

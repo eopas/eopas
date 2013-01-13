@@ -12,4 +12,5 @@ class Participant < ActiveRecord::Base
   validates :role, :inclusion => {:in => ROLES}
   validates :transcript, :presence => true
 
+  attr_accessible :name, :role
 end
