@@ -1,9 +1,3 @@
-## Updating to new ruby version:
-
-    rvm update
-    rvm reload
-    rvm install 1.9.2
-
 ## Updating the app
 
     git pull
