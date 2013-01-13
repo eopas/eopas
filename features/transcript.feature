@@ -75,6 +75,7 @@ Feature: Media Items can have transcriptions
       And I should see "<text>"
       And I should see "<title>"
 
+      And show me the page
      When I follow "EOPAS" within "#metadata_display"
       And I should see "<text>"
 
