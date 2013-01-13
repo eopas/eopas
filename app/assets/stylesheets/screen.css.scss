@@ -149,10 +149,10 @@ table#transcripts {
     background-position: right center;  
   }  
   th .asc {   
-    background-image: url(/images/up_arrow.png);   
+    background-image: image_url('up_arrow.png');   
   }  
   th .desc {   
-    background-image: url(/images/down_arrow.png);   
+    background-image: image-url('down_arrow.png');   
   }
 }
 

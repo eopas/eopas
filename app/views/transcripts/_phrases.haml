@@ -5,7 +5,7 @@
       %td.controls{:title => "#{phrase.start_time} to #{phrase.end_time}"}
         = "p#{i += 1}"
         %br
-        = link_to image_tag('/images/play.png'), "#t=#{phrase.start_time},#{phrase.end_time}", :class => 'play_button', 'data-start' => "#{phrase.start_time}", 'data-end' => "#{phrase.end_time}"
+        = link_to image_tag('play.png'), "#t=#{phrase.start_time},#{phrase.end_time}", :class => 'play_button', 'data-start' => "#{phrase.start_time}", 'data-end' => "#{phrase.end_time}"
       %td.tracks.phrase
         - if phrase.original
           .tier{:class => [phrase.phrase_id, 'transcription']}

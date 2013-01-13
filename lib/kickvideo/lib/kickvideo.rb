@@ -10,7 +10,7 @@ module Paperclip::ClassMethods
   # I recommend only validating on create. Otherwise this could retrieve the file from S3 every time you update the record.
   def validates_attached_video(name, options = {})
     validates_each(:"#{name}_content_type", options) do |record, attr, value|
-      file = record.send(name).to_file
+      file = record.send(name).queued_for_write[:original]
       unless file.nil? or Kickvideo::Inspector.new(:file => file.path).video?
         record.errors.add(:"#{name}_content_type", :invalid, :default => options[:message], :value => value)
       end
@@ -19,7 +19,7 @@ module Paperclip::ClassMethods
 
   def validates_attached_audio(name, options = {})
     validates_each(:"#{name}_content_type", options) do |record, attr, value|
-      file = record.send(name).to_file
+      file = record.send(name).queued_for_write[:original]
       unless file.nil? or Kickvideo::Inspector.new(:file => file.path).audio?
         record.errors.add(:"#{name}_content_type", :invalid, :default => options[:message], :value => value)
       end
@@ -28,7 +28,7 @@ module Paperclip::ClassMethods
 
   def validates_attached_media(name, options = {})
     validates_each(:"#{name}_content_type", options) do |record, attr, value|
-      file = record.send(name).to_file
+      file = record.send(name).queued_for_write[:original]
       unless file.nil? or Kickvideo::Inspector.new(:file => file.path).video? or  Kickvideo::Inspector.new(:file => file.path).audio?
         record.errors.add(:"#{name}_content_type", :invalid, :default => options[:message], :value => value)
       end

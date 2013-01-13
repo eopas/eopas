@@ -50,7 +50,7 @@ class Transcript < ActiveRecord::Base
 
   FORMATS = ['ELAN', 'Toolbox', 'Transcriber', 'EOPAS']
 
-  validates :original,          :presence => true, :proper_schema => true
+  #validates :original,          :presence => true, :proper_schema => true
   validates :transcript_format, :presence => true, :inclusion => { :in => FORMATS }
   validates :depositor,         :presence => true
 
@@ -63,8 +63,6 @@ class Transcript < ActiveRecord::Base
   validates_associated :depositor
   validates_attachment_presence :original
 
-  before_validation :create_transcription, :on => :create
-
   def self.search(search)
     if search
       where(['title LIKE ? OR description LIKE ? OR country_code LIKE ? OR language_code LIKE ?', "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%"])
@@ -73,11 +71,10 @@ class Transcript < ActiveRecord::Base
     end
   end
 
-  protected
   def create_transcription
     # FIXME find a better way of doing this
     if original_file_name
-      file_path = original.to_file.path
+      file_path = original.queued_for_write[:original].path
       @transcription = Transcription.new(:data => File.read(file_path).force_encoding('UTF-8'), :format => transcript_format)
       @transcription.import self
     end

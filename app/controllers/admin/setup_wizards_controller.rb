@@ -9,7 +9,13 @@ class Admin::SetupWizardsController < ApplicationController
   def create
     AppConfig.item_prefix = params[:item_prefix]
 
-    @user = User.new(params)
+    @user = User.new do |user|
+      user.first_name            = params[:first_name]
+      user.last_name             = params[:last_name]
+      user.email                 = params[:email]
+      user.password              = params[:password]
+      user.password_confirmation = params[:password_confirmation]
+    end
     @user.add_role(:admin)
     @user.confirm!
     if @user.save

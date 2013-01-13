@@ -1,38 +1,63 @@
-# Edit this Gemfile to bundle your application's dependencies.
-source 'http://gemcutter.org'
+source 'https://rubygems.org'
 
-gem 'rails', '3.0.5'
+gem 'rails', '3.2.11'
 
 gem 'mysql2'
 
-gem 'haml'
-gem 'compass'
-gem 'authlogic', :git => 'git://github.com/johnf/authlogic.git' # Removes deprecations
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'compass-rails'
+  gem 'compass-blueprint'
+
+  gem 'coffee-rails', '~> 3.2.1'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.0.3'
+end
+
+# views
+gem 'jquery-rails'
+gem 'haml-rails'
+gem 'kaminari'
+
+# authentication & authorization
+gem 'authlogic'
 gem 'declarative_authorization'
+
+# attachments
 gem 'paperclip'
 gem 'delayed_paperclip'
-gem 'delayed_job'
+gem 'delayed_job_active_record'
 gem 'delayed_job_admin'
-gem 'daemons', '1.0.10' # Need this otherwise delayed job won't start when talking to mysql https://github.com/collectiveidea/delayed_job/issues#issue/81
+
+# xml parsing
 gem 'nokogiri'
-gem 'will_paginate', '3.0.pre2'
 
-group :development, :test, :cucumber do
-    gem 'sqlite3-ruby'
+#gem 'daemons', '1.0.10' # Need this otherwise delayed job won't start when talking to mysql https://github.com/collectiveidea/delayed_job/issues#issue/81
 
-    #gem 'cucumber-rails', :git => 'https://github.com/aslakhellesoy/cucumber-rails.git' # https://github.com/aslakhellesoy/cucumber-rails/issues/issue/77
-    gem 'cucumber-rails' #, :git => 'git://github.com/johnf/cucumber-rails.git' # FIx capybara date steps plus issue 77 above
-
-    gem 'capybara'
-    gem 'database_cleaner'
-
-    gem 'rspec-expectations', :git => 'https://github.com/rspec/rspec-expectations.git' # Remove this whole line when https://github.com/rspec/rspec-expectations/issues/63 is released
+group :development, :test do
     gem 'rspec-rails'
 
+    gem 'railroady'
+
+    gem 'capistrano'
+end
+
+group :test do
+    gem 'cucumber-rails'
+
+    gem 'capybara'
+
+    gem 'database_cleaner'
+
+    gem 'rspec-expectations'
     gem 'launchy'
 
     gem 'factory_girl'
     gem 'pickle'
 
-    gem 'railroady'
 end
