@@ -1,4 +1,3 @@
-
 authorization do
 
   role :guest do

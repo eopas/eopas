@@ -1,26 +1,19 @@
-
-
 # Common settings for all DBs
 common: &COMMON
   encoding: utf8
   pool: 5
   timeout: 5000
-  adapter: sqlite3
+  adapter: mysql2
+  user: root
 
 production:
   <<: *COMMON
   database: eopas
-  user: root
-  adapter: mysql2
 
 development:
   <<: *COMMON
-  database: db/development.sqlite
+  database: eoaps_devel
 
 test: &TEST
   <<: *COMMON
-  database: db/test.sqlite
-
-test_in_memory: &TEST
-  <<: *COMMON
-  database: ":memory:"
+  database: eopas_test

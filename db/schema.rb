@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110211064726) do
+ActiveRecord::Schema.define(:version => 20130112135736) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "name"
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20110211064726) do
     t.string   "locked_by"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "queue"
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
@@ -93,9 +95,9 @@ ActiveRecord::Schema.define(:version => 20110211064726) do
 
   create_table "transcripts", :force => true do |t|
     t.integer  "media_item_id"
-    t.integer  "depositor_id",                                            :null => false
+    t.integer  "depositor_id",                             :null => false
     t.string   "language_code"
-    t.datetime "date",                  :limit => 255
+    t.datetime "date"
     t.string   "original_file_name"
     t.string   "original_content_type"
     t.string   "original_file_size"
@@ -104,7 +106,7 @@ ActiveRecord::Schema.define(:version => 20110211064726) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
-    t.boolean  "private",                              :default => false, :null => false
+    t.boolean  "private",               :default => false, :null => false
     t.string   "country_code"
     t.string   "copyright"
     t.string   "license"

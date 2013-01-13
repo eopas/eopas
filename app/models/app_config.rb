@@ -17,7 +17,10 @@ class AppConfig < ActiveRecord::Base
 
       if method_id =~ /=$/
         name = method_id.to_s.gsub(/=$/, '')
-        app_config = new(:name => name, :value => {:value => args.first})
+        app_config = new do |config|
+          config.name = name
+          config.value = {:value => args.first}
+        end
         app_config.save!
       else
         name = method_id.to_s.gsub(/\?$/, '')

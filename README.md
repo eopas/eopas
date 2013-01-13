@@ -10,7 +10,7 @@ to deploy the application.
 
 * Install MySQL if it isn't already installed
 
-    aptitude instal mysql-server
+    aptitude install mysql-server
 
 * Create the EOPAS database and user
 
@@ -25,7 +25,7 @@ to deploy the application.
     cap deploy:migrations
 
 
-## Deploy the application
+## Deploy the application to the EOPAS server
 
 
 * First set up the **deploy** user
