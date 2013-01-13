@@ -45,7 +45,7 @@
         %td.name
           Download
         %td.value
-          = link_to @media_item.original_file_name, @media_item.original.url(:original)
+          = link_to @media_item.media.file.basename, @media_item.media.url
 
   Embed code:
   %br

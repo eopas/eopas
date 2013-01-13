@@ -5,14 +5,10 @@
   - @media_items.each do |media_item|
     %li
       .item
-        - if media_item.format == 'video'
-          = link_to image_tag(media_item.original.url(:thumbnail)), media_item
-        - else
-          = link_to image_tag('/originals/thumbnail/audio.png'), media_item
+        = link_to media_item_thumb_tag(media_item), media_item
         %p
           = link_to media_item.title, media_item
         %p
           - if current_user and (media_item.depositor.id == current_user.id or current_user.admin?)
             = link_to 'Edit', edit_media_item_path(media_item)
             = link_to 'Delete', media_item, :confirm => "Are you sure?", :method => :delete
-            

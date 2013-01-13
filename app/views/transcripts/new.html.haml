@@ -10,9 +10,10 @@
     %table#metadata
       %tr
         %td.name
-          = f.label :original, 'Transcript'
+          = f.label :source, 'Transcript'
         %td.value
-          = f.file_field :original
+          = f.file_field :source
+          = f.hidden_field :source_cache
 
       %tr
         %td.name
