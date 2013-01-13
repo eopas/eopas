@@ -1,18 +1,20 @@
-
-require "bundler/capistrano"
-
-set :application, "eopas"
-set :repository,  "git://github.com/eopas/eopas.git"
-
+set :application, 'eopas'
+set :repository,  'git://github.com/eopas/eopas'
 set :scm, :git
 
-role :web, "eopas.rnld.unimelb.edu.au"
-role :app, "eopas.rnld.unimelb.edu.au"
-role :db,  "eopas.rnld.unimelb.edu.au", :primary => true # This is where Rails migrations will run
+role :web, 'eopas.rnld.unimelb.edu.au'
+role :app, 'eopas.rnld.unimelb.edu.au'
+role :db,  'eopas.rnld.unimelb.edu.au', :primary => true # This is where Rails migrations will run
 
+set :deploy_to, "/srv/www/#{application}"
 set :user, 'deploy'
 set :use_sudo, false
-set :deploy_to, "/srv/www/#{application}"
+set :deploy_via, :remote_cache
+set :keep_releases, 5
+
+set :ssh_options, { :forward_agent => true, }
+
+set :default_shell, '/bin/bash --login'
 
 namespace :deploy do
   task :start do ; end
@@ -42,3 +44,6 @@ namespace :delayed_job do
    start
  end
 end
+
+require 'bundler/capistrano'
+#require 'capistrano-unicorn'
