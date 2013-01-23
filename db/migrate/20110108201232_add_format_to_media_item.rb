@@ -3,7 +3,10 @@ class AddFormatToMediaItem < ActiveRecord::Migration
     change_table :media_items do |t|
       t.string :format
     end
-    MediaItem.update_all ["format = ?", 'video']
+
+    MediaItem.connection.schema_cache.clear!
+    MediaItem.reset_column_information
+    MediaItem.update_all ['format = ?', 'video']
   end
 
   def self.down
