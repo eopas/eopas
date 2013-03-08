@@ -1,17 +1,5 @@
 require 'factory_girl'
 
-# Paperclip attachments in factories, made easy based on technicalpickles
-# TODO: JF clean up
-# FactoryGirl.class_eval do
-#   def attach(name, path, content_type = nil)
-#     if content_type
-#       add_attribute name, Rack::Test::UploadedFile.new("#{Rails.root}/#{path}", content_type)
-#     else
-#       add_attribute name, Rack::Test::UploadedFile.new("#{Rails.root}/#{path}")
-#     end
-#   end
-# end
-
 FactoryGirl.define do
 
   factory :user do
@@ -42,7 +30,7 @@ FactoryGirl.define do
     private true
     association :depositor, :factory => :user
     format 'video'
-#    attach( "original", "features/test_data/test.m4v", "video/mp4" )
+    original { File.open(File.join(Rails.root, 'features', 'test_data', 'test.m4v')) }
   end
 
 
@@ -55,7 +43,7 @@ FactoryGirl.define do
     license 'PD'
     private true
     association :depositor, :factory => :user
-#    attach "original", "features/test_data/eopas3.xml", "text/xml"
+    source { File.open(File.join(Rails.root, 'features', 'test_data', 'eopas3.xml')) }
     transcript_format 'EOPAS'
   end
 

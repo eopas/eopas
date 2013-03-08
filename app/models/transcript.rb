@@ -2,16 +2,15 @@ require 'transcription'
 
 class ProperSchemaValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
-    unless record.new_record?
-      return
-    end
+    return unless record.new_record?
+
     transcription = record.instance_variable_get(:@transcription)
     if transcription.nil?
       record.errors[attribute] = 'Missing transcription'
     else
       errors = transcription.validate
       unless errors.empty?
-        record.errors[attribute] << "Transcript did not validate against the schema"
+        record.errors[attribute] << 'Transcript did not validate against the schema'
         errors.each do |error|
           record.errors[attribute] << error.message
         end
@@ -60,6 +59,8 @@ class Transcript < ActiveRecord::Base
   validates :language_code,      :presence => true, :unless => lambda { new_record? }
 
   validates_associated :depositor
+
+  before_validation :create_transcription
 
   def self.search(search)
     if search

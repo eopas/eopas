@@ -65,7 +65,6 @@ class TranscriptsController < ApplicationController
 
   def create
     @transcript = current_user.transcripts.build params[:transcript]
-    @transcript.create_transcription
 
     options = Hash.new
     if @transcript.save
