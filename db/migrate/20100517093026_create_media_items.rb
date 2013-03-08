@@ -1,4 +1,4 @@
-class MediaItem < ActiveRecord::Migration
+class CreateMediaItems < ActiveRecord::Migration
   def self.up
     create_table :media_items do |t|
       t.string     :title,     :null => false
