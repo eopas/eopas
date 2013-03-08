@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eopas xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <header>
+    <meta name="dc:type" value="text/xml"/>
+    <meta name="dc:contributor" value=""/>
+  </header>
+  <interlinear>
+    <phrase startTime="4.877" endTime="10.963" id="o_001">
+      <transcription>Amurin gag puserek, Nick, kafo gag pusereki kusu go wit. </transcription>
+      <wordlist>
+        <word>
+          <text>Amurin</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">a=</text>
+              <text kind="gloss">1sgRS=</text>
+            </morpheme>
+            <morpheme>
+              <text kind="morpheme">mur</text>
+              <text kind="gloss">want</text>
+            </morpheme>
+            <morpheme>
+              <text kind="morpheme">-i</text>
+              <text kind="gloss">-TS</text>
+            </morpheme>
+            <morpheme>
+              <text kind="morpheme">-n</text>
+              <text kind="gloss">-3sgO</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>gag</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">gag</text>
+              <text kind="gloss">2sgBEN</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>puserek,</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">puserek</text>
+              <text kind="gloss">talk</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>Nick,</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">Nick</text>
+              <text kind="gloss">Nick</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>kafo</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">ka=</text>
+              <text kind="gloss">1sgIRR=</text>
+            </morpheme>
+            <morpheme>
+              <text kind="morpheme">fo</text>
+              <text kind="gloss">PSP.IR</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>gag</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">gag</text>
+              <text kind="gloss">2sgBEN</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>pusereki</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">puserek</text>
+              <text kind="gloss">talk</text>
+            </morpheme>
+            <morpheme>
+              <text kind="morpheme">-ki</text>
+              <text kind="gloss">-TR</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>kusu</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">kusu</text>
+              <text kind="gloss">rat</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>go</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">go</text>
+              <text kind="gloss">and</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>wit.</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">wit</text>
+              <text kind="gloss">octopus</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+      </wordlist>
+      <translation>I want to tell you, Nick, I'll tell you about the rat and the octopus.</translation>
+    </phrase>
+    <phrase startTime="10.963" endTime="16.802" id="o_002">
+      <transcription>Naliati iskei, elau imat. </transcription>
+      <wordlist>
+        <word>
+          <text>Naliati</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">naliati</text>
+              <text kind="gloss">day</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>iskei,</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">i=</text>
+              <text kind="gloss">3sg.R.SBJ=</text>
+            </morpheme>
+            <morpheme>
+              <text kind="morpheme">skei</text>
+              <text kind="gloss">one</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>elau</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">elau</text>
+              <text kind="gloss">sea</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+        <word>
+          <text>imat.</text>
+          <morphemelist>
+            <morpheme>
+              <text kind="morpheme">i=</text>
+              <text kind="gloss">3sgRS=</text>
+            </morpheme>
+            <morpheme>
+              <text kind="morpheme">mat</text>
+              <text kind="gloss">low_tide</text>
+            </morpheme>
+          </morphemelist>
+        </word>
+      </wordlist>
+      <translation>One day, it was low tide.</translation>
+    </phrase>
+  </interlinear>
+</eopas>

@@ -43,7 +43,7 @@ FactoryGirl.define do
     license 'PD'
     private true
     association :depositor, :factory => :user
-    source { File.open(File.join(Rails.root, 'features', 'test_data', 'eopas3.xml')) }
+    source { File.open(File.join(Rails.root, 'features', 'test_data', 'cucumber.xml')) }
     transcript_format 'EOPAS'
   end
 
