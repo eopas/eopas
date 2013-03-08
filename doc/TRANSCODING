@@ -100,12 +100,13 @@ The above example gets transformed into EOPAS:
           </morphemelist>
         </word>
       </wordlist>
+      <graid>np.s   predv   np.d   np.d</graid>
       <translation>I want to tell you. You, children of today,</translation>
     </phrase>
   </interlinear>
 </eopas>
 
-Notice how there is a transcription, a wordlist, and a translation.
+Notice how there is a transcription, a wordlist, a GRAID annotation, and a translation.
 These are the only tiers that the EOPAS system cares about.
 
 

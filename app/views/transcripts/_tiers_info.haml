@@ -19,6 +19,11 @@
       Show morphemes
       %br
 
+  - if first_phrase.graid
+    %input.tier_info.hider{'data-hide-selector' => ".graid", :type => 'checkbox', :checked => 'checked'}
+      Show GRAID annotation
+      %br
+
   - if first_phrase.translation
     %input.tier_info.hider{'data-hide-selector' => ".translation", :type => 'checkbox', :checked => 'checked'}
       Show translation

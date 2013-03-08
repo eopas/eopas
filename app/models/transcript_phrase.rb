@@ -12,4 +12,5 @@ class TranscriptPhrase < ActiveRecord::Base
   validates :phrase_id,   :presence => true
   validates :original,    :presence => true, :length => {:maximum => 4096}
   validates :translation, :length => {:maximum => 4096}
+  validates :graid,       :length => {:maximum => 4096}
 end

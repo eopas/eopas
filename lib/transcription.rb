@@ -105,6 +105,9 @@ class Transcription
   private
   def import_phrase(phrase, ph)
     ph.original = phrase.xpath('transcription').first.content
+    unless phrase.xpath('graid').empty?
+      ph.graid = phrase.xpath('graid').first.content
+    end
     unless phrase.xpath('translation').empty?
       ph.translation = phrase.xpath('translation').first.content
     end

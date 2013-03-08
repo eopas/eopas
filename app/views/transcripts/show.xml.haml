@@ -27,5 +27,7 @@
                         %morpheme
                           %text{:kind => 'morpheme'}= morpheme.morpheme
                           %text{:kind => 'gloss'}= morpheme.gloss
+          - unless phrase.graid.nil?
+            %graid= phrase.graid
           - unless phrase.translation.nil?
             %translation= phrase.translation

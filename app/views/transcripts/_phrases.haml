@@ -35,6 +35,10 @@
                           - morphemes.each do |s|
                             %td.gloss= s.gloss
 
+        - if phrase.graid
+          .tier{:class => [phrase.phrase_id, 'graid']}
+            = phrase.graid
+
         - if phrase.translation
           .tier{:class => [phrase.phrase_id, 'translation']}
             = phrase.translation
