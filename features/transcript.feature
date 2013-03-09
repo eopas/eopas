@@ -42,11 +42,11 @@ Feature: Media Items can have transcriptions
       And I should see "<error>"
 
     Examples:
-      | file             | format      | error           |
-      | elan1.xml        | Toolbox     | No matching global declaration available for the validation root |
-      | toolbox1.xml     | Transcriber | No matching global declaration available for the validation root |
-      | transcriber1.xml | ELAN        | No matching global declaration available for the validation root |
-      | eopas1.xml       | ELAN        | No matching global declaration available for the validation root |
+      | file             | format      | error                             |
+      | elan1.xml        | Toolbox     | ERROR: Not a Toolbox document     |
+      | toolbox1.xml     | Transcriber | ERROR: Not a Transcriber document |
+      | transcriber1.xml | ELAN        | ERROR: Not an ELAN document       |
+      | eopas1.xml       | ELAN        | ERROR: Not an ELAN document       |
 
   Scenario: Add participants
     Given a transcript exists with depositor: user "johnf1"

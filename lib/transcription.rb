@@ -38,10 +38,18 @@ class Transcription
   def validate
     # load Schema file
     xsdname = "#{Rails.root}/public/SCHEMAS/#@format.xsd"
-    @xsd = Nokogiri::XML::Schema(File.open(xsdname))
+    begin
+      @xsd = Nokogiri::XML::Schema(File.open(xsdname))
+    rescue Nokogiri::XML::SyntaxError => e
+      @errors << e
+    end
 
     # validate doc and print errors
-    @errors += @xsd.validate(@doc)
+    if @xsd
+      @errors += @xsd.validate(@doc)
+    end
+
+    @errors
   end
 
   def errors
@@ -58,17 +66,27 @@ class Transcription
     @xslt  = Nokogiri::XSLT(File.open(xsltname))
 
     # transcode XML file
-    e_doc = @xslt.transform(@doc)
+    begin
+      e_doc = @xslt.transform(@doc)
+    rescue RuntimeError => e
+      @errors << e
+      return
+    end
+
 
     # transcoding failed and just produced:
     # <?xml version="1.0" encoding="UTF-8"?>
-    return if e_doc == '<?xml version="1.0" encoding="UTF-8"?>'
+    if e_doc == '<?xml version="1.0" encoding="UTF-8"?>'
+      @errors << 'ERROR: Empty XML returned'
+      return
+    end
 
     e_doc
   end
 
   def import(transcript)
     doc = to_eopas
+    return if doc.nil?
     eopas = doc.xpath('/eopas')
 
     metas = eopas.xpath('//meta')
