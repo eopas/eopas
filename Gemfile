@@ -54,6 +54,7 @@ group :test do
     gem 'cucumber-rails', :require => false
 
     gem 'capybara'
+    gem 'poltergeist', :git => 'git://github.com/jonleighton/poltergeist.git', :ref => '5eaad1f00c' # ref for capybara 2.0 # For capybara support fix at > 1.1.0
 
     gem 'database_cleaner'
 

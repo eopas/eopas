@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/jonleighton/poltergeist.git
+  revision: 5eaad1f00ca901061ff1670e79ac9cd1f71bfade
+  ref: 5eaad1f00c
+  specs:
+    poltergeist (1.1.0)
+      capybara (~> 2.0, >= 2.0.1)
+      faye-websocket (~> 0.4, >= 0.4.4)
+      http_parser.rb (~> 0.5.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -96,10 +106,13 @@ GEM
       rails
     diff-lcs (1.2.1)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     factory_girl (4.2.0)
       activesupport (>= 3.0.0)
+    faye-websocket (0.4.7)
+      eventmachine (>= 0.12.0)
     ffi (1.4.0)
     fssm (0.2.10)
     gherkin (2.11.6)
@@ -113,6 +126,7 @@ GEM
       railties (>= 3.1, < 4.1)
     highline (1.6.15)
     hike (1.2.1)
+    http_parser.rb (0.5.3)
     i18n (0.6.4)
     journey (1.0.4)
     jquery-migrate-rails (1.0.0)
@@ -244,6 +258,7 @@ DEPENDENCIES
   mysql2
   nokogiri
   pickle
+  poltergeist!
   railroady
   rails (= 3.2.12)
   rspec-expectations
