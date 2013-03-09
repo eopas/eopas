@@ -19,7 +19,7 @@ When /^(?:|I )make a DELETE request to (.+)$/ do |page_name|
   visit_delete path_to(page_name)
 end
 
-When /^(?:|I ) select "([^"]*)" as the "([^"]*)" date$/ do |date, date_label|
+When /^(?:|I )select "([^"]*)" as the "([^"]*)" date$/ do |date, date_label|
   select_date(date, :from => date_label)
 end
 
