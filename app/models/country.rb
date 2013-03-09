@@ -7,7 +7,7 @@ class Country < Struct.new(:code, :name)
     countries = {}
     data.each_line do |line|
       next if line =~ /^CountryID/
-      code, name, area = line.split("\t")
+      code, name, _ = line.split("\t")
       countries[code] = name
     end
 
