@@ -17,8 +17,8 @@ Feature: Authentication and Authorisation
     When I fill in "Email" with "johnf1@inodes.org" within "#email"
     And I fill in "First name" with "John"
     And I fill in "Last name" with "Ferlito"
-    And I fill in "Password" with "moocow"
-    And I fill in "Password confirmation" with "moocow"
+    And I fill in "user_password" with "moocow"
+    And I fill in "user_password_confirmation" with "moocow"
     And I press "Register" within "form"
     Then I should see "Thanks for signing up. Please check your email to confirm your account."
     And 1 email should be delivered
@@ -27,14 +27,12 @@ Feature: Authentication and Authorisation
     Then I should see "Your account has been activated"
     And I should see "John Ferlito"
     And I should see "Logout"
-    # Commented out for now. There is a bug with capybara or rack test where logout doesn't work
-    # Something to do with the cookies
-    #When I follow "Logout"
-    #And I follow "Login"
-    #And I fill in "Email" with "johnf1@inodes.org"
-    #And I fill in "Password" with "moocow"
-    #And I press "Login"
-    #Then I should see "John Ferlito" within "#login_info"
+    When I follow "Logout"
+    And I follow "Login"
+    And I fill in "Email" with "johnf1@inodes.org"
+    And I fill in "Password" with "moocow"
+    And I press "Login"
+    Then I should see "John Ferlito" within "#login_info"
 
   Scenario: Login doesn't work after registration without confirmation
     When I go to the homepage
@@ -43,8 +41,8 @@ Feature: Authentication and Authorisation
     When I fill in "Email" with "john@inodes.org"
     And I fill in "First name" with "John"
     And I fill in "Last name" with "Ferlito"
-    And I fill in "Password" with "moocow"
-    And I fill in "Password confirmation" with "moocow"
+    And I fill in "user_password" with "moocow"
+    And I fill in "user_password_confirmation" with "moocow"
     And I press "Register"
     Then I should see "Thanks for signing up"
     And I should not see "Logout"
@@ -95,8 +93,8 @@ Feature: Authentication and Authorisation
     And that email should contain "forgotten_passwords"
     When I follow "forgotten_passwords" in that email
     Then I should see "Change My Password"
-    And I fill in "Password" with "foobar"
-    And I fill in "Password confirmation" with "foobar"
+    And I fill in "user_password" with "foobar"
+    And I fill in "user_password_confirmation" with "foobar"
     And I press "Reset my password and log me in"
     Then I should be on that user's page
     And I should see "John"
@@ -135,15 +133,14 @@ Feature: Authentication and Authorisation
     And I should see "Your account details have been updated, including password."
 
 
-# This works but allow-rescue is broken in cucumber-rails
-#  @allow-rescue
-#  Scenario: A user can only see her own details
-#    Given a user: "johnf1" exists with email: "johnf1@inodes.org", first_name: "John"
-#    And a user: "silvia" exists with email: "silvia@gingertech.net", first_name: "Silvia"
-#    And I am logged in as user "silvia"
-#    When I go to the user "silvia"'s page
-#    Then I should see "Silvia" within "#content"
-#    When I go to the user "johnf1"'s page
-#    Then I should not see "John" within "#content"
-#    And I should see "Sorry, the page you were looking for does not exist."
+  @allow-rescue
+  Scenario: A user can only see her own details
+    Given a user: "johnf1" exists with email: "johnf1@inodes.org", first_name: "John"
+    And a user: "silvia" exists with email: "silvia@gingertech.net", first_name: "Silvia"
+    And I am logged in as user "silvia"
+    When I go to the user "silvia"'s page
+    Then I should see "Silvia" within "#content"
+    When I go to the user "johnf1"'s page
+    Then I should see "ActiveRecord::RecordNotFound"
+     And I should not see "John"
 

@@ -31,8 +31,6 @@ Feature: Media
 
   @javascript
   Scenario: Create a new media item Video
-    Given I mock kickvideo for "ffmpeg -i.*-acodec libvorbis.*-vcodec libtheora.*-f ogg.*-y"
-      And I mock kickvideo for "ffmpeg -i.*-f image2.*-vcodec png"
     When I am on the new media item page
      And I attach the file "features/test_data/test.m4v" with full path to "Media"
      And I select "video" from "Format"
