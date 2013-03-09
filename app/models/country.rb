@@ -1,10 +1,8 @@
-require 'iconv'
-
 class Country < Struct.new(:code, :name)
 
   def self.setup_countries
     data = File.open("#{Rails.root}/data/CountryCodes.tab", "rb").read
-    data = Iconv.iconv('UTF8', 'ISO-8859-1', data).first.force_encoding('UTF-8')
+    data.encode!('UTF-8', 'ISO-8859-1')
 
     countries = {}
     data.each_line do |line|

@@ -1,5 +1,3 @@
-require 'iconv'
-
 class CountryLanguage < Struct.new(:code, :name)
 
   @@country_languages = {}
@@ -10,7 +8,7 @@ class CountryLanguage < Struct.new(:code, :name)
 
   def self.setup_languages
     data = File.open("#{Rails.root}/data/LanguageIndex.tab", "rb").read
-    data = Iconv.iconv('UTF8', 'ISO-8859-1', data).first.force_encoding('UTF-8')
+    data.encode!('UTF-8', 'ISO-8859-1')
     data.each_line do |line|
       next if line =~ /^LangID/
         code, country_code, name_type, name = line.strip.split("\t")
