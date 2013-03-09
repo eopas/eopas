@@ -30,7 +30,7 @@ FactoryGirl.define do
     private true
     association :depositor, :factory => :user
     format 'video'
-    original { File.open(File.join(Rails.root, 'features', 'test_data', 'test.m4v')) }
+    media { File.open(File.join(Rails.root, 'features', 'test_data', 'test.m4v')) }
   end
 
 
