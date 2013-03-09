@@ -18,7 +18,7 @@ end
 World(WithinHelpers)
 
 # Single-line step scoper
-When /^(.*) within ([^:]+)$/ do |step_data, parent|
+When /^(.*) within "([^"]+)"$/ do |step_data, parent|
   with_scope(parent) { step step_data }
 end
 

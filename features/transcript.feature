@@ -51,12 +51,13 @@ Feature: Media Items can have transcriptions
   Scenario: Add participants
     Given a transcript exists with depositor: user "johnf1"
      When I go to that transcript's edit page
-      And I fill in "Name" with "John Ferlito" within ".participant"
-      And I select "speaker" from "Role" within ".participant"
+     And show me the page
+     And I fill in "Name" with "John Ferlito" within ".participant:first"
+      And I select "speaker" from "Role" within ".participant:first"
       And I press "Update"
      Then I should see "Transcript was successfully updated"
-      And I should see "John Ferlito" within ".participant"
-      And I should see "speaker" within ".participant"
+      And I should see "John Ferlito" within ".participant:first"
+      And I should see "speaker" within ".participant.first"
       And I should see "rat, this rat"
 
   @javascript
