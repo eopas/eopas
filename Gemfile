@@ -21,6 +21,7 @@ end
 
 # views
 gem 'jquery-rails'
+gem 'jquery-migrate-rails' # TODO if we use CSS Calc instead of detecting browser with jQuery.browser type we can remove this
 gem 'haml-rails'
 gem 'kaminari'
 

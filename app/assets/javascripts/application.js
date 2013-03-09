@@ -11,6 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-migrate-min
 //= require jquery_ujs
 //= require jquery.nginxUploadProgress
 //= require jquery.scrollTo
