@@ -3,8 +3,8 @@
   <xsd:annotation>
     <xsd:documentation xml:lang="en">
       EOPAS 2010 Annotation Format
-      version 2.1
-      April 2011
+      version 2.2
+      March 2013
       Schema by Ronald Schroeter (itee - uq) 2006, v1.0
       Adapted by Silvia Pfeiffer, John Ferlito
     </xsd:documentation>
