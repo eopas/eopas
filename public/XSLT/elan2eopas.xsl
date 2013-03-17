@@ -243,6 +243,19 @@ version="1.0">
                   </wordlist>
                 </xsl:if>
 
+                <!-- go through the 'GRAID' type tier to pick the words that belong to the
+                     current phrase and add them as <graid> -->
+                <xsl:if test="/ANNOTATION_DOCUMENT/TIER[@LINGUISTIC_TYPE_REF='GRAID']">
+                  <graid>
+                    <xsl:for-each select="/ANNOTATION_DOCUMENT/TIER[@LINGUISTIC_TYPE_REF='GRAID']/ANNOTATION/REF_ANNOTATION[@ANNOTATION_REF = $annotationId]">
+                      <!-- write phrase -->
+                      <xsl:if test="ANNOTATION_VALUE != ''">
+                            <xsl:value-of select="normalize-space(ANNOTATION_VALUE)"/>
+                      </xsl:if>
+                    </xsl:for-each>
+                  </graid>
+                </xsl:if>
+
                 <!-- go through the 'fg' type tier to pick the words that belong to the
                      current phrase and add them as <translation> -->
                 <xsl:if test="/ANNOTATION_DOCUMENT/TIER[@LINGUISTIC_TYPE_REF='fg']">

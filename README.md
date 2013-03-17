@@ -134,3 +134,22 @@ To update them:
 * Copy them into the data directory, overwriting the existing files there
 
 Done!
+
+
+## Transcoding XML files
+
+You can use the scripts in the bin directory to directly deal with XML files.
+Use the following formats: Elan, Toolbox, Transcriber, Eopas
+
+* Transcoding to eopas: e.g.
+
+    rails runner bin/transcode.rb features/test_data/toolbox2.xml Toolbox
+
+* Validating an XML file: e.g.
+
+    rails runner bin/validate.rb features/test_data/toolbox2.xml Toolbox
+
+* Run an xsl tranform: e.g.
+
+    rails runner bin/xslt.rb features/test_data/toolbox2.xml public/XSLT/fixToolbox.xsl
+
