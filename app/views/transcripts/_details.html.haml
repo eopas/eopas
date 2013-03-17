@@ -54,7 +54,7 @@
       %td.name
         Download
       %td.value
-        = link_to "EOPAS", eopas_transcript_path(@transcript)
+        = link_to "EOPAS XML", eopas_transcript_path(@transcript)
         = link_to "Original (#{@transcript.transcript_format})", @transcript.source.url
 
   - if current_user and (@transcript.depositor.id == current_user.id or current_user.admin?)

@@ -16,7 +16,7 @@ module HtmlSelectorsHelpers
     #
     #  when /the (notice|error|info) flash/
     #    ".flash.#{$1}"
-    
+
     # You can also return an array to use a different selector
     # type, like:
     #
@@ -26,8 +26,6 @@ module HtmlSelectorsHelpers
     # This allows you to provide a quoted selector as the scope
     # for "within" steps as was previously the default for the
     # web steps:
-    when /.participant:first/
-      '.participant:first-child'
 
     when /"(.+)"/
       $1

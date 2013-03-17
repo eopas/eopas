@@ -51,14 +51,13 @@ Feature: Media Items can have transcriptions
   Scenario: Add participants
     Given a transcript exists with depositor: user "johnf1"
      When I go to that transcript's edit page
-     And show me the page
-     And I fill in "Name" with "John Ferlito" within ".participant:first"
-      And I select "speaker" from "Role" within ".participant:first"
+     And I fill in "Name" with "John Ferlito" within ".participant:first-child"
+      And I select "speaker" from "Role" within ".participant:first-child"
       And I press "Update"
      Then I should see "Transcript was successfully updated"
-      And I should see "John Ferlito" within ".participant:first"
-      And I should see "speaker" within ".participant.first"
-      And I should see "rat, this rat"
+      And I should see "John Ferlito" within ".participant:first-child"
+      And I should see "speaker" within ".participant:first-child"
+      And I should see "rat go go"
 
   @javascript
   Scenario Outline: Upload valid transcriptions
@@ -76,8 +75,7 @@ Feature: Media Items can have transcriptions
       And I should see "<text>"
       And I should see "<title>"
 
-      And show me the page
-     When I follow "EOPAS" within "#metadata_display"
+     When I follow "EOPAS XML" within "#metadata_display"
       And I should see "<text>"
 
     Examples:
@@ -102,7 +100,7 @@ Feature: Media Items can have transcriptions
   @javascript
   Scenario: Attach a media item to a transcript
     Given a transcript exists with title: "Moo", depositor: user "johnf1"
-    And a media item exists with original_file_name: "features/test_data/eopas3.xml", depositor: user "johnf1", title: "Cow"
+    And a media item exists with depositor: user "johnf1", title: "Cow"
 
      When I go to that transcript's page
      Then I should see "Link to Media Item"
@@ -113,7 +111,7 @@ Feature: Media Items can have transcriptions
       And I should see "Unlink Media Item"
 
   Scenario: Detach a media item to a transcript
-    Given a media item "media" exists with original_file_name: "features/test_data/eopas3.xml", depositor: user "johnf1", title: "Cow"
+    Given a media item "media" exists with depositor: user "johnf1", title: "Cow"
       And a transcript exists with title: "Moo", depositor: user "johnf1", media_item: media item "media"
 
      When I go to that transcript's page
@@ -133,9 +131,9 @@ Feature: Media Items can have transcriptions
   Scenario: Delete a transcript
     Given a transcript exists with title: "Moo", depositor: user "johnf1"
      When I go to that transcript's page
-     Then I should see "rat, this rat"
+     Then I should see "rat go go"
       And 1 transcripts should exist
-      And 77 transcript phrases should exist
+      And 2 transcript phrases should exist
 
      When I follow "Delete transcript"
      Then I should see "Transcript deleted"

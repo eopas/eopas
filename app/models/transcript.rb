@@ -71,6 +71,7 @@ class Transcript < ActiveRecord::Base
   end
 
   def create_transcription
+    return unless new_record?
     file_path = source.file.path
     @transcription = Transcription.new(:data => File.read(file_path).force_encoding('UTF-8'), :format => transcript_format)
     @transcription.import self
