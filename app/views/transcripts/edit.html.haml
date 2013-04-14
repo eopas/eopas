@@ -14,14 +14,14 @@
           = form.label :title
           * 
         %td.value
-          = form.text_field :title, :class => 'text', :size => 40
+          = form.text_field :title, :class => 'text required', :size => 80
 
       %tr
         %td.name
           = form.label :description
           *
         %td.value
-          = form.text_area :description, :class => 'text', :rows => 5, :cols => 50
+          = form.text_area :description, :class => 'text required', :rows => 5, :cols => 80
 
       %tr
         %td.name
@@ -48,7 +48,7 @@
         %td.name
           = form.label :copyright, 'Copyright Holder'
         %td.value
-          = form.text_field :copyright, :class => 'text', :size => 40
+          = form.text_field :copyright, :class => 'text', :size => 80
 
       %tr
         %td.name
@@ -69,7 +69,7 @@
           = form.fields_for :participants do |builder|
             %div.participant
               = builder.label :name
-              = builder.text_field :name, :class => 'text'
+              = builder.text_field :name, :class => 'text', :size => 40
 
               = builder.label :role
               = builder.select :role, Participant::ROLES, :include_blank => true
