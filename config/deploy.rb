@@ -1,3 +1,5 @@
+require 'bundler/capistrano'
+
 set :application, 'eopas'
 set :repository,  'git://github.com/eopas/eopas'
 set :scm, :git
@@ -12,19 +14,12 @@ set :use_sudo, false
 set :deploy_via, :remote_cache
 set :keep_releases, 5
 
-set :ssh_options, { :forward_agent => true, }
-
-set :default_shell, '/bin/bash --login'
-
-namespace :deploy do
-  task :start do ; end
-  task :stop do ; end
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-  end
-end
+# Unicorn
+require 'capistrano-unicorn'
+after 'deploy:restart', 'unicorn:restart'  # app preloaded
 
 # Delayed job
+require 'delayed/recipes'
 after "deploy:stop",    "delayed_job:stop"
 after "deploy:start",   "delayed_job:start"
 after "deploy:restart", "delayed_job:restart"
@@ -44,6 +39,3 @@ namespace :delayed_job do
    start
  end
 end
-
-require 'bundler/capistrano'
-#require 'capistrano-unicorn'

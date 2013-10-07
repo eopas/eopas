@@ -43,24 +43,26 @@ gem 'nokogiri'
 #gem 'daemons', '1.0.10' # Need this otherwise delayed job won't start when talking to mysql https://github.com/collectiveidea/delayed_job/issues#issue/81
 
 group :development, :test do
-    gem 'rspec-rails'
+  gem 'rspec-rails'
 
-    gem 'railroady'
+  gem 'railroady'
 
-    gem 'capistrano'
+  gem 'capistrano'
+
+  gem 'capistrano-unicorn', :require => false
 end
 
 group :test do
-    gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', :require => false
 
-    gem 'capybara'
-    gem 'poltergeist', :git => 'git://github.com/jonleighton/poltergeist.git', :ref => '5eaad1f00c' # ref for capybara 2.0 # For capybara support fix at > 1.1.0
+  gem 'capybara'
+  gem 'poltergeist', :git => 'git://github.com/jonleighton/poltergeist.git', :ref => '5eaad1f00c' # ref for capybara 2.0 # For capybara support fix at > 1.1.0
 
-    gem 'database_cleaner'
+  gem 'database_cleaner'
 
-    gem 'rspec-expectations'
-    gem 'launchy'
+  gem 'rspec-expectations'
+  gem 'launchy'
 
-    gem 'factory_girl'
-    gem 'pickle'
+  gem 'factory_girl'
+  gem 'pickle'
 end
