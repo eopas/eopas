@@ -3,95 +3,122 @@
 # Install
 
 These instructions are geared towards installing the EOPAS application on an
-Ubuntu Lucid LTS system. These instructions assume you will be using capistrano
+Ubuntu Precise LTS system. These instructions assume you will be using capistrano
 to deploy the application.
 
 ## Set up the database
 
-* Install MySQL if it isn't already installed
+Install MySQL if it isn't already installed
 
-    aptitude install mysql-server
+``` bash
+sudo apt-get install mysql-server
+```
 
-* Create the EOPAS database and user
+Create the EOPAS database and user
 
-    mysql
-    mysql> CREATE DATABASE eopas;
-    mysql> GRANT ALL ON eopas.* to eopas@`%` IDENTIFIED BY 'PASSWORD'
+```
+mysql
+mysql> CREATE DATABASE eopas;
+mysql> GRANT ALL ON eopas.* to eopas@`%` IDENTIFIED BY 'PASSWORD'
+```
 
-* Edit config/database.yml to suit database name, username and password.
-
-* Run the migrations
-
-    cap deploy:migrations
+Edit config/database.yml to suit database name, username and password.
 
 
 ## Deploy the application to the EOPAS server
 
+We assume you are using Ubuntu Precise.
 
-* First set up the **deploy** user
+First set up the **deploy** user
 
-    adduser deploy
+``` bash
+sudo adduser deploy
+```
 
 You may find deployments easier if you set up your SSH key on the deploy user's
 account.
 
-* Create the directory the application will be deployed to and set the
-  permissions.
+``` bash
+ssh-copy-id $USER@server_name.example.org
+```
 
-    mkdir -p /srv/www/eopas
-    chown deploy.deploy /srv/www/eopas
+Create the directory the application will be deployed to and set the permissions.
 
-* Install all the required dependencies on the server
+``` bash
+sudo mkdir -p /srv/www/eopas
+sudo chown deploy.deploy /srv/www/eopas
+```
 
-**Note:** Currently Ruby1.9.2 isn't in Ubuntu. So we use johnf's PPA.
+Install all the required dependencies on the server
 
-* The application is deployed from your local machine using capistrano. On your
-  local machine make sure capistrano is installed
+``` bash
+sudo apt-get update
+sudo apt-get install ruby1.9.3 git libxml2-dev libxslt1-dev libmysqlclient-dev \
+                     libsqlite3-dev build-essentials
+sudo gem1.9.3 install bundler
+sudo apt-get install libavcodec-extra-53 libavdevice-extra-53 libavfilter-extra-0 \
+                     libavformat-extra-53 libpostproc-extra-52 libswscale-extra-2 libav-tools
 
-    apt-add-repository ppa:johnf-inodes/ruby192
-    aptitude update
-    apt-get install ruby1.9.1 git ruby1.9.1-dev libxml2-dev libxslt1-dev libmysqlclient-dev libsqlite3-dev
+```
 
-    gem1.9.1 install bundler rake
+Install capistrano on your local machine
 
+``` bash
+gem install capistrano
+```
 
-* We recommend using medibuntu for ffmpeg as it supports more codecs. There are
-some licensing issues involved. Please make sure you are aware of these before
-proceeding. ffmpeg is used for transcoding media files.
+Setup the application for deployment the first time
 
-    wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list \
-      && apt-get --quiet update \
-      && apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring \
-      && apt-get --quiet update
-    aptitude update
-    apt-get install w64codecs w32codecs libavcodec-extra-52 libavdevice-extra-52 \
-      libavfilter-extra-0 libavformat-extra-52 libpostproc-extra-51 \
-      libswscale-extra-0 ffmpeg
+``` bash
+cap deploy:setup
+```
 
+Check everything is ready
 
+``` bash
+cap deploy:check
+```
 
-* Install capistrano on your local machine
+Deploy the application
 
-    gem install capistrano
-
-* Setup the application for deployment the first time
-
-    cap deploy:setup
-
-* Check everything is ready
-
-    cap deploy:check
-
-* Deploy the application
-
-    cap deploy
+``` bash
+cap deploy
+```
 
 * Run the migrations
 
-  cap deploy:migrations
+``` bash
+cap deploy:migrations
+```
 
+You will also need to deploy an nginx configuration that looks something like
+```
+server {
+  listen [::]:80;
+  server_name www.eopas.org eopas.rnld.unimelb.edu.au;
 
+  access_log  /srv/www/eopas/shared/log/access.log;
+  error_log  /srv/www/eopas/shared/log/error.log;
 
+  location / {
+    error_page 500 502 503 504 /500.html;
+
+    root /srv/www/eopas/current/public;
+
+    try_files /system/maintenance.html $uri @app;
+  }
+
+  location @app {
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_redirect off;
+
+    proxy_pass http://unix:/srv/www/eopas/shared/pids/unicorn.socket;
+  }
+
+}
+
+```
 
 ## Set up the application
 
