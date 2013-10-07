@@ -9,7 +9,6 @@ class DeprecatePaperclip < ActiveRecord::Migration
     end
 
     change_table :transcripts do |t|
-      t.remove :original_file_name
       t.rename :original_file_name, :source
       t.remove :original_content_type
       t.remove :original_file_size
