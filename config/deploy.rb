@@ -1,5 +1,7 @@
 require 'bundler/capistrano'
 
+load 'deploy/assets'
+
 set :application, 'eopas'
 set :repository,  'git://github.com/eopas/eopas'
 set :scm, :git
