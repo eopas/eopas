@@ -14,8 +14,8 @@ working_directory current_path
 rails_env = ENV['RAILS_ENV'] || 'production'
 
 # Log everything to one file
-stderr_path "#{shared_path}log/unicorn.log"
-stdout_path "#{shared_path}log/unicorn.log"
+stderr_path "#{shared_path}/log/unicorn.log"
+stdout_path "#{shared_path}/log/unicorn.log"
 
 # Set master PID location
 pid "#{current_path}/tmp/pids/unicorn.pid"
