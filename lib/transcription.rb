@@ -57,7 +57,7 @@ class Transcription
   end
 
   def valid?
-    @xsd.valid?(@doc) and @errors.nil?
+    @xsd.valid?(@doc) and @errors.empty?
   end
 
   def to_eopas
