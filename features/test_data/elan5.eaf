@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ANNOTATION_DOCUMENT AUTHOR="" DATE="2013-03-11T16:00:47+10:00" FORMAT="2.7" VERSION="2.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.7.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///C:/Users/Stefan Schnell/Desktop/DoBeS Data Apr 2012/Vera'a Data_audio&amp;video_annotations/VRA_Stories/VVSSA19JUN0701-HHAK/VVSSA19JUN0701-HHAK.WAV" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="file:/./VVSSA19JUN0701-HHAK.WAV"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///C:/Users/Stefan%2CSchnell/Desktop/DoBeS%2CData%2CApr%2C2012/Vera%27a%2CData_audio&amp;video_annotations/VRA_Stories/VVSSA19JUN0701-HHAK/VVSSA19JUN0701-HHAK.WAV" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="file:/./VVSSA19JUN0701-HHAK.WAV"/>
         <PROPERTY NAME="lastUsedAnnotationId">4615</PROPERTY>
     </HEADER>
     <TIME_ORDER>
