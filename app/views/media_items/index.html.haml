@@ -5,7 +5,8 @@
   - @media_items.each do |media_item|
     %li
       .item
-        = link_to media_item_thumb_tag(media_item), media_item
+        = link_to media_item do
+          = image_tag media_item.media.thumb.url
         %p
           = link_to media_item.title, media_item
         %p
