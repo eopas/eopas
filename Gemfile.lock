@@ -97,6 +97,7 @@ GEM
       cucumber (>= 1.2.0)
       nokogiri (>= 1.5.0)
       rails (~> 3.0)
+    daemons (1.1.9)
     database_cleaner (0.9.1)
     declarative_authorization (0.5.7)
     delayed_job (3.0.5)
@@ -249,6 +250,7 @@ DEPENDENCIES
   compass-blueprint
   compass-rails
   cucumber-rails
+  daemons
   database_cleaner
   declarative_authorization
   delayed_job_active_record

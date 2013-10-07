@@ -50,6 +50,7 @@ group :development, :test do
   gem 'capistrano'
 
   gem 'capistrano-unicorn', :require => false
+  gem 'daemons'
 end
 
 group :test do
