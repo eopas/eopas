@@ -40,6 +40,10 @@ gem 'delayed_job_admin'
 # xml parsing
 gem 'nokogiri'
 
+# Web
+gem 'unicorn'
+gem 'daemons'
+
 #gem 'daemons', '1.0.10' # Need this otherwise delayed job won't start when talking to mysql https://github.com/collectiveidea/delayed_job/issues#issue/81
 
 group :development, :test do
@@ -48,9 +52,7 @@ group :development, :test do
   gem 'railroady'
 
   gem 'capistrano'
-
   gem 'capistrano-unicorn', :require => false
-  gem 'daemons'
 end
 
 group :test do
