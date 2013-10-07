@@ -16,7 +16,7 @@ version="1.0">
     <xsl:if test="not(/ANNOTATION_DOCUMENT)">
         <xsl:message terminate="yes">ERROR: Not an ELAN document</xsl:message>
     </xsl:if>
-    <xsl:if test="not(/ANNOTATION_DOCUMENT/HEADER/@TIME_UNITS = 'milliseconds')">
+    <xsl:if test="not(/ANNOTATION_DOCUMENT/HEADER/@TIME_UNITS='milliseconds')">
         <xsl:message terminate="yes">ERROR: I only understand milliseconds as TIME_UNITS</xsl:message>
     </xsl:if>
     <xsl:apply-templates/>
@@ -276,7 +276,7 @@ version="1.0">
 
         <!-- DEFAULT CASE: fail -->
         <xsl:otherwise>
-          <xsl:message terminate="yes">ERROR: I only understand milliseconds as TIME_UNITS</xsl:message>
+          <xsl:message terminate="yes">ERROR: Unsupported LINGUISTIC_TYPE_REF in Tier</xsl:message>
         </xsl:otherwise>
 
         </xsl:choose>
