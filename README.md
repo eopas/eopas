@@ -95,7 +95,7 @@ You will also need to deploy an nginx configuration that looks something like
 ```
 server {
   listen [::]:80;
-  server_name www.eopas.org eopas.rnld.unimelb.edu.au;
+  server_name www.eopas.org 103.6.254.249;
 
   access_log  /srv/www/eopas/shared/log/access.log;
   error_log  /srv/www/eopas/shared/log/error.log;
