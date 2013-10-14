@@ -13,7 +13,7 @@
       %li
         .item
           = link_to media_item do
-            = image_tag media_item.media.thumb.url
+            = media_item_thumb_image_tag media_item
           %p
             = link_to media_item.title, media_item
           %p

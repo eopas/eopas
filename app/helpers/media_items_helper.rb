@@ -50,4 +50,12 @@ module MediaItemsHelper
     end
   end
 
+  def media_item_thumb_image_tag(media_item, options = {})
+    if media_item.format == 'video'
+      image_tag media_item.media.thumb.url, options
+    else
+      image_tag media_item.media.thumb.default_url, options
+    end
+  end
+
 end
