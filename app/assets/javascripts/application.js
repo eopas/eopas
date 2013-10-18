@@ -65,10 +65,10 @@ function do_time_change(fragment) {
 
   var m;
   if ($('video').length) {
-    m = $('video').first();
+    m = $('video').first()[0];
   } 
   else if ($('audio').length) {
-    m = $('audio').first();
+    m = $('audio').first()[0];
   }
   m.attr('data-start', start);
   m.attr('data-pause', end);
@@ -308,10 +308,10 @@ $(document).ready(function() {
   // Get media element
   var media;
   if ($('video').length) {
-    media = $('video').first();
+    media = $('video').first()[0];
   } 
   else if ($('audio').length) {
-    media = $('audio').first();
+    media = $('audio').first()[0];
   }
   set_url("");
 
