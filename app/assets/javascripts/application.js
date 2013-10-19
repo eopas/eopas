@@ -114,7 +114,7 @@ function do_fragment_change() {
   if (fragment.match(/^#t=/)) {
     do_time_change(fragment);
   }
-  else if (fragment.match(/^#!/)) {
+  else { //if (fragment.match(/^#!/)) {
     do_transcript_change(fragment);
   }
 }
