@@ -26,15 +26,27 @@ class MediaUploader < CarrierWave::Uploader::Base
 
   version :video, :if => :is_video? do
     process :encode_video => [ :ogv, :resolution => '320x400', :logger => :logger ]
+    def full_filename(for_file)
+      'video.ogv'
+    end
   end
   version :thumb, :if => :is_video? do
     process :thumbnail => [ :format => 'png', :size => 160 ]
+    def full_filename(for_file)
+      'thumb.png'
+    end
   end
   version :poster, :if => :is_video? do
     process :thumbnail => [ :format => 'png', :size => 320 ]
+    def full_filename(for_file)
+      'poster.png'
+    end
   end
   version :audio, :if => :is_audio? do
     process :encode_video => [ :ogg, :custom => '-acodec libvorbis', :logger => :logger ]
+    def full_filename(for_file)
+      'audio.oga'
+    end
   end
   version :thumb, :if => :is_audio? do
   end
