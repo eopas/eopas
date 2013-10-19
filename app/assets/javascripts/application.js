@@ -64,15 +64,16 @@ function do_time_change(fragment) {
   var end = parseFloat(times[1]);
 
   var m;
+  var video;
   if ($('video').length) {
-    m = $('video')[0];
+    m = $('video').first();
   }
   else if ($('audio').length) {
-    m = $('audio')[0];
+    m = $('audio').first();
   }
   m.attr('data-start', start);
   m.attr('data-pause', end);
-  m.attr('currentTime', start);
+  m[0].currentTime = start;
   m.trigger('play');
 }
 
@@ -305,14 +306,6 @@ function setup_concordance() {
 
 $(document).ready(function() {
 
-  // Get media element
-  var media;
-  if ($('video').length) {
-    media = $('video')[0];
-  }
-  else if ($('audio').length) {
-    media = $('audio')[0];
-  }
   set_url("");
 
   // also act on hash change of page
@@ -340,6 +333,15 @@ $(document).ready(function() {
   setup_validations();
 
   // if the page is loaded with a different hash, execute that
+  // Get media element
+  var media;
+  if ($('video').length) {
+    media = $('video').first();
+  }
+  else if ($('audio').length) {
+    media = $('audio').first();
+  }
+
   if (media) {
     setup_playback(media);
     media.bind('loadedmetadata', do_fragment_change);
