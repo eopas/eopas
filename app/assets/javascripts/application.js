@@ -123,7 +123,7 @@ function do_fragment_change() {
 function setup_playback(media) {
   // on timeupdate check if we are still playing and adjust the highlighted region
   media.bind('timeupdate', function() {
-    var cur_time = parseFloat(media.attr('currentTime'));
+    var cur_time = parseFloat(media[0].currentTime);
     if (media.attr('paused') || media.attr('ended')) {
       return;
     }
