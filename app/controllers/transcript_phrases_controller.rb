@@ -16,7 +16,7 @@ class TranscriptPhrasesController < ApplicationController
       @phrases = TranscriptPhrase.joins('
           INNER JOIN transcript_words ON transcript_words.transcript_phrase_id = transcript_phrases.id
           INNER JOIN transcripts ON transcripts.id = transcript_phrases.transcript_id
-      ').where('transcript_words.word' => @search).where('transcripts.language_code' => language_code)
+      ').where('transcript_words.word = ? collate utf8_bin', @search).where('transcripts.language_code' => language_code)
     end
 
     @phrases.sort_by(&:id).each {|p| p p.id}

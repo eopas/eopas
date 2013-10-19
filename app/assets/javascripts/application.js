@@ -22,11 +22,12 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 function setup_div_toggle() {
+  // TODO do this with CSS rather than changing the images
   $('.collapse_icon').mouseover(function() {
-    this.src = '/minimize_black.png';
+    this.src = '/assets/minimize_black.png';
   });
   $('.collapse_icon').mouseout(function() {
-    this.src = '/minimize_grey.png';
+    this.src = '/assets/minimize_grey.png';
   });
   $('.collapse_icon').click(function() {
     $(this).parent().next().slideToggle();
@@ -278,7 +279,8 @@ function setup_concordance() {
         function(data) {
           $('#concordance .collapse_content').html(data);
           $('#concordance').show();
-        }
+        },
+        'html'
       );
   });
 
