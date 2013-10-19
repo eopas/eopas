@@ -66,7 +66,7 @@ function do_time_change(fragment) {
   var m;
   if ($('video').length) {
     m = $('video').first();
-  } 
+  }
   else if ($('audio').length) {
     m = $('audio').first();
   }
@@ -100,9 +100,9 @@ function do_transcript_change(fragment) {
 
 // set url in current url box
 function set_url(fragment) {
-  var baseurl = window.location.protocol+"//"+window.location.host+window.location.pathname
+  var baseurl = window.location.protocol+"//"+window.location.host+window.location.pathname;
   var url = baseurl + fragment;
-  $('span#cur_url').html("<a href='"+url+"'>"+url+"</a>");  
+  $('span#cur_url').html("<a href='"+url+"'>"+url+"</a>");
 }
 
 // changing URL hash on window
@@ -146,10 +146,10 @@ function setup_playback(media) {
           // change hash on URL in cur_url textarea
           set_url("#t="+$(this).attr('data-start')+","+$(this).attr('data-end'));
         }
-      } 
+      }
       else {
         $(this).closest('.line').find('.tracks').removeClass('hilight');
-      }      
+      }
     });
 
     // pause the video if we played past the last segment
@@ -309,7 +309,7 @@ $(document).ready(function() {
   var media;
   if ($('video').length) {
     media = $('video').first();
-  } 
+  }
   else if ($('audio').length) {
     media = $('audio').first();
   }
@@ -317,7 +317,7 @@ $(document).ready(function() {
 
   // also act on hash change of page
   $(window).bind('hashchange', function() {
-    do_fragment_change();    
+    do_fragment_change();
   });
 
   // Collapsing elements
@@ -328,7 +328,7 @@ $(document).ready(function() {
   // Country Code Selector
   setup_country_code();
 
-  // Transcript box 
+  // Transcript box
   do_onResize();
   $(window).resize(do_onResize);
 
