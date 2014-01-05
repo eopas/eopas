@@ -16,6 +16,15 @@ set :use_sudo, false
 set :deploy_via, :remote_cache
 set :keep_releases, 5
 
+# database
+namespace :deploy do
+  desc "Symlink shared configs and folders on each release."
+  task :symlink_shared do
+    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  end
+end
+after 'deploy:update_code', 'deploy:symlink_shared'
+
 # Unicorn
 require 'capistrano-unicorn'
 after 'deploy:restart', 'unicorn:restart'  # app preloaded
