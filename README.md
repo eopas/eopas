@@ -136,7 +136,7 @@ jobs or other issues.
 
 * Running the delayed\_jobs demon by hand if necessary
 
-    RAILS_ENV=production ./scripts/delayed_job start
+    RAILS_ENV=production ./script/delayed_job start
 
 * Clearing the jobs queue
 
