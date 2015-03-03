@@ -136,11 +136,11 @@ jobs or other issues.
 
 * Running the delayed\_jobs demon by hand if necessary
 
-    RAILS_ENV=production ./script/delayed_job start
+    RAILS_ENV=production bundle exec rake jobs:work
 
 * Clearing the jobs queue
 
-    rake jobs:clear
+    RAILS_ENV=production bundle exec rake jobs:clear
 
 * Checking the jobs queue as an admin user
 
