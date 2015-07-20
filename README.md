@@ -180,3 +180,4 @@ Use the following formats: Elan, Toolbox, Transcriber, Eopas
 
     rails runner bin/xslt.rb features/test_data/toolbox2.xml public/XSLT/fixToolbox.xsl
 
+Read up on transcoding at doc/TRANSCODING
